@@ -143,6 +143,25 @@ main {
   color: var(--accent);
 }
 
+.arxiv-lines {
+  display: grid;
+  gap: 3px;
+  margin: 12px 0 14px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--accent);
+  background: #f0f4f1;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.arxiv-lines p {
+  margin: 0;
+}
+
+.arxiv-lines strong {
+  color: var(--text);
+}
+
 .tags span,
 .label {
   display: inline-flex;
