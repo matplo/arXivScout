@@ -1,115 +1,27 @@
 {
   "date": "2026-06-26",
   "path": "reports/2026-06-26.html",
-  "headline": "Jet-medium structure leads the day, with strong ALICE jet-energy-flow data and new in-medium splitting and track-function phenomenology.",
-  "total_paper_count": 8,
-  "represented_categories": [
-    "Theory",
-    "Experiment",
-    "Phenomenology",
-    "AI/ML use",
-    "AI/ML use cases",
-    "Caution"
-  ],
-  "strongest_paper": "Modification of jet-energy flow in heavy-ion collisions",
-  "top_takeaway": "The strongest trend is convergence between new jet-substructure measurements and sharper theory tools for jet-medium dynamics.",
-  "caution_count": 1,
+  "headline": "Finite-density QCD modeling, baryon-stopping observables, hot-QCD screening masses, and analysis-grade ML validation were the most useful themes in the June 26 scout.",
+  "summary": "The June 26 listing is strongest for finite-density heavy-ion infrastructure and diagnostics: MUSES/Calliope equation-of-state workflows, rapidity-even directed-flow splitting for baryon stopping, and STAR intermittency reinterpretation. Hot-QCD screening masses provide a strong theory item, while the AI/ML selections emphasize interpretability/explainability discipline and nuisance-aware unfolding rather than generic model performance.",
+  "keywords": ["finite-density equation of state", "MUSES Calliope", "baryon stopping", "rapidity-even directed flow", "hot-QCD meson screening", "STAR BES intermittency", "jet-energy flow", "track functions", "interpretability and explainability", "Profile OmniFold"],
+  "total_paper_count": 9,
+  "represented_categories": ["Theory", "Experiment", "Phenomenology", "AI/ML use", "AI/ML use cases", "Caution"],
+  "strongest_paper": "Studying the QCD Matter produced in Heavy-Ion Collisions using the MUSES Calculation Engine",
+  "top_takeaway": "The strongest same-day contribution is reproducible finite-density heavy-ion infrastructure, while the most immediately data-facing physics themes are baryon stopping, intermittency, and jet-medium structure.",
+  "caution_count": 2,
   "papers": [
-    {
-      "title": "Modification of jet-energy flow in heavy-ion collisions",
-      "authors": "ALICE Collaboration",
-      "author_count": null,
-      "arxiv_id": "2606.20061",
-      "url": "https://arxiv.org/abs/2606.20061",
-      "category": "Experiment",
-      "tags": ["ALICE", "jet energy flow", "jet quenching", "Pb-Pb", "medium response"],
-      "assessment": "strong"
-    },
-    {
-      "title": "In-medium QCD splittings beyond the soft, large-Nc and harmonic-oscillator approximations all at once",
-      "authors": "Marco Leitao; Jose Guilherme Milhano; Alba Soto-Ontoso",
-      "author_count": 3,
-      "arxiv_id": "2606.26039",
-      "url": "https://arxiv.org/abs/2606.26039",
-      "category": "Phenomenology",
-      "tags": ["BDMPS-Z", "in-medium splittings", "jet quenching", "finite energy"],
-      "assessment": "strong"
-    },
-    {
-      "title": "Mapping jet substructure in heavy-ion collisions with track functions",
-      "authors": "Joao Barata; Yeonju Go; Daniel Pablos",
-      "author_count": 3,
-      "arxiv_id": "2606.23971",
-      "url": "https://arxiv.org/abs/2606.23971",
-      "category": "Phenomenology",
-      "tags": ["track functions", "jet substructure", "JEWEL", "HYBRID", "QGP"],
-      "assessment": "strong"
-    },
-    {
-      "title": "Studying the QCD Matter produced in Heavy-Ion Collisions using the MUSES Calculation Engine",
-      "authors": "Johannes Jahan; Kevin P. Pala; Yumu Yang; Isabella Danhoni; Prachi Garella; et al.",
-      "author_count": 44,
-      "arxiv_id": "2606.26326",
-      "url": "https://arxiv.org/abs/2606.26326",
-      "category": "Phenomenology",
-      "tags": ["MUSES", "Calliope", "equation of state", "hydrodynamics", "BES"],
-      "assessment": "strong"
-    },
-    {
-      "title": "Rapidity-even directed flow splitting of protons and antiprotons as a probe of baryon stopping in relativistic heavy-ion collisions",
-      "authors": "Tribhuban Parida; Sandeep Chatterjee",
-      "author_count": 2,
-      "arxiv_id": "2606.27156",
-      "url": "https://arxiv.org/abs/2606.27156",
-      "category": "Phenomenology",
-      "tags": ["baryon stopping", "directed flow", "BES", "hydrodynamics"],
-      "assessment": "mixed"
-    },
-    {
-      "title": "Understanding the Intermittency Signal in RHIC-STAR Data through Modeling",
-      "authors": "Jin Wu; Zhiming Li; Mingmei Xu; Shuyun Yang; Ranran Guo; Yuanfang Wu",
-      "author_count": 6,
-      "arxiv_id": "2606.24436",
-      "url": "https://arxiv.org/abs/2606.24436",
-      "category": "Phenomenology",
-      "tags": ["STAR BES", "intermittency", "QCD critical point", "UrQMD", "CMC"],
-      "assessment": "mixed"
-    },
-    {
-      "title": "Interpreting \"Interpretability\" and Explaining \"Explainability\" in Machine Learning in Physics",
-      "authors": "Rikab Gambhir; Luisa Lucie-Smith; Jesse Thaler",
-      "author_count": 3,
-      "arxiv_id": "2606.26228",
-      "url": "https://arxiv.org/abs/2606.26228",
-      "category": "AI/ML use cases",
-      "tags": ["interpretability", "explainability", "machine learning", "physics", "HEP"],
-      "assessment": "strong"
-    },
-    {
-      "title": "Ultra-Peripheral Collisions as a Nuclear-Structure Interferometer with Interpretable Multitask Deep Learning",
-      "authors": "Jing-Zong Zhang; Wang-Mei Zha; Lingxiao Wang; Guo-Liang Ma",
-      "author_count": 4,
-      "arxiv_id": "2606.23353",
-      "url": "https://arxiv.org/abs/2606.23353",
-      "category": "AI/ML use",
-      "tags": ["UPC", "multitask learning", "nuclear structure", "J/psi photoproduction"],
-      "assessment": "mixed"
-    },
-    {
-      "title": "Mass-Dependent Non-Extensivity in Tsallis Blast-Wave Fits to Identified Hadron pT Spectra at RHIC and LHC",
-      "authors": "C.Y. Tsang; Z. Xu",
-      "author_count": 2,
-      "arxiv_id": "2606.24777",
-      "url": "https://arxiv.org/abs/2606.24777",
-      "category": "Caution",
-      "tags": ["Tsallis Blast-Wave", "identified hadrons", "spectra", "fit quality"],
-      "assessment": "caution"
-    }
+    {"title": "Applicability of kinetic theory in strongly coupled thermal quantum systems", "authors": "Shile Chen; Shuzhe Shi; Pengfei Zhuang", "author_count": 3, "arxiv_id": "2606.26696", "url": "https://arxiv.org/abs/2606.26696", "category": "Theory", "abstract": "Finite-temperature momentum-distribution study in simplified strongly interacting spinor systems, used to diagnose when two-particle correlations become subleading enough for kinetic theory.", "tags": ["kinetic theory", "strong coupling", "thermal systems"], "assessment": "mixed"},
+    {"title": "Axial-Vector Lattice Benchmarks Reveal a Common Medium Response of Meson Screening in Hot QCD", "authors": "Jie Ren; Chen Chen; Fei Gao; Si-xue Qin", "author_count": 4, "arxiv_id": "2606.26245", "url": "https://arxiv.org/abs/2606.26245", "category": "Theory", "abstract": "Combines lattice-QCD screening-mass benchmarks with a Dyson-Schwinger baseline to model flavor-dependent meson screening in hot QCD.", "tags": ["hot QCD", "screening masses", "lattice QCD", "Dyson-Schwinger"], "assessment": "strong"},
+    {"title": "Modification of jet-energy flow in heavy-ion collisions", "authors": "ALICE Collaboration", "author_count": null, "arxiv_id": "2606.20061", "url": "https://arxiv.org/abs/2606.20061", "category": "Experiment", "abstract": "ALICE reports jet-energy-flow modification in Pb-Pb relative to pp, constraining radial redistribution of quenched jet energy.", "tags": ["ALICE", "jet energy flow", "Pb-Pb", "jet quenching"], "assessment": "strong"},
+    {"title": "Studying the QCD Matter produced in Heavy-Ion Collisions using the MUSES Calculation Engine", "authors": "Johannes Jahan; Kevin P. Pala; Yumu Yang; Isabella Danhoni; Prachi Garella; et al.", "author_count": 45, "arxiv_id": "2606.26326", "url": "https://arxiv.org/abs/2606.26326", "category": "Phenomenology", "abstract": "Presents Calliope, a MUSES calculation engine for finite-density heavy-ion equation-of-state workflows, hydrodynamic inputs, transport-coefficient interfaces, and BES-energy demonstrations.", "tags": ["MUSES", "Calliope", "equation of state", "hydrodynamics", "BES"], "assessment": "strong"},
+    {"title": "Rapidity-even directed flow splitting of protons and antiprotons as a probe of baryon stopping in relativistic heavy-ion collisions", "authors": "Tribhuban Parida; Sandeep Chatterjee", "author_count": 2, "arxiv_id": "2606.27156", "url": "https://arxiv.org/abs/2606.27156", "category": "Phenomenology", "abstract": "Proposes proton-antiproton rapidity-even directed-flow splitting, especially midrapidity curvature, as a discriminator of baryon stopping and diffusion at BES energies.", "tags": ["baryon stopping", "directed flow", "BES", "hydrodynamics"], "assessment": "mixed"},
+    {"title": "Understanding the Intermittency Signal in RHIC-STAR Data through Modeling", "authors": "Jin Wu; Zhiming Li; Mingmei Xu; Shuyun Yang; Ranran Guo; Yuanfang Wu", "author_count": 6, "arxiv_id": "2606.24436", "url": "https://arxiv.org/abs/2606.24436", "category": "Phenomenology", "abstract": "Uses improved UrQMD+CMC modeling to argue that STAR BES-I intermittency data allow only small, nearly energy-independent critical-like fractions.", "tags": ["STAR BES", "intermittency", "QCD critical point", "UrQMD", "CMC"], "assessment": "mixed"},
+    {"title": "Mapping jet substructure in heavy-ion collisions with track functions", "authors": "Joao Barata; Yeonju Go; Daniel Pablos", "author_count": 3, "arxiv_id": "2606.23971", "url": "https://arxiv.org/abs/2606.23971", "category": "Phenomenology", "abstract": "Studies track-function moments and cumulants in JEWEL and HYBRID, proposing them as discriminants of microscopic jet-medium dynamics.", "tags": ["track functions", "jet substructure", "JEWEL", "HYBRID", "QGP"], "assessment": "strong"},
+    {"title": "Ultra-Peripheral Collisions as a Nuclear-Structure Interferometer with Interpretable Multitask Deep Learning", "authors": "Jing-Zong Zhang; Wang-Mei Zha; Lingxiao Wang; Guo-Liang Ma", "author_count": 4, "arxiv_id": "2606.23353", "url": "https://arxiv.org/abs/2606.23353", "category": "AI/ML use", "abstract": "Uses interpretable multitask deep learning to infer nuclear-structure indicators from UPC coherent J/psi photoproduction spectra.", "tags": ["UPC", "multitask learning", "nuclear structure"], "assessment": "mixed"},
+    {"title": "Interpreting \"Interpretability\" and Explaining \"Explainability\" in Machine Learning in Physics", "authors": "Rikab Gambhir; Luisa Lucie-Smith; Jesse Thaler", "author_count": 3, "arxiv_id": "2606.26228", "url": "https://arxiv.org/abs/2606.26228", "category": "AI/ML use cases", "abstract": "Conceptual review distinguishing structural interpretability from domain-grounded explainability and emphasizing task-specific intervention plans.", "tags": ["interpretability", "explainability", "machine learning", "HEP"], "assessment": "strong"},
+    {"title": "Machine Learning-based Unfolding for Cross Section Measurements in the Presence of Nuisance Parameters", "authors": "Huanbiao Zhu; Krish Desai; Mikael Kuusela; Vinicius Mikuni; Benjamin Nachman; Larry Wasserman", "author_count": 6, "arxiv_id": "2512.07074", "url": "https://arxiv.org/abs/2512.07074", "category": "AI/ML use cases", "abstract": "Introduces Profile OmniFold, extending ML-based unfolding to include nuisance parameters, with a simulated CMS demonstration.", "tags": ["Profile OmniFold", "unfolding", "nuisance parameters", "CMS"], "assessment": "strong"},
+    {"title": "Thermodynamical analysis of QGP using effective PNJL model with Quasiparticle approach", "authors": "Yogesh Kumar; Himanshu Aggarwal; R. S. Laishram; Poonam Jain; Om Prakash; et al.", "author_count": 10, "arxiv_id": "2606.26956", "url": "https://arxiv.org/abs/2606.26956", "category": "Caution", "abstract": "Extends a two-flavor PNJL model with quasiparticle masses and reports improved agreement with lattice-QCD thermodynamics.", "tags": ["PNJL", "QGP thermodynamics", "quasiparticles"], "assessment": "caution"},
+    {"title": "Mass-Dependent Non-Extensivity in Tsallis Blast-Wave Fits to Identified Hadron pT Spectra at RHIC and LHC", "authors": "C.Y. Tsang; Z. Xu", "author_count": 2, "arxiv_id": "2606.24777", "url": "https://arxiv.org/abs/2606.24777", "category": "Caution", "abstract": "Improves Tsallis Blast-Wave fit quality by allowing the non-extensivity parameter to vary by particle mass or class.", "tags": ["Tsallis Blast-Wave", "identified hadrons", "spectra"], "assessment": "caution"}
   ],
-  "sources": [
-    "https://arxiv.org/list/nucl-th/recent?show=2000",
-    "https://arxiv.org/list/hep-ph/recent",
-    "https://arxiv.org/list/hep-ex/recent?show=2000",
-    "https://arxiv.org/list/physics.data-an/recent?show=2000"
-  ]
+  "sources": ["https://arxiv.org/list/nucl-th/new?show=2000", "https://arxiv.org/list/nucl-ex/new?show=2000", "https://arxiv.org/list/hep-ph/new?show=2000", "https://arxiv.org/list/hep-ex/new?show=2000"]
 }
