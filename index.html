@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout Archive</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Searchable Archive</h1>
+    <p class="dek">High-signal daily briefings on heavy-ion collision physics and AI/ML use cases in physics.</p>
+    <label class="search-label" for="archive-search">Filter reports</label>
+    <input id="archive-search" type="search" placeholder="Search by date, title, author, arXiv ID, category, tag, or summary" autocomplete="off">
+  </header>
+
+  <main>
+    <section class="archive-list" id="archive-list">
+      <article class="archive-card" data-search="2026-06-26 Modification of jet-energy flow in heavy-ion collisions ALICE Collaboration arXiv 2606.20061 Experiment In-medium QCD splittings Marco Leitao Jose Guilherme Milhano Alba Soto-Ontoso 2606.26039 Phenomenology Mapping jet substructure Joao Barata Yeonju Go Daniel Pablos 2606.23971 track functions MUSES Calliope Johannes Jahan Kevin P. Pala Yumu Yang 2606.26326 equation of state hydrodynamics baryon stopping directed flow Tribhuban Parida Sandeep Chatterjee 2606.27156 STAR BES intermittency Jin Wu 2606.24436 Interpreting Interpretability Explainability Rikab Gambhir Luisa Lucie-Smith Jesse Thaler 2606.26228 UPC multitask learning Jing-Zong Zhang Wang-Mei Zha Lingxiao Wang Guo-Liang Ma 2606.23353 Tsallis Blast-Wave caution C.Y. Tsang Z. Xu 2606.24777 jet-medium structure heavy-ion AI ML">
+        <div class="card-top">
+          <time datetime="2026-06-26">2026-06-26</time>
+          <span>8 selected papers</span>
+        </div>
+        <h2><a href="reports/2026-06-26.html">Jet-medium structure leads the day</a></h2>
+        <p>Strong ALICE jet-energy-flow data, sharper in-medium splitting calculations, track-function phenomenology, MUSES finite-density EoS tooling, and two focused ML-in-physics entries.</p>
+        <div class="tags">
+          <span>Experiment</span>
+          <span>Phenomenology</span>
+          <span>Theory</span>
+          <span>AI/ML</span>
+          <span>Caution: 1</span>
+        </div>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No reports match that filter.</p>
+  </main>
+  <script src="assets/filter.js"></script>
+</body>
+</html>
