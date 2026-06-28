@@ -1,0 +1,117 @@
+{
+  "date": "2026-06-28",
+  "source_window": "Latest available arXiv new listings shown for Friday 2026-06-26; run invoked Sunday 2026-06-28 America/Chicago, with no newer weekend announcement visible.",
+  "path": "reports/2026-06-28.html",
+  "summary": "The selected papers emphasize finite-density QCD equation-of-state workflows, baryon stopping through rapidity-even directed-flow splitting, lattice-benchmarked hot-QCD meson screening, and physics ML methods for interpretability, reinforcement-learning parameter search, and multimodal black-box optimization. The strongest heavy-ion contribution is the MUSES/Calliope workflow paper, while the most broadly transferable AI/ML contribution is the interpretability/explainability review. One small-system spectrum-fit paper is flagged for caution because its QGP and transport interpretation appears stronger than the evidence visible at abstract level.",
+  "keywords": [
+    "finite-density QCD",
+    "equation of state",
+    "Beam Energy Scan",
+    "baryon stopping",
+    "rapidity-even directed flow",
+    "hot-QCD screening masses",
+    "Dyson-Schwinger benchmarks",
+    "physics ML interpretability",
+    "reinforcement learning parameter scans",
+    "multimodal black-box optimization",
+    "small-system spectrum fits"
+  ],
+  "arxiv_ids": [
+    "2606.26326",
+    "2606.26245",
+    "2606.27156",
+    "2606.26251",
+    "2606.26228",
+    "2606.26164",
+    "2606.26301"
+  ],
+  "total_paper_count": 7,
+  "selected_paper_count": 6,
+  "caution_count": 1,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "AI/ML use cases in physics",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2606.26326, the MUSES/Calliope calculation-engine paper, appears strongest for heavy-ion work because it addresses finite-density equation-of-state construction, transport quantities, hydrodynamic input generation, and BES-energy demonstration workflows in a reusable framework.",
+  "papers": [
+    {
+      "title": "Studying the QCD Matter produced in Heavy-Ion Collisions using the MUSES Calculation Engine",
+      "authors_short": "Johannes Jahan, Kevin P. Pala, Yumu Yang, Isabella Danhoni, et al.",
+      "total_author_count": 44,
+      "arxiv_id": "2606.26326",
+      "url": "https://arxiv.org/abs/2606.26326",
+      "category": "Theory",
+      "abstract": "The paper presents the Calliope version of the MUSES Calculation Engine for hot and dense QCD matter, covering finite-density equations of state, strangeness and charge chemical potentials, thermodynamic derivatives, transport coefficients, EoS merging, inversion for hydrodynamic simulations, and BES-energy demonstrations.",
+      "tags": ["MUSES", "finite-density EoS", "critical point", "BES hydrodynamics", "transport coefficients"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Axial-Vector Lattice Benchmarks Reveal a Common Medium Response of Meson Screening in Hot QCD",
+      "authors_short": "Jie Ren, Chen Chen, Fei Gao, Si-xue Qin",
+      "total_author_count": 4,
+      "arxiv_id": "2606.26245",
+      "url": "https://arxiv.org/abs/2606.26245",
+      "category": "Theory",
+      "abstract": "The paper combines lattice-QCD benchmarks with a symmetry-preserving Dyson-Schwinger baseline for axial-vector and vector meson screening masses in hot QCD, then predicts light-charm and bottom-containing spectra.",
+      "tags": ["hot QCD", "screening masses", "lattice benchmarks", "Dyson-Schwinger", "meson correlations"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Rapidity-even directed flow splitting of protons and antiprotons as a probe of baryon stopping in relativistic heavy-ion collisions",
+      "authors_short": "Tribhuban Parida, Sandeep Chatterjee",
+      "total_author_count": 2,
+      "arxiv_id": "2606.27156",
+      "url": "https://arxiv.org/abs/2606.27156",
+      "category": "Phenomenology",
+      "abstract": "The paper uses 3+1D viscous hydrodynamics coupled to hadronic transport to show that rapidity-even directed-flow splitting between protons and antiprotons, especially the midrapidity curvature, can discriminate baryon-stopping profiles and baryon diffusion in BES-energy Au+Au collisions.",
+      "tags": ["baryon stopping", "directed flow", "BES", "baryon diffusion", "hydro plus transport"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Supercool with PPO: Exploring Supercooled Phase Transitions via Reinforcement Learning",
+      "authors_short": "Wan-Zhe Feng, Zong-Huan Ye, Zi-Hui Zhang",
+      "total_author_count": 3,
+      "arxiv_id": "2606.26251",
+      "url": "https://arxiv.org/abs/2606.26251",
+      "category": "AI/ML use",
+      "abstract": "The paper applies PPO reinforcement learning to locate detector-relevant gravitational-wave signals from supercooled phase transitions in a minimal dark U(1)x sector, comparing reward designs and PPO scans against Monte Carlo scans.",
+      "tags": ["PPO", "reinforcement learning", "phase transitions", "parameter scans", "gravitational waves"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Interpreting \"Interpretability\" and Explaining \"Explainability\" in Machine Learning in Physics",
+      "authors_short": "Rikab Gambhir, Luisa Lucie-Smith, Jesse Thaler",
+      "total_author_count": 3,
+      "arxiv_id": "2606.26228",
+      "url": "https://arxiv.org/abs/2606.26228",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The review distinguishes interpretability as structural transparency from explainability as mapping model behavior onto scientific domain knowledge, emphasizing task specification and intervention plans as core design choices for physics ML.",
+      "tags": ["interpretability", "explainability", "physics ML", "validation", "domain knowledge"],
+      "assessment": "strong"
+    },
+    {
+      "title": "CHISAO: A GPU-Native Parallel Optimizer for Multimodal Black-Box Functions via Convergence-Anticonvergence Oscillation",
+      "authors_short": "Ira Wolfson",
+      "total_author_count": 1,
+      "arxiv_id": "2606.26164",
+      "url": "https://arxiv.org/abs/2606.26164",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The paper proposes a GPU-native population optimizer for recovering all modes of multimodal black-box functions, reporting complete mode recovery on standard optimization benchmarks and robustness to synthetic likelihood noise.",
+      "tags": ["GPU optimizer", "multimodal objective", "Bayesian inference", "mode finding", "black-box scans"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Kinetic freeze-out and diffusion dynamics in small-system asymmetric collisions at sqrt(sNN)=200 GeV in light of a generalized Fokker-Planck distribution",
+      "authors_short": "M. Waqas, Wolfgang Bietenholz, Khusniddin K. Olimov, Muhammad Ajaz, Jihane Ben Slimane, et al.",
+      "arxiv_id": "2606.26301",
+      "url": "https://arxiv.org/abs/2606.26301",
+      "category": "Caution",
+      "abstract": "The paper fits neutral-pion pT spectra in p-Al, p-Au, d-Au, and He3-Au collisions with a generalized Fokker-Planck distribution and extracts effective temperatures, transition scales, and power-law exponents.",
+      "tags": ["small systems", "Fokker-Planck", "pion spectra", "PHENIX", "QGP claim"],
+      "assessment": "caution"
+    }
+  ]
+}
