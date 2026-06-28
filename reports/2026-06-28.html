@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-06-28</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-06-28 briefing</h1>
+    <p class="dek">Latest available arXiv new-listing scan, centered on the Friday 2026-06-26 announcement batch because no newer weekend announcement was available. Selected papers emphasize finite-density QCD workflows, baryon-stopping observables, hot-QCD screening, and physics ML methods with credible HEP or nuclear-physics transfer value.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion item is the MUSES/Calliope workflow paper: it is not a single new observable, but it directly addresses a bottleneck in finite-density equation-of-state propagation into BES hydrodynamics.</li>
+        <li>The baryon-stopping paper is compact but potentially useful: rapidity-even proton-antiproton directed-flow splitting, especially its midrapidity curvature, is framed as a measurable discriminator of baryon deposition profiles and diffusion strength.</li>
+        <li>The hot-QCD meson-screening work is scientifically interesting because it tests a Dyson-Schwinger response against lattice-QCD benchmarks rather than relying only on model-internal agreement.</li>
+        <li>For AI/ML, the interpretability/explainability review is the most broadly useful for HEP workflows: it sharpens validation language around when an ML model is scientifically explainable rather than merely transparent.</li>
+        <li>The PPO phase-transition search and GPU multimodal optimizer are plausible tools for expensive HEP scans, but both need domain-specific stress tests before being trusted in heavy-ion calibration, Bayesian posterior exploration, or rare-signal searches.</li>
+        <li>The small-system Fokker-Planck spectrum-fit paper is worth caution: fitting pion spectra across systems may be useful phenomenology, but the abstract appears to make a strong QGP/transport inference from limited observables.</li>
+      </ul>
+    </section>
+
+    <section id="heavy-ion">
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2606.26326 MUSES Calliope QCD matter heavy-ion equation of state finite baryon chemical potential critical point hydrodynamics BES transport coefficients theory strong">
+        <div class="paper-head"><h4>Studying the QCD Matter produced in Heavy-Ion Collisions using the MUSES Calculation Engine</h4><span class="label strong">strong</span></div>
+        <p class="meta">Johannes Jahan, Kevin P. Pala, Yumu Yang, Isabella Danhoni, et al. (44 authors, MUSES Collaboration) - <a href="https://arxiv.org/abs/2606.26326">arXiv:2606.26326</a></p>
+        <p><strong>Abstract-level summary:</strong> The paper presents the Calliope version of the MUSES Calculation Engine for finite-temperature and finite-density QCD matter. It covers multiple equations of state, extensions from T and &mu;B to strangeness and charge chemical potentials, thermodynamic derivatives, transport-coefficient modules, equation-of-state merging, inversion for hydrodynamics, and demonstration simulations at sqrt(sNN)=7.7, 19.6, and 39 GeV.</p>
+        <p><strong>Why it matters:</strong> Finite-density equation-of-state handling is a central systematic in Beam Energy Scan modeling, especially for critical-point and baryon-rich scenarios. A modular, reproducible workflow connecting EoS construction to hydrodynamic inputs could materially improve model comparison and uncertainty accounting.</p>
+        <p><strong>Critical assessment:</strong> Strong relevance and broad infrastructure value. The main limitation is that the code repositories are stated to become public upon journal publication, so reproducibility is not yet fully inspectable from the abstract page alone.</p>
+      </article>
+
+      <article class="paper" data-search="2606.26245 hot QCD meson screening masses lattice benchmarks Dyson-Schwinger axial-vector vector chiral partners theory phenomenology mixed">
+        <div class="paper-head"><h4>Axial-Vector Lattice Benchmarks Reveal a Common Medium Response of Meson Screening in Hot QCD</h4><span class="label mixed">strong/mixed</span></div>
+        <p class="meta">Jie Ren, Chen Chen, Fei Gao, Si-xue Qin - <a href="https://arxiv.org/abs/2606.26245">arXiv:2606.26245</a></p>
+        <p><strong>Abstract-level summary:</strong> The work combines lattice-QCD screening-mass benchmarks with a symmetry-preserving Dyson-Schwinger baseline to model hot-QCD medium response in axial-vector channels. It uses one axial-vector point to set the response and tests remaining axial-vector plus vector screening data without additional input, then predicts light-charm and bottom-containing spectra.</p>
+        <p><strong>Why it matters:</strong> Screening masses are one of the cleaner finite-temperature probes of hadronic correlation dissolution, so a benchmarked continuum framework is relevant to QGP structure and thermal spectral modeling.</p>
+        <p><strong>Critical assessment:</strong> Interesting and better anchored than many model papers because it explicitly uses lattice benchmarks and out-of-input validation. Still, the predictive reach to heavy flavors depends on model assumptions that need careful comparison against future lattice and phenomenological constraints.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2606.27156 baryon stopping rapidity-even directed flow proton antiproton splitting BES hydrodynamics hadronic transport baryon diffusion phenomenology strong">
+        <div class="paper-head"><h4>Rapidity-even directed flow splitting of protons and antiprotons as a probe of baryon stopping in relativistic heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tribhuban Parida, Sandeep Chatterjee - <a href="https://arxiv.org/abs/2606.27156">arXiv:2606.27156</a></p>
+        <p><strong>Abstract-level summary:</strong> The authors use a 3+1D viscous hydrodynamics plus hadronic transport framework for Au+Au collisions at BES energies. They argue that rapidity-even directed-flow splitting between protons and antiprotons, particularly the midrapidity curvature of the difference, is sensitive to rapidity extension in baryon deposition associated with double-junction baryon stopping.</p>
+        <p><strong>Why it matters:</strong> Baryon stopping remains a limiting uncertainty for low-energy heavy-ion modeling. The proposed observable connects directly to measurable flow systematics and could help separate initial baryon deposition from baryon diffusion.</p>
+        <p><strong>Critical assessment:</strong> High relevance and a clearly targeted observable. The short format means the robustness will depend on how fully model-systematic uncertainties are explored in the body of the paper.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental measurement from the latest available listing passed the selectivity threshold. The nucl-ex new submission on tin half-lives is competent nuclear data work, but it is not heavy-ion collision physics.</p>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2606.26251 PPO reinforcement learning supercooled phase transitions gravitational waves high-dimensional parameter scans HEP phenomenology AI ML mixed">
+        <div class="paper-head"><h4>Supercool with PPO: Exploring Supercooled Phase Transitions via Reinforcement Learning</h4><span class="label mixed">mixed/transferable</span></div>
+        <p class="meta">Wan-Zhe Feng, Zong-Huan Ye, Zi-Hui Zhang - <a href="https://arxiv.org/abs/2606.26251">arXiv:2606.26251</a></p>
+        <p><strong>Short summary:</strong> This paper uses Proximal Policy Optimization to target detector-relevant gravitational-wave signals from supercooled phase transitions in a minimal dark U(1)x sector. It compares reward designs and PPO scans against Monte Carlo scans over model-parameter windows.</p>
+        <p><strong>Likely use case:</strong> Goal-directed exploration of expensive HEP parameter spaces, especially where viable regions are sparse and defined by several phenomenological constraints.</p>
+        <p><strong>Critical assessment:</strong> Useful as a workflow demonstration, but transfer to heavy-ion Bayesian calibration or QCD phase-diagram scans would require conservative benchmarking against active learning, Bayesian optimization, nested sampling, and uncertainty-aware acquisition functions.</p>
+      </article>
+    </section>
+
+    <section id="ai-physics">
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2606.26228 interpretability explainability machine learning physics VERaiPHY HEP validation domain knowledge intervention plans strong transferable">
+        <div class="paper-head"><h4>Interpreting "Interpretability" and Explaining "Explainability" in Machine Learning in Physics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Rikab Gambhir, Luisa Lucie-Smith, Jesse Thaler - <a href="https://arxiv.org/abs/2606.26228">arXiv:2606.26228</a></p>
+        <p><strong>Method and result:</strong> This is a conceptual review distinguishing interpretability as model-structure transparency from explainability as mapping model behavior onto scientific domain knowledge. It argues that both are deliberate modeling choices, with task specification and intervention plans treated as core design elements.</p>
+        <p><strong>Likely use case:</strong> HEP and heavy-ion ML analyses can use this framing for jet tagging, unfolding, anomaly detection, detector calibration, and simulation surrogates, where the key question is often not only whether the model works but what scientific claim the model supports.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value because it addresses recurring failure modes in physics ML: post-hoc explanations without intervention tests, unclear task definitions, and conflating transparent architecture with scientific explanation.</p>
+      </article>
+
+      <article class="paper" data-search="2606.26164 GPU-native multimodal black-box optimizer Bayesian inference mode finding likelihood scans HEP nuclear physics AI ML caution mixed">
+        <div class="paper-head"><h4>CHISAO: A GPU-Native Parallel Optimizer for Multimodal Black-Box Functions via Convergence-Anticonvergence Oscillation</h4><span class="label mixed">mixed/transferable</span></div>
+        <p class="meta">Ira Wolfson - <a href="https://arxiv.org/abs/2606.26164">arXiv:2606.26164</a></p>
+        <p><strong>Method and result:</strong> The paper introduces a GPU-native population optimizer designed to recover all modes of multimodal black-box functions. On 42 standard optimization benchmarks, it reports complete mode recovery where several CPU baselines fail at higher dimension, with substantial speedups in successful cases and robustness to synthetic likelihood noise.</p>
+        <p><strong>Likely use case:</strong> Potentially relevant to multimodal likelihood scans, emulator tuning, nuisance-parameter profiling, and posterior mode discovery in HEP or nuclear theory calibration.</p>
+        <p><strong>Critical assessment:</strong> Promising but not yet physics-validated. Standard synthetic benchmarks do not establish reliability on constrained, expensive, correlated, or simulator-noisy physics objectives, so this should be treated as a tool to test rather than a proven replacement for established samplers.</p>
+      </article>
+    </section>
+
+    <section id="cautions">
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2606.26301 caution small-system asymmetric collisions Fokker-Planck pion spectra PHENIX QGP transport freeze-out overclaim">
+        <div class="paper-head"><h4>Kinetic freeze-out and diffusion dynamics in small-system asymmetric collisions at sqrt(sNN)=200 GeV in light of a generalized Fokker-Planck distribution</h4><span class="label caution">caution</span></div>
+        <p class="meta">M. Waqas, Wolfgang Bietenholz, Khusniddin K. Olimov, Muhammad Ajaz, Jihane Ben Slimane, et al. - <a href="https://arxiv.org/abs/2606.26301">arXiv:2606.26301</a></p>
+        <p><strong>Why caution:</strong> The paper fits neutral-pion pT spectra in small asymmetric systems and extracts effective temperature, transition scales, and diffusion/drag-like exponents. That can be useful phenomenology, but the abstract appears to infer detailed transport properties and QGP production in small systems from a limited spectral-fitting framework. Without strong baseline comparisons, uncertainty propagation, and non-QGP alternative tests, the scientific claim looks stronger than the evidence advertised in the abstract.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
