@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-06-29</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-06-29 Briefing</h1>
+    <p class="dek">Selective review of recent arXiv papers relevant to heavy-ion collision physics, QCD matter, collider/nuclear phenomenology, and AI/ML methods with credible HEP or nuclear-physics transfer value.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>QCD phase-structure papers dominated the heavy-ion-relevant theory stream: one maps a proposed critical surface in full chemical-potential space, while another performs a substantial lattice study of three-flavor QCD with Mobius domain-wall fermions.</li>
+        <li>The ALICE pp femtoscopy measurement is experimentally strong and directly useful for small-system and hadron-interaction analyses, especially because it tests multiplicity and transverse-mass dependence with upgraded-detector data.</li>
+        <li>AI/ML work was strongest where the learning model is tied to physics structure: symmetry-informed nuclear mass models, neural-network TMD extraction, and collider spectral-function event representations.</li>
+        <li>Several ML papers have transfer value but should not be over-read: the quantum generative calorimeter study is detector-relevant but still a specialized validation, while the PINN inverse-problem work is methodologically relevant but not yet HEP-specific.</li>
+        <li>A hidden-charm pentaquark sum-rule paper carried an arXiv text-overlap note; given the target scope and overlap flag, it is worth caution rather than prioritization today.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2606.28282 QCD critical surface constant entropy contours critical point chemical potentials strangeness neutrality heavy-ion neutron star mergers theory strong">
+        <div class="paper-head"><h4>QCD critical surface from constant entropy contours</h4><span class="label strong">strong</span></div>
+        <p class="meta">Hitansh Shah, Tristan Gyure, Anabella Leon, Francesco Di Clemente, Mauricio Hippert, Claudia Ratti, Volodymyr Vovchenko. <a href="https://arxiv.org/abs/2606.28282">arXiv:2606.28282</a></p>
+        <p>The paper extends a constant-entropy construction of the QCD critical point into the full (T, mu_B, mu_Q, mu_S) chemical-potential space. Its headline result is that the heavy-ion-relevant strangeness-neutral direction shifts the critical baryochemical potential upward by roughly 40-100 MeV while leaving the critical temperature nearly unchanged.</p>
+        <p><strong>Why it matters:</strong> This is directly relevant for mapping BES-style trajectories and for translating critical-point estimates into experimentally constrained conserved-charge conditions.</p>
+        <p><strong>Critical assessment:</strong> Strong and timely, but the expansion is truncated at O(mu^2), so the claimed critical surface should be treated as a controlled model construction rather than a definitive lattice result at large chemical potential.</p>
+      </article>
+
+      <article class="paper" data-search="2606.28086 QCD phase diagram three flavor Mobius domain-wall fermions lattice chiral symmetry crossover theory strong">
+        <div class="paper-head"><h4>The QCD phase diagram for three-flavor Mobius domain-wall fermions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yu Zhang, Yasumichi Aoki, Jishnu Goswami, Shoji Hashimoto, Issaku Kanamori, Takashi Kaneko, Yoshifumi Nakamura. <a href="https://arxiv.org/abs/2606.28086">arXiv:2606.28086</a></p>
+        <p>This 53-page lattice-QCD study investigates the three-degenerate-flavor transition at zero baryon chemical potential using Mobius domain-wall fermions, emphasizing chiral-symmetry preservation. The authors scan quark masses, volumes, and temporal extents and find finite-size behavior consistent with crossover at the studied mass points.</p>
+        <p><strong>Why it matters:</strong> Better-controlled chiral fermions sharpen the connection between lattice phase-structure results and the QCD-matter baselines used in heavy-ion phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Methodologically solid and substantial. The scope is still zero mu_B and specific lattice spacings/volumes, so the main value is as a phase-structure benchmark, not an immediate phenomenological input for finite-density heavy-ion trajectories.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2606.28098 ALICE femtoscopy pp collisions source radii multiplicity transverse mass LHC small systems experiment strong">
+        <div class="paper-head"><h4>Multiplicity dependence of the size of the common hadron emission source in pp collisions at the LHC</h4><span class="label strong">strong</span></div>
+        <p class="meta">ALICE Collaboration. <a href="https://arxiv.org/abs/2606.28098">arXiv:2606.28098</a></p>
+        <p>ALICE reports proton-proton correlation measurements in 13.6 TeV pp collisions using the 2022 upgraded-detector data set, corresponding to 19.3 pb^-1. The work extracts source radii versus multiplicity and transverse mass and tests robustness against several modern nucleon-nucleon interaction models.</p>
+        <p><strong>Why it matters:</strong> Femtoscopic source sizes in pp are an essential baseline for residual strong-interaction measurements and for comparing small systems with Pb-Pb emission dynamics.</p>
+        <p><strong>Critical assessment:</strong> Strong experimental contribution. The comparison to Pb-Pb reveals meaningful system-size dependence, although interpretation will still depend on how models separate source geometry, dynamics, and final-state interaction assumptions.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2606.27910 antideuteron production beauty hadron decays coalescence ALICE dark matter phenomenology mixed">
+        <div class="paper-head"><h4>Antideuteron production from beauty-hadron decays: a first phenomenological study</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Marta Razza, Nicolo Jacazio, Francesca Bellini. <a href="https://arxiv.org/abs/2606.27910">arXiv:2606.27910</a></p>
+        <p>The authors estimate antideuteron production from anti-Lambda_b and B- decays using PYTHIA kinematics and a quantum-mechanical coalescence model based on an Argonne v18 antideuteron wave function. The predicted yields fall in a kinematic region accessible to ALICE.</p>
+        <p><strong>Why it matters:</strong> It links collider antinucleus production, coalescence modeling, and indirect-dark-matter backgrounds, with a concrete experimental target.</p>
+        <p><strong>Critical assessment:</strong> Useful and well-motivated as a first benchmark, but uncertainty is dominated by hadronization and coalescence modeling choices. Treat the branching-ratio ranges as targets for measurement, not settled predictions.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2606.28287 interpretable neural networks nuclear masses SU4 SU3 symmetry uncertainty quantification nuclear theory AI ML strong">
+        <div class="paper-head"><h4>Bridging Ab Initio Symmetries and Global Nuclear Masses with Interpretable Neural Networks</h4><span class="label strong">strong</span></div>
+        <p class="meta">Phong Dang, Evander Espinoza, Xiaoliang Wan, Michela Negro, Jerry P. Draayer, Feng Pan, Tomas Dytrych, Daniel Langr, David Kekejian. <a href="https://arxiv.org/abs/2606.28287">arXiv:2606.28287</a></p>
+        <p>The paper builds neural-network and compact mass-formula models from SU(3) and SU(4) Casimir operators, training on AME2016 and validating on nuclei new to AME2020. The compact Wigner-informed model reports a 0.430 MeV validation RMSE and highlights possible symmetry behavior near the neutron dripline and superheavy region.</p>
+        <p><strong>Likely use case:</strong> Interpretable surrogate modeling for nuclear masses, extrapolation diagnostics, and physics-constrained uncertainty estimates in nuclear-structure workflows.</p>
+        <p><strong>Critical assessment:</strong> Strong because the ML representation is anchored in explicit nuclear symmetries rather than generic feature fitting. The most speculative interpretive claims, especially symmetry restoration/global governance, deserve follow-up against broader baselines and uncertainty decompositions.</p>
+      </article>
+
+      <article class="paper" data-search="2606.28218 neural network TMD extraction SIDIS Drell-Yan N3LL model dependence EIC HEP AI ML mixed">
+        <div class="paper-head"><h4>Neural-Network extraction of TMDs with SIDIS data</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Matteo Cerutti. <a href="https://arxiv.org/abs/2606.28218">arXiv:2606.28218</a></p>
+        <p>This proceedings paper reports a first global unpolarized TMD extraction with neural-network parametrization using DY and SIDIS data at N^3LL accuracy. Including SIDIS broadens extracted TMD PDFs relative to DY-only fits and reduces uncertainties, though uncertainties remain larger than traditional model fits.</p>
+        <p><strong>Likely use case:</strong> Flexible, lower-bias TMD inference for EIC and JLab phenomenology, with a workflow that can transfer to nuclear-modified TMD studies.</p>
+        <p><strong>Critical assessment:</strong> Promising but thin as a 5-page proceedings contribution. The scientific weight depends on the full analysis details, baseline comparisons, and uncertainty methodology beyond the abstract-level summary.</p>
+      </article>
+
+      <article class="paper" data-search="2606.27420 machine learning fully hadronic events spectral functions collider jets gluino top background HEP experiment AI ML strong">
+        <div class="paper-head"><h4>Machine learning fully hadronic events with spectral functions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Mohammad Mahdi Altakach, Hadi Hassan, Sabine Kraml, Kazuki Sakurai, Haitham Zaraket. <a href="https://arxiv.org/abs/2606.27420">arXiv:2606.27420</a></p>
+        <p>The paper proposes two-point correlation spectral functions as fixed-length ML inputs for variable-multiplicity fully hadronic collider events. In a gluino-pair benchmark against fully hadronic ttbar, the method improves projected reach relative to both a recent ATLAS analysis and a kinematics-only dense network.</p>
+        <p><strong>Likely use case:</strong> Permutation-safe, radiation-tolerant event representations for HEP searches; potentially useful for jet-substructure and high-multiplicity heavy-ion jet studies where variable object counts are a persistent nuisance.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value because the representation encodes collider symmetries and variable multiplicity explicitly. The main caveat is benchmark specificity; robustness under detector effects, pileup/underlying event, and domain shifts needs broader testing.</p>
+      </article>
+
+      <article class="paper" data-search="2606.28236 qudit IQP quantum generative machine learning calorimeter CLIC integer data detector simulation HEP AI ML mixed">
+        <div class="paper-head"><h4>Qudit extension of parameterized IQP circuits: A generative quantum machine learning approach to integer data</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Robert J. Banks, Arianna Crippa, Matthias Traube, Josua Unger, Christian Ertler, Wolfgang Lechner. <a href="https://arxiv.org/abs/2606.28236">arXiv:2606.28236</a></p>
+        <p>The authors extend parameterized IQP circuits toward integer-valued non-binary data and validate the generative model on single-particle electron-shower energy deposits in the CLIC electromagnetic calorimeter. The aim is to preserve metric structure that can be damaged by binary encodings.</p>
+        <p><strong>Likely use case:</strong> Detector-simulation compression or generative modeling for calorimeter-like integer/quantized data, if quantum generative models become practically competitive.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but not yet a strong practical HEP-ML result. The validation is detector-relevant, yet the case for advantage over strong classical generative baselines remains the key missing discriminator.</p>
+      </article>
+
+      <article class="paper" data-search="2606.28158 PINN inverse problem Calderon finite data Fourier features sharp interfaces uncertainty transfer HEP nuclear AI ML mixed">
+        <div class="paper-head"><h4>Recovering Sharp Conductivity Features in the Finite-Data Calderon Problem with Physics-Informed Neural Networks</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ali AlHadi Kalout, Pablo Tejerina-Perez, Konstantin Karchev, Pedro Tarancon-Alvarez, Leonid Sarieddine, Raul Jimenez, Max Engelstein, Guy David. <a href="https://arxiv.org/abs/2606.28158">arXiv:2606.28158</a></p>
+        <p>This PINN paper studies finite-data inverse reconstruction with multiscale boundary excitations and Fourier-feature encodings, reporting roughly 3-12 percent relative errors on synthetic conductivity fields with inclusions, interfaces, and smooth profiles.</p>
+        <p><strong>Likely use case:</strong> Transferable ideas for PDE-constrained inverse problems in detector calibration, tomography-like reconstruction, and simulation-constrained inference in nuclear/HEP contexts.</p>
+        <p><strong>Critical assessment:</strong> Methodologically relevant but indirect. The synthetic finite-difference setting is useful for controlled validation, but HEP transfer would require realistic noise, model mismatch, and comparison to established inverse-problem solvers.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2606.28095 caution hidden-charm pentaquark QCD sum rules text overlap admin note">
+        <div class="paper-head"><h4>Analysis of the hidden-charm pentaquark candidates in the J/psi Xi* mass spectrum via the QCD sum rules</h4><span class="label caution">caution</span></div>
+        <p class="meta">Zhi-Gang Wang. <a href="https://arxiv.org/abs/2606.28095">arXiv:2606.28095</a></p>
+        <p>The title may look relevant to hadron spectroscopy, but it is not central to today's heavy-ion or physics-ML scope, and the arXiv listing carries an admin note for text overlap with three earlier arXiv papers. I would not prioritize it without a specific spectroscopy need and a careful comparison to the overlapping works.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
