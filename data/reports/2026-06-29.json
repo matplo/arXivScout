@@ -1,0 +1,153 @@
+{
+  "date": "2026-06-29",
+  "path": "reports/2026-06-29.html",
+  "summary": "Recent heavy-ion-relevant arXiv activity centered on QCD phase structure, small-system femtoscopy, antinucleus coalescence phenomenology, and physics-aware AI/ML. The strongest scientific signals were a chemically extended critical-surface construction, a lattice benchmark of three-flavor QCD with Mobius domain-wall fermions, and ALICE pp femtoscopy with upgraded-detector data. The most transferable ML papers used physics structure explicitly: symmetry-informed nuclear mass models, neural-network TMD extraction, spectral-function collider event representations, and detector-oriented generative modeling.",
+  "keywords": [
+    "QCD critical surface",
+    "constant entropy contours",
+    "three-flavor lattice QCD",
+    "Mobius domain-wall fermions",
+    "ALICE femtoscopy",
+    "small-system source radii",
+    "antideuteron coalescence",
+    "interpretable nuclear ML",
+    "neural-network TMD extraction",
+    "spectral-function collider ML",
+    "quantum generative calorimeter modeling",
+    "PINN inverse problems"
+  ],
+  "arxiv_ids": [
+    "2606.28282",
+    "2606.28086",
+    "2606.28098",
+    "2606.27910",
+    "2606.28287",
+    "2606.28218",
+    "2606.27420",
+    "2606.28236",
+    "2606.28158",
+    "2606.28095"
+  ],
+  "total_paper_count": 10,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "The most compelling set combines arXiv:2606.28282 for finite-density QCD critical-surface mapping, arXiv:2606.28098 for ALICE femtoscopy source-size measurements, and arXiv:2606.28287 for physics-constrained interpretable nuclear mass modeling.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "QCD critical surface from constant entropy contours",
+      "authors": "Hitansh Shah, Tristan Gyure, Anabella Leon, Francesco Di Clemente, Mauricio Hippert, Claudia Ratti, Volodymyr Vovchenko",
+      "author_count": 7,
+      "arxiv_id": "2606.28282",
+      "url": "https://arxiv.org/abs/2606.28282",
+      "category": "Theory",
+      "abstract": "Maps a proposed QCD critical surface in full (T, mu_B, mu_Q, mu_S) space using an expansion along constant-entropy contours. Finds a heavy-ion-relevant strangeness-neutral shift of the critical baryochemical potential by roughly 40-100 MeV with little change in critical temperature.",
+      "tags": ["QCD critical point", "chemical potentials", "strangeness neutrality", "BES relevance"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The QCD phase diagram for three-flavor Mobius domain-wall fermions",
+      "authors": "Yu Zhang, Yasumichi Aoki, Jishnu Goswami, Shoji Hashimoto, Issaku Kanamori, Takashi Kaneko, Yoshifumi Nakamura",
+      "author_count": 7,
+      "arxiv_id": "2606.28086",
+      "url": "https://arxiv.org/abs/2606.28086",
+      "category": "Theory",
+      "abstract": "Lattice-QCD study of the three-degenerate-flavor transition at zero baryon chemical potential using Mobius domain-wall fermions. Finite-size behavior at the studied mass points is consistent with crossover rather than first- or second-order transition.",
+      "tags": ["lattice QCD", "phase diagram", "chiral symmetry", "domain-wall fermions"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Multiplicity dependence of the size of the common hadron emission source in pp collisions at the LHC",
+      "authors": "ALICE Collaboration",
+      "author_count": null,
+      "arxiv_id": "2606.28098",
+      "url": "https://arxiv.org/abs/2606.28098",
+      "category": "Experiment",
+      "abstract": "ALICE measures proton-proton correlations in 13.6 TeV pp collisions using 2022 upgraded-detector data. The analysis extracts femtoscopic source radii versus multiplicity and transverse mass and compares pp behavior with Pb-Pb source-radius trends.",
+      "tags": ["ALICE", "femtoscopy", "pp collisions", "source radii", "small systems"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Antideuteron production from beauty-hadron decays: a first phenomenological study",
+      "authors": "Marta Razza, Nicolo Jacazio, Francesca Bellini",
+      "author_count": 3,
+      "arxiv_id": "2606.27910",
+      "url": "https://arxiv.org/abs/2606.27910",
+      "category": "Phenomenology",
+      "abstract": "Estimates antideuteron production from anti-Lambda_b and B- decays using PYTHIA and quantum-mechanical coalescence with an Argonne-v18 wave function. Provides first branching-ratio ranges and ALICE-accessible yield targets.",
+      "tags": ["antideuteron", "beauty decays", "coalescence", "ALICE", "dark matter backgrounds"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Bridging Ab Initio Symmetries and Global Nuclear Masses with Interpretable Neural Networks",
+      "authors": "Phong Dang, Evander Espinoza, Xiaoliang Wan, Michela Negro, Jerry P. Draayer, Feng Pan, Tomas Dytrych, Daniel Langr, David Kekejian",
+      "author_count": 9,
+      "arxiv_id": "2606.28287",
+      "url": "https://arxiv.org/abs/2606.28287",
+      "category": "AI/ML use",
+      "abstract": "Constructs neural-network and compact nuclear-mass models from SU(3) and SU(4) Casimir operators. Trained on AME2016 and validated on AME2020-new nuclei, with a compact Wigner-informed model reporting 0.430 MeV validation RMSE.",
+      "tags": ["interpretable ML", "nuclear masses", "SU(4)", "SU(3)", "uncertainty quantification"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural-Network extraction of TMDs with SIDIS data",
+      "authors": "Matteo Cerutti",
+      "author_count": 1,
+      "arxiv_id": "2606.28218",
+      "url": "https://arxiv.org/abs/2606.28218",
+      "category": "AI/ML use",
+      "abstract": "Reports a neural-network unpolarized TMD extraction combining Drell-Yan and SIDIS data at N^3LL accuracy. Including SIDIS broadens extracted TMD PDFs and reduces uncertainties relative to DY-only fits.",
+      "tags": ["TMD extraction", "SIDIS", "Drell-Yan", "EIC", "neural parametrization"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Machine learning fully hadronic events with spectral functions",
+      "authors": "Mohammad Mahdi Altakach, Hadi Hassan, Sabine Kraml, Kazuki Sakurai, Haitham Zaraket",
+      "author_count": 5,
+      "arxiv_id": "2606.27420",
+      "url": "https://arxiv.org/abs/2606.27420",
+      "category": "AI/ML use",
+      "abstract": "Uses two-point correlation spectral functions as fixed-length, permutation-safe features for variable-multiplicity fully hadronic events. In a gluino benchmark, the method improves projected mass reach versus an ATLAS analysis and kinematics-only neural network.",
+      "tags": ["collider ML", "spectral functions", "fully hadronic events", "jet multiplicity", "searches"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Qudit extension of parameterized IQP circuits: A generative quantum machine learning approach to integer data",
+      "authors": "Robert J. Banks, Arianna Crippa, Matthias Traube, Josua Unger, Christian Ertler, Wolfgang Lechner",
+      "author_count": 6,
+      "arxiv_id": "2606.28236",
+      "url": "https://arxiv.org/abs/2606.28236",
+      "category": "AI/ML use",
+      "abstract": "Extends parameterized IQP circuits toward integer-valued non-binary data and validates on CLIC electromagnetic-calorimeter electron-shower deposits. The method aims to preserve metric structure lost in binary encodings.",
+      "tags": ["quantum generative ML", "calorimeter simulation", "integer data", "CLIC"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Recovering Sharp Conductivity Features in the Finite-Data Calderon Problem with Physics-Informed Neural Networks",
+      "authors": "Ali AlHadi Kalout, Pablo Tejerina-Perez, Konstantin Karchev, Pedro Tarancon-Alvarez, Leonid Sarieddine, Raul Jimenez, Max Engelstein, Guy David",
+      "author_count": 8,
+      "arxiv_id": "2606.28158",
+      "url": "https://arxiv.org/abs/2606.28158",
+      "category": "AI/ML use",
+      "abstract": "Studies PINN-based finite-data inverse reconstruction with multiscale boundary excitations and Fourier-feature encodings. Reports synthetic reconstruction errors of roughly 3-12 percent across sharp and smooth conductivity fields.",
+      "tags": ["PINNs", "inverse problems", "Fourier features", "PDE constraints", "synthetic validation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Analysis of the hidden-charm pentaquark candidates in the J/psi Xi* mass spectrum via the QCD sum rules",
+      "authors": "Zhi-Gang Wang",
+      "author_count": 1,
+      "arxiv_id": "2606.28095",
+      "url": "https://arxiv.org/abs/2606.28095",
+      "category": "Caution",
+      "abstract": "Hadron-spectroscopy paper flagged on the arXiv listing with an admin note for text overlap with earlier arXiv papers. Not central to today's heavy-ion or AI/ML target scope.",
+      "tags": ["caution", "text overlap", "pentaquark", "QCD sum rules"],
+      "assessment": "caution"
+    }
+  ]
+}
