@@ -1,0 +1,134 @@
+{
+  "date": "2026-06-30",
+  "path": "reports/2026-06-30.html",
+  "summary": "The June 30 selection emphasizes heavy-ion phenomenology for spin-alignment systematics, p-Pb heavy-flavor collectivity, high-density nuclear equation-of-state constraints, quarkonium perturbative baselines, and physics-aware ML methods for nuclear structure, HEP density morphing, PDE emulation, and detector-device simulation.",
+  "keywords": [
+    "hadronic rescattering",
+    "K*0 spin alignment",
+    "high-density nuclear EoS",
+    "p-Pb D-meson flow",
+    "quarkonium NNLO QCD",
+    "physics-guaranteed neural networks",
+    "density morphing",
+    "normalizing flows",
+    "parametric PDE surrogates",
+    "conformal uncertainty quantification",
+    "TCAD graph diffusion"
+  ],
+  "arxiv_ids": [
+    "2606.29588",
+    "2606.30154",
+    "2606.28928",
+    "2606.28494",
+    "2606.29187",
+    "2606.30326",
+    "2606.30489",
+    "2606.29440",
+    "2606.29272"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use"],
+  "strongest_paper_summary": "The K*0 rescattering paper is the most directly actionable heavy-ion study because it identifies a concrete mechanism by which hadronic rescattering can generate apparent vector-meson spin-alignment signals even without intrinsic polarization.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Nuclear equation-of-state at high density and multi-messenger astronomy: contribution of heavy-ion collisions",
+      "authors_short": "A. Le Fevre",
+      "author_count": 1,
+      "arxiv_id": "2606.29588",
+      "url": "https://arxiv.org/abs/2606.29588",
+      "category": "Theory",
+      "abstract": "Review of how intermediate-energy heavy-ion collision observables, especially flow, constrain the high-density nuclear equation of state and connect to neutron-star pressure constraints from multi-messenger astronomy.",
+      "tags": ["high-density EoS", "flow observables", "transport uncertainty", "neutron stars"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Anisotropic hadronic rescattering and its impact on K*0 yield, and polarization observable",
+      "authors_short": "Kadambini Menduli; Md. Nasim",
+      "author_count": 2,
+      "arxiv_id": "2606.30154",
+      "url": "https://arxiv.org/abs/2606.30154",
+      "category": "Phenomenology",
+      "abstract": "AMPT study showing that anisotropic daughter rescattering can distort reconstructed K*0 yields and generate apparent rho00 spin-alignment deviations even for unpolarized input samples.",
+      "tags": ["K*0", "hadronic rescattering", "spin alignment", "rho00", "AMPT"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Investigating forward-backward asymmetry in D-meson production and anisotropic flow in p-Pb collisions at the LHC",
+      "authors_short": "Siyu Tang; Chao Zhang; Liang Zheng; Renzhuo Wan; Zi-Wei Lin; Guo-Liang Ma",
+      "author_count": 6,
+      "arxiv_id": "2606.28928",
+      "url": "https://arxiv.org/abs/2606.28928",
+      "category": "Phenomenology",
+      "abstract": "Heavy-flavor-improved string-melting AMPT study of prompt D0 RpPb and v2 forward-backward asymmetries in p-Pb collisions at 8.16 TeV.",
+      "tags": ["D mesons", "p-Pb", "RpPb", "v2", "small systems"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Soft Contributions Stabilize NNLO QCD Corrections to Quarkonium Production and Decay",
+      "authors_short": "Luca Maxia; Hua-Sheng Shao; Lukas Simon; Guoxing Wang",
+      "author_count": 4,
+      "arxiv_id": "2606.28494",
+      "url": "https://arxiv.org/abs/2606.28494",
+      "category": "Phenomenology",
+      "abstract": "Identifies the soft-contribution origin of perturbative instabilities in NNLO NRQCD quarkonium production and decay and proposes a stabilization method for S-wave color-singlet processes.",
+      "tags": ["quarkonium", "NNLO QCD", "NRQCD", "baseline calculations"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Revisiting identified-particle pT spectra using the Boltzmann-Gibbs blast-wave model in a Bayesian inference framework",
+      "authors_short": "Z. Xie; W.Z. Li; J.Q. Tao; H. Zheng; W.C. Zhang; and 5 others",
+      "author_count": 10,
+      "arxiv_id": "2606.29187",
+      "url": "https://arxiv.org/abs/2606.29187",
+      "category": "Phenomenology",
+      "abstract": "Bayesian BGBW analysis of pion, kaon, and proton pT spectra in Au+Au and Pb+Pb, emphasizing simultaneous fits without species-dependent pT ranges and posterior correlations for kinetic freeze-out parameters.",
+      "tags": ["BGBW", "Bayesian inference", "identified spectra", "freeze-out", "model bias"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Construction of Nuclear Covariant Energy Density Functional from A Physics-Guaranteed Neural Network Approach",
+      "authors_short": "W. F. Li; Z. M. Niu; H. Z. Liang; Y. F. Niu; B. H. Sun",
+      "author_count": 5,
+      "arxiv_id": "2606.30326",
+      "url": "https://arxiv.org/abs/2606.30326",
+      "category": "AI/ML use",
+      "abstract": "Physics-guaranteed neural-network construction of a nuclear covariant energy density functional, reporting improved binding-energy accuracy and extrapolation behavior relative to traditional ML approaches.",
+      "tags": ["nuclear EDF", "physics-constrained ML", "binding energies", "extrapolation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Factorizable Normalizing Flows for parameter-dependent density morphing",
+      "authors_short": "Davide Valsecchi; Mauro Donega; Rainer Wallny",
+      "author_count": 3,
+      "arxiv_id": "2606.30489",
+      "url": "https://arxiv.org/abs/2606.30489",
+      "category": "AI/ML use",
+      "abstract": "Normalizing-flow framework for parameter-dependent density morphing, learning factorized polynomial transformations around a reference density for scalable unbinned likelihood modeling in HEP.",
+      "tags": ["normalizing flows", "density morphing", "nuisance parameters", "unbinned likelihood", "HEP analysis"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Randomized neural operator for parametric PDEs with fast training and conformal uncertainty quantification",
+      "authors_short": "Zirui Deng; Jingbo Sun; Deyu Meng; Fei Wang",
+      "author_count": 4,
+      "arxiv_id": "2606.29440",
+      "url": "https://arxiv.org/abs/2606.29440",
+      "category": "AI/ML use",
+      "abstract": "PCA-RaNN combines PCA latent compression, fixed random features, closed-form readout, ensemble averaging, and split-conformal intervals for fast parametric PDE operator learning.",
+      "tags": ["neural operators", "PDE surrogates", "conformal UQ", "Navier-Stokes", "inverse problems"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "PCGD: Physics-Guided Conditional Graph Diffusion for TCAD Device Simulation",
+      "authors_short": "Yihan Zhang; Zhiteng Zhang; Kun Chen; Chen Wang",
+      "author_count": 4,
+      "arxiv_id": "2606.29272",
+      "url": "https://arxiv.org/abs/2606.29272",
+      "category": "AI/ML use",
+      "abstract": "Physics-guided graph diffusion surrogate for TCAD semiconductor device simulations on unstructured meshes, using boundary-condition conditioning and PDE-residual objectives.",
+      "tags": ["graph diffusion", "TCAD", "detector R&D", "PDE residuals", "unstructured meshes"],
+      "assessment": "mixed"
+    }
+  ]
+}
