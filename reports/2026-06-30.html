@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-06-30</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-06-30 Briefing</h1>
+    <p class="dek">Heavy-ion phenomenology, QCD equation-of-state constraints, quarkonium perturbation theory, and physics-aware ML methods for nuclear and HEP workflows.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The most directly useful heavy-ion paper is the K*0 rescattering study: it gives a concrete mechanism by which hadronic afterburning can fake vector-meson spin-alignment signals.</li>
+        <li>The high-density EoS review is not a new calculation, but it is a strong synthesis of how intermediate-energy HIC flow constraints connect to neutron-star pressure up to a few saturation densities.</li>
+        <li>The p-Pb D-meson AMPT study is relevant for small-system heavy flavor, but its strongest claim, partonic-medium formation in high-multiplicity p-Pb, remains model-dependent.</li>
+        <li>Factorizable Normalizing Flows is the clearest AI/ML pick for HEP analysis: parameter-dependent density morphing maps directly onto nuisance-systematic modeling and unbinned likelihood fits.</li>
+        <li>The nuclear covariant EDF neural-network paper is promising because it embeds physics structure and targets extrapolation, though the abstract-level evidence is not enough to treat its long-range extrapolation claims as settled.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2606.29588 high-density equation of state heavy-ion collisions neutron stars flow symmetry energy transport uncertainty A Le Fevre Theory strong">
+        <div class="paper-head"><h4>Nuclear equation-of-state at high density and multi-messenger astronomy: contribution of heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">A. Le Fevre. <a href="https://arxiv.org/abs/2606.29588">arXiv:2606.29588</a>. Category: Theory / EoS review.</p>
+        <p>This review synthesizes how intermediate-energy heavy-ion flow observables constrain symmetric and asymmetric nuclear matter at high density, and how those constraints compare with gravitational-wave and pulsar inferences. It emphasizes density-profile control and transport-model uncertainty as the critical bottlenecks for using HIC data in neutron-star EoS inference.</p>
+        <p><strong>Why it matters:</strong> It is a useful state-of-the-field bridge between HIC programs, ASY-EOS-like measurements, and multi-messenger dense-matter inference.</p>
+        <p><strong>Critical assessment:</strong> Strong as a review and agenda-setting paper; not a new quantitative inference, so its value is synthesis and identification of uncertainty priorities.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental measurement from the scanned listings looked strong enough for selection today. The nucl-ex new submissions were mainly nuclear-structure or neutron-decay methodology rather than relativistic HIC observables.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2606.30154 K*0 resonance hadronic rescattering spin alignment rho00 AuAu AMPT polarization observable Phenomenology strong">
+        <div class="paper-head"><h4>Anisotropic hadronic rescattering and its impact on K*0 yield, and polarization observable</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kadambini Menduli, Md. Nasim. <a href="https://arxiv.org/abs/2606.30154">arXiv:2606.30154</a>. Category: Phenomenology.</p>
+        <p>Using AMPT for Au+Au at 200 GeV, the authors show that daughter-hadron rescattering can depend strongly on decay angle and can distort reconstructed K*0 yields. The key result is that even an unpolarized input sample can produce apparent deviations of rho00 from 1/3 in production-plane and helicity frames.</p>
+        <p><strong>Why it matters:</strong> Vector-meson spin alignment measurements are interpretation-sensitive, and this paper gives a concrete detector-level/afterburner bias mechanism that experimental analyses should stress-test.</p>
+        <p><strong>Critical assessment:</strong> Strong and timely as a systematic-effect study. The conclusion should still be tested across hadronic afterburners and reconstruction choices, but the warning is scientifically well targeted.</p>
+      </article>
+
+      <article class="paper" data-search="2606.28928 D0 meson forward backward asymmetry pPb LHC AMPT RpPb v2 cold nuclear matter coalescence fragmentation Phenomenology mixed">
+        <div class="paper-head"><h4>Investigating forward-backward asymmetry in D-meson production and anisotropic flow in p-Pb collisions at the LHC</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Siyu Tang, Chao Zhang, Liang Zheng, Renzhuo Wan, Zi-Wei Lin, Guo-Liang Ma (6 authors). <a href="https://arxiv.org/abs/2606.28928">arXiv:2606.28928</a>. Category: Phenomenology.</p>
+        <p>The paper uses a heavy-flavor-improved string-melting AMPT model to describe prompt D0 RpPb and v2 at forward and backward rapidities in p-Pb at 8.16 TeV. The authors attribute asymmetries to a competition among cold nuclear matter effects, partonic interactions, coalescence, and fragmentation.</p>
+        <p><strong>Why it matters:</strong> Heavy-flavor flow in small systems is one of the sharper probes of whether final-state collectivity extends beyond large A+A collisions.</p>
+        <p><strong>Critical assessment:</strong> Interesting and relevant, but the medium-formation interpretation is only as persuasive as the AMPT implementation and competing baseline tests. Treat as a useful phenomenological hypothesis rather than a settled conclusion.</p>
+      </article>
+
+      <article class="paper" data-search="2606.28494 quarkonium NNLO QCD NRQCD soft contributions perturbative convergence production decay Phenomenology strong">
+        <div class="paper-head"><h4>Soft Contributions Stabilize NNLO QCD Corrections to Quarkonium Production and Decay</h4><span class="label strong">strong</span></div>
+        <p class="meta">Luca Maxia, Hua-Sheng Shao, Lukas Simon, Guoxing Wang (4 authors). <a href="https://arxiv.org/abs/2606.28494">arXiv:2606.28494</a>. Category: Phenomenology.</p>
+        <p>This paper targets known NNLO perturbative instabilities in NRQCD color-singlet quarkonium production and decay, identifying a soft-contribution origin and proposing a remedy. The abstract reports substantially improved convergence and better agreement with experimental data for S-wave processes.</p>
+        <p><strong>Why it matters:</strong> Quarkonium remains central to heavy-ion and cold-nuclear-matter baselines, so stabilizing the perturbative reference calculation can improve interpretation of suppression and regeneration observables.</p>
+        <p><strong>Critical assessment:</strong> Potentially strong and technically important. It is not an HIC-medium paper, but it strengthens a baseline ingredient used by the field.</p>
+      </article>
+
+      <article class="paper" data-search="2606.29187 blast-wave Bayesian inference identified particle spectra pT AuAu PbPb kinetic freezeout caution Phenomenology caution">
+        <div class="paper-head"><h4>Revisiting identified-particle pT spectra using the Boltzmann-Gibbs blast-wave model in a Bayesian inference framework</h4><span class="label caution">caution</span></div>
+        <p class="meta">Z. Xie, W.Z. Li, J.Q. Tao, H. Zheng, W.C. Zhang, and 5 others (10 authors). <a href="https://arxiv.org/abs/2606.29187">arXiv:2606.29187</a>. Category: Phenomenology / caution.</p>
+        <p>The authors apply Bayesian inference to identified pion, kaon, and proton pT spectra in Au+Au and Pb+Pb using the BGBW model, arguing that simultaneous fits can be extended without species-dependent fit ranges. The posterior correlations of kinetic freeze-out parameters are a useful addition.</p>
+        <p><strong>Why it matters:</strong> Bayesian reporting is welcome for blast-wave-style extractions and could make parameter correlations more transparent in routine analyses.</p>
+        <p><strong>Critical assessment:</strong> Worth caution because BGBW remains a compact parametric model, not a dynamical freeze-out theory. The statistical wrapper improves transparency but should not be overinterpreted as resolving model bias.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2606.30326 physics-guaranteed neural network nuclear covariant energy density functional binding energies extrapolation shell effects AI ML nuclear physics strong mixed">
+        <div class="paper-head"><h4>Construction of Nuclear Covariant Energy Density Functional from A Physics-Guaranteed Neural Network Approach</h4><span class="label mixed">mixed-to-strong</span></div>
+        <p class="meta">W. F. Li, Z. M. Niu, H. Z. Liang, Y. F. Niu, B. H. Sun (5 authors). <a href="https://arxiv.org/abs/2606.30326">arXiv:2606.30326</a>. Category: AI/ML use in nuclear theory.</p>
+        <p>The paper embeds a deep neural-network correction into a covariant energy density functional, reporting binding-energy improvement from 644 keV to 86 keV in the known region and better extrapolation behavior. The claimed value is not generic ML accuracy but physics-constrained function construction.</p>
+        <p><strong>Likely use case:</strong> Nuclear mass tables, uncertainty-aware EDF refinement, and priors for rare-isotope or neutron-rich systems relevant to nuclear astrophysics.</p>
+        <p><strong>Critical assessment:</strong> Promising because it tackles extrapolation and shell effects, but extrapolation claims need careful independent validation outside training-systematics comfort zones.</p>
+      </article>
+
+      <article class="paper" data-search="2606.30489 Factorizable Normalizing Flows parameter-dependent density morphing nuisance parameters unbinned likelihood HEP systematic uncertainty AI ML strong">
+        <div class="paper-head"><h4>Factorizable Normalizing Flows for parameter-dependent density morphing</h4><span class="label strong">strong</span></div>
+        <p class="meta">Davide Valsecchi, Mauro Donega, Rainer Wallny (3 authors). <a href="https://arxiv.org/abs/2606.30489">arXiv:2606.30489</a>. Category: AI/ML use in HEP.</p>
+        <p>FNFs learn a high-fidelity reference density and factorized polynomial transformations for continuous parameters, so individual nuisance or physics-parameter effects can be learned separately and recombined at inference. The authors explicitly frame the method for unbinned likelihood fits in HEP.</p>
+        <p><strong>Likely use case:</strong> Fast detector/systematic morphing, calibration-dependent likelihoods, and analyses where joint systematic variations are too expensive to sample exhaustively.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value and direct HEP relevance. The controlled examples sound persuasive, though deployment will depend on behavior under strong nonfactorizable correlations.</p>
+      </article>
+
+      <article class="paper" data-search="2606.29440 randomized neural operator parametric PDE conformal uncertainty quantification Navier Stokes surrogate hydrodynamics AI ML mixed">
+        <div class="paper-head"><h4>Randomized neural operator for parametric PDEs with fast training and conformal uncertainty quantification</h4><span class="label mixed">mixed-to-strong</span></div>
+        <p class="meta">Zirui Deng, Jingbo Sun, Deyu Meng, Fei Wang (4 authors). <a href="https://arxiv.org/abs/2606.29440">arXiv:2606.29440</a>. Category: AI/ML methods with physics transfer value.</p>
+        <p>PCA-RaNN combines PCA latent compression, fixed random features, and a closed-form least-squares readout for parametric PDE surrogate modeling. It reports one-to-three-order faster training across benchmarks including Navier-Stokes and adds split-conformal prediction intervals.</p>
+        <p><strong>Likely use case:</strong> Fast surrogate components for hydrodynamic response studies, emulator-based uncertainty propagation, and many-query inverse problems.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking because speed plus conformal UQ is exactly what physics inference workflows need. Transfer to realistic 3+1D heavy-ion hydro remains unproven.</p>
+      </article>
+
+      <article class="paper" data-search="2606.29272 physics-guided conditional graph diffusion TCAD device simulation unstructured meshes PDE residuals detector semiconductor surrogate AI ML mixed">
+        <div class="paper-head"><h4>PCGD: Physics-Guided Conditional Graph Diffusion for TCAD Device Simulation</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Yihan Zhang, Zhiteng Zhang, Kun Chen, Chen Wang (4 authors). <a href="https://arxiv.org/abs/2606.29272">arXiv:2606.29272</a>. Category: AI/ML methods with detector-simulation transfer value.</p>
+        <p>PCGD uses graph diffusion on unstructured TCAD meshes with boundary-condition conditioning and PDE-residual terms to predict electrostatic and carrier-density fields. It reports sub-percent mean relative field error and much smaller residuals than pure diffusion baselines.</p>
+        <p><strong>Likely use case:</strong> Surrogate modeling for semiconductor detector design, radiation-damage device studies, and field-level uncertainty scans where full TCAD solves are expensive.</p>
+        <p><strong>Critical assessment:</strong> Credible transfer path to detector R&amp;D, but it is not a nuclear/HEP paper and the evidence is benchmark-specific. Include as methodologically relevant, not field-proven.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2606.29187 caution blast-wave Bayesian BGBW model bias freezeout overinterpretation">
+        <div class="paper-head"><h4>Bayesian BGBW spectra fits should not be read as model-bias control</h4><span class="label caution">caution</span></div>
+        <p>The Bayesian blast-wave paper is useful as a cleaner statistical treatment of a familiar model, but the main caveat is physical: posterior constraints within BGBW do not quantify the gap between BGBW and full dynamical evolution. Use it for transparent fit-systematics studies, not as a stand-alone freeze-out determination.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
