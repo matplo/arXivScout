@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-01</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-01 Briefing</h1>
+    <p class="dek">Finite-density QGP chemistry, baryon-antibaryon symmetry energy, hadronization spin correlations, and analysis-grade ML for HEP inference and reconstruction.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion item is the finite-density chemically equilibrating QGP study, because it connects a concrete non-equilibrium mechanism to hard photon production and is already accepted in <em>Journal of Physics G</em>.</li>
+        <li>Two theory/phenomenology papers probe spin and matter-composition effects beyond standard bulk-flow observables: baryon-antibaryon symmetry energy in low-energy relativistic HIC matter, and hyperon-pair spin correlations as an open-quantum-system hadronization signal.</li>
+        <li>No new heavy-ion experimental result from the July 1 arXiv listings was strong and on-scope enough to include; today is mostly theory, phenomenology, and transferable analysis methodology.</li>
+        <li>The best HEP AI/ML papers are not generic classifiers: factorized normalizing flows directly target profiled unbinned likelihoods, while detector-aware reconstruction targets address a real robustness failure mode in end-to-end particle-flow ML.</li>
+        <li>The neural-network-accelerated NICER inference paper is outside core HEP/NP experiments, but its surrogate-plus-MCMC workflow has credible transfer value for expensive detector simulation and equation-of-state inference.</li>
+        <li>A replacement paper on uncertainty quantification for neural-network interatomic potentials is included as a useful caution: ensemble precision can fail as an accuracy proxy out of distribution, a lesson directly relevant to ML surrogates in nuclear and detector modeling.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+
+      <h3>Theory</h3>
+      <article class="paper" data-search="2606.31162 Symmetry energy baryon neutron rich nuclear matter Zhi-Ying Qin Jia Zhou Jun Xu low-energy relativistic heavy-ion collisions RMF G-parity antibaryon symmetry energy neutron-rich matter mixed">
+        <div class="paper-head"><h4>Symmetry energy of baryon- and neutron-rich nuclear matter</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Zhi-Ying Qin, Jia Zhou, Jun Xu. <a href="https://arxiv.org/abs/2606.31162">arXiv:2606.31162</a></p>
+        <p>The paper uses a relativistic mean-field model with assumed G-parity invariance to study baryon- and neutron-rich matter relevant to low-energy relativistic heavy-ion collisions. It defines a baryon-antibaryon symmetry-energy analogue and reports sizable effects on nucleon/antinucleon potentials and on the usual isospin symmetry energy when antinucleons are present.</p>
+        <p><strong>Why it matters:</strong> Antinucleon potentials and isospin splitting are possible handles for dense asymmetric matter in low-energy heavy-ion programs, so a clear model study can sharpen what observables might be worth targeting.</p>
+        <p><strong>Critical assessment:</strong> Useful and cleanly scoped, but the evidential strength is limited by the model assumptions. Treat it as a theory input for transport-model sensitivity studies rather than as a constraint-ready result.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2606.31749 Finite-Density Dynamics Chemically Equilibrating QGP Conformal Gubser Flow Hard Thermal Photon Production Lakshmi J Naik V Sreekanth chemical non-equilibrium fugacity finite baryon density thermal photons strong">
+        <div class="paper-head"><h4>Finite-Density Dynamics of Chemically Equilibrating QGP in Conformal Gubser Flow and Hard Thermal Photon Production</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lakshmi J. Naik, V. Sreekanth. <a href="https://arxiv.org/abs/2606.31749">arXiv:2606.31749</a></p>
+        <p>This study couples parton fugacity evolution to conformal Gubser expansion at finite baryon density and evaluates consequences for hard thermal photon production. The main physical claim is that finite density and transverse expansion delay chemical equilibration, suppressing total thermal photon yield while enhancing early high-pT photon contributions.</p>
+        <p><strong>Why it matters:</strong> Chemical non-equilibrium at finite baryon density is highly relevant for BES-style QGP phenomenology, and photons remain one of the cleaner electromagnetic probes of early-time dynamics.</p>
+        <p><strong>Critical assessment:</strong> The paper is stronger than a speculative model note because it develops the coupled dynamics in detail and is accepted in <em>J. Phys. G</em>. The limitation is realism: conformal Gubser flow is controlled and transparent, but full phenomenological impact needs embedding in less idealized hydrodynamics with detector-level photon backgrounds.</p>
+      </article>
+
+      <article class="paper" data-search="2606.30737 Lambda anti-Lambda spin correlations high-energy collisions quantum channels open quantum system hadronization Joao Barata Ivan Cuntin Enrique Rico Bin Wu depolarizing channel Lindblad mixed">
+        <div class="paper-head"><h4>&Lambda;&Lambda;bar spin correlations in high-energy collisions from quantum channels: an open quantum system view of hadronization</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Joao Barata, Ivan Cuntin, Enrique Rico, Bin Wu. <a href="https://arxiv.org/abs/2606.30737">arXiv:2606.30737</a></p>
+        <p>The authors model experimentally observed hyperon spin-pair correlations using quantum channels, with pair angular separation entering the spin-density-matrix evolution. They argue that the data are consistent with a two-qubit depolarizing channel and derive a Lindblad master-equation interpretation for hadronization spin dynamics.</p>
+        <p><strong>Why it matters:</strong> Spin correlations are becoming a serious phenomenological interface between collider measurements, hadronization, and quantum-information language. This paper gives a concrete model class rather than just relabeling final-state entanglement.</p>
+        <p><strong>Critical assessment:</strong> Conceptually interesting and potentially fertile, but still interpretive: consistency with one channel does not establish microscopic uniqueness. It deserves attention, especially if future hyperon measurements can discriminate channel structures.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental paper from the screened July 1 listings met the selectivity threshold today.</p>
+
+      <h3>AI/ML Use</h3>
+      <p>The strongest AI/ML-heavy items are listed in the dedicated AI/ML section below because their relevance is broader than heavy-ion alone.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+
+      <article class="paper" data-search="2602.13184 Profiling systematic uncertainties Simulation-Based Inference Factorizable Normalizing Flows Davide Valsecchi Mauro Donega Rainer Wallny unbinned likelihood nuisance parameters Poisson bootstrap HEP strong">
+        <div class="paper-head"><h4>Profiling systematic uncertainties in Simulation-Based Inference with Factorizable Normalizing Flows</h4><span class="label strong">strong</span></div>
+        <p class="meta">Davide Valsecchi, Mauro Donega, Rainer Wallny. <a href="https://arxiv.org/abs/2602.13184">arXiv:2602.13184</a></p>
+        <p>The method uses factorized normalizing flows to model systematic variations as parameter-dependent deformations of a learned multivariate distribution of interest. It adds amortized nuisance dependence and a Poisson-bootstrap ensemble to propagate finite-sample neural-network uncertainty inside an unbinned likelihood.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Differential measurements, unfolding-like analyses, detector calibration, and continuous nuisance scans where binned templates discard too much information or become combinatorially expensive.</p>
+        <p><strong>Critical assessment:</strong> This is a strong HEP-facing ML paper because the statistical target is explicit and the nuisance-profiling bottleneck is real. The main caveat is validation breadth: synthetic HEP-like demonstrations are promising, but adoption will need stress tests on realistic correlated detector and theory systematics.</p>
+      </article>
+
+      <article class="paper" data-search="2606.30485 Detector-aware target definitions full-event particle reconstruction Katharina Schauble Alessandro Brusamolino Dolores Garcia Jan Kieseler particle flow GNN GEANT4 detector resolution robustness strong">
+        <div class="paper-head"><h4>Detector-aware target definitions for full-event particle reconstruction</h4><span class="label strong">strong</span></div>
+        <p class="meta">Katharina Sch&auml;uble, Alessandro Brusamolino, Dolores Garcia, Jan Kieseler. <a href="https://arxiv.org/abs/2606.30485">arXiv:2606.30485</a></p>
+        <p>This paper argues that hit-level particle-reconstruction ML can be harmed by targets that encode detector-unresolvable structure. It introduces calorimeter-shower-based merged targets, including a Particle-Flow-aware variant, and shows improved response/resolution robustness under changes in event composition and topology with a fixed GNN model.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> End-to-end reconstruction in high-occupancy environments, where target definitions can accidentally train models on simulation priors rather than detector-resolvable truth.</p>
+        <p><strong>Critical assessment:</strong> Strong and practical. The key virtue is that the paper addresses the supervision target, not just architecture tuning; that is exactly the kind of detail that determines whether ML reconstruction survives domain shift.</p>
+      </article>
+
+      <article class="paper" data-search="2606.30886 Multipolar Magnetic-Field Inference PSR J0740+6620 Neural-Network-Accelerated NICER Pulse-Profile Modeling Farhana Taiyebah surrogate MCMC expensive simulation transfer value mixed">
+        <div class="paper-head"><h4>Multipolar Magnetic-Field Inference for PSR J0740+6620 with Neural-Network-Accelerated NICER Pulse-Profile Modeling</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Farhana Taiyebah, Constantinos Kalapotharakos, Greg Olmschenk, Wendy F. Wallace, Soumi De, Abu Bucker Siddik, Diane Oyen, Thibault Lechien, Zorawar Wadiasingh. <a href="https://arxiv.org/abs/2606.30886">arXiv:2606.30886</a></p>
+        <p>The authors train CNN surrogates on 51.2 million synthetic pulse profiles and use them to accelerate an 11-dimensional ensemble-MCMC inference of multipolar magnetic-field parameters for PSR J0740+6620 by more than a factor of 400. The posterior remains broad and multimodal, reflecting data limitations and model degeneracy.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Surrogate-accelerated Bayesian inference for expensive forward models, including detector response, hydrodynamic parameter calibration, and equation-of-state inference.</p>
+        <p><strong>Critical assessment:</strong> Transfer value is credible because the paper is honest about degeneracy and posterior width. It is not a direct HEP/NP analysis, but the workflow is relevant: accelerate the forward model without pretending the surrogate eliminates identifiability limits.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2508.06456 Comparative study ensemble-based uncertainty quantification methods neural network interatomic potentials Yonatan Kurniawan Mingjian Wen Ellad B Tadmor Mark K Transtrum OOD uncertainty precision accuracy caution">
+        <div class="paper-head"><h4>Comparative study of ensemble-based uncertainty quantification methods for neural network interatomic potentials</h4><span class="label caution">caution</span></div>
+        <p class="meta">Yonatan Kurniawan, Mingjian Wen, Ellad B. Tadmor, Mark K. Transtrum. <a href="https://arxiv.org/abs/2508.06456">arXiv:2508.06456</a></p>
+        <p>This is not a weak paper; it is included because its result is a useful warning. The authors show that ensemble-based predictive precision for neural-network potentials can behave counterintuitively out of distribution, including plateauing or decreasing uncertainty as prediction errors grow.</p>
+        <p><strong>Why caution is warranted:</strong> Heavy-ion and nuclear workflows increasingly use neural surrogates for transport, hydrodynamics, detector response, and many-body calculations. This paper is a reminder that nominal uncertainty estimates are not automatically reliable in extrapolative regimes unless validated against system-level observables.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
