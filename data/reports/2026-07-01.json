@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-01",
+  "path": "reports/2026-07-01.html",
+  "summary": "The July 1 selection emphasizes finite-density QGP chemical equilibration and hard photons, baryon-antibaryon symmetry energy in low-energy relativistic heavy-ion matter, hyperon spin correlations as an open-quantum-system view of hadronization, and HEP-facing AI/ML for profiled unbinned likelihoods, detector-aware particle-flow reconstruction, and surrogate-accelerated Bayesian inference.",
+  "keywords": [
+    "finite-density QGP",
+    "chemical equilibration",
+    "hard thermal photons",
+    "Gubser flow",
+    "baryon-antibaryon symmetry energy",
+    "antinucleon potentials",
+    "hyperon spin correlations",
+    "quantum channels",
+    "hadronization",
+    "simulation-based inference",
+    "factorizable normalizing flows",
+    "detector-aware targets",
+    "particle-flow reconstruction",
+    "surrogate-accelerated MCMC",
+    "uncertainty quantification",
+    "out-of-distribution reliability"
+  ],
+  "arxiv_ids": [
+    "2606.31749",
+    "2606.31162",
+    "2606.30737",
+    "2602.13184",
+    "2606.30485",
+    "2606.30886",
+    "2508.06456"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper_summary": "The strongest heavy-ion paper is arXiv:2606.31749, which connects finite-density chemical non-equilibrium to hard thermal photon production in a controlled QGP expansion model. The strongest AI/ML items are arXiv:2602.13184 for nuisance-aware unbinned likelihood inference and arXiv:2606.30485 for robust, detector-aware reconstruction targets.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Finite-Density Dynamics of Chemically Equilibrating QGP in Conformal Gubser Flow and Hard Thermal Photon Production",
+      "authors_short": "Lakshmi J. Naik; V. Sreekanth",
+      "author_count": 2,
+      "arxiv_id": "2606.31749",
+      "url": "https://arxiv.org/abs/2606.31749",
+      "category": "Phenomenology",
+      "abstract": "Studies chemical equilibration of finite-baryon-density QGP in conformal Gubser flow using fugacity evolution coupled to hydrodynamic expansion, finding delayed equilibration, suppressed total thermal photon yield, and enhanced early high-pT photon production.",
+      "tags": ["finite-density QGP", "chemical equilibration", "thermal photons", "Gubser flow"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Symmetry energy of baryon- and neutron-rich nuclear matter",
+      "authors_short": "Zhi-Ying Qin; Jia Zhou; Jun Xu",
+      "author_count": 3,
+      "arxiv_id": "2606.31162",
+      "url": "https://arxiv.org/abs/2606.31162",
+      "category": "Theory",
+      "abstract": "Relativistic mean-field study, assuming G-parity invariance, of baryon- and neutron-rich matter in low-energy relativistic heavy-ion collisions, defining a baryon-antibaryon symmetry energy and analyzing nucleon/antinucleon potential splittings.",
+      "tags": ["symmetry energy", "antinucleon potentials", "low-energy HIC", "RMF"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Lambda anti-Lambda spin correlations in high-energy collisions from quantum channels: an open quantum system view of hadronization",
+      "authors_short": "Joao Barata; Ivan Cuntin; Enrique Rico; Bin Wu",
+      "author_count": 4,
+      "arxiv_id": "2606.30737",
+      "url": "https://arxiv.org/abs/2606.30737",
+      "category": "Phenomenology",
+      "abstract": "Models hyperon spin-pair correlations through quantum channels, arguing that data are consistent with a two-qubit depolarizing channel and deriving a Lindblad open-system interpretation of hadronization spin dynamics.",
+      "tags": ["hyperon spin", "quantum channels", "hadronization", "Lindblad"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Profiling systematic uncertainties in Simulation-Based Inference with Factorizable Normalizing Flows",
+      "authors_short": "Davide Valsecchi; Mauro Donega; Rainer Wallny",
+      "author_count": 3,
+      "arxiv_id": "2602.13184",
+      "url": "https://arxiv.org/abs/2602.13184",
+      "category": "AI/ML use",
+      "abstract": "Uses factorized normalizing flows to model systematic variations as parametric density deformations, with amortized nuisance dependence and Poisson-bootstrap neural uncertainty for profiled unbinned HEP likelihoods.",
+      "tags": ["simulation-based inference", "normalizing flows", "systematics", "unbinned likelihood"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Detector-aware target definitions for full-event particle reconstruction",
+      "authors_short": "Katharina Schaeuble; Alessandro Brusamolino; Dolores Garcia; Jan Kieseler",
+      "author_count": 4,
+      "arxiv_id": "2606.30485",
+      "url": "https://arxiv.org/abs/2606.30485",
+      "category": "AI/ML use",
+      "abstract": "Introduces detector-aware merged targets for hit-level particle-flow reconstruction, showing improved performance and robustness under changes in event topology with a fixed GNN reconstruction model.",
+      "tags": ["particle flow", "detector-aware targets", "GNN reconstruction", "domain shift"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Multipolar Magnetic-Field Inference for PSR J0740+6620 with Neural-Network-Accelerated NICER Pulse-Profile Modeling",
+      "authors_short": "Farhana Taiyebah; Constantinos Kalapotharakos; Greg Olmschenk; Wendy F. Wallace; and 5 others",
+      "author_count": 9,
+      "arxiv_id": "2606.30886",
+      "url": "https://arxiv.org/abs/2606.30886",
+      "category": "AI/ML use",
+      "abstract": "Trains CNN surrogates on 51.2 million synthetic pulse profiles to accelerate 11-dimensional NICER pulse-profile MCMC inference by more than a factor of 400, while retaining broad multimodal posteriors.",
+      "tags": ["surrogate modeling", "Bayesian inference", "MCMC", "expensive forward models"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Comparative study of ensemble-based uncertainty quantification methods for neural network interatomic potentials",
+      "authors_short": "Yonatan Kurniawan; Mingjian Wen; Ellad B. Tadmor; Mark K. Transtrum",
+      "author_count": 4,
+      "arxiv_id": "2508.06456",
+      "url": "https://arxiv.org/abs/2508.06456",
+      "category": "Caution",
+      "abstract": "Systematic evaluation of ensemble UQ for neural-network interatomic potentials, showing that predictive precision can fail as a proxy for accuracy in out-of-distribution system-level predictions.",
+      "tags": ["uncertainty quantification", "OOD reliability", "neural potentials", "surrogate caution"],
+      "assessment": "caution"
+    }
+  ]
+}
