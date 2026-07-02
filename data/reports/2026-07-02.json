@@ -1,0 +1,139 @@
+{
+  "date": "2026-07-02",
+  "path": "reports/2026-07-02.html",
+  "summary": "The selected papers emphasize precision jet-medium theory, charmonium-jet correlations in Pb+Pb, spin-sensitive femtoscopy, baryon-stopping diagnostics, and analysis-grade ML/statistical methods for collider workflows. The strongest heavy-ion papers are the QCD antenna calculation with realistic medium interactions and the ATLAS J/psi-jet correlation measurement. The strongest AI/ML paper is an amplitude-assisted polarization extraction study using NLO QCD plus parton-shower effects and explicit baseline comparisons.",
+  "keywords": [
+    "jet quenching",
+    "QCD antenna radiation",
+    "J/psi-jet correlations",
+    "charmonium suppression",
+    "spin femtoscopy",
+    "tracked jet substructure",
+    "baryon stopping",
+    "amplitude-assisted machine learning",
+    "operator learning",
+    "falling-background modeling"
+  ],
+  "arxiv_ids": [
+    "2607.00629",
+    "2606.31375",
+    "2607.00413",
+    "2607.00087",
+    "2607.00703",
+    "2607.00962",
+    "2607.01128",
+    "2607.00884",
+    "2607.01075"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": [
+    "Experiment",
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "Gluon radiation from a QCD antenna with realistic parton-medium interactions is the strongest theory/phenomenology item because it directly targets a precision bottleneck in jet-quenching calculations by replacing limited harmonic-oscillator approximations with a numerical all-orders treatment of realistic medium scattering.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Gluon radiation from a QCD antenna with realistic parton-medium interactions",
+      "authors": "Carlota Andres, Liliana Apolinario, Nestor Armesto, Andre Cordeiro, Fabio Dominguez, Pablo Guerrero-Rodriguez, Jose Guilherme Milhano",
+      "total_author_count": 7,
+      "arxiv_id": "2607.00629",
+      "url": "https://arxiv.org/abs/2607.00629",
+      "category": "Phenomenology",
+      "abstract": "The paper expresses the full in-medium gluon emission spectrum from a quark-antiquark antenna as differential equations solvable numerically, resumming medium interactions to all orders with realistic scattering models.",
+      "tags": ["jet quenching", "color coherence", "QCD antenna", "medium-induced radiation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Measurement of J/psi-jet correlations in pp and Pb+Pb collisions at sqrt(sNN)=5.02 TeV with the ATLAS detector",
+      "authors": "ATLAS Collaboration",
+      "total_author_count": null,
+      "arxiv_id": "2606.31375",
+      "url": "https://arxiv.org/abs/2606.31375",
+      "category": "Experiment",
+      "abstract": "ATLAS measures inclusive, isolated, and non-isolated J/psi production in pp and Pb+Pb, separating prompt and non-prompt components and reporting nuclear modification factors up to pT = 60 GeV.",
+      "tags": ["J/psi", "Pb+Pb", "jet correlations", "charmonium suppression"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Spin Femtoscopy: A Framework for Revealing Genuine Spin Correlations",
+      "authors": "Kehao Zhang, Xuan Wang, Xiaofeng Luo",
+      "total_author_count": 3,
+      "arxiv_id": "2607.00413",
+      "url": "https://arxiv.org/abs/2607.00413",
+      "category": "Theory",
+      "abstract": "The paper proposes spin-resolved femtoscopic correlation functions, using Lambda-Lambda pairs as a proof of principle, to isolate genuine two-particle spin correlations from spin-dependent femtoscopic mixing.",
+      "tags": ["spin femtoscopy", "Lambda pairs", "spin correlations", "femtoscopy"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Putting Jet Substructure on Track(s)",
+      "authors": "Kyle Lee, Ian Moult, Wouter J. Waalewijn",
+      "total_author_count": 3,
+      "arxiv_id": "2607.00087",
+      "url": "https://arxiv.org/abs/2607.00087",
+      "category": "Phenomenology",
+      "abstract": "The paper computes tracked projected energy correlators up to four points at next-to-leading collinear logarithmic accuracy, extending state-of-the-art jet substructure calculations to track-based observables.",
+      "tags": ["track functions", "jet substructure", "energy correlators", "precision QCD"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Dipolar flow of identified hadrons at mid-rapidity using transport models",
+      "authors": "Abhisek Praharaj, Aradhana Panday, Sandeep Chatterjee, Md Nasim",
+      "total_author_count": 4,
+      "arxiv_id": "2607.00703",
+      "url": "https://arxiv.org/abs/2607.00703",
+      "category": "Phenomenology",
+      "abstract": "The paper studies rapidity-even dipolar flow for identified hadrons in Au+Au collisions using AMPT, comparing with HIJING to assess non-flow contributions and highlighting proton-antiproton splitting at lower beam energies.",
+      "tags": ["dipolar flow", "baryon stopping", "AMPT", "Beam Energy Scan"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Higher-order effects in amplitude-assisted polarisation extraction with machine-learning techniques",
+      "authors": "Juan M. Cruz-Martinez, Jakob Linder, Mathieu Pellen, Giovanni Pelliccioli, Emanuele Re",
+      "total_author_count": 5,
+      "arxiv_id": "2607.00962",
+      "url": "https://arxiv.org/abs/2607.00962",
+      "category": "AI/ML use",
+      "abstract": "The work presents amplitude-assisted ML regression/classification at NLO QCD with parton-shower effects for extracting longitudinal vector-boson production rates, benchmarking neural architectures against random forests.",
+      "tags": ["machine learning", "polarization extraction", "NLO QCD", "LHC"],
+      "assessment": "strong"
+    },
+    {
+      "title": "GAIA: Geometry-Adaptive Operator Learning for Forward and Inverse Problems",
+      "authors": "Meenakshi Krishnan, Pranav Pulijala, Ke Chen, Haizhao Yang, Ramani Duraiswami",
+      "total_author_count": 5,
+      "arxiv_id": "2607.01128",
+      "url": "https://arxiv.org/abs/2607.01128",
+      "category": "AI/ML use",
+      "abstract": "GAIA uses geometry tokens and cross-attention-conditioned integral layers for forward, boundary-value, and inverse PDE problems on arbitrary domains, reporting strong results on several 2D and 3D benchmarks.",
+      "tags": ["operator learning", "inverse problems", "PDE surrogates", "geometry adaptation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Modeling Falling Backgrounds with Exponential Mixtures",
+      "authors": "Austin Townsend, Marc Osherson, Mike Hildreth, Stefano Castruccio",
+      "total_author_count": 4,
+      "arxiv_id": "2607.00884",
+      "url": "https://arxiv.org/abs/2607.00884",
+      "category": "AI/ML use",
+      "abstract": "The paper proposes finite exponential mixtures as semi-parametric models for falling LHC backgrounds and reports comparable performance to existing methods on published data and simulation studies with small bias and nominal bulk coverage.",
+      "tags": ["background modeling", "semi-parametric statistics", "coverage", "LHC searches"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Shedding light on the nature of phi(2170) with the parton and hadron cascade model PACIAE",
+      "authors": "Jian Cao, Wen-Chao Zhang, Bo Feng, Ya-Hui Hou, An-Ke Lei, Zhi-Lei She, Hua Zheng, Li-Lin Zhu, Dai-Mei Zhou, Yu-Liang Yan, Ben-Hao Sa",
+      "total_author_count": 11,
+      "arxiv_id": "2607.01075",
+      "url": "https://arxiv.org/abs/2607.01075",
+      "category": "Caution",
+      "abstract": "The paper simulates multiple phi(2170) candidate structures in PACIAE and compares coalescence/recombination yields and spectra across strangeonium, hybrid, tetraquark, molecular, and resonance assignments.",
+      "tags": ["PACIAE", "phi(2170)", "tetraquark", "model dependence"],
+      "assessment": "caution"
+    }
+  ]
+}
