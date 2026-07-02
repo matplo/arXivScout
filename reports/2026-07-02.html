@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-02</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-02 Briefing</h1>
+    <p class="dek">Heavy-ion jet quenching theory, charmonium-in-jet measurements, spin femtoscopy, baryon-stopping observables, and analysis-grade ML/statistical tools for collider workflows.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Jet-medium precision is the clearest heavy-ion theme.</strong> The antenna-radiation calculation replaces limited phase-space approximations with a numerical all-orders treatment of realistic medium scattering, while the tracked jet-substructure paper advances high-angular-resolution collider observables with clear relevance for heavy-ion jet measurements.</li>
+        <li><strong>ATLAS provides a valuable charmonium constraint.</strong> The J/psi-jet correlation measurement in pp and Pb+Pb at 5.02 TeV separates isolated, non-isolated, prompt, and non-prompt components, directly tightening phenomenological handles on production and in-medium suppression.</li>
+        <li><strong>Spin correlations are moving from conceptual interest toward measurable observables.</strong> Spin femtoscopy is not yet an experimental result, but it proposes a concrete Lambda-Lambda observable strategy for separating genuine pair spin correlations from femtoscopic mixing.</li>
+        <li><strong>The most convincing AI/ML physics paper is HEP-native.</strong> The amplitude-assisted polarization extraction study uses NLO QCD plus parton-shower effects and compares several neural architectures against random forests, making it more substantive than a generic ML application.</li>
+        <li><strong>General ML transfer should be treated selectively.</strong> GAIA is promising for surrogate and inverse PDE workflows, but its evidence is on generic 2D/3D benchmarks rather than detector simulation, hydrodynamics, or lattice/transport production tasks.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2606.31375 ATLAS J/psi jet correlations PbPb pp charmonium suppression prompt non-prompt isolated non-isolated experiment strong">
+        <div class="paper-head"><h4>Measurement of J/psi-jet correlations in pp and Pb+Pb collisions at sqrt(sNN)=5.02 TeV with the ATLAS detector</h4><span class="label strong">strong</span></div>
+        <p class="meta">ATLAS Collaboration; large collaboration author list begins on page 33. <a href="https://arxiv.org/abs/2606.31375">arXiv:2606.31375</a></p>
+        <p><strong>Summary:</strong> ATLAS reports inclusive, isolated, and jet-associated J/psi production in pp and Pb+Pb at 5.02 TeV, separating prompt and non-prompt components and measuring nuclear modification factors up to pT = 60 GeV. The analysis uses 1.82 nb^-1 of Pb+Pb and 0.26 fb^-1 of pp data.</p>
+        <p><strong>Why it matters:</strong> Charmonium suppression remains one of the cleanest QGP probes, but interpretation is limited by production-mechanism ambiguities. Correlating J/psi with jet activity gives a sharper handle on whether the observed suppression pattern depends on the surrounding hard event structure.</p>
+        <p><strong>Critical assessment:</strong> This is the day's strongest experimental heavy-ion item: direct LHC data, differential separation of production classes, and an observable with clear model-discriminating value. The main caveat is interpretive, not methodological: connecting isolated/non-isolated differences to specific microscopic suppression mechanisms will require careful theory comparisons.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.00413 spin femtoscopy Lambda Lambda genuine spin correlations femtoscopy hyperon polarization theory mixed strong">
+        <div class="paper-head"><h4>Spin Femtoscopy: A Framework for Revealing Genuine Spin Correlations</h4><span class="label mixed">mixed to strong</span></div>
+        <p class="meta">Kehao Zhang, Xuan Wang, Xiaofeng Luo; 3 authors. <a href="https://arxiv.org/abs/2607.00413">arXiv:2607.00413</a></p>
+        <p><strong>Summary:</strong> The paper proposes spin-resolved femtoscopic correlation functions as a way to access genuine two-particle spin correlations in relativistic heavy-ion collisions. Lambda-Lambda pairs are used as a proof of principle because Lambda weak decays are self-analyzing.</p>
+        <p><strong>Why it matters:</strong> The framework connects spin observables, femtoscopy, final-state interactions, and quantum statistics in a way that could be experimentally actionable at RHIC and the LHC.</p>
+        <p><strong>Critical assessment:</strong> Conceptually strong and timely, especially given ongoing interest in vorticity, polarization, and spin alignment. The evidence is proposal-level rather than measurement-level, so the key risk is whether realistic acceptance, pair purity, and correlation-function systematics preserve the claimed sensitivity.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.00629 gluon radiation QCD antenna realistic parton medium interactions jet quenching coherence phenomenology strong">
+        <div class="paper-head"><h4>Gluon radiation from a QCD antenna with realistic parton-medium interactions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Carlota Andres, Liliana Apolinario, Nestor Armesto, Andre Cordeiro, Fabio Dominguez, Pablo Guerrero-Rodriguez, Jose Guilherme Milhano; 7 authors. <a href="https://arxiv.org/abs/2607.00629">arXiv:2607.00629</a></p>
+        <p><strong>Summary:</strong> The authors formulate in-medium gluon radiation from a quark-antiquark antenna as differential equations that can be solved numerically, avoiding reliance on the harmonic-oscillator approximation across regions where it is not controlled. The method resums medium interactions to all orders while allowing realistic scattering models.</p>
+        <p><strong>Why it matters:</strong> Jet-quenching phenomenology increasingly needs controlled calculations of color coherence and multi-prong radiation beyond idealized approximations. This is directly relevant to precision jet-substructure observables in heavy-ion collisions.</p>
+        <p><strong>Critical assessment:</strong> Strong theoretical contribution with clear limits of prior approximations and a credible route toward more precise jet observables. Its immediate impact depends on implementation in phenomenological pipelines and comparison to realistic medium evolution.</p>
+      </article>
+
+      <article class="paper" data-search="2607.00087 tracked jet substructure projected energy correlators track functions jet observables phenomenology strong">
+        <div class="paper-head"><h4>Putting Jet Substructure on Track(s)</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kyle Lee, Ian Moult, Wouter J. Waalewijn; 3 authors. <a href="https://arxiv.org/abs/2607.00087">arXiv:2607.00087</a></p>
+        <p><strong>Summary:</strong> The paper presents complete calculations of track-based jet-substructure observables, computing projected energy correlators up to four points at next-to-leading collinear logarithmic accuracy. The work brings track information into systematically improvable jet-substructure theory.</p>
+        <p><strong>Why it matters:</strong> Tracking gives the angular resolution needed for subtle correlations inside jets, which is valuable both for precision pp studies and for heavy-ion jet substructure where calorimeter backgrounds are difficult.</p>
+        <p><strong>Critical assessment:</strong> The theoretical target is well chosen and technically mature. Heavy-ion use is indirect, but the observable technology is highly transferable to jet-quenching measurements that rely on charged-particle correlations.</p>
+      </article>
+
+      <article class="paper" data-search="2607.00703 dipolar flow v1 even identified hadrons baryon stopping AMPT HIJING Beam Energy Scan phenomenology mixed">
+        <div class="paper-head"><h4>Dipolar flow of identified hadrons at mid-rapidity using transport models</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Abhisek Praharaj, Aradhana Panday, Sandeep Chatterjee, Md Nasim; 4 authors. <a href="https://arxiv.org/abs/2607.00703">arXiv:2607.00703</a></p>
+        <p><strong>Summary:</strong> This transport-model study uses AMPT and HIJING to examine rapidity-even dipolar flow v1(even) for identified hadrons in Au+Au collisions from 27 to 200 GeV. It finds a proton-antiproton splitting at lower beam energy in the AMPT string-melting scenario but not for mesons.</p>
+        <p><strong>Why it matters:</strong> The proposed identified-particle v1(even) observable could provide a useful Beam Energy Scan diagnostic of baryon stopping and early partonic dynamics.</p>
+        <p><strong>Critical assessment:</strong> Worth watching, but model dependence is substantial: the central claim hinges on AMPT configuration differences, with HIJING mainly used as a non-flow comparator. Experimental feasibility and robustness against afterburner and coalescence choices need more scrutiny.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2607.00962 machine learning amplitude assisted polarization extraction NLO QCD parton shower diboson regression random forest HEP strong">
+        <div class="paper-head"><h4>Higher-order effects in amplitude-assisted polarisation extraction with machine-learning techniques</h4><span class="label strong">strong</span></div>
+        <p class="meta">Juan M. Cruz-Martinez, Jakob Linder, Mathieu Pellen, Giovanni Pelliccioli, Emanuele Re; 5 authors. <a href="https://arxiv.org/abs/2607.00962">arXiv:2607.00962</a></p>
+        <p><strong>Method and result:</strong> The authors build amplitude-assisted ML regressors/classifiers to extract longitudinal electroweak-boson production rates, including NLO QCD and parton-shower effects. Multiple neural-network architectures are benchmarked against a random-forest regressor, with robustness tests for diboson production at the LHC.</p>
+        <p><strong>Likely use case:</strong> The workflow is directly relevant to HEP analyses where amplitude-level labels or high-precision theory information can supervise event-level inference. The same logic could transfer to heavy-ion electroweak probes or rare hard probes when theory-labeled components must be extracted from correlated observables.</p>
+        <p><strong>Critical assessment:</strong> This is a serious ML-for-physics paper because the ML is embedded in a higher-order theory workflow and compared to a conventional baseline. Its transfer to heavy-ion observables would require careful handling of backgrounds and medium-induced correlations, but the validation philosophy is sound.</p>
+      </article>
+
+      <article class="paper" data-search="2607.01128 GAIA geometry adaptive operator learning PDE surrogate inverse problems detector simulation hydrodynamics transfer mixed">
+        <div class="paper-head"><h4>GAIA: Geometry-Adaptive Operator Learning for Forward and Inverse Problems</h4><span class="label mixed">mixed transfer</span></div>
+        <p class="meta">Meenakshi Krishnan, Pranav Pulijala, Ke Chen, Haizhao Yang, Ramani Duraiswami; 5 authors. <a href="https://arxiv.org/abs/2607.01128">arXiv:2607.01128</a></p>
+        <p><strong>Method and result:</strong> GAIA encodes geometry boundaries and interior fields into tokens and uses cross-attention-conditioned integral layers for forward, boundary-value, and inverse PDE problems on arbitrary domains. The paper reports state-of-the-art results across seven 2D/3D benchmarks, including EIT, optical tomography, Darcy flow, and Poisson BVP settings.</p>
+        <p><strong>Likely use case:</strong> Potential transfer paths include fast surrogates for detector fields, geometry-dependent detector response, inverse calibration, and possibly hydrodynamic or transport emulator components where geometry varies across events or configurations.</p>
+        <p><strong>Critical assessment:</strong> The benchmark breadth is encouraging, and inverse/BVP capability is genuinely useful for physics. Still, this is not yet a HEP or nuclear-physics validation: claims of utility for detector or heavy-ion workflows remain plausible but unproven until tested against domain-specific simulators and uncertainty requirements.</p>
+      </article>
+
+      <article class="paper" data-search="2607.00884 falling backgrounds exponential mixtures LHC searches semi-parametric statistical modeling coverage bias data analysis HEP mixed strong">
+        <div class="paper-head"><h4>Modeling Falling Backgrounds with Exponential Mixtures</h4><span class="label mixed">mixed to strong</span></div>
+        <p class="meta">Austin Townsend, Marc Osherson, Mike Hildreth, Stefano Castruccio; 4 authors. <a href="https://arxiv.org/abs/2607.00884">arXiv:2607.00884</a></p>
+        <p><strong>Method and result:</strong> The paper proposes finite exponential mixtures as a flexible semi-parametric family for smoothly falling LHC backgrounds. It tests the method on two published datasets and simulation studies, reporting performance comparable to existing methods with small bias and nominal bulk coverage.</p>
+        <p><strong>Likely use case:</strong> This is not an AI paper, but it is relevant to ML-era HEP analysis because robust background modeling is often the limiting systematic in resonance searches and anomaly-detection follow-ups. Similar ideas could be useful in heavy-ion rare-probe spectra where smooth combinatorial or continuum backgrounds dominate.</p>
+        <p><strong>Critical assessment:</strong> Useful and pragmatic, with attention to bias and coverage. The method should not be over-sold until tail behavior, signal contamination, and analysis-specific nuisance treatment are stress-tested across more realistic search pipelines.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2607.01075 PACIAE phi 2170 tetraquark hybrid strangeonium molecular candidate caution underconstrained">
+        <div class="paper-head"><h4>Shedding light on the nature of phi(2170) with the parton and hadron cascade model PACIAE</h4><span class="label caution">caution</span></div>
+        <p class="meta">Jian Cao, Wen-Chao Zhang, Bo Feng, Ya-Hui Hou, An-Ke Lei, Zhi-Lei She, Hua Zheng, Li-Lin Zhu, Dai-Mei Zhou, Yu-Liang Yan, Ben-Hao Sa; 11 authors. <a href="https://arxiv.org/abs/2607.01075">arXiv:2607.01075</a></p>
+        <p><strong>Why caution:</strong> The paper explores many possible phi(2170) assignments using PACIAE coalescence/recombination yields and kinematic spectra. The model exercise may be useful as a generator-level survey, but the conclusion that yield and spectrum differences can unravel the state is much stronger than the abstract-level evidence supports.</p>
+        <p><strong>Critical assessment:</strong> The problem is scientifically interesting, but discriminating strangeonium, hybrid, tetraquark, molecular, and resonance interpretations requires more than model-dependent production yields. Without clear uncertainty propagation and validation against known states, this looks more like a hypothesis generator than a decisive diagnostic.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
