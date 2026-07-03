@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-03",
+  "path": "reports/2026-07-03.html",
+  "summary": "The selected July 3 papers emphasize quarkonium yield ratios as small- and large-system hot-QCD probes, coupled-channels constraints on heavy-ion fusion deformation, point-cloud heavy-flavor electron tagging, detector-timing information for neutrino flavor identification, and regime-aware benchmarking of physics foundation models. One broad generalized-statistics paper is flagged as cautionary because its p-Pb connection appears illustrative rather than a targeted heavy-ion analysis.",
+  "keywords": [
+    "hot QCD medium",
+    "quarkonium yield ratios",
+    "small-system collectivity",
+    "heavy-ion fusion",
+    "nuclear deformation",
+    "point-cloud classification",
+    "heavy-flavor electrons",
+    "detector timing",
+    "physics foundation models",
+    "distribution shift"
+  ],
+  "arxiv_ids": ["2607.02042", "2607.01309", "2607.02225", "2607.02078", "2605.29283", "2604.24783"],
+  "total_paper_count": 6,
+  "represented_categories": ["Theory", "Experiment", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2607.02042: quarkonium excited-to-ground-state ratios provide a clean and cross-system test of hot-medium effects, though the small-system interpretation remains model-dependent.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Probing hot QCD medium with heavy quarkonium in small and large collision systems",
+      "short_authors": "Jiamin Liu, Baoyi Chen",
+      "total_author_count": 2,
+      "arxiv_id": "2607.02042",
+      "url": "https://arxiv.org/abs/2607.02042",
+      "category": "Theory / Phenomenology",
+      "abstract": "The yield ratios of different heavy quarkonium states serve as sensitive probes of final-state interactions in relativistic nuclear collisions, as they effectively cancel common cold-nuclear-matter effects. The work uses a time-dependent Schrodinger-equation framework with in-medium complex heavy-quark potentials to describe bottomonium and charmonium suppression in p-Pb and Pb-Pb systems.",
+      "tags": ["quarkonium", "hot QCD medium", "p-Pb", "Pb-Pb", "yield ratios"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Determining the dynamic deformation of 140Ce by constraining coupled-channels parameters for fusion",
+      "short_authors": "Chandra Kumar, Rohan Biswas, J. Gehlot, Gonika, A. Parihari, et al.",
+      "total_author_count": 9,
+      "arxiv_id": "2607.01309",
+      "url": "https://arxiv.org/abs/2607.01309",
+      "category": "Experiment / Phenomenology",
+      "abstract": "The paper studies dynamic deformation of 140Ce in heavy-ion fusion reactions using new and literature cross sections, Gaussian analytic-barrier methods, coupled-channels calculations, chi-square minimization, and Bayesian model averaging. The extracted deformation parameters are tested in the 28Si+140Ce system with two-neutron transfer included.",
+      "tags": ["heavy-ion fusion", "140Ce", "coupled channels", "Bayesian model averaging", "nuclear deformation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy-Flavor Electron Classification Using Hadronic Environment as Point Cloud",
+      "short_authors": "Jingyu Zhang, Wanbing He, Long Ma",
+      "total_author_count": 3,
+      "arxiv_id": "2607.02225",
+      "url": "https://arxiv.org/abs/2607.02225",
+      "category": "AI/ML use",
+      "abstract": "The paper represents the hadronic environment around heavy-flavor electrons as a point cloud and applies set-based machine-learning architectures, including Transformers, to charm-versus-bottom electron classification. It reports about 80% purity at 40% efficiency and improvement over a hand-crafted-observable BDT baseline.",
+      "tags": ["heavy flavor", "point cloud", "electron classification", "Transformers", "open heavy flavor"],
+      "assessment": "strong"
+    },
+    {
+      "title": "WavePID: Low-energy flavor identification using single-PMT time series in IceCube",
+      "short_authors": "R. Abbasi, M. Ackermann, J. Adams, J. A. Aguilar, M. Ahlers, et al.",
+      "total_author_count": 419,
+      "arxiv_id": "2607.02078",
+      "url": "https://arxiv.org/abs/2607.02078",
+      "category": "AI/ML-adjacent detector analysis",
+      "abstract": "WavePID is a template-based log-likelihood-ratio classifier that uses nanosecond-scale single-PMT timing observables to improve low-energy IceCube neutrino flavor identification. It improves cascade purity and classification performance over a graph-neural-network-selected sample and ties the effect to Cherenkov emission geometry in Geant4 simulations.",
+      "tags": ["detector timing", "IceCube", "classification", "GNN complement", "Geant4"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Do Physics Foundation Models Learn Generalizable Physics? A Bias-Aware Benchmark Across Physical Regimes and Distribution Shifts",
+      "short_authors": "Mengdi Chu, Yang Liu, Ayan Biswas, Han-Wei Shen",
+      "total_author_count": 4,
+      "arxiv_id": "2605.29283",
+      "url": "https://arxiv.org/abs/2605.29283",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The paper benchmarks physics foundation models across multiple dynamics, data mixtures, and distribution shifts. It finds that current models behave as conditional rather than universal generalists, with performance dependent on physical regime, temporal scale, initial-condition complexity, pretraining, size, and architecture.",
+      "tags": ["physics foundation models", "distribution shift", "surrogate modeling", "benchmarking", "generalization"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Hyperstatistics",
+      "short_authors": "Lucas Squillante, Samuel M. Soares, Constantino Tsallis, Mariano de Souza",
+      "total_author_count": 4,
+      "arxiv_id": "2604.24783",
+      "url": "https://arxiv.org/abs/2604.24783",
+      "category": "Caution",
+      "abstract": "The paper proposes a broad generalized-statistics framework and demonstrates it across capacitor discharge, cryostat pressure decay, p-Pb midrapidity data, and turbulence acceleration distributions. The p-Pb connection appears illustrative rather than a targeted heavy-ion phenomenology result.",
+      "tags": ["hyperstatistics", "q-entropy", "p-Pb", "generalized statistics", "caution"],
+      "assessment": "caution"
+    }
+  ]
+}
