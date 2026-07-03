@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-03</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-03 Briefing</h1>
+    <p class="dek">Selective review of new arXiv listings from July 3, 2026, emphasizing heavy-ion collision physics and physics AI/ML with credible transfer value for HEP or nuclear workflows.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion entry is the quarkonium-ratio study, which targets a clean cancellation of common cold-nuclear-matter effects and tests one framework across p-Pb and Pb-Pb systems.</li>
+        <li>The 140Ce fusion paper is experimentally grounded and methodologically careful, using measured cross sections, coupled-channels calculations, chi-square minimization, and Bayesian model averaging to constrain deformation.</li>
+        <li>Two detector-oriented papers are genuinely useful for HEP workflows: point-cloud heavy-flavor electron tagging and WavePID timing observables for IceCube flavor identification.</li>
+        <li>The physics-foundation-model benchmark is worth attention because it evaluates transfer across regimes rather than relying on a single averaged forecasting score; the caution is that it is not HEP-specific.</li>
+        <li>Hyperstatistics is flagged as cautionary for this scout: it touches p-Pb data, but the abstract-level evidence suggests a broad statistical framework demonstration rather than a targeted heavy-ion physics result.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.02042 hot QCD medium heavy quarkonium p-Pb Pb-Pb bottomonium charmonium yield ratios small systems theory phenomenology strong">
+        <div class="paper-head"><h4>Probing hot QCD medium with heavy quarkonium in small and large collision systems</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jiamin Liu, Baoyi Chen. <a href="https://arxiv.org/abs/2607.02042">arXiv:2607.02042</a>. Category: Theory / Phenomenology.</p>
+        <p><strong>Summary.</strong> The paper uses a time-dependent Schrodinger-equation treatment with in-medium complex heavy-quark potentials to model charmonium and bottomonium evolution in p-Pb and Pb-Pb collisions. Its central observable is the excited-to-ground-state quarkonium yield ratio, chosen because it should reduce common cold-nuclear-matter systematics. The authors report agreement with multiplicity-dependent suppression of Upsilon and psi ratios in p-Pb at 8.16 TeV and apply the same framework to bottomonium nuclear-modification-factor ratios in Pb-Pb at 5.02 TeV.</p>
+        <p><strong>Why it matters.</strong> If robust, quarkonium ratios offer a compact test of whether small systems contain a transient hot QCD medium, while connecting directly to large-system quarkonium suppression phenomenology.</p>
+        <p><strong>Critical assessment.</strong> Scientifically strong as a focused phenomenological study: the observable choice is well motivated and the cross-system comparison is valuable. The main caveat is that the claim of hot-medium formation in small systems remains model-dependent; a deeper read should check sensitivity to the assumed potential, initial production, and residual cold-matter effects.</p>
+        <p><strong>Abstract.</strong> The yield ratios of different heavy quarkonium states serve as sensitive probes of final-state interactions in relativistic nuclear collisions, as they effectively cancel out common cold-nuclear-matter effects. To quantify hot QCD medium effects in small collision systems, such as proton-nucleus collisions, the authors simulate real-time bottomonium and charmonium evolution with in-medium complex heavy-quark potentials and compare to p-Pb and Pb-Pb data.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.01309 heavy-ion fusion 140Ce dynamic deformation coupled channels Bayesian model averaging fusion cross sections nuclear deformation experiment phenomenology strong">
+        <div class="paper-head"><h4>Determining the dynamic deformation of 140Ce by constraining coupled-channels parameters for fusion</h4><span class="label strong">strong</span></div>
+        <p class="meta">Chandra Kumar, Rohan Biswas, J. Gehlot, Gonika, A. Parihari, N. Madhavan, A. Vinayak, Amritraj Mahato, S. Nath. 9 authors. <a href="https://arxiv.org/abs/2607.01309">arXiv:2607.01309</a>. Category: Experiment / Phenomenology.</p>
+        <p><strong>Summary.</strong> This work studies dynamic deformation in 140Ce using 16O and 36S heavy-ion fusion reactions. It combines new 16O+140Ce fusion cross sections, literature 36S+140Ce data, Gaussian analytic-barrier methods, coupled-channels calculations, chi-square minimization, and Bayesian model averaging. The extracted beta2 and beta3 values are then tested against 28Si+140Ce fusion and barrier-distribution data including two-neutron transfer.</p>
+        <p><strong>Why it matters.</strong> Fusion-barrier distributions are a sensitive probe of nuclear structure in heavy-ion reactions, and the multi-system validation gives the deformation extraction more credibility than a single-channel fit.</p>
+        <p><strong>Critical assessment.</strong> Strong within its low-energy heavy-ion niche. The work is not directly QGP physics, but it is a careful collision-based nuclear-structure study with real experimental leverage and quantified parameter extraction.</p>
+        <p><strong>Abstract.</strong> The authors combine experimental data, a Gaussian analytic-barrier framework, and coupled-channels calculations to constrain dynamic deformation of 140Ce in heavy-ion fusion. They report beta2 = 0.09 +/- 0.03 and beta3 = 0.18 +/- 0.02 from Bayesian model averaging, and show that the parameters help reproduce 28Si+140Ce fusion observables when pair-neutron transfer is included.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <p>No additional heavy-ion phenomenology papers passed the quality/relevance threshold beyond the two entries above.</p>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.02225 heavy-flavor electron classification point cloud hadronic environment charm bottom transformer BDT HEP ML heavy-ion open heavy flavor strong">
+        <div class="paper-head"><h4>Heavy-Flavor Electron Classification Using Hadronic Environment as Point Cloud</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jingyu Zhang, Wanbing He, Long Ma. 3 authors. <a href="https://arxiv.org/abs/2607.02225">arXiv:2607.02225</a>. Category: AI/ML use.</p>
+        <p><strong>Summary.</strong> The paper represents the hadronic environment around heavy-flavor electrons as a point cloud and compares several set-based architectures, including Transformer models, for charm-versus-bottom electron classification. At about 40% efficiency, the method reaches roughly 80% purity and improves over a hand-crafted-observable BDT baseline. Perturbation and observable-response studies indicate that the model uses geometric and topological information rather than just memorizing high-level proxies.</p>
+        <p><strong>Why it matters.</strong> Charm/bottom electron separation is directly relevant to open-heavy-flavor measurements in pp, pA, and AA collisions, where better flavor tagging can sharpen energy-loss and transport interpretations.</p>
+        <p><strong>Critical assessment.</strong> Strong for an ML application paper: it has an explicit physics target, an interpretable input representation, a relevant baseline, and some diagnostic studies. Remaining risk is realism: detector effects, generator dependence, and domain shift will determine whether the gains survive in an experimental analysis.</p>
+        <p><strong>Abstract.</strong> Electrons from semileptonic charm and bottom decays are important probes in high-energy collisions, but separating their origin is difficult. The authors use point-cloud descriptions of the hadronic environment and set-based ML models, finding improved classification over a BDT baseline and evidence that learned representations capture nontrivial geometric/topological information.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2607.02078 WavePID IceCube low-energy flavor identification single-PMT time series log-likelihood timing Geant4 GNN detector ML transfer strong">
+        <div class="paper-head"><h4>WavePID: Low-energy flavor identification using single-PMT time series in IceCube</h4><span class="label strong">strong</span></div>
+        <p class="meta">R. Abbasi, M. Ackermann, J. Adams, J. A. Aguilar, M. Ahlers, et al. 419 authors. <a href="https://arxiv.org/abs/2607.02078">arXiv:2607.02078</a>. Category: AI/ML-adjacent detector analysis.</p>
+        <p><strong>Method and result.</strong> WavePID is a template-based log-likelihood-ratio classifier using nanosecond-scale single-PMT timing information: distance to reconstructed vertex, early-charge fraction, and module-to-module time differences. Evaluated on a cascade-enriched sample selected by a graph neural network, it improves cascade purity and classification performance over the GNN alone.</p>
+        <p><strong>Likely HEP/heavy-ion use case.</strong> The transfer value is not the IceCube topology itself, but the design principle: use physics-motivated low-level timing observables as complementary information to neural event classifiers. That idea is relevant for timing layers, calorimeter pulse-shape analyses, pileup mitigation, and future detector design studies.</p>
+        <p><strong>Critical assessment.</strong> Strong and practically grounded, with simulation-based physics interpretation via Geant4. It is not an end-to-end ML novelty paper, but it is a good example of augmenting a neural classifier with interpretable detector observables.</p>
+      </article>
+
+      <article class="paper" data-search="2605.29283 physics foundation models generalizable physics benchmark distribution shifts spatiotemporal forecasting bias-aware transfer HEP nuclear workflows mixed">
+        <div class="paper-head"><h4>Do Physics Foundation Models Learn Generalizable Physics? A Bias-Aware Benchmark Across Physical Regimes and Distribution Shifts</h4><span class="label mixed">mixed but useful</span></div>
+        <p class="meta">Mengdi Chu, Yang Liu, Ayan Biswas, Han-Wei Shen. 4 authors. <a href="https://arxiv.org/abs/2605.29283">arXiv:2605.29283</a>. Category: AI/ML use cases in physics.</p>
+        <p><strong>Method and result.</strong> The paper benchmarks five physics-foundation-model architectures and multiple pretrained variants across eight physical dynamics, three training-data mixtures, and 25 test regimes, yielding 60,000 measurements. Its main conclusion is skeptical: current models behave as conditional generalists whose performance depends on regime, temporal scale, initial-condition complexity, data mix, size, and architecture.</p>
+        <p><strong>Likely HEP/heavy-ion use case.</strong> The benchmark logic transfers well to surrogate modeling for hydrodynamics, transport, detector response, and simulation acceleration: average performance is not enough if the surrogate fails under new centralities, beam energies, geometries, nuisance settings, or phase-space corners.</p>
+        <p><strong>Critical assessment.</strong> Useful and timely, especially because it attacks overbroad foundation-model claims. It remains a methods benchmark rather than a HEP/nuclear demonstration, so the practical transfer value depends on adopting similarly regime-aware evaluations in domain-specific surrogate studies.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2604.24783 Hyperstatistics q-entropy p-Pb midrapidity LHC broad framework caution weak transfer">
+        <div class="paper-head"><h4>Hyperstatistics</h4><span class="label caution">caution</span></div>
+        <p class="meta">Lucas Squillante, Samuel M. Soares, Constantino Tsallis, Mariano de Souza. 4 authors. <a href="https://arxiv.org/abs/2604.24783">arXiv:2604.24783</a>. Category: Caution.</p>
+        <p><strong>Why it may look relevant.</strong> The paper is cross-listed to hep-ex, hep-th, nucl-th, accelerator physics, instrumentation, and data analysis, and the abstract mentions midrapidity p-Pb data at the LHC as one demonstration.</p>
+        <p><strong>Why caution is warranted.</strong> From the abstract, the work appears to present a very broad generalized-statistics construction illustrated across capacitor discharge, cryostat pressure decay, p-Pb data, and turbulence. That breadth makes the heavy-ion connection look illustrative rather than diagnostic; without a targeted comparison to established heavy-ion baselines and uncertainties, it should not be treated as strong collision phenomenology.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
