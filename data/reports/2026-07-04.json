@@ -1,0 +1,127 @@
+{
+  "date": "2026-07-04",
+  "path": "reports/2026-07-04.html",
+  "summary": "The July 4 scout found a sparse but useful Friday arXiv window for heavy-ion and physics-ML work. The strongest heavy-ion item is a compact quarkonium transport calculation testing excited-to-ground-state ratios as hot-medium probes across p-Pb and Pb-Pb. The most directly actionable ML item is a point-cloud classifier for charm- versus bottom-origin heavy-flavor electrons, with WavePID and DSGNAR offering credible transfer value for detector timing and physics-informed surrogate workflows. Several generic PDE/ML claims look interesting but should not be treated as validated for HEP or nuclear production tasks without domain-specific stress tests.",
+  "keywords": [
+    "heavy quarkonium",
+    "small-system QGP",
+    "p-Pb hot medium",
+    "heavy-ion fusion",
+    "coupled-channels analysis",
+    "heavy-flavor electron classification",
+    "point-cloud machine learning",
+    "IceCube timing PID",
+    "physics-informed neural networks",
+    "machine-learning interatomic potentials"
+  ],
+  "arxiv_ids": [
+    "2607.02042",
+    "2607.01309",
+    "2607.02438",
+    "2607.02225",
+    "2607.02078",
+    "2607.02194",
+    "2607.02499",
+    "2607.01694"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "Probing hot QCD medium with heavy quarkonium in small and large collision systems is the strongest heavy-ion-relevant paper because it focuses on experimentally meaningful quarkonium yield ratios that suppress common cold-nuclear-matter uncertainties and tests one dynamical framework across p-Pb and Pb-Pb systems.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Probing hot QCD medium with heavy quarkonium in small and large collision systems",
+      "authors": "Jiamin Liu, Baoyi Chen",
+      "total_author_count": 2,
+      "arxiv_id": "2607.02042",
+      "url": "https://arxiv.org/abs/2607.02042",
+      "category": "Theory",
+      "abstract": "The paper uses a time-dependent Schroedinger-equation treatment of charmonium and bottomonium in complex in-medium potentials to describe excited-to-ground quarkonium yield ratios in p-Pb and Pb-Pb collisions.",
+      "tags": ["quarkonium", "small-system QGP", "hot QCD medium", "p-Pb"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Determining the dynamic deformation of 140Ce by constraining coupled-channels parameters for fusion",
+      "authors": "Chandra Kumar, Rohan Biswas, J. Gehlot, Gonika, A. Parihari, N. Madhavan, A. Vinayak, Amritraj Mahato, S. Nath",
+      "total_author_count": 9,
+      "arxiv_id": "2607.01309",
+      "url": "https://arxiv.org/abs/2607.01309",
+      "category": "Experiment",
+      "abstract": "The paper combines new 16O+140Ce fusion data, literature 36S+140Ce data, Gaussian analytic-barrier modeling, chi-square minimization, Bayesian analysis, and coupled-channels tests to extract dynamic deformation parameters for 140Ce.",
+      "tags": ["heavy-ion fusion", "coupled channels", "Bayesian model averaging", "nuclear deformation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Event-axis TMD measurements in e+e- and SIDIS",
+      "authors": "Daniel Diaz Fernandez, Patricia Andrea Gutierrez Garcia, Ignazio Scimemi, Wouter Waalewijn",
+      "total_author_count": 4,
+      "arxiv_id": "2607.02438",
+      "url": "https://arxiv.org/abs/2607.02438",
+      "category": "Phenomenology",
+      "abstract": "The paper develops operator-level and phenomenological ingredients for event-axis TMD fragmentation in e+e- and analogous 1-jettiness SIDIS measurements, with resummation and Pythia validation.",
+      "tags": ["TMD fragmentation", "SIDIS", "Belle", "artemide"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy-Flavor Electron Classification Using Hadronic Environment as Point Cloud",
+      "authors": "Jingyu Zhang, Wanbing He, Long Ma",
+      "total_author_count": 3,
+      "arxiv_id": "2607.02225",
+      "url": "https://arxiv.org/abs/2607.02225",
+      "category": "AI/ML use",
+      "abstract": "The paper represents the hadronic environment around heavy-flavor electrons as a point cloud and compares set-based neural architectures, including transformers, for charm-bottom electron separation.",
+      "tags": ["point clouds", "heavy flavor", "electron classification", "HEP ML"],
+      "assessment": "strong"
+    },
+    {
+      "title": "WavePID: Low-energy flavor identification using single-PMT time series in IceCube",
+      "authors": "IceCube Collaboration: R. Abbasi, M. Ackermann, J. Adams, J. A. Aguilar, M. Ahlers et al.",
+      "total_author_count": null,
+      "arxiv_id": "2607.02078",
+      "url": "https://arxiv.org/abs/2607.02078",
+      "category": "AI/ML use",
+      "abstract": "WavePID is a template-based likelihood-ratio classifier that uses nanosecond-scale single-module timing observables to improve low-energy neutrino flavor identification when combined with graph-neural-network-selected samples.",
+      "tags": ["timing PID", "IceCube", "template likelihood", "detector reconstruction"],
+      "assessment": "strong"
+    },
+    {
+      "title": "An Optimisation Framework for the Well-Conditioned Training of Physics-Informed Neural Networks",
+      "authors": "Joseph Webb, Sadok Jerad, Coralia Cartis",
+      "total_author_count": 3,
+      "arxiv_id": "2607.02194",
+      "url": "https://arxiv.org/abs/2607.02194",
+      "category": "AI/ML use",
+      "abstract": "The paper introduces a doubly-sketched Gauss-Newton optimizer with adaptive regularization and step control for PINNs, reporting major error and speed improvements across nonlinear, chaotic, multiscale, high-dimensional, and Navier-Stokes benchmarks.",
+      "tags": ["PINNs", "second-order optimization", "PDE surrogates", "computational physics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+      "authors": "Gil Harari, Yoel Zimmermann, Ola Tangen Kulseng, Laura Zichi, Chuin Wei Tan, Marc L. Descoteaux, Boris Kozinsky",
+      "total_author_count": 7,
+      "arxiv_id": "2607.02499",
+      "url": "https://arxiv.org/abs/2607.02499",
+      "category": "AI/ML use",
+      "abstract": "The paper compares matrix-structured optimizers including SOAP, Muon, and SOAP-Muon for training NequIP and Allegro machine-learning interatomic potentials, finding faster convergence and better final accuracy than Adam, especially with partial force supervision.",
+      "tags": ["ML interatomic potentials", "optimizer choice", "equivariant models", "label efficiency"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Frequency Shift Physics-Informed Extreme Learning Machine for Solving High-Frequency Partial Differential Equations",
+      "authors": "Xiong Xiong, Ruonan Zhai, Zheng Zeng, Sheng Zhou, Rongchun Hu, Zichen Deng",
+      "total_author_count": 6,
+      "arxiv_id": "2607.01694",
+      "url": "https://arxiv.org/abs/2607.01694",
+      "category": "Caution",
+      "abstract": "The paper proposes frequency-shifted initialization for physics-informed extreme learning machines and reports large benchmark gains on several high-frequency PDE problems.",
+      "tags": ["PIELM", "high-frequency PDEs", "spectral bias", "transfer caution"],
+      "assessment": "caution"
+    }
+  ]
+}
