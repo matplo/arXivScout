@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-04</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-04 Briefing</h1>
+    <p class="dek">Heavy quarkonium as a small-system hot-medium probe, heavy-ion fusion constraints on deformation, TMD phenomenology, and physics-ML methods with credible detector or simulation transfer paths.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>The strongest heavy-ion-relevant paper is the quarkonium medium study.</strong> Its value is the focus on excited-to-ground-state ratios, which suppress shared cold-nuclear-matter uncertainties and can compare small and large systems in one framework.</li>
+        <li><strong>Low-energy heavy-ion fusion also produced a solid experimental-theory item.</strong> The 140Ce deformation study combines new fusion data, literature data, Bayesian extraction, and coupled-channels validation rather than relying on one fit.</li>
+        <li><strong>HEP-facing ML is unusually concrete today.</strong> The heavy-flavor electron point-cloud classifier reports an experimentally meaningful working point and interprets learned responses through physics-motivated observables.</li>
+        <li><strong>Detector timing remains a high-value transfer idea.</strong> WavePID is not a neural model, but it is a strong example of physics-informed classification layered onto a GNN-selected sample; this style can transfer to timing-rich HEP and nuclear detectors.</li>
+        <li><strong>Generic physics-ML claims need domain stress tests.</strong> PINN optimization and MLIP optimizer results are promising, but neither should be treated as proven for heavy-ion hydro, transport, detector simulation, or uncertainty-controlled inference without targeted validation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.02042 quarkonium hot QCD medium p-Pb Pb-Pb small systems charmonium bottomonium yield ratios theory strong">
+        <div class="paper-head"><h4>Probing hot QCD medium with heavy quarkonium in small and large collision systems</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jiamin Liu, Baoyi Chen; 2 authors. <a href="https://arxiv.org/abs/2607.02042">arXiv:2607.02042</a></p>
+        <p><strong>Summary:</strong> The authors use a time-dependent Schroedinger-equation framework with complex in-medium heavy-quark potentials to evolve charmonium and bottomonium states. They describe excited-to-ground-state suppression ratios in p-Pb at 8.16 TeV and extend the same framework to bottomonium nuclear-modification-factor ratios in Pb-Pb at 5.02 TeV.</p>
+        <p><strong>Why it matters:</strong> Quarkonium ratios are attractive because many common cold-nuclear-matter and production uncertainties cancel. If the same dynamics can account for charmonium and bottomonium across small and large systems, it strengthens the case that final-state hot-medium effects are measurable even in high-multiplicity p-Pb.</p>
+        <p><strong>Critical assessment:</strong> Strong and on-scope, with a clean observable strategy and compact execution. The main caution is interpretive: agreement with multiplicity-dependent ratios supports a hot-medium explanation, but it does not by itself exclude all competing small-system mechanisms or initial-state effects.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.01309 140Ce dynamic deformation heavy-ion fusion coupled channels Bayesian Model Averaging Bass barrier experiment strong">
+        <div class="paper-head"><h4>Determining the dynamic deformation of 140Ce by constraining coupled-channels parameters for fusion</h4><span class="label strong">strong</span></div>
+        <p class="meta">Chandra Kumar, Rohan Biswas, J. Gehlot, Gonika, A. Parihari, N. Madhavan, A. Vinayak, Amritraj Mahato, S. Nath; 9 authors. <a href="https://arxiv.org/abs/2607.01309">arXiv:2607.01309</a></p>
+        <p><strong>Summary:</strong> This paper combines new 16O+140Ce fusion cross sections, literature 36S+140Ce data, Gaussian analytic-barrier modeling, chi-square minimization, Bayesian analysis, and coupled-channels calculations. It extracts beta2 and beta3 deformation parameters and tests them against 28Si+140Ce fusion and barrier-distribution data including two-neutron transfer.</p>
+        <p><strong>Why it matters:</strong> Although this is low-energy heavy-ion fusion rather than ultrarelativistic QGP physics, it is a careful heavy-ion reaction study with useful methodology for constraining nuclear structure through reaction observables.</p>
+        <p><strong>Critical assessment:</strong> Scientifically solid: the cross-system consistency check and Bayesian Model Averaging make the deformation extraction more convincing than a single-channel fit. Its relevance to QGP-oriented heavy-ion work is indirect, so I would treat it as a strong nuclear-reaction item rather than a central hot-QCD result.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.02438 event-axis TMD measurements e+e- SIDIS thrust axis fragmentation artemide phenomenology strong">
+        <div class="paper-head"><h4>Event-axis TMD measurements in e+e- and SIDIS</h4><span class="label strong">strong adjacent</span></div>
+        <p class="meta">Daniel Diaz Fernandez, Patricia Andrea Gutierrez Garcia, Ignazio Scimemi, Wouter Waalewijn; 4 authors. <a href="https://arxiv.org/abs/2607.02438">arXiv:2607.02438</a></p>
+        <p><strong>Summary:</strong> The paper develops the operator and phenomenological treatment of TMD fragmentation measurements relative to the thrust axis in e+e- and analogous 1-jettiness observables in SIDIS. It includes soft-factor checks, resummation, a nonperturbative model, implementation in artemide, and first validation against Pythia8.3 simulated e+e- data.</p>
+        <p><strong>Why it matters:</strong> This is not a heavy-ion paper, but it is relevant to the QCD toolkit used by nuclear and collider phenomenology, especially for fragmentation and transverse-momentum structure. It is also cross-listed to nucl-ex and nucl-th.</p>
+        <p><strong>Critical assessment:</strong> Technically strong and likely useful for precision QCD. The heavy-ion connection is indirect, so I would not overstate its immediate relevance to QGP phenomenology.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2607.02225 heavy-flavor electron classification charm bottom point cloud transformer hadronic environment HEP experiment AI ML strong">
+        <div class="paper-head"><h4>Heavy-Flavor Electron Classification Using Hadronic Environment as Point Cloud</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jingyu Zhang, Wanbing He, Long Ma; 3 authors. <a href="https://arxiv.org/abs/2607.02225">arXiv:2607.02225</a></p>
+        <p><strong>Summary:</strong> The authors represent the hadronic environment around semi-leptonic heavy-flavor electrons as a point cloud and compare set-based ML architectures, including transformer models, for separating charm- and bottom-origin electrons. At about 40% efficiency, the classifier reaches roughly 80% purity and improves over a hand-crafted-observable BDT baseline.</p>
+        <p><strong>Why it matters:</strong> Charm-bottom separation is directly useful for heavy-flavor measurements in high-energy and heavy-ion collisions, where D- and B-origin electrons probe different mass-dependent energy-loss and transport physics.</p>
+        <p><strong>Critical assessment:</strong> Strong for an ML application because it includes a conventional baseline, an experimentally relevant working point, and feature-perturbation/observable studies that probe what the model learned. The next test is domain robustness: generator dependence, detector effects, event occupancy, and performance in realistic heavy-ion backgrounds.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2607.02078 WavePID IceCube low-energy flavor identification single-PMT timing template likelihood graph neural network detector reconstruction strong transfer">
+        <div class="paper-head"><h4>WavePID: Low-energy flavor identification using single-PMT time series in IceCube</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">IceCube Collaboration: R. Abbasi, M. Ackermann, J. Adams, J. A. Aguilar, M. Ahlers et al.; large collaboration. <a href="https://arxiv.org/abs/2607.02078">arXiv:2607.02078</a></p>
+        <p><strong>Method and result:</strong> WavePID is a template-based log-likelihood-ratio classifier using nanosecond-scale timing observables from individual optical modules. Evaluated on a cascade-enriched sample selected by a graph neural network, it improves flavor-identification performance over the GNN-only selection.</p>
+        <p><strong>Likely use case:</strong> The transfer value is methodological: physics-informed low-level timing features can complement learned morphology classifiers. This is relevant to timing layers, Cherenkov detectors, calorimeters with precision timing, and future reconstruction pipelines in HEP and nuclear experiments.</p>
+        <p><strong>Critical assessment:</strong> Strong because it demonstrates a hybrid analysis pattern rather than replacing physics insight with a black box. It is not a generic ML architecture paper, but its validation logic is exactly the kind HEP/NP ML workflows need.</p>
+      </article>
+
+      <article class="paper" data-search="2607.02194 DSGNAR PINN Gauss Newton optimizer physics-informed neural networks Navier-Stokes PDE surrogate hydrodynamics transfer mixed">
+        <div class="paper-head"><h4>An Optimisation Framework for the Well-Conditioned Training of Physics-Informed Neural Networks</h4><span class="label mixed">promising but needs stress tests</span></div>
+        <p class="meta">Joseph Webb, Sadok Jerad, Coralia Cartis; 3 authors. <a href="https://arxiv.org/abs/2607.02194">arXiv:2607.02194</a></p>
+        <p><strong>Method and result:</strong> The paper introduces DSGNAR, a doubly-sketched Gauss-Newton method with adaptive regularization and step-length control for PINNs. The abstract reports very large improvements in accuracy and speed across nonlinear, chaotic, multiscale, high-dimensional, and Navier-Stokes benchmarks, with code available.</p>
+        <p><strong>Likely use case:</strong> If the optimizer is robust, it could help train PDE surrogates or inverse solvers for hydrodynamics, transport, detector fields, or calibration problems where standard PINN training is unstable.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking because it attacks a real PINN bottleneck. The claims are large, so transfer to HEP/heavy-ion workflows should be withheld until it is tested on noisy data, stiff multi-physics systems, conservation constraints, and uncertainty-aware inference.</p>
+      </article>
+
+      <article class="paper" data-search="2607.02499 SOAP Muon Adam ML interatomic potentials NequIP Allegro optimizer label efficiency computational physics mixed transfer">
+        <div class="paper-head"><h4>Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials</h4><span class="label mixed">useful adjacent</span></div>
+        <p class="meta">Gil Harari, Yoel Zimmermann, Ola Tangen Kulseng, Laura Zichi, Chuin Wei Tan, Marc L. Descoteaux, Boris Kozinsky; 7 authors. <a href="https://arxiv.org/abs/2607.02499">arXiv:2607.02499</a></p>
+        <p><strong>Method and result:</strong> The authors compare matrix-structured optimizers, including SOAP, Muon, and SOAP-Muon, against Adam for NequIP and Allegro interatomic-potential training. SOAP and SOAP-Muon reportedly improve convergence and final accuracy, especially with partial force supervision.</p>
+        <p><strong>Likely use case:</strong> The most credible transfer path is not directly to heavy-ion phenomenology, but to scientific ML training practice: equivariant models, sparse labels, force-like supervision, and expensive simulation labels all have analogues in nuclear many-body and detector-surrogate workflows.</p>
+        <p><strong>Critical assessment:</strong> The optimizer question is practical and often under-tested, which makes this useful. Transfer is indirect, however; gains for molecular MLIPs do not automatically imply gains for collider-event models, hydrodynamic emulators, or nuclear-structure networks.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2607.01694 frequency shift physics-informed extreme learning machine high-frequency PDE spectral bias caution transfer weak">
+        <div class="paper-head"><h4>Frequency Shift Physics-Informed Extreme Learning Machine for Solving High-Frequency Partial Differential Equations</h4><span class="label caution">caution</span></div>
+        <p class="meta">Xiong Xiong, Ruonan Zhai, Zheng Zeng, Sheng Zhou, Rongchun Hu, Zichen Deng; 6 authors. <a href="https://arxiv.org/abs/2607.01694">arXiv:2607.01694</a></p>
+        <p><strong>Why caution:</strong> The paper targets a real issue, spectral bias in high-frequency PDE solutions, and reports one-to-five-order benchmark improvements over existing PIELM variants. But the transfer path to HEP or nuclear physics is generic, and the abstract-level evidence does not establish robustness for noisy inverse problems, conservation-law constraints, detector geometries, or heavy-ion hydrodynamics.</p>
+        <p><strong>Critical assessment:</strong> Potentially useful as a numerical-method component, but not yet strong enough to highlight as a physics AI/ML use case for this archive. I would treat it as a method to revisit only after code/data release and domain-specific benchmarks.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
