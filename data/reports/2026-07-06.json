@@ -1,0 +1,130 @@
+{
+  "date": "2026-07-06",
+  "path": "reports/2026-07-06.html",
+  "summary": "No newer Monday arXiv batch was visible at run time; arXiv category pages still showed the Friday July 3, 2026 listings as the newest batch. The strongest heavy-ion selections are SAM-3.0 for exact-conservation corrections to fluctuation cumulants, quarkonium excited-to-ground-state ratios as small- and large-system hot-medium probes, and a realistic QCD antenna formalism for medium-induced radiation. The strongest AI/ML-transfer items have concrete physics hooks: point-cloud heavy-flavor electron classification, WavePID detector-timing PID, and local conformal uncertainty for collider surrogates. Generic PDE-ML benchmark gains are treated cautiously without HEP/NP stress tests.",
+  "keywords": [
+    "SAM-3.0",
+    "cumulant corrections",
+    "exact conservation laws",
+    "RHIC-BES fluctuations",
+    "heavy quarkonium",
+    "small-system QGP",
+    "QCD antenna radiation",
+    "jet quenching",
+    "spin femtoscopy",
+    "heavy-flavor electron classification",
+    "point-cloud machine learning",
+    "detector timing PID",
+    "conformal prediction",
+    "surrogate uncertainty"
+  ],
+  "arxiv_ids": [
+    "2607.01783",
+    "2607.02042",
+    "2607.00629",
+    "2607.00413",
+    "2607.02225",
+    "2607.02078",
+    "2607.01354",
+    "2607.01694"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "Subensemble Acceptance Method 3.0 is the strongest practical heavy-ion paper because it improves exact-conservation baselines for fluctuation cumulants and validates the formalism against direct canonical Monte Carlo sampling; the quarkonium-ratio paper is the strongest hot-QCD signal paper because it focuses on experimentally clean ratios across p-Pb and Pb-Pb.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Subensemble Acceptance Method 3.0: General Corrections to Cumulants from Exact Conservation Constraints",
+      "authors": "Roman Poberezhnyuk, Volodymyr A. Kuznietsov, Gregoire Pihan, Volodymyr Vovchenko",
+      "total_author_count": 4,
+      "arxiv_id": "2607.01783",
+      "url": "https://arxiv.org/abs/2607.01783",
+      "category": "Phenomenology",
+      "abstract": "SAM-3.0 corrects subsystem cumulants for exact global conservation of multiple charges, including energy, gives a closed recursion, recovers earlier SAM limits, fixes the binomial-acceptance behavior, and updates Hydro-EV net-proton baselines for RHIC-BES energies.",
+      "tags": ["net-proton cumulants", "RHIC BES", "conservation laws", "fluctuation baselines"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Probing hot QCD medium with heavy quarkonium in small and large collision systems",
+      "authors": "Jiamin Liu, Baoyi Chen",
+      "total_author_count": 2,
+      "arxiv_id": "2607.02042",
+      "url": "https://arxiv.org/abs/2607.02042",
+      "category": "Theory",
+      "abstract": "The paper evolves charmonium and bottomonium states with time-dependent Schrodinger dynamics in complex in-medium heavy-quark potentials, describing excited-to-ground quarkonium yield ratios in p-Pb and extending the framework to Pb-Pb bottomonium ratios.",
+      "tags": ["quarkonium", "small-system QGP", "hot QCD medium", "p-Pb", "Pb-Pb"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Gluon radiation from a QCD antenna with realistic parton-medium interactions",
+      "authors": "Carlota Andres, Liliana Apolinario, Nestor Armesto, Andre Cordeiro, Fabio Dominguez, Pablo Guerrero-Rodriguez, Jose Guilherme Milhano",
+      "total_author_count": 7,
+      "arxiv_id": "2607.00629",
+      "url": "https://arxiv.org/abs/2607.00629",
+      "category": "Theory",
+      "abstract": "The paper formulates the in-medium gluon-emission spectrum from a quark-antiquark antenna as numerically solvable differential equations, resumming medium interactions while allowing realistic scattering models beyond the harmonic-oscillator approximation.",
+      "tags": ["jet quenching", "QCD antenna", "medium-induced radiation", "color coherence"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Spin Femtoscopy: A Framework for Revealing Genuine Spin Correlations",
+      "authors": "Kehao Zhang, Xuan Wang, Xiaofeng Luo",
+      "total_author_count": 3,
+      "arxiv_id": "2607.00413",
+      "url": "https://arxiv.org/abs/2607.00413",
+      "category": "Phenomenology",
+      "abstract": "The paper proposes spin-resolved femtoscopic correlation functions, using Lambda-Lambda pairs and self-analyzing weak decays as a proof of principle, to separate genuine two-particle spin correlations from spin-dependent femtoscopic mixing.",
+      "tags": ["spin femtoscopy", "Lambda pairs", "spin correlations", "heavy-ion observables"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Heavy-Flavor Electron Classification Using Hadronic Environment as Point Cloud",
+      "authors": "Jingyu Zhang, Wanbing He, Long Ma",
+      "total_author_count": 3,
+      "arxiv_id": "2607.02225",
+      "url": "https://arxiv.org/abs/2607.02225",
+      "category": "AI/ML use",
+      "abstract": "The paper models the hadronic environment around heavy-flavor electrons as a point cloud and compares set-based neural architectures, including transformers, for charm-bottom electron separation, improving over a hand-crafted-observable BDT baseline.",
+      "tags": ["point clouds", "heavy flavor", "electron classification", "HEP ML"],
+      "assessment": "strong"
+    },
+    {
+      "title": "WavePID: Low-energy flavor identification using single-PMT time series in IceCube",
+      "authors": "IceCube Collaboration: R. Abbasi, M. Ackermann, J. Adams, J. A. Aguilar, M. Ahlers et al.",
+      "total_author_count": 419,
+      "arxiv_id": "2607.02078",
+      "url": "https://arxiv.org/abs/2607.02078",
+      "category": "AI/ML use",
+      "abstract": "WavePID is a template-based log-likelihood-ratio classifier using nanosecond-scale single-module timing observables, improving low-energy neutrino flavor identification when combined with graph-neural-network-selected samples.",
+      "tags": ["timing PID", "IceCube", "template likelihood", "detector reconstruction"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Local Conformal Predictions for Calibrated Surrogates",
+      "authors": "Suprio Dubey, Henning Bahl, Anja Butter, Jurgen Hesser, Tilman Plehn",
+      "total_author_count": 5,
+      "arxiv_id": "2607.01354",
+      "url": "https://arxiv.org/abs/2607.01354",
+      "category": "AI/ML use",
+      "abstract": "The paper introduces FALCON, a local conformal-prediction method for calibrated uncertainty intervals on neural-network surrogates for LHC scattering amplitudes and ultra-fast event generation.",
+      "tags": ["conformal prediction", "surrogate uncertainty", "LHC amplitudes", "event generation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Frequency Shift Physics-Informed Extreme Learning Machine for Solving High-Frequency Partial Differential Equations",
+      "authors": "Xiong Xiong, Ruonan Zhai, Zheng Zeng, Sheng Zhou, Rongchun Hu, Zichen Deng",
+      "total_author_count": 6,
+      "arxiv_id": "2607.01694",
+      "url": "https://arxiv.org/abs/2607.01694",
+      "category": "Caution",
+      "abstract": "The paper proposes frequency-shifted initialization for physics-informed extreme learning machines and reports large gains on high-frequency PDE benchmarks, but the transfer path to HEP or nuclear production problems remains generic.",
+      "tags": ["PIELM", "high-frequency PDEs", "spectral bias", "transfer caution"],
+      "assessment": "caution"
+    }
+  ]
+}
