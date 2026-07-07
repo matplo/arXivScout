@@ -1,0 +1,144 @@
+{
+  "date": "2026-07-07",
+  "path": "reports/2026-07-07.html",
+  "summary": "The latest visible arXiv batch on July 7 emphasized experiment-facing heavy-ion baselines, fluctuation-cumulant methodology, baryon-transport diagnostics, and detector-analysis AI/ML. The strongest heavy-ion item is the sPHENIX isolated prompt photon cross-section measurement, because it establishes a 200 GeV p+p reference for future heavy-ion photon measurements. SAM-3.0 remains the strongest phenomenology/statistical-methods contribution because it gives validated exact-conservation corrections for cumulants relevant to RHIC-BES fluctuation analyses. The strongest AI/ML-transfer papers are flow-based likelihood surrogates for neutrino-systematics inference and RTL fault injection for a deployed graph-neural-network trigger; both address production analysis reliability rather than generic benchmark performance. Two vorticity/spin-signature papers are flagged for caution because their abstracts make broad claims with limited visible validation and overlap strongly with each other.",
+  "keywords": [
+    "sPHENIX prompt photons",
+    "p+p baseline",
+    "heavy-ion photon reference",
+    "SAM-3.0",
+    "exact conservation cumulants",
+    "RHIC-BES fluctuations",
+    "baryon number transport",
+    "hyperon-kaon correlations",
+    "Bayesian neural networks",
+    "physics-informed nuclear data",
+    "normalizing flows",
+    "high-dimensional likelihoods",
+    "GNN trigger reliability",
+    "online tracking",
+    "nuclear DFT machine learning",
+    "vorticity caution"
+  ],
+  "arxiv_ids": [
+    "2607.03892",
+    "2607.01783",
+    "2607.02867",
+    "2607.04148",
+    "2607.03477",
+    "2607.03153",
+    "2607.04271",
+    "2607.04095",
+    "2607.03716"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": [
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "The strongest experiment-facing heavy-ion paper is the sPHENIX isolated prompt photon measurement because it provides the p+p reference needed for future heavy-ion photon analyses; the strongest methods paper is SAM-3.0 because it supplies validated exact-conservation corrections for fluctuation cumulants.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Measurement of isolated prompt photon production in p+p collisions at sqrt(s) = 200 GeV with the sPHENIX detector",
+      "authors": "sPHENIX Collaboration: M. I. Abdulhamid, U. Acharya, G. Adawi, I. Ahmed, C. A. Aidala et al.",
+      "total_author_count": 220,
+      "arxiv_id": "2607.03892",
+      "url": "https://arxiv.org/abs/2607.03892",
+      "category": "Experiment",
+      "abstract": "sPHENIX measures the isolated prompt photon differential cross section versus photon transverse energy in 200 GeV p+p collisions, compares the result with PYTHIA and NLO/NNLO pQCD, and finds consistency within quoted uncertainties.",
+      "tags": ["prompt photons", "sPHENIX", "p+p baseline", "pQCD", "heavy-ion reference"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Subensemble Acceptance Method 3.0: General Corrections to Cumulants from Exact Conservation Constraints",
+      "authors": "Roman Poberezhniuk, Volodymyr A. Kuznietsov, Gregoire Pihan, Volodymyr Vovchenko",
+      "total_author_count": 4,
+      "arxiv_id": "2607.01783",
+      "url": "https://arxiv.org/abs/2607.01783",
+      "category": "Phenomenology",
+      "abstract": "SAM-3.0 corrects subsystem cumulants for exact global conservation of multiple charges, including energy; it gives a closed recursion, recovers earlier SAM limits, fixes binomial-acceptance behavior, updates Hydro-EV net-proton baselines, and validates against direct canonical Monte Carlo sampling.",
+      "tags": ["net-proton cumulants", "conservation laws", "RHIC BES", "fluctuation baselines"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Studying baryon number transport dynamics via hyperon-kaon correlations in p+Au collisions at sqrt(s_NN)=20, 39 and 62 GeV",
+      "authors": "Siyuan Ping, Xiaozhou Yu, Long Ma",
+      "total_author_count": 3,
+      "arxiv_id": "2607.02867",
+      "url": "https://arxiv.org/abs/2607.02867",
+      "category": "Phenomenology",
+      "abstract": "The paper proposes hyperon-kaon rapidity correlations as a probe of baryon-number transport and strange-quark pair correlations, using AMPT and UrQMD as baselines without a baryon-junction mechanism.",
+      "tags": ["baryon transport", "hyperon-kaon correlations", "p+Au", "AMPT", "UrQMD"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Evaluation of U-235 and U-238 Fission Product Yields Using Bayesian Neural Networks: Comparison of Baseline and Physics-Informed Models",
+      "authors": "Chun-Yuan Qiao, Ya-Xuan Wang, Jun-Chen Pei, Chun-Wang Ma, Yong-Jing Chen et al.",
+      "total_author_count": 11,
+      "arxiv_id": "2607.04148",
+      "url": "https://arxiv.org/abs/2607.04148",
+      "category": "AI/ML use",
+      "abstract": "A Bayesian neural-network model for cumulative fission yields is improved with physics-informed features including odd-even effects, beta-decay energy, and isospin, narrowing confidence intervals and improving agreement with data and evaluated libraries for representative products.",
+      "tags": ["Bayesian neural network", "fission yields", "physics-informed ML", "nuclear data"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Flow-Based Surrogates for High-Dimensional Likelihoods in Experimental Neutrino Physics",
+      "authors": "Mathias El Baz, Lorenzo Giannessi, Adrien Blanchet, Federico Sanchez",
+      "total_author_count": 4,
+      "arxiv_id": "2607.03477",
+      "url": "https://arxiv.org/abs/2607.03477",
+      "category": "AI/ML use",
+      "abstract": "The authors train a hybrid normalizing-flow architecture on a 110-parameter near-detector likelihood with explicit non-Gaussian parameters and report 98% relative effective sample size versus about 5% for a Gaussian approximation while reproducing an MCMC reference.",
+      "tags": ["normalizing flows", "likelihood surrogate", "systematics", "neutrino inference"],
+      "assessment": "strong"
+    },
+    {
+      "title": "RTL Fault Injection of a Deployed Graph Neural Network Trigger for Belle II",
+      "authors": "Georgios Sotiropoulos, Marc Neu, Tanja Harbaum, Torben Ferber, Jurgen Becker",
+      "total_author_count": 5,
+      "arxiv_id": "2607.03153",
+      "url": "https://arxiv.org/abs/2607.03153",
+      "category": "AI/ML use",
+      "abstract": "The paper performs RTL-level fault injection on Belle II's deployed GNN-ETM trigger, injecting 1,442,840 single-event upsets across 211,245 signals and showing that output-only monitoring can misestimate mean time to failure by up to 78.7%.",
+      "tags": ["GNN trigger", "fault injection", "FPGA", "Belle II", "reliability"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural-Network-Assisted Binary Template Construction for Matrix-Based Pattern Matching in the STCF MDC",
+      "authors": "Zhaoli Guo, Qingyu Li, Baolin Zhang, Jiarui Zhao, Aonan Zhu, Liang Peng, Huilin Li",
+      "total_author_count": 7,
+      "arxiv_id": "2607.04271",
+      "url": "https://arxiv.org/abs/2607.04271",
+      "category": "AI/ML use",
+      "abstract": "A neural network is used offline to optimize binary template libraries for fast bitwise pattern matching in a drift chamber; no neural inference is required online, preserving deterministic trigger speed while improving template coverage in simulation.",
+      "tags": ["online tracking", "template optimization", "STCF", "trigger", "offline ML"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "ML and AI for density functional theory: different priorities for Kohn-Sham and orbital-free DFT, for electronic and nuclear DFT",
+      "authors": "Xin-Hui Wu, Sergei Manzhos",
+      "total_author_count": 2,
+      "arxiv_id": "2607.04095",
+      "url": "https://arxiv.org/abs/2607.04095",
+      "category": "AI/ML use",
+      "abstract": "This review contrasts ML priorities for Kohn-Sham and orbital-free DFT across electronic and nuclear contexts, arguing that symbolic regression may be especially attractive for kinetic-energy functionals and nuclear DFT transfer.",
+      "tags": ["nuclear DFT", "symbolic regression", "functional learning", "review"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Vorticity in the Quark-Gluon Plasma: Volumetric Expansion, Regularization, and Spin Signatures",
+      "authors": "Malak Ait Tamlihat, Ghizlane Ez-Zobayr, Laurent Schoeffel, Yahya Tayalati",
+      "total_author_count": 4,
+      "arxiv_id": "2607.03716",
+      "url": "https://arxiv.org/abs/2607.03716",
+      "category": "Caution",
+      "abstract": "The paper presents a self-contained treatment of QGP vorticity, volumetric expansion, and spin signatures, including a claim that expansion regularizes vortex self-amplification and that global mid-rapidity Lambda polarization can vanish under a peripheral dipole topology.",
+      "tags": ["QGP vorticity", "spin signatures", "overclaim caution", "validation limits"],
+      "assessment": "caution"
+    }
+  ]
+}
