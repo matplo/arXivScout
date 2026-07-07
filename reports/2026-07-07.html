@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-07</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-07 Briefing</h1>
+    <p class="dek">Recent arXiv papers relevant to heavy-ion collision physics and AI/ML use in physics, screened with an abstract-first, quality-over-quantity pass. The latest visible arXiv category pages showed the Tuesday, July 7 listing batch, with many submitted over the July 3-5 interval.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Experiment baseline:</strong> sPHENIX isolated prompt photons in 200 GeV p+p are the clearest heavy-ion-relevant measurement, because the result establishes the reference needed for forthcoming heavy-ion photon analyses.</li>
+        <li><strong>Fluctuation methodology:</strong> SAM-3.0 is the strongest phenomenology/statistical paper, with exact-conservation corrections for cumulants and direct Monte Carlo validation.</li>
+        <li><strong>Baryon transport:</strong> hyperon-kaon rapidity correlations in p+Au are a useful proposed diagnostic, but the current paper is best read as a model baseline rather than evidence for a baryon-junction mechanism.</li>
+        <li><strong>AI/ML strength:</strong> normalizing-flow likelihood surrogates and RTL fault injection for a deployed GNN trigger are strong because they address reliability and uncertainty in production physics workflows.</li>
+        <li><strong>Transferable but not proven:</strong> Bayesian neural networks for fission yields, offline neural optimization of online pattern-matching templates, and ML-for-nuclear-DFT guidance have credible nuclear/HEP transfer value, but need broader validation before being called mature.</li>
+        <li><strong>Caution:</strong> the new QGP-vorticity/spin-signature papers are relevant but appear broad and partly overlapping; the abstracts make strong claims with limited visible validation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <p>No new heavy-ion theory paper from the latest visible batch cleared the bar as a strong standalone selection. The vorticity items are discussed under caution because the claims look broader than the visible validation.</p>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.03892 sPHENIX isolated prompt photon p+p 200 GeV pQCD baseline heavy-ion photon experiment strong">
+        <div class="paper-head"><h4>Measurement of isolated prompt photon production in p+p collisions at sqrt(s) = 200 GeV with the sPHENIX detector</h4><span class="label strong">strong</span></div>
+        <p class="meta">sPHENIX Collaboration: M. I. Abdulhamid, U. Acharya, G. Adawi, I. Ahmed, C. A. Aidala et al.; 220 authors. <a href="https://arxiv.org/abs/2607.03892">arXiv:2607.03892</a></p>
+        <p><strong>Summary:</strong> sPHENIX measures the isolated prompt photon differential cross section versus photon transverse energy in 200 GeV p+p collisions using 2024 RHIC data. Photons are reconstructed in the central electromagnetic calorimeter with isolation imposed using electromagnetic and hadronic calorimetry, then compared with PYTHIA and NLO/NNLO pQCD calculations.</p>
+        <p><strong>Why it matters:</strong> Prompt photons are a clean hard-process reference for heavy-ion measurements because they largely escape final-state QCD energy loss. This result provides the p+p baseline for forthcoming sPHENIX isolated prompt photon measurements in heavy-ion collisions.</p>
+        <p><strong>Critical assessment:</strong> Strong experiment-facing contribution. It is a baseline rather than a medium measurement, but the pQCD comparison and detector-specific reference make it practically important for future photon and photon-jet heavy-ion work.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.01783 SAM-3.0 subensemble acceptance method cumulants exact conservation net protons RHIC BES phenomenology strong">
+        <div class="paper-head"><h4>Subensemble Acceptance Method 3.0: General Corrections to Cumulants from Exact Conservation Constraints</h4><span class="label strong">strong</span></div>
+        <p class="meta">Roman Poberezhniuk, Volodymyr A. Kuznietsov, Gregoire Pihan, Volodymyr Vovchenko; 4 authors. <a href="https://arxiv.org/abs/2607.01783">arXiv:2607.01783</a></p>
+        <p><strong>Summary:</strong> SAM-3.0 corrects cumulants measured in a subsystem for exact global conservation of multiple charges, including energy. It gives a closed recursion based on multivariate Bell polynomials, contains SAM-1.0 and SAM-2.0 as limits, reproduces the exact binomial-acceptance limit, and updates Hydro-EV net-proton baselines.</p>
+        <p><strong>Why it matters:</strong> Conservation effects are a central non-critical baseline for RHIC Beam Energy Scan fluctuation analyses. A more general and validated correction formalism helps keep critical-point interpretations from being contaminated by acceptance and conservation artifacts.</p>
+        <p><strong>Critical assessment:</strong> Very strong. The paper does the right validation against direct canonical Monte Carlo sampling and includes hadronic-afterburner effects; the experimental burden is now careful mapping to actual efficiency, acceptance, and centrality definitions.</p>
+      </article>
+
+      <article class="paper" data-search="2607.02867 baryon number transport hyperon kaon correlations p+Au AMPT UrQMD gluon junction phenomenology mixed">
+        <div class="paper-head"><h4>Studying baryon number transport dynamics via hyperon-kaon correlations in p+Au collisions at sqrt(s_NN)=20, 39 and 62 GeV</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Siyuan Ping, Xiaozhou Yu, Long Ma; 3 authors. <a href="https://arxiv.org/abs/2607.02867">arXiv:2607.02867</a></p>
+        <p><strong>Summary:</strong> The authors propose hyperon-kaon correlations in relative rapidity as a diagnostic for baryon-number transport and strange-quark pair correlations. AMPT and UrQMD are used to build baselines without a baryon-junction mechanism, with Wasserstein distance used to quantify correlation differences.</p>
+        <p><strong>Why it matters:</strong> Baryon transport across rapidity is a key ingredient in the RHIC Beam Energy Scan and in understanding how incoming baryon number appears at midrapidity. A correlation observable could be more discriminating than single-particle yields alone.</p>
+        <p><strong>Critical assessment:</strong> Useful but mixed. It is valuable as a baseline study and observable proposal, but the result does not yet demonstrate sensitivity to the proposed gluon-junction mechanism in data or in models that include it.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2607.04148 Bayesian neural network fission product yields physics-informed nuclear data U-235 U-238 AI ML mixed">
+        <div class="paper-head"><h4>Evaluation of U-235 and U-238 Fission Product Yields Using Bayesian Neural Networks: Comparison of Baseline and Physics-Informed Models</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Chun-Yuan Qiao, Ya-Xuan Wang, Jun-Chen Pei, Chun-Wang Ma, Yong-Jing Chen et al.; 11 authors. <a href="https://arxiv.org/abs/2607.04148">arXiv:2607.04148</a></p>
+        <p><strong>Summary:</strong> A baseline Bayesian neural network for cumulative fission yields is improved by adding physics-informed features: odd-even effects, beta-decay energy, and isospin. The improved model better reconstructs yield distributions and gives narrower confidence intervals for representative fission products.</p>
+        <p><strong>Why it matters:</strong> While not heavy-ion physics, it is a nuclear-data ML use case with a concrete physics-informed architecture and uncertainty language. That makes it more relevant than generic ML-for-nuclear examples.</p>
+        <p><strong>Critical assessment:</strong> Promising but mixed. The physics features are sensible, but the abstract does not make clear whether the uncertainty intervals remain calibrated under isotope, energy, or library extrapolation.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2607.03477 normalizing flows likelihood surrogate high-dimensional likelihood neutrino systematics MCMC uncertainty propagation HEP transfer strong">
+        <div class="paper-head"><h4>Flow-Based Surrogates for High-Dimensional Likelihoods in Experimental Neutrino Physics</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">Mathias El Baz, Lorenzo Giannessi, Adrien Blanchet, Federico Sanchez; 4 authors. <a href="https://arxiv.org/abs/2607.03477">arXiv:2607.03477</a></p>
+        <p><strong>Method and result:</strong> The paper trains a hybrid normalizing-flow model on a 110-parameter near-detector likelihood with 10 explicitly non-Gaussian parameters. It reports 98% relative effective sample size, compared with about 5% for a Gaussian approximation, while reproducing an MCMC reference.</p>
+        <p><strong>Likely use case:</strong> Heavy-ion and collider analyses increasingly use high-dimensional nuisance-parameter likelihoods, emulator fits, and downstream uncertainty propagation. A closed-form, samplable likelihood surrogate is directly relevant when posterior shape is not Gaussian.</p>
+        <p><strong>Critical assessment:</strong> Strong and transferable. The important next test is not another toy dimension increase, but coverage and robustness under real fit degeneracies, alternative priors, and analysis-to-analysis portability.</p>
+      </article>
+
+      <article class="paper" data-search="2607.03153 RTL fault injection deployed graph neural network trigger Belle II GNN FPGA reliability HEP transfer strong">
+        <div class="paper-head"><h4>RTL Fault Injection of a Deployed Graph Neural Network Trigger for Belle II</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">Georgios Sotiropoulos, Marc Neu, Tanja Harbaum, Torben Ferber, Jurgen Becker; 5 authors. <a href="https://arxiv.org/abs/2607.03153">arXiv:2607.03153</a></p>
+        <p><strong>Method and result:</strong> This is an RTL-level fault-injection study of Belle II's deployed GNN-ETM Level-1 trigger. The authors inject 1,442,840 single-event upsets across 211,245 signals and show that output-only monitoring can misestimate mean time to failure by up to 78.7%.</p>
+        <p><strong>Likely use case:</strong> Any HEP or nuclear experiment putting neural algorithms into FPGA trigger paths needs reliability studies at this level. The lesson transfers naturally to high-rate collider triggers and future heavy-ion online reconstruction.</p>
+        <p><strong>Critical assessment:</strong> Strong because it studies a deployed system and identifies actionable hardening targets. It is less about ML accuracy and more about whether ML-trigger hardware can be trusted in a radiation environment, which is exactly the right question.</p>
+      </article>
+
+      <article class="paper" data-search="2607.04271 neural network assisted binary template construction matrix-based pattern matching STCF drift chamber online tracking trigger mixed transfer">
+        <div class="paper-head"><h4>Neural-Network-Assisted Binary Template Construction for Matrix-Based Pattern Matching in the STCF MDC</h4><span class="label mixed">useful transfer</span></div>
+        <p class="meta">Zhaoli Guo, Qingyu Li, Baolin Zhang, Jiarui Zhao, Aonan Zhu, Liang Peng, Huilin Li; 7 authors. <a href="https://arxiv.org/abs/2607.04271">arXiv:2607.04271</a></p>
+        <p><strong>Method and result:</strong> A neural network is used offline to optimize binary template libraries for drift-chamber local track-segment finding. The deployed online pattern matcher remains deterministic and bitwise, with no neural inference at runtime.</p>
+        <p><strong>Likely use case:</strong> This offline-learning, online-deterministic pattern is attractive for trigger and data-reduction systems in HEP, where latency and reproducibility matter as much as raw classification performance.</p>
+        <p><strong>Critical assessment:</strong> Useful but still simulation-dependent. The idea is strong; the evidence would become much stronger with stress tests under mismodeled backgrounds, aging/noisy channels, and real online throughput constraints.</p>
+      </article>
+
+      <article class="paper" data-search="2607.04095 ML AI density functional theory nuclear DFT symbolic regression kinetic energy functional transfer mixed">
+        <div class="paper-head"><h4>ML and AI for density functional theory: different priorities for Kohn-Sham and orbital-free DFT, for electronic and nuclear DFT</h4><span class="label mixed">conceptual transfer</span></div>
+        <p class="meta">Xin-Hui Wu, Sergei Manzhos; 2 authors. <a href="https://arxiv.org/abs/2607.04095">arXiv:2607.04095</a></p>
+        <p><strong>Method and result:</strong> This is a perspective/review paper comparing ML priorities across Kohn-Sham and orbital-free DFT, with attention to both electronic and nuclear DFT. It argues that symbolic regression may be especially attractive for kinetic-energy functionals and nuclear DFT transfer.</p>
+        <p><strong>Likely use case:</strong> The transfer value is strategic rather than immediate: it helps frame which ML approaches might be physically interpretable enough for nuclear energy-density functional development.</p>
+        <p><strong>Critical assessment:</strong> Worth reading as a map of priorities, not as a validated new method. Its value depends on whether the proposed symbolic or hybrid strategies can beat strong nuclear-DFT baselines under extrapolation.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2607.03716 2607.04273 QGP vorticity spin signatures volumetric expansion regularization caution overclaim overlap">
+        <div class="paper-head"><h4>Vorticity in the Quark-Gluon Plasma: Volumetric Expansion, Regularization, and Spin Signatures</h4><span class="label caution">caution</span></div>
+        <p class="meta">Malak Ait Tamlihat, Ghizlane Ez-Zobayr, Laurent Schoeffel, Yahya Tayalati; 4 authors. <a href="https://arxiv.org/abs/2607.03716">arXiv:2607.03716</a>. Closely related companion/overlap: <a href="https://arxiv.org/abs/2607.04273">arXiv:2607.04273</a>.</p>
+        <p><strong>Why caution:</strong> The topic is relevant: QGP vorticity, volumetric expansion, and spin observables are active heavy-ion questions. But the abstracts make broad claims about geometric regularization of vortex self-amplification and definitive spin-signature interpretation, while showing only limited visible validation and substantial overlap between the two submissions.</p>
+        <p><strong>Critical assessment:</strong> Interesting enough to watch, but not strong enough to highlight as a reliable theory result from abstract-level evidence. I would look for explicit comparison to established hydrodynamic or transport simulations, sensitivity to initial conditions and viscosity, and quantitative links to existing polarization data before treating the conclusions as robust.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
