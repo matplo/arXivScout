@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-08</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-08 briefing</h1>
+    <p class="dek">Focused review of recent arXiv papers relevant to heavy-ion collision physics and AI/ML use in physics. The July 8 arXiv listing was screened together with late July 7 cross-lists and closely related July 5-7 items that had not been fully represented in the previous daily report.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Most important theory item:</strong> arXiv:2607.05639 gives algebraic causality and strong-hyperbolicity criteria for broad Einstein-Israel-Stewart viscous hydrodynamics, directly relevant to the reliability domain of heavy-ion hydro simulations.</li>
+        <li><strong>Best heavy-ion phenomenology signal:</strong> arXiv:2607.06191 advances bottomonium suppression/regeneration modeling with lattice-constrained in-medium potentials and an open-quantum-system Lindblad treatment.</li>
+        <li><strong>Experimentally useful baseline:</strong> arXiv:2607.03892 is a credible sPHENIX p+p isolated-prompt-photon reference for future RHIC heavy-ion photon measurements.</li>
+        <li><strong>Spin observables remain active but fragile:</strong> arXiv:2607.06138 gives a concrete coalescence mechanism for vector-meson spin alignment; two related vorticity manuscripts are worth caution because the claims read broader than the validation visible from the abstract.</li>
+        <li><strong>AI/ML with real HEP value:</strong> arXiv:2607.05762 is the strongest AI/ML inclusion because it validates an LLM-analysis reliability workflow on collider analyses rather than only generic software examples.</li>
+        <li><strong>Transferable physics ML:</strong> PDE latent-manifold learning, physics-informed fission-yield BNNs, and ML-guided DFT reviews have plausible transfer value, but only the collider-analysis paper is directly HEP-facing.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.05639 nonlinear causality strong hyperbolicity Einstein Israel Stewart relativistic viscous hydrodynamics heavy-ion theory">
+        <div class="paper-head"><h4>Nonlinear Causality and Strong Hyperbolicity of Einstein-Israel-Stewart Theories of Transient Relativistic Fluid Dynamics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ian Cordeiro, Enrico Speranza, Fabio S. Bemfica, Marcelo M. Disconzi, Jorge Noronha. <a href="https://arxiv.org/abs/2607.05639">arXiv:2607.05639</a></p>
+        <p><strong>Summary:</strong> The paper derives nonlinear causality criteria and sufficient strong-hyperbolicity conditions for a broad class of transient relativistic viscous-fluid theories, including Israel-Stewart, kinetic-theory-derived, and resummed-gradient formulations. The abstract emphasizes algebraic conditions that do not require symmetry assumptions or a fixed equation of state, and explicitly names heavy-ion phenomenology as an application domain.</p>
+        <p><strong>Why it matters:</strong> Hydrodynamic simulations are only as trustworthy as the mathematical regime in which their equations are causal and well posed. This looks like a high-value theory infrastructure paper for anyone pushing viscous hydro into baryon-rich, anisotropic, or far-from-equilibrium regimes.</p>
+        <p><strong>Critical assessment:</strong> Strong. The contribution is not a new observable but a rigorous validity check for a major modeling backbone. The practical payoff will depend on whether model builders actually map their transport-coefficient choices onto these algebraic conditions.</p>
+      </article>
+
+      <article class="paper" data-search="2607.06191 bottomonium open quantum system Lindblad lattice QCD imaginary potential PbPb quarkonium regeneration heavy-ion theory">
+        <div class="paper-head"><h4>Bottomonium production in an open quantum system approach with interactions from lattice quantum chromodynamic</h4><span class="label strong">strong</span></div>
+        <p class="meta">Shuhan Zheng, Shuzhe Shi. <a href="https://arxiv.org/abs/2607.06191">arXiv:2607.06191</a></p>
+        <p><strong>Summary:</strong> The authors model bottomonium production in Pb-Pb collisions at sqrt(sNN)=5.02 TeV using a Lindblad master equation from potential nonrelativistic QCD. Lattice-QCD-constrained in-medium potentials are used to compute Upsilon(1S), Upsilon(2S), and Upsilon(3S) nuclear modification factors, with attention to quantum regeneration and density-matrix initial conditions.</p>
+        <p><strong>Why it matters:</strong> Bottomonium remains one of the cleanest heavy-quark probes of QGP screening and dissociation. A lattice-informed open-system treatment is methodologically aligned with where the field needs to go: less rate-equation phenomenology, more quantum dynamics with uncertainty-bearing medium input.</p>
+        <p><strong>Critical assessment:</strong> Strong but model-sensitive. The abstract makes clear that results depend on the imaginary potential and initial density matrix, so the key question is not whether the framework is interesting, but how robust its conclusions are under those inputs.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.03892 sPHENIX isolated prompt photon pp 200 GeV pQCD baseline heavy-ion experiment RHIC">
+        <div class="paper-head"><h4>Measurement of isolated prompt photon production in p+p collisions at sqrt(s) = 200 GeV with the sPHENIX detector</h4><span class="label strong">strong</span></div>
+        <p class="meta">sPHENIX Collaboration: M. I. Abdulhamid, U. Acharya, G. Adawi, I. Ahmed, C. A. Aidala, and 215 others. <a href="https://arxiv.org/abs/2607.03892">arXiv:2607.03892</a></p>
+        <p><strong>Summary:</strong> sPHENIX measures isolated prompt-photon differential cross sections in 2024 p+p data at sqrt(s)=200 GeV for photons with |eta| &lt; 0.7 and 12 &lt; ET &lt; 32 GeV. The result is compared with PYTHIA and NLO/NNLO pQCD, with pQCD consistent within uncertainties.</p>
+        <p><strong>Why it matters:</strong> Prompt photons are essential calibrated probes because they constrain hard scattering and provide a baseline for photon-tagged energy-loss studies. This is an early sPHENIX standard candle for future heavy-ion photon measurements.</p>
+        <p><strong>Critical assessment:</strong> Strong as a baseline measurement. It is not itself a medium result, but the p+p reference and detector validation are precisely what later Au+Au or photon-jet analyses will need.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.06138 vector meson spin alignment anisotropic coalescence phi Kstar heavy-ion phenomenology">
+        <div class="paper-head"><h4>Vector-Meson Spin Alignment from Anisotropic Quark or Hadron Coalescence</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Wen-Bo Dong, Xin-Li Sheng, Yi-Liang Yin, Dirk H. Rischke, Qun Wang. <a href="https://arxiv.org/abs/2607.06138">arXiv:2607.06138</a></p>
+        <p><strong>Summary:</strong> The paper studies whether early-stage momentum anisotropy can generate spin alignment for phi and K*0 mesons through quark or pseudoscalar-meson coalescence. The reported sign of the spin-alignment shift differs between production mechanisms, suggesting a possible discriminator of vector-meson formation.</p>
+        <p><strong>Why it matters:</strong> Spin alignment has become a high-interest observable, but it is difficult to interpret because multiple mechanisms can contribute. A sign-level discriminator tied to coalescence dynamics could be useful if it survives realistic geometry, hadronic rescattering, and acceptance effects.</p>
+        <p><strong>Critical assessment:</strong> Promising but not yet decisive. The mechanism is concrete and testable, but the abstract-level signal is still model-level phenomenology; experimental usefulness depends on embedding in a fuller event evolution and confronting existing spin-alignment systematics.</p>
+      </article>
+
+      <article class="paper" data-search="2607.06137 quantum decoherence quarkonium Jpsi strongly interacting matter open quantum systems fireball heavy-ion phenomenology">
+        <div class="paper-head"><h4>Quantum decoherence: a study applied to quarkonium-like bound states in strongly interacting matter</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Gabriele Coci, Salvatore Plumari, Giuseppe Falci. <a href="https://arxiv.org/abs/2607.06137">arXiv:2607.06137</a></p>
+        <p><strong>Summary:</strong> This paper models a quarkonium-like bound state as a harmonic oscillator coupled to a strongly interacting reservoir. The authors examine decoherence under static and time-dependent couplings meant to mimic cooling fireball evolution, including a viscous variant that reportedly changes little relative to ideal hydrodynamic evolution.</p>
+        <p><strong>Why it matters:</strong> Quantum coherence and decoherence are conceptually relevant to quarkonium transport, especially as open-system approaches mature. The work may help clarify what aspects of fireball evolution materially affect coherence loss.</p>
+        <p><strong>Critical assessment:</strong> Interesting but simplified. The harmonic-oscillator setup is useful for isolating mechanisms, but the abstract does not show direct comparison to quarkonium data or to more realistic pNRQCD transport, so I would treat it as exploratory rather than production phenomenology.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <p>No heavy-ion-specific AI/ML paper in this 24-hour window survived the selectivity threshold. Relevant physics AI/ML papers are listed in the next section.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2607.05762 AI-generated scientific analyses task decomposition collider physics LLM validation reproducibility HEP AI ML">
+        <div class="paper-head"><h4>Articulating Assumptions in AI-Generated Scientific Analyses through Task Decomposition</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ahmed Hammad, Mihoko Nojiri. <a href="https://arxiv.org/abs/2607.05762">arXiv:2607.05762</a></p>
+        <p><strong>Method and result:</strong> The paper proposes quantity-grounded semantic differencing: a multi-agent workflow that separates code generation, execution, tracing, and validation to reconstruct how scientific quantities are computed. It also checks ambiguous natural-language analysis requests before code generation and validates the workflow on representative collider-physics analyses.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is directly relevant to LLM-assisted analysis code, reinterpretation studies, cut-flow reproduction, and preservation of assumptions in heavy-ion or collider workflows. It could be especially useful for analysis review, generated notebook auditing, and comparing implementation variants against intended observables.</p>
+        <p><strong>Critical assessment:</strong> Strong and unusually on-domain for AI/ML. The key strength is that the validation is collider-facing, not just generic code-generation benchmarking. Remaining risks are scale, integration with real collaboration frameworks, and whether the method catches subtle statistical or physics-modeling assumptions beyond code-level semantic differences.</p>
+      </article>
+
+      <article class="paper" data-search="2607.06348 physics-informed neural embeddings PDE solution families PINN latent manifold reduced order hydrodynamics computational physics">
+        <div class="paper-head"><h4>Physics-Informed Neural Embeddings of PDE Solution Families</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Raul Jimenez, Svitlana Mayboroda, Pavlos Protopapas, Leonid Sarieddine, David N. Spergel, Pedro Tarancon-Alvarez. <a href="https://arxiv.org/abs/2607.06348">arXiv:2607.06348</a></p>
+        <p><strong>Method and result:</strong> The authors use a multihead PINN architecture to learn finite-dimensional latent embeddings of PDE solution families. On Burgers dynamics, with heat and wave equations as robustness checks, they report strong latent compression and reproducible spectral profiles across training runs.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The most plausible transfer path is reduced-order modeling for hydrodynamic response, emulator diagnostics, and dimensionality reduction of PDE solution manifolds. It could help characterize which modes of initial-condition variation survive in final-state observables.</p>
+        <p><strong>Critical assessment:</strong> Methodologically interesting but not yet HEP-validated. The toy PDEs are appropriate first tests, but transfer to viscous relativistic hydro will require conservation-law structure, shocks/steep gradients, uncertainty propagation, and realistic parameter variation.</p>
+      </article>
+
+      <article class="paper" data-search="2607.04148 Bayesian neural networks physics-informed fission yields nuclear data uncertainty AI ML nuclear physics">
+        <div class="paper-head"><h4>Evaluation of U-235 and U-238 Fission Product Yields Using Bayesian Neural Networks: Comparison of Baseline and Physics-Informed Models</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Chun-Yuan Qiao, Ya-Xuan Wang, Jun-Chen Pei, Chun-Wang Ma, Yong-Jing Chen, and 6 others. <a href="https://arxiv.org/abs/2607.04148">arXiv:2607.04148</a></p>
+        <p><strong>Method and result:</strong> The authors compare a baseline Bayesian neural network with a physics-informed version that adds odd-even effects, beta-decay energy, and isospin to fission-yield inputs. The physics-informed model reportedly improves yield reconstruction, isotope-chain consistency, and confidence intervals for representative products.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The direct domain is nuclear data, not heavy-ion collisions. The transferable lesson is more general: adding physically meaningful descriptors to probabilistic ML can improve extrapolation and uncertainty behavior in sparse nuclear datasets.</p>
+        <p><strong>Critical assessment:</strong> Plausible and useful, but the abstract does not establish out-of-distribution rigor. The work is stronger as a nuclear-data modeling case study than as a general AI breakthrough.</p>
+      </article>
+
+      <article class="paper" data-search="2607.04095 ML AI density functional theory Kohn-Sham orbital-free DFT nuclear DFT symbolic regression">
+        <div class="paper-head"><h4>ML and AI for density functional theory: different priorities for Kohn-Sham and orbital-free DFT, for electronic and nuclear DFT</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Xin-Hui Wu, Sergei Manzhos. <a href="https://arxiv.org/abs/2607.04095">arXiv:2607.04095</a></p>
+        <p><strong>Method and result:</strong> This is an overview comparing where ML can help Kohn-Sham and orbital-free DFT, across electronic and nuclear DFT. The authors argue that deep networks remain useful in KS settings but highlight conceptual advantages of symbolic regression for kinetic-energy functionals and nuclear DFT transfer.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The relevance is nuclear-structure-facing rather than heavy-ion collision-facing. It may matter for EDF construction, uncertainty-aware nuclear inputs, and eventually initial nuclear-structure constraints for collision modeling.</p>
+        <p><strong>Critical assessment:</strong> Useful as a perspective paper, not a validation paper. I would not count it as evidence that a particular ML-DFT approach works; its value is in organizing methodological priorities and warning against one-size-fits-all neural functional learning.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2607.03716 2607.04273 QGP vorticity spin alignment explosive dilution caution overclaim heavy-ion">
+        <div class="paper-head"><h4>Relativistic Vorticity in the Quark-Gluon Plasma / Relativistic Hydrodynamics and Vorticity Dynamics in High-Energy Heavy-Ion Collisions</h4><span class="label caution">caution</span></div>
+        <p class="meta">Malak Ait Tamlihat, Ghizlane Ez-Zobayr, Laurent Schoeffel, Yahya Tayalati. <a href="https://arxiv.org/abs/2607.03716">arXiv:2607.03716</a>; <a href="https://arxiv.org/abs/2607.04273">arXiv:2607.04273</a></p>
+        <p><strong>Why caution:</strong> These closely related manuscripts discuss QGP vorticity, geometric dilution, and spin-alignment signatures. The topics are relevant, but the abstracts use very expansive language about the QGP as the most vortical medium and about definitive spin signatures, while showing limited evidence of confrontation with event-by-event hydro, transport, hadronic afterburners, or data.</p>
+        <p><strong>Assessment:</strong> Worth noting because the subject is important, but I would treat the claims as hypothesis-building rather than established phenomenology. The overlap between the two manuscripts also suggests readers should check carefully how much is new in each and whether the quantitative predictions survive realistic modeling.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
