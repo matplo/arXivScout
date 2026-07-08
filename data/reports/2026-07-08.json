@@ -1,0 +1,169 @@
+{
+  "date": "2026-07-08",
+  "path": "reports/2026-07-08.html",
+  "summary": "The July 8 scout emphasizes rigorous relativistic-hydrodynamics validity criteria, lattice-constrained open-quantum-system bottomonium transport, vector-meson spin-alignment phenomenology, a sPHENIX p+p isolated-prompt-photon baseline, and AI/ML methods with credible value for collider-analysis reproducibility, PDE emulation, nuclear-data modeling, and nuclear DFT.",
+  "keywords": [
+    "relativistic viscous hydrodynamics",
+    "causality and hyperbolicity",
+    "bottomonium open quantum systems",
+    "lattice-constrained heavy-quark potentials",
+    "vector-meson spin alignment",
+    "sPHENIX prompt photons",
+    "collider-analysis LLM validation",
+    "physics-informed PDE embeddings",
+    "Bayesian neural networks for nuclear data",
+    "ML for nuclear DFT",
+    "QGP vorticity caution"
+  ],
+  "arxiv_ids": [
+    "2607.05639",
+    "2607.06191",
+    "2607.03892",
+    "2607.06138",
+    "2607.06137",
+    "2607.05762",
+    "2607.06348",
+    "2607.04148",
+    "2607.04095",
+    "2607.03716",
+    "2607.04273"
+  ],
+  "total_paper_count": 11,
+  "selected_paper_count": 9,
+  "caution_count": 2,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "top_takeaway": "arXiv:2607.05639 appears to be the strongest methodological contribution because it gives broad nonlinear causality and well-posedness criteria for relativistic viscous hydrodynamics, a core tool for heavy-ion modeling.",
+  "papers": [
+    {
+      "title": "Nonlinear Causality and Strong Hyperbolicity of Einstein-Israel-Stewart Theories of Transient Relativistic Fluid Dynamics",
+      "authors_short": "Ian Cordeiro, Enrico Speranza, Fabio S. Bemfica, Marcelo M. Disconzi, Jorge Noronha",
+      "author_count": 5,
+      "arxiv_id": "2607.05639",
+      "url": "https://arxiv.org/abs/2607.05639",
+      "category": "Theory",
+      "abstract": "Derives nonlinear causality criteria and sufficient strong-hyperbolicity conditions for broad transient relativistic viscous-fluid theories, with direct relevance to heavy-ion hydrodynamic modeling.",
+      "tags": ["hydrodynamics", "causality", "hyperbolicity", "transport coefficients"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Bottomonium production in an open quantum system approach with interactions from lattice quantum chromodynamic",
+      "authors_short": "Shuhan Zheng, Shuzhe Shi",
+      "author_count": 2,
+      "arxiv_id": "2607.06191",
+      "url": "https://arxiv.org/abs/2607.06191",
+      "category": "Theory",
+      "abstract": "Uses a Lindblad open-quantum-system framework with lattice-constrained in-medium heavy-quark potentials to study Upsilon nuclear modification factors in Pb-Pb collisions.",
+      "tags": ["bottomonium", "open quantum systems", "lattice QCD", "regeneration"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Measurement of isolated prompt photon production in p+p collisions at sqrt(s) = 200 GeV with the sPHENIX detector",
+      "authors_short": "sPHENIX Collaboration: M. I. Abdulhamid, U. Acharya, G. Adawi, I. Ahmed, C. A. Aidala, et al.",
+      "author_count": 220,
+      "arxiv_id": "2607.03892",
+      "url": "https://arxiv.org/abs/2607.03892",
+      "category": "Experiment",
+      "abstract": "Measures isolated prompt-photon production in 2024 p+p data at RHIC and compares the cross section with PYTHIA and NLO/NNLO pQCD, establishing a baseline for future sPHENIX heavy-ion photon measurements.",
+      "tags": ["sPHENIX", "prompt photons", "p+p baseline", "pQCD"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Vector-Meson Spin Alignment from Anisotropic Quark or Hadron Coalescence",
+      "authors_short": "Wen-Bo Dong, Xin-Li Sheng, Yi-Liang Yin, Dirk H. Rischke, Qun Wang",
+      "author_count": 5,
+      "arxiv_id": "2607.06138",
+      "url": "https://arxiv.org/abs/2607.06138",
+      "category": "Phenomenology",
+      "abstract": "Studies how early anisotropy can induce spin alignment of phi and K*0 mesons through quark or pseudoscalar-meson coalescence, with sign differences proposed as production-mechanism diagnostics.",
+      "tags": ["spin alignment", "coalescence", "phi mesons", "Kstar"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Quantum decoherence: a study applied to quarkonium-like bound states in strongly interacting matter",
+      "authors_short": "Gabriele Coci, Salvatore Plumari, Giuseppe Falci",
+      "author_count": 3,
+      "arxiv_id": "2607.06137",
+      "url": "https://arxiv.org/abs/2607.06137",
+      "category": "Phenomenology",
+      "abstract": "Models a quarkonium-like bound state coupled to a strongly interacting reservoir and studies coherence loss under static and fireball-like time-dependent couplings.",
+      "tags": ["quarkonium", "decoherence", "open systems", "fireball evolution"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Articulating Assumptions in AI-Generated Scientific Analyses through Task Decomposition",
+      "authors_short": "Ahmed Hammad, Mihoko Nojiri",
+      "author_count": 2,
+      "arxiv_id": "2607.05762",
+      "url": "https://arxiv.org/abs/2607.05762",
+      "category": "AI/ML use",
+      "abstract": "Introduces a multi-agent quantity-grounded semantic differencing workflow for validating AI-generated scientific analysis code, with validation on representative collider-physics analyses.",
+      "tags": ["LLM analysis code", "collider physics", "semantic differencing", "reproducibility"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Physics-Informed Neural Embeddings of PDE Solution Families",
+      "authors_short": "Raul Jimenez, Svitlana Mayboroda, Pavlos Protopapas, Leonid Sarieddine, David N. Spergel, Pedro Tarancon-Alvarez",
+      "author_count": 6,
+      "arxiv_id": "2607.06348",
+      "url": "https://arxiv.org/abs/2607.06348",
+      "category": "AI/ML use",
+      "abstract": "Uses multihead PINNs to learn low-dimensional latent manifolds for PDE solution families, with Burgers, heat, and wave equations as tests.",
+      "tags": ["PINNs", "PDE embeddings", "latent manifolds", "reduced-order modeling"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Evaluation of U-235 and U-238 Fission Product Yields Using Bayesian Neural Networks: Comparison of Baseline and Physics-Informed Models",
+      "authors_short": "Chun-Yuan Qiao, Ya-Xuan Wang, Jun-Chen Pei, Chun-Wang Ma, Yong-Jing Chen, et al.",
+      "author_count": 11,
+      "arxiv_id": "2607.04148",
+      "url": "https://arxiv.org/abs/2607.04148",
+      "category": "AI/ML use",
+      "abstract": "Compares baseline and physics-informed Bayesian neural networks for U-235 and U-238 fission-yield evaluation, reporting improved reconstruction and narrower confidence intervals with physics descriptors.",
+      "tags": ["Bayesian neural networks", "fission yields", "nuclear data", "physics-informed ML"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "ML and AI for density functional theory: different priorities for Kohn-Sham and orbital-free DFT, for electronic and nuclear DFT",
+      "authors_short": "Xin-Hui Wu, Sergei Manzhos",
+      "author_count": 2,
+      "arxiv_id": "2607.04095",
+      "url": "https://arxiv.org/abs/2607.04095",
+      "category": "AI/ML use",
+      "abstract": "Reviews how ML priorities differ across Kohn-Sham, orbital-free, electronic, and nuclear DFT, highlighting symbolic-regression opportunities for kinetic-energy functionals.",
+      "tags": ["nuclear DFT", "symbolic regression", "functional learning", "review"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Relativistic Vorticity in the Quark-Gluon Plasma: Generation Symmetries, Explosive Dilution, and Azimuthal Spin Alignment",
+      "authors_short": "Malak Ait Tamlihat, Ghizlane Ez-Zobayr, Laurent Schoeffel, Yahya Tayalati",
+      "author_count": 4,
+      "arxiv_id": "2607.03716",
+      "url": "https://arxiv.org/abs/2607.03716",
+      "category": "Caution",
+      "abstract": "Discusses QGP vorticity, geometric dilution, and azimuthal spin-alignment signatures, but the claims appear broader than the abstract-level validation supports.",
+      "tags": ["QGP vorticity", "spin alignment", "caution"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Relativistic Hydrodynamics and Vorticity Dynamics in High-Energy Heavy-Ion Collisions: A Collective Flow Perspective",
+      "authors_short": "Malak Ait Tamlihat, Ghizlane Ez-Zobayr, Laurent Schoeffel, Yahya Tayalati",
+      "author_count": 4,
+      "arxiv_id": "2607.04273",
+      "url": "https://arxiv.org/abs/2607.04273",
+      "category": "Caution",
+      "abstract": "Provides an overview of hydrodynamics, vorticity transport, and spin observables, but overlaps thematically with arXiv:2607.03716 and should be read cautiously until validation is clearer.",
+      "tags": ["vorticity", "collective flow", "spin observables", "caution"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_notes": {
+    "index_refresh": "not_completed",
+    "limitation": "The configured GitHub app could create new archive files, but the safe replacement path for existing index.html required a base tree SHA that was not exposed by the available app reads; attempting to use the latest commit SHA as base_tree_sha was rejected by GitHub as invalid tree info."
+  }
+}
