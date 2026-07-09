@@ -1,0 +1,156 @@
+{
+  "date": "2026-07-09",
+  "path": "reports/2026-07-09.html",
+  "summary": "The July 9 scout emphasizes finite-temperature QCD matter composition, QCD critical-end-point sensitivity to Fierz-complete four-quark channels, ALICE- and STAR-facing femtoscopy and fluctuation observables, robust impact-parameter reconstruction with cross-model ML checks, and physics AI/ML methods for lattice-field-theory interpretability, nuclear fusion cross-section uncertainty, and HEP data-preservation workflows.",
+  "keywords": [
+    "QCD crossover",
+    "Fierz-complete four-quark interactions",
+    "critical end point",
+    "kaon-deuteron femtoscopy",
+    "STAR fluctuation highlights",
+    "impact-parameter machine learning",
+    "Bayesian barrier distributions",
+    "lattice QFT hypernetworks",
+    "HEP data preservation AI",
+    "conformal prediction undercoverage"
+  ],
+  "arxiv_ids": [
+    "2607.07140",
+    "2607.07354",
+    "2607.06715",
+    "2607.07254",
+    "2607.06897",
+    "2607.07664",
+    "2607.07551",
+    "2607.07127",
+    "2607.06775",
+    "2607.06605"
+  ],
+  "total_paper_count": 10,
+  "selected_paper_count": 9,
+  "caution_count": 1,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "top_takeaway": "arXiv:2607.07140 and arXiv:2607.07354 are the strongest heavy-ion theory picks because they address QCD matter composition and the critical-end-point location with methods directly relevant to heavy-ion equation-of-state modeling.",
+  "papers": [
+    {
+      "title": "Hadronic and partonic composition of QCD matter across the crossover",
+      "authors_short": "Artemiy Lysenko, Mark I. Gorenstein, Marek Gazdzicki, Roman Poberezhniuk, Volodymyr Vovchenko",
+      "author_count": 5,
+      "arxiv_id": "2607.07140",
+      "url": "https://arxiv.org/abs/2607.07140",
+      "category": "Theory",
+      "abstract": "Constructs a lattice-QCD-constrained equation of state with hadronic and partonic components connected by a smooth crossover, finding a gradual transition in which hadronic states remain important above the chiral pseudocritical temperature.",
+      "tags": ["QCD crossover", "equation of state", "lattice QCD", "hadron resonance gas"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Fierz-complete four-quark interactions and the QCD phase diagram",
+      "authors_short": "Zi-ning Wang, Li-jun Zhou, Chuang Huang, Rui Wen, Shi Yin, Wei-jie Fu",
+      "author_count": 6,
+      "arxiv_id": "2607.07354",
+      "url": "https://arxiv.org/abs/2607.07354",
+      "category": "Theory",
+      "abstract": "Uses functional renormalization group methods to study how Fierz-complete four-quark interactions modify the finite-temperature and finite-density QCD phase diagram, including the critical-end-point location.",
+      "tags": ["FRG", "QCD phase diagram", "critical end point", "four-quark interactions"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Kaon-deuteron correlation function from an effective field theory approach",
+      "authors_short": "Juan Torres-Rincon, Angels Ramos",
+      "author_count": 2,
+      "arxiv_id": "2607.06715",
+      "url": "https://arxiv.org/abs/2607.06715",
+      "category": "Phenomenology",
+      "abstract": "Computes K-d and K+d femtoscopic correlation functions using unitarized chiral EFT amplitudes, Faddeev treatments, multiple scattering, and Coulomb effects, then compares with ALICE Pb-Pb and high-multiplicity pp data.",
+      "tags": ["femtoscopy", "ALICE", "kaon-deuteron", "chiral EFT"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Recent highlights from the STAR Experiment",
+      "authors_short": "Rutik Manikandhan",
+      "author_count": 1,
+      "arxiv_id": "2607.07254",
+      "url": "https://arxiv.org/abs/2607.07254",
+      "category": "Experiment",
+      "abstract": "Summarizes recent STAR results on mean-pT correlations, net-proton cumulants, identical-pion femtoscopy, baryon-strangeness correlations, and baryon-baryon femtoscopy across sqrt(sNN)=3-200 GeV.",
+      "tags": ["STAR", "QCD critical point", "fluctuations", "femtoscopy"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Machine learning the impact parameter in heavy-ion collisions at sqrt(sNN)=4 and 11 GeV: a cross-check study with UrQMD, AMPT, and JAM",
+      "authors_short": "Xiaoqing Yue, Guojun Wei, Yongjia Wang, Zhilong Li, Pengcheng Li, et al.",
+      "author_count": 10,
+      "arxiv_id": "2607.06897",
+      "url": "https://arxiv.org/abs/2607.06897",
+      "category": "AI/ML use",
+      "abstract": "Uses supervised and unsupervised ML to reconstruct impact parameter and centrality classes in Au+Au collisions at 4 and 11 GeV, explicitly cross-checking generalization across UrQMD, AMPT, and JAM transport models.",
+      "tags": ["impact parameter", "centrality", "transport models", "heavy-ion ML"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Single inclusive hadron and jet production in lepton-hadron scattering",
+      "authors_short": "Jian-Wei Qiu, Kazuhiro Watanabe",
+      "author_count": 2,
+      "arxiv_id": "2607.07664",
+      "url": "https://arxiv.org/abs/2607.07664",
+      "category": "Phenomenology",
+      "abstract": "Presents a joint QCD+QED factorization calculation for large-pT single inclusive hadron and jet production in lepton-hadron scattering, including lepton distribution functions and predictions for JLab and EIC energies.",
+      "tags": ["EIC", "QCD+QED factorization", "jets", "fragmentation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Extracting Barrier Distributions from Fusion Cross Sections",
+      "authors_short": "Aaron Philip",
+      "author_count": 1,
+      "arxiv_id": "2607.07551",
+      "url": "https://arxiv.org/abs/2607.07551",
+      "category": "AI/ML use",
+      "abstract": "Benchmarks Gaussian processes and Bayesian neural-network inference for extracting fusion barrier distributions from noisy and sparse cross-section data, with uncertainty quantification and an open-source implementation.",
+      "tags": ["Bayesian neural networks", "fusion cross sections", "uncertainty quantification", "nuclear reactions"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Weight-Space Physics: Interpretable Hypernetworks for Lattice Quantum Field Theories",
+      "authors_short": "Tobias Goebel, Julian R. Ebelt, Zier Mensch, Mathis Gerdes, Miranda C. N. Cheng",
+      "author_count": 5,
+      "arxiv_id": "2607.07127",
+      "url": "https://arxiv.org/abs/2607.07127",
+      "category": "AI/ML use",
+      "abstract": "Introduces a hypernetwork/JEPA-style weight generator for normalizing-flow samplers in lattice field theory, showing that learned weight-space structure can recover phase-transition information and interpolate to unseen couplings.",
+      "tags": ["lattice QFT", "normalizing flows", "hypernetworks", "interpretability"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Data Preservation in High Energy Physics: Global Report 2026",
+      "authors_short": "Matthew Bellis, Jamie Boyd, Daniel Britzger, Andy Buckley, Chris Burr, et al.",
+      "author_count": 49,
+      "arxiv_id": "2607.06775",
+      "url": "https://arxiv.org/abs/2607.06775",
+      "category": "AI/ML use",
+      "abstract": "Reports DPHEP data-preservation progress since 2024, including automation, AI/ML for data curation, metadata extraction, workflow optimization, open data, and FAIR-principle adoption.",
+      "tags": ["HEP data preservation", "AI curation", "metadata extraction", "FAIR data"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "A Quiet Failure in Calibrated Virtual Screening: Marginal Conformal Prediction Under-Covers the Minority Class, and a Class-Conditional Fix Recovers It",
+      "authors_short": "Muhammadjon Tursunbadalov, Mustafojon Tursunbadalov, et al.",
+      "author_count": 4,
+      "arxiv_id": "2607.06605",
+      "url": "https://arxiv.org/abs/2607.06605",
+      "category": "Caution",
+      "abstract": "Shows that marginal conformal prediction can satisfy global coverage while badly under-covering minority classes on imbalanced datasets, and that class-conditional conformal prediction restores per-class reliability.",
+      "tags": ["conformal prediction", "class imbalance", "rare signals", "coverage caution"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_notes": {
+    "index_refresh": "attempted",
+    "backfill": "The run included a planned homepage backfill for 2026-07-08 using existing metadata because that day was present in data/reports but absent from index.html before the July 9 run."
+  }
+}
