@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-09</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-09 briefing</h1>
+    <p class="dek">Focused review of new arXiv listings shown for Thursday, 9 July 2026, with emphasis on heavy-ion collision physics and AI/ML use cases that have credible value for HEP or nuclear-physics workflows.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>QCD matter composition is the strongest theme:</strong> arXiv:2607.07140 gives a lattice-constrained, two-component equation-of-state picture in which hadronic degrees of freedom persist well above the chiral pseudocritical temperature.</li>
+        <li><strong>Critical-point theory also looks substantial:</strong> arXiv:2607.07354 uses a Fierz-complete FRG treatment and finds that additional four-quark channels can shift the CEP toward larger baryon chemical potential and lower temperature.</li>
+        <li><strong>ALICE/STAR-facing femtoscopy and fluctuation observables remain central:</strong> arXiv:2607.06715 is a compact but technically grounded kaon-deuteron femtoscopy calculation, while arXiv:2607.07254 summarizes STAR fluctuation, femtoscopy, and baryon-strangeness probes across the RHIC energy range.</li>
+        <li><strong>The best heavy-ion ML paper is practical:</strong> arXiv:2607.06897 cross-checks impact-parameter reconstruction across UrQMD, AMPT, and JAM, which is exactly the kind of model-dependence stress test missing from many ML-centrality studies.</li>
+        <li><strong>Transferable AI/ML is strongest when uncertainty is explicit:</strong> arXiv:2607.07551 on Bayesian extraction of fusion barrier distributions is directly useful for nuclear reaction analysis, and arXiv:2607.06605 is a valuable caution for rare-class coverage claims in HEP/NP classifiers.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.07140 QCD crossover equation of state lattice QCD hadron resonance gas partonic composition heavy-ion theory">
+        <div class="paper-head"><h4>Hadronic and partonic composition of QCD matter across the crossover</h4><span class="label strong">strong</span></div>
+        <p class="meta">Artemiy Lysenko, Mark I. Gorenstein, Marek Gazdzicki, Roman Poberezhniuk, Volodymyr Vovchenko. <a href="https://arxiv.org/abs/2607.07140">arXiv:2607.07140</a></p>
+        <p><strong>Abstract:</strong> The authors build a simple zero-chemical-potential equation of state combining a quantum van der Waals hadron resonance gas with a phenomenological quark-gluon sector, fitted to lattice-QCD thermodynamics across T=100-500 MeV.</p>
+        <p><strong>Summary:</strong> The key result is a smooth switching temperature around 216 MeV and a conclusion that hadronic states remain a significant component up to roughly 250 MeV. That is a useful reminder that the chiral pseudocritical temperature is not automatically the same thing as a sharp change in the relevant effective degrees of freedom.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion modeling often needs an EoS that is numerically simple but still anchored to lattice QCD. This paper offers a transparent parameterization with physical interpretability in terms of hadronic versus partonic composition.</p>
+        <p><strong>Critical assessment:</strong> Strong as a modeling paper. Its simplicity is a virtue for phenomenology, but the extracted composition should not be overread as a unique microscopic decomposition of QCD matter.</p>
+      </article>
+
+      <article class="paper" data-search="2607.07354 Fierz-complete four-quark interactions FRG QCD phase diagram critical end point finite density heavy-ion theory">
+        <div class="paper-head"><h4>Fierz-complete four-quark interactions and the QCD phase diagram</h4><span class="label strong">strong</span></div>
+        <p class="meta">Zi-ning Wang, Li-jun Zhou, Chuang Huang, Rui Wen, Shi Yin, Wei-jie Fu. <a href="https://arxiv.org/abs/2607.07354">arXiv:2607.07354</a></p>
+        <p><strong>Abstract:</strong> This work studies Fierz-complete four-quark interaction dynamics in finite-temperature and finite-density QCD with functional renormalization group methods, comparing against the usual scalar-pseudoscalar-channel treatment.</p>
+        <p><strong>Summary:</strong> The abstract reports that non-dominant channels remain negligible in vacuum but grow near the critical end point. Including them slightly increases phase-boundary curvature and shifts the CEP to higher baryon chemical potential and lower temperature.</p>
+        <p><strong>Why it matters:</strong> CEP location remains a target for RHIC Beam Energy Scan interpretation. A controlled study of channel truncation effects is valuable because model-space uncertainty can otherwise masquerade as physics.</p>
+        <p><strong>Critical assessment:</strong> Strong, with the usual FRG truncation caveat. The reported shift is scientifically meaningful because it quantifies a known modeling ambiguity rather than simply proposing another CEP estimate.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.07254 STAR experiment QCD critical point fluctuations femtoscopy net-proton cumulants baryon-strangeness RHIC heavy-ion experiment">
+        <div class="paper-head"><h4>Recent highlights from the STAR Experiment</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Rutik Manikandhan. <a href="https://arxiv.org/abs/2607.07254">arXiv:2607.07254</a></p>
+        <p><strong>Abstract:</strong> The proceedings contribution summarizes STAR results on two-particle mean-pT correlations, net-proton cumulants up to fourth order, identical-pion femtoscopy, baryon-strangeness correlations, and baryon-baryon femtoscopy over sqrt(sNN)=3-200 GeV.</p>
+        <p><strong>Summary:</strong> The scientific center of gravity is the QCD phase structure program: fluctuation and correlation observables are discussed together with femtoscopic constraints on hyperon-nucleon and hyperon-hyperon interactions.</p>
+        <p><strong>Why it matters:</strong> Even as a proceedings snapshot, the paper is useful because it groups several observables that jointly constrain the equation of state and possible critical behavior.</p>
+        <p><strong>Critical assessment:</strong> Useful but not a primary results paper. I would treat it as a compact map of STAR topics to follow rather than as a substitute for the individual analysis publications.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.06715 kaon deuteron correlation function femtoscopy ALICE PbPb high multiplicity pp chiral EFT Faddeev heavy-ion phenomenology">
+        <div class="paper-head"><h4>Kaon-deuteron correlation function from an effective field theory approach</h4><span class="label strong">strong</span></div>
+        <p class="meta">Juan Torres-Rincon, Angels Ramos. <a href="https://arxiv.org/abs/2607.06715">arXiv:2607.06715</a></p>
+        <p><strong>Abstract:</strong> The authors calculate K-d and K+d femtoscopic correlation functions, using unitarized chiral EFT input, Faddeev-equation treatments, multiple scattering, and Coulomb effects, then compare with ALICE Pb-Pb and high-multiplicity pp data.</p>
+        <p><strong>Summary:</strong> The K-d channel is reported to be strongly sensitive to source size and rescattering, while K+d is mostly governed by weak K+N repulsion with small-source deviations from pure Coulomb behavior.</p>
+        <p><strong>Why it matters:</strong> Femtoscopy is becoming a precise tool for hadronic interactions that are hard to access directly. A theory calculation tied simultaneously to ALICE femtoscopy and kaonic-deuterium information is a valuable constraint bridge.</p>
+        <p><strong>Critical assessment:</strong> Strong for a short proceedings-style contribution. The method is focused and physically motivated; the main limitation is scope rather than credibility.</p>
+      </article>
+
+      <article class="paper" data-search="2607.07664 lepton-hadron scattering EIC JLab jets hadrons QCD QED factorization PDFs fragmentation nuclear phenomenology">
+        <div class="paper-head"><h4>Single inclusive hadron and jet production in lepton-hadron scattering</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jian-Wei Qiu, Kazuhiro Watanabe. <a href="https://arxiv.org/abs/2607.07664">arXiv:2607.07664</a></p>
+        <p><strong>Abstract:</strong> The paper presents a first calculation of large-pT single inclusive hadron and jet production in lepton-hadron scattering using joint QCD+QED factorization, including lepton distribution functions, PDFs, and fragmentation functions.</p>
+        <p><strong>Summary:</strong> It derives default lepton distribution functions and discusses strategies for extracting nonperturbative LDFs from future data, with predictions for Jefferson Lab and EIC energies.</p>
+        <p><strong>Why it matters:</strong> This is not a heavy-ion paper, but it is directly relevant to EIC-era QCD and nuclear structure. It can feed future lepton-nucleus and hadronization studies that overlap with heavy-ion jet and fragmentation questions.</p>
+        <p><strong>Critical assessment:</strong> Strong and technically useful. Its transfer to heavy-ion physics is indirect, through shared QCD factorization, hadronization, and nuclear-PDF/fragmentation workflows.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2607.06897 machine learning impact parameter centrality AuAu 4 GeV 11 GeV UrQMD AMPT JAM heavy-ion ML">
+        <div class="paper-head"><h4>Machine learning the impact parameter in heavy-ion collisions at sqrt(sNN)=4 and 11 GeV: a cross-check study with UrQMD, AMPT, and JAM</h4><span class="label strong">strong</span></div>
+        <p class="meta">Xiaoqing Yue, Guojun Wei, Yongjia Wang, Zhilong Li, Pengcheng Li, and 5 others. <a href="https://arxiv.org/abs/2607.06897">arXiv:2607.06897</a></p>
+        <p><strong>Abstract:</strong> The paper reconstructs impact parameter in Au+Au collisions at sqrt(sNN)=4 and 11 GeV using supervised and unsupervised ML trained on UrQMD, AMPT, and JAM simulations, with explicit model-to-model cross-checks.</p>
+        <p><strong>Summary:</strong> The authors report mean absolute errors around 0.2-0.4 fm even when training on one model and testing on another, while traditional multiplicity-polynomial methods work only within the same generator. K-means clustering also recovers centrality-like classes from experimental-style observables.</p>
+        <p><strong>Why it matters:</strong> Low-energy heavy-ion analyses need robust centrality and geometry estimators, and generator dependence is a serious concern. This paper is valuable because it stress-tests that dependence rather than hiding it.</p>
+        <p><strong>Critical assessment:</strong> Strong among ML-heavy-ion papers, especially because it is accepted in Physical Review C. The remaining leap is real-data validation, where detector effects and generator mismatch can be harsher than transport-model cross-testing.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2607.07551 Bayesian neural networks Gaussian processes fusion cross sections barrier distributions uncertainty nuclear reactions active learning">
+        <div class="paper-head"><h4>Extracting Barrier Distributions from Fusion Cross Sections</h4><span class="label strong">strong</span></div>
+        <p class="meta">Aaron Philip. <a href="https://arxiv.org/abs/2607.07551">arXiv:2607.07551</a></p>
+        <p><strong>Method and result:</strong> The paper compares Gaussian processes and Bayesian neural-network methods for extracting fusion barrier distributions from noisy, sparse cross-section measurements. It reports that BNN architectures recover barrier distributions more faithfully with quantified uncertainty and identify where new measurements would be most valuable.</p>
+        <p><strong>Likely use case for HEP or heavy-ion/nuclear physics:</strong> The immediate use is nuclear reaction analysis, but the workflow is broadly relevant to inverse problems where derivatives of noisy measurements are physically meaningful.</p>
+        <p><strong>Critical assessment:</strong> Strong. The emphasis on uncertainty, realistic sparsity, experimental errors, and open-source implementation makes it more useful than a generic ML regression exercise.</p>
+      </article>
+
+      <article class="paper" data-search="2607.07127 weight-space physics hypernetworks lattice quantum field theory normalizing flows JEPA interpretability phase transition HEP ML">
+        <div class="paper-head"><h4>Weight-Space Physics: Interpretable Hypernetworks for Lattice Quantum Field Theories</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Tobias Goebel, Julian R. Ebelt, Zier Mensch, Mathis Gerdes, Miranda C. N. Cheng. <a href="https://arxiv.org/abs/2607.07127">arXiv:2607.07127</a></p>
+        <p><strong>Method and result:</strong> The authors train a JEPA-style weight generator for normalizing-flow samplers in lattice field theory and study whether the generated network weights encode physical structure. On scalar lattice theories, the latent space reportedly recovers the intrinsic manifold dimension, locates a phase transition, and encodes a finite-size shift consistent with the 2D Ising exponent.</p>
+        <p><strong>Likely use case for HEP or heavy-ion/nuclear physics:</strong> The concrete transfer is lattice-QCD-adjacent: coupling-conditioned samplers, interpretable flow families, and fast interpolation across theory parameters.</p>
+        <p><strong>Critical assessment:</strong> Interesting and genuinely physics-facing, but still early. Scalar-theory success does not guarantee comparable behavior for gauge theories or full QCD, so I would call it promising rather than operational.</p>
+      </article>
+
+      <article class="paper" data-search="2607.06775 HEP data preservation AI machine learning metadata extraction data curation workflow optimization FAIR open data">
+        <div class="paper-head"><h4>Data Preservation in High Energy Physics: Global Report 2026</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Matthew Bellis, Jamie Boyd, Daniel Britzger, Andy Buckley, Chris Burr, and 44 others. <a href="https://arxiv.org/abs/2607.06775">arXiv:2607.06775</a></p>
+        <p><strong>Method and result:</strong> This is a community report, not a research-method paper. It documents progress in HEP data preservation since 2024, including increased automation and AI/ML use for data curation, metadata extraction, and workflow optimization.</p>
+        <p><strong>Likely use case for HEP or heavy-ion/nuclear physics:</strong> Heavy-ion experiments have long-lived datasets and complex analysis preservation needs. The report is relevant to reproducible workflows, metadata hygiene, and future reuse of legacy collision data.</p>
+        <p><strong>Critical assessment:</strong> Useful infrastructure signal, but not a technical validation of any single AI method. Treat it as a strategic field report rather than evidence that AI preservation workflows are already mature.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2607.06605 conformal prediction class imbalance minority coverage rare signals HEP anomaly detection caution">
+        <div class="paper-head"><h4>A Quiet Failure in Calibrated Virtual Screening: Marginal Conformal Prediction Under-Covers the Minority Class, and a Class-Conditional Fix Recovers It</h4><span class="label caution">caution-transfer</span></div>
+        <p class="meta">Muhammadjon Tursunbadalov, Mustafojon Tursunbadalov, and 2 others. <a href="https://arxiv.org/abs/2607.06605">arXiv:2607.06605</a></p>
+        <p><strong>Why it is included:</strong> This is not a physics paper, but it is a useful warning for HEP and nuclear-physics ML. Rare signals, rare detector failures, and minority physics classes can all look calibrated in aggregate while being badly under-covered in the category that matters most.</p>
+        <p><strong>Critical assessment:</strong> Strong cautionary value if the empirical claims hold. The direct domain is virtual screening, so the transfer is methodological rather than scientific; still, the lesson is highly relevant for anomaly detection, rare-particle ID, and imbalanced event classification.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
