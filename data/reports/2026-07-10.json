@@ -1,0 +1,131 @@
+{
+  "date": "2026-07-10",
+  "path": "reports/2026-07-10.html",
+  "summary": "The July 10 scout emphasizes QGP azimuthal momentum isotropization, pseudo-gauge ambiguities in local-equilibrium spin polarization, pion nuclear fragmentation functions with A and nu dependence, heavy-quark coalescence with potential effects, and transferable physics AI/ML methods for optimal-transport event-weight resampling, chaotic forecasting, and symbolic regression.",
+  "keywords": [
+    "QGP thermalization",
+    "azimuthal isotropization",
+    "pseudo-gauge ambiguity",
+    "spin polarization",
+    "nuclear fragmentation functions",
+    "heavy-quark coalescence",
+    "fixed-target heavy-ion feasibility",
+    "optimal transport event weights",
+    "quantum reservoir forecasting",
+    "symbolic regression"
+  ],
+  "arxiv_ids": [
+    "2607.07796",
+    "2607.08569",
+    "2607.08669",
+    "2607.08707",
+    "2607.08658",
+    "2607.08723",
+    "2607.07978",
+    "2607.08150"
+  ],
+  "total_paper_count": 8,
+  "selected_paper_count": 7,
+  "caution_count": 1,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "top_takeaway": "arXiv:2607.07796 is the strongest heavy-ion paper of the screened set because it directly quantifies relaxation of initial azimuthal momentum anisotropies during QGP thermalization, a live issue for small-system correlation phenomenology.",
+  "papers": [
+    {
+      "title": "Azimuthal momentum isotropization in the Quark-Gluon Plasma thermalization",
+      "authors_short": "Sergio Barrera Cabodevila, Xiaojian Du, Carlos A. Salgado, Bin Wu",
+      "author_count": 4,
+      "arxiv_id": "2607.07796",
+      "url": "https://arxiv.org/abs/2607.07796",
+      "category": "Theory",
+      "abstract": "Studies relaxation of initial azimuthal momentum anisotropies in QGP thermalization using the Boltzmann Equation in Diffusion Approximation, finding a hierarchy in harmonic relaxation times and pT-dependent harmonic evolution with small-system phenomenology relevance.",
+      "tags": ["QGP thermalization", "azimuthal anisotropy", "small systems", "kinetic theory"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A symmetry-based resolution of pseudo-gauge ambiguities in local equilibrium",
+      "authors_short": "Carlos Hoyos",
+      "author_count": 1,
+      "arxiv_id": "2607.08569",
+      "url": "https://arxiv.org/abs/2607.08569",
+      "category": "Theory",
+      "abstract": "Reformulates pseudo-gauge and improvement-term ambiguities in local-equilibrium density operators as spurious symmetries with vanishing total charge, proposing a genuine-symmetry prescription relevant to spin polarization in heavy-ion collisions.",
+      "tags": ["pseudo-gauge ambiguity", "spin polarization", "local equilibrium", "conserved currents"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Analysis of Nuclear Fragmentation Functions for Pions with A and nu Dependence",
+      "authors_short": "Mengyang Li, Zijian Ye, Jun Gao, Xiaomin Shen, Hongxi Xing, Yuxiang Zhao",
+      "author_count": 6,
+      "arxiv_id": "2607.08669",
+      "url": "https://arxiv.org/abs/2607.08669",
+      "category": "Phenomenology",
+      "abstract": "Fits pion nuclear fragmentation functions with nuclear effects parameterized in mass number A, target-rest-frame parton energy nu, and hadron energy fraction z, using SIDIS nuclear data and NLO pp/pA comparisons to ALICE.",
+      "tags": ["nuclear fragmentation functions", "hadronization", "SIDIS", "ALICE"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy quark coalescence probability in the presence of a potential",
+      "authors_short": "Taesoo Song, Jiaxing Zhao",
+      "author_count": 2,
+      "arxiv_id": "2607.08707",
+      "url": "https://arxiv.org/abs/2607.08707",
+      "category": "Phenomenology",
+      "abstract": "Studies how a constituent-quark-model-inspired heavy-quark potential enhances heavy-quark coalescence probability and how moderate in-medium modifications affect the result.",
+      "tags": ["heavy-quark coalescence", "QGP", "heavy flavor", "hadronization"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Secondary Hadron-Nucleus Collisions of Short-Lived Hadrons in Ultra-Relativistic Fixed-Target Heavy-Ion Interactions",
+      "authors_short": "Sanatan Digal, P. S. Saumia, Ajit M. Srivastava",
+      "author_count": 3,
+      "arxiv_id": "2607.08658",
+      "url": "https://arxiv.org/abs/2607.08658",
+      "category": "Phenomenology",
+      "abstract": "Argues that forward short-lived hadrons from one ultra-relativistic fixed-target heavy-ion encounter may survive to interact with a subsequent nucleus in a solid target, opening unusual secondary hadron-nucleus collision channels.",
+      "tags": ["fixed target", "short-lived hadrons", "secondary collisions", "feasibility"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights",
+      "authors_short": "Regan Doherty, Lauren Hay, Rishabh Jain, Matt LeBlanc, Julia Marrinan, Camille Mauceri, Jennifer Roloff",
+      "author_count": 7,
+      "arxiv_id": "2607.08723",
+      "url": "https://arxiv.org/abs/2607.08723",
+      "category": "AI/ML use",
+      "abstract": "Uses Energy Mover's Distance and related optimal-transport metrics for cell resampling of negative or pathological Monte Carlo event weights, reducing bias in NLO QCD samples relative to prior techniques.",
+      "tags": ["optimal transport", "negative event weights", "NLO Monte Carlo", "HEP computing"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A Quantum Reservoir Architecture for Chaotic Forecasting and a Test of Whether Its High Dimension Helps",
+      "authors_short": "Tushar Pandey",
+      "author_count": 1,
+      "arxiv_id": "2607.07978",
+      "url": "https://arxiv.org/abs/2607.07978",
+      "category": "AI/ML use",
+      "abstract": "Presents a reproducible quantum reservoir architecture for chaotic forecasting and a diagnostic for whether high-dimensional quantum features improve performance beyond capacity effects, tested on a spatiotemporal chain and shallow-water model.",
+      "tags": ["quantum reservoir", "chaotic forecasting", "fluid model", "surrogate modeling"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "DeepPySR - A Symbolic Regression Framework with Dynamic Pruning, Pareto Selection, and Hierarchical Composition for Real-World Scientific Discovery",
+      "authors_short": "Fuling Chen, Kevin Vinsen, Phillip Melton, Rae-Chi Huang",
+      "author_count": 4,
+      "arxiv_id": "2607.08150",
+      "url": "https://arxiv.org/abs/2607.08150",
+      "category": "AI/ML use",
+      "abstract": "Introduces a symbolic-regression framework with dynamic variable pruning, exponential Pareto selection, and hierarchical symbolic composition, evaluated partly on Feynman physics benchmarks.",
+      "tags": ["symbolic regression", "interpretable ML", "Feynman benchmarks", "scientific discovery"],
+      "assessment": "mixed"
+    }
+  ],
+  "archive_notes": {
+    "index_refresh": "attempted after daily file creation",
+    "backfill": "The existing homepage lacked the 2026-07-09 card even though metadata and the daily page existed; this run attempted to add both 2026-07-10 and the missing 2026-07-09 entries."
+  }
+}
