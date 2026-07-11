@@ -1,0 +1,128 @@
+{
+  "date": "2026-07-11",
+  "path": "reports/2026-07-11.html",
+  "summary": "The July 11 scout screened the latest visible Friday, 10 July 2026 arXiv listings because no newer Saturday batch was available. The strongest heavy-ion themes are QGP azimuthal momentum isotropization, pseudo-gauge ambiguities in spin-polarization theory, pion nuclear fragmentation functions with A and nu dependence, and potential effects in heavy-quark coalescence. The strongest AI/ML or computational-transfer papers are optimal-transport event-weight resampling for NLO Monte Carlo workflows and cell-level Transformer calorimeter identification for collimated photons.",
+  "keywords": [
+    "QGP thermalization",
+    "azimuthal isotropization",
+    "pseudo-gauge ambiguity",
+    "spin polarization",
+    "nuclear fragmentation functions",
+    "heavy-quark coalescence",
+    "optimal transport event weights",
+    "cell-level calorimeter ML",
+    "collimated photon identification",
+    "symbolic regression",
+    "fixed-target heavy-ion caution"
+  ],
+  "arxiv_ids": [
+    "2607.07796",
+    "2607.08569",
+    "2607.08669",
+    "2607.08707",
+    "2607.08175",
+    "2607.08723",
+    "2607.08150",
+    "2607.08658"
+  ],
+  "total_paper_count": 8,
+  "selected_paper_count": 7,
+  "caution_count": 1,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2607.07796 is the strongest heavy-ion paper because it directly quantifies relaxation of initial azimuthal momentum anisotropies during QGP thermalization, with immediate relevance to small-system correlation phenomenology. arXiv:2607.08723 is the strongest workflow paper because it targets negative and pathological event weights, a concrete production bottleneck for NLO event generation.",
+  "papers": [
+    {
+      "title": "Azimuthal momentum isotropization in the Quark-Gluon Plasma thermalization",
+      "authors_short": "Sergio Barrera Cabodevila, Xiaojian Du, Carlos A. Salgado, Bin Wu",
+      "author_count": 4,
+      "arxiv_id": "2607.07796",
+      "url": "https://arxiv.org/abs/2607.07796",
+      "category": "Theory",
+      "abstract": "Studies relaxation of initial azimuthal momentum anisotropies during QGP thermalization using a Boltzmann diffusion-approximation framework, finding harmonic-dependent relaxation times and pT-dependent harmonic evolution relevant to small-system phenomenology.",
+      "tags": ["QGP thermalization", "azimuthal anisotropy", "small systems", "kinetic theory"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A symmetry-based resolution of pseudo-gauge ambiguities in local equilibrium",
+      "authors_short": "Carlos Hoyos",
+      "author_count": 1,
+      "arxiv_id": "2607.08569",
+      "url": "https://arxiv.org/abs/2607.08569",
+      "category": "Theory",
+      "abstract": "Reformulates pseudo-gauge and current-improvement ambiguities in local-equilibrium density operators as spurious symmetries and proposes a prescription based on genuine conserved currents, with relevance to spin polarization in heavy-ion collisions.",
+      "tags": ["pseudo-gauge ambiguity", "spin polarization", "local equilibrium", "conserved currents"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Analysis of Nuclear Fragmentation Functions for Pions with A and nu Dependence",
+      "authors_short": "Mengyang Li, Zijian Ye, Jun Gao, Xiaomin Shen, Hongxi Xing, Yuxiang Zhao",
+      "author_count": 6,
+      "arxiv_id": "2607.08669",
+      "url": "https://arxiv.org/abs/2607.08669",
+      "category": "Phenomenology",
+      "abstract": "Fits pion nuclear fragmentation functions with nuclear effects parameterized by mass number A, parton energy nu, and hadron energy fraction z, using SIDIS data and NLO pp/pA comparisons to ALICE.",
+      "tags": ["nuclear fragmentation functions", "hadronization", "SIDIS", "ALICE"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy quark coalescence probability in the presence of a potential",
+      "authors_short": "Taesoo Song, Jiaxing Zhao",
+      "author_count": 2,
+      "arxiv_id": "2607.08707",
+      "url": "https://arxiv.org/abs/2607.08707",
+      "category": "Phenomenology",
+      "abstract": "Studies how a phenomenological heavy-quark potential affects coalescence probability and how moderate in-medium modifications change the result.",
+      "tags": ["heavy-quark coalescence", "QGP", "heavy flavor", "hadronization"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Transformer-based machine learning using low-level calorimeter signals for collimated photon identification at collider experiments",
+      "authors_short": "Gabriel Matos, Lauren Larson, Abhilasha Dave, Maria Bressan, Azal Amer, et al.",
+      "author_count": 11,
+      "arxiv_id": "2607.08175",
+      "url": "https://arxiv.org/abs/2607.08175",
+      "category": "AI/ML use",
+      "abstract": "Compares high-level and cell-level ML methods for collimated diphoton versus isolated-photon identification, with a Transformer giving the best classification performance and direct invariant-mass regression from calorimeter cells.",
+      "tags": ["calorimeter ML", "Transformer", "photon identification", "trigger transfer"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights",
+      "authors_short": "Regan Doherty, Lauren Hay, Rishabh Jain, Matt LeBlanc, Julia Marrinan, Camille Mauceri, Jennifer Roloff",
+      "author_count": 7,
+      "arxiv_id": "2607.08723",
+      "url": "https://arxiv.org/abs/2607.08723",
+      "category": "AI/ML use",
+      "abstract": "Uses optimal-transport metrics for local resampling of negative and very large Monte Carlo event weights, reducing observed bias in NLO QCD samples relative to earlier cell-resampling techniques.",
+      "tags": ["optimal transport", "negative event weights", "NLO Monte Carlo", "HEP computing"],
+      "assessment": "strong"
+    },
+    {
+      "title": "DeepPySR - A Symbolic Regression Framework with Dynamic Pruning, Pareto Selection, and Hierarchical Composition for Real-World Scientific Discovery",
+      "authors_short": "Fuling Chen, Kevin Vinsen, Phillip Melton, Rae-Chi Huang",
+      "author_count": 4,
+      "arxiv_id": "2607.08150",
+      "url": "https://arxiv.org/abs/2607.08150",
+      "category": "AI/ML use",
+      "abstract": "Introduces a symbolic-regression framework with dynamic pruning, Pareto selection, and hierarchical composition, including evaluation on four Feynman physics benchmarks plus non-physics applied datasets.",
+      "tags": ["symbolic regression", "interpretable ML", "Feynman benchmarks", "scientific discovery"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Secondary Hadron-Nucleus Collisions of Short-Lived Hadrons in Ultra-Relativistic Fixed-Target Heavy-Ion Interactions",
+      "authors_short": "Sanatan Digal, P. S. Saumia, Ajit M. Srivastava",
+      "author_count": 3,
+      "arxiv_id": "2607.08658",
+      "url": "https://arxiv.org/abs/2607.08658",
+      "category": "Caution",
+      "abstract": "Argues that boosted short-lived hadrons produced in a fixed-target heavy-ion interaction may survive to collide with another nucleus in a solid target, opening unusual secondary hadron-nucleus channels.",
+      "tags": ["fixed target", "short-lived hadrons", "secondary collisions", "feasibility caution"],
+      "assessment": "caution"
+    }
+  ]
+}
