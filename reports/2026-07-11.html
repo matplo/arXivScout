@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-11</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-11 briefing</h1>
+    <p class="dek">Focused review run on Saturday, 11 July 2026. No newer Saturday arXiv batch was visible, so the scout screened the latest available Friday, 10 July 2026 listings for heavy-ion collision physics and AI/ML methods with credible HEP or nuclear-physics transfer value.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>QGP momentum-isotropization is the strongest heavy-ion theory item:</strong> arXiv:2607.07796 directly studies relaxation of initial azimuthal momentum anisotropies during thermalization, a live issue for small-system correlation interpretation.</li>
+        <li><strong>Spin-polarization theory gets a clean formal contribution:</strong> arXiv:2607.08569 proposes a symmetry-based prescription for removing pseudo-gauge ambiguities in local-equilibrium density operators.</li>
+        <li><strong>The best phenomenology baseline is pion nuclear fragmentation:</strong> arXiv:2607.08669 fits pion nuclear fragmentation functions with A, nu, and z dependence and checks pp/pA predictions against ALICE within current uncertainties.</li>
+        <li><strong>AI/ML strength is practical rather than decorative:</strong> arXiv:2607.08723 uses optimal-transport metrics for negative/pathological event-weight resampling, while arXiv:2607.08175 gives a strong low-level calorimeter ML study with realistic collider motivation.</li>
+        <li><strong>Several transfer candidates remain only mixed:</strong> symbolic regression and heavy-quark coalescence papers are useful, but their present validation is narrower than a production heavy-ion or detector workflow would require.</li>
+        <li><strong>The fixed-target short-lived-hadron proposal is worth watching, not yet adopting:</strong> arXiv:2607.08658 has a clever space-time argument but still needs detailed rate, geometry, acceptance, and background studies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.07796 QGP thermalization azimuthal isotropization Boltzmann diffusion approximation harmonic coefficients small systems heavy-ion theory">
+        <div class="paper-head"><h4>Azimuthal momentum isotropization in the Quark-Gluon Plasma thermalization</h4><span class="label strong">strong</span></div>
+        <p class="meta">Sergio Barrera Cabodevila, Xiaojian Du, Carlos A. Salgado, Bin Wu. <a href="https://arxiv.org/abs/2607.07796">arXiv:2607.07796</a></p>
+        <p><strong>Summary:</strong> The authors study how initial azimuthal momentum anisotropies relax using the Boltzmann Equation in Diffusion Approximation. They report a hierarchy in relaxation times across harmonic coefficients and a time evolution of pT-dependent harmonics that can qualitatively resemble experimental trends in a phenomenologically motivated setup.</p>
+        <p><strong>Why it matters:</strong> Small-system collectivity keeps pressure on the assumption that initial momentum anisotropies are quickly erased. A controlled kinetic-theory treatment helps test how much memory of the initial state can survive before hydrodynamic response dominates.</p>
+        <p><strong>Critical assessment:</strong> Strong and directly relevant. The phenomenological comparison is suggestive, but the next test is embedding this mechanism in a full event-by-event modeling chain with realistic initial conditions and final-state analysis.</p>
+      </article>
+
+      <article class="paper" data-search="2607.08569 pseudo-gauge ambiguity local equilibrium spin polarization conserved currents spurious symmetries heavy-ion theory">
+        <div class="paper-head"><h4>A symmetry-based resolution of pseudo-gauge ambiguities in local equilibrium</h4><span class="label strong">strong</span></div>
+        <p class="meta">Carlos Hoyos. <a href="https://arxiv.org/abs/2607.08569">arXiv:2607.08569</a></p>
+        <p><strong>Summary:</strong> The paper treats pseudo-gauge and improvement-term ambiguities in local-equilibrium density operators as spurious symmetry freedoms associated with currents carrying zero total charge. It then proposes defining local equilibrium through currents tied to genuine symmetries, making the density operator invariant under improvement transformations.</p>
+        <p><strong>Why it matters:</strong> Spin polarization in heavy-ion collisions depends sensitively on how angular momentum, spin, and local equilibrium are defined. This paper targets a real conceptual source of convention dependence in polarization phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Strong as a formal theory contribution. Its practical impact will depend on whether the prescription becomes usable in hydrodynamic or kinetic calculations that can be compared with polarization data.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental result in the screened Friday batch rose above the inclusion threshold. The fresh nucl-ex item was AMoRE rare-decay work rather than heavy-ion collision physics, while relevant detector and collider-analysis items are included under AI/ML or transfer value.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.08669 pion nuclear fragmentation functions A nu z dependence SIDIS pA ALICE hadronization heavy-ion phenomenology">
+        <div class="paper-head"><h4>Analysis of Nuclear Fragmentation Functions for Pions with A and nu Dependence</h4><span class="label strong">strong</span></div>
+        <p class="meta">Mengyang Li, Zijian Ye, Jun Gao, Xiaomin Shen, Hongxi Xing, Yuxiang Zhao. <a href="https://arxiv.org/abs/2607.08669">arXiv:2607.08669</a></p>
+        <p><strong>Summary:</strong> This work extracts pion nuclear fragmentation functions while fitting vacuum fragmentation and nuclear modifications together. Nuclear effects are parameterized in mass number A, parton energy nu in the target rest frame, and hadron energy fraction z, with SIDIS nuclear data and NLO pp/pA predictions compared to ALICE.</p>
+        <p><strong>Why it matters:</strong> Nuclear hadronization baselines matter for EIC, pA, and heavy-ion interpretation. Explicit A and energy dependence is a useful step toward separating cold-nuclear hadronization effects from hot-medium modification.</p>
+        <p><strong>Critical assessment:</strong> Strong phenomenology with practical value. The constrained z range is an important limitation, so extrapolations outside the fitted region should be treated cautiously.</p>
+      </article>
+
+      <article class="paper" data-search="2607.08707 heavy quark coalescence potential QGP heavy flavor hadronization charm bottom phenomenology">
+        <div class="paper-head"><h4>Heavy quark coalescence probability in the presence of a potential</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Taesoo Song, Jiaxing Zhao. <a href="https://arxiv.org/abs/2607.08707">arXiv:2607.08707</a></p>
+        <p><strong>Summary:</strong> The paper studies how a phenomenological heavy-quark potential affects coalescence probability. The potential is tuned to reproduce vacuum pseudoscalar and vector heavy-meson masses, and the authors find enhanced coalescence with probabilities remaining near unity under moderate in-medium potential modification.</p>
+        <p><strong>Why it matters:</strong> Coalescence is central to charm and bottom hadronization in heavy-ion collisions, especially when interpreting heavy-flavor yields and flow. A more explicit potential dependence is a useful ingredient.</p>
+        <p><strong>Critical assessment:</strong> Useful but narrow. The paper clarifies one hadronization ingredient; it does not by itself validate a full heavy-flavor transport description in an evolving QGP.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2607.08175 transformer calorimeter cell-level ML collimated photons diphoton ALP pion eta fake background collider trigger">
+        <div class="paper-head"><h4>Transformer-based machine learning using low-level calorimeter signals for collimated photon identification at collider experiments</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gabriel Matos, Lauren Larson, Abhilasha Dave, Maria Bressan, Azal Amer, Cindy Liu, Nikiforos Nikiforou, Jonathan Long, Timothy Andeen, John Parsons, Julia Gonski. <a href="https://arxiv.org/abs/2607.08175">arXiv:2607.08175</a></p>
+        <p><strong>Summary:</strong> The paper compares high-level shower-shape methods with cell-level ML architectures for separating highly collimated diphoton signatures from isolated photons. A Transformer gives the best classification performance among six architectures, while an MLP-Mixer is presented as a lower-resource trigger-level candidate; the Transformer also performs invariant-mass regression from calorimeter cells.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion and HEP analyses both struggle with photon/pi0/eta backgrounds and dense electromagnetic environments. The cell-level approach is credible transfer material for detector-level PID, photon tagging, and future trigger studies.</p>
+        <p><strong>Critical assessment:</strong> Strong as a collider ML study because it uses low-level detector information and compares multiple architectures. Transfer to heavy-ion conditions would still require occupancy, pileup/underlying-event, and calibration stress tests.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2607.08723 optimal transport event weights negative weights NLO Monte Carlo Energy Mover Distance Cross-Section Mover Distance HEP computing">
+        <div class="paper-head"><h4>Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights</h4><span class="label strong">strong</span></div>
+        <p class="meta">Regan Doherty, Lauren Hay, Rishabh Jain, Matt LeBlanc, Julia Marrinan, Camille Mauceri, Jennifer Roloff. <a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a></p>
+        <p><strong>Method and result:</strong> The authors use optimal-transport metrics, including Energy Mover's Distance and a spectral variant, for local resampling of negative and pathologically large Monte Carlo weights. In NLO QCD samples, the approach reportedly reduces bias relative to earlier cell-resampling methods and introduces Cross-Section Mover's Distance as an unbinned bias diagnostic.</p>
+        <p><strong>Likely use case:</strong> Directly relevant to HEP event generation and analysis production, including jet and heavy-ion baseline workflows where weighted samples can dominate storage and CPU costs.</p>
+        <p><strong>Critical assessment:</strong> Strong and practical. It is computational statistics rather than neural ML, but it addresses a real production bottleneck; the preliminary-version status argues for independent reproduction before deployment.</p>
+      </article>
+
+      <article class="paper" data-search="2607.08175 transformer calorimeter ML low-level detector signals photon identification trigger HEP heavy-ion transfer">
+        <div class="paper-head"><h4>Transformer-based machine learning using low-level calorimeter signals for collimated photon identification at collider experiments</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gabriel Matos et al. (11 authors). <a href="https://arxiv.org/abs/2607.08175">arXiv:2607.08175</a></p>
+        <p><strong>Method and result:</strong> Cell-level calorimeter inputs improve identification of collimated diphoton signatures over high-level shower-shape features, with a Transformer strongest and an MLP-Mixer positioned as a resource-conscious option.</p>
+        <p><strong>Likely use case:</strong> Photon/pi0 separation, trigger studies, and dense-environment calorimeter reconstruction in collider experiments, including potential heavy-ion adaptations after occupancy validation.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer candidate, but not yet a heavy-ion result. The decisive test would be performance under central heavy-ion underlying event and realistic detector calibrations.</p>
+      </article>
+
+      <article class="paper" data-search="2607.08150 DeepPySR symbolic regression dynamic pruning Pareto selection Feynman benchmarks interpretable scientific ML HEP nuclear transfer">
+        <div class="paper-head"><h4>DeepPySR - A Symbolic Regression Framework with Dynamic Pruning, Pareto Selection, and Hierarchical Composition for Real-World Scientific Discovery</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Fuling Chen, Kevin Vinsen, Phillip Melton, Rae-Chi Huang. <a href="https://arxiv.org/abs/2607.08150">arXiv:2607.08150</a></p>
+        <p><strong>Method and result:</strong> DeepPySR combines dynamic variable pruning, an exponential Pareto selection rule, and hierarchical symbolic composition. It reports improvements over PySR on several applied datasets and includes four Feynman physics benchmarks.</p>
+        <p><strong>Likely use case:</strong> Interpretable surrogate discovery in nuclear structure, detector calibration, reaction modeling, or phenomenological formula search where closed-form expressions are more useful than black-box predictors.</p>
+        <p><strong>Critical assessment:</strong> Interesting but generic. Feynman benchmarks are a sanity check, not evidence that the method handles noisy collider or nuclear data with systematics.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2607.08658 caution fixed-target secondary short-lived hadrons speculative rates backgrounds detector geometry">
+        <div class="paper-head"><h4>Secondary Hadron-Nucleus Collisions of Short-Lived Hadrons in Ultra-Relativistic Fixed-Target Heavy-Ion Interactions</h4><span class="label caution">caution</span></div>
+        <p class="meta">Sanatan Digal, P. S. Saumia, Ajit M. Srivastava. <a href="https://arxiv.org/abs/2607.08658">arXiv:2607.08658</a></p>
+        <p><strong>Why caution:</strong> The space-time mechanism is clever: boosted forward hadrons from one nuclear encounter in a solid target may survive to interact with another nucleus. But the abstract-level case is still feasibility-oriented and needs production spectra, survival probabilities, target geometry, rates, detector acceptance, and background modeling before it can be treated as a realistic experimental opportunity.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
