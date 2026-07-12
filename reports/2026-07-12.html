@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-12</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-12 Report</h1>
+    <p class="dek">No genuinely new Sunday arXiv batch was visible at run time, so this report screens the latest verified July 9-10 postings. The strongest themes are QGP azimuthal isotropization, pseudo-gauge ambiguities in spin-polarization theory, pion nuclear fragmentation functions, heavy-quark coalescence, STAR fluctuation/femtoscopy highlights, optimal-transport event-weight resampling, cell-level calorimeter ML, and leave-family-out validation for EoS inference.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>No newer Sunday arXiv posting batch was visible; the relevant screen therefore uses the latest verified July 9-10 postings rather than overstating the literal last-24-hour window.</li>
+        <li>The strongest heavy-ion theory paper is arXiv:2607.07796 on azimuthal momentum isotropization during QGP thermalization, directly relevant to small-system collectivity assumptions.</li>
+        <li>arXiv:2607.08569 is useful theory infrastructure for spin observables because it proposes a symmetry-based prescription for pseudo-gauge ambiguities in local equilibrium.</li>
+        <li>The most practical physics-AI/workflow item is arXiv:2607.08723, which applies optimal-transport metrics to negative and pathological event weights in NLO Monte Carlo samples.</li>
+        <li>arXiv:2607.06736 is outside core heavy-ion physics but highly transferable: its leave-one-EoS-out failure mode is exactly the kind of validation stress test needed for nuclear and heavy-ion surrogate inference.</li>
+        <li>arXiv:2607.08658 is clever but belongs in caution: short-lived-hadron secondary fixed-target collisions need much more measurement-realism work before the physics case is strong.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.07796 QGP thermalization azimuthal isotropization small systems kinetic theory Sergio Barrera Cabodevila Xiaojian Du Carlos Salgado Bin Wu">
+        <div class="paper-head"><h4>Azimuthal momentum isotropization in the Quark-Gluon Plasma thermalization</h4><span class="label strong">strong</span></div>
+        <p class="meta">Sergio Barrera Cabodevila, Xiaojian Du, Carlos A. Salgado, Bin Wu · <a href="https://arxiv.org/abs/2607.07796">arXiv:2607.07796</a> · Theory</p>
+        <p>Studies relaxation of initial azimuthal momentum anisotropies using the Boltzmann Equation in Diffusion Approximation. It reports a hierarchy of relaxation times by harmonic and pT-dependent harmonic evolution that can mimic small-system correlation trends in a phenomenological simulation.</p>
+        <p><strong>Why it matters:</strong> Initial-state momentum anisotropy is a live systematic in interpreting small-system collectivity; this gives a more quantitative relaxation diagnostic.</p>
+        <p><strong>Critical assessment:</strong> Strong abstract-level signal. The next test is robustness in event-by-event initial conditions and with realistic hadronic afterburners.</p>
+      </article>
+      <article class="paper" data-search="2607.08569 pseudo-gauge ambiguity spin polarization local equilibrium conserved currents Carlos Hoyos">
+        <div class="paper-head"><h4>A symmetry-based resolution of pseudo-gauge ambiguities in local equilibrium</h4><span class="label strong">strong</span></div>
+        <p class="meta">Carlos Hoyos · <a href="https://arxiv.org/abs/2607.08569">arXiv:2607.08569</a> · Theory</p>
+        <p>Reformulates pseudo-gauge and current-improvement ambiguities as spurious symmetries associated with currents of vanishing total charge, then proposes using genuine-symmetry currents to define the local-equilibrium density operator.</p>
+        <p><strong>Why it matters:</strong> Spin polarization and vector-meson alignment remain interpretation-limited observables; reducing convention dependence is valuable theory infrastructure.</p>
+        <p><strong>Critical assessment:</strong> Conceptually strong, but phenomenological weight depends on follow-up calculations showing numerical impact on heavy-ion spin observables.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.07254 STAR QCD critical point fluctuations femtoscopy baryon-strangeness net-proton cumulants Rutik Manikandhan">
+        <div class="paper-head"><h4>Recent highlights from the STAR Experiment</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Rutik Manikandhan · <a href="https://arxiv.org/abs/2607.07254">arXiv:2607.07254</a> · Experiment</p>
+        <p>Proceedings overview of recent STAR results on mean-pT correlations, fourth-order net-proton cumulants, identical-pion femtoscopy, baryon-strangeness correlations, and baryon-baryon femtoscopy over sqrt(sNN)=3-200 GeV.</p>
+        <p><strong>Why it matters:</strong> These observables map directly onto fluctuation, femtoscopy, and interaction constraints used in BES phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Useful status report, but the evidentiary strength lies in the underlying STAR measurements rather than new analysis in this proceeding.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.08669 nuclear fragmentation functions pions A dependence nu dependence SIDIS ALICE hadronization Mengyang Li">
+        <div class="paper-head"><h4>Analysis of Nuclear Fragmentation Functions for Pions with A and nu Dependence</h4><span class="label strong">strong</span></div>
+        <p class="meta">Mengyang Li, Zijian Ye, Jun Gao, Xiaomin Shen, Hongxi Xing, Yuxiang Zhao · <a href="https://arxiv.org/abs/2607.08669">arXiv:2607.08669</a> · Phenomenology</p>
+        <p>Fits pion nuclear fragmentation functions with nuclear effects parameterized by mass number A, target-rest-frame parton energy nu, and hadron fraction z, using nuclear SIDIS data and NLO pp/pA comparisons to ALICE.</p>
+        <p><strong>Why it matters:</strong> Better nFF baselines reduce ambiguity between cold-nuclear hadronization effects and hot-medium modifications.</p>
+        <p><strong>Critical assessment:</strong> Strong baseline work, though current pA comparisons remain uncertainty-limited and the fit is best constrained in a restricted z range.</p>
+      </article>
+      <article class="paper" data-search="2607.08707 heavy quark coalescence potential QGP heavy flavor hadronization Taesoo Song Jiaxing Zhao">
+        <div class="paper-head"><h4>Heavy quark coalescence probability in the presence of a potential</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Taesoo Song, Jiaxing Zhao · <a href="https://arxiv.org/abs/2607.08707">arXiv:2607.08707</a> · Phenomenology</p>
+        <p>Studies how a phenomenological heavy-quark potential affects coalescence probabilities and finds near-unity low-momentum coalescence under moderate in-medium potential modification.</p>
+        <p><strong>Why it matters:</strong> Heavy-flavor flow and baryon/meson ratios are sensitive to hadronization prescriptions.</p>
+        <p><strong>Critical assessment:</strong> Useful model-ingredient study, but not yet a settled prescription without broader validation and uncertainty propagation.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2607.08723 optimal transport negative event weights NLO Monte Carlo HEP computing Energy Mover Distance Regan Doherty Lauren Hay Rishabh Jain Matt LeBlanc Julia Marrinan Camille Mauceri Jennifer Roloff">
+        <div class="paper-head"><h4>Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights</h4><span class="label strong">strong</span></div>
+        <p class="meta">Regan Doherty, Lauren Hay, Rishabh Jain, Matt LeBlanc, Julia Marrinan, Camille Mauceri, Jennifer Roloff · <a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a> · AI/ML use</p>
+        <p>Uses optimal-transport metrics for local resampling of negative and very large Monte Carlo event weights, reporting reduced observed bias in NLO QCD samples relative to earlier cell-resampling techniques.</p>
+        <p><strong>Likely use case:</strong> Precision collider simulations and hard-probe baseline production where negative weights create storage, statistics, and computing pressure.</p>
+        <p><strong>Critical assessment:</strong> Strong and practical, though preliminary; scaling and detector/reconstruction robustness remain key checks.</p>
+      </article>
+      <article class="paper" data-search="2607.08175 transformer calorimeter ML collimated photon identification cell-level low-level signals trigger MLP Mixer Gabriel Matos Lauren Larson Julia Gonski">
+        <div class="paper-head"><h4>Transformer-based machine learning using low-level calorimeter signals for collimated photon identification at collider experiments</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gabriel Matos, Lauren Larson, Abhilasha Dave, Maria Bressan, Azal Amer, et al. (11 authors) · <a href="https://arxiv.org/abs/2607.08175">arXiv:2607.08175</a> · AI/ML use</p>
+        <p>Compares high-level and cell-level ML architectures for collimated diphoton versus isolated-photon identification; a Transformer performs best and also regresses invariant mass from calorimeter cells.</p>
+        <p><strong>Likely use case:</strong> Photon/pi0 separation, shower reconstruction, trigger-oriented alternatives, and possible high-occupancy heavy-ion calorimetry studies after detector-specific validation.</p>
+        <p><strong>Critical assessment:</strong> Strong method comparison with clear collider relevance; transfer to heavy-ion conditions needs pileup/occupancy tests.</p>
+      </article>
+      <article class="paper" data-search="2607.06736 generalization gap machine learning EoS inference leave one EoS out core collapse supernova gravitational waves template leakage Ayan Mitra">
+        <div class="paper-head"><h4>The Generalization Gap in Machine Learning EoS Inference from Core-Collapse Supernova Gravitational Waves</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ayan Mitra · <a href="https://arxiv.org/abs/2607.06736">arXiv:2607.06736</a> · AI/ML use</p>
+        <p>Shows that random cross-validation can make EoS inference appear successful, while leave-one-EoS-out validation fails badly across multiple model classes.</p>
+        <p><strong>Likely use case:</strong> Validation design for heavy-ion EoS emulators, transport-parameter inference, and event-generator surrogates trained on finite model families.</p>
+        <p><strong>Critical assessment:</strong> Strong as a negative-result methodology paper because it diagnoses template leakage and proposes a more realistic validation standard.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.08658 short-lived hadrons secondary collisions fixed target heavy ion feasibility caution Sanatan Digal Saumia Srivastava">
+        <div class="paper-head"><h4>Secondary Hadron-Nucleus Collisions of Short-Lived Hadrons in Ultra-Relativistic Fixed-Target Heavy-Ion Interactions</h4><span class="label caution">caution</span></div>
+        <p class="meta">Sanatan Digal, P. S. Saumia, Ajit M. Srivastava · <a href="https://arxiv.org/abs/2607.08658">arXiv:2607.08658</a> · Caution</p>
+        <p>Argues that boosted short-lived hadrons from one fixed-target heavy-ion interaction may survive to collide with another nucleus in a solid target.</p>
+        <p><strong>Why it looks interesting:</strong> If viable, it would open unusual secondary hadron-nucleus projectile species.</p>
+        <p><strong>Why caution is warranted:</strong> The concept is clever, but the path from survival probabilities to clean, measurable observables is not yet convincing from the available evidence.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
