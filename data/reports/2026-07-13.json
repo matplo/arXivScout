@@ -1,0 +1,117 @@
+{
+  "date": "2026-07-13",
+  "path": "reports/2026-07-13.html",
+  "summary": "The July 13 scout screened the current Monday arXiv listings plus the latest Friday postings still inside the effective arXiv catch-up window. The strongest heavy-ion-relevant item is a QCD small-x/high-energy-evolution calculation of running-coupling effects in anti-collinear resummation, relevant to saturation and initial-state modeling. The strongest AI/ML or computational-transfer items are a commissioned low-latency GNN calorimeter trigger at Belle II, neural quantum states for medium-mass nuclei, deep Gaussian processes for graph-structured multi-fidelity models including heavy-ion emulation, and optimal-transport resampling for pathological Monte Carlo event weights.",
+  "keywords": [
+    "running-coupling BFKL",
+    "JIMWLK evolution",
+    "small-x QCD",
+    "initial-state saturation",
+    "GNN trigger",
+    "FPGA latency",
+    "neural quantum states",
+    "medium-mass nuclei",
+    "multi-fidelity heavy-ion emulation",
+    "deep Gaussian processes",
+    "optimal transport event weights",
+    "hyperon potential caution"
+  ],
+  "arxiv_ids": [
+    "2607.09337",
+    "2607.09347",
+    "2607.09223",
+    "2607.09645",
+    "2607.08723",
+    "2607.09582",
+    "2607.09273",
+    "2607.09280"
+  ],
+  "total_paper_count": 8,
+  "selected_paper_count": 6,
+  "caution_count": 1,
+  "represented_categories": [
+    "Theory",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2607.09337 is the strongest heavy-ion-relevant theory paper because it tackles running-coupling effects in resummed high-energy QCD evolution, a foundational ingredient for small-x and initial-condition modeling. arXiv:2607.09347 is the strongest practical AI/ML systems paper because it reports an operational GNN trigger module with microsecond-scale latency and bit-accurate FPGA validation.",
+  "papers": [
+    {
+      "title": "Running coupling effects in the anti-collinear resummation in high energy evolution",
+      "authors_short": "Alex Kovner, Michael Lublinsky, Maxim Nefedov, Vladimir Skokov",
+      "author_count": 4,
+      "arxiv_id": "2607.09337",
+      "url": "https://arxiv.org/abs/2607.09337",
+      "category": "Theory",
+      "abstract": "The paper studies running-coupling effects in anti-collinear resummation of JIMWLK evolution in the linear BFKL regime, derives a resummed BFKL kernel with running-coupling effects in both the DGLAP-like resummation equation and the JIMWLK kernel, and finds a reduced Pomeron intercept in the anti-collinear regime.",
+      "tags": ["small-x QCD", "JIMWLK", "BFKL", "running coupling", "initial state"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Commissioning and Low Latency Operation of the Graph Neural Network Electromagnetic Calorimeter Trigger at the Belle II Experiment",
+      "authors_short": "M. Neu, F. Baptist, I. Haide, Y. Unno, J. Becker, et al.",
+      "author_count": 13,
+      "arxiv_id": "2607.09347",
+      "url": "https://arxiv.org/abs/2607.09347",
+      "category": "AI/ML use",
+      "abstract": "Reports commissioning and operation of Belle II's GNN electromagnetic calorimeter trigger module, including integration with the first-level trigger, slow control, online monitoring, hardware-algorithm co-design, 1.053 microsecond total latency, and bit-accurate agreement between RTL simulations and the offline reference model.",
+      "tags": ["GNN trigger", "calorimeter", "FPGA", "low latency", "online monitoring"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Medium-mass nuclei with neural quantum states",
+      "authors_short": "Bryce Fore, Jane Kim, Alessandro Lovato, Anthony Tropiano",
+      "author_count": 4,
+      "arxiv_id": "2607.09223",
+      "url": "https://arxiv.org/abs/2607.09223",
+      "category": "AI/ML use",
+      "abstract": "Uses variational Monte Carlo with Pfaffian-Jastrow neural quantum states to compute ground-state energies and charge radii of light- to medium-mass nuclei up to A=58, while testing interaction terms inspired by pionless EFT and analyzing computational scaling.",
+      "tags": ["neural quantum states", "variational Monte Carlo", "medium-mass nuclei", "nuclear Hamiltonians"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Deep Gaussian Processes on Directed Acyclic Graphs",
+      "authors_short": "Federico L. Perlino, Oliver Hamelijnck, Adam M. Johansen, Theodoros Damoulas",
+      "author_count": 4,
+      "arxiv_id": "2607.09645",
+      "url": "https://arxiv.org/abs/2607.09645",
+      "category": "AI/ML use",
+      "abstract": "Develops deep Gaussian processes over directed acyclic graphs with theory for prior collapse and graph-topology effects, plus a structured variational approximation. The empirical demonstrations include a multi-fidelity heavy-ion collision emulation task where the model recovers low-fidelity contributions and simulator-hierarchy structure.",
+      "tags": ["deep Gaussian processes", "DAGs", "multi-fidelity emulation", "heavy-ion surrogate", "uncertainty"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights",
+      "authors_short": "Regan Doherty, Lauren Hay, Rishabh Jain, Matt LeBlanc, Julia Marrinan, Camille Mauceri, Jennifer Roloff",
+      "author_count": 7,
+      "arxiv_id": "2607.08723",
+      "url": "https://arxiv.org/abs/2607.08723",
+      "category": "AI/ML use",
+      "abstract": "Studies optimal-transport metrics, including Energy Mover's Distance and a spectral variant, for cell resampling of negative or pathologically large Monte Carlo event weights. In NLO QCD samples, the approach reduces observed bias relative to earlier cell-resampling techniques and proposes Cross-Section Mover's Distance as a bias metric.",
+      "tags": ["optimal transport", "negative event weights", "NLO Monte Carlo", "HEP computing"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Entropy-Constrained Machine Learning with Residual Data Augmentation for Modeling Chemical Kinetics",
+      "authors_short": "Okezzi Ukorigho, Opeoluwa Owoyele",
+      "author_count": 2,
+      "arxiv_id": "2607.09582",
+      "url": "https://arxiv.org/abs/2607.09582",
+      "category": "AI/ML use",
+      "abstract": "Introduces a thermodynamics-constrained surrogate for turbulent reacting-flow chemistry, enforcing non-negative entropy generation and using residual-based synthetic data augmentation to improve parametric extrapolation in flame DNS.",
+      "tags": ["physics-constrained ML", "entropy constraint", "surrogate modeling", "turbulent flows"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Neutrino-induced hyperon final-state interactions as constraints on the in-medium hyperon potential / In-medium hyperon potentials and the quarkyonic hyperon onset",
+      "authors_short": "Jaroslaw Nowak",
+      "author_count": 1,
+      "arxiv_id": "2607.09273; 2607.09280",
+      "url": "https://arxiv.org/abs/2607.09273",
+      "category": "Caution",
+      "abstract": "The linked papers propose accelerator-neutrino hyperon final-state interactions as constraints on in-medium hyperon potentials and propagate those constraints into hyperon-onset and neutron-star scenarios, including comparisons to terrestrial and heavy-ion priors.",
+      "tags": ["hyperon potentials", "neutrino FSI", "heavy-ion priors", "systematics caution"],
+      "assessment": "caution"
+    }
+  ]
+}
