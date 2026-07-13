@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-13</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-13 Briefing</h1>
+    <p class="dek">Small-x QCD evolution, operational GNN triggering, neural quantum states for nuclei, and graph-structured multi-fidelity emulation.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion-relevant theory paper is <a href="https://arxiv.org/abs/2607.09337">arXiv:2607.09337</a>, which treats running-coupling effects in anti-collinear resummation of JIMWLK/BFKL evolution. This is not a phenomenology paper, but it matters for small-x and saturation-informed initial-state modeling.</li>
+        <li>The most practically convincing AI/ML systems paper is <a href="https://arxiv.org/abs/2607.09347">arXiv:2607.09347</a>: a fully commissioned Belle II GNN electromagnetic calorimeter trigger with online monitoring, FPGA validation, and 1.053 microsecond total latency.</li>
+        <li><a href="https://arxiv.org/abs/2607.09223">arXiv:2607.09223</a> is a strong nuclear-theory ML contribution because it pushes neural quantum states to nuclei up to A=58 and discusses scaling, not just benchmark accuracy.</li>
+        <li><a href="https://arxiv.org/abs/2607.09645">arXiv:2607.09645</a> is worth attention for heavy-ion Bayesian workflows: its DAG deep-GP construction directly targets multi-fidelity heavy-ion emulation, with uncertainty and hierarchy interpretability built into the model.</li>
+        <li>The hyperon-potential/neutrino-FSI pair (<a href="https://arxiv.org/abs/2607.09273">2607.09273</a>, <a href="https://arxiv.org/abs/2607.09280">2607.09280</a>) is interesting but caution-worthy: the abstract itself shows strong sensitivity to model systematics and priors, so the constraint narrative should not be overread.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.09337 Running coupling anti-collinear resummation high energy evolution small-x QCD JIMWLK BFKL saturation initial state Theory strong Alex Kovner Michael Lublinsky Maxim Nefedov Vladimir Skokov">
+        <div class="paper-head"><h4>Running coupling effects in the anti-collinear resummation in high energy evolution</h4><span class="label strong">strong</span></div>
+        <p class="meta">Alex Kovner, Michael Lublinsky, Maxim Nefedov, Vladimir Skokov · <a href="https://arxiv.org/abs/2607.09337">arXiv:2607.09337</a></p>
+        <p><strong>Summary.</strong> The paper studies running-coupling effects in anti-collinear resummation of JIMWLK evolution in the linear BFKL regime. It derives a resummed BFKL kernel with running-coupling effects in both the DGLAP-like resummation equation and the JIMWLK kernel, and finds that running coupling further reduces the Pomeron intercept in the anti-collinear regime.</p>
+        <p><strong>Why it matters.</strong> Heavy-ion phenomenology often leans on small-x initial conditions and saturation physics, where evolution kernels and scale choices propagate into uncertainty on early-time gluon structure. A cleaner treatment of running-coupling effects is therefore upstream of many initial-state calculations.</p>
+        <p><strong>Critical assessment.</strong> Strong theory contribution: focused, technical, and directly aimed at a known instability/precision issue in high-energy evolution. Its immediate experimental payoff is indirect, so it should be read as foundational input rather than a ready-to-use heavy-ion observable calculation.</p>
+      </article>
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experiment paper survived the screen in the roughly last-24-hour arXiv window. The relevant experimental-strength item today is instead the Belle II GNN trigger paper listed under AI/ML use because its transfer value is trigger and detector operations.</p>
+      <h3>Phenomenology</h3>
+      <p>No direct heavy-ion phenomenology paper from the newest batch cleared the selectivity bar. The screened Monday list contained several nuclear and HEP phenomenology papers, but most were either outside heavy-ion collisions or not strong enough for inclusion here.</p>
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.09347 GNN electromagnetic calorimeter trigger Belle II FPGA latency online monitoring AI ML Experiment transfer strong">
+        <div class="paper-head"><h4>Commissioning and Low Latency Operation of the Graph Neural Network Electromagnetic Calorimeter Trigger at the Belle II Experiment</h4><span class="label strong">strong</span></div>
+        <p class="meta">M. Neu, F. Baptist, I. Haide, Y. Unno, J. Becker, et al. (13 authors) · <a href="https://arxiv.org/abs/2607.09347">arXiv:2607.09347</a></p>
+        <p><strong>Summary.</strong> The paper reports a deployed GNN electromagnetic calorimeter trigger module at Belle II. The authors describe first-level-trigger integration, slow control, online monitoring, hardware-algorithm co-design, bit-accurate RTL agreement with an offline model, and an overall latency of 1.053 microseconds.</p>
+        <p><strong>Why it matters.</strong> For HEP and heavy-ion experiments, the hard part of ML triggering is operational reliability under tight latency and monitoring constraints. This is a useful real-system example, not just an offline classification study.</p>
+        <p><strong>Critical assessment.</strong> Strong and transferable. The abstract-level evidence emphasizes deployment, latency, and validation; the remaining question is how stable performance is under changing backgrounds and detector conditions, but the commissioning focus is already more convincing than most trigger-ML papers.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2607.09223 neural quantum states medium-mass nuclei Pfaffian Jastrow variational Monte Carlo nuclear theory AI ML strong Bryce Fore Jane Kim Alessandro Lovato Anthony Tropiano">
+        <div class="paper-head"><h4>Medium-mass nuclei with neural quantum states</h4><span class="label strong">strong</span></div>
+        <p class="meta">Bryce Fore, Jane Kim, Alessandro Lovato, Anthony Tropiano · <a href="https://arxiv.org/abs/2607.09223">arXiv:2607.09223</a></p>
+        <p><strong>Method and result.</strong> Uses variational Monte Carlo with Pfaffian-Jastrow neural quantum states to compute ground-state energies and charge radii for nuclei up to A=58. It also probes which Hamiltonian ingredients are needed for few-percent predictions and analyzes computational scaling.</p>
+        <p><strong>Likely use case.</strong> Directly relevant to nuclear-structure workflows and, indirectly, to nuclear inputs used in heavy-ion initial conditions and dense-matter modeling. The scaling study is especially useful for judging whether neural quantum states can become production tools rather than impressive toy benchmarks.</p>
+        <p><strong>Critical assessment.</strong> Strong. The paper appears methodologically substantive because it combines nuclear observables, interaction diagnostics, and scaling projections. The main caution is that few-percent accuracy with simplified EFT-inspired interactions is not the same as a universal ab initio replacement.</p>
+      </article>
+
+      <article class="paper" data-search="2607.09645 deep Gaussian processes DAG multi-fidelity heavy-ion emulation uncertainty graph simulator hierarchy AI ML strong">
+        <div class="paper-head"><h4>Deep Gaussian Processes on Directed Acyclic Graphs</h4><span class="label strong">strong</span></div>
+        <p class="meta">Federico L. Perlino, Oliver Hamelijnck, Adam M. Johansen, Theodoros Damoulas · <a href="https://arxiv.org/abs/2607.09645">arXiv:2607.09645</a></p>
+        <p><strong>Method and result.</strong> Develops deep Gaussian processes defined over directed acyclic graphs, with theory for prior collapse and graph-topology effects plus a structured variational approximation. One empirical task is multi-fidelity heavy-ion collision emulation, where the model reportedly improves performance and recovers low-fidelity simulator contributions.</p>
+        <p><strong>Likely use case.</strong> Heavy-ion Bayesian calibration often mixes expensive full simulations, cheaper approximations, and partially observed intermediate outputs. A graph-aware emulator could encode that hierarchy more honestly than a flat surrogate.</p>
+        <p><strong>Critical assessment.</strong> Strong but needs domain-specific scrutiny. The heavy-ion task is one validation among several; the transfer value is credible because the method targets exactly the multi-fidelity structure that appears in heavy-ion modeling, but the final test is whether it improves calibrated physics posteriors under realistic simulator systematics.</p>
+      </article>
+
+      <article class="paper" data-search="2607.08723 optimal transport cell resampling negative event weights pathological weights NLO QCD Monte Carlo HEP computing AI ML strong">
+        <div class="paper-head"><h4>Optimal-Transport-Based Cell Resampling for Negative and Pathological Event Weights</h4><span class="label strong">strong</span></div>
+        <p class="meta">Regan Doherty, Lauren Hay, Rishabh Jain, Matt LeBlanc, Julia Marrinan, Camille Mauceri, Jennifer Roloff · <a href="https://arxiv.org/abs/2607.08723">arXiv:2607.08723</a></p>
+        <p><strong>Method and result.</strong> Applies optimal-transport metrics, including Energy Mover's Distance, to local resampling of negative and very large Monte Carlo event weights. In NLO QCD samples, the method reduces observed bias relative to earlier cell-resampling approaches and introduces Cross-Section Mover's Distance as a bias diagnostic.</p>
+        <p><strong>Likely use case.</strong> This is immediately relevant to HEP simulation production and could matter for heavy-ion-adjacent jet and hard-probe calculations when weighted event samples become unwieldy.</p>
+        <p><strong>Critical assessment.</strong> Strong workflow paper. The practical bottleneck is real, the metric choice is physically motivated by soft/collinear behavior, and the bias-diagnostic framing is useful. It is still marked preliminary, so implementation details and stress tests should be checked before adoption.</p>
+      </article>
+
+      <article class="paper" data-search="2607.09582 entropy constrained machine learning turbulent reacting flows surrogate chemistry thermodynamics residual augmentation transfer mixed">
+        <div class="paper-head"><h4>Entropy-Constrained Machine Learning with Residual Data Augmentation for Modeling Chemical Kinetics</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Okezzi Ukorigho, Opeoluwa Owoyele · <a href="https://arxiv.org/abs/2607.09582">arXiv:2607.09582</a></p>
+        <p><strong>Method and result.</strong> Builds a thermodynamics-constrained surrogate for turbulent reacting-flow chemistry by enforcing non-negative entropy generation and using residual-based synthetic data augmentation. The demonstration reports high fidelity and more than an order-of-magnitude speedup in a two-dimensional flame DNS case.</p>
+        <p><strong>Likely use case.</strong> The transfer to HEP/nuclear physics is conceptual rather than direct: entropy- or conservation-constrained surrogates are relevant to hydrodynamic closures, transport models, and simulation components where unconstrained ML can become unstable.</p>
+        <p><strong>Critical assessment.</strong> Mixed but worth noting. The physics constraint is meaningful, yet the domain is combustion rather than HEP/NP. I would treat it as a design pattern for stable surrogates, not as evidence of immediate heavy-ion applicability.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.09273 2607.09280 hyperon potentials neutrino final-state interactions quarkyonic hyperon onset heavy-ion priors systematics caution Jaroslaw Nowak">
+        <div class="paper-head"><h4>Neutrino-induced hyperon final-state interactions as constraints on the in-medium hyperon potential / In-medium hyperon potentials and the quarkyonic hyperon onset</h4><span class="label caution">caution</span></div>
+        <p class="meta">Jaroslaw Nowak · <a href="https://arxiv.org/abs/2607.09273">arXiv:2607.09273</a> and <a href="https://arxiv.org/abs/2607.09280">arXiv:2607.09280</a></p>
+        <p>These linked papers are scientifically interesting because they connect accelerator-neutrino hyperon production, in-medium hyperon potentials, neutron-star hyperon onset, and comparisons to terrestrial and heavy-ion priors. The caution is that the abstracts themselves expose major sensitivity to low-density exponents, hyperon-nucleon final-state cross sections, transport prescriptions, and external priors.</p>
+        <p><strong>Assessment.</strong> Worth reading if hyperon potentials are in scope, but not a clean new constraint at face value. The strongest responsible interpretation is that neutrino data may provide a complementary low-density handle, while the astrophysical conclusions remain strongly model- and prior-conditioned.</p>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
