@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-14</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-14 Briefing</h1>
+    <p class="dek">Charm-flow geometry, directed-flow resonance rescattering, spin-polarization observables, femtoscopy Coulomb effects, and detector ML reconstruction.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest experimental item is the CMS event-shape-engineering study of prompt D0 elliptic flow in PbPb at 5.02 TeV, which directly tests how initial geometry controls charm-hadron flow.</li>
+        <li>STAR's first K*0 directed-flow measurement at BES energies is also strong: the centrality-dependent kaon/K*0 split is a clean handle on late hadronic rescattering versus early-stage collectivity.</li>
+        <li>The best theory/phenomenology cluster concerns spin and electromagnetic probes: J/psi spin alignment, thermal dilepton polarization under vorticity or magnetic fields, and Coulomb-corrected femtoscopy.</li>
+        <li>The strongest AI/ML detector paper is the AC-LGAD/resistive silicon reconstruction study because it targets waveform-level reconstruction, geometry-flexible architectures, compression, and FPGA deployment constraints.</li>
+        <li>Several broader physics-ML papers are transferable only with caveats. Fluid-dynamics GNNs and PINN improvements are relevant design patterns for hydrodynamic surrogates, but their validations are not heavy-ion validations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.11028 J/psi spin alignment heavy-ion two-component transport coalescence thermal vorticity quarkonium spin dynamics Theory strong Yida Yang Anping Huang Baoyi Chen">
+        <div class="paper-head"><h4>Investigating J/psi spin alignment in heavy-ion collisions within a two-component transport model</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yida Yang, Anping Huang, Baoyi Chen · <a href="https://arxiv.org/abs/2607.11028">arXiv:2607.11028</a></p>
+        <p><strong>Summary.</strong> The paper derives the J/psi spin-density matrix element rho00 from a relativistic spin Boltzmann equation under a heavy-quark nonrelativistic approximation, then models the measured signal as a pT-dependent mixture of primordial production and coalescence. It reproduces ALICE forward-rapidity trends and predicts a distinct midrapidity behavior where thermal-vorticity effects are kinematically suppressed.</p>
+        <p><strong>Why it matters.</strong> Heavy-quarkonium spin alignment is a sensitive and still-developing probe of vorticity, coalescence, and primordial production in the QGP. A two-component treatment gives a concrete way to connect spin observables with heavy-flavor transport.</p>
+        <p><strong>Critical assessment.</strong> Strong but model-dependent. The paper is valuable because it confronts data and provides midrapidity predictions; the main risk is that separating coalescence polarization from primordial dilution may depend strongly on transport and charm thermalization assumptions.</p>
+      </article>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.11017 CMS D0 meson elliptic flow PbPb 5.02 TeV event shape engineering initial geometry charm flow Experiment strong">
+        <div class="paper-head"><h4>Exploring the origin of D0 meson elliptic flow in PbPb collisions at sqrt(sNN) = 5.02 TeV using event shape engineering</h4><span class="label strong">strong</span></div>
+        <p class="meta">CMS Collaboration · <a href="https://arxiv.org/abs/2607.11017">arXiv:2607.11017</a></p>
+        <p><strong>Summary.</strong> CMS uses 0.607 nb-1 of 2018 PbPb data and an event-shape variable q2 from forward transverse energy to select collisions with similar geometry. D0-meson v2 at midrapidity is found to be strongly correlated with inclusive charged-particle v2 over pT = 2-30 GeV and multiple centralities.</p>
+        <p><strong>Why it matters.</strong> The result addresses whether charm flow is primarily controlled by initial geometry and bulk collectivity, a core question for heavy-quark diffusion and partial thermalization in QGP.</p>
+        <p><strong>Critical assessment.</strong> Strong. The observable is well targeted, the luminosity and experimental context are substantial, and event-shape engineering gives a sharper test than an inclusive v2 comparison. Model interpretation will still hinge on how faithfully charged-particle v2 proxies initial eccentricity and on nonflow/systematic control.</p>
+      </article>
+      <article class="paper" data-search="2607.11191 STAR directed flow charged kaons K*0 resonances phi AuAu 14.6 19.6 27 GeV hadronic rescattering Experiment strong">
+        <div class="paper-head"><h4>Observation of the centrality-dependent difference in directed flow between charged kaons and K*0 resonances in Au+Au collisions at sqrt(sNN) = 14.6, 19.6 and 27 GeV</h4><span class="label strong">strong</span></div>
+        <p class="meta">The STAR Collaboration · <a href="https://arxiv.org/abs/2607.11191">arXiv:2607.11191</a></p>
+        <p><strong>Summary.</strong> STAR reports rapidity-odd directed flow for charged kaons, phi mesons, and K*0 resonances at BES energies, including the first K*0 v1 measurement in heavy-ion collisions. The charged-kaon/K*0 v1 difference grows with centrality, while the charged-kaon/phi difference is nearly centrality independent.</p>
+        <p><strong>Why it matters.</strong> Short-lived resonances are altered by hadronic rescattering and regeneration, so the kaon/K*0 split directly probes how much late-stage dynamics modifies flow observables that are often interpreted as early-stage signals.</p>
+        <p><strong>Critical assessment.</strong> Strong. The measurement is novel and the comparison to hydrodynamics plus UrQMD gives a plausible physics handle. The assessment should remain careful because reconstruction effects and rescattering asymmetries are themselves model-sensitive.</p>
+      </article>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.11634 thermal dilepton polarization heavy-ion vorticity magnetic field virtual photon anisotropy coefficients Phenomenology mixed Haowen He Bowen Hou Xingyang Wang Minghua Wei">
+        <div class="paper-head"><h4>Thermal Dilepton Polarization under Rotation or Magnetic Field in Heavy-ion Collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Haowen He, Bowen Hou, Xingyang Wang, Minghua Wei · <a href="https://arxiv.org/abs/2607.11634">arXiv:2607.11634</a></p>
+        <p><strong>Summary.</strong> The authors calculate thermal dilepton polarization in QGP from quark-antiquark annihilation, deriving the electromagnetic spectral function with modified quark propagators under external vorticity or magnetic fields. They predict characteristic invariant-mass dependences of the polarization coefficients for the two field sources.</p>
+        <p><strong>Why it matters.</strong> Dileptons are penetrating probes, and polarization observables could complement hadronic spin-alignment measurements if the signal survives realistic space-time evolution and backgrounds.</p>
+        <p><strong>Critical assessment.</strong> Mixed-to-strong conceptually. The observable is interesting and the field separation is useful, but the abstract does not establish full phenomenological realism, such as hydrodynamic evolution, detector acceptance, or competing sources.</p>
+      </article>
+      <article class="paper" data-search="2607.11321 Coulomb effects momentum-space femtoscopy Kbar Omega Lippmann Schwinger Vincent Phatak source size off-shell Phenomenology strong Pablo Encarnacion Amador Garcia-Lorenzo Miguel Albaladejo Albert Feijoo Juan Nieves Isaac Vidana">
+        <div class="paper-head"><h4>Coulomb Effects in Momentum-Space Femtoscopy: A Case Study of the Kbar Omega System</h4><span class="label strong">strong</span></div>
+        <p class="meta">Pablo Encarnacion, Amador Garcia-Lorenzo, Miguel Albaladejo, Albert Feijoo, Juan Nieves, Isaac Vidana · <a href="https://arxiv.org/abs/2607.11321">arXiv:2607.11321</a></p>
+        <p><strong>Summary.</strong> The paper presents a momentum-space treatment of Coulomb interactions in femtoscopic correlation functions using a modified Vincent-Phatak method inside the Lippmann-Schwinger equation. It applies the method to Kbar-Omega channels and validates against the pp system while studying finite-source and off-shell effects.</p>
+        <p><strong>Why it matters.</strong> Precision femtoscopy increasingly aims to infer hadron-hadron interactions from small systems and heavy-ion data. Coulomb and off-shell/source effects are a real obstacle to clean interpretation, especially for charged strange-hadron channels.</p>
+        <p><strong>Critical assessment.</strong> Strong. It attacks a concrete technical limitation with validation and an explicit discussion of model-dependence. The phenomenological parameter absorbing source and off-shell structure is pragmatic, though it also marks where model-independent extraction remains difficult.</p>
+      </article>
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.11585 machine learning reconstruction resistive silicon sensors AC-LGAD waveform LSTM transformer FPGA 4D tracking AI ML strong Alexander Aoki Gaetano Barone Leena Diehl Gabriele Giacomini Vagelis Gkougkousis">
+        <div class="paper-head"><h4>Machine Learning-Based Reconstruction for Resistive Silicon Sensors</h4><span class="label strong">strong</span></div>
+        <p class="meta">Alexander Aoki, Gaetano Barone, Leena Diehl, Gabriele Giacomini, Vagelis Gkougkousis, et al. (16 authors) · <a href="https://arxiv.org/abs/2607.11585">arXiv:2607.11585</a></p>
+        <p><strong>Summary.</strong> This study uses full waveform information from correlated pads in AC-LGAD/resistive silicon sensors for position reconstruction and compression. It explores LSTM proof-of-concept models for FPGA deployment, waveform rasterization and window selection for bandwidth reduction, and topology-agnostic transformer architectures with pad coordinates.</p>
+        <p><strong>Why it matters.</strong> Precision timing and 4D tracking are central to future collider and nuclear experiments. The paper targets real readout constraints: signal sharing, low signal-to-noise, edge distortions, geometry changes, bandwidth, and firmware deployment.</p>
+        <p><strong>Critical assessment.</strong> Strong. It is a detector ML paper with clear hardware and reconstruction constraints rather than a generic neural-network application. The main remaining question is performance under realistic radiation damage, pileup, and calibration drifts.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2607.11139 antineutron reconstruction electromagnetic calorimeter mixed representation learning MrCAL ECAL neutral hadron momentum direction magnitude HEP AI ML strong">
+        <div class="paper-head"><h4>Antineutron reconstruction in electromagnetic calorimeters with mixed-representation learning</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yangu Li, Hongtian Yu, Yuyang Huang, Zhi Cao, Yunxuan Song, Yunfan Liu, Yajun Mao, YangHeng Zheng, Xiao-Rui Lyu, Qixiang Ye · <a href="https://arxiv.org/abs/2607.11139">arXiv:2607.11139</a></p>
+        <p><strong>Method and result.</strong> Introduces MrCAL, a mixed visual/sequential representation network for antineutron reconstruction from ECAL signals using real collision data. It jointly predicts identity, momentum direction, and momentum magnitude, reporting up to 96% improvement in direction precision and about 17% momentum resolution at 1 GeV/c.</p>
+        <p><strong>Likely use case.</strong> Directly relevant to HEP and nuclear experiments that need better neutral-hadron reconstruction from legacy calorimeters or limited detector systems.</p>
+        <p><strong>Critical assessment.</strong> Strong but verify carefully. The claimed capability is substantial and the use of real data/generalization tests is encouraging; the key checks are calibration robustness, process dependence, and whether the quoted gains hold outside the training environment.</p>
+      </article>
+      <article class="paper" data-search="2607.11672 multi-scale graph neural network fluid dynamics complex geometries ME-GNN surrogate hydrodynamics transfer AI ML mixed">
+        <div class="paper-head"><h4>A multi-scale feature enhanced graph neural network for fluid dynamics prediction in complex geometries</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Li Xiao, Tianyu Li, Yiye Zou, Mingjie Zhang, Xiaogangd Deng · <a href="https://arxiv.org/abs/2607.11672">arXiv:2607.11672</a></p>
+        <p><strong>Method and result.</strong> Proposes ME-GNN, combining graph message passing, an Attention U-Net on a uniform grid, and K-hop sampling for large meshes. It reports strong benchmark errors on ShapeNet-Car, AirfRANS, and DrivAerNet.</p>
+        <p><strong>Likely use case.</strong> Transfer value is in multi-scale surrogate modeling on unstructured meshes, which could inform heavy-ion hydro or detector-fluid workflows. The studied flows are engineering aerodynamics, not relativistic viscous QGP dynamics.</p>
+        <p><strong>Critical assessment.</strong> Mixed. The architecture may be useful, but the physics regime and validation targets are far from HEP/NP; treat it as a method to watch, not evidence of immediate heavy-ion surrogate reliability.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.11310 SPARC-Net PINN stiff shock dominated PDE spectral causality hard constrained relative error improvements caution transfer">
+        <div class="paper-head"><h4>SPARC-Net: A Spectral, Causality-Aware, and Hard-Constrained Physics-Informed Architecture for Stiff and Shock-Dominated Partial Differential Equations</h4><span class="label caution">caution</span></div>
+        <p class="meta">Divyavardhan Singh, Dimple Sonone, Hammad Mohammad, Kishor Upla · <a href="https://arxiv.org/abs/2607.11310">arXiv:2607.11310</a></p>
+        <p>The paper addresses real PINN failures in stiff and shock-dominated PDEs and includes ablations, multiple seeds, and statistical tests, which is better than many PINN papers. The caution is that very large percentage-improvement language on canonical benchmarks can sound more transferable than it is.</p>
+        <p><strong>Assessment.</strong> Worth reading for ideas such as hard constraints, causal weighting, and adaptive collocation. Do not treat it as validated for relativistic hydrodynamics, heavy-ion transport, or detector simulation without domain-specific benchmarks against high-quality solvers.</p>
+      </article>
+      <article class="paper" data-search="2607.11640 experimental review bulk properties light strange hadron production heavy-ion SQM2026 review not new measurement caution context">
+        <div class="paper-head"><h4>Experimental Review on Bulk Properties and Light/Strange Hadron Production in Heavy-Ion Collisions</h4><span class="label mixed">context</span></div>
+        <p class="meta">Shusu Shi, Xianglei Zhu · <a href="https://arxiv.org/abs/2607.11640">arXiv:2607.11640</a></p>
+        <p>This is a useful SQM2026 proceedings review covering QCD phase-diagram observables, speed of sound, radial-flow fluctuations, small-system anisotropic flow, strange hadron yields, nuclear modification factors, and high-baryon-density collectivity. It is not weak, but it is not a new primary result; I would use it as a compact orientation map rather than rank it with new measurements.</p>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
