@@ -1,0 +1,154 @@
+{
+  "date": "2026-07-14",
+  "path": "reports/2026-07-14.html",
+  "summary": "The July 14 scout emphasizes new heavy-ion measurements of prompt D0 elliptic flow with CMS event-shape engineering and STAR directed-flow differences between charged kaons and K*0 resonances at BES energies. The theory and phenomenology cluster focuses on J/psi spin alignment, thermal dilepton polarization under vorticity or magnetic fields, and Coulomb-corrected femtoscopy. The strongest AI/ML items are waveform-based resistive-silicon reconstruction and mixed-representation antineutron ECAL reconstruction; broader fluid-GNN and PINN work is useful mainly as transferable methodology, not validated heavy-ion science.",
+  "keywords": [
+    "D0 elliptic flow",
+    "event-shape engineering",
+    "charm collectivity",
+    "directed flow",
+    "Kstar rescattering",
+    "J/psi spin alignment",
+    "thermal dilepton polarization",
+    "Coulomb femtoscopy",
+    "AC-LGAD waveform ML",
+    "antineutron ECAL reconstruction",
+    "fluid GNN surrogates",
+    "PINN caution"
+  ],
+  "arxiv_ids": [
+    "2607.11017",
+    "2607.11191",
+    "2607.11028",
+    "2607.11634",
+    "2607.11321",
+    "2607.11585",
+    "2607.11139",
+    "2607.11672",
+    "2607.11310",
+    "2607.11640"
+  ],
+  "total_paper_count": 10,
+  "selected_paper_count": 8,
+  "caution_count": 1,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2607.11017 is the strongest heavy-ion paper because it uses CMS event-shape engineering to test the connection between initial geometry and charm-hadron elliptic flow. arXiv:2607.11585 is the strongest detector-ML paper because it targets waveform-level reconstruction, compression, geometry flexibility, and FPGA deployment constraints for resistive silicon sensors.",
+  "papers": [
+    {
+      "title": "Exploring the origin of D0 meson elliptic flow in PbPb collisions at sqrt(sNN) = 5.02 TeV using event shape engineering",
+      "authors_short": "CMS Collaboration",
+      "author_count": null,
+      "arxiv_id": "2607.11017",
+      "url": "https://arxiv.org/abs/2607.11017",
+      "category": "Experiment",
+      "abstract": "CMS uses 0.607 nb-1 of PbPb data at 5.02 TeV and event-shape engineering based on a forward q2 variable to show that D0 meson v2 is strongly correlated with charged-particle v2 across pT=2-30 GeV and centrality classes, suggesting a substantial role for initial geometry in charm-hadron flow.",
+      "tags": ["D0 elliptic flow", "CMS", "event-shape engineering", "charm collectivity"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Observation of the centrality-dependent difference in directed flow between charged kaons and K*0 resonances in Au+Au collisions at sqrt(sNN) = 14.6, 19.6 and 27 GeV",
+      "authors_short": "The STAR Collaboration",
+      "author_count": null,
+      "arxiv_id": "2607.11191",
+      "url": "https://arxiv.org/abs/2607.11191",
+      "category": "Experiment",
+      "abstract": "STAR measures rapidity-odd directed flow for charged kaons, phi mesons, and K*0 resonances at BES energies, including the first K*0 v1 measurement in heavy-ion collisions. The charged-kaon/K*0 difference grows with centrality, pointing to late-stage hadronic rescattering and reconstruction effects as key interpretive ingredients.",
+      "tags": ["STAR", "directed flow", "Kstar", "hadronic rescattering"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Investigating J/psi spin alignment in heavy-ion collisions within a two-component transport model",
+      "authors_short": "Yida Yang, Anping Huang, Baoyi Chen",
+      "author_count": 3,
+      "arxiv_id": "2607.11028",
+      "url": "https://arxiv.org/abs/2607.11028",
+      "category": "Theory",
+      "abstract": "A two-component Boltzmann transport model describes J/psi rho00 as a pT-dependent mixture of primordial production and charm-quark coalescence, reproduces ALICE forward-rapidity behavior, and predicts a different midrapidity trend due to thermal-vorticity suppression.",
+      "tags": ["J/psi", "spin alignment", "transport", "thermal vorticity"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Thermal Dilepton Polarization under Rotation or Magnetic Field in Heavy-ion Collisions",
+      "authors_short": "Haowen He, Bowen Hou, Xingyang Wang, Minghua Wei",
+      "author_count": 4,
+      "arxiv_id": "2607.11634",
+      "url": "https://arxiv.org/abs/2607.11634",
+      "category": "Phenomenology",
+      "abstract": "Computes thermal dilepton polarization from quark-antiquark annihilation in QGP with modified quark propagators under external vorticity or magnetic fields, predicting distinct invariant-mass behavior of polarization coefficients.",
+      "tags": ["thermal dileptons", "polarization", "vorticity", "magnetic field"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Coulomb Effects in Momentum-Space Femtoscopy: A Case Study of the Kbar Omega System",
+      "authors_short": "Pablo Encarnacion, Amador Garcia-Lorenzo, Miguel Albaladejo, Albert Feijoo, Juan Nieves, Isaac Vidana",
+      "author_count": 6,
+      "arxiv_id": "2607.11321",
+      "url": "https://arxiv.org/abs/2607.11321",
+      "category": "Phenomenology",
+      "abstract": "Develops a momentum-space treatment of Coulomb effects in femtoscopic correlation functions using a modified Vincent-Phatak method within the Lippmann-Schwinger equation, applies it to Kbar-Omega channels, validates on pp, and studies finite-source and off-shell corrections.",
+      "tags": ["femtoscopy", "Coulomb effects", "Kbar Omega", "source size"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Machine Learning-Based Reconstruction for Resistive Silicon Sensors",
+      "authors_short": "Alexander Aoki, Gaetano Barone, Leena Diehl, Gabriele Giacomini, Vagelis Gkougkousis, et al.",
+      "author_count": 16,
+      "arxiv_id": "2607.11585",
+      "url": "https://arxiv.org/abs/2607.11585",
+      "category": "AI/ML use",
+      "abstract": "Uses full waveform information from correlated AC-LGAD/resistive-silicon pads for position reconstruction and compression, including LSTM proof-of-concept models for FPGA deployment, waveform selection for bandwidth reduction, and topology-agnostic transformer models using pad coordinates.",
+      "tags": ["AC-LGAD", "waveform ML", "4D tracking", "FPGA"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Antineutron reconstruction in electromagnetic calorimeters with mixed-representation learning",
+      "authors_short": "Yangu Li, Hongtian Yu, Yuyang Huang, Zhi Cao, Yunxuan Song, Yunfan Liu, Yajun Mao, YangHeng Zheng, Xiao-Rui Lyu, Qixiang Ye",
+      "author_count": 10,
+      "arxiv_id": "2607.11139",
+      "url": "https://arxiv.org/abs/2607.11139",
+      "category": "AI/ML use",
+      "abstract": "Introduces MrCAL, a mixed visual/sequential representation network for antineutron reconstruction from ECAL signals using real collision data, jointly predicting identity, momentum direction, and momentum magnitude with reported large improvements in direction precision and about 17% momentum resolution at 1 GeV/c.",
+      "tags": ["antineutron", "ECAL", "mixed representation", "neutral hadrons"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A multi-scale feature enhanced graph neural network for fluid dynamics prediction in complex geometries",
+      "authors_short": "Li Xiao, Tianyu Li, Yiye Zou, Mingjie Zhang, Xiaogangd Deng",
+      "author_count": 5,
+      "arxiv_id": "2607.11672",
+      "url": "https://arxiv.org/abs/2607.11672",
+      "category": "AI/ML use",
+      "abstract": "Combines graph message passing, an Attention U-Net on uniform grids, and K-hop subgraph sampling for large-mesh fluid-dynamics surrogates, with strong benchmark errors on engineering-flow datasets.",
+      "tags": ["fluid GNN", "multi-scale surrogate", "unstructured meshes", "transfer caveat"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "SPARC-Net: A Spectral, Causality-Aware, and Hard-Constrained Physics-Informed Architecture for Stiff and Shock-Dominated Partial Differential Equations",
+      "authors_short": "Divyavardhan Singh, Dimple Sonone, Hammad Mohammad, Kishor Upla",
+      "author_count": 4,
+      "arxiv_id": "2607.11310",
+      "url": "https://arxiv.org/abs/2607.11310",
+      "category": "Caution",
+      "abstract": "Addresses PINN failures in stiff and shock-dominated PDEs using spectral encoders, hard constraints, causal weighting, and adaptive collocation. The benchmarks are useful, but the very large improvement language should not be read as validation for heavy-ion hydrodynamics or transport without domain-specific tests.",
+      "tags": ["PINNs", "shock PDEs", "hard constraints", "transfer caution"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Experimental Review on Bulk Properties and Light/Strange Hadron Production in Heavy-Ion Collisions",
+      "authors_short": "Shusu Shi, Xianglei Zhu",
+      "author_count": 2,
+      "arxiv_id": "2607.11640",
+      "url": "https://arxiv.org/abs/2607.11640",
+      "category": "Context",
+      "abstract": "SQM2026 proceedings review summarizing recent experimental results on bulk properties, light/strange hadron production, speed of sound, radial-flow fluctuations, small-system collectivity, and high-baryon-density signatures.",
+      "tags": ["SQM2026", "review", "bulk properties", "strangeness"],
+      "assessment": "mixed"
+    }
+  ]
+}
