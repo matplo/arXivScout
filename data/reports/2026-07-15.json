@@ -1,0 +1,92 @@
+{
+  "date": "2026-07-15",
+  "path": "reports/2026-07-15.html",
+  "summary": "Selected recent papers emphasize gamma+jet strategies for medium-induced jet broadening, isobar geometry-to-flow response, magnetic-field QCD symmetry restoration, experimental bulk-production synthesis, and physics-ML methods for interpretable inference and conservation-law-preserving reduced-order modeling.",
+  "keywords": [
+    "gamma+jet broadening",
+    "jet quenching",
+    "isobar flow response",
+    "lattice QCD magnetic fields",
+    "bulk and strange hadron production",
+    "likelihood emulation",
+    "conservation-law surrogates",
+    "non-extensive QGP caution"
+  ],
+  "arxiv_ids": ["2607.12041", "2607.12660", "2607.11625", "2607.11640", "2607.12726", "2607.10965", "2607.12589"],
+  "total_paper_count": 7,
+  "represented_categories": ["Theory", "Experiment", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2607.12041: gamma+jet medium-induced jet broadening study with direct observable-level relevance for heavy-ion jet measurements.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Using gamma+jets to quantify medium-induced jet broadening in heavy-ion collisions",
+      "authors": "Ankita Budhraja, Marco van Leeuwen, Wouter Waalewijn",
+      "arxiv_id": "2607.12041",
+      "url": "https://arxiv.org/abs/2607.12041",
+      "category": "Phenomenology",
+      "abstract": "The paper uses JEWEL gamma+jet simulations to reduce inclusive-jet selection bias and test whether trimmed small-radius subjet reconstructions can recover large-radius medium-induced broadening signals in heavy-ion collisions.",
+      "tags": ["gamma+jet", "jet broadening", "JEWEL", "selection bias"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Harmonic-dependent geometry-to-flow transfer in AMPT Ru+Ru and Zr+Zr isobar collisions",
+      "authors": "Murad Badshah, Muhammad Ajaz",
+      "arxiv_id": "2607.12660",
+      "url": "https://arxiv.org/abs/2607.12660",
+      "category": "Phenomenology",
+      "abstract": "The paper introduces an eccentricity-normalized isobar response double ratio in AMPT simulations and reports near-unity elliptic response but residual triangular-flow response after eccentricity normalization.",
+      "tags": ["isobars", "AMPT", "flow response", "Ru+Ru", "Zr+Zr"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Chiral and U(1)_A symmetries in background magnetic fields from lattice QCD",
+      "authors": "Heng-Tong Ding, Jose Javier Hernandez Hernandez, Dan Zhang",
+      "arxiv_id": "2607.11625",
+      "url": "https://arxiv.org/abs/2607.11625",
+      "category": "Theory",
+      "abstract": "The paper studies neutral-sector chiral and singlet U(1)_A partner susceptibility splittings in lattice QCD under background magnetic fields and finds low-temperature enhancement and near-crossover suppression trends.",
+      "tags": ["lattice QCD", "magnetic fields", "chiral symmetry", "U(1)_A"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Experimental Review on Bulk Properties and Light/Strange Hadron Production in Heavy-Ion Collisions",
+      "authors": "Shusu Shi, Xianglei Zhu",
+      "arxiv_id": "2607.11640",
+      "url": "https://arxiv.org/abs/2607.11640",
+      "category": "Experiment",
+      "abstract": "This SQM2026 proceedings article reviews recent experimental results on bulk properties, light and strange hadron production, flow, nuclear modification factors, and high-baryon-density collectivity.",
+      "tags": ["SQM2026", "bulk properties", "strangeness", "experimental review"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Physically Consistent Parameter Inference: Transparent Machine Learning Emulation in High Energy Physics and Cosmology",
+      "authors": "Jorge Alda, Jacobo Asorey, Alejandro Mir, Siannah Penaranda",
+      "arxiv_id": "2607.12726",
+      "url": "https://arxiv.org/abs/2607.12726",
+      "category": "AI/ML use",
+      "abstract": "The paper uses XGBoost to emulate complex non-Gaussian likelihood landscapes for HEP and cosmology global fits, with SHAP values for interpretability and validation on B-decay flavor-anomaly inference.",
+      "tags": ["likelihood emulation", "XGBoost", "SHAP", "global fits"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Structure-preserving variational neural fields: Uncertainty-quantified reduced-order modeling of nonlinear conservation laws",
+      "authors": "Aviral Prakash, Marc L. Klasky",
+      "arxiv_id": "2607.10965",
+      "url": "https://arxiv.org/abs/2607.10965",
+      "category": "AI/ML use",
+      "abstract": "The paper develops uncertainty-aware latent neural fields that preserve conservation laws through a divergence-free solution-flux representation and tests them on advection, Euler, and shallow-water equations.",
+      "tags": ["reduced-order modeling", "uncertainty quantification", "conservation laws", "hydrodynamics transfer"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Thermo-electric transport in non-extensive QCD matter in presence of magnetic field",
+      "authors": "Lateef Ahmad Wani, Salman Ahamad Khan",
+      "arxiv_id": "2607.12589",
+      "url": "https://arxiv.org/abs/2607.12589",
+      "category": "Caution",
+      "abstract": "The paper studies Seebeck and Nernst coefficients in a magnetized non-extensive QGP using RTA kinetic theory and a quasiparticle model.",
+      "tags": ["QGP transport", "magnetic field", "RTA", "non-extensive statistics"],
+      "assessment": "caution"
+    }
+  ]
+}
