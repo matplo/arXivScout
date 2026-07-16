@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-16",
+  "path": "reports/2026-07-16.html",
+  "summary": "Selected recent papers emphasize light-ion bottomonium suppression, D-meson diffusion at compressed baryonic densities, heteroscedastic nuclear-model uncertainty, neural-accelerated dense-matter calibration, and cautionary AI/ML workflows where automation or density estimation outpaces validation evidence.",
+  "keywords": [
+    "Upsilon sequential suppression",
+    "light-ion QGP signatures",
+    "D-meson diffusion",
+    "compressed baryonic matter",
+    "heteroscedastic Bayesian model combination",
+    "nuclear drip-line uncertainty",
+    "neural surrogate calibration",
+    "dense-matter equation of state",
+    "LLM agent caution",
+    "neural spline flow caution"
+  ],
+  "arxiv_ids": ["2607.13758", "2607.14058", "2607.14039", "2607.13268", "2607.13930", "2607.13771"],
+  "total_paper_count": 6,
+  "represented_categories": ["Experiment", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2607.13758: CMS evidence for sequential Upsilon(nS) suppression in light-ion collisions, directly relevant to QGP formation in small collision systems.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "Evidence for sequential Upsilon(nS) suppression in light ion collisions",
+      "authors": "CMS Collaboration",
+      "arxiv_id": "2607.13758",
+      "url": "https://arxiv.org/abs/2607.13758",
+      "category": "Experiment",
+      "abstract": "CMS reports Upsilon(1S), Upsilon(2S), and Upsilon(3S) measurements in O+O collisions and Upsilon(1S), Upsilon(2S) in Ne+Ne at sqrt(sNN)=5.36 TeV, finding suppressed excited-to-ground-state ratios relative to pp and evidence for sequential suppression in light-ion collisions.",
+      "tags": ["Upsilon suppression", "light ions", "QGP", "quarkonium"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Towards compressed baryonic matter densities: D meson diffusion",
+      "authors": "Dani Rose J Marattukalam, Manpreet Kaur, Arvind Kumar, Sabyasachi Ghosh",
+      "arxiv_id": "2607.14058",
+      "url": "https://arxiv.org/abs/2607.14058",
+      "category": "Phenomenology",
+      "abstract": "The paper computes D-meson spatial diffusion and momentum-transport coefficients in dense nuclear matter using relaxation-time kinetic theory with a chiral SU(3) hadronic model, comparing dilute and degenerate gas approximations across density regimes.",
+      "tags": ["D-meson diffusion", "compressed baryonic matter", "kinetic theory", "charm transport"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Beyond Constant Error: Heteroscedastic Bayesian Model Combination for Modeling Unmeasured Nuclei",
+      "authors": "B. Knight, S. Lalit, P. Giuliani, K. Godbey, W. Nazarewicz, A. Ravlic, P.-G. Reinhard",
+      "arxiv_id": "2607.14039",
+      "url": "https://arxiv.org/abs/2607.14039",
+      "category": "AI/ML use",
+      "abstract": "The paper extends Bayesian Model Combination so the ensemble uncertainty is heteroscedastic and can grow in extrapolative regions, validating the method with experimental and synthetic data for energy-density-functional predictions of unmeasured nuclei.",
+      "tags": ["Bayesian model combination", "heteroscedastic uncertainty", "nuclear masses", "extrapolation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural-Accelerated Bayesian Calibration of Chiral Mean-Field Models to Nuclear Saturation and Vacuum Properties",
+      "authors": "Isaac Legred, Mateus Reinke Pelicer, Veronica Dexheimer, Jacquelyn Noronha-Hostler, Nicolas Yunes",
+      "arxiv_id": "2607.13268",
+      "url": "https://arxiv.org/abs/2607.13268",
+      "category": "AI/ML use",
+      "abstract": "The paper uses a neural-network surrogate inside a Bayesian calibration workflow for chiral mean-field models, interfacing MUSES, Bilby, and PyTorch and highlighting degeneracies among viable dense-matter parameter sets.",
+      "tags": ["neural surrogate", "Bayesian calibration", "dense matter", "MUSES"],
+      "assessment": "strong"
+    },
+    {
+      "title": "NNStar: An end-to-end AI agent for nuclear matter and neutron star physics",
+      "authors": "Yao Ma, Yong-Liang Ma, Jia-Ying Xiong",
+      "arxiv_id": "2607.13930",
+      "url": "https://arxiv.org/abs/2607.13930",
+      "category": "Caution",
+      "abstract": "The paper presents an LLM-agent skill that automates relativistic mean-field model construction, EoS generation, TOV integration, and Bayesian scoring for nuclear matter and neutron-star observables.",
+      "tags": ["LLM agent", "nuclear matter", "EoS", "automation"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data",
+      "authors": "Hitesh Rasineni, Bhavishya Chebrolu et al.",
+      "arxiv_id": "2607.13771",
+      "url": "https://arxiv.org/abs/2607.13771",
+      "category": "Caution",
+      "abstract": "The paper trains neural spline flows for signal/background density estimation and likelihood-ratio scoring in a CMS open-data mono-Z dark-matter search, but reports observed limits weakened by a residual high-MET background-modeling discrepancy.",
+      "tags": ["neural spline flows", "CMS open data", "mono-Z", "background modeling"],
+      "assessment": "caution"
+    }
+  ]
+}
