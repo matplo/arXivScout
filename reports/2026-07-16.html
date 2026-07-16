@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-16</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-16 Briefing</h1>
+    <p class="dek">Selected recent papers emphasize light-ion quarkonium suppression, dense-matter transport, heteroscedastic nuclear-model uncertainty, neural-accelerated dense-matter calibration, and cautionary signals around agentic nuclear workflows and open-data flow-based searches.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion result is CMS evidence for sequential Upsilon(nS) suppression in O+O and Ne+Ne collisions, extending a canonical QGP signature into light-ion systems.</li>
+        <li>The best AI/ML-adjacent nuclear paper is the heteroscedastic Bayesian model-combination study for unmeasured nuclei: it targets uncertainty growth in extrapolation directly and validates against both experimental and synthetic data.</li>
+        <li>Neural-accelerated Bayesian calibration of chiral mean-field models is methodologically useful for dense-matter inference, especially because it foregrounds parameter degeneracy rather than claiming a unique EoS solution.</li>
+        <li>D-meson diffusion at compressed baryonic densities is relevant for future heavy-ion programs, but the abstract suggests a model-dependent kinetic-theory study rather than a precision phenomenology benchmark.</li>
+        <li>Two AI-forward papers deserve caution: an LLM-agent nuclear workflow needs stronger reproducibility and validation evidence, and a mono-Z neural-spline-flow open-data search reports a residual high-MET background discrepancy that limits interpretability.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.13758 CMS Upsilon sequential suppression light ion collisions oxygen oxygen neon neon QGP quarkonium experiment strong">
+        <div class="paper-head"><h4>Evidence for sequential Upsilon(nS) suppression in light ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">CMS Collaboration. <a href="https://arxiv.org/abs/2607.13758">arXiv:2607.13758</a></p>
+        <p><strong>Summary:</strong> CMS reports the first measurements of Upsilon(1S), Upsilon(2S), and Upsilon(3S) in O+O at sqrt(sNN)=5.36 TeV, plus Upsilon(1S) and Upsilon(2S) in Ne+Ne. The excited-to-ground-state ratios are suppressed relative to pp, with Upsilon(3S) showing stronger suppression than Upsilon(2S).</p>
+        <p><strong>Why it matters:</strong> Sequential bottomonium suppression is one of the cleanest QGP probes; seeing the hierarchy in light-ion systems is directly relevant to the small-system collectivity/QGP-threshold question.</p>
+        <p><strong>Critical assessment:</strong> Strong. The collaboration-scale measurement and state-by-state hierarchy make it high value. The main caution is interpretive: light-ion final states require careful separation of hot-medium effects from cold nuclear matter, feed-down, and reference uncertainties.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.14058 D meson diffusion compressed baryonic matter dense nuclear medium chiral SU3 kinetic theory heavy ion phenomenology mixed">
+        <div class="paper-head"><h4>Towards compressed baryonic matter densities: D meson diffusion</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Dani Rose J Marattukalam, Manpreet Kaur, Arvind Kumar, Sabyasachi Ghosh. <a href="https://arxiv.org/abs/2607.14058">arXiv:2607.14058</a></p>
+        <p><strong>Summary:</strong> The paper computes D-meson spatial diffusion and momentum-transport coefficients in dense nuclear matter using relaxation-time kinetic theory with in-medium modifications from a chiral SU(3) hadronic model. It contrasts dilute-gas and degenerate-gas approximations across baryon-density regimes.</p>
+        <p><strong>Why it matters:</strong> Charm transport at high baryon density is relevant for future compressed-baryonic-matter programs and for connecting open-heavy-flavor observables to dense-medium transport.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but mixed. The topic is timely, yet the abstract points to a model-dependent calculation; its practical impact will depend on sensitivity studies, comparison with alternative interaction models, and whether it produces observables reachable in future heavy-ion experiments.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.14039 heteroscedastic Bayesian model combination nuclear masses uncertainty quantification drip lines extrapolation statistical machine learning strong">
+        <div class="paper-head"><h4>Beyond Constant Error: Heteroscedastic Bayesian Model Combination for Modeling Unmeasured Nuclei</h4><span class="label strong">strong</span></div>
+        <p class="meta">B. Knight, S. Lalit, P. Giuliani, K. Godbey, W. Nazarewicz, A. Ravlic, P.-G. Reinhard. <a href="https://arxiv.org/abs/2607.14039">arXiv:2607.14039</a></p>
+        <p><strong>Method and result:</strong> The authors extend Bayesian Model Combination so the combined theory uncertainty grows dynamically in extrapolative regions, then apply it to energy-density-functional ensembles for Z=46-52 isotopic chains. They validate with experimental and synthetic data and report improved calibration metrics for drip-line assessments.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The core idea transfers well to heavy-ion emulator ensembles where model discrepancy is not constant across beam energy, centrality, system size, or baryochemical potential.</p>
+        <p><strong>Critical assessment:</strong> Strong and transferable. The key virtue is not the use of ML itself, but the explicit treatment of extrapolation uncertainty and validation in regimes where data coverage weakens.</p>
+      </article>
+
+      <article class="paper" data-search="2607.13268 neural accelerated Bayesian calibration chiral mean field dense matter MUSES Bilby PyTorch neutron stars nuclear saturation AI ML strong">
+        <div class="paper-head"><h4>Neural-Accelerated Bayesian Calibration of Chiral Mean-Field Models to Nuclear Saturation and Vacuum Properties</h4><span class="label strong">strong</span></div>
+        <p class="meta">Isaac Legred, Mateus Reinke Pelicer, Veronica Dexheimer, Jacquelyn Noronha-Hostler, Nicolas Yunes. <a href="https://arxiv.org/abs/2607.13268">arXiv:2607.13268</a></p>
+        <p><strong>Method and result:</strong> The paper builds a modular Bayesian inference workflow using a neural-network surrogate for expensive chiral mean-field model evaluations, interfacing MUSES, Bilby, and PyTorch. It finds rare but broad viable parameter regions and emphasizes coupling degeneracies that affect dense-matter predictions.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The workflow is relevant to finite-density EoS inference and to heavy-ion/dense-matter model calibration where expensive forward models and sparse constraints make direct sampling difficult.</p>
+        <p><strong>Critical assessment:</strong> Strong. The work appears useful because it uses ML as an accelerator inside a Bayesian workflow and preserves uncertainty/degeneracy information. Its transfer value depends on surrogate error auditing and whether future constraints can be folded in without hidden bias.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.13930 NNStar AI agent nuclear matter neutron star LLM workflow equation of state caution">
+        <div class="paper-head"><h4>NNStar: An end-to-end AI agent for nuclear matter and neutron star physics</h4><span class="label caution">caution</span></div>
+        <p class="meta">Yao Ma, Yong-Liang Ma, Jia-Ying Xiong. <a href="https://arxiv.org/abs/2607.13930">arXiv:2607.13930</a></p>
+        <p><strong>Why caution:</strong> The proposed agent automates a full nuclear-matter-to-neutron-star workflow from Lagrangian parsing through EoS construction, TOV integration, and Bayesian scoring. That is an attractive direction, but the abstract emphasizes automation more than validation, failure modes, reproducibility checks, or benchmark comparisons against expert-run workflows.</p>
+        <p><strong>Assessment:</strong> Potentially useful as infrastructure, but scientifically mixed until the paper demonstrates robust guardrails, transparent intermediate outputs, and quantitative agreement with trusted calculations across nontrivial model classes.</p>
+      </article>
+
+      <article class="paper" data-search="2607.13771 mono Z dark matter neural spline flows CMS open data likelihood ratio high MET discrepancy caution HEP ML">
+        <div class="paper-head"><h4>Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data</h4><span class="label caution">caution</span></div>
+        <p class="meta">Hitesh Rasineni, Bhavishya Chebrolu et al. <a href="https://arxiv.org/abs/2607.13771">arXiv:2607.13771</a></p>
+        <p><strong>Why caution:</strong> Neural spline flows for likelihood-ratio scoring are relevant to HEP searches, and the use of CMS open data is welcome. However, the abstract reports observed limits much weaker than expected because of a residual high-MET background-modeling discrepancy, which is exactly the kind of issue that can dominate a density-estimation search.</p>
+        <p><strong>Assessment:</strong> Transfer value is real for anomaly/search workflows, but the result should be treated as a methodological demonstration unless the full paper convincingly stress-tests background modeling, nuisance treatment, and closure in signal-depleted control regions.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
