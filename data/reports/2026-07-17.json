@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-17",
+  "path": "reports/2026-07-17.html",
+  "summary": "Selected recent papers emphasize multidimensional nuclear deformation in Xe+Xe observables, hadronic regeneration and rescattering of resonances across small-to-large collision systems, Bayesian extraction of heavy-ion fusion barrier distributions, and cautious transfer of neural differential and inverse-problem methods into HEP or nuclear workflows.",
+  "keywords": [
+    "Xe+Xe nuclear deformation",
+    "multiparticle flow observables",
+    "iEBE-VISHNU response",
+    "resonance regeneration",
+    "UrQMD rescattering",
+    "small-system collectivity",
+    "AutoBNN fusion barriers",
+    "Bayesian uncertainty calibration",
+    "neural differential models",
+    "probabilistic PINNs",
+    "neural spline flow caution"
+  ],
+  "arxiv_ids": ["2607.14776", "2607.15061", "2607.14422", "2607.15180", "2607.14563", "2607.13771"],
+  "total_paper_count": 6,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2607.14422: AutoBNN extraction of fusion barrier distributions from sparse heavy-ion fusion excitation functions, with uncertainty calibration and real-reaction demonstrations.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "Responses of multiparticle observables to multidimensional nuclear deformation in relativistic heavy-ion collisions",
+      "authors": "Ying Shan Zhao, Yifeng Sun",
+      "arxiv_id": "2607.14776",
+      "url": "https://arxiv.org/abs/2607.14776",
+      "category": "Theory",
+      "abstract": "The paper studies how quadrupole deformation, triaxiality, and hexadecapole deformation in Xe+Xe collisions affect multiparticle flow and mean-pT correlation observables, then tests which deformation sensitivities survive iEBE-VISHNU evolution.",
+      "tags": ["nuclear deformation", "Xe+Xe", "multiparticle observables", "iEBE-VISHNU"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Investigation of hadronic effects on resonance productions in small collision systems using the EPOS4 model",
+      "authors": "Hyunji Lim, Bong-Hwi Lim, Minjung Kim, Sanghoon Lim",
+      "arxiv_id": "2607.15061",
+      "url": "https://arxiv.org/abs/2607.15061",
+      "category": "Phenomenology",
+      "abstract": "The study compares EPOS4 calculations with and without UrQMD to isolate regeneration and rescattering effects on resonance production from pp and p-O to O-O and Pb-Pb collisions.",
+      "tags": ["EPOS4", "UrQMD", "resonance production", "small systems"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Bayesian Inference for Extracting Barrier Distributions from Fusion Excitation Functions",
+      "authors": "Aaron Philip, Pablo Giuliani, Kyle Godbey",
+      "arxiv_id": "2607.14422",
+      "url": "https://arxiv.org/abs/2607.14422",
+      "category": "AI/ML use",
+      "abstract": "The authors use AutoBNN to infer fusion barrier distributions from sparse excitation functions with uncertainty estimates, benchmark against Gaussian-process regression, and apply the workflow to four measured heavy-ion fusion reactions.",
+      "tags": ["AutoBNN", "fusion barriers", "Bayesian inference", "uncertainty calibration"],
+      "assessment": "strong"
+    },
+    {
+      "title": "RTS Smoother-Guided Learning of Physics-Based Neural Differential Models",
+      "authors": "Ahmet Demirkaya, Georgios Stratis, Tales Imbiriba, Zachary D. Danziger, Deniz Erdogmus",
+      "arxiv_id": "2607.15180",
+      "url": "https://arxiv.org/abs/2607.15180",
+      "category": "AI/ML use",
+      "abstract": "The method alternates RTS smoothing of latent states with neural learning of missing ODE terms while retaining known mechanistic dynamics, with tests on partially observed linear, nonlinear, and stiff benchmark systems.",
+      "tags": ["neural ODE", "RTS smoother", "partial observation", "latent states"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Probabilistic Physics-Informed Neural Networks for Estimating Heterogeneous Elastic Properties from Low-Resolution and Noisy Displacement Data",
+      "authors": "Tatthapong Srikitrungruang, Jaesung Lee",
+      "arxiv_id": "2607.14563",
+      "url": "https://arxiv.org/abs/2607.14563",
+      "category": "Caution",
+      "abstract": "The paper presents a probabilistic PINN for inverse elasticity with adaptive residual scales and B-spline-guided displacement fields, but its HEP or heavy-ion transfer path is indirect.",
+      "tags": ["probabilistic PINN", "inverse elasticity", "low-resolution data", "transfer caution"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data",
+      "authors": "Hitesh Rasineni, Bhavishya Chebrolu et al.",
+      "total_author_count": 7,
+      "arxiv_id": "2607.13771",
+      "url": "https://arxiv.org/abs/2607.13771",
+      "category": "Caution",
+      "abstract": "The paper applies neural spline flow likelihood-ratio scoring to a CMS open-data mono-Z search, but the reported high-MET background-modeling discrepancy weakens the observed limits and makes it more useful as a validation caution than as a strong search result.",
+      "tags": ["neural spline flows", "CMS open data", "background modeling", "mono-Z"],
+      "assessment": "caution"
+    }
+  ]
+}
