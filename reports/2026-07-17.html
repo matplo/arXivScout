@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-17</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-17 Briefing</h1>
+    <p class="dek">Selected recent papers emphasize multiparticle deformation observables, resonance regeneration and rescattering across small-to-large systems, Bayesian extraction of fusion barrier distributions, and cautious transfer of neural differential and inverse-problem methods to nuclear and HEP workflows.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion theory entry is the Xe+Xe nuclear-deformation study: it asks a precision-era question and follows selected initial-state sensitivities through iEBE-VISHNU evolution rather than stopping at geometry-level correlations.</li>
+        <li>The EPOS4+UrQMD resonance paper is phenomenologically useful because it separates regeneration from rescattering and scans pp, p-O, O-O, and Pb-Pb, but its conclusions remain generator dependent until confronted with differential resonance data.</li>
+        <li>The most convincing AI/ML nuclear application is the AutoBNN fusion-barrier paper: it targets a real experimental inference bottleneck, benchmarks against Gaussian processes, reports uncertainty calibration, and applies the method to measured heavy-ion fusion reactions.</li>
+        <li>The transferable AI/ML methods papers are worth tracking for latent-state reconstruction, surrogate dynamics, and inverse-problem uncertainty, but neither is yet validated on HEP or nuclear workloads.</li>
+        <li>The mono-Z neural-spline-flow search remains a useful cautionary example: density-estimation likelihood ratios are attractive, but the paper itself reports a high-MET background-modeling discrepancy that weakens observed limits.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.14776 Responses multiparticle observables multidimensional nuclear deformation relativistic heavy-ion collisions Xe Xe beta2 gamma beta4 iEBE-VISHNU flow mean pT chi422 rho2 strong Theory">
+        <div class="paper-head"><h4>Responses of multiparticle observables to multidimensional nuclear deformation in relativistic heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ying Shan Zhao and Yifeng Sun. <a href="https://arxiv.org/abs/2607.14776">arXiv:2607.14776</a>. Category: Theory.</p>
+        <p>The paper studies how quadrupole deformation, triaxiality, and hexadecapole deformation in Xe+Xe collisions propagate into multiparticle flow and mean-pT correlation observables. It constructs estimators in the three-dimensional (&beta;2, &gamma;, &beta;4) space and then checks which sensitivities survive iEBE-VISHNU evolution.</p>
+        <p><strong>Why it matters:</strong> nuclear-structure information is increasingly becoming an input and output of precision heavy-ion analysis. Observables such as rho2 and chi4,22 could help disentangle deformation parameters if the final-state response is robust.</p>
+        <p><strong>Critical assessment:</strong> scientifically solid and timely. The main limitation is statistical and observable-specific: the abstract says several higher-order sensitivities are modified or unresolved after evolution, so the paper is strongest as a map of promising observables, not as a direct extraction strategy yet.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.15061 EPOS4 UrQMD resonance production small systems regeneration rescattering pp p-O O-O Pb-Pb hadronic phase mixed Phenomenology">
+        <div class="paper-head"><h4>Investigation of hadronic effects on resonance productions in small collision systems using the EPOS4 model</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Hyunji Lim, Bong-Hwi Lim, Minjung Kim, Sanghoon Lim. <a href="https://arxiv.org/abs/2607.15061">arXiv:2607.15061</a>. Category: Phenomenology.</p>
+        <p>This study uses EPOS4 with and without UrQMD to isolate hadronic final-state effects on resonance yields and spectra. The useful feature is the explicit separation of regeneration and rescattering across resonance species, transverse momentum, and system size from pp through Pb-Pb.</p>
+        <p><strong>Why it matters:</strong> resonance production is one of the cleaner handles on the hadronic phase lifetime and on whether small collision systems show medium-like behavior.</p>
+        <p><strong>Critical assessment:</strong> relevant and well targeted, but the evidence is model-comparative rather than data-constraining at this stage. Its value will depend on whether the identified species and pT dependencies line up with LHC resonance measurements beyond a single generator setup.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.14422 Bayesian inference AutoBNN barrier distributions fusion excitation functions heavy-ion fusion Gaussian process calibrated uncertainty AI ML nuclear experiment strong">
+        <div class="paper-head"><h4>Bayesian Inference for Extracting Barrier Distributions from Fusion Excitation Functions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Aaron Philip, Pablo Giuliani, Kyle Godbey. <a href="https://arxiv.org/abs/2607.14422">arXiv:2607.14422</a>. Category: AI/ML use.</p>
+        <p>The authors frame extraction of barrier distributions from sparse fusion cross sections as Bayesian inference and use AutoBNN to estimate the excitation function and second-derivative structure with uncertainties. They benchmark against Gaussian-process regression on simulated cases and apply the method to four measured heavy-ion fusion reactions.</p>
+        <p><strong>Why it matters:</strong> this is a concrete nuclear-physics inference problem where uncertainty calibration matters more than raw prediction accuracy. A usable software implementation also raises the practical value for future fusion measurements.</p>
+        <p><strong>Critical assessment:</strong> the abstract signals a strong application: clear target, baseline comparison, uncertainty language, and real-data demonstrations. The deeper question to check in the paper is whether AutoBNN remains conservative near sparse or threshold regions where second derivatives are intrinsically fragile.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.15180 RTS smoother neural differential models partially observed ODE latent states physics-based neural ODE transferable HEP detector calibration transport mixed AI ML">
+        <div class="paper-head"><h4>RTS Smoother-Guided Learning of Physics-Based Neural Differential Models</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ahmet Demirkaya, Georgios Stratis, Tales Imbiriba, Zachary D. Danziger, Deniz Erdogmus. <a href="https://arxiv.org/abs/2607.15180">arXiv:2607.15180</a>. Category: AI/ML use cases in physics.</p>
+        <p>The method alternates between latent-state smoothing with a Rauch-Tung-Striebel smoother and neural-network learning of missing ODE components while keeping known mechanistic terms explicit. The evaluation covers linear, nonlinear, and stiff benchmark systems under partial observation.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> detector calibration drifts, beamline/control systems, reduced transport models, or hydrodynamic emulator components where some equations are known and some effective terms must be learned from incomplete measurements.</p>
+        <p><strong>Critical assessment:</strong> technically plausible and transferable in spirit, but not yet domain validated. I would treat it as a methods paper to mine for workflow ideas, not as evidence that neural ODE hybrids are ready for heavy-ion phenomenology.</p>
+      </article>
+
+      <article class="paper" data-search="2607.14563 probabilistic PINN inverse elasticity heterogeneous properties noisy low-resolution displacement uncertainty transfer caution HEP detector material maps weak transfer">
+        <div class="paper-head"><h4>Probabilistic Physics-Informed Neural Networks for Estimating Heterogeneous Elastic Properties from Low-Resolution and Noisy Displacement Data</h4><span class="label caution">caution</span></div>
+        <p class="meta">Tatthapong Srikitrungruang and Jaesung Lee. <a href="https://arxiv.org/abs/2607.14563">arXiv:2607.14563</a>. Category: AI/ML use cases in physics.</p>
+        <p>The paper proposes a probabilistic PINN for inverse elasticity with adaptive residual scales, B-spline-guided displacement fields, and robustness tests under noise and reduced resolution.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> the closest transfer path is detector-material or mechanical-deformation inference from sparse survey/alignment data, not core event reconstruction or QGP modeling.</p>
+        <p><strong>Critical assessment:</strong> the method may be good for its own inverse-elasticity target, but its HEP/heavy-ion transfer value is indirect. Include it only as a cautionary methods pointer: robust inverse-problem machinery is useful, but the physics domain gap is large.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.13771 mono-Z dark matter neural spline flows CMS open data likelihood ratio high MET background discrepancy caution AI ML HEP">
+        <div class="paper-head"><h4>Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data</h4><span class="label caution">caution</span></div>
+        <p class="meta">Hitesh Rasineni, Bhavishya Chebrolu et al.; 7 authors total. <a href="https://arxiv.org/abs/2607.13771">arXiv:2607.13771</a>. Category: Caution.</p>
+        <p>The paper trains neural spline flows for signal/background density estimation and likelihood-ratio scoring in a CMS open-data mono-Z search. This is a relevant analysis-method idea, but the abstract reports observed limits much weaker than expected because of a residual high-MET background-modeling discrepancy.</p>
+        <p><strong>Critical assessment:</strong> useful as a cautionary HEP-ML case study rather than a strong search result. The transfer lesson for heavy-ion or HEP workflows is that expressive density estimators do not remove the need for robust background validation and control-region stress tests.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
