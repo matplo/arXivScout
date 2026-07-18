@@ -1,0 +1,107 @@
+{
+  "date": "2026-07-18",
+  "path": "reports/2026-07-18.html",
+  "summary": "Weekend scan of the most recent arXiv cycle emphasizes Xe+Xe multidimensional nuclear-deformation response, resonance regeneration and rescattering across small-to-large systems, quarkonium photoproduction precision theory, AutoBNN fusion-barrier inference, agentic LQCD workflow automation, and decision-relevant epistemic-uncertainty evaluation for physics ML.",
+  "keywords": [
+    "Xe+Xe nuclear deformation",
+    "multiparticle flow observables",
+    "iEBE-VISHNU response",
+    "resonance regeneration",
+    "UrQMD rescattering",
+    "small-system collectivity",
+    "quarkonium photoproduction",
+    "AutoBNN fusion barriers",
+    "agentic LQCD workflows",
+    "epistemic uncertainty evaluation",
+    "neural differential models",
+    "EIC photon PDF caution"
+  ],
+  "arxiv_ids": ["2607.14776", "2607.15061", "2607.14986", "2607.14422", "2607.15001", "2607.14817", "2607.15180", "2607.14958"],
+  "total_paper_count": 8,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2607.14422: AutoBNN extraction of heavy-ion fusion barrier distributions from sparse excitation functions, with Gaussian-process benchmarking, calibrated uncertainty claims, and measured-reaction demonstrations.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Responses of multiparticle observables to multidimensional nuclear deformation in relativistic heavy-ion collisions",
+      "authors": "Ying Shan Zhao, Yifeng Sun",
+      "arxiv_id": "2607.14776",
+      "url": "https://arxiv.org/abs/2607.14776",
+      "category": "Theory",
+      "abstract": "The paper studies how quadrupole deformation, triaxiality, and hexadecapole deformation in Xe+Xe collisions affect multiparticle flow and mean-pT correlation observables, then tests which deformation sensitivities survive iEBE-VISHNU evolution.",
+      "tags": ["nuclear deformation", "Xe+Xe", "multiparticle observables", "iEBE-VISHNU"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Investigation of hadronic effects on resonance productions in small collision systems using the EPOS4 model",
+      "authors": "Hyunji Lim, Bong-Hwi Lim, Minjung Kim, Sanghoon Lim",
+      "arxiv_id": "2607.15061",
+      "url": "https://arxiv.org/abs/2607.15061",
+      "category": "Phenomenology",
+      "abstract": "The study compares EPOS4 calculations with and without UrQMD to isolate regeneration and rescattering effects on resonance production from pp and p-O to O-O and Pb-Pb collisions.",
+      "tags": ["EPOS4", "UrQMD", "resonance production", "small systems"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Relativistic corrections and high-energy resummation for exclusive heavy quarkonium photoproduction",
+      "authors": "Maxim Nefedov",
+      "arxiv_id": "2607.14986",
+      "url": "https://arxiv.org/abs/2607.14986",
+      "category": "Phenomenology",
+      "abstract": "The paper computes O(v^2) corrections to the high-energy-resummed coefficient function for exclusive vector-heavy-quarkonium photoproduction and finds improved factorization-scale robustness.",
+      "tags": ["quarkonium photoproduction", "high-energy resummation", "UPC", "EIC"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Bayesian Inference for Extracting Barrier Distributions from Fusion Excitation Functions",
+      "authors": "Aaron Philip, Pablo Giuliani, Kyle Godbey",
+      "arxiv_id": "2607.14422",
+      "url": "https://arxiv.org/abs/2607.14422",
+      "category": "AI/ML use",
+      "abstract": "The authors use AutoBNN to infer fusion barrier distributions from sparse excitation functions with uncertainty estimates, benchmark against Gaussian-process regression, and apply the workflow to four measured heavy-ion fusion reactions.",
+      "tags": ["AutoBNN", "fusion barriers", "Bayesian inference", "uncertainty calibration"],
+      "assessment": "strong"
+    },
+    {
+      "title": "LQCDMaster: Agentic Scientific Computing for Lattice Quantum Chromodynamics Research",
+      "authors": "Haofei Gao, Tingjia Miao, Wenkai Jin, Muhua Zhang, Hanzhang Wang et al.",
+      "total_author_count": 15,
+      "arxiv_id": "2607.15001",
+      "url": "https://arxiv.org/abs/2607.15001",
+      "category": "AI/ML use",
+      "abstract": "A domain-specialized agent converts natural-language LQCD tasks into PyQUDA workflows using expert skills and deterministic Wick contraction, reporting exact reproduction of expert implementations in 63 of 70 benchmark tasks.",
+      "tags": ["agentic workflows", "lattice QCD", "PyQUDA", "Wick contraction"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Evaluating Epistemic Uncertainty: Beyond OOD Detection and Active Learning",
+      "authors": "Jakub Paplham, Willem Waegeman, Eyke Huellermeier, Vojtech Franc",
+      "arxiv_id": "2607.14817",
+      "url": "https://arxiv.org/abs/2607.14817",
+      "category": "AI/ML use",
+      "abstract": "The paper evaluates epistemic uncertainty through decision-relevant risk, regret, and coverage surfaces and shows that proxy rankings can disagree with operational utility.",
+      "tags": ["epistemic uncertainty", "regret", "selective prediction", "physics ML validation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "RTS Smoother-Guided Learning of Physics-Based Neural Differential Models",
+      "authors": "Ahmet Demirkaya, Georgios Stratis, Tales Imbiriba, Zachary D. Danziger, Deniz Erdogmus",
+      "arxiv_id": "2607.15180",
+      "url": "https://arxiv.org/abs/2607.15180",
+      "category": "AI/ML use",
+      "abstract": "The method alternates RTS smoothing of latent states with neural learning of missing ODE terms while retaining known mechanistic dynamics, with tests on partially observed linear, nonlinear, and stiff benchmark systems.",
+      "tags": ["neural ODE", "RTS smoother", "partial observation", "latent states"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Model-Independent and Data-Driven Extraction of the Photon Distribution Function at the Electron-Ion Collider",
+      "authors": "Cong Li",
+      "arxiv_id": "2607.14958",
+      "url": "https://arxiv.org/abs/2607.14958",
+      "category": "Caution",
+      "abstract": "The paper proposes a cross-section-ratio inversion method for extracting photon distribution functions at the EIC, but the abstract-level evidence does not yet justify strong model-independent or data-driven claims without realistic closure tests and uncertainty propagation.",
+      "tags": ["EIC", "photon PDF", "ratio inversion", "validation caution"],
+      "assessment": "caution"
+    }
+  ]
+}
