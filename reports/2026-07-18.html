@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-18</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-18 Briefing</h1>
+    <p class="dek">Weekend scan of the most recent arXiv cycle: nuclear deformation response in Xe+Xe, resonance regeneration and rescattering across small-to-large systems, quarkonium photoproduction theory for UPC/EIC-adjacent observables, AutoBNN fusion-barrier inference, agentic LQCD workflow automation, and epistemic-uncertainty evaluation for physics ML validation.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion physics signal remains the Xe+Xe deformation-response study: it connects multiparticle observables to beta2, gamma, and beta4 and checks survival through iEBE-VISHNU rather than relying only on initial geometry.</li>
+        <li>The EPOS4+UrQMD resonance study is useful for small-system collectivity discussions because it separates regeneration from rescattering across pp, p-O, O-O, and Pb-Pb, but its conclusions are still generator-facing until differential data comparisons are made.</li>
+        <li>The AutoBNN fusion-barrier paper is the cleanest nuclear AI/ML application: it attacks a real sparse-data inference problem, benchmarks against Gaussian-process regression, and reports uncertainty calibration.</li>
+        <li>LQCDMaster is notable because it constrains agentic code generation with domain skills and deterministic Wick contraction, but the broad automation claims should be read against benchmark design and independent reproducibility.</li>
+        <li>The epistemic-uncertainty paper has strong transfer value for HEP/NP ML because it criticizes proxy metrics and proposes decision-utility surfaces, directly relevant to simulation-based inference, anomaly detection, and detector reconstruction.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.14776 nuclear deformation Xe Xe beta2 gamma beta4 multiparticle observables rho2 chi422 iEBE-VISHNU flow mean pT strong Theory">
+        <div class="paper-head"><h4>Responses of multiparticle observables to multidimensional nuclear deformation in relativistic heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ying Shan Zhao and Yifeng Sun. <a href="https://arxiv.org/abs/2607.14776">arXiv:2607.14776</a>. Category: Theory.</p>
+        <p>The paper maps how quadrupole deformation, triaxiality, and hexadecapole deformation influence multiparticle flow and mean-pT correlation observables in Xe+Xe. It is especially useful because it follows selected sensitivities through iEBE-VISHNU evolution: rho2 largely retains beta2/gamma sensitivity, while chi4,22 loses much of its beta4 sensitivity.</p>
+        <p><strong>Why it matters:</strong> deformation constraints from heavy-ion data are becoming a precision observable, not just an initial-condition nuisance.</p>
+        <p><strong>Critical assessment:</strong> strong and relevant, with a clear observable-level question. The limitation is that several higher-order sensitivities are altered or unresolved after evolution, so this is a roadmap for robust observables rather than a completed extraction program.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.15061 EPOS4 UrQMD resonance production regeneration rescattering small systems pp p-O O-O Pb-Pb hadronic phase mixed Phenomenology">
+        <div class="paper-head"><h4>Investigation of hadronic effects on resonance productions in small collision systems using the EPOS4 model</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Hyunji Lim, Bong-Hwi Lim, Minjung Kim, Sanghoon Lim. <a href="https://arxiv.org/abs/2607.15061">arXiv:2607.15061</a>. Category: Phenomenology.</p>
+        <p>The study compares EPOS4 calculations with and without UrQMD to isolate hadronic final-state effects on resonance yields and transverse-momentum distributions. It separately tracks regeneration and rescattering for several mesonic and baryonic resonances across pp, p-O, O-O, and Pb-Pb.</p>
+        <p><strong>Why it matters:</strong> resonance yields and reconstructible signals are among the best probes of the hadronic phase and of medium-like behavior in high-multiplicity small systems.</p>
+        <p><strong>Critical assessment:</strong> useful and timely, but model dependent. The paper is strongest as a guide to which resonance species and pT regions should be experimentally discriminating.</p>
+      </article>
+
+      <article class="paper" data-search="2607.14986 exclusive heavy quarkonium photoproduction high-energy resummation relativistic corrections vector quarkonia UPC EIC J psi Upsilon mixed Phenomenology">
+        <div class="paper-head"><h4>Relativistic corrections and high-energy resummation for exclusive heavy quarkonium photoproduction</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Maxim Nefedov. <a href="https://arxiv.org/abs/2607.14986">arXiv:2607.14986</a>. Category: Phenomenology.</p>
+        <p>The paper computes O(v^2) corrections to the high-energy-resummed coefficient function for exclusive vector-heavy-quarkonium photoproduction. The correction is reported to be negligible at muF = MV when expressed through the physical meson mass and Gremm-Kapustin relation, but it helps reduce factorization-scale dependence.</p>
+        <p><strong>Why it matters:</strong> exclusive quarkonium photoproduction underlies EIC and ultra-peripheral heavy-ion probes of gluon structure, so better controlled scale dependence is valuable.</p>
+        <p><strong>Critical assessment:</strong> technically focused and credible, but the abstract suggests an incremental precision improvement rather than a major phenomenological shift. Its practical weight depends on implementation in full comparisons to data and nuclear targets.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.14422 AutoBNN Bayesian inference fusion barrier distributions fusion excitation functions heavy-ion fusion Gaussian process calibrated uncertainty strong AI ML">
+        <div class="paper-head"><h4>Bayesian Inference for Extracting Barrier Distributions from Fusion Excitation Functions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Aaron Philip, Pablo Giuliani, Kyle Godbey. <a href="https://arxiv.org/abs/2607.14422">arXiv:2607.14422</a>. Category: AI/ML use.</p>
+        <p>The authors use AutoBNN to infer fusion barrier distributions from sparse excitation-function measurements, benchmark against Gaussian-process regression on simulated experimental conditions, and apply the method to four measured heavy-ion fusion reactions.</p>
+        <p><strong>Why it matters:</strong> extracting second-derivative structure from sparse cross sections is exactly where calibrated uncertainty and smoothness assumptions matter.</p>
+        <p><strong>Critical assessment:</strong> strong application: real nuclear observable, meaningful baseline, uncertainty calibration, and software delivery. The key deeper-check item is whether the uncertainty remains conservative around thresholds and sparsely sampled structures.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.15001 LQCDMaster agentic scientific computing lattice QCD PyQUDA Wick contraction workflow automation benchmark exact reproduction mixed AI ML HEP">
+        <div class="paper-head"><h4>LQCDMaster: Agentic Scientific Computing for Lattice Quantum Chromodynamics Research</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Haofei Gao, Tingjia Miao, Wenkai Jin, Muhua Zhang, Hanzhang Wang et al. (15 authors). <a href="https://arxiv.org/abs/2607.15001">arXiv:2607.15001</a>. Category: AI/ML use cases in physics.</p>
+        <p>LQCDMaster is a tool-augmented agent that turns natural-language LQCD tasks into PyQUDA workflows, including measurement scripts, job artifacts, logs, and numerical outputs. Its strongest design choice is constraining fragile algebraic steps with expert LQCD skills and deterministic Wick contraction; the reported benchmark reproduces expert implementations in 63 of 70 tasks at machine precision, with three more discrepancies attributed to conventions.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> structured agent workflows for lattice-QCD production, analysis preservation, and reproducible generation of specialized measurement code.</p>
+        <p><strong>Critical assessment:</strong> important and worth tracking, but mixed until independently stressed. The benchmark is domain-specific and promising; the broad claim that agentic workflows can verify non-standard scientific ideas needs external replication, failure-mode reporting, and provenance controls.</p>
+      </article>
+
+      <article class="paper" data-search="2607.14817 epistemic uncertainty regret selective prediction risk coverage OOD active learning uncertainty disentanglement HEP simulation-based inference anomaly detection strong AI ML">
+        <div class="paper-head"><h4>Evaluating Epistemic Uncertainty: Beyond OOD Detection and Active Learning</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jakub Paplham, Willem Waegeman, Eyke Huellermeier, Vojtech Franc. <a href="https://arxiv.org/abs/2607.14817">arXiv:2607.14817</a>. Category: AI/ML use cases in physics.</p>
+        <p>The paper argues that common proxy evaluations for epistemic uncertainty, such as OOD detection and active learning, do not necessarily align with operational decision utility. It proposes evaluating uncertainty decompositions through risk, regret, and coverage surfaces, and shows that correlation-style disentanglement metrics can rank methods differently from utility-based criteria.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> uncertainty validation for simulation-based inference, detector reconstruction, anomaly searches, emulator deployment, and active design of expensive simulations.</p>
+        <p><strong>Critical assessment:</strong> strong transfer value despite not being physics-specific. The contribution is methodological discipline: it pushes physics ML away from attractive proxy scores and toward decision-relevant validation.</p>
+      </article>
+
+      <article class="paper" data-search="2607.15180 RTS smoother neural differential models partially observed ODE latent states physics-based neural ODE detector calibration transport emulator mixed AI ML">
+        <div class="paper-head"><h4>RTS Smoother-Guided Learning of Physics-Based Neural Differential Models</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ahmet Demirkaya, Georgios Stratis, Tales Imbiriba, Zachary D. Danziger, Deniz Erdogmus. <a href="https://arxiv.org/abs/2607.15180">arXiv:2607.15180</a>. Category: AI/ML use cases in physics.</p>
+        <p>This hybrid neural-physics method alternates latent-state estimation with a Rauch-Tung-Striebel smoother and neural learning of missing ODE terms while keeping known dynamics explicit. It is tested on linear, nonlinear, and stiff benchmark systems with partial observation.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> detector calibration drifts, control-system dynamics, beam diagnostics, or reduced transport/emulator components where only part of the governing dynamics is known.</p>
+        <p><strong>Critical assessment:</strong> plausible and useful as a workflow idea, but not yet validated on HEP or nuclear systems. Treat it as transferable methodology, not established physics performance.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.14958 photon distribution function Electron Ion Collider model-independent data-driven extraction caution factorization ratio bremsstrahlung validation missing">
+        <div class="paper-head"><h4>Model-Independent and Data-Driven Extraction of the Photon Distribution Function at the Electron-Ion Collider</h4><span class="label caution">caution</span></div>
+        <p class="meta">Cong Li. <a href="https://arxiv.org/abs/2607.14958">arXiv:2607.14958</a>. Category: caution.</p>
+        <p>The paper proposes a cross-section-ratio inversion method for extracting a photon distribution function at the EIC by reducing a convolution to an effectively multiplicative relation for suitable observables.</p>
+        <p><strong>Why caution:</strong> the abstract presents an attractive and relevant EIC idea, but the terms "model-independent" and "data-driven" appear stronger than the evidence shown at abstract level. The method still depends on constructing perturbative hard inputs and controlling soft radiation, binning, and acceptance; without pseudo-data closure tests or realistic uncertainty propagation, this should be treated as a formal proposal rather than a validated extraction strategy.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
