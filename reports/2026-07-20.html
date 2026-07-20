@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-20</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-20 Briefing</h1>
+    <p class="dek">Monday arXiv listings after the weekend emphasized relativistic-hydrodynamic shock structure, heavy-quark transport beyond on-shell Boltzmann limits, light-ion flow constraints from an ATLAS update, saturation context, and ML methods for collider reconstruction, generative modeling, lattice sampling, and control.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion experimental item is the ATLAS O+O and Ne+Ne flow update, although it is a revised 2025 paper rather than a brand-new submission; its use of two-particle template subtraction and four-particle subevent cumulants makes it important for light-ion geometry and nuclear-shape constraints.</li>
+        <li>The most directly relevant new theory paper is the Israel-Stewart shock study, which identifies a subshock/regularity failure at high shock velocity and therefore touches a real numerical and conceptual limitation for relativistic hydrodynamics.</li>
+        <li>The heavy-quark transport paper is worth tracking because it uses a nonequilibrium Green's-function route and explicitly recovers elastic plus radiative Boltzmann transport in a limit, while flagging off-shell and memory effects near Tc.</li>
+        <li>For AI/ML in physics, ShellFlow and the Belle II graph-tracking ageing study are the most immediately relevant HEP papers; both use realistic collision or detector settings rather than toy-only demonstrations.</li>
+        <li>JetCoRD and the charge-odd hyperon-polarization paper both look interesting but need caution: the former makes unusually strong cross-experiment distillation claims, and the latter depends heavily on magnetic-field lifetime/model assumptions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.15756 Israel-Stewart relativistic hydrodynamics shock solutions subshock finite signal propagation third order bulk viscosity QGP theory strong">
+        <div class="paper-head"><h4>Breakdown of Smooth Shock Solutions in Transient Relativistic Hydrodynamics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Davi D. de Oliveira and Gabriel S. Denicol. <a href="https://arxiv.org/abs/2607.15756">arXiv:2607.15756</a>. Category: Theory.</p>
+        <p>The paper shows that Israel-Stewart shock solutions lose regularity above a critical shock velocity, producing a discontinuity interpretable as a second shock. The authors confirm the effect numerically and test regularizations using a third-order extension and small numerical bulk viscosity.</p>
+        <p><strong>Why it matters:</strong> relativistic viscous hydrodynamics is central to heavy-ion modeling, and shock/pathology limits matter for code stability, causality, and extrapolation to violent gradients.</p>
+        <p><strong>Critical assessment:</strong> strong conceptual contribution. It is not a full phenomenological recalibration, but it identifies a clear limitation of a widely used framework and offers concrete diagnostics.</p>
+      </article>
+      <article class="paper" data-search="2607.15618 heavy-quark transport nonequilibrium Green's functions Kadanoff-Baym HTL Boltzmann off-shell memory effects QGP near Tc theory phenomenology strong">
+        <div class="paper-head"><h4>Nonequilibrium approach to heavy-quark transport</h4><span class="label strong">strong</span></div>
+        <p class="meta">Juhee Hong. <a href="https://arxiv.org/abs/2607.15618">arXiv:2607.15618</a>. Category: Theory / Phenomenology.</p>
+        <p>This work formulates heavy-quark transport using Kadanoff-Baym nonequilibrium Green's functions with one- and two-loop HTL-resummed self energies. In the quasiparticle limit it reduces to a Boltzmann equation including elastic scattering and medium-induced gluon emission from a single scattering.</p>
+        <p><strong>Why it matters:</strong> charm and bottom observables remain precision probes of the QGP diffusion and relaxation dynamics, especially near the crossover.</p>
+        <p><strong>Critical assessment:</strong> strong as a formal bridge between nonequilibrium field theory and transport. The key next step is comparison against realistic heavy-flavor observables and uncertainty from medium inputs.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2509.05171 ATLAS oxygen oxygen neon neon light-ion collisions azimuthal anisotropy v2 v3 v4 subevent cumulants nuclear deformation flow experiment strong">
+        <div class="paper-head"><h4>Measurement of the azimuthal anisotropy of charged particles in sqrt(sNN)=5.36 TeV O+O and Ne+Ne collisions with the ATLAS detector</h4><span class="label strong">strong</span></div>
+        <p class="meta">ATLAS Collaboration. <a href="https://arxiv.org/abs/2509.05171">arXiv:2509.05171</a> (v2, last revised 17 Jul 2026; published in Phys. Rev. C 113, 045205). Category: Experiment.</p>
+        <p>ATLAS reports v2-v4 in O+O and Ne+Ne collisions, using both two-particle correlations with template-fit nonflow subtraction and four-particle subevent cumulants. The enhanced central Ne+Ne v2 is consistent with expectations from prolate neon deformation, while the cumulants expose strong event-by-event fluctuations.</p>
+        <p><strong>Why it matters:</strong> this is a high-value light-ion dataset for separating nuclear geometry from hydrodynamic response and for testing QGP-like collectivity in small nuclear systems.</p>
+        <p><strong>Critical assessment:</strong> strong, with robust methods and direct model relevance. It is a revision rather than a new submission, so its inclusion is for scientific importance in the current arXiv cycle.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.15384 charge-odd hyperon polarization Lambda anti-Lambda magnetic spin precession Larmor non-central heavy-ion magnetic field phenomenology mixed caution">
+        <div class="paper-head"><h4>Charge-Odd Hyperon Polarization from Magnetic Spin Precession</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Dushmanta Sahu and Captain R. Singh. <a href="https://arxiv.org/abs/2607.15384">arXiv:2607.15384</a>. Category: Phenomenology.</p>
+        <p>The paper proposes that polarized strange and antistrange quarks precess oppositely in the magnetic field of noncentral heavy-ion collisions, generating Lambda versus anti-Lambda polarization splittings at the sub-percent level.</p>
+        <p><strong>Why it matters:</strong> charge-resolved hyperon polarization could provide a rare handle on early electromagnetic fields and spin dynamics in QCD matter.</p>
+        <p><strong>Critical assessment:</strong> interesting but model fragile. The measurement target is plausible, but the signal size depends on magnetic-field evolution and spin-transfer assumptions that need more detailed validation.</p>
+      </article>
+      <article class="paper" data-search="2607.15985 gluon saturation small-x QCD nuclear shadowing heavy ion collisions coherent states Sudakov review phenomenology mixed">
+        <div class="paper-head"><h4>Gluon Saturation</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Alfred H. Mueller. <a href="https://arxiv.org/abs/2607.15985">arXiv:2607.15985</a>. Category: Phenomenology / Theory.</p>
+        <p>This is a compact review of gluon saturation, semiclassical limits, QCD evolution, Sudakov constraints on occupancies, coherent-state language, nuclear shadowing, heavy-ion collisions, and Drell-Yan-like processes.</p>
+        <p><strong>Why it matters:</strong> saturation physics remains a core ingredient for initial-state thinking in heavy-ion and EIC programs.</p>
+        <p><strong>Critical assessment:</strong> valuable as authoritative context, not a new phenomenological result. I would archive it as a reference signal rather than count it as a major original advance today.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.16144 ShellFlow Riemannian flow matching transformer generative model ATLAS Open Data LHC Standard Model resonances on-shell manifold AI ML strong">
+        <div class="paper-head"><h4>Learning Standard Model structure from LHC data with Riemannian flow matching</h4><span class="label strong">strong</span></div>
+        <p class="meta">Midori Kato, Kevin A. Urquia-Calderon, Inar Timiryasov, Oleg Ruchayskiy. <a href="https://arxiv.org/abs/2607.16144">arXiv:2607.16144</a>. Category: AI/ML use.</p>
+        <p>ShellFlow is a transformer-based conditional flow-matching model that generates particles on their on-shell manifolds and is trained on about 10^9 ATLAS Open Data pp collision events. The authors report recovery of resonances, electroweak-scale structures, and inter-particle correlations from limited explicit priors.</p>
+        <p><strong>Why it matters:</strong> data-trained generative models that respect particle manifolds could affect fast simulation, anomaly searches, and detector/analysis validation.</p>
+        <p><strong>Critical assessment:</strong> strong and ambitious, with real data and meaningful physics targets. The phrase that a substantial fraction of the Standard Model is learnable should still be read carefully: learned correlations are not the same as an interpretable physics derivation.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.15361 Belle II GNN graph neural network track reconstruction detector ageing domain shift object condensation purity efficiency HEP reconstruction strong AI ML">
+        <div class="paper-head"><h4>Mitigating Detector Ageing Effects with Graph-Based Multi-Modal Track Reconstruction at Belle II</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lea Reuter, Tristan Brandes, Giacomo De Pietro, Torben Ferber. <a href="https://arxiv.org/abs/2607.15361">arXiv:2607.15361</a>. Category: AI/ML use cases in physics.</p>
+        <p>The paper tests a GNN/object-condensation track-finding approach under realistic Belle II drift-chamber ageing, background, noise, and inactive-region simulation. Retraining on degraded conditions halves the absolute efficiency loss for uniformly displaced muons compared with the baseline while improving purity.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> robust tracking under detector ageing, missing-hit patterns, and time-dependent detector conditions; directly transferable to high-occupancy reconstruction and upgrade studies.</p>
+        <p><strong>Critical assessment:</strong> strong because it treats domain shift with a realistic detector scenario and compares to an operational baseline. The proceedings format means details may be compressed.</p>
+      </article>
+      <article class="paper" data-search="2607.15682 neural non-equilibrium Hamiltonian Monte Carlo Boltzmann sampling corrected estimates path SNIS lattice phi4 free energy hep-lat strong AI ML">
+        <div class="paper-head"><h4>Neural Non-Equilibrium Hamiltonian Monte Carlo for Corrected Boltzmann Sampling</h4><span class="label strong">strong</span></div>
+        <p class="meta">Moxian Qian. <a href="https://arxiv.org/abs/2607.15682">arXiv:2607.15682</a>. Category: AI/ML use cases in physics.</p>
+        <p>NHMC learns stochastic Hamiltonian-style paths from a tractable base distribution to a target Boltzmann density, then fixes the proposal and corrects estimates using recorded nonequilibrium work. Tests include double-well and finite-volume lattice phi^4 targets, with diagnostics for weight degeneracy and poor path overlap.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> lattice field theory sampling, free-energy differences, and hard multimodal Boltzmann targets where learned proposals need exact correction.</p>
+        <p><strong>Critical assessment:</strong> strong transfer value because correction and failure diagnostics are built in. Scaling to gauge theories and severe critical slowing-down remains the decisive test.</p>
+      </article>
+      <article class="paper" data-search="2607.16177 PEARL physics enhanced reinforcement learning actor adjoint differentiable dynamics optimal control unsteady flows accelerator control mixed AI ML">
+        <div class="paper-head"><h4>Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Matteo Tomasetto, Nicolo Botteghi, Gabriele Bruni, Andrea Manzoni. <a href="https://arxiv.org/abs/2607.16177">arXiv:2607.16177</a>. Category: AI/ML use cases in physics.</p>
+        <p>PEARL combines reinforcement learning with adjoint sensitivities and differentiable dynamics, aiming to reduce sample inefficiency in high-dimensional parametric control. The demonstrations use navigation in unsteady flows.</p>
+        <p><strong>Likely HEP/nuclear use case:</strong> accelerator controls, active experiment steering, differentiable detector/beamline optimization, and reduced-order hydrodynamic controls where differentiable simulators exist.</p>
+        <p><strong>Critical assessment:</strong> credible but indirect. The method is promising for physics control problems, yet its current evidence is outside HEP/NP and depends on differentiability assumptions.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.15531 JetCoRD cross-experiment distillation jet taggers ATLAS GN2 CMS ParT teacher repair reliability signal high purity caution AI ML">
+        <div class="paper-head"><h4>JetCoRD: Reliability-Aware Cross-Experiment Distillation of Jet Taggers with Adaptive Corrective Representation</h4><span class="label caution">caution</span></div>
+        <p class="meta">Liu-Long Gao, Zheng-Kun Huang, Xiao-Wei Jiang, Jia-Feng Li, Gong-Xing Sun. <a href="https://arxiv.org/abs/2607.15531">arXiv:2607.15531</a>. Category: Caution / AI/ML use.</p>
+        <p>JetCoRD proposes an 82k-parameter student distilled jointly from ATLAS GN2 and CMS ParT style teachers, with per-sample reliability weighting, teacher repair, and inference-time gating. The abstract reports performance gains at several high-purity working points.</p>
+        <p><strong>Why caution is warranted:</strong> the idea is relevant, but the claims are unusually strong for cross-experiment distillation and even report exceeding the teachers. Before treating it as operationally convincing, I would want details on datasets, teacher access/fidelity, calibration, systematic uncertainties, and independent validation across realistic detector domains.</p>
+      </article>
+      <article class="paper" data-search="2607.15384 charge-odd hyperon polarization magnetic field lifetime spin transfer sub-percent signal caution">
+        <div class="paper-head"><h4>Charge-Odd Hyperon Polarization from Magnetic Spin Precession</h4><span class="label caution">caution note</span></div>
+        <p class="meta">Dushmanta Sahu and Captain R. Singh. <a href="https://arxiv.org/abs/2607.15384">arXiv:2607.15384</a>. Category: Caution note.</p>
+        <p>This is not weak, but it is easy to overread. The observable is attractive; the inferred magnetic-field probe is only as convincing as the assumptions about field lifetime, quark polarization before hadronization, and competing vorticity/feed-down effects.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
