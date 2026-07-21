@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-21</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-21 Briefing</h1>
+    <p class="dek">Tuesday listings emphasized multiplicity scaling across light and heavy ions, fluctuation-sensitive directed-flow observables, transverse-momentum correlations for QCD equation-of-state studies, relativistic-hydrodynamic spectral and shock limits, dense-matter channel diagnostics, and analysis-grade HEP AI/ML for event classification and calorimeter fast simulation.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest directly heavy-ion paper is the wounded-parton multiplicity study, because it tests one geometry/fluctuation framework across O+O, Ne+Ne, Xe+Xe, and Pb+Pb using common parameters.</li>
+        <li>Two observable-focused phenomenology papers are worth tracking: rapidity-even dipolar flow with explicit global-momentum-conservation mitigation, and C_pT baselines tied to finite-muB lattice-QCD equation-of-state inputs.</li>
+        <li>The relativistic-hydrodynamic theory items are more formal but relevant: Lorentz-covariant spectral bounds and Israel-Stewart shock regularity limits both probe where hydrodynamic descriptions can and cannot be trusted.</li>
+        <li>For AI/ML, the ttH architecture benchmark is the cleaner new HEP study; CaloTrilogy is older but newly revised and remains a strong fast-simulation transfer signal for HEP detector workflows.</li>
+        <li>One nuclear-theory submission makes extraordinary low-temperature fusion/transmutation claims with no convincing abstract-level validation; it should be treated as cautionary rather than as usable nuclear physics.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.16365 Lorentz covariant spectral bounds thermal QFT retarded Green functions KMS quasinormal modes hydrodynamic gradient expansion QGP theory mixed">
+        <div class="paper-head"><h4>Lorentz-Covariant Spectral Bounds from Thermal Quantum Field Theory</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Alisher Sanetullaev, Sarbinaz Bazarbaeva, Marhabo Beymamatova, Shokir Tursunov. <a href="https://arxiv.org/abs/2607.16365">arXiv:2607.16365</a>. Category: Theory.</p>
+        <p>The paper derives boost-covariant constraints on relaxation spectra and hydrodynamic gradient-expansion radii from retarded correlator analyticity, causality, unitarity, KMS structure, and Lorentz covariance. It checks the bounds with quasinormal-mode calculations in N=4 SYM plasma.</p>
+        <p><strong>Why it matters:</strong> heavy-ion simulations lean heavily on relativistic hydrodynamics and transient relaxation scales; constraints on how these scales transform under boosts are conceptually relevant for QGP modeling.</p>
+        <p><strong>Critical assessment:</strong> mathematically ambitious and potentially useful, but its direct phenomenological impact is indirect. The validation is holographic rather than a QCD-calibrated heavy-ion application.</p>
+      </article>
+      <article class="paper" data-search="2607.15756 Israel Stewart relativistic hydrodynamics shock solutions subshock finite signal propagation third order bulk viscosity QGP theory strong">
+        <div class="paper-head"><h4>Breakdown of Smooth Shock Solutions in Transient Relativistic Hydrodynamics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Davi D. de Oliveira, Gabriel S. Denicol. <a href="https://arxiv.org/abs/2607.15756">arXiv:2607.15756</a>. Category: Theory.</p>
+        <p>This replacement remains important in the current arXiv cycle: the authors show that Israel-Stewart shock solutions lose regularity above a critical velocity and produce a subshock. They confirm the effect numerically and test regularizations using higher-order fields and small numerical bulk viscosity.</p>
+        <p><strong>Why it matters:</strong> it identifies a concrete limitation of a widely used causal viscous-hydrodynamics framework under violent gradients.</p>
+        <p><strong>Critical assessment:</strong> strong conceptual result. It does not by itself change everyday heavy-ion fits, but it gives a serious diagnostic for hydrodynamic code validity and model extrapolation.</p>
+      </article>
+      <article class="paper" data-search="2607.17472 trace anomaly sound speed inverse mapped relativistic mean field heavy-ion flow neutron stars symmetry energy dense matter theory mixed">
+        <div class="paper-head"><h4>Trace anomaly and isospin splitting in inverse-mapped relativistic mean-field theory</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Wen-Jie Xie, Jun-Hua Guo. <a href="https://arxiv.org/abs/2607.17472">arXiv:2607.17472</a>. Category: Theory.</p>
+        <p>The authors build an inverse-mapped RMF ensemble constrained by chiral EFT, heavy-ion flow information, and neutron-star mass-radius data, then use trace-anomaly and sound-speed splittings to identify high-density isovector-vector response.</p>
+        <p><strong>Why it matters:</strong> it connects laboratory heavy-ion flow constraints to astrophysical dense-matter inference, a recurring bridge for high-density EoS work.</p>
+        <p><strong>Critical assessment:</strong> technically useful, with explicit bootstrap-stable correlations, but still model-space dependent. The authors appropriately note that finite-nucleus-calibrated extensions are needed before treating the channel diagnostic as predictive.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No genuinely new heavy-ion experimental paper passed the selection threshold in this run. Several theory/phenomenology papers use experimental data or are cross-listed with experiment, but none was best classified as a new experiment result.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.16485 wounded parton scaling multiplicity distributions Glauber negative binomial O+O Ne+Ne Xe+Xe Pb+Pb light ions heavy ions phenomenology strong">
+        <div class="paper-head"><h4>Wounded parton scaling of multiplicities in ultra-relativistic light- and heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Rupam Samanta, Piotr Bozek, Wojciech Broniowski. <a href="https://arxiv.org/abs/2607.16485">arXiv:2607.16485</a>. Category: Phenomenology.</p>
+        <p>The paper fits charged-particle multiplicity distributions in O+O, Ne+Ne, Xe+Xe, and Pb+Pb at sqrt(sNN) near 5 TeV using a wounded-parton Glauber model with negative-binomial fluctuations. A common parameter set, with four partons per nucleon preferred, is used across systems while avoiding peripheral normalization complications.</p>
+        <p><strong>Why it matters:</strong> light-ion data are becoming central for initial-geometry and collectivity questions; a compact cross-system scaling test is directly useful for centrality and geometry modeling.</p>
+        <p><strong>Critical assessment:</strong> strong for its scope. It is a concise model paper rather than a full global Bayesian analysis, and the central and peripheral exclusions should be kept in mind.</p>
+      </article>
+      <article class="paper" data-search="2607.17449 rapidity-even dipolar flow v1 global momentum conservation AMPT HIJING Au+Au initial-state fluctuations partonic transport phenomenology mixed">
+        <div class="paper-head"><h4>Rapidity-even Dipolar Flow in Relativistic Heavy-Ion Collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Niseem Magdy. <a href="https://arxiv.org/abs/2607.17449">arXiv:2607.17449</a>. Category: Phenomenology.</p>
+        <p>This study examines rapidity-even directed flow and multi-particle correlations in Au+Au at 200 GeV using AMPT and HIJING. An eta-dependent weighting procedure is used to suppress leading global-momentum-conservation effects, and the remaining AMPT response is tested against partonic scattering strength.</p>
+        <p><strong>Why it matters:</strong> v1-even is a sensitive but difficult probe of dipolar initial-state fluctuations, and the explicit nonflow/GMC treatment is the scientifically interesting part.</p>
+        <p><strong>Critical assessment:</strong> promising, but still model-driven. The AMPT/HIJING contrast is useful, yet conclusions about transport constraints will need confrontation with experimental analysis systematics.</p>
+      </article>
+      <article class="paper" data-search="2607.18211 transverse momentum fluctuations C_pT QCD equation of state lattice QCD finite baryochemical potential RHIC Beam Energy Scan critical point phenomenology mixed">
+        <div class="paper-head"><h4>Sensitivity of p_T Fluctuations to the QCD Equation of State</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Rutik Manikandhan, Rohit Gupta, Rene Bellwied. <a href="https://arxiv.org/abs/2607.18211">arXiv:2607.18211</a>. Category: Phenomenology.</p>
+        <p>The authors construct a baseline for dynamical transverse-momentum correlations, C_pT, over RHIC BES energies from 3 to 200 GeV using finite-muB lattice-QCD EoS inputs. They report that a minimalist fluid-dynamic evolution captures centrality scaling, with deviations in peripheral top-energy collisions suggesting nonthermal correlations.</p>
+        <p><strong>Why it matters:</strong> pT correlations are part of the fluctuation toolkit for QCD critical-point searches, and a finite-density EoS baseline is valuable if robust.</p>
+        <p><strong>Critical assessment:</strong> interesting but preliminary. The abstract claims good centrality scaling with only two figures and a minimalist evolution, so the result is useful as a benchmark rather than a decisive critical-point diagnostic.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.18022 machine learning ttH multilepton XGBoost LorentzNet Particle Transformer signal strength uncertainty ROC AUC LHC HL-LHC HEP AI ML strong">
+        <div class="paper-head"><h4>Benchmarking Machine Learning Architectures for ttH Multilepton Signal Sensitivity</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lukas Vicenik, Andre Sopczak, Oleksandr Shekhovtsov. <a href="https://arxiv.org/abs/2607.18022">arXiv:2607.18022</a>. Category: AI/ML use cases in physics.</p>
+        <p>The paper introduces a synthetic ttH multilepton classification dataset and compares XGBoost, LorentzNet, Particle Transformer, and related setups under standardized training, feature hierarchies, and hyperparameter optimization. It evaluates both ROC AUC and analysis-driven signal-strength uncertainty.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> controlled architecture benchmarking for event classification, especially where physics-aware representations and weighted training must map onto final statistical sensitivity.</p>
+        <p><strong>Critical assessment:</strong> strong methodology for a benchmarking paper. It is not heavy-ion-specific, but the emphasis on standardized features, weights, and uncertainty-linked metrics transfers well to rare probes and heavy-flavor analyses.</p>
+      </article>
+      <article class="paper" data-search="2606.04165 CaloTrilogy calorimeter fast simulation flow matching diffusion one-step generation physics guided loss high granularity calorimeter HEP detector AI ML strong">
+        <div class="paper-head"><h4>CaloTrilogy: Toward a Breakthrough in One-Step, End-to-End, Physics-Guided Shower Generation for Modern Calorimeters</h4><span class="label strong">strong</span></div>
+        <p class="meta">Cheng Jiang, Sitian Qian, Kevin Pedro, Oz Amram, Huilin Qu, Maggie Voetberg. <a href="https://arxiv.org/abs/2606.04165">arXiv:2606.04165</a> (v2 revised 17 Jul 2026). Category: AI/ML use cases in physics.</p>
+        <p>CaloTrilogy combines an average-velocity-field integrator, a learned shower-space prior, and physics-guided training losses to generate high-granularity calorimeter showers in one or a few evaluations. The claimed target is diffusion/flow-quality showers with far lower inference cost and no auxiliary inference-time networks.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> fast detector simulation for collider analyses, embedding studies, and high-statistics systematic variations where Geant4 cost is limiting.</p>
+        <p><strong>Critical assessment:</strong> strong transfer value, especially because it tests public high-granularity calorimeter datasets and focuses on inference cost. Still, deployment would require experiment-specific validation of tails, correlations, and uncertainty propagation.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.17238 Chemonuclear Transmutation Noble Metal Synthesis low temperature fusion radioactive waste vanishment extraordinary claims caution weak">
+        <div class="paper-head"><h4>Chemonuclear Transmutation and Noble Metal Synthesis</h4><span class="label caution">caution</span></div>
+        <p class="meta">Hidetsugu Ikegami, Masako Ikegami. <a href="https://arxiv.org/abs/2607.17238">arXiv:2607.17238</a>. Category: Caution.</p>
+        <p>The abstract claims enormous enhancement of D-D and D3-D3 fusion at 460 K, radioactive-waste transmutation, noble-metal synthesis, and related chemonuclear reactions.</p>
+        <p><strong>Why caution is warranted:</strong> these are extraordinary claims that conflict with standard nuclear-physics expectations and the abstract does not signal commensurate experimental validation, error controls, or independent reproducibility. I would not treat this as credible heavy-ion or nuclear-theory input without much stronger evidence.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
