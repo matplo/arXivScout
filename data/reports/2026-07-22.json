@@ -1,0 +1,113 @@
+{
+  "date": "2026-07-22",
+  "path": "reports/2026-07-22.html",
+  "summary": "The day is dominated by heavy-ion theory and phenomenology rather than new experimental data. The strongest item links nonlinear collective flow in ultra-central U+U collisions to the sign of intrinsic hexadecapole deformation, while CGC NLO wave-function work contributes small-x theoretical infrastructure. Fluctuation and dipolar-flow papers offer useful Beam Energy Scan and transport-oriented baselines, and a collider-specific diffusion surrogate provides the clearest AI/ML contribution with detector-level validation.",
+  "keywords": [
+    "nonlinear flow",
+    "hexadecapole deformation",
+    "CGC NLO",
+    "pT fluctuations",
+    "finite-muB equation of state",
+    "rapidity-even directed flow",
+    "ultra-peripheral collisions",
+    "diffusion fast simulation",
+    "FCC-ee beam backgrounds"
+  ],
+  "arxiv_ids": [
+    "2607.18752",
+    "2607.18373",
+    "2607.18581",
+    "2607.18211",
+    "2607.17449",
+    "2607.18535",
+    "2607.18512"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2607.18752: nonlinear collective flow as an experimentally accessible probe of the sign of beta4 in U+U collisions.",
+  "caution_count": 0,
+  "papers": [
+    {
+      "title": "Nonlinear collective flow reveals the breakdown of quadrupole--hexadecapole scaling in heavy ion collisions",
+      "authors_short": "Hadi Mehrabpour, Zahra Sheibani, Li Yan, Chunjian Zhang, Abolfazl Mirjalili",
+      "author_count": 5,
+      "arxiv_id": "2607.18752",
+      "url": "https://arxiv.org/abs/2607.18752",
+      "category": "Theory",
+      "abstract": "Using event-by-event viscous hydrodynamic simulations of ultra-central U-238+U-238 collisions at sqrt(sNN)=193 GeV, the paper studies whether higher-order collective flow can isolate the contribution of intrinsic hexadecapole deformation and test beta2-beta4 correlations. It argues that beta4 sign information survives QGP evolution and is enhanced through nonlinear hydrodynamic response, especially in xi_6,222.",
+      "tags": ["nonlinear flow", "beta4", "nuclear deformation", "U+U", "hydrodynamics"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Soft Gluon Wave Function and Evolution Operator in the CGC at Next-to-Leading Order",
+      "authors_short": "Ramkumar Radhakrishnan",
+      "author_count": 1,
+      "arxiv_id": "2607.18373",
+      "url": "https://arxiv.org/abs/2607.18373",
+      "category": "Theory",
+      "abstract": "Constructs the soft-gluon light-cone wave function and unitary evolution operator Omega through order g^2 in pure Yang-Mills theory within the CGC framework, using unitarity and light-cone perturbation theory to fix normal-ordered coefficients.",
+      "tags": ["CGC", "NLO", "small-x", "light-cone perturbation theory"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Transport phenomena and observables associated with viscous properties of an anisotropic hot QCD medium at finite baryon asymmetry",
+      "authors_short": "Shubhalaxmi Rath, Nicolas A. Neill",
+      "author_count": 2,
+      "arxiv_id": "2607.18581",
+      "url": "https://arxiv.org/abs/2607.18581",
+      "category": "Theory",
+      "abstract": "Computes viscous transport coefficients and related observables for weakly anisotropic hot QCD matter at finite baryon asymmetry using a quasiparticle model and Boltzmann transport equation in relaxation-time approximation.",
+      "tags": ["hot QCD", "finite baryon asymmetry", "viscosity", "transport"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Sensitivity of p_T Fluctuations to the QCD Equation of State",
+      "authors_short": "Rutik Manikandhan, Rohit Gupta, Rene Bellwied",
+      "author_count": 3,
+      "arxiv_id": "2607.18211",
+      "url": "https://arxiv.org/abs/2607.18211",
+      "category": "Phenomenology",
+      "abstract": "Develops a theoretical baseline for dynamical transverse-momentum correlations C_pT from sqrt(sNN)=3 to 200 GeV using lattice-QCD-informed equation-of-state inputs at finite baryochemical potential, with emphasis on Beam Energy Scan interpretation.",
+      "tags": ["pT fluctuations", "QCD EoS", "Beam Energy Scan", "critical point"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Rapidity-even Dipolar Flow in Relativistic Heavy-Ion Collisions",
+      "authors_short": "Niseem Magdy",
+      "author_count": 1,
+      "arxiv_id": "2607.17449",
+      "url": "https://arxiv.org/abs/2607.17449",
+      "category": "Phenomenology",
+      "abstract": "Studies rapidity-even directed flow and multiparticle correlations in Au+Au collisions at 200 GeV with AMPT and HIJING, using eta-dependent weighting to suppress global momentum conservation contributions.",
+      "tags": ["v1 even", "global momentum conservation", "AMPT", "HIJING", "initial fluctuations"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Ultra-peripheral Collisions",
+      "authors_short": "Jesus Guillermo Contreras, Spencer Robert Klein",
+      "author_count": 2,
+      "arxiv_id": "2607.18535",
+      "url": "https://arxiv.org/abs/2607.18535",
+      "category": "Experiment",
+      "abstract": "Review of photon-induced physics in ultra-peripheral collisions of heavy ions and protons, including low-x nuclear structure, high-energy photon probes, and interferometric quantum-mechanics applications.",
+      "tags": ["UPC", "photon physics", "low-x nuclear structure", "review"],
+      "assessment": "strong"
+    },
+    {
+      "title": "D(e+e-)ffusion: Capturing the Beam-Beam Physics of e+e- Collisions with Diffusion Models",
+      "authors_short": "Antonio Chahine, Mariarosaria D'Alfonso, Jan Eysermans, Emmett Forrestel, et al.",
+      "author_count": 13,
+      "arxiv_id": "2607.18512",
+      "url": "https://arxiv.org/abs/2607.18512",
+      "category": "AI/ML use",
+      "abstract": "Introduces a permutation-equivariant denoising diffusion surrogate for incoherent-pair beam backgrounds at future e+e- colliders. The paper validates generated events with physics distributions, Geant4 propagation through a CLD vertex-detector setup, and a transformer two-sample classifier, reporting nearly four orders of magnitude generation speedup.",
+      "tags": ["diffusion model", "fast simulation", "FCC-ee", "beam backgrounds", "detector validation"],
+      "assessment": "strong"
+    }
+  ]
+}
