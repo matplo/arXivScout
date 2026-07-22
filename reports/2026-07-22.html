@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-22</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-22 Briefing</h1>
+    <p class="dek">Recent heavy-ion and physics-AI/ML papers screened from the 22 July 2026 arXiv listings, with preference for strong scientific relevance over breadth.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion item is the nonlinear-flow study of U+U collisions, which gives a concrete experimental handle on the sign of beta4 through nonlinear hydrodynamic response.</li>
+        <li>Initial-state/small-x theory is represented by a substantial CGC next-to-leading-order construction; its near-term value is theoretical infrastructure rather than direct phenomenology.</li>
+        <li>Several papers target fluctuation or flow observables that could sharpen Beam Energy Scan and nuclear-structure interpretation, but the evidence is mostly model-level and needs data-facing validation.</li>
+        <li>The best AI/ML paper is collider-specific: a diffusion surrogate for FCC-ee incoherent-pair backgrounds with detector-level checks and open code/data.</li>
+        <li>No new heavy-ion experimental result survived the screen today; the experimental entry is an authoritative UPC review rather than fresh data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.18752 nonlinear collective flow quadrupole hexadecapole beta4 U+U hydrodynamics nuclear deformation strong theory phenomenology">
+        <div class="paper-head"><h4>Nonlinear collective flow reveals the breakdown of quadrupole--hexadecapole scaling in heavy ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Hadi Mehrabpour, Zahra Sheibani, Li Yan, Chunjian Zhang, Abolfazl Mirjalili. <a href="https://arxiv.org/abs/2607.18752">arXiv:2607.18752</a></p>
+        <p><strong>Summary:</strong> Uses event-by-event viscous hydrodynamics for ultra-central U-238+U-238 at sqrt(sNN)=193 GeV to test whether higher-order collective flow can isolate intrinsic hexadecapole deformation. The key claim is that the sign of beta4 survives QGP evolution and is amplified in nonlinear mode coupling, especially through xi_6,222.</p>
+        <p><strong>Why it matters:</strong> This is a clean bridge between nuclear structure and heavy-ion final-state observables, with a specific measurable response coefficient rather than a vague deformation statement.</p>
+        <p><strong>Critical assessment:</strong> Strong and on-target. The result is model-dependent, but the observable logic is sharp and experimentally motivated; the next test is robustness to initial-condition and transport-parameter variation.</p>
+      </article>
+      <article class="paper" data-search="2607.18373 CGC soft gluon wave function NLO light cone wave function evolution operator small-x theory">
+        <div class="paper-head"><h4>Soft Gluon Wave Function and Evolution Operator in the CGC at Next-to-Leading Order</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ramkumar Radhakrishnan. <a href="https://arxiv.org/abs/2607.18373">arXiv:2607.18373</a></p>
+        <p><strong>Summary:</strong> Constructs the soft-gluon light-cone wave function and the associated unitary evolution operator Omega through order g^2 in pure Yang-Mills theory within the CGC framework. The work fixes normal-ordered expansion coefficients using unitarity and light-cone perturbation theory, and applies the construction to diagonalize the soft Hamiltonian through orders g and g^2.</p>
+        <p><strong>Why it matters:</strong> CGC evolution is core infrastructure for small-x initial conditions in p+A and A+A collisions, so improving NLO-level control has long-term relevance for saturation-based phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Theoretical and technical rather than immediately data-facing, but substantial. The main limitation is that the abstract reports a pure Yang-Mills construction, so phenomenological payoff depends on how cleanly it connects to realistic calculations.</p>
+      </article>
+      <article class="paper" data-search="2607.18581 hot QCD transport anisotropic medium finite baryon asymmetry viscosity Boltzmann RTA mixed theory">
+        <div class="paper-head"><h4>Transport phenomena and observables associated with viscous properties of an anisotropic hot QCD medium at finite baryon asymmetry</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Shubhalaxmi Rath, Nicolas A. Neill. <a href="https://arxiv.org/abs/2607.18581">arXiv:2607.18581</a></p>
+        <p><strong>Summary:</strong> Computes shear and bulk viscosities, Prandtl/Reynolds numbers, and related transport indicators for weakly anisotropic hot QCD matter at finite baryon asymmetry using a quasiparticle model and Boltzmann transport equation in relaxation-time approximation.</p>
+        <p><strong>Why it matters:</strong> Finite-baryon and early-time anisotropic transport remains important for RHIC Beam Energy Scan interpretation and lower-energy heavy-ion dynamics.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but not yet a strong phenomenological result. RTA/quasiparticle assumptions are useful for trends, yet the abstract does not indicate calibration against hydrodynamic simulations or experimental observables.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.18211 pT fluctuations QCD equation of state finite baryochemical potential Beam Energy Scan critical point phenomenology">
+        <div class="paper-head"><h4>Sensitivity of p_T Fluctuations to the QCD Equation of State</h4><span class="label strong">strong</span></div>
+        <p class="meta">Rutik Manikandhan, Rohit Gupta, Rene Bellwied. <a href="https://arxiv.org/abs/2607.18211">arXiv:2607.18211</a></p>
+        <p><strong>Summary:</strong> Builds a baseline for dynamical transverse-momentum correlations C_pT from sqrt(sNN)=3 to 200 GeV, using lattice-QCD-informed equation-of-state inputs at finite baryochemical potential. The authors report that the framework captures centrality scaling and identifies deviations in peripheral high-energy collisions.</p>
+        <p><strong>Why it matters:</strong> pT fluctuations are a plausible critical-point diagnostic only if credible noncritical baselines exist across BES energies; this paper aims directly at that need.</p>
+        <p><strong>Critical assessment:</strong> Strong as a baseline-building paper, with useful scope across energy and centrality. The abstract flags a minimalist fluid evolution, so the conclusions should be read as interpretive scaffolding rather than a precision extraction.</p>
+      </article>
+      <article class="paper" data-search="2607.17449 rapidity-even dipolar flow v1 global momentum conservation AMPT HIJING initial-state fluctuations final-state transport">
+        <div class="paper-head"><h4>Rapidity-even Dipolar Flow in Relativistic Heavy-Ion Collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Niseem Magdy. <a href="https://arxiv.org/abs/2607.17449">arXiv:2607.17449</a></p>
+        <p><strong>Summary:</strong> Studies v1^even and multiparticle correlations in Au+Au at 200 GeV with AMPT and HIJING, using eta-dependent weights to reduce global-momentum-conservation contamination. The analysis finds sign-changing pT dependence and sensitivity to partonic scattering strength.</p>
+        <p><strong>Why it matters:</strong> If GMC suppression is robust, dipolar-flow correlations can add leverage on initial-state fluctuations and final-state transport beyond standard v2/v3 observables.</p>
+        <p><strong>Critical assessment:</strong> Useful and well motivated, but the evidence is model-comparison level. HIJING/AMPT bracketing is informative; a stronger case would require systematic closure tests and closer confrontation with data.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.18535 ultra-peripheral collisions UPC photons low-x nuclear structure photon physics review experiment phenomenology">
+        <div class="paper-head"><h4>Ultra-peripheral Collisions</h4><span class="label strong">strong context</span></div>
+        <p class="meta">Jesus Guillermo Contreras, Spencer Robert Klein. <a href="https://arxiv.org/abs/2607.18535">arXiv:2607.18535</a></p>
+        <p><strong>Summary:</strong> A review of photon-induced physics in ultra-peripheral heavy-ion and proton collisions, covering low-x nuclear structure, high-energy photon probes, and interferometric quantum-mechanics applications.</p>
+        <p><strong>Why it matters:</strong> UPCs are a high-impact heavy-ion program with direct relevance to nuclear PDFs, saturation-adjacent questions, and photon-photon/photoproduction measurements at RHIC and the LHC.</p>
+        <p><strong>Critical assessment:</strong> Valuable as a compact authoritative review, but not new experimental evidence. I include it because it is timely and central to the field, not because it changes today’s data landscape.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.18512 diffusion model fast simulation FCC-ee incoherent pair creation beam backgrounds detector simulation Geant4 transformer two-sample classifier HEP ML">
+        <div class="paper-head"><h4>D(e+e-)ffusion: Capturing the Beam-Beam Physics of e+e- Collisions with Diffusion Models</h4><span class="label strong">strong</span></div>
+        <p class="meta">Antonio Chahine, Mariarosaria D'Alfonso, Jan Eysermans, Emmett Forrestel, Loukas Gouskos, Lindsey Gray, Katie Kudela, Haoyun Liu, Benedikt Maier, Dimitrios Ntounis, Christoph Paus, Umar Sohail Qureshi, Caterina Vernieri. <a href="https://arxiv.org/abs/2607.18512">arXiv:2607.18512</a></p>
+        <p><strong>Method and result:</strong> Introduces a permutation-equivariant set-valued denoising diffusion surrogate for incoherent-pair beam backgrounds at high-luminosity e+e- colliders. The authors train on GuineaPig++ samples, compare marginal and joint distributions, propagate generated events through a CLD vertex-detector Geant4 setup, and report a transformer two-sample classifier AUC of 0.553 +/- 0.016 plus nearly four orders of magnitude generation speedup.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The direct use case is FCC-ee machine-detector and background simulation. The transferable heavy-ion/HEP lesson is the validation pattern: physics-level distributions plus detector-level propagation plus classifier two-sample tests, which is the right bar for generative surrogates in detector backgrounds or event production.</p>
+        <p><strong>Critical assessment:</strong> Strong. The task is real, the validation is more serious than distribution overlays alone, and code/data availability improves credibility. The remaining risk is tail fidelity: rare high-occupancy or detector-damaging configurations can matter more than average agreement.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <p>No newly submitted paper in the screened set looked both on-scope and clearly overclaimed enough to warrant a named caution entry. The closest caution is interpretive rather than exclusionary: the finite-baryon transport-viscosity paper above should not be read as a data-validated QGP transport extraction.</p>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
