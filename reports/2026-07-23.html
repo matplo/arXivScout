@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-23</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-23 Briefing</h1>
+    <p class="dek">Recent arXiv papers from roughly the last 24 hours, screened for heavy-ion collision relevance and AI/ML methods with credible transfer value for HEP or nuclear physics.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>No strong direct heavy-ion collision paper appeared in the true last-day screen. I therefore left the heavy-ion theory, experiment, and phenomenology subsections empty rather than stretching relevance.</li>
+        <li>The strongest paper is <a href="https://arxiv.org/abs/2607.19750">arXiv:2607.19750</a>, which applies symbolic regression to HEP background-function discovery and tests it on CMS and ATLAS Run 2 dijet spectra.</li>
+        <li>The most credible heavy-ion transfer theme is conservative surrogate modeling for fluid dynamics: entropy-stable learned finite volumes and mesh-based finite-volume-residual training both map naturally onto hydrodynamic and transport-code acceleration questions.</li>
+        <li>Uncertainty propagation in physics-augmented constitutive models is methodologically relevant, but its HEP/heavy-ion transfer path is indirect unless adapted to equation-of-state, transport-coefficient, or detector-material systematics.</li>
+        <li>The caution item is a broad KAN/Petrov-Galerkin PDE-solver paper: promising numerically, but too far from HEP/NP validation to treat as a strong physics-use-case result today.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <p>No selected direct theory paper in the last-day window. Earlier July had substantial heavy-ion theory activity, but the July 22 submissions I screened were either outside heavy-ion physics or not strong enough for inclusion.</p>
+      <h3>Experiment</h3>
+      <p>No selected direct heavy-ion experimental paper in this window.</p>
+      <h3>Phenomenology</h3>
+      <p>No selected direct heavy-ion phenomenology paper in this window.</p>
+      <h3>AI/ML use</h3>
+      <p>The relevant AI/ML items are listed below because their primary contribution is methodological, with transfer value for heavy-ion or HEP workflows rather than direct heavy-ion analysis.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.19750 symbolic regression HEP background modeling dijet spectra CMS ATLAS uncertainty modeling SymbolFit strong AI ML">
+        <div class="paper-head"><h4>Machine Can Automatically Discover Parametric Functions to Model HEP Data</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ho Fung Tsoi, Dylan Rankin, Cecile Caillol, Miles Cranmer, Sridhara Dasu, Javier Duarte, Philip Harris, Elliot Lipeles. <a href="https://arxiv.org/abs/2607.19750">arXiv:2607.19750</a></p>
+        <p><strong>Method and result:</strong> SymbolFit combines symbolic regression with uncertainty modeling to automate analytic function discovery for binned HEP spectra. On CMS and ATLAS Run 2 dijet spectra, the authors report 560 seeded runs across seven configurations, more than 1000 functions with chi2/NDF near 1, and 111 rediscoveries of the published dijet and UA2 functional forms.</p>
+        <p><strong>Likely use case:</strong> Directly useful for HEP resonance searches and background modeling. For heavy-ion work, the most plausible use is not replacing physics models, but stress-testing empirical fit choices in spectra, correlation functions, UPC distributions, and detector-background parameterizations.</p>
+        <p><strong>Critical assessment:</strong> Strong. The task is real, the benchmark is HEP-native, and rediscovering established functions is a meaningful sanity check. The main risk is analyst over-trust: symbolic regression can produce plausible formulas that fit a window but extrapolate poorly, so control regions and systematic envelopes remain essential.</p>
+      </article>
+
+      <article class="paper" data-search="2607.20171 entropy stable learned finite volumes compressible flow unstructured meshes admissibility robustness hydrodynamics transfer strong AI ML">
+        <div class="paper-head"><h4>Hard Guarantees at a Measured Price: Entropy-Stable Learned Finite Volumes for Compressible Flow</h4><span class="label strong">strong</span></div>
+        <p class="meta">Denis Gueyffier. <a href="https://arxiv.org/abs/2607.20171">arXiv:2607.20171</a></p>
+        <p><strong>Method and result:</strong> Builds an admissibility-preserving, entropy-stable learned finite-volume scheme for two-dimensional Euler flow on unstructured meshes. The paper is unusually careful about evaluation: fixed protocols, falsification clauses, negative controls, factor decomposition, and iso-cost comparisons. The guaranteed variant completes 36 of 36 rollouts with zero negativity events, while learned gains appear mainly in selected wall-boundary cases.</p>
+        <p><strong>Likely use case:</strong> Transfer value is high for heavy-ion hydrodynamic surrogate design, especially because positivity, stability, and cost-normalized comparisons matter more than raw neural-network accuracy. The immediate equations are not relativistic viscous hydrodynamics, but the evaluation philosophy is very relevant.</p>
+        <p><strong>Critical assessment:</strong> Strong as methodology. The paper is valuable partly because it reports where learning does not pay: the unlearned guaranteed skeleton is often strongest at equal mesh, and learned components help selectively. That honesty makes the result more credible than most neural-solver papers.</p>
+      </article>
+
+      <article class="paper" data-search="2607.20321 label-free finite-volume residual training attention graph neural network thermo-fluid fields mesh GNN CFD surrogate hydrodynamics transfer mixed AI ML">
+        <div class="paper-head"><h4>Label-Free Finite-Volume-Residual Training of Attention Graph Neural Networks for Coupled Thermo-Fluid Fields</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Tianyu Li, Zhiwei Cao, Qingang Zhang, Ruihang Wang, Binyang Song, Yonggang Wen. <a href="https://arxiv.org/abs/2607.20321">arXiv:2607.20321</a></p>
+        <p><strong>Method and result:</strong> Trains an attention graph neural network by minimizing finite-volume residuals of governing equations directly on the mesh, avoiding labeled CFD solution data. The paper reports 2.3-2.8% all-field nRMSE on two steady benchmarks and better accuracy than a supervised baseline in two transient parametric cases without paying the conventional data-generation cost.</p>
+        <p><strong>Likely use case:</strong> Potentially useful for simulation campaigns where labeled high-fidelity fields are expensive: detector thermal simulations, accelerator component modeling, and eventually heavy-ion hydrodynamic emulators if adapted to relativistic equations and realistic freeze-out observables.</p>
+        <p><strong>Critical assessment:</strong> Promising but mixed. The label-free residual idea is attractive, and mesh-native training is a good fit for scientific codes. The abstract does not yet establish robustness under shocks, stiff source terms, conservation-sensitive observables, or out-of-distribution geometries that would matter for HEP production use.</p>
+      </article>
+
+      <article class="paper" data-search="2607.20339 interval fuzzy physics augmented neural networks uncertainty quantification propagation constitutive modeling finite elements mixed AI ML nuclear physics transfer">
+        <div class="paper-head"><h4>Interval and fuzzy physics-augmented neural networks (iPANN and fPANN) for uncertainty quantification and propagation in constitutive modeling</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Somesh Pratap Singh, Govinda Anantha Padmanabha, Jingye Tan, Steven Yang, Reese E. Jones, D. Thomas Seidl, Nikolaos Bouklas. <a href="https://arxiv.org/abs/2607.20339">arXiv:2607.20339</a></p>
+        <p><strong>Method and result:</strong> Introduces interval and fuzzy physics-augmented neural networks for hyperelastic constitutive modeling with sparse, noisy, or heterogeneous data. The models learn lower, mean, and upper energy-density branches, impose mechanistic constraints such as objectivity and consistency, encourage interpretable sparse energies, and propagate bounds through finite-element simulations.</p>
+        <p><strong>Likely use case:</strong> The nearest HEP/NP transfer is uncertainty-aware surrogate modeling: nuclear equations of state, detector-material response, or transport coefficients where sparse data and uncertainty propagation matter. It is less directly applicable to collider event analysis than the symbolic-regression paper.</p>
+        <p><strong>Critical assessment:</strong> Mixed but worth tracking. The uncertainty framing is serious and more useful than point-prediction-only surrogates. Transfer to heavy-ion physics would require domain-specific constraints and validation against observables, not just reuse of the interval/fuzzy architecture.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.20378 PG-KINN Petrov-Galerkin Kolmogorov-Arnold network PDE solver KAN PINN caution transfer weak overclaimed">
+        <div class="paper-head"><h4>PG-KINN: A Physics-Informed Petrov-Galerkin Kolmogorov-Arnold Network for Solving Forward and Inverse PDEs</h4><span class="label caution">caution</span></div>
+        <p class="meta">Amirhossein Sadr, Nima Soltani, Vahideh Moghtadaiee, Aida Pakniyat, Dara Rahmati, Saeid Gorgin. <a href="https://arxiv.org/abs/2607.20378">arXiv:2607.20378</a></p>
+        <p><strong>Why it may look promising:</strong> It combines a Petrov-Galerkin weak formulation with KAN trial spaces and claims broad wins over MLP and KAN baselines across mechanics benchmarks, including inverse parameter identification and complex geometries.</p>
+        <p><strong>Why caution is warranted:</strong> The method may be numerically interesting, but the HEP/heavy-ion transfer path is speculative from the abstract alone. The strongest claims are framed around general computational mechanics, not conservation-sensitive collider or nuclear workflows. I would not treat it as a strong physics AI/ML result for this scout until it shows domain-relevant benchmarks, ablations, and uncertainty behavior.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
