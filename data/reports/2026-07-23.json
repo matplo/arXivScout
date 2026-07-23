@@ -1,0 +1,89 @@
+{
+  "date": "2026-07-23",
+  "path": "reports/2026-07-23.html",
+  "summary": "The recent arXiv window contains no strong direct heavy-ion collision submission after abstract-level screening. The scientifically strongest item is a HEP-specific symbolic-regression workflow for discovering analytic background functions, while the most transferable physics-AI papers concern conservative learned finite-volume solvers, label-free finite-volume-residual training on meshes, and uncertainty-aware physics-augmented constitutive modeling. The recurring themes are symbolic regression for analysis models, physically constrained surrogate solvers, uncertainty propagation, mesh-native graph networks, and measured robustness rather than generic ML novelty.",
+  "keywords": [
+    "symbolic regression",
+    "HEP background modeling",
+    "finite-volume residual training",
+    "learned finite-volume solvers",
+    "entropy stability",
+    "compressible flow",
+    "mesh graph neural networks",
+    "uncertainty propagation",
+    "physics-augmented neural networks",
+    "heavy-ion hydrodynamics transfer"
+  ],
+  "arxiv_ids": [
+    "2607.19750",
+    "2607.20171",
+    "2607.20321",
+    "2607.20339",
+    "2607.20378"
+  ],
+  "total_paper_count": 4,
+  "represented_categories": [
+    "AI/ML use"
+  ],
+  "strongest_paper": "2607.19750: symbolic regression plus uncertainty modeling for HEP background-function discovery, demonstrated on CMS and ATLAS Run 2 dijet spectra.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Machine Can Automatically Discover Parametric Functions to Model HEP Data",
+      "authors_short": "Ho Fung Tsoi, Dylan Rankin, Cecile Caillol, Miles Cranmer, Sridhara Dasu, Javier Duarte, Philip Harris, Elliot Lipeles",
+      "author_count": 8,
+      "arxiv_id": "2607.19750",
+      "url": "https://arxiv.org/abs/2607.19750",
+      "category": "AI/ML use",
+      "abstract": "The paper introduces SymbolFit, pairing symbolic regression with uncertainty modeling to automate the search for analytic functions used to model binned HEP spectra. On CMS and ATLAS Run 2 dijet spectra, 560 seeded runs across seven fit configurations generated more than 1000 viable functions with chi2/NDF near 1, and 111 runs rediscovered the published dijet and UA2 forms.",
+      "tags": ["symbolic regression", "HEP backgrounds", "dijet spectra", "uncertainty modeling"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Hard Guarantees at a Measured Price: Entropy-Stable Learned Finite Volumes for Compressible Flow",
+      "authors_short": "Denis Gueyffier",
+      "author_count": 1,
+      "arxiv_id": "2607.20171",
+      "url": "https://arxiv.org/abs/2607.20171",
+      "category": "AI/ML use",
+      "abstract": "The paper develops an admissibility-preserving, entropy-stable learned finite-volume scheme for two-dimensional Euler flow on unstructured meshes. It emphasizes pre-fixed evaluation protocols, negative controls, iso-cost comparisons, and factor decomposition; the guaranteed variant completed 36 of 36 rollouts with zero negativity events, while learned components helped mainly in selected wall-boundary cases.",
+      "tags": ["finite volume", "entropy stability", "compressible flow", "robustness", "unstructured meshes"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Label-Free Finite-Volume-Residual Training of Attention Graph Neural Networks for Coupled Thermo-Fluid Fields",
+      "authors_short": "Tianyu Li, Zhiwei Cao, Qingang Zhang, Ruihang Wang, Binyang Song, Yonggang Wen",
+      "author_count": 6,
+      "arxiv_id": "2607.20321",
+      "url": "https://arxiv.org/abs/2607.20321",
+      "category": "AI/ML use",
+      "abstract": "The authors train an attention graph neural network directly against finite-volume residuals of the governing equations, evaluated on the mesh, avoiding labeled CFD solution data. They report 2.3-2.8% all-field nRMSE on steady benchmarks, close buoyancy-energy coupling behavior, and stronger accuracy than a supervised baseline on two transient parametric cases without paying the data-generation cost.",
+      "tags": ["mesh GNN", "finite-volume residual", "label-free training", "thermo-fluid surrogate"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Interval and fuzzy physics-augmented neural networks (iPANN and fPANN) for uncertainty quantification and propagation in constitutive modeling",
+      "authors_short": "Somesh Pratap Singh, Govinda Anantha Padmanabha, Jingye Tan, Steven Yang, Reese E. Jones, D. Thomas Seidl, Nikolaos Bouklas",
+      "author_count": 7,
+      "arxiv_id": "2607.20339",
+      "url": "https://arxiv.org/abs/2607.20339",
+      "category": "AI/ML use",
+      "abstract": "This work builds interval and fuzzy physics-augmented neural networks for uncertainty-aware hyperelastic constitutive modeling under sparse, noisy, or heterogeneous stress-deformation data. The models enforce objectivity, consistency, and polyconvexity-promoting structure, then propagate learned lower/mean/upper branches through finite-element simulations.",
+      "tags": ["uncertainty propagation", "physics-augmented neural networks", "constitutive modeling", "finite elements"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "PG-KINN: A Physics-Informed Petrov-Galerkin Kolmogorov-Arnold Network for Solving Forward and Inverse PDEs",
+      "authors_short": "Amirhossein Sadr, Nima Soltani, Vahideh Moghtadaiee, Aida Pakniyat, Dara Rahmati, Saeid Gorgin",
+      "author_count": 6,
+      "arxiv_id": "2607.20378",
+      "url": "https://arxiv.org/abs/2607.20378",
+      "category": "AI/ML use",
+      "abstract": "The paper proposes a Petrov-Galerkin KAN formulation for forward and inverse PDE problems and reports broad benchmark wins across mechanics examples.",
+      "tags": ["KAN", "Petrov-Galerkin", "PINN", "PDE solver", "transfer caution"],
+      "assessment": "caution"
+    }
+  ]
+}
