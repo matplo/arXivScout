@@ -1,0 +1,129 @@
+{
+  "date": "2026-07-24",
+  "path": "reports/2026-07-24.html",
+  "summary": "The recent window contains a small but useful heavy-ion set, led by hydrodynamic predictions for the spectrum-flow correlation observable v02(pT) and a transverse-spherocity study warning that spherocity selections in A+A can be intrinsically coupled to elliptic flow. The broader physics AI/ML papers are strongest where they address analysis-grade inference and detector or nuclear-instrumentation workflows: well-tempered likelihoods for misspecified models and Bayesian evidence search for neutron-source mixtures. Recurring themes are spectrum-flow correlations, event-shape biases, hadronic afterburning, honest intervals under model misspecification, Bayesian model evidence, neural equation solvers, and multimodal spectroscopy transfer.",
+  "keywords": [
+    "v02(pT)",
+    "spectrum-flow correlations",
+    "transverse spherocity",
+    "elliptic flow bias",
+    "baryon-antibaryon annihilation",
+    "SPS hyperons",
+    "well-tempered likelihood",
+    "model misspecification",
+    "Bayesian evidence",
+    "neutron-source identification",
+    "Dyson-Schwinger neural solver",
+    "multimodal XAS"
+  ],
+  "arxiv_ids": [
+    "2607.21321",
+    "2607.21161",
+    "2607.21146",
+    "2607.20718",
+    "2607.21543",
+    "2607.21548",
+    "2607.20906",
+    "2607.20971"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2607.21321: hydrodynamic predictions for the spectrum-flow correlation observable v02(pT) in Pb+Pb at sqrt(sNN)=5.02 TeV.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Enhanced hydrodynamic predictions for v02(pT)",
+      "authors_short": "Rupam Samanta, Tribhuban Parida, Jean-Yves Ollitrault",
+      "author_count": 3,
+      "arxiv_id": "2607.21321",
+      "url": "https://arxiv.org/abs/2607.21321",
+      "category": "Phenomenology",
+      "abstract": "Hydrodynamic predictions for v02(pT), an observable correlating particle spectra with elliptic flow, are presented for Pb+Pb at sqrt(sNN)=5.02 TeV. After a data-driven correction to match v2(pT), the paper predicts charged-hadron and identified-particle behavior across centralities, including high-pT decrease, meson-baryon splitting, and low-pT proton nonmonotonicity.",
+      "tags": ["v02(pT)", "hydrodynamics", "Pb+Pb", "spectrum-flow correlation", "identified hadrons"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Intrinsic coupling between transverse spherocity and elliptic flow in heavy-ion collisions",
+      "authors_short": "Subikash Choudhury, Ekata Nandy",
+      "author_count": 2,
+      "arxiv_id": "2607.21161",
+      "url": "https://arxiv.org/abs/2607.21161",
+      "category": "Theory",
+      "abstract": "Using toy Monte Carlo, AMPT, and analytic arguments, the paper shows that the transverse-spherocity axis aligns with the event symmetry plane, producing an intrinsic anti-correlation between spherocity and v2 even without jet-like topology.",
+      "tags": ["transverse spherocity", "elliptic flow", "event shape", "AMPT", "analysis bias"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Impact of Baryon anti-Baryon annihilation on hyperon production and apparent strangeness enhancement in anti-Lambda/anti-p",
+      "authors_short": "Ekata Nandy, Subhasis Chattopadhyay",
+      "author_count": 2,
+      "arxiv_id": "2607.21146",
+      "url": "https://arxiv.org/abs/2607.21146",
+      "category": "Phenomenology",
+      "abstract": "UrQMD calculations at SPS energies indicate that baryon-antibaryon annihilation can reproduce transverse-mass trends and anti-Lambda/anti-p centrality and energy dependence, reducing the need to interpret the ratio as a clean strangeness-enhancement signature.",
+      "tags": ["SPS", "hyperons", "baryon-antibaryon annihilation", "UrQMD", "strangeness enhancement"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models",
+      "authors_short": "Benjamin Nachman, Jesse Thaler",
+      "author_count": 2,
+      "arxiv_id": "2607.20718",
+      "url": "https://arxiv.org/abs/2607.20718",
+      "category": "AI/ML use",
+      "abstract": "The paper proposes tempering likelihood-ratio confidence intervals by a goodness-of-fit statistic at the best-fit point, with binned and unbinned classifier two-sample-test formulations, to avoid overconfident intervals under model misspecification.",
+      "tags": ["likelihood", "model misspecification", "coverage", "classifier two-sample test", "HEP inference"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Bayesian evidence adaptive pursuit to identify neutron sources with scatter-based spectrometers",
+      "authors_short": "David Breitenmoser, William Heriot, Peter Marleau, Shaun D. Clarke, Sara A. Pozzi",
+      "author_count": 5,
+      "arxiv_id": "2607.21543",
+      "url": "https://arxiv.org/abs/2607.21543",
+      "category": "AI/ML use",
+      "abstract": "BEAP ranks, prunes, and retains candidate neutron-source mixtures using Bayesian evidence, validated with controlled Cf-252 and D-D measurements plus Monte Carlo mixtures.",
+      "tags": ["Bayesian evidence", "neutron sources", "spectrometry", "mixture inference", "nuclear detectors"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural solutions of coupled ghost and gluon Dyson-Schwinger equations in Landau gauge",
+      "authors_short": "Rodrigo Carmo Terin",
+      "author_count": 1,
+      "arxiv_id": "2607.21548",
+      "url": "https://arxiv.org/abs/2607.21548",
+      "category": "AI/ML use",
+      "abstract": "A neural representation is trained from renormalized residuals of coupled ghost and gluon Dyson-Schwinger equations in four-dimensional Landau-gauge Yang-Mills theory, agreeing with fixed-point solutions at percent level.",
+      "tags": ["Dyson-Schwinger", "Yang-Mills", "neural solver", "continuum QCD"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Uni-XAS: Alignment-Driven Bidirectional Multimodal Learning for X-ray Absorption Spectroscopy",
+      "authors_short": "Suyang Zhong, Yuhao Zhao, Boying Huang, Fanjie Xu, Pengwei Xu, Haoyi Tao, Xi Fang, Jun Cheng, Fujie Tang",
+      "author_count": 9,
+      "arxiv_id": "2607.20906",
+      "url": "https://arxiv.org/abs/2607.20906",
+      "category": "AI/ML use",
+      "abstract": "Uni-XAS aligns one-dimensional XAS spectra and three-dimensional atomic structures for bidirectional retrieval and generation on a benchmark of 328,839 structure-spectrum pairs.",
+      "tags": ["XAS", "multimodal learning", "structure generation", "materials diagnostics", "benchmark"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Searching for initial state fluctuations in heavy ion collisions at FAIR energy using Principal Component Analysis",
+      "authors_short": "Ekata Nandy, Subhasis Chattopadhyay",
+      "author_count": 2,
+      "arxiv_id": "2607.20971",
+      "url": "https://arxiv.org/abs/2607.20971",
+      "category": "AI/ML use",
+      "abstract": "The paper applies PCA to UrQMD simulations with engineered initial hot spots for low-energy Pb+Pb collisions, finding sensitivity of principal components and eigenvalues to localized fluctuations.",
+      "tags": ["PCA", "UrQMD", "FAIR energy", "initial fluctuations", "hot spots"],
+      "assessment": "caution"
+    }
+  ]
+}
