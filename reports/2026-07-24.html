@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-24</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-24 Briefing</h1>
+    <p class="dek">Recent arXiv papers from roughly the last 24 hours, screened for heavy-ion collision relevance and AI/ML methods with credible transfer value for HEP or nuclear physics.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest direct heavy-ion paper is <a href="https://arxiv.org/abs/2607.21321">arXiv:2607.21321</a>, which gives concrete hydrodynamic predictions for the new spectrum-flow correlation observable v02(pT) in Pb+Pb at 5.02 TeV.</li>
+        <li><a href="https://arxiv.org/abs/2607.21161">arXiv:2607.21161</a> is a useful cautionary phenomenology result: transverse spherocity selections in heavy-ion events can be driven by elliptic flow itself, not just by jet-like topology.</li>
+        <li>The SPS hyperon paper <a href="https://arxiv.org/abs/2607.21146">arXiv:2607.21146</a> is scientifically relevant but not truly new research output in the usual sense, because the arXiv entry carries an older Eur. Phys. J. A journal reference.</li>
+        <li>The best broad HEP/physics methodology paper is <a href="https://arxiv.org/abs/2607.20718">arXiv:2607.20718</a> on well-tempered likelihoods for misspecified models; it targets a real failure mode in precision inference.</li>
+        <li>For AI/ML transfer, the most practical detector/nuclear-physics item is <a href="https://arxiv.org/abs/2607.21543">arXiv:2607.21543</a>, a Bayesian evidence search for mixed neutron-source identification with experimental validation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.21161 transverse spherocity elliptic flow v2 AMPT toy Monte Carlo event-shape heavy-ion phenomenology theory strong mixed">
+        <div class="paper-head"><h4>Intrinsic coupling between transverse spherocity and elliptic flow in heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Subikash Choudhury, Ekata Nandy. <a href="https://arxiv.org/abs/2607.21161">arXiv:2607.21161</a></p>
+        <p><strong>Summary:</strong> The authors analyze transverse spherocity with toy Monte Carlo, AMPT, and an analytic argument, and show that the spherocity-minimizing axis tends to align with the event symmetry plane. This creates an intrinsic anti-correlation between spherocity and v2 even without genuinely jet-like topology.</p>
+        <p><strong>Why it matters:</strong> Spherocity-selected heavy-ion measurements are often interpreted as topology or jet-activity selections. This paper argues that in A+A collisions the observable can primarily select collective anisotropy, which affects interpretation of flow, spectra, and constituent-quark-number-scaling studies.</p>
+        <p><strong>Critical assessment:</strong> Strong as a diagnostic paper. The claim is narrow, physically transparent, and directly relevant to analysis practice. It will still need confrontation with experimental selection definitions, detector acceptance, and centrality autocorrelations.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new direct heavy-ion experimental measurement survived the screen today. The nucl-ex new submission is a substantial Th-229 nuclear-clock solid-state-host study, but it is outside heavy-ion collision physics.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.21321 v02 pT hydrodynamic predictions elliptic flow Pb+Pb 5.02 TeV spectra flow correlation meson baryon splitting strong phenomenology">
+        <div class="paper-head"><h4>Enhanced hydrodynamic predictions for v02(pT)</h4><span class="label strong">strong</span></div>
+        <p class="meta">Rupam Samanta, Tribhuban Parida, Jean-Yves Ollitrault. <a href="https://arxiv.org/abs/2607.21321">arXiv:2607.21321</a></p>
+        <p><strong>Summary:</strong> This paper presents hydrodynamic predictions for v02(pT), an observable correlating particle spectra with elliptic flow. It applies a data-driven correction to match v2(pT), reports fair agreement with v0(pT), and predicts charged-hadron, pion, kaon, and proton behavior across centralities in Pb+Pb at sqrt(sNN)=5.02 TeV.</p>
+        <p><strong>Why it matters:</strong> v02(pT) is designed to probe correlations between radial/spectral structure and anisotropic flow, so it can add differential constraints beyond standard v2(pT) and v0(pT). The predicted high-pT decrease, meson-baryon splitting, and low-pT proton nonmonotonicity are concrete experimental targets.</p>
+        <p><strong>Critical assessment:</strong> Strong and compact. The study is immediately testable and comes from an observable-driven hydrodynamic framework. The main caveat is that the data-driven correction improves agreement by construction, so the predictive power rests on how robust the residual features are to model and freeze-out choices.</p>
+      </article>
+
+      <article class="paper" data-search="2607.21146 baryon antibaryon annihilation hyperon Lambda antiLambda anti-proton SPS UrQMD strangeness enhancement mixed phenomenology">
+        <div class="paper-head"><h4>Impact of Baryon anti-Baryon annihilation on hyperon production and apparent strangeness enhancement in anti-Lambda/anti-p</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ekata Nandy, Subhasis Chattopadhyay. <a href="https://arxiv.org/abs/2607.21146">arXiv:2607.21146</a></p>
+        <p><strong>Summary:</strong> Using UrQMD at SPS energies, the paper argues that baryon-antibaryon annihilation can reproduce transverse-mass trends and the centrality/energy dependence of anti-Lambda/anti-p ratios. It concludes that the apparent anti-Lambda/anti-p enhancement need not be a clean strangeness-enhancement signature.</p>
+        <p><strong>Why it matters:</strong> This is relevant for lower-energy heavy-ion interpretation where hadronic afterburning can reshape observables that are sometimes read as QGP chemistry.</p>
+        <p><strong>Critical assessment:</strong> Scientifically useful but mixed for a daily scout. The arXiv submission is recent, but the page lists a 2022 Eur. Phys. J. A journal reference, so it is not a new result in the same sense as fresh v1 submissions. It remains a good reminder that antibaryon annihilation must be treated seriously in SPS-energy strangeness claims.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <p>The PCA heavy-ion paper is listed in the caution section because its abstract-level evidence is not strong enough to highlight as a selected AI/ML contribution.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.20718 well-tempered likelihood misspecified models confidence intervals goodness of fit classifier two-sample test strong HEP statistics">
+        <div class="paper-head"><h4>The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models</h4><span class="label strong">strong</span></div>
+        <p class="meta">Benjamin Nachman, Jesse Thaler. <a href="https://arxiv.org/abs/2607.20718">arXiv:2607.20718</a></p>
+        <p><strong>Method and result:</strong> The paper proposes dividing the likelihood-ratio test statistic by a goodness-of-fit statistic at the best-fit point, so confidence intervals stop collapsing when the model is misspecified. It gives binned and unbinned formulations, with the unbinned version based on a classifier two-sample test, and demonstrates the idea on a Gaussian toy problem and synthetic e+e- strong-coupling measurement.</p>
+        <p><strong>Likely use case:</strong> Very relevant for HEP and heavy-ion inference where models are approximate: unfolding, emulator-based parameter extraction, QGP transport calibration, PDF/nPDF fits, and searches with imperfect background models.</p>
+        <p><strong>Critical assessment:</strong> Strong. The problem is central and the proposed diagnostic has a clear statistical rationale. The next question is practical calibration: analysts will need robust GOF choices and coverage studies in realistic high-dimensional workflows.</p>
+      </article>
+
+      <article class="paper" data-search="2607.21543 Bayesian evidence adaptive pursuit BEAP neutron source identification recoil spectroscopy scatter spectrometers nuclear detectors strong transfer">
+        <div class="paper-head"><h4>Bayesian evidence adaptive pursuit to identify neutron sources with scatter-based spectrometers</h4><span class="label strong">strong</span></div>
+        <p class="meta">David Breitenmoser, William Heriot, Peter Marleau, Shaun D. Clarke, Sara A. Pozzi. <a href="https://arxiv.org/abs/2607.21543">arXiv:2607.21543</a></p>
+        <p><strong>Method and result:</strong> BEAP searches the combinatorial space of candidate neutron-source mixtures by ranking, pruning, and retaining hypotheses according to Bayesian evidence. The validation uses controlled Cf-252 and D-D neutron-generator measurements plus Monte Carlo mixtures, reporting decisive support for single and mixed-source identification over event-count ranges set by complexity and spectral similarity.</p>
+        <p><strong>Likely use case:</strong> Directly relevant to nuclear instrumentation and transferable to HEP detector problems with ill-conditioned mixture inference: source/background decomposition, activation studies, neutron backgrounds, and evidence-based model selection.</p>
+        <p><strong>Critical assessment:</strong> Strong because it combines a clear inverse problem, Bayesian model comparison, experimental data, and simulation stress tests. It is not heavy-ion physics, but the nuclear-detector transfer path is concrete.</p>
+      </article>
+
+      <article class="paper" data-search="2607.21548 neural solutions Dyson Schwinger equations ghost gluon Landau gauge Yang-Mills neural residuals lattice QCD mixed AI ML">
+        <div class="paper-head"><h4>Neural solutions of coupled ghost and gluon Dyson-Schwinger equations in Landau gauge</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Rodrigo Carmo Terin. <a href="https://arxiv.org/abs/2607.21548">arXiv:2607.21548</a></p>
+        <p><strong>Method and result:</strong> A neural representation is trained only from renormalized residuals of the coupled ghost and gluon Dyson-Schwinger equations in four-dimensional Landau-gauge Yang-Mills theory. The neural and fixed-point solutions agree at percent level, and the residual neural error is smaller than variations from the three-gluon vertex model.</p>
+        <p><strong>Likely use case:</strong> Relevant to lattice/continuum QCD workflows where neural solvers might accelerate integral-equation studies or uncertainty scans. For heavy-ion physics, the connection is indirect through nonperturbative QCD inputs rather than collision phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Mixed but worth tracking. The paper appears technically careful about solver stability, but the limiting uncertainty is still physics truncation, not neural approximation. That is a healthy conclusion, though it means the ML contribution is primarily computational rather than scientific discovery.</p>
+      </article>
+
+      <article class="paper" data-search="2607.20906 Uni-XAS multimodal learning X-ray absorption spectroscopy structure spectra conditional generation benchmark transfer detectors mixed AI ML">
+        <div class="paper-head"><h4>Uni-XAS: Alignment-Driven Bidirectional Multimodal Learning for X-ray Absorption Spectroscopy</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Suyang Zhong, Yuhao Zhao, Boying Huang, Fanjie Xu, Pengwei Xu, Haoyi Tao, Xi Fang, Jun Cheng, Fujie Tang. <a href="https://arxiv.org/abs/2607.20906">arXiv:2607.20906</a></p>
+        <p><strong>Method and result:</strong> The paper reframes bidirectional XAS modeling as cross-modal alignment between 1D spectra and 3D atomic structures, with retrieval-augmented spectrum generation and permutation-rectified flow matching for inverse structure generation. It reports strong performance on a standardized benchmark of 328,839 structure-spectrum pairs.</p>
+        <p><strong>Likely use case:</strong> Transfer value is credible but adjacent: detector materials, radiation-damage characterization, target/material diagnostics, and multimodal spectroscopy benchmarks for physics foundation models.</p>
+        <p><strong>Critical assessment:</strong> Mixed for this scout. The benchmark scale and inverse-problem framing are strong, but the connection to HEP/nuclear workflows is materials-facing rather than collider-analysis-facing.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.20971 PCA initial state fluctuations FAIR energy UrQMD hotspots heavy ion caution weak overclaimed">
+        <div class="paper-head"><h4>Searching for initial state fluctuations in heavy ion collisions at FAIR energy using Principal Component Analysis</h4><span class="label caution">caution</span></div>
+        <p class="meta">Ekata Nandy, Subhasis Chattopadhyay. <a href="https://arxiv.org/abs/2607.20971">arXiv:2607.20971</a></p>
+        <p><strong>Why it may look promising:</strong> PCA on event-level final-state distributions is a reasonable way to look for localized initial-state hot spots in low-energy Pb+Pb simulations, and FAIR-energy fluctuation observables are important.</p>
+        <p><strong>Why caution is warranted:</strong> The abstract describes an UrQMD-only sensitivity study with engineered hot spots and PCA eigenvalue trends, but does not establish a data-facing validation path, robustness to detector effects, or separation from centrality/model artifacts. The page also lists a 2025 journal reference, so it should be treated as a useful methodological note, not a fresh high-impact result.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
