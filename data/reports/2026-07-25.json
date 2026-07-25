@@ -1,0 +1,140 @@
+{
+  "date": "2026-07-25",
+  "path": "reports/2026-07-25.html",
+  "summary": "Heavy-ion-relevant postings from the latest arXiv batch emphasize event-shape interpretation, flow-correlated spectral observables, and temperature-fluctuation baselines. The AI/ML and computing selections emphasize misspecification-aware inference, neural residual solvers for QCD equations, uncertainty-aware physics surrogates, and production-scale GPU event processing.",
+  "keywords": [
+    "transverse spherocity",
+    "elliptic flow",
+    "v02(pT)",
+    "temperature fluctuations",
+    "PCA initial-state fluctuations",
+    "misspecified likelihoods",
+    "Dyson-Schwinger neural solvers",
+    "uncertainty-aware surrogates",
+    "GPU real-time filtering"
+  ],
+  "arxiv_ids": [
+    "2607.21161",
+    "2607.21321",
+    "2504.06886",
+    "2607.20971",
+    "2607.20718",
+    "2607.21548",
+    "2607.21407",
+    "2607.21492",
+    "2607.21146"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Experiment computing",
+    "Caution"
+  ],
+  "strongest_paper": "2607.21161: Intrinsic coupling between transverse spherocity and elliptic flow in heavy-ion collisions",
+  "top_takeaway": "The most consequential heavy-ion result is the warning that spherocity-selected heavy-ion samples may primarily encode elliptic-flow anisotropy rather than jet-like topology; the most broadly useful AI/statistics result is the well-tempered likelihood for misspecified physics models.",
+  "caution_count": 1,
+  "candidate_count_inspected": 36,
+  "papers": [
+    {
+      "title": "Intrinsic coupling between transverse spherocity and elliptic flow in heavy-ion collisions",
+      "authors": "Subikash Choudhury, Ekata Nandy",
+      "author_count": 2,
+      "arxiv_id": "2607.21161",
+      "url": "https://arxiv.org/abs/2607.21161",
+      "category": "Phenomenology",
+      "abstract": "The paper argues, using toy Monte Carlo, AMPT, and analytic reasoning, that transverse spherocity in heavy-ion collisions is intrinsically related to elliptic flow and should be interpreted primarily as collective momentum anisotropy rather than jetty topology.",
+      "tags": ["spherocity", "elliptic flow", "AMPT", "event shape"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Enhanced hydrodynamic predictions for v02(pT)",
+      "authors": "Rupam Samanta, Tribhuban Parida, Jean-Yves Ollitrault",
+      "author_count": 3,
+      "arxiv_id": "2607.21321",
+      "url": "https://arxiv.org/abs/2607.21321",
+      "category": "Phenomenology",
+      "abstract": "The paper presents hydrodynamic predictions for v02(pT), including charged and identified hadron behavior in Pb+Pb collisions at 5.02 TeV, after applying a data-driven correction to match v2(pT) data.",
+      "tags": ["hydrodynamics", "v02", "spectra-flow correlations", "PbPb"],
+      "assessment": "strong"
+    },
+    {
+      "title": "High-order fluctuations of temperature in hot QCD matter",
+      "authors": "Jinhui Chen, Wei-jie Fu, Shi Yin, Chunjian Zhang",
+      "author_count": 4,
+      "arxiv_id": "2504.06886",
+      "url": "https://arxiv.org/abs/2504.06886",
+      "category": "Theory / Phenomenology",
+      "abstract": "The revised paper introduces a thermodynamic state function related to mean-pT fluctuations and predicts suppressed temperature fluctuations across the HRG-to-QGP transition.",
+      "tags": ["temperature fluctuations", "QCD EoS", "mean-pT fluctuations", "phase diagram"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Searching for initial state fluctuations in heavy ion collisions at FAIR energy using Principal Component Analysis",
+      "authors": "Ekata Nandy, Subhasis Chattopadhyay",
+      "author_count": 2,
+      "arxiv_id": "2607.20971",
+      "url": "https://arxiv.org/abs/2607.20971",
+      "category": "AI/ML use / Phenomenology",
+      "abstract": "The paper introduces hot-spot-like initial-state fluctuations in UrQMD Pb+Pb events at FAIR energy and studies PCA eigenvalues of pion final-state distributions.",
+      "tags": ["PCA", "initial-state fluctuations", "FAIR", "UrQMD"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models",
+      "authors": "Benjamin Nachman, Jesse Thaler",
+      "author_count": 2,
+      "arxiv_id": "2607.20718",
+      "url": "https://arxiv.org/abs/2607.20718",
+      "category": "AI/ML-adjacent statistical inference",
+      "abstract": "The paper proposes dividing likelihood-ratio test statistics by a goodness-of-fit statistic so confidence intervals self-limit under model misspecification, including an unbinned classifier two-sample-test formulation.",
+      "tags": ["likelihood", "misspecification", "confidence intervals", "classifier tests"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural solutions of coupled ghost and gluon Dyson-Schwinger equations in Landau gauge",
+      "authors": "Rodrigo Carmo Terin",
+      "author_count": 1,
+      "arxiv_id": "2607.21548",
+      "url": "https://arxiv.org/abs/2607.21548",
+      "category": "AI/ML use in QCD theory",
+      "abstract": "A neural residual representation solves coupled ghost and gluon DSEs, agreeing with fixed-point solutions at the percent level while showing neural error below truncation-model uncertainty.",
+      "tags": ["Dyson-Schwinger equations", "neural residual solver", "Yang-Mills", "QCD"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Cycle-Consistent and Uncertainty-Aware Neural Surrogates for Tokamak Edge Plasmas",
+      "authors": "Abdourahmane Diaw, Sebastian De Pascuale, Jae-Sun Park, Ivan Paradela Perez, Jeremy D. Lore, Stefan Dasbach",
+      "author_count": 6,
+      "arxiv_id": "2607.21407",
+      "url": "https://arxiv.org/abs/2607.21407",
+      "category": "Physics AI/ML with transfer value",
+      "abstract": "The paper builds fast conditional U-Net and ensemble surrogates for tokamak edge plasmas with cycle-consistent inverse recovery and uncertainty estimates.",
+      "tags": ["neural surrogate", "uncertainty", "cycle consistency", "digital twin"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A converged architecture for processing 32 Tbps of physics data in real-time at the LHCb experiment",
+      "authors": "Roel Aaij, Christina Agapopoulou, Thomas Boettcher, Dorothea vom Bruch, Daniel Hugo Campora Perez, Adrian Casais Vidal, et al.",
+      "author_count": 30,
+      "arxiv_id": "2607.21492",
+      "url": "https://arxiv.org/abs/2607.21492",
+      "category": "HEP experiment computing / AI-enabling infrastructure",
+      "abstract": "LHCb reports a zero-copy off-the-shelf network architecture with a fully GPU-based real-time filter capable of processing 32 Tbps of collision data.",
+      "tags": ["LHCb", "GPU trigger", "real-time filtering", "32 Tbps"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Impact of Baryon anti-Baryon annihilation on hyperon production and apparent strangeness enhancement in anti-Lambda/anti-proton at SPS energy",
+      "authors": "Ekata Nandy, Subhasis Chattopadhyay",
+      "author_count": 2,
+      "arxiv_id": "2607.21146",
+      "url": "https://arxiv.org/abs/2607.21146",
+      "category": "Phenomenology caution",
+      "abstract": "The paper uses UrQMD to argue that baryon-antibaryon annihilation can explain features of anti-Lambda/anti-proton enhancement, cautioning against a simple strangeness-enhancement interpretation.",
+      "tags": ["hyperons", "annihilation", "SPS", "UrQMD"],
+      "assessment": "caution"
+    }
+  ]
+}
