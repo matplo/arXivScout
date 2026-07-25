@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-25</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-25 Briefing</h1>
+    <p class="dek">Recent arXiv coverage centered on Friday, 24 July 2026 postings: heavy-ion event-shape interpretation, new flow-correlated spectral observables, finite-temperature fluctuation baselines, and physics AI/ML methods for inference, neural equation solving, fast surrogates, and real-time event processing.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion item is <a href="https://arxiv.org/abs/2607.21161">2607.21161</a>, which argues that transverse spherocity in heavy-ion events is intrinsically anti-correlated with elliptic flow. If correct, this directly affects how spherocity-selected heavy-ion measurements should be interpreted.</li>
+        <li><a href="https://arxiv.org/abs/2607.21321">2607.21321</a> gives concrete hydrodynamic predictions for the newer observable v02(pT), making it experimentally useful despite its limited 8-page scope.</li>
+        <li>The highest-impact AI/statistics paper for HEP workflows is <a href="https://arxiv.org/abs/2607.20718">2607.20718</a>: a misspecification-aware likelihood construction that directly targets overconfident confidence intervals in collider and physical-science inference.</li>
+        <li>For AI/ML in physics, the best transfer signals are not generic model novelty but operational validation: uncertainty-aware plasma surrogates, neural residual solutions of QCD DSEs, and the LHCb 32 Tbps real-time GPU architecture.</li>
+        <li>Several heavy-ion-relevant arXiv entries are delayed uploads of already published work. They are useful context, but they should not be treated as new 2026 scientific developments.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory / Phenomenology</h3>
+      <article class="paper" data-search="2607.21161 transverse spherocity elliptic flow AMPT toy Monte Carlo event shape heavy-ion phenomenology strong">
+        <div class="paper-head"><h4>Intrinsic coupling between transverse spherocity and elliptic flow in heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Subikash Choudhury, Ekata Nandy. <a href="https://arxiv.org/abs/2607.21161">arXiv:2607.21161</a>. Category: Phenomenology.</p>
+        <p><strong>Summary:</strong> The paper studies transverse spherocity using toy Monte Carlo, AMPT, and an analytic argument, and claims that the spherocity-minimizing axis naturally aligns with the event symmetry plane. This creates an intrinsic anti-correlation between spherocity and v2 even without a genuinely jetty topology.</p>
+        <p><strong>Why it matters:</strong> Spherocity selections are widely used to separate jet-like and isotropic events. In heavy-ion collisions, this work says the selection may be mostly selecting collective anisotropy, so conclusions about jet activity or quark-number scaling can be biased.</p>
+        <p><strong>Critical assessment:</strong> Strong and practically important because it combines analytic reasoning with AMPT checks and targets an observable-level ambiguity. The main limitation is that the conclusion still needs experimental-style closure tests, detector effects, and model-systematic studies before it becomes a prescription.</p>
+        <p><strong>Abstract:</strong> The authors argue that transverse spherocity in heavy-ion collisions should be interpreted primarily as a probe of collective momentum-space anisotropy rather than a direct measure of jetty event topology.</p>
+      </article>
+      <article class="paper" data-search="2607.21321 v02 pT hydrodynamic predictions elliptic flow spectra PbPb 5.02 TeV phenomenology strong">
+        <div class="paper-head"><h4>Enhanced hydrodynamic predictions for v02(pT)</h4><span class="label strong">strong</span></div>
+        <p class="meta">Rupam Samanta, Tribhuban Parida, Jean-Yves Ollitrault. <a href="https://arxiv.org/abs/2607.21321">arXiv:2607.21321</a>. Category: Phenomenology.</p>
+        <p><strong>Summary:</strong> The paper makes hydrodynamic predictions for v02(pT), an observable correlating particle spectra with elliptic flow. It applies a data-driven correction to match v2(pT) data and predicts charged-hadron and identified-hadron behavior in Pb+Pb collisions at 5.02 TeV.</p>
+        <p><strong>Why it matters:</strong> v02(pT) is experimentally actionable and probes correlations between spectral shape and anisotropic flow that are not captured by standard v2(pT) alone.</p>
+        <p><strong>Critical assessment:</strong> Strong as a focused prediction paper: narrow, testable, and tied to existing hydrodynamic data constraints. The caveat is that the data-driven correction may absorb modeling deficiencies, so a future measurement should compare multiple hydro setups rather than treating this as a single robust baseline.</p>
+        <p><strong>Abstract:</strong> The authors predict high-pT charged-hadron behavior, meson-baryon splitting, and a non-monotonic low-pT proton trend for v02(pT), features not present in the usual v2(pT) or v0(pT).</p>
+      </article>
+      <article class="paper" data-search="2504.06886 temperature fluctuations hot QCD matter mean pT QCD equation of state replacement mixed">
+        <div class="paper-head"><h4>High-order fluctuations of temperature in hot QCD matter</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jinhui Chen, Wei-jie Fu, Shi Yin, Chunjian Zhang. <a href="https://arxiv.org/abs/2504.06886">arXiv:2504.06886</a>. Category: Theory / Phenomenology. New version posted 23 July 2026.</p>
+        <p><strong>Summary:</strong> This revised paper introduces a thermodynamic state function connected to mean-pT fluctuations and uses it to compute higher-order temperature fluctuations in hot QCD matter. It predicts strong suppression of temperature fluctuations from HRG to QGP and negative skewness.</p>
+        <p><strong>Why it matters:</strong> Mean-pT fluctuations remain an experimentally relevant route to QCD thermodynamics, especially for phase-diagram studies.</p>
+        <p><strong>Critical assessment:</strong> Interesting but should be treated as a revised rather than new paper. The conceptual bridge from thermodynamic temperature fluctuations to measured mean-pT cumulants is valuable, but experimental robustness will depend on non-thermal backgrounds, acceptance, volume fluctuations, and hadronic afterburner effects.</p>
+        <p><strong>Abstract:</strong> The authors propose temperature-fluctuation observables as candidate probes of QCD thermodynamics and the phase diagram through charged-particle mean-pT fluctuations.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.20971 PCA initial state fluctuations hot spots FAIR UrQMD heavy-ion AI ML caution mixed">
+        <div class="paper-head"><h4>Searching for initial state fluctuations in heavy ion collisions at FAIR energy using Principal Component Analysis</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ekata Nandy, Subhasis Chattopadhyay. <a href="https://arxiv.org/abs/2607.20971">arXiv:2607.20971</a>. Category: AI/ML use / Phenomenology.</p>
+        <p><strong>Summary:</strong> The paper injects hot-spot-like spatial rearrangements into central Pb+Pb events at Elab = 20 AGeV in UrQMD and applies PCA to final-state pion distributions in eta, phi, pT, and paired 2D spaces.</p>
+        <p><strong>Why it matters:</strong> PCA-style decompositions can be useful for turning event-by-event fluctuation structure into analysis observables at FAIR/BES energies.</p>
+        <p><strong>Critical assessment:</strong> Mixed. The method is plausible and domain-relevant, but this is a delayed arXiv upload of a 2025 journal article, and PCA by itself is a relatively weak ML contribution unless validated against realistic detector response and competing fluctuation sources.</p>
+        <p><strong>Abstract:</strong> The PCA eigenvalues are studied for different hot-spot configurations, hot-spot event fractions, and centralities to test sensitivity to initial-state localized fluctuations.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.20718 well-tempered likelihood misspecified models confidence intervals classifier two-sample test HEP inference strong">
+        <div class="paper-head"><h4>The Well-Tempered Likelihood: Honest Confidence Intervals for Misspecified Models</h4><span class="label strong">strong</span></div>
+        <p class="meta">Benjamin Nachman, Jesse Thaler. <a href="https://arxiv.org/abs/2607.20718">arXiv:2607.20718</a>. Category: AI/ML-adjacent statistical inference.</p>
+        <p><strong>Method and result:</strong> The paper rescales the likelihood-ratio test statistic by a goodness-of-fit statistic at the best-fit point. It gives binned and unbinned versions, with the unbinned case using a classifier two-sample test, and demonstrates the idea on a Gaussian example and synthetic e+e- strong-coupling measurement.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Heavy-ion global analyses and collider measurements often use imperfect simulators and model families. A likelihood that self-limits under misspecification could be valuable for avoiding artificially tight constraints on transport coefficients, EoS parameters, or EFT Wilson coefficients.</p>
+        <p><strong>Critical assessment:</strong> Strong and immediately relevant. The idea is simple enough to test in existing workflows, and it addresses a real failure mode. Key open points are coverage in high-dimensional nuisance-rich analyses and behavior under localized rather than global misspecification.</p>
+      </article>
+      <article class="paper" data-search="2607.21548 neural Dyson Schwinger equations ghost gluon Landau gauge Yang Mills neural residual QCD strong">
+        <div class="paper-head"><h4>Neural solutions of coupled ghost and gluon Dyson-Schwinger equations in Landau gauge</h4><span class="label strong">strong</span></div>
+        <p class="meta">Rodrigo Carmo Terin. <a href="https://arxiv.org/abs/2607.21548">arXiv:2607.21548</a>. Category: AI/ML use in QCD theory.</p>
+        <p><strong>Method and result:</strong> A neural representation is trained from renormalized equation residuals to solve coupled ghost and gluon DSEs. The solution agrees with fixed-point methods at the percent level, is stable under initialization and architecture changes, and shows neural error smaller than vertex-model truncation uncertainty.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Neural residual solvers can help explore nonperturbative QCD integral equations and emulator-style scans where conventional iteration is slow or brittle.</p>
+        <p><strong>Critical assessment:</strong> Strong as a methodological QCD paper because it benchmarks against a conventional solver and separates neural error from physics truncation error. Transfer to finite-temperature or real-time heavy-ion quantities remains nontrivial.</p>
+      </article>
+      <article class="paper" data-search="2607.21407 tokamak edge plasma neural surrogate cycle consistency uncertainty U-Net inverse model digital twins transfer HEP mixed strong">
+        <div class="paper-head"><h4>Cycle-Consistent and Uncertainty-Aware Neural Surrogates for Tokamak Edge Plasmas</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">Abdourahmane Diaw, Sebastian De Pascuale, Jae-Sun Park, Ivan Paradela Perez, Jeremy D. Lore, Stefan Dasbach. <a href="https://arxiv.org/abs/2607.21407">arXiv:2607.21407</a>. Category: Physics AI/ML with transfer value.</p>
+        <p><strong>Method and result:</strong> The work combines a conditional U-Net forward surrogate, an optimization-based inverse method, cycle-consistency checks, and ensemble uncertainty estimates for SOLPS-ITER edge-plasma fields. It reports millisecond-scale 2D predictions and strong recovery of control parameters.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The transferable idea is not tokamak physics itself but the workflow: fast field surrogates with inverse consistency and uncertainty flags. That maps naturally onto hydrodynamic emulator validation, detector calibration maps, and simulation campaign steering.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer candidate because it includes inverse validation and uncertainty diagnostics rather than just a forward surrogate. Domain transfer will require care because heavy-ion event structure and simulator uncertainties differ sharply from tokamak edge-control grids.</p>
+      </article>
+      <article class="paper" data-search="2607.21492 LHCb 32 Tbps real-time GPU filter zero-copy physics data processing HEP AI ML operations strong">
+        <div class="paper-head"><h4>A converged architecture for processing 32 Tbps of physics data in real-time at the LHCb experiment</h4><span class="label strong">strong operations</span></div>
+        <p class="meta">Roel Aaij, Christina Agapopoulou, Thomas Boettcher, Dorothea vom Bruch, Daniel Hugo Campora Perez, Adrian Casais Vidal, et al. (30 authors). <a href="https://arxiv.org/abs/2607.21492">arXiv:2607.21492</a>. Category: HEP experiment computing / AI-enabling infrastructure.</p>
+        <p><strong>Method and result:</strong> LHCb reports an off-the-shelf network architecture using zero-copy techniques and a fully GPU-based real-time filter to process 32 Tbps after removal of a pre-filtering stage.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The direct transfer is to high-rate online reconstruction and filtering, including future heavy-ion runs where real-time reduction, GPU tracking, and ML inference must share strict throughput budgets.</p>
+        <p><strong>Critical assessment:</strong> Very strong operational contribution. It is not primarily an ML-method paper, but it is exactly the kind of production architecture that determines whether ML-enabled trigger and reconstruction ideas survive contact with data rates.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.21146 baryon anti-baryon annihilation hyperon Lambda antiLambda anti-proton strangeness enhancement SPS UrQMD caution">
+        <div class="paper-head"><h4>Impact of Baryon anti-Baryon annihilation on hyperon production and apparent strangeness enhancement in anti-Lambda/anti-proton at SPS energy</h4><span class="label caution">caution</span></div>
+        <p class="meta">Ekata Nandy, Subhasis Chattopadhyay. <a href="https://arxiv.org/abs/2607.21146">arXiv:2607.21146</a>. Category: Phenomenology caution.</p>
+        <p><strong>Why it is worth noting:</strong> The physics message is useful: UrQMD with baryon-antibaryon annihilation can reproduce features of anti-Lambda/anti-proton ratios, weakening a simple strangeness-enhancement interpretation.</p>
+        <p><strong>Why caution:</strong> This is an arXiv upload of a 2022 journal article, so it is not genuinely new. The conclusion is also model-dependent: it is a strong warning against overinterpreting one ratio, not a model-independent resolution of SPS strangeness phenomenology.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
