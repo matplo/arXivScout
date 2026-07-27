@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-27</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-27 Briefing</h1>
+    <p class="dek">Recent arXiv announcements around the Friday-to-Monday window, screened for heavy-ion collision relevance and AI/ML methods with credible transfer value for HEP or nuclear physics.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion theory item is <a href="https://arxiv.org/abs/2607.22502">2607.22502</a>, which revisits in-medium antenna radiation with finite formation time and shows that spectator-color correlations can break the single-emitter BDMPS-Z simplification.</li>
+        <li><a href="https://arxiv.org/abs/2607.21729">2607.21729</a> is highly relevant for quarkonium phenomenology: it reports a first lattice extraction of the imaginary spin-dependent heavy-quark potential in the QGP, albeit in quenched QCD at one high temperature.</li>
+        <li>The finite-temperature lattice formalism in <a href="https://arxiv.org/abs/2607.22346">2607.22346</a> is not immediately phenomenological, but it is strong infrastructure for eventually treating thermally modified resonances from finite-volume spectra.</li>
+        <li>The best AI/ML physics application is <a href="https://arxiv.org/abs/2607.21689">2607.21689</a>, which uses a normalizing-flow surrogate constrained by 49 ALICE correlation functions to reduce antinuclei coalescence uncertainties.</li>
+        <li>For analysis methodology, <a href="https://arxiv.org/abs/2607.22282">2607.22282</a> and <a href="https://arxiv.org/abs/2607.21702">2607.21702</a> are useful because they emphasize validation, closure, misspecification, and limits of ML/SBI rather than just model novelty.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.22346 finite temperature lattice QCD thermal resonances thermoparticles quantization condition strong theory">
+        <div class="paper-head"><h4>Resonances at finite temperature from the lattice</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jakob Hoffmann, Peter Lowdon, Owe Philipsen. <a href="https://arxiv.org/abs/2607.22346">arXiv:2607.22346</a>.</p>
+        <p><strong>Summary:</strong> The paper uses thermoparticles to define finite-temperature two-particle scattering, derives a thermal unitarity relation, and obtains a finite-temperature generalization of the finite-volume quantization condition. The payoff is a framework for constraining thermal scattering amplitudes and resonance properties from lattice finite-volume energy levels.</p>
+        <p><strong>Why it matters:</strong> Thermal resonance properties are central to connecting lattice QCD, hadronic spectral functions, and QGP phenomenology. A controlled finite-volume formalism would be valuable for moving beyond qualitative statements about in-medium broadening.</p>
+        <p><strong>Critical assessment:</strong> Strong formal work, but not yet a phenomenology result. Its impact will depend on numerical implementations and whether usable thermal spectra can be extracted with controlled systematics.</p>
+        <p><strong>Abstract:</strong> The authors introduce a finite-temperature scattering and quantization framework where broadened thermoparticle peaks modify the finite-volume kinematic structure relative to vacuum analyses.</p>
+      </article>
+      <article class="paper" data-search="2607.21729 lattice spin interactions heavy quarks quark-gluon plasma quarkonium imaginary potential charmonium strong theory">
+        <div class="paper-head"><h4>Lattice study of spin interactions between heavy quarks in the quark-gluon plasma</h4><span class="label strong">strong</span></div>
+        <p class="meta">Dibyendu Bala, Olaf Kaczmarek, Sayantan Sharma, Swagatam Tah. <a href="https://arxiv.org/abs/2607.21729">arXiv:2607.21729</a>.</p>
+        <p><strong>Summary:</strong> This work calculates the spin-dependent O(1/M^2) correction to the thermal heavy-quark potential. It first shows in hard-thermal-loop perturbation theory that the imaginary part differs for pseudoscalar and vector quarkonia, then extracts the imaginary part nonperturbatively in quenched lattice QCD at about 470 MeV.</p>
+        <p><strong>Why it matters:</strong> Quarkonium suppression and spectral functions are important QGP probes, and spin-dependent thermal effects can alter vector versus pseudoscalar interpretations.</p>
+        <p><strong>Critical assessment:</strong> Strong and novel because the target observable is directly tied to quarkonium phenomenology and the lattice extraction is nonperturbative. Caveats are substantial: quenched QCD, one high temperature, and the need to propagate this potential into realistic spectral and transport comparisons.</p>
+        <p><strong>Abstract:</strong> The authors find a complex spin-dependent potential in the deconfined phase whose imaginary part can be significant for charmonium states.</p>
+      </article>
+      <article class="paper" data-search="2607.21879 resistive magnetohydrodynamics momentum anisotropy electric fields Boltzmann Vlasov transport coefficients mixed theory">
+        <div class="paper-head"><h4>Momentum anisotropy from Resistive Magnetohydrodynamics</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Khwahish Kushwah, Gabriel S. Denicol. <a href="https://arxiv.org/abs/2607.21879">arXiv:2607.21879</a>.</p>
+        <p><strong>Summary:</strong> The authors derive second-order relativistic resistive MHD from the Boltzmann-Vlasov equation for a two-component ultrarelativistic plasma. They find that electric fields couple charge diffusion to shear stress and can generate momentum anisotropy even without a flow gradient.</p>
+        <p><strong>Why it matters:</strong> Electromagnetic fields in heavy-ion collisions remain hard to connect quantitatively to flow observables. This paper clarifies one possible field-induced source of anisotropy.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but it is a short SQM contribution and mostly formal. The heavy-ion strength depends on whether realistic field lifetimes, conductivities, and expanding geometries leave an experimentally relevant signal.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.22328 SPS fixed target NA61 NA60+ DiCE finite baryochemical potential QCD phase diagram experiment mixed">
+        <div class="paper-head"><h4>The future fixed-target program at the CERN SPS</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Enrico Scomparin. <a href="https://arxiv.org/abs/2607.22328">arXiv:2607.22328</a>.</p>
+        <p><strong>Summary:</strong> This proceedings contribution reviews the CERN SPS heavy-ion fixed-target legacy and outlines continued finite-muB QGP studies through NA61 and the newly approved NA60+/DiCE program.</p>
+        <p><strong>Why it matters:</strong> The SPS remains one of the key facilities for mapping QCD matter at high baryochemical potential, especially through dileptons and hadronic observables.</p>
+        <p><strong>Critical assessment:</strong> Important program context rather than a new measurement. It is scientifically relevant, but the evidence content is in the experimental agenda and prior achievements, not in fresh data.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.22502 finite formation time antenna radiation color spectators BDMPS-Z jet quenching in-medium gluon emission strong phenomenology">
+        <div class="paper-head"><h4>Finite Formation Time Antenna Radiation: Color Spectators Break Single-Emitter BDMPS-Z</h4><span class="label strong">strong</span></div>
+        <p class="meta">Fabio Dominguez, Pablo Guerrero-Rodriguez, Carlos A. Salgado. <a href="https://arxiv.org/abs/2607.22502">arXiv:2607.22502</a>.</p>
+        <p><strong>Summary:</strong> The paper computes direct in-medium soft-gluon emission from a color-singlet quark-antiquark antenna while allowing medium interactions during the finite formation time of the antenna. It finds nontrivial correlations with the non-emitting spectator leg and a significant departure from the instantaneous-formation limit that reduces to BDMPS-Z.</p>
+        <p><strong>Why it matters:</strong> This attacks a microscopic assumption behind jet-quenching calculations: when and how a color antenna becomes a set of effectively independent emitters in the medium.</p>
+        <p><strong>Critical assessment:</strong> Strong theory/phenomenology. The calculation is specialized, but it addresses a real missing ingredient in medium-induced radiation. The next test is whether the correction can be organized into a practical jet-evolution implementation and compared against jet substructure data.</p>
+        <p><strong>Abstract:</strong> The authors report spectator-induced complexity even at leading Nc and a breakdown of the usual single-emitter approximation for finite antenna formation time.</p>
+      </article>
+      <article class="paper" data-search="2607.22403 non-Markovian heavy quark equilibration Langevin diffusion coefficient Green-Kubo thermal medium strong phenomenology">
+        <div class="paper-head"><h4>Non-Markovian heavy-quark equilibration and equilibrium correlation function in a thermal medium</h4><span class="label strong">strong</span></div>
+        <p class="meta">Monisha Nair, Juan Torres-Rincon, Santosh K. Das. <a href="https://arxiv.org/abs/2607.22403">arXiv:2607.22403</a>.</p>
+        <p><strong>Summary:</strong> The paper computes charm current-current correlations in Langevin and generalized Langevin frameworks, extracting the diffusion coefficient through Green-Kubo. Memory kernels alter transient correlation structure but leave the nonrelativistic diffusion coefficient unchanged; in relativistic correlated-noise cases, equilibration can become damped and oscillatory.</p>
+        <p><strong>Why it matters:</strong> Heavy-flavor transport analyses often compress medium effects into diffusion and drag coefficients. This paper helps separate what memory effects can change dynamically from what they may leave invariant in transport extraction.</p>
+        <p><strong>Critical assessment:</strong> Strong and careful, with useful ancillary numerical material. The caveat is that phenomenological impact requires embedding these memory effects in expanding, spatially inhomogeneous QGP backgrounds and comparing to heavy-flavor observables.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.21689 normalizing flow surrogate ALICE femtoscopy antinuclei coalescence B2 B3 cosmic rays strong AI ML phenomenology">
+        <div class="paper-head"><h4>Light Antinuclei Coalescence: Femtoscopic Constraints via Neural-Flow Surrogates</h4><span class="label strong">strong</span></div>
+        <p class="meta">M. Korwieser, L. Fabbietti, B. Hashemi, L. Heinrich, M. Mahlein, D. L. Mihaylov, C. S. Zeyn. <a href="https://arxiv.org/abs/2607.21689">arXiv:2607.21689</a>.</p>
+        <p><strong>Method and result:</strong> A differentiable normalizing-flow surrogate emulates the CECA femtoscopic source model, is fit to 49 ALICE proton-proton correlation functions, and is extrapolated to low-multiplicity cosmic-ray-relevant regimes. The authors report sub-percent emulation fidelity and large reductions in B2 and B3 coalescence-parameter uncertainties.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Directly relevant to ALICE femtoscopy, antinuclei coalescence, and surrogate-based propagation of experimental constraints into phenomenological production models.</p>
+        <p><strong>Critical assessment:</strong> Strong because the ML component is not decorative: it accelerates and differentiates a physics model, then uses real ALICE correlation data. The main caution is extrapolation to low multiplicity and wavefunction systematics.</p>
+      </article>
+      <article class="paper" data-search="2607.22282 template-based parameter extraction toy thrust distributions FCC-ee pseudo-experiments model mismatch validation strong AI statistics">
+        <div class="paper-head"><h4>Statistical validation of template-based parameter extraction from toy thrust distributions for future FCC-ee studies</h4><span class="label strong">strong</span></div>
+        <p class="meta">Fatih ilgin. <a href="https://arxiv.org/abs/2607.22282">arXiv:2607.22282</a>.</p>
+        <p><strong>Method and result:</strong> The paper tests template-based parameter extraction on controlled toy thrust distributions using 10,000 pseudo-experiments, comparing Pearson chi2, multinomial likelihood, and interpolated likelihood strategies. It explicitly studies off-grid recovery, binning, template statistics, and model mismatch.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The validation pattern transfers well to heavy-ion template fits, emulator calibration, jet-substructure extractions, and any analysis where closure under the nominal model is easier than robustness under mismatch.</p>
+        <p><strong>Critical assessment:</strong> Strong as methods hygiene, not as a physics extraction. The controlled design and code/ancillary outputs are positives; the next step is realistic shower, hadronization, detector, and nuisance studies.</p>
+      </article>
+      <article class="paper" data-search="2607.21702 simulation-based inference machine learning Bayesian frequentist neural posterior neural likelihood unfolding validation strong AI ML HEP">
+        <div class="paper-head"><h4>An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">Maximilian Dax, Theo Heimel, Gilles Louppe. <a href="https://arxiv.org/abs/2607.21702">arXiv:2607.21702</a>.</p>
+        <p><strong>Method and result:</strong> This is a tutorial-style review of ML-based SBI, covering neural posterior estimation, neural likelihood estimation, Empirical Bayes, unfolding, validation, and limitations across Bayesian and frequentist inference.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Highly relevant to detector unfolding, parameter inference from simulators, global Bayesian model-to-data comparison, and emulator-based heavy-ion calibration.</p>
+        <p><strong>Critical assessment:</strong> Strong as a practical orientation document rather than a new result. Its value is that it discusses validation and limitations explicitly, which is exactly where many physics-SBI applications are weakest.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.22331 SMEFT Pheno Agent natural-language AI agent machine-learning-assisted workflow caution LLM automation">
+        <div class="paper-head"><h4>SMEFT-Pheno-Agent: a natural-language-driven AI agent for machine-learning-assisted Standard Model Effective Field Theory phenomenology</h4><span class="label caution">caution</span></div>
+        <p class="meta">Yu-Chen Guo, Jie Wang, Ji-Chong Yang. <a href="https://arxiv.org/abs/2607.22331">arXiv:2607.22331</a>.</p>
+        <p>The paper has some sensible workflow-safety ideas: locked physical configurations, phase manifests, and delegation of numerical work to MadGraph, Pythia, Delphes, and MLAnalysis. The caution is that the abstract emphasizes orchestration and auditability more than evidence that the agent improves physics reach, reduces errors in realistic analyses, or survives adversarial/edge-case natural-language requests. It is worth watching as infrastructure, but I would not count it as a strong scientific ML contribution yet.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
