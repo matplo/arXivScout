@@ -1,0 +1,162 @@
+{
+  "date": "2026-07-27",
+  "path": "reports/2026-07-27.html",
+  "summary": "Recent arXiv announcements around the Friday-to-Monday window emphasize microscopic jet-quenching theory, heavy-quark transport, finite-temperature lattice methods, quarkonium spin interactions in the QGP, SPS fixed-target finite-muB physics, antinuclei coalescence constrained by ALICE femtoscopy, and analysis-grade AI/statistical workflows. The strongest heavy-ion-theory papers are 2607.22502 and 2607.21729; the strongest transferable AI/statistics papers are 2607.22282 and 2607.21702, with 2607.21689 a notable physics-ML application tied to ALICE correlation data.",
+  "keywords": [
+    "finite formation time",
+    "antenna radiation",
+    "BDMPS-Z",
+    "jet quenching",
+    "heavy-quark diffusion",
+    "non-Markovian Langevin",
+    "finite-temperature lattice QCD",
+    "thermal resonances",
+    "quarkonium spin potential",
+    "resistive magnetohydrodynamics",
+    "SPS fixed target",
+    "finite baryochemical potential",
+    "normalizing-flow surrogate",
+    "antinuclei coalescence",
+    "template inference validation",
+    "simulation-based inference",
+    "SMEFT AI agent caution"
+  ],
+  "arxiv_ids": [
+    "2607.22502",
+    "2607.22403",
+    "2607.22346",
+    "2607.21729",
+    "2607.21879",
+    "2607.22328",
+    "2607.21689",
+    "2607.22282",
+    "2607.21702",
+    "2607.22331"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2607.22502: Finite Formation Time Antenna Radiation: Color Spectators Break Single-Emitter BDMPS-Z",
+  "top_takeaway": "The day is strongest on heavy-ion theory: finite-formation-time antenna radiation and nonperturbative spin-dependent quarkonium potentials both sharpen microscopic QGP probes. The AI/ML value is strongest where validation and uncertainty are explicit, especially template-inference closure tests, SBI validation guidance, and ALICE-constrained neural-flow surrogates for antinuclei coalescence.",
+  "caution_count": 1,
+  "candidate_count_inspected": 43,
+  "papers": [
+    {
+      "title": "Finite Formation Time Antenna Radiation: Color Spectators Break Single-Emitter BDMPS-Z",
+      "authors_short": "Fabio Dominguez, Pablo Guerrero-Rodriguez, Carlos A. Salgado",
+      "author_count": 3,
+      "arxiv_id": "2607.22502",
+      "url": "https://arxiv.org/abs/2607.22502",
+      "category": "Phenomenology",
+      "abstract": "The paper computes in-medium soft-gluon emission from a color-singlet quark-antiquark antenna while including medium interactions during finite antenna formation time. It finds spectator-leg correlations and departures from the instantaneous-formation BDMPS-Z limit.",
+      "tags": ["jet quenching", "antenna radiation", "finite formation time", "BDMPS-Z"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Non-Markovian heavy-quark equilibration and equilibrium correlation function in a thermal medium",
+      "authors_short": "Monisha Nair, Juan Torres-Rincon, Santosh K. Das",
+      "author_count": 3,
+      "arxiv_id": "2607.22403",
+      "url": "https://arxiv.org/abs/2607.22403",
+      "category": "Phenomenology",
+      "abstract": "The work computes charm current-current correlations and diffusion coefficients in Langevin and generalized Langevin frameworks, finding that memory changes transient correlations but not the nonrelativistic diffusion coefficient, while relativistic correlated noise can produce damped oscillatory equilibration.",
+      "tags": ["heavy-quark diffusion", "Langevin", "memory kernel", "Green-Kubo"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Resonances at finite temperature from the lattice",
+      "authors_short": "Jakob Hoffmann, Peter Lowdon, Owe Philipsen",
+      "author_count": 3,
+      "arxiv_id": "2607.22346",
+      "url": "https://arxiv.org/abs/2607.22346",
+      "category": "Theory",
+      "abstract": "The authors use thermoparticles to define two-particle scattering at finite temperature, derive a thermal unitarity relation, and generalize the finite-volume quantization condition for lattice studies of thermally modified resonances.",
+      "tags": ["finite-temperature lattice", "thermal resonances", "quantization condition", "thermoparticles"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Lattice study of spin interactions between heavy quarks in the quark-gluon plasma",
+      "authors_short": "Dibyendu Bala, Olaf Kaczmarek, Sayantan Sharma, Swagatam Tah",
+      "author_count": 4,
+      "arxiv_id": "2607.21729",
+      "url": "https://arxiv.org/abs/2607.21729",
+      "category": "Theory",
+      "abstract": "The paper calculates the spin-dependent O(1/M^2) thermal potential for static heavy quarks, including an HTL perturbative analysis and a first nonperturbative lattice extraction of the imaginary part in quenched QCD near T = 470 MeV.",
+      "tags": ["quarkonium", "spin-dependent potential", "lattice QCD", "QGP"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Momentum anisotropy from Resistive Magnetohydrodynamics",
+      "authors_short": "Khwahish Kushwah, Gabriel S. Denicol",
+      "author_count": 2,
+      "arxiv_id": "2607.21879",
+      "url": "https://arxiv.org/abs/2607.21879",
+      "category": "Theory",
+      "abstract": "The paper derives second-order relativistic resistive MHD equations from the Boltzmann-Vlasov equation for a two-component ultrarelativistic plasma and shows that electric fields can generate sizable momentum anisotropy without a flow gradient.",
+      "tags": ["resistive MHD", "momentum anisotropy", "electric fields", "transport coefficients"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "The future fixed-target program at the CERN SPS",
+      "authors_short": "Enrico Scomparin",
+      "author_count": 1,
+      "arxiv_id": "2607.22328",
+      "url": "https://arxiv.org/abs/2607.22328",
+      "category": "Experiment",
+      "abstract": "A concise SQM 2026 proceedings overview of the CERN SPS fixed-target heavy-ion program, including NA61 and the newly approved NA60+/DiCE measurements targeting QGP physics at finite baryochemical potential.",
+      "tags": ["SPS", "fixed target", "NA60+", "finite-muB QCD"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Light Antinuclei Coalescence: Femtoscopic Constraints via Neural-Flow Surrogates",
+      "authors_short": "M. Korwieser, L. Fabbietti, B. Hashemi, L. Heinrich, M. Mahlein, D. L. Mihaylov, C. S. Zeyn",
+      "author_count": 7,
+      "arxiv_id": "2607.21689",
+      "url": "https://arxiv.org/abs/2607.21689",
+      "category": "AI/ML use / Phenomenology",
+      "abstract": "The paper builds a fast differentiable normalizing-flow surrogate for the CECA femtoscopic source model, fits 49 ALICE proton-proton correlation functions, and reports large reductions in B2 and B3 coalescence-parameter uncertainties relevant to cosmic antinuclei predictions.",
+      "tags": ["normalizing flow", "ALICE femtoscopy", "antinuclei", "coalescence"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Statistical validation of template-based parameter extraction from toy thrust distributions for future FCC-ee studies",
+      "authors_short": "Fatih ilgin",
+      "author_count": 1,
+      "arxiv_id": "2607.22282",
+      "url": "https://arxiv.org/abs/2607.22282",
+      "category": "AI/ML-adjacent statistical inference",
+      "abstract": "The paper benchmarks template-based parameter extraction using toy thrust distributions and 10,000 pseudo-experiments, comparing Pearson chi2, multinomial likelihood, and interpolated-template likelihood estimators under off-grid, binning, template-statistics, and mismatch tests.",
+      "tags": ["template inference", "closure tests", "FCC-ee", "model mismatch"],
+      "assessment": "strong"
+    },
+    {
+      "title": "An Introduction to Bayesian and Frequentist Simulation-Based Inference with Machine Learning",
+      "authors_short": "Maximilian Dax, Theo Heimel, Gilles Louppe",
+      "author_count": 3,
+      "arxiv_id": "2607.21702",
+      "url": "https://arxiv.org/abs/2607.21702",
+      "category": "AI/ML use",
+      "abstract": "A tutorial-style review of ML-based simulation-based inference across Bayesian and frequentist frameworks, including neural posterior and likelihood estimation, Empirical Bayes, unfolding, validation, and limitations.",
+      "tags": ["simulation-based inference", "neural likelihood", "unfolding", "validation"],
+      "assessment": "strong"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "SMEFT-Pheno-Agent: a natural-language-driven AI agent for machine-learning-assisted Standard Model Effective Field Theory phenomenology",
+      "authors_short": "Yu-Chen Guo, Jie Wang, Ji-Chong Yang",
+      "author_count": 3,
+      "arxiv_id": "2607.22331",
+      "url": "https://arxiv.org/abs/2607.22331",
+      "category": "AI/ML use caution",
+      "abstract": "The paper proposes a natural-language-guided Python workflow for SMEFT collider phenomenology with locked configurations, phase manifests, and delegated numerical work to standard tools.",
+      "tags": ["LLM agent", "SMEFT", "workflow automation", "audit trail"],
+      "assessment": "caution"
+    }
+  ]
+}
