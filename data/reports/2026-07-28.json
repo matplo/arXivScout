@@ -1,0 +1,191 @@
+{
+  "date": "2026-07-28",
+  "path": "reports/2026-07-28.html",
+  "summary": "Tuesday's screened arXiv new-list is strongest on heavy-ion longitudinal structure, low-energy Au+Au proton-flow baselines, and analysis-grade AI/ML methods. The most relevant heavy-ion work concerns d+Au longitudinal entropy deposition, a hadronic EOS baseline for 2.4-4.5 GeV Au+Au flow, STAR fixed-target light-hadron spectra, temperature-fluctuation cumulants, and heavy-flavor radial flow. The strongest transferable AI/ML work covers predictive scaling laws for collider foundation models, neural control variates for LO/NLO event generation, symbolic regression for interpretable TMD extraction, and neural operators/PINN evaluation with realistic caveats.",
+  "keywords": [
+    "longitudinal entropy deposition",
+    "d+Au hydrodynamics",
+    "CLVisc",
+    "SMASH afterburner",
+    "low-energy Au+Au flow",
+    "hadronic EOS baseline",
+    "partonic onset",
+    "STAR fixed target",
+    "light hadron spectra",
+    "temperature-fluctuation cumulants",
+    "mean-pT fluctuations",
+    "heavy-quark radial flow",
+    "collider foundation models",
+    "scaling laws",
+    "neural control variates",
+    "negative event weights",
+    "symbolic TMD extraction",
+    "Fourier neural operators",
+    "PDE discovery evaluation",
+    "PINN convergence",
+    "color reconnection caution"
+  ],
+  "arxiv_ids": [
+    "2607.24153",
+    "2607.23195",
+    "2607.24616",
+    "2607.22945",
+    "2607.23499",
+    "2607.23377",
+    "2607.23591",
+    "2607.24710",
+    "2607.23466",
+    "2607.23753",
+    "2607.24726",
+    "2607.24442"
+  ],
+  "total_paper_count": 11,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2607.24153: Study the Longitudinal Entropy Deposition using d+Au Collision",
+  "top_takeaway": "The best heavy-ion paper provides a concrete longitudinal-initial-condition improvement for asymmetric collisions and validates it across several systems. The best AI/ML paper makes collider foundation-model scaling predictive rather than retrospective, with direct planning value for expensive jet-pretraining campaigns.",
+  "caution_count": 1,
+  "candidate_count_inspected": 50,
+  "papers": [
+    {
+      "title": "Study the Longitudinal Entropy Deposition using d+Au Collision",
+      "authors_short": "Zhu Meng, Weiyao Ke, Long-Gang Pang",
+      "author_count": 3,
+      "arxiv_id": "2607.24153",
+      "url": "https://arxiv.org/abs/2607.24153",
+      "category": "Phenomenology",
+      "abstract": "The authors sample deuteron configurations from an ab initio wavefunction and introduce a longitudinal entropy deposition model with a transverse entropy coefficient and binary-collision-dependent rapidity loss. In CLVisc plus SMASH, they reproduce d+Au pseudorapidity distributions, spectra, and flow, and report validation in p+Au, He3+Au, and Au+Au.",
+      "tags": ["longitudinal entropy", "asymmetric collisions", "hydrodynamics", "light ions"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Proton Collectivity in Au+Au Collisions at sqrt(sNN)=2.4-4.5 GeV from a Unified Purely Hadronic EOS without QCD Phase Transition",
+      "authors_short": "Gao-Feng Wei, Shuang-Jie Liu, Yu-Liang Zhao, Qi-Jun Zhi, Zhigang Xiao",
+      "author_count": 5,
+      "arxiv_id": "2607.23195",
+      "url": "https://arxiv.org/abs/2607.23195",
+      "category": "Theory",
+      "abstract": "A purely hadronic transport model with momentum-dependent mean field and K0=230 MeV reproduces proton directed, sideward, and elliptic flow data up to 4.3 GeV, but fails at 4.5 GeV, which the authors interpret as circumstantial evidence for partonic degrees of freedom.",
+      "tags": ["proton flow", "hadronic EOS", "BES", "dense baryonic matter"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Interaction fingerprints in temperature-fluctuation cumulants from the QCD crossover to nuclear liquid-gas criticality",
+      "authors_short": "Debasish Mallick",
+      "author_count": 1,
+      "arxiv_id": "2607.24616",
+      "url": "https://arxiv.org/abs/2607.24616",
+      "category": "Theory",
+      "abstract": "The paper calculates temperature-fluctuation cumulants in ideal, excluded-volume, and van der Waals HRG models and links their behavior along freeze-out to thermodynamic structures in the QCD crossover and nuclear liquid-gas regions.",
+      "tags": ["temperature cumulants", "mean-pT fluctuations", "HRG", "QCD phase diagram"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Light hadron production measurements with Au+Au Collisions from sqrt(sNN)=3.2--4.5 GeV with STAR",
+      "authors_short": "Mathias C. Labonte, for the STAR Collaboration",
+      "author_count": 1,
+      "arxiv_id": "2607.22945",
+      "url": "https://arxiv.org/abs/2607.22945",
+      "category": "Experiment",
+      "abstract": "A STAR SQM proceedings report on fixed-target pi, K, and p spectra at 3.2, 3.5, 3.9, and 4.5 GeV, with blast-wave extraction of kinetic freeze-out temperature and surface velocity.",
+      "tags": ["STAR", "fixed target", "light hadron spectra", "BES-II"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Probing collective behaviour of Heavy Quarks through pT-differential radial flow v0(pT)",
+      "authors_short": "Salvatore Plumari, Maria Lucia Sambataro, Santosh K. Das, Vincenzo Greco",
+      "author_count": 4,
+      "arxiv_id": "2607.23499",
+      "url": "https://arxiv.org/abs/2607.23499",
+      "category": "Phenomenology",
+      "abstract": "A proceedings-level proposal for heavy-flavor pT-differential radial flow v0(pT) as a probe of heavy-quark coupling to the QGP, studied with Langevin dynamics coupled to relativistic Boltzmann transport.",
+      "tags": ["heavy flavor", "radial flow", "diffusion coefficient", "hadronization"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Predict before you train: Scaling Laws for particle physics foundation models",
+      "authors_short": "Jan-Lucas Uslu, Benjamin Nachman, Christopher Re",
+      "author_count": 3,
+      "arxiv_id": "2607.23377",
+      "url": "https://arxiv.org/abs/2607.23377",
+      "category": "AI/ML use",
+      "abstract": "The paper fits scaling laws on small collider-jet transformers and predicts the loss of models trained with more than 100 times more compute to within one percent, then connects pretraining loss to downstream tagging performance.",
+      "tags": ["foundation models", "scaling laws", "jets", "tagging"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural Control Variates at LO and NLO",
+      "authors_short": "Theo Heimel, Tilman Plehn, Rebecca Revelli, Sophia Vent, Ramon Winterhalder",
+      "author_count": 5,
+      "arxiv_id": "2607.23591",
+      "url": "https://arxiv.org/abs/2607.23591",
+      "category": "AI/ML use",
+      "abstract": "Signed neural control variates built from two normalizing flows reduce event-weight spread and mitigate negative weights in LO and NLO integration and event generation, with the NLO construction interpreted as a trainable complement to subtraction terms.",
+      "tags": ["normalizing flows", "control variates", "NLO", "negative weights"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Symbolic Extraction of Non-Perturbative Transverse-Momentum-Dependent Distributions from Drell-Yan Data",
+      "authors_short": "Cole Granger, Alessandro Bacchetta, Valerio Bertone, Chiara Bissolotti, Matteo Cerutti, Marco Radici, Simone Rodini, Lorenzo Rossi, Cristiano Fanelli",
+      "author_count": 9,
+      "arxiv_id": "2607.24710",
+      "url": "https://arxiv.org/abs/2607.24710",
+      "category": "AI/ML use / Phenomenology",
+      "abstract": "A neural-network TMD fit to Drell-Yan cross sections is converted into compact analytical expressions by symbolic regression, achieving chi2/ndf=1.040 over 482 points with nine free numerical constants.",
+      "tags": ["symbolic regression", "TMD", "Drell-Yan", "interpretable QCD"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Extending Fourier Neural Operators for Modeling Parameterized and Coupled PDEs",
+      "authors_short": "Cheng Jing, Uvini Balasuriya Mudiyanselage, Abhishek Verma, Kallol Bera, Shahid Rauf, Kookjin Lee",
+      "author_count": 6,
+      "arxiv_id": "2607.23466",
+      "url": "https://arxiv.org/abs/2607.23466",
+      "category": "AI/ML use",
+      "abstract": "The paper extends Fourier neural operators with hypernetwork parameter conditioning and designs for coupled systems, with benchmarks including capacitively coupled plasma equations and Gray-Scott dynamics.",
+      "tags": ["Fourier neural operator", "PDE surrogate", "parameter conditioning", "coupled systems"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "On the post-hoc Evaluation of PDE Discovery: A Multifaceted Challenge of Scientific Advancement",
+      "authors_short": "Baptiste Mathevon, Farah Cherfaoui, Amaury Habrard, Marc Sebban",
+      "author_count": 4,
+      "arxiv_id": "2607.23753",
+      "url": "https://arxiv.org/abs/2607.23753",
+      "category": "AI/ML use caution / transfer",
+      "abstract": "A taxonomy and discussion of PDE-discovery evaluation metrics, emphasizing predictive accuracy, physical consistency, interpretability, and out-of-distribution generalization.",
+      "tags": ["PDE discovery", "evaluation", "physical consistency", "OOD generalization"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Global Convergence of DGM and PINN Algorithms for Solving Nonlinear PDEs",
+      "authors_short": "Justin Sirignano, Konstantinos Spiliopoulos, Samuel Cohen",
+      "author_count": 3,
+      "arxiv_id": "2607.24726",
+      "url": "https://arxiv.org/abs/2607.24726",
+      "category": "AI/ML use / theory transfer",
+      "abstract": "The authors prove global convergence for DGM/PINN training by gradient descent for a class of semi-linear PDEs nonlinear in the solution and first derivative.",
+      "tags": ["PINN", "DGM", "global convergence", "nonlinear PDE"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Exploring the Effects of Color Reconnection on Net-Charge Fluctuations in pp Collisions at sqrt(s)=2.76 TeV using PYTHIA Monash",
+      "authors_short": "Dibakar Dhar, Tumpa Biswas, Zubayer Ahammed, Prabir Kumar Haldar",
+      "author_count": 4,
+      "arxiv_id": "2607.24442",
+      "url": "https://arxiv.org/abs/2607.24442",
+      "category": "Caution",
+      "abstract": "The paper scans PYTHIA Monash color-reconnection configurations for net-charge fluctuations in pp collisions and compares them to ALICE data, finding that current settings overestimate the fluctuations and that CR induces a fixed-multiplicity shift.",
+      "tags": ["color reconnection", "net-charge fluctuations", "PYTHIA", "ALICE pp"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. The available GitHub app tools in this run exposed create-file and read-file actions, but no safe replace-existing-file action for refreshing index.html, so the homepage index was not updated. Existing assets/site.css and assets/filter.js were present and left unchanged."
+}
