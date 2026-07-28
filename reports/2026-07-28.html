@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-28</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-28 Briefing</h1>
+    <p class="dek">Tuesday arXiv new-list scan, screened for heavy-ion collision physics and AI/ML methods with credible transfer value for HEP or nuclear physics. Candidate triage emphasized abstracts first and selected only papers with clear scientific leverage or a useful caution.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion entry is <a href="https://arxiv.org/abs/2607.24153">2607.24153</a>: a concrete 3+1D hydro plus hadronic afterburner improvement for longitudinal entropy deposition in d+Au, with validation also claimed across p+Au, He3+Au, and Au+Au.</li>
+        <li><a href="https://arxiv.org/abs/2607.23195">2607.23195</a> is a useful dense-matter baseline: a purely hadronic transport model reproduces proton flow data up to 4.3 GeV but fails at 4.5 GeV, giving a cautious handle on the possible onset of partonic degrees of freedom.</li>
+        <li><a href="https://arxiv.org/abs/2607.24616">2607.24616</a> proposes temperature-fluctuation cumulants as a bridge between mean-pT fluctuations and thermodynamic structures in the QCD phase diagram; the idea is promising but depends on experimental control of fluctuation backgrounds.</li>
+        <li>The strongest AI/ML paper is <a href="https://arxiv.org/abs/2607.23377">2607.23377</a>, which gives predictive scaling laws for collider-jet foundation models and connects pretraining loss to downstream tagging performance.</li>
+        <li>Two AI/ML-for-physics papers are especially transferable: <a href="https://arxiv.org/abs/2607.23591">2607.23591</a> for NLO event generation and negative weights, and <a href="https://arxiv.org/abs/2607.24710">2607.24710</a> for interpretable symbolic extraction of nonperturbative TMDs from data.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.23195 proton collectivity Au+Au 2.4 4.5 GeV hadronic EOS phase transition directed flow elliptic flow HADES E895 STAR strong theory">
+        <div class="paper-head"><h4>Proton Collectivity in Au+Au Collisions at sqrt(sNN)=2.4-4.5 GeV from a Unified Purely Hadronic EOS without QCD Phase Transition</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gao-Feng Wei, Shuang-Jie Liu, Yu-Liang Zhao, Qi-Jun Zhi, Zhigang Xiao. <a href="https://arxiv.org/abs/2607.23195">arXiv:2607.23195</a>.</p>
+        <p><strong>Summary:</strong> The authors use a purely hadronic transport model with a momentum-dependent mean field and K0=230 MeV to compute proton directed, sideward, and elliptic flows in Au+Au collisions at sqrt(sNN)=2.4-4.5 GeV. They report quantitative agreement with HADES, E895, and STAR flow data up to 4.3 GeV, followed by failure at 4.5 GeV.</p>
+        <p><strong>Why it matters:</strong> A credible hadronic baseline is essential before interpreting BES/fixed-target flow deviations as evidence for partonic degrees of freedom or EOS softening at high baryon density.</p>
+        <p><strong>Critical assessment:</strong> Strong within its stated scope because it confronts multiple flow observables and experiments in the dense-baryonic regime. The partonic-onset interpretation remains circumstantial; robustness against alternative mean fields, in-medium cross sections, and centrality/systematic uncertainties will decide how much weight to give the 4.5 GeV discrepancy.</p>
+      </article>
+      <article class="paper" data-search="2607.24616 temperature fluctuation cumulants mean pT HRG excluded volume van der Waals QCD crossover nuclear liquid gas criticality mixed theory">
+        <div class="paper-head"><h4>Interaction fingerprints in temperature-fluctuation cumulants from the QCD crossover to nuclear liquid-gas criticality</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Debasish Mallick. <a href="https://arxiv.org/abs/2607.24616">arXiv:2607.24616</a>.</p>
+        <p><strong>Summary:</strong> The paper calculates temperature-fluctuation cumulants c2, c3, and c4 in ideal HRG, excluded-volume HRG, and van der Waals HRG models. Along the freeze-out curve, the models separate strongly at lower beam energies, and the van der Waals model shows features associated with the liquid-gas Widom line.</p>
+        <p><strong>Why it matters:</strong> The proposed connection to event-by-event mean-pT fluctuations could make thermodynamic response functions more directly observable in beam-energy-scan data.</p>
+        <p><strong>Critical assessment:</strong> Interesting and physically motivated, but still model-level. It needs a careful mapping from temperature cumulants to measured mean-pT cumulants, including volume fluctuations, acceptance, hadronic afterburning, and noncritical correlations.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.22945 STAR light hadron production Au+Au fixed target 3.2 4.5 GeV BES-II spectra blast wave kinetic freeze-out EOS experiment mixed">
+        <div class="paper-head"><h4>Light hadron production measurements with Au+Au Collisions from sqrt(sNN)=3.2--4.5 GeV with STAR</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Mathias C. Labonte, for the STAR Collaboration. <a href="https://arxiv.org/abs/2607.22945">arXiv:2607.22945</a>.</p>
+        <p><strong>Summary:</strong> This SQM proceedings contribution reports STAR fixed-target light-hadron spectra for pi, K, and p as functions of pT, rapidity, and centrality at sqrt(sNN)=3.2, 3.5, 3.9, and 4.5 GeV. Blast-wave fits are used to infer kinetic freeze-out temperature and surface velocity.</p>
+        <p><strong>Why it matters:</strong> These low-energy BES-II measurements are direct inputs to dense-baryonic-matter modeling and EOS constraints, especially around high baryochemical potential.</p>
+        <p><strong>Critical assessment:</strong> Important experimental input, but the arXiv item is a short proceedings summary rather than a full analysis paper. The science value is clear; quantitative assessment awaits the complete spectra, uncertainties, correlations, and model-comparison details.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.24153 longitudinal entropy deposition d+Au CLVisc SMASH hydrodynamics ab initio deuteron rapidity loss p+Au He3+Au Au+Au light ions strong phenomenology">
+        <div class="paper-head"><h4>Study the Longitudinal Entropy Deposition using d+Au Collision</h4><span class="label strong">strong</span></div>
+        <p class="meta">Zhu Meng, Weiyao Ke, Long-Gang Pang. <a href="https://arxiv.org/abs/2607.24153">arXiv:2607.24153</a>.</p>
+        <p><strong>Summary:</strong> The authors improve initial-state modeling for asymmetric collisions by sampling deuteron configurations from an ab initio wavefunction and adding a longitudinal entropy deposition model with a transverse entropy coefficient beta and binary-collision-dependent rapidity loss. Using CLVisc plus SMASH, they reproduce d+Au pseudorapidity distributions across five centralities, plus pT spectra and vn, and claim validation in p+Au, He3+Au, and Au+Au.</p>
+        <p><strong>Why it matters:</strong> Longitudinal structure is a weak point in many hydro descriptions, and asymmetric/light-ion systems are becoming important for constraining both initial conditions and nuclear structure.</p>
+        <p><strong>Critical assessment:</strong> Strong and directly relevant. The breadth of validation is encouraging, but the universality claim should be tested against more differential longitudinal decorrelation and identified-particle observables, not only bulk one- and two-dimensional projections.</p>
+      </article>
+      <article class="paper" data-search="2607.23499 heavy quark radial flow v0 pT charm Langevin Boltzmann transport diffusion coefficient Ds hadronization Lambda_c D mesons mixed phenomenology">
+        <div class="paper-head"><h4>Probing collective behaviour of Heavy Quarks through pT-differential radial flow v0(pT)</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Salvatore Plumari, Maria Lucia Sambataro, Santosh K. Das, Vincenzo Greco. <a href="https://arxiv.org/abs/2607.23499">arXiv:2607.23499</a>.</p>
+        <p><strong>Summary:</strong> This proceedings paper proposes heavy-flavor pT-differential radial flow v0(pT) as a probe of heavy-quark coupling to the expanding QGP. In an event-by-event Langevin plus relativistic Boltzmann transport setup, the observable is sensitive to the temperature dependence of Ds(T) at intermediate pT and to hadronization at low pT.</p>
+        <p><strong>Why it matters:</strong> Heavy-flavor transport coefficients remain a major QGP target, and an observable sensitive to Ds(T) in a different way from v2 and RAA would be useful.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but still a compact proceedings-level proposal. The observable needs experimental feasibility studies, covariance with existing heavy-flavor observables, and robustness checks against hadronization and background modeling.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.23377 scaling laws particle physics foundation models collider jets transformer pretraining tagging quark gluon top background rejection strong AI ML HEP">
+        <div class="paper-head"><h4>Predict before you train: Scaling Laws for particle physics foundation models</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jan-Lucas Uslu, Benjamin Nachman, Christopher Re. <a href="https://arxiv.org/abs/2607.23377">arXiv:2607.23377</a>.</p>
+        <p><strong>Method and result:</strong> The authors fit joint model-and-data scaling laws on small generic jet transformers spanning three orders of magnitude in compute, then predict the loss of models trained with more than 100 times more compute to within one percent. They also connect lower pretraining loss to improved downstream top-tagging and quark/gluon discrimination.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is directly useful for planning collider foundation models and could transfer to heavy-ion jet, event, and detector pretraining where large-model training costs are nontrivial.</p>
+        <p><strong>Critical assessment:</strong> Strong because it tests prediction beyond the fit range and releases models/recipe/code. The main limitation is model-family and task dependence: scaling forecasts need revalidation for detector-level inputs, pileup/heavy-ion backgrounds, and observables beyond standard jet tagging.</p>
+      </article>
+      <article class="paper" data-search="2607.23591 neural control variates LO NLO normalizing flows negative weights phase space integration event generation trainable subtraction strong AI ML HEP">
+        <div class="paper-head"><h4>Neural Control Variates at LO and NLO</h4><span class="label strong">strong</span></div>
+        <p class="meta">Theo Heimel, Tilman Plehn, Rebecca Revelli, Sophia Vent, Ramon Winterhalder. <a href="https://arxiv.org/abs/2607.23591">arXiv:2607.23591</a>.</p>
+        <p><strong>Method and result:</strong> The paper uses signed neural control variates, built from two normalizing flows, to reduce event-weight spread and mitigate negative weights in LO and NLO phase-space integration and event generation. For NLO, the conditional control variate acts like a trainable complement to standard subtraction schemes.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Strong transfer to HEP event generation and potentially to expensive heavy-ion hard-probe calculations where weighted samples and integration cost are painful.</p>
+        <p><strong>Critical assessment:</strong> Strong and methodologically well targeted. Key remaining questions are numerical stability, failure modes in high-multiplicity final states, and how easily the method can be integrated into production generator workflows with systematic uncertainty control.</p>
+      </article>
+      <article class="paper" data-search="2607.24710 symbolic extraction nonperturbative TMD Drell-Yan neural network symbolic regression NNLLL chi2 QCD interpretable strong AI ML phenomenology">
+        <div class="paper-head"><h4>Symbolic Extraction of Non-Perturbative Transverse-Momentum-Dependent Distributions from Drell-Yan Data</h4><span class="label strong">strong</span></div>
+        <p class="meta">Cole Granger, Alessandro Bacchetta, Valerio Bertone, Chiara Bissolotti, Matteo Cerutti, Marco Radici, Simone Rodini, Lorenzo Rossi, Cristiano Fanelli. <a href="https://arxiv.org/abs/2607.24710">arXiv:2607.24710</a>.</p>
+        <p><strong>Method and result:</strong> A factorized neural network is fit directly to Drell-Yan cross-section data at high resummation accuracy, then symbolic regression extracts compact analytic forms from the learned components. The selected formula uses nine free numerical constants and achieves chi2/ndf=1.040 on 482 points, retaining a nontrivial x-bT term.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Relevant to TMD phenomenology, EIC/LHC/RHIC analyses, and more broadly to turning flexible ML fits into interpretable parametrizations for QCD and nuclear PDFs/TMDs.</p>
+        <p><strong>Critical assessment:</strong> Strong because it balances flexibility, interpretability, and a clear goodness-of-fit criterion. Watch for robustness under dataset variations, correlated systematics, and whether the symbolic form remains stable when new data are added.</p>
+      </article>
+      <article class="paper" data-search="2607.23466 Fourier neural operators parameterized coupled PDEs plasma equations Gray-Scott hypernetwork modulation ICLR transfer AI ML scientific machine learning">
+        <div class="paper-head"><h4>Extending Fourier Neural Operators for Modeling Parameterized and Coupled PDEs</h4><span class="label mixed">strong transfer</span></div>
+        <p class="meta">Cheng Jing, Uvini Balasuriya Mudiyanselage, Abhishek Verma, Kallol Bera, Shahid Rauf, Kookjin Lee. <a href="https://arxiv.org/abs/2607.23466">arXiv:2607.23466</a>.</p>
+        <p><strong>Method and result:</strong> The paper extends Fourier neural operators with hypernetwork-based parameter conditioning and design choices for coupled variables. Benchmarks include one-dimensional capacitively coupled plasma equations and Gray-Scott dynamics, with reported 55-72 percent lower errors than strong baselines.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Transfer value is credible for surrogate modeling of parameterized hydrodynamics, transport, detector response, and plasma-like PDE systems where coupled fields and changing parameters matter.</p>
+        <p><strong>Critical assessment:</strong> Strong as scientific-ML infrastructure, especially with ICLR acceptance, but not HEP-specific. Heavy-ion usefulness depends on handling relativistic geometry, shocks/discontinuities, conservation constraints, and uncertainty quantification.</p>
+      </article>
+      <article class="paper" data-search="2607.23753 PDE discovery evaluation metrics taxonomy predictive accuracy physical consistency interpretability OOD generalization caution transfer AI ML">
+        <div class="paper-head"><h4>On the post-hoc Evaluation of PDE Discovery: A Multifaceted Challenge of Scientific Advancement</h4><span class="label mixed">useful caution</span></div>
+        <p class="meta">Baptiste Mathevon, Farah Cherfaoui, Amaury Habrard, Marc Sebban. <a href="https://arxiv.org/abs/2607.23753">arXiv:2607.23753</a>.</p>
+        <p><strong>Method and result:</strong> This review/taxonomy argues that PDE discovery evaluation must jointly consider predictive accuracy, physical consistency, interpretability, and out-of-distribution generalization, and that existing metrics only partially address those goals.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Valuable for vetting symbolic-regression or physics-informed discovery claims in hydrodynamics, transport, detector calibration, and effective-model construction.</p>
+        <p><strong>Critical assessment:</strong> Useful because it pushes against overinterpretation of discovered equations. It is not a new algorithm or physics result, but it is a good guardrail for evaluating future ML-for-physics claims.</p>
+      </article>
+      <article class="paper" data-search="2607.24726 global convergence DGM PINN nonlinear PDEs semi-linear gradient descent scientific ML transfer theory">
+        <div class="paper-head"><h4>Global Convergence of DGM and PINN Algorithms for Solving Nonlinear PDEs</h4><span class="label mixed">mixed transfer</span></div>
+        <p class="meta">Justin Sirignano, Konstantinos Spiliopoulos, Samuel Cohen. <a href="https://arxiv.org/abs/2607.24726">arXiv:2607.24726</a>.</p>
+        <p><strong>Method and result:</strong> The authors prove global convergence for DGM/PINN training with gradient descent for a class of semi-linear PDEs nonlinear in the solution and first derivative.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Conceptual transfer to PINN-based solvers for transport and field equations, especially where guarantees are currently weaker than empirical performance claims.</p>
+        <p><strong>Critical assessment:</strong> Mathematically valuable, but the transfer is bounded by the PDE class and assumptions. It should not be read as a blanket guarantee for realistic relativistic hydrodynamics, kinetic theory, or detector inverse problems.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.24442 color reconnection net charge fluctuations pp PYTHIA Monash ALICE MPICR caution">
+        <div class="paper-head"><h4>Exploring the Effects of Color Reconnection on Net-Charge Fluctuations in pp Collisions at sqrt(s)=2.76 TeV using PYTHIA Monash</h4><span class="label caution">caution</span></div>
+        <p class="meta">Dibakar Dhar, Tumpa Biswas, Zubayer Ahammed, Prabir Kumar Haldar. <a href="https://arxiv.org/abs/2607.24442">arXiv:2607.24442</a>.</p>
+        <p>The paper is useful as a PYTHIA sensitivity study: it checks color-reconnection configurations against ALICE net-charge fluctuation data and includes a fixed-multiplicity NoCR comparison. The caution is interpretive. A PYTHIA Monash color-reconnection scan in pp can diagnose model behavior, but it should not be oversold as direct evidence about heavy-ion critical fluctuations or QGP dynamics without stronger baselines, systematic retuning, and broader data comparisons.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
