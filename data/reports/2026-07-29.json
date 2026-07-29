@@ -1,0 +1,131 @@
+{
+  "date": "2026-07-29",
+  "path": "reports/2026-07-29.html",
+  "summary": "Wednesday's screened arXiv new-list is strongest on weak-field Color Glass Condensate theory, radioactive-beam femtoscopy methods, light-ion jet-quenching systematics, and physics-aware AI/ML for detector simulation and weak-label mixture learning. The main recurring topics are early-time glasma energy-momentum tensors, proton-proton femtoscopy in neutron-rich Sn+Sn collisions, path-length dependence of parton energy loss across O+O to Pb+Pb, calorimeter diffusion-surrogate validation, and simplex geometry for label-scarce collider classification.",
+  "keywords": [
+    "Color Glass Condensate",
+    "weak-field glasma",
+    "energy-momentum tensor",
+    "MV model",
+    "radioactive-beam femtoscopy",
+    "SπRIT TPC",
+    "track merging and splitting",
+    "Sn+Sn collisions",
+    "parton energy loss",
+    "path-length exponent",
+    "O+O Ne+Ne Xe+Xe Pb+Pb",
+    "charged-particle RAA",
+    "calorimeter diffusion models",
+    "physics-guided generative models",
+    "Correlation Frobenius Distance",
+    "GradBlend",
+    "simplex demixing",
+    "weak supervision",
+    "multiclass CWoLa",
+    "label-scarce physics",
+    "few-gluon caution"
+  ],
+  "arxiv_ids": [
+    "2607.25137",
+    "2607.24815",
+    "2607.25727",
+    "2607.25060",
+    "2607.24921",
+    "2607.24943",
+    "2607.25017"
+  ],
+  "total_paper_count": 6,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2607.25060: Lantern: Conflict-Aware Gradient Blending for Physics-Guided Diffusion Models in Calorimeter Simulation",
+  "top_takeaway": "The most practically valuable AI/ML contribution is Lantern, because it demonstrates both a useful calorimeter-simulation improvement and a failure mode for naive physics-loss blending. On the heavy-ion side, the SπRIT femtoscopy paper is the strongest experimental groundwork, while the weak-field CGC paper is the cleanest theory result.",
+  "caution_count": 1,
+  "candidate_count_inspected": 38,
+  "papers": [
+    {
+      "title": "Analytic and Approximate Solutions to Color Glass Condensate in the Classical Weak-Field Limit",
+      "authors_short": "S. Robicheaux, R. J. Fries",
+      "author_count": 2,
+      "arxiv_id": "2607.25137",
+      "url": "https://arxiv.org/abs/2607.25137",
+      "category": "Theory",
+      "abstract": "The paper studies two-point functions and the energy-momentum tensor of classical gluon fields produced after light-cone color-charge-sheet collisions in the weak-field limit. It derives time dependence for a general nuclear gluon distribution, includes the MV model as a special case, and compares closed-form MV results with an improved Gaussian model that has better UV and IR behavior.",
+      "tags": ["CGC", "weak-field glasma", "energy-momentum tensor", "MV model"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Femtoscopy Measurement with SπRIT TPC in Radioactive BeamHeavy-ion Collisions",
+      "authors_short": "Y. J. Wang, C. K. Tam, Z. G. Xiao, W. G. Lynch, C. Y. Tsang, and 62 others",
+      "author_count": 67,
+      "arxiv_id": "2607.24815",
+      "url": "https://arxiv.org/abs/2607.24815",
+      "category": "Experiment",
+      "abstract": "The authors report proton-proton femtoscopy in 270 MeV/u 132Sn+124Sn radioactive-beam heavy-ion collisions using the SπRIT TPC. They introduce a correction scheme for track merging and splitting in a rectangular TPC inside a dipole magnet, evaluate angular-acceptance effects, and establish a systematic uncertainty framework.",
+      "tags": ["femtoscopy", "SπRIT TPC", "radioactive beams", "isospin-rich collisions"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Path-length dependence of parton energy loss across collision systems: a Bayesian analysis of charged-particle RAA, consistent with a universal exponent from O+O to Pb+Pb",
+      "authors_short": "Fouad A. Majeed, Hussein Ali Hussein Al Naffakh, Sarah M. Obaid, Muntaha Abdullah Reishaan",
+      "author_count": 4,
+      "arxiv_id": "2607.25727",
+      "url": "https://arxiv.org/abs/2607.25727",
+      "category": "Phenomenology",
+      "abstract": "The paper jointly analyzes CMS charged-particle nuclear modification factors in O+O, Ne+Ne, Xe+Xe, and Pb+Pb to infer an effective system-size/path-length exponent for parton energy loss. It reports n = 1.78 with statistical and systematic uncertainties, Bayesian evidence favoring a radiative-like exponent, and evidence for nonzero energy loss in O+O.",
+      "tags": ["jet quenching", "path-length dependence", "light ions", "Bayesian analysis"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Lantern: Conflict-Aware Gradient Blending for Physics-Guided Diffusion Models in Calorimeter Simulation",
+      "authors_short": "Farzana Yasmin Ahmad, Vanamala Venkataswamy, Geoffrey Fox",
+      "author_count": 3,
+      "arxiv_id": "2607.25060",
+      "url": "https://arxiv.org/abs/2607.25060",
+      "category": "AI/ML use",
+      "abstract": "The paper targets fast calorimeter shower simulation with diffusion models and argues that denoising loss alone can fit showers statistically while missing physics structure. It introduces Correlation Frobenius Distance for layer- and voxel-scale correlation fidelity, plus physics-aware auxiliary losses based on counting-statistics residuals and graph Laplacian detector geometry.",
+      "tags": ["calorimeter simulation", "diffusion models", "physics-guided ML", "gradient conflict"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Simplex Demixing: Disentangling Multiple Light-Flavor Jets at Colliders",
+      "authors_short": "Gregorio de la Fuente, Jesse Thaler",
+      "author_count": 2,
+      "arxiv_id": "2607.24921",
+      "url": "https://arxiv.org/abs/2607.24921",
+      "category": "AI/ML use",
+      "abstract": "This paper generalizes data-driven quark/gluon topic modeling to more than two jet categories. A classifier trained on multiple mixtures is mapped into a bounded simplex whose vertices correspond to latent categories, then tested on synthetic down/up/gluon mixtures and a more realistic dijet tag-and-probe strategy.",
+      "tags": ["weak supervision", "jet flavor", "simplex demixing", "topic modeling"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Multiclass Classification without Labels via Posterior Simplex Geometry",
+      "authors_short": "Raphaël Bonnet-Guerrini, Johann Ioannou-Nikolaides, Troels Petersen, Vincenzo Piuri",
+      "author_count": 4,
+      "arxiv_id": "2607.24943",
+      "url": "https://arxiv.org/abs/2607.24943",
+      "category": "AI/ML use",
+      "abstract": "The paper extends Classification without Labels from binary mixtures to multiclass mixture learning. It proves that the Bayes-optimal mixture classifier maps examples into a simplex in posterior space and uses either post-hoc simplex fitting or a bottleneck architecture to recover latent classes and fractions.",
+      "tags": ["CWoLa", "multiclass weak labels", "posterior simplex", "label-scarce analysis"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Few-gluon interactions and multipole radiation in high energy nuclear collisions",
+      "authors_short": "Thomas A. Trainor",
+      "author_count": 1,
+      "arxiv_id": "2607.25017",
+      "url": "https://arxiv.org/abs/2607.25017",
+      "category": "Caution",
+      "abstract": "The paper argues that jet production and few-gluon multipole radiation can describe spectra, angular correlations, and quadrupole-like structures across p-p, p-Pb, and A-B systems without invoking dense medium formation, multiple scattering, QGP droplets, or hydrodynamics.",
+      "tags": ["few-gluon radiation", "QGP skepticism", "jet correlations", "overclaim risk"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. The homepage index was found stale for 2026-07-28 already; in this run the exposed GitHub app actions did not include a safe contents-API replacement action for index.html, and the available low-level tree path lacked a way to read the current base tree SHA, so index.html was not refreshed."
+}
