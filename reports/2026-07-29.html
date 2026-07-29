@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-29</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-29 Briefing</h1>
+    <p class="dek">Wednesday arXiv new-list scan, screened for heavy-ion collision physics and AI/ML methods with credible transfer value for HEP or nuclear physics. Triage emphasized abstracts first, with deeper inspection for the most relevant or potentially overclaimed items.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The cleanest heavy-ion theory contribution is <a href="https://arxiv.org/abs/2607.25137">2607.25137</a>, which derives analytic and controlled approximate weak-field CGC results for early-time energy-momentum tensors and clarifies large-time scaling.</li>
+        <li><a href="https://arxiv.org/abs/2607.24815">2607.24815</a> is the strongest experimental heavy-ion item: it demonstrates proton-proton femtoscopy with the SπRIT TPC in neutron-rich radioactive-beam Sn+Sn collisions, including track-merging/splitting corrections and systematic-uncertainty treatment.</li>
+        <li><a href="https://arxiv.org/abs/2607.25727">2607.25727</a> is directly topical for light-ion jet quenching, but its abstract-level claim of decisive model selection from system-size scaling should be treated cautiously until the assumptions behind density-path-length degeneracy, baseline construction, and correlations are scrutinized.</li>
+        <li>The best AI/ML paper for HEP operations is <a href="https://arxiv.org/abs/2607.25060">2607.25060</a>, a calorimeter diffusion-surrogate study that adds a correlation metric and shows how naive physics-loss blending can degrade shower fidelity.</li>
+        <li>Two weak-label learning papers, <a href="https://arxiv.org/abs/2607.24921">2607.24921</a> and <a href="https://arxiv.org/abs/2607.24943">2607.24943</a>, are particularly relevant to collider and heavy-ion workflows where pure labels are unavailable and samples are mixture-enriched rather than truth-labeled.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.25137 color glass condensate weak-field limit classical gluon field energy momentum tensor McLerran Venugopalan improved Gaussian early time heavy nuclei strong theory">
+        <div class="paper-head"><h4>Analytic and Approximate Solutions to Color Glass Condensate in the Classical Weak-Field Limit</h4><span class="label strong">strong</span></div>
+        <p class="meta">S. Robicheaux, R. J. Fries. <a href="https://arxiv.org/abs/2607.25137">arXiv:2607.25137</a>.</p>
+        <p><strong>Abstract:</strong> The paper studies two-point functions and the energy-momentum tensor of classical gluon fields produced after light-cone color-charge-sheet collisions in the weak-field limit. It derives time dependence for a general nuclear gluon distribution, includes the MV model as a special case, and compares closed-form MV results with an improved Gaussian model that has better UV and IR behavior.</p>
+        <p><strong>Summary:</strong> The main physics result is a set of analytic and approximate expressions for early glasma-like energy density and pressures, including large-time behavior such as energy density and transverse pressure scaling as 1/tau and longitudinal pressure as 1/tau^3. The work is formal, but it addresses the initial non-equilibrium stage that anchors later hydrodynamic modeling.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion initial-condition theory benefits from solvable limits that make assumptions explicit and can benchmark numerical CGC/glasma implementations.</p>
+        <p><strong>Critical assessment:</strong> Strong as theory groundwork. Its phenomenological reach is limited by the weak-field and idealized infinite-sheet assumptions, but the controlled derivations and model comparison make it more valuable than a purely numerical parameter scan.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.24815 SπRIT TPC femtoscopy radioactive beam heavy-ion collisions proton proton correlation Sn132 Sn124 track merging splitting isospin experiment strong">
+        <div class="paper-head"><h4>Femtoscopy Measurement with SπRIT TPC in Radioactive BeamHeavy-ion Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Y. J. Wang, C. K. Tam, Z. G. Xiao, W. G. Lynch, C. Y. Tsang, and 62 others. <a href="https://arxiv.org/abs/2607.24815">arXiv:2607.24815</a>.</p>
+        <p><strong>Abstract:</strong> The authors report proton-proton femtoscopy in 270 MeV/u 132Sn+124Sn radioactive-beam heavy-ion collisions using the SπRIT TPC. They introduce a correction scheme for track merging and splitting in a rectangular TPC inside a dipole magnet, evaluate angular-acceptance effects, and establish a systematic uncertainty framework.</p>
+        <p><strong>Summary:</strong> This is more a methods-and-feasibility paper than a final equation-of-state result, but it demonstrates that small-relative-momentum correlation functions can be reconstructed reliably in a technically difficult radioactive-beam environment.</p>
+        <p><strong>Why it matters:</strong> Femtoscopy in isospin-asymmetric systems can constrain emission geometry and space-time dynamics at intermediate energies, where nuclear symmetry energy and transport dynamics are central questions.</p>
+        <p><strong>Critical assessment:</strong> Strong experimental groundwork. The immediate physics interpretation is modest, but the correction and uncertainty machinery is exactly the kind of validation needed before high-precision femtoscopy claims in rectangular TPC geometries.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.25727 parton energy loss path length RAA Bayesian O+O Ne+Ne Xe+Xe Pb+Pb radiative collisional strong coupling light ions jet quenching mixed caution phenomenology">
+        <div class="paper-head"><h4>Path-length dependence of parton energy loss across collision systems: a Bayesian analysis of charged-particle RAA, consistent with a universal exponent from O+O to Pb+Pb</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Fouad A. Majeed, Hussein Ali Hussein Al Naffakh, Sarah M. Obaid, Muntaha Abdullah Reishaan. <a href="https://arxiv.org/abs/2607.25727">arXiv:2607.25727</a>.</p>
+        <p><strong>Abstract:</strong> The paper jointly analyzes CMS charged-particle nuclear modification factors in O+O, Ne+Ne, Xe+Xe, and Pb+Pb to infer an effective system-size/path-length exponent for parton energy loss. It reports n = 1.78 with statistical and systematic uncertainties, Bayesian evidence favoring a radiative-like exponent, and evidence for nonzero energy loss in O+O.</p>
+        <p><strong>Summary:</strong> The question is important: light-ion data can test how suppression turns on with system size. The use of Bayesian model comparison and many analysis variants is a good sign, but the abstract itself acknowledges degeneracy between medium density and path length.</p>
+        <p><strong>Why it matters:</strong> If robust, a cross-system constraint on the effective path-length exponent would sharpen jet-quenching mechanism discussions and the interpretation of O+O/Ne+Ne runs.</p>
+        <p><strong>Critical assessment:</strong> Mixed and worth caution. The reported conclusion is potentially important, but claims such as excluding purely collisional energy loss are only as strong as the geometry, spectral baseline, treatment of correlated experimental uncertainties, and mapping between system-size and microscopic path length.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <p>No heavy-ion-specific AI/ML paper from this scan was strong enough for inclusion. The HEP AI/ML papers below are the more credible transfer candidates.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.25060 Lantern calorimeter simulation diffusion model physics-guided GradBlend correlation Frobenius distance CaloChallenge shower surrogate strong AI ML HEP detector simulation">
+        <div class="paper-head"><h4>Lantern: Conflict-Aware Gradient Blending for Physics-Guided Diffusion Models in Calorimeter Simulation</h4><span class="label strong">strong</span></div>
+        <p class="meta">Farzana Yasmin Ahmad, Vanamala Venkataswamy, Geoffrey Fox. <a href="https://arxiv.org/abs/2607.25060">arXiv:2607.25060</a>.</p>
+        <p><strong>Abstract:</strong> The paper targets fast calorimeter shower simulation with diffusion models and argues that denoising loss alone can fit showers statistically while missing physics structure. It introduces Correlation Frobenius Distance for layer- and voxel-scale correlation fidelity, plus physics-aware auxiliary losses based on counting-statistics residuals and graph Laplacian detector geometry.</p>
+        <p><strong>Method and result:</strong> The key technical point is conflict-aware gradient blending: standard multi-task gradient methods can inflate FPD by factors of 2 to 100, while the proposed GradBlend approach allows auxiliary physics losses to steer generation without swamping denoising. On CaloChallenge Dataset 2, the Laplacian-guided Lantern variant improves both FPD and the proposed correlation metric.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Directly useful for detector fast simulation. For heavy-ion, the transferable idea is not the calorimeter benchmark itself but the warning that physics-guided generative losses can harm distribution fidelity unless gradient conflict and correlation observables are explicitly monitored.</p>
+        <p><strong>Critical assessment:</strong> Strong and refreshingly sober. It contributes a diagnostic metric and shows negative results for popular gradient-combination baselines, which makes the positive result more credible than a simple physics-loss add-on.</p>
+      </article>
+
+      <article class="paper" data-search="2607.24921 simplex demixing multiple light flavor jets collider weak supervision CWoLa mixture model tag and probe quark gluon up down strong AI ML HEP">
+        <div class="paper-head"><h4>Simplex Demixing: Disentangling Multiple Light-Flavor Jets at Colliders</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gregorio de la Fuente, Jesse Thaler. <a href="https://arxiv.org/abs/2607.24921">arXiv:2607.24921</a>.</p>
+        <p><strong>Abstract:</strong> This paper generalizes data-driven quark/gluon topic modeling to more than two jet categories. A classifier trained on multiple mixtures is mapped into a bounded simplex whose vertices correspond to latent categories, then tested on synthetic down/up/gluon mixtures and a more realistic dijet tag-and-probe strategy.</p>
+        <p><strong>Method and result:</strong> The method extracts multiple hadron-level light-flavor categories with minimal assumptions, while clearly noting that identifiability depends on mixture abundances and available hadron-level information.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Strong direct use for LHC jet flavor studies. Heavy-ion transfer is plausible for quark/gluon-enriched or medium-modified jet samples, provided sample mixtures can be constructed with sufficiently different latent fractions and medium response does not masquerade as flavor structure.</p>
+        <p><strong>Critical assessment:</strong> Strong because it tackles a real collider-definition problem and states identifiability limitations. The next test is closure on detector-level and heavy-ion-like environments where mixture purity and background subtraction are harder.</p>
+      </article>
+
+      <article class="paper" data-search="2607.24943 multiclass classification without labels posterior simplex geometry CWoLa weak labels mixture identity Galaxy10 DECaLS label scarce mixed AI ML transfer HEP heavy-ion">
+        <div class="paper-head"><h4>Multiclass Classification without Labels via Posterior Simplex Geometry</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Raphaël Bonnet-Guerrini, Johann Ioannou-Nikolaides, Troels Petersen, Vincenzo Piuri. <a href="https://arxiv.org/abs/2607.24943">arXiv:2607.24943</a>.</p>
+        <p><strong>Abstract:</strong> The paper extends Classification without Labels from binary mixtures to multiclass mixture learning. It proves that the Bayes-optimal mixture classifier maps examples into a simplex in posterior space and uses either post-hoc simplex fitting or a bottleneck architecture to recover latent classes and fractions.</p>
+        <p><strong>Method and result:</strong> The demonstrations use MNIST, CIFAR-10, and Galaxy10 DECaLS. That is not HEP, but the formal setup matches many physics cases where selections alter class proportions without giving instance-level truth labels.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Potentially useful for centrality-, topology-, or trigger-enriched samples where class fractions change across cuts but labels are unavailable. It could also complement collider jet topic models when more than two latent categories are present.</p>
+        <p><strong>Critical assessment:</strong> Mixed but transferable. The math is relevant, yet physics deployment would need careful validation of mixture assumptions, detector effects, and whether latent classes are stable across the enriched samples.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.25017 few-gluon interactions multipole radiation high energy nuclear collisions anti QGP jet dominance hydro droplets caution overclaimed">
+        <div class="paper-head"><h4>Few-gluon interactions and multipole radiation in high energy nuclear collisions</h4><span class="label caution">caution</span></div>
+        <p class="meta">Thomas A. Trainor. <a href="https://arxiv.org/abs/2607.25017">arXiv:2607.25017</a>.</p>
+        <p><strong>Abstract:</strong> The paper argues that jet production and few-gluon multipole radiation can describe spectra, angular correlations, and quadrupole-like structures across p-p, p-Pb, and A-B systems without invoking dense medium formation, multiple scattering, QGP droplets, or hydrodynamics.</p>
+        <p><strong>Why caution:</strong> The topic is relevant and contrarian interpretations can be useful, but the abstract frames a very broad replacement of the standard heavy-ion picture. Such a claim needs unusually strong confrontation with the full body of soft and hard observables, including multiparticle cumulants, mass ordering, identified-particle systematics, jet-quenching observables, electromagnetic probes, and global Bayesian model comparisons. On abstract-level evidence, treat it as a caution item rather than a high-confidence synthesis.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
