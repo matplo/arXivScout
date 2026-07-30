@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-30</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-30 Briefing</h1>
+    <p class="dek">Heavy-ion collision physics and physics AI/ML papers screened from recent arXiv listings, with abstract-first triage and selective deeper inspection.</p>
+    <label class="search-label" for="paper-search">Search by keyword</label>
+    <input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main>
+    <section class="summary">
+      <h2>Executive Takeaways</h2>
+      <ul>
+        <li>The strongest heavy-ion theory/phenomenology items are jet-medium response papers: an EKT-derived equilibrating parton shower and a kinetic-theory proposal to image non-hydrodynamic QGP modes with higher angular moments of jet wakes.</li>
+        <li>Critical-point phenomenology is represented by a net-proton cumulant calculation that combines fRG fluctuations with hydrodynamic particlization and experimental acceptance effects; the result is interesting, but model dependence remains substantial.</li>
+        <li>Light-ion geometry remains active: IP-Glasma+MUSIC+iSS+UrQMD is used to constrain alpha-cluster compactness in O+O and Ne+Ne using LHC Run 3 flow data.</li>
+        <li>The strongest new experimental heavy-ion-relevant paper is LHCb's forward pp and pPb average-pT measurement, which favors hydrodynamic calculations over saturation-only descriptions in the reported comparison.</li>
+        <li>AI/ML transfer value is strongest in neural quantum states for non-Abelian lattice gauge theory, reduced-order-model double-descent diagnostics, physics-informed kernel methods, and conformal adaptive sensing.</li>
+        <li>A nuclear-fusion paper making shortcut-to-Lawson-criterion claims is worth caution: the abstract leans on extrapolation and patent-framed device novelty rather than demonstrated heavy-ion or plasma validation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper-card" data-search="2607.26851 Imaging non-hydrodynamic modes with jet wakes Aleksi Kurkela Ian Moult Alexander Soloviev Urs Achim Wiedemann jet wakes non-hydrodynamic modes kinetic theory angular moments QGP Theory strong">
+        <div class="card-top"><span>Theory</span><a href="https://arxiv.org/abs/2607.26851">arXiv:2607.26851</a></div>
+        <h4>Imaging non-hydrodynamic modes with jet wakes</h4>
+        <p class="authors">Aleksi Kurkela, Ian Moult, Alexander Soloviev, Urs Achim Wiedemann (4 authors)</p>
+        <p><strong>Summary:</strong> The paper argues that the angular structure of jet wakes can isolate non-hydrodynamic sectors of the QGP. In its long-wavelength analysis, hydrodynamics contributes mainly to low angular moments, while higher moments probe microscopic relaxation spectra through a kinetic-theory framework.</p>
+        <p><strong>Why it matters:</strong> Direct observables for non-hydrodynamic modes are rare; this offers a concrete measurement target tied to jet wake imaging and QGP relaxation dynamics.</p>
+        <p><strong>Critical assessment:</strong> Strong conceptually and authored by a technically credible group. The main caveat is experimental: measuring negative-wake higher moments precisely enough will be hard, and the observable must survive realistic backgrounds and jet reconstruction biases.</p>
+        <p class="abstract"><strong>Abstract signal:</strong> The authors claim higher angular moments of the late-time jet-wake energy flux encode non-equilibrium relaxation spectra and motivate precision measurements of negative jet wakes.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper-card" data-search="2607.26783 LHCb average transverse momentum forward prompt charged particles pp pPb 5.02 TeV hydrodynamics saturation Experiment strong pPb collectivity">
+        <div class="card-top"><span>Experiment</span><a href="https://arxiv.org/abs/2607.26783">arXiv:2607.26783</a></div>
+        <h4>Measurement of the average transverse momentum of forward prompt charged particles in pp and pPb collisions at sqrt(sNN)=5.02 TeV</h4>
+        <p class="authors">LHCb Collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, F. Abudinen, et al. (1129 authors)</p>
+        <p><strong>Summary:</strong> LHCb reports first measurements of forward prompt charged-particle average transverse momentum versus multiplicity and pseudorapidity in pp and pPb at 5.02 TeV. The abstract states that average pT decreases with pseudorapidity, especially in high-multiplicity events, and that 3+1D hydrodynamic calculations reproduce the data while saturation models do not.</p>
+        <p><strong>Why it matters:</strong> This is a forward-acceptance constraint on small-system collectivity and longitudinal structure, with direct relevance for pA initial-state versus final-state interpretations.</p>
+        <p><strong>Critical assessment:</strong> Strong as an experimental result because it adds a distinctive forward observable and direct model comparisons. The physics interpretation should remain cautious until systematic details and model-parameter choices are inspected in the paper beyond the abstract.</p>
+        <p class="abstract"><strong>Abstract signal:</strong> The measurement covers pp and pPb multiplicity and pseudorapidity dependence at LHCb and compares hydrodynamic and saturation-based descriptions.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper-card" data-search="2607.26143 An Equilibrating Parton Shower for Jet Quenching and Medium Response Ismail Soudi Adam Takacs EKT jet quenching medium response hydrodynamic wake Mach cone strong Phenomenology">
+        <div class="card-top"><span>Phenomenology</span><a href="https://arxiv.org/abs/2607.26143">arXiv:2607.26143</a></div>
+        <h4>An Equilibrating Parton Shower for Jet Quenching and Medium Response</h4>
+        <p class="authors">Ismail Soudi, Adam Takacs (2 authors)</p>
+        <p><strong>Summary:</strong> The authors derive a parton shower from QCD effective kinetic theory that reproduces the full linearized Boltzmann equation while joining elastic/inelastic energy loss to equilibration near thermal scales. The framework connects jet evolution to hydrodynamic response, including wakes, Mach cones, and multiparticle correlations.</p>
+        <p><strong>Why it matters:</strong> It addresses a real modeling gap: hard-parton showering and medium response are often treated with separate approximations, while this paper tries to keep them in one weak-coupling kinetic framework.</p>
+        <p><strong>Critical assessment:</strong> Strong and methodologically substantive. It is still a compact theory paper, so practical impact depends on implementation in realistic event simulations and comparison to jet-substructure and wake-sensitive data.</p>
+        <p class="abstract"><strong>Abstract signal:</strong> The shower recovers standard energy-loss/broadening at high energy and gives a consistent near-thermal description tied to hydrodynamic response.</p>
+      </article>
+
+      <article class="paper-card" data-search="2607.26912 Critical net-proton number fluctuations with hydrodynamics Rui-zhe Zhao Shi Yin Shanjin Wu Lipei Du Xiaofeng Luo Wei-jie Fu CEP fRG cumulants BES Phenomenology mixed">
+        <div class="card-top"><span>Phenomenology</span><a href="https://arxiv.org/abs/2607.26912">arXiv:2607.26912</a></div>
+        <h4>Critical net-proton number fluctuations with hydrodynamics</h4>
+        <p class="authors">Rui-zhe Zhao, Shi Yin, Shanjin Wu, Lipei Du, Xiaofeng Luo, Wei-jie Fu (6 authors)</p>
+        <p><strong>Summary:</strong> This work computes net-proton cumulant ratios on hydrodynamic freeze-out hypersurfaces at nine beam energies from 7.7 to 200 GeV, using fRG-derived regular and critical fluctuations. It includes experimental pT/rapidity windows, isospin randomization, global baryon conservation, and a noncritical baseline.</p>
+        <p><strong>Why it matters:</strong> Net-proton cumulants are central to the Beam Energy Scan critical-point program, and this paper tries to bring critical fluctuations into a more experiment-facing calculation.</p>
+        <p><strong>Critical assessment:</strong> Worth highlighting, but mixed. The observable treatment is relevant and careful at abstract level, yet CEP signals are notoriously sensitive to mapping choices, dynamics, noncritical baselines, and conservation effects; the nonmonotonic C4/C2 result should not be read as standalone evidence.</p>
+        <p class="abstract"><strong>Abstract signal:</strong> Critical effects remain small in low-order cumulants but grow for higher cumulants at lower collision energy, producing a nonmonotonic C4/C2 trend absent in the noncritical baseline.</p>
+      </article>
+
+      <article class="paper-card" data-search="2607.26758 alpha-cluster compactness O16 Ne20 TeV azimuthal anisotropy IP-Glasma MUSIC iSS UrQMD LHC Run 3 light ions Phenomenology mixed strong">
+        <div class="card-top"><span>Phenomenology</span><a href="https://arxiv.org/abs/2607.26758">arXiv:2607.26758</a></div>
+        <h4>Constraining alpha-cluster compactness in 16O and 20Ne at TeV energies using azimuthal anisotropy</h4>
+        <p class="authors">Aswathy Menon Kavumpadikkal Radhakrishnan, Suraj Prasad, Neelkamal Mallick, Raghunath Sahoo, Gergely Gabor Barnafoldi (5 authors)</p>
+        <p><strong>Summary:</strong> The paper uses IP-Glasma+MUSIC+iSS+UrQMD for O+O and Ne+Ne at 5.36 TeV, comparing Woods-Saxon and alpha-clustered densities with variable cluster size and separation. It focuses on v2{2} in ALICE, CMS, and ATLAS acceptances and compares to Run 3 measurements.</p>
+        <p><strong>Why it matters:</strong> LHC light-ion data are now a serious probe of nuclear structure inputs, and this paper explores whether flow can constrain alpha-cluster compactness.</p>
+        <p><strong>Critical assessment:</strong> Relevant and timely, with a strong model chain. The assessment is mixed-to-strong because extracting nuclear-structure parameters from v2 alone is vulnerable to initial-condition, viscosity, centrality, and nonflow systematics; the result is best viewed as a constraint study, not a final determination.</p>
+        <p class="abstract"><strong>Abstract signal:</strong> OO v2 centrality trends and peak positions are reported to be especially sensitive to alpha-cluster geometry.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper-card" data-search="2607.26131 Neural quantum states non-Abelian lattice gauge theories dynamical fermions SU2 variational Monte Carlo lattice QCD AI ML strong">
+        <div class="card-top"><span>AI/ML use</span><a href="https://arxiv.org/abs/2607.26131">arXiv:2607.26131</a></div>
+        <h4>Neural quantum states for non-Abelian lattice gauge theories with dynamical fermions</h4>
+        <p class="authors">Gabriel Rouxinol, Julian Bender, Michele Grossi, Patrick Emonts, Jad C. Halimeh (5 authors)</p>
+        <p><strong>Summary:</strong> The authors build a variational Monte Carlo framework for fully continuous SU(2) lattice gauge theory with dynamical staggered fermions, using a neural-network gauge wavefunction and a gauge-covariant Gaussian fermionic correction. They validate against strong-coupling perturbation theory and map a coarse phase diagram for L=4,6,8 systems.</p>
+        <p><strong>Why it matters:</strong> Neural quantum states are a credible route for Hamiltonian lattice gauge theory beyond toy Abelian models; non-Abelian gauge fields with dynamical fermions are much closer to HEP-relevant problems.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value for lattice and quantum-simulation workflows. It is not yet a QCD-scale solver, but the inclusion of dynamical fermions, gauge covariance, analytic fermion energy contributions, and explicit validation make it more than decorative ML.</p>
+        <p class="abstract"><strong>Abstract signal:</strong> The method recovers expected strong-coupling behavior and identifies phase-transition structure via hysteresis analysis.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper-card" data-search="2607.26414 Origins mitigation double descent reduced order modeling Andrei Klishin Nathan Kutz Krithika Manohar sparse sensing ROM PDE sensor instability AI ML strong transfer">
+        <div class="card-top"><span>Physics AI/ML</span><a href="https://arxiv.org/abs/2607.26414">arXiv:2607.26414</a></div>
+        <h4>Origins and mitigation of double descent in reduced order modeling</h4>
+        <p class="authors">Andrei A. Klishin, J. Nathan Kutz, Krithika Manohar (3 authors)</p>
+        <p><strong>Method and result:</strong> The paper develops a Data-Noise Averaging theory for double descent in sparse sensing and reduced-order reconstruction, predicts risk curves cheaply, identifies unstable sensor combinations, and proposes regularization mechanisms. Demonstrations include sea-surface temperature reconstruction and a PDE reduced-order model.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Detector sparse readout, emulator design, and reduced-order hydrodynamic or transport surrogates where sensor placement and noisy partial observations can create brittle reconstructions.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value because it diagnoses a concrete failure mode, not just a new architecture. Transfer still needs domain-specific tests on irregular detector geometries and event-by-event heavy-ion fields.</p>
+      </article>
+
+      <article class="paper-card" data-search="2607.27062 PIKS universal physics-informed kernel methods Joachim Bona-Pellissier Giacomo Meanti Matteo Santacesaria Lorenzo Rosasco PINN kernels PDE constraints AI ML mixed strong transfer">
+        <div class="card-top"><span>Physics AI/ML</span><a href="https://arxiv.org/abs/2607.27062">arXiv:2607.27062</a></div>
+        <h4>PIKS: Universal Physics-Informed Kernel Methods</h4>
+        <p class="authors">Joachim Bona-Pellissier, Giacomo Meanti, Matteo Santacesaria, Lorenzo Rosasco (4 authors)</p>
+        <p><strong>Method and result:</strong> PIKS replaces PINN-style black-box optimization with physics-informed kernel estimators for linear differential constraints, proving universal consistency for universal kernels and deriving finite-sample bounds under source conditions. Numerical tests compare against PINNs and finite-element methods.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Small-data PDE-constrained inference, surrogate checks for hydrodynamics or detector-field reconstruction, and uncertainty-aware baselines where analytical tractability is more valuable than maximum flexibility.</p>
+        <p><strong>Critical assessment:</strong> Strong as theory-facing ML, but transfer is conditional: linear constraints are easier than full nonlinear hydrodynamics or transport equations, so this is best viewed as a principled baseline and analysis tool.</p>
+      </article>
+
+      <article class="paper-card" data-search="2607.26887 Conformalized Rate-Adaptive Sensing Jiawei Yang Yao Zhang CoRAS conformal adaptive sensing imaging detector readout uncertainty AI ML mixed transfer">
+        <div class="card-top"><span>Physics AI/ML</span><a href="https://arxiv.org/abs/2607.26887">arXiv:2607.26887</a></div>
+        <h4>Conformalized Rate-Adaptive Sensing</h4>
+        <p class="authors">Jiawei Yang, Yao Zhang (2 authors)</p>
+        <p><strong>Method and result:</strong> CoRAS adaptively chooses acquisition/compression rates for image reconstruction while maintaining high-probability error control. It calibrates stopping-time estimates using images with similar early reconstruction behavior and reports target coverage with fewer measurements than fixed-rate rules.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Adaptive detector readout, online compression, and data-quality-aware acquisition where physics events differ sharply in reconstruction difficulty.</p>
+        <p><strong>Critical assessment:</strong> Mixed-to-strong transfer value. The uncertainty-control framing is attractive, but the paper is image-dataset focused; HEP deployment would need non-image detector tests, distribution-shift studies, and trigger-latency constraints.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper-card caution" data-search="2607.27024 Rotating mirror all-directional pinch compressions nuclear fusion Lawson criterion Linjin Zheng caution overclaim plasma nuclear theory">
+        <div class="card-top"><span>Caution</span><a href="https://arxiv.org/abs/2607.27024">arXiv:2607.27024</a></div>
+        <h4>Rotating mirror with all-directional pinch compressions - The beauty and simplicity in controlled nuclear fusion</h4>
+        <p class="authors">Linjin Zheng (1 author)</p>
+        <p><strong>Why caution:</strong> The abstract presents a proposed fusion device based on a rotating mirror, detached electrodes, and radial/longitudinal pinch compression, then extrapolates from existing results to possible Lawson-criterion performance. The claims are broad, device-forward, and patent-framed, while the abstract does not indicate direct experimental validation of the complete concept or a quantified uncertainty budget.</p>
+        <p><strong>Assessment:</strong> Not a useful heavy-ion collision paper and not strong enough as transferable plasma physics evidence for this briefing. It is worth flagging only because the title and nuclear-theory cross-list could make it look more relevant than it is.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
