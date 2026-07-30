@@ -1,0 +1,165 @@
+{
+  "date": "2026-07-30",
+  "path": "reports/2026-07-30.html",
+  "summary": "The screened recent arXiv window is strongest on jet-medium response and non-equilibrium QGP dynamics, with an EKT-derived equilibrating parton shower, a kinetic-theory proposal for imaging non-hydrodynamic modes through jet-wake angular moments, and fRG-plus-hydrodynamics net-proton cumulants for Beam Energy Scan critical-point phenomenology. Light-ion structure remains active through alpha-cluster constraints from O+O and Ne+Ne flow, while LHCb adds a forward pp/pPb average-pT measurement that favors hydrodynamic calculations over saturation-only descriptions in the reported comparison. The most transferable AI/ML work concerns non-Abelian neural quantum states with dynamical fermions, reduced-order-model double-descent diagnostics, physics-informed kernel theory, and conformal adaptive sensing.",
+  "keywords": [
+    "jet quenching",
+    "effective kinetic theory",
+    "medium response",
+    "jet wakes",
+    "non-hydrodynamic modes",
+    "net-proton cumulants",
+    "critical end point",
+    "functional renormalization group",
+    "Beam Energy Scan",
+    "alpha-cluster compactness",
+    "O+O Ne+Ne flow",
+    "forward pPb collectivity",
+    "neural quantum states",
+    "non-Abelian lattice gauge theory",
+    "reduced order modeling",
+    "double descent",
+    "physics-informed kernel methods",
+    "conformal adaptive sensing",
+    "fusion overclaim caution"
+  ],
+  "arxiv_ids": [
+    "2607.26143",
+    "2607.26851",
+    "2607.26912",
+    "2607.26758",
+    "2607.26783",
+    "2607.26131",
+    "2607.26414",
+    "2607.27062",
+    "2607.26887",
+    "2607.27024"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2607.26143: An Equilibrating Parton Shower for Jet Quenching and Medium Response",
+  "top_takeaway": "The most scientifically important theme is the effort to connect microscopic jet evolution, equilibration, and measurable medium response in a common kinetic-theory language; the most practical AI/ML theme is uncertainty- and physics-structured surrogate modeling rather than generic model substitution.",
+  "caution_count": 1,
+  "candidate_count_inspected": 43,
+  "papers": [
+    {
+      "title": "An Equilibrating Parton Shower for Jet Quenching and Medium Response",
+      "authors_short": "Ismail Soudi, Adam Takacs",
+      "author_count": 2,
+      "arxiv_id": "2607.26143",
+      "url": "https://arxiv.org/abs/2607.26143",
+      "category": "Phenomenology",
+      "abstract": "The authors derive a parton shower from QCD effective kinetic theory that reproduces the full linearized Boltzmann equation, combining elastic and inelastic collisions so hard-parton energy loss and thermal equilibration are handled consistently. The framework connects jet evolution to hydrodynamic response including wakes, Mach cones, and multiparticle correlations.",
+      "tags": ["jet quenching", "EKT", "medium response", "thermalization", "jet wakes"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Imaging non-hydrodynamic modes with jet wakes",
+      "authors_short": "Aleksi Kurkela, Ian Moult, Alexander Soloviev, Urs Achim Wiedemann",
+      "author_count": 4,
+      "arxiv_id": "2607.26851",
+      "url": "https://arxiv.org/abs/2607.26851",
+      "category": "Theory",
+      "abstract": "The paper proposes the angular structure of jet wakes as a probe of non-hydrodynamic QGP modes. In the long-wavelength limit, hydrodynamics contributes only to the lowest angular moments while higher moments encode microscopic non-equilibrium relaxation spectra in a kinetic-theory framework.",
+      "tags": ["jet wakes", "non-hydrodynamic modes", "kinetic theory", "QGP relaxation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Critical net-proton number fluctuations with hydrodynamics",
+      "authors_short": "Rui-zhe Zhao, Shi Yin, Shanjin Wu, Lipei Du, Xiaofeng Luo, Wei-jie Fu",
+      "author_count": 6,
+      "arxiv_id": "2607.26912",
+      "url": "https://arxiv.org/abs/2607.26912",
+      "category": "Phenomenology",
+      "abstract": "The paper computes net-proton cumulant ratios C2/C1, C3/C2, and C4/C2 on hydrodynamic freeze-out hypersurfaces at nine collision energies from 7.7 to 200 GeV. It includes fRG-derived regular and critical fluctuations, experimental pT and rapidity acceptances, isospin randomization, global baryon conservation, and noncritical baselines.",
+      "tags": ["net-proton cumulants", "critical end point", "fRG", "hydrodynamics", "BES"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Constraining alpha-cluster compactness in 16O and 20Ne at TeV energies using azimuthal anisotropy",
+      "authors_short": "Aswathy Menon Kavumpadikkal Radhakrishnan, Suraj Prasad, Neelkamal Mallick, Raghunath Sahoo, Gergely Gabor Barnafoldi",
+      "author_count": 5,
+      "arxiv_id": "2607.26758",
+      "url": "https://arxiv.org/abs/2607.26758",
+      "category": "Phenomenology",
+      "abstract": "Using IP-Glasma+MUSIC+iSS+UrQMD, the paper simulates O+O and Ne+Ne at 5.36 TeV with Woods-Saxon and alpha-clustered configurations and varies cluster compactness. It compares v2{2} in ALICE, CMS, and ATLAS acceptances with Run 3 measurements and reports sensitivity especially in O+O centrality trends.",
+      "tags": ["alpha clustering", "light ions", "elliptic flow", "IP-Glasma", "Run 3"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Measurement of the average transverse momentum of forward prompt charged particles in pp and pPb collisions at sqrt(sNN)=5.02 TeV",
+      "authors_short": "LHCb Collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, F. Abudinen, et al.",
+      "author_count": 1129,
+      "arxiv_id": "2607.26783",
+      "url": "https://arxiv.org/abs/2607.26783",
+      "category": "Experiment",
+      "abstract": "LHCb presents first measurements of forward prompt charged-particle average transverse momentum versus collision multiplicity and pseudorapidity in pp and pPb at 5.02 TeV. The abstract reports decreasing average pT with pseudorapidity, most pronounced in high-multiplicity events, and states that 3+1D hydrodynamic calculations reproduce the data while saturation models are incompatible.",
+      "tags": ["LHCb", "pPb", "forward charged particles", "average pT", "small-system collectivity"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural quantum states for non-Abelian lattice gauge theories with dynamical fermions",
+      "authors_short": "Gabriel Rouxinol, Julian Bender, Michele Grossi, Patrick Emonts, Jad C. Halimeh",
+      "author_count": 5,
+      "arxiv_id": "2607.26131",
+      "url": "https://arxiv.org/abs/2607.26131",
+      "category": "AI/ML use",
+      "abstract": "The paper presents a variational Monte Carlo framework for fully continuous SU(2) lattice gauge theory with dynamical staggered fermions, using a neural gauge wavefunction and gauge-covariant Gaussian fermionic correction. It validates against strong-coupling perturbation theory and maps a coarse phase diagram for L=4,6,8.",
+      "tags": ["neural quantum states", "lattice gauge theory", "dynamical fermions", "SU(2)", "variational Monte Carlo"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Origins and mitigation of double descent in reduced order modeling",
+      "authors_short": "Andrei A. Klishin, J. Nathan Kutz, Krithika Manohar",
+      "author_count": 3,
+      "arxiv_id": "2607.26414",
+      "url": "https://arxiv.org/abs/2607.26414",
+      "category": "AI/ML use",
+      "abstract": "The authors develop a Data-Noise Averaging theory for double descent in sparse sensing and reduced-order reconstruction, predicting risk curves cheaply, identifying unstable sensors and combinations, and providing regularization mechanisms. Demonstrations include sea-surface temperature reconstruction and time integration of a PDE reduced-order model.",
+      "tags": ["reduced order modeling", "double descent", "sparse sensing", "PDE surrogate", "sensor placement"],
+      "assessment": "strong"
+    },
+    {
+      "title": "PIKS: Universal Physics-Informed Kernel Methods",
+      "authors_short": "Joachim Bona-Pellissier, Giacomo Meanti, Matteo Santacesaria, Lorenzo Rosasco",
+      "author_count": 4,
+      "arxiv_id": "2607.27062",
+      "url": "https://arxiv.org/abs/2607.27062",
+      "category": "AI/ML use",
+      "abstract": "PIKS introduces physics-informed kernel estimators for linear differential constraints, proving universal consistency for universal kernels and deriving finite-sample bounds under source conditions. Numerical experiments compare with PINNs and finite-element methods.",
+      "tags": ["physics-informed ML", "kernel methods", "PDE constraints", "PINN baseline", "learning theory"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Conformalized Rate-Adaptive Sensing",
+      "authors_short": "Jiawei Yang, Yao Zhang",
+      "author_count": 2,
+      "arxiv_id": "2607.26887",
+      "url": "https://arxiv.org/abs/2607.26887",
+      "category": "AI/ML use",
+      "abstract": "CoRAS adaptively selects an acquisition or compression rate for each image while maintaining high-probability reconstruction error control. It calibrates stopping-time estimates using early reconstruction paths and reports target coverage with fewer measurements than fixed-rate baselines.",
+      "tags": ["conformal prediction", "adaptive sensing", "detector readout transfer", "uncertainty control"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Rotating mirror with all-directional pinch compressions - The beauty and simplicity in controlled nuclear fusion",
+      "authors_short": "Linjin Zheng",
+      "author_count": 1,
+      "arxiv_id": "2607.27024",
+      "url": "https://arxiv.org/abs/2607.27024",
+      "category": "Caution",
+      "abstract": "The abstract proposes a rotating-mirror fusion concept with detached electrodes and radial/longitudinal pinch compression, then extrapolates from existing results to potential Lawson-criterion performance. It is patent-framed and does not indicate direct validation of the complete concept or a quantified uncertainty budget in the abstract.",
+      "tags": ["fusion", "pinch compression", "Lawson criterion", "overclaim risk"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. The homepage index is stale for 2026-07-22 through 2026-07-30; the app tools exposed in this run allowed safe new-file creation but did not expose a safe contents-API replacement action for existing index.html."
+}
