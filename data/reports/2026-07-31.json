@@ -1,0 +1,137 @@
+{
+  "date": "2026-07-31",
+  "path": "reports/2026-07-31.html",
+  "summary": "The screened Friday arXiv window is strongest on hypernuclear production in RHIC isobar data, constrained small-x nuclear saturation inference, and practical but still immature agentic/representation-learning workflows for collider and heavy-ion physics. Key themes are hypertriton wave-function sensitivity, coalescence versus thermal expectations, physics-informed BK evolution, nuclear dipole amplitudes, autonomous CLVisc hydrodynamics, lightweight collider pretraining, causal time-series benchmarking, and graph-search AI for theoretical physics.",
+  "keywords": [
+    "hypernuclei production",
+    "hypertriton wave function",
+    "coalescence",
+    "Ru+Ru Zr+Zr isobars",
+    "CGC",
+    "nuclear dipole amplitude",
+    "BK evolution",
+    "physics-informed neural networks",
+    "gluon saturation",
+    "CLVisc agent",
+    "relativistic hydrodynamics",
+    "collider foundation model",
+    "causal time series",
+    "Seiberg dualities",
+    "event-activity bias caution"
+  ],
+  "arxiv_ids": [
+    "2607.28113",
+    "2607.27603",
+    "2607.27822",
+    "2607.28569",
+    "2607.27501",
+    "2607.27263",
+    "2607.28628",
+    "2607.27572"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2607.28113: Probing (Hyper)Nuclei Wave Functions and Production Mechanisms in sqrt(sNN)=200 GeV Isobar Collisions at RHIC",
+  "top_takeaway": "The strongest science is STAR's hypernuclei/coalescence result and the constrained CGC neural extraction; the most transferable AI/ML work is useful but should be judged by physics constraints, uncertainty handling, and domain-shift validation rather than by agent or foundation-model labels.",
+  "caution_count": 1,
+  "candidate_count_inspected": 45,
+  "papers": [
+    {
+      "title": "Probing (Hyper)Nuclei Wave Functions and Production Mechanisms in sqrt(sNN)=200 GeV Isobar Collisions at RHIC",
+      "authors_short": "STAR Collaboration",
+      "author_count": null,
+      "arxiv_id": "2607.28113",
+      "url": "https://arxiv.org/abs/2607.28113",
+      "category": "Experiment",
+      "abstract": "STAR reports centrality-dependent production of hypertriton, anti-hypertriton, helium-3, anti-helium-3, and triton in 200 GeV Ru+Ru and Zr+Zr collisions. Ratios deviate from thermal-model expectations and are better described by coalescence calculations using realistic non-Gaussian wave functions.",
+      "tags": ["STAR", "hypernuclei", "coalescence", "isobars", "hypertriton"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Unbiased Data-Driven Determination of the Nuclear Dipole Amplitude in the Color Glass Condensate",
+      "authors_short": "Si-Wei Dai, Haowu Duan, Long-Gang Pang, Guang-You Qin, Shu-Yi Wei, Han-Zhong Zhang, Wenbin Zhao",
+      "author_count": 7,
+      "arxiv_id": "2607.27603",
+      "url": "https://arxiv.org/abs/2607.27603",
+      "category": "Phenomenology / AI/ML use",
+      "abstract": "The paper embeds collinearly improved BK evolution into a physics-informed neural-network objective to infer the impact-parameter-averaged Pb dipole amplitude from forward-hadron nuclear modification and coherent J/psi photoproduction data, with QCD evolution and positivity enforced.",
+      "tags": ["CGC", "BK evolution", "PINN", "saturation", "J/psi photoproduction"],
+      "assessment": "strong"
+    },
+    {
+      "title": "CLVisc Agent for autonomous relativistic hydrodynamics studies",
+      "authors_short": "Qi Wang, Long-Gang Pang, Shi Pu, Xin-Nian Wang",
+      "author_count": 4,
+      "arxiv_id": "2607.27822",
+      "url": "https://arxiv.org/abs/2607.27822",
+      "category": "AI/ML use",
+      "abstract": "The paper demonstrates an LLM-agent workflow that learns CLVisc operations, runs 3+1D viscous hydrodynamic simulations, performs scans, compares results, and generates figures for eta/s and O+O nuclear-structure case studies.",
+      "tags": ["LLM agent", "CLVisc", "hydrodynamics", "QGP", "workflow automation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Relativistic transport near moving interfaces",
+      "authors_short": "Lorenzo Gavassino",
+      "author_count": 1,
+      "arxiv_id": "2607.28569",
+      "url": "https://arxiv.org/abs/2607.28569",
+      "category": "Theory",
+      "abstract": "A formal treatment of linear disturbances near moving planar interfaces in relativistic media, unifying boundary layers, wakes, and shock-tail asymptotics through a propagator and mode-selection construction.",
+      "tags": ["relativistic transport", "hydrodynamics", "kinetic theory", "wakes", "shocks"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "A Lightweight Foundation Model for Collider Physics with Multi-Domain Adaptation",
+      "authors_short": "Liangyu Wu, Qibin Liu, Alexander Yue, Julia Gonski",
+      "author_count": 4,
+      "arxiv_id": "2607.27501",
+      "url": "https://arxiv.org/abs/2607.27501",
+      "category": "AI/ML use",
+      "abstract": "NEXUS pretrains a small autoencoder on charged-particle track features from collider data and fine-tunes for kinematic regression and event classification with limited labels, with additional demonstrations on other scientific domains.",
+      "tags": ["collider ML", "foundation model", "autoencoder", "track features", "low-label learning"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "DoTime: A Synthetic Benchmark Generator for Interventional and Counterfactual Time Series",
+      "authors_short": "Dennis Thumm, Billy Tim Anthony, Ying Chen",
+      "author_count": 3,
+      "arxiv_id": "2607.27263",
+      "url": "https://arxiv.org/abs/2607.27263",
+      "category": "AI/ML use",
+      "abstract": "DoTime creates temporal structural causal model benchmarks with interventions, counterfactuals, regime switches, nonstationarity, and exact ground truth for evaluating causal time-series models.",
+      "tags": ["causal inference", "time series", "counterfactuals", "benchmark", "detector operations transfer"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Learning to Trace Seiberg Dualities",
+      "authors_short": "Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu",
+      "author_count": 4,
+      "arxiv_id": "2607.28628",
+      "url": "https://arxiv.org/abs/2607.28628",
+      "category": "AI/ML use",
+      "abstract": "The paper trains transformers and MLPs, aided by pathfinder algorithms, to trace Seiberg dualities in supersymmetric quiver gauge theories, reporting improved search efficiency for modest quiver sizes.",
+      "tags": ["theoretical physics AI", "quiver gauge theory", "Seiberg duality", "graph search", "benchmark"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Photon-calibrated event-activity bias and subcollision geometry in d+Au collisions at sqrt(sNN)=200 GeV with PYTHIA 8 Angantyr",
+      "authors_short": "Muhammad Ajaz, Haifa I. Alrebdi, Muhammad Waqas",
+      "author_count": 3,
+      "arxiv_id": "2607.27572",
+      "url": "https://arxiv.org/abs/2607.27572",
+      "category": "Caution",
+      "abstract": "A PYTHIA 8 Angantyr generator-level study of hard-event activity bias in d+Au collisions using photons, pions, and jets. The abstract notes that the calculation does not identify a unique microscopic origin for residual correlations.",
+      "tags": ["d+Au", "event activity", "Angantyr", "generator-level", "hard-soft bias"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. index.html exists, but the GitHub app tools exposed in this run did not include a safe contents-API replacement action or enough commit/tree metadata to refresh the existing homepage. The homepage remains stale and missing at least 2026-07-30 and 2026-07-31 cards, though the daily pages and metadata records exist."
+}
