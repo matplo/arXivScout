@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-07-31</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-07-31 Briefing</h1>
+    <p class="dek">Heavy-ion collision physics and physics AI/ML papers screened from the Friday, 31 July 2026 arXiv new listings, with abstract-first triage and selective deeper inspection.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion item is STAR's Ru+Ru/Zr+Zr hypernuclei measurement, because it uses real isobar data to test coalescence wave-function assumptions rather than only fitting yields.</li>
+        <li>The most technically promising AI/ML-heavy-ion paper is the physics-informed neural extraction of the Pb dipole amplitude in the CGC; embedding BK evolution and positivity is a serious constraint, though the claim of being fully unbiased should be read carefully.</li>
+        <li>Agentic heavy-ion workflows are moving from toy demonstrations toward real hydrodynamic pipelines, but CLVisc Agent is best viewed as an automation and reproducibility prototype, not yet a substitute for expert modeling judgment.</li>
+        <li>Two general physics-AI papers have credible transfer value: a lightweight collider foundation model for low-label detector/event tasks, and DoTime for causal time-series benchmarks relevant to detector operations and evolving collision conditions.</li>
+        <li>A d+Au PYTHIA Angantyr activity-bias study is useful as a diagnostic caution, but its generator-level status and explicit lack of a microscopic residual-correlation origin limit the scientific weight.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.28569 Relativistic transport near moving interfaces Lorenzo Gavassino relativistic hydrodynamics kinetic theory shocks wakes boundary layers moving interfaces Theory mixed">
+        <div class="paper-head"><h4>Relativistic transport near moving interfaces</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Lorenzo Gavassino (1 author) | <a href="https://arxiv.org/abs/2607.28569">arXiv:2607.28569</a></p>
+        <p><strong>Summary:</strong> The paper develops a linear-response treatment of disturbances localized near moving planar interfaces in relativistic media, using a Laplace-transform propagator representation. It frames moving obstacles, thermal boundaries, wakes, and shock-tail asymptotics through a common mode-selection geometry.</p>
+        <p><strong>Why it matters:</strong> The direct heavy-ion connection is indirect but real: relativistic hydrodynamic and kinetic boundary/wake structure matters for interpreting shock-like response, external probes, and late-time tails in QGP modeling.</p>
+        <p><strong>Critical assessment:</strong> Mathematically clean and potentially useful, but it is a formal contribution rather than an immediately experiment-facing heavy-ion result. Its value will depend on whether the framework connects to realistic geometries and dissipative QGP simulations.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.28113 STAR Probing HyperNuclei Wave Functions Production Mechanisms 200 GeV Isobar Ru+Ru Zr+Zr hypertriton helium coalescence Experiment strong">
+        <div class="paper-head"><h4>Probing (Hyper)Nuclei Wave Functions and Production Mechanisms in sqrt(sNN)=200 GeV Isobar Collisions at RHIC</h4><span class="label strong">strong</span></div>
+        <p class="meta">STAR Collaboration (collaboration author) | <a href="https://arxiv.org/abs/2607.28113">arXiv:2607.28113</a></p>
+        <p><strong>Summary:</strong> STAR measures hypertriton, anti-hypertriton, helium-3, anti-helium-3, and triton production at midrapidity in Ru+Ru and Zr+Zr collisions at 200 GeV as a function of centrality. The reported ratios deviate from thermal expectations, while coalescence calculations with realistic non-Gaussian deuteron and hypertriton wave functions better describe the data.</p>
+        <p><strong>Why it matters:</strong> This is a valuable use of heavy-ion production as a probe of hypernuclear structure and hyperon-nucleon interactions, especially because the observable tests wave-function shape rather than only integrated abundance.</p>
+        <p><strong>Critical assessment:</strong> Strong. The key caveat is that coalescence interpretations remain model-dependent, but the contrast between non-Gaussian and Gaussian hypertriton descriptions is a meaningful discriminator.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2607.27603 Unbiased Data-Driven Determination Nuclear Dipole Amplitude Color Glass Condensate Si-Wei Dai Haowu Duan Long-Gang Pang Guang-You Qin Shu-Yi Wei Han-Zhong Zhang Wenbin Zhao CGC BK evolution physics-informed neural network saturation J/psi photoproduction Phenomenology AI ML strong">
+        <div class="paper-head"><h4>Unbiased Data-Driven Determination of the Nuclear Dipole Amplitude in the Color Glass Condensate</h4><span class="label strong">strong</span></div>
+        <p class="meta">Si-Wei Dai, Haowu Duan, Long-Gang Pang, Guang-You Qin, Shu-Yi Wei, Han-Zhong Zhang, Wenbin Zhao (7 authors) | <a href="https://arxiv.org/abs/2607.27603">arXiv:2607.27603</a></p>
+        <p><strong>Summary:</strong> The authors embed collinearly improved Balitsky-Kovchegov evolution into a physics-informed neural-network objective to extract the impact-parameter-averaged Pb dipole amplitude from forward-hadron nuclear modification and coherent J/psi photoproduction data. They enforce QCD evolution and momentum-space positivity and report a Pb/proton saturation-scale ratio consistent with geometric scaling.</p>
+        <p><strong>Why it matters:</strong> Nuclear saturation extractions are usually strongly parametrization-dependent; a constrained data-driven extraction could be important for small-x nuclear structure, pA baselines, and future EIC/heavy-ion phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Strong and highly relevant, especially because the ML is constrained by physics rather than used as decoration. Still, “unbiased” is too strong if the data set, impact-parameter averaging, evolution kernel choice, and training objective impose structure; the result should be treated as less parametrized, not assumption-free.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.27822 CLVisc Agent autonomous relativistic hydrodynamics Qi Wang Long-Gang Pang Shi Pu Xin-Nian Wang LLM agent CLVisc QGP O+O eta/s AI ML mixed">
+        <div class="paper-head"><h4>CLVisc Agent for autonomous relativistic hydrodynamics studies</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Qi Wang, Long-Gang Pang, Shi Pu, Xin-Nian Wang (4 authors) | <a href="https://arxiv.org/abs/2607.27822">arXiv:2607.27822</a></p>
+        <p><strong>Summary:</strong> This paper demonstrates an LLM-agent workflow that explores CLVisc, builds an operational skill, runs end-to-end 3+1D viscous hydrodynamic simulations, performs parameter scans, and generates figures. Demonstrations include temperature-dependent eta/s and O+O nuclear-structure effects at 5.36 TeV.</p>
+        <p><strong>Why it matters:</strong> If robust, this kind of workflow could lower friction in reproducible hydrodynamic studies, batch simulation campaigns, and analysis bookkeeping.</p>
+        <p><strong>Critical assessment:</strong> Genuinely interesting but mixed. The scientific novelty is more workflow automation than new heavy-ion physics, and the abstract does not yet establish reliability under adversarial configuration choices, uncertainty propagation, failed-run recovery, or independent expert benchmarking.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.27603 CGC physics-informed neural network BK evolution small-x nuclear dipole HEP nuclear transfer strong">
+        <div class="paper-head"><h4>Unbiased Data-Driven Determination of the Nuclear Dipole Amplitude in the Color Glass Condensate</h4><span class="label strong">strong</span></div>
+        <p class="meta">Si-Wei Dai, Haowu Duan, Long-Gang Pang, Guang-You Qin, Shu-Yi Wei, Han-Zhong Zhang, Wenbin Zhao (7 authors) | <a href="https://arxiv.org/abs/2607.27603">arXiv:2607.27603</a></p>
+        <p><strong>Method and result:</strong> Physics-informed neural extraction constrained by BK evolution and positivity, applied to nuclear small-x data, with a reported Pb saturation scale and LHCb-relevant prediction.</p>
+        <p><strong>Likely use case:</strong> Constrained inference of QCD objects where evolution equations are known but initial conditions are uncertain: nuclear PDFs/dipoles, initial-condition inference, and EIC-to-heavy-ion baseline propagation.</p>
+        <p><strong>Transfer assessment:</strong> Strong transfer value because the ML architecture is subordinate to physical constraints. The open question is whether uncertainties cover model-form and data-selection assumptions.</p>
+      </article>
+
+      <article class="paper" data-search="2607.27501 NEXUS Lightweight Foundation Model Collider Physics Multi-Domain Adaptation Liangyu Wu Qibin Liu Alexander Yue Julia Gonski autoencoder charged tracks collider foundation model AI ML mixed strong">
+        <div class="paper-head"><h4>A Lightweight Foundation Model for Collider Physics with Multi-Domain Adaptation</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Liangyu Wu, Qibin Liu, Alexander Yue, Julia Gonski (4 authors) | <a href="https://arxiv.org/abs/2607.27501">arXiv:2607.27501</a></p>
+        <p><strong>Method and result:</strong> NEXUS pretrains a roughly 3M-parameter fully connected autoencoder on charged-particle track features from LHC-like collision data, then fine-tunes for kinematic regression and event classification with small labeled samples. The authors also test adaptation to gravitational waves, flood forecasting, and neural activity.</p>
+        <p><strong>Likely use case:</strong> Low-label collider tasks, detector monitoring, trigger-adjacent inference, and fast prototyping where transformer-scale models are too heavy.</p>
+        <p><strong>Transfer assessment:</strong> Promising but mixed. The lightweight focus is practical, but “foundation model” is a high bar; the abstract does not yet show broad HEP task coverage, systematic domain-shift stress tests, or calibration/uncertainty behavior.</p>
+      </article>
+
+      <article class="paper" data-search="2607.27263 DoTime Synthetic Benchmark Generator Interventional Counterfactual Time Series Dennis Thumm Billy Tim Anthony Ying Chen causal inference detector operations beam conditions AI ML mixed">
+        <div class="paper-head"><h4>DoTime: A Synthetic Benchmark Generator for Interventional and Counterfactual Time Series</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Dennis Thumm, Billy Tim Anthony, Ying Chen (3 authors) | <a href="https://arxiv.org/abs/2607.27263">arXiv:2607.27263</a></p>
+        <p><strong>Method and result:</strong> DoTime generates multivariate temporal structural causal models with interventions, counterfactual sampling, regime switches, nonstationarity, and frozen evaluation suites with exact ground truth. The paper reports that interventional prior-fitting improves direction accuracy across tested structures.</p>
+        <p><strong>Likely use case:</strong> Benchmarking causal models for detector control, time-dependent calibration, accelerator conditions, streaming data quality, and run-by-run heavy-ion environment changes.</p>
+        <p><strong>Transfer assessment:</strong> Useful as a benchmark generator, not as direct physics. Transfer is credible only if HEP users instantiate structural mechanisms resembling real detector and beam operations.</p>
+      </article>
+
+      <article class="paper" data-search="2607.28628 Learning to Trace Seiberg Dualities Jonathan Heckman Shani Meynet Alessandro Mininno Gary Shiu quiver gauge theories transformers MLP pathfinder theoretical physics AI ML mixed">
+        <div class="paper-head"><h4>Learning to Trace Seiberg Dualities</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu (4 authors) | <a href="https://arxiv.org/abs/2607.28628">arXiv:2607.28628</a></p>
+        <p><strong>Method and result:</strong> The paper trains transformers and MLPs, aided by pathfinder algorithms, to trace Seiberg dualities in supersymmetric quiver gauge theories, reporting performance above deterministic algorithms for modest quiver sizes.</p>
+        <p><strong>Likely use case:</strong> Benchmarks for AI in formal/theoretical physics search problems, especially graph mutation, equivalence detection, and symbolic-guided search.</p>
+        <p><strong>Transfer assessment:</strong> Scientifically interesting, but transfer to nuclear or heavy-ion workflows is indirect. It is more relevant as a structured physics-AI benchmark than as an analysis or phenomenology tool.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.27572 Photon-calibrated event-activity bias subcollision geometry d+Au PYTHIA Angantyr Muhammad Ajaz Haifa Alrebdi Muhammad Waqas generator level caution">
+        <div class="paper-head"><h4>Photon-calibrated event-activity bias and subcollision geometry in d+Au collisions at sqrt(sNN)=200 GeV with PYTHIA 8 Angantyr</h4><span class="label caution">caution</span></div>
+        <p class="meta">Muhammad Ajaz, Haifa I. Alrebdi, Muhammad Waqas (3 authors) | <a href="https://arxiv.org/abs/2607.27572">arXiv:2607.27572</a></p>
+        <p><strong>Why caution:</strong> The topic is relevant: activity selections in small nuclear systems can entangle geometry and hard-soft correlations, and photon calibration is a sensible diagnostic. But the abstract states that the calculation is generator-level and does not identify a unique microscopic origin for residual correlations, so it should not be read as a robust explanation of d+Au activity bias.</p>
+        <p><strong>Useful takeaway:</strong> Treat it as a Monte Carlo stress test for STAR/PHENIX-like activity definitions, not as settled phenomenology.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
