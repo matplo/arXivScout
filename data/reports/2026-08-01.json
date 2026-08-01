@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-01",
+  "path": "reports/2026-08-01.html",
+  "summary": "Scheduled Saturday check: the relevant arXiv new-listing pages still pointed to the Friday, 31 July 2026 batch, so no newly posted qualifying heavy-ion or physics-AI/ML papers were identified beyond the already archived 2026-07-31 selection. The current scientific priorities remain STAR hypernuclei production in RHIC isobars, a constrained physics-informed CGC nuclear dipole extraction, and cautiously useful AI/ML workflow or benchmark papers for heavy-ion and HEP transfer.",
+  "keywords": [
+    "no new Saturday arXiv listing",
+    "Friday 31 July 2026 batch",
+    "hypernuclei production",
+    "hypertriton wave function",
+    "CGC",
+    "nuclear dipole amplitude",
+    "BK evolution",
+    "physics-informed neural networks",
+    "CLVisc agent",
+    "causal time series",
+    "Seiberg dualities",
+    "event-activity bias caution"
+  ],
+  "arxiv_ids": [
+    "2607.28113",
+    "2607.27603",
+    "2607.27822",
+    "2607.27263",
+    "2607.28628",
+    "2607.27572"
+  ],
+  "total_paper_count": 0,
+  "represented_categories": [
+    "No new listing",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "No newly posted qualifying paper in the August 1 Saturday check; see 2026-07-31 for the latest full selection.",
+  "top_takeaway": "No fresh Saturday arXiv batch was available. The latest valid selection remains the July 31 report, led by STAR hypernuclei production and the physics-informed CGC dipole-amplitude extraction.",
+  "caution_count": 0,
+  "candidate_count_inspected": 45,
+  "papers": [],
+  "carried_forward_highlights": [
+    {
+      "title": "Probing (Hyper)Nuclei Wave Functions and Production Mechanisms in sqrt(sNN)=200 GeV Isobar Collisions at RHIC",
+      "authors_short": "STAR Collaboration",
+      "author_count": null,
+      "arxiv_id": "2607.28113",
+      "url": "https://arxiv.org/abs/2607.28113",
+      "category": "Experiment",
+      "abstract": "STAR reports centrality-dependent hypernuclei and light-nuclei production in 200 GeV Ru+Ru and Zr+Zr collisions, with ratios favoring realistic non-Gaussian coalescence wave functions over simple thermal expectations.",
+      "tags": ["STAR", "hypernuclei", "coalescence", "isobars", "hypertriton"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Unbiased Data-Driven Determination of the Nuclear Dipole Amplitude in the Color Glass Condensate",
+      "authors_short": "Si-Wei Dai, Haowu Duan, Long-Gang Pang, Guang-You Qin, Shu-Yi Wei, Han-Zhong Zhang, Wenbin Zhao",
+      "author_count": 7,
+      "arxiv_id": "2607.27603",
+      "url": "https://arxiv.org/abs/2607.27603",
+      "category": "Phenomenology / AI/ML use",
+      "abstract": "The paper embeds collinearly improved BK evolution and positivity constraints into a neural extraction of the Pb dipole amplitude from forward-hadron and coherent J/psi photoproduction data.",
+      "tags": ["CGC", "BK evolution", "PINN", "saturation", "J/psi photoproduction"],
+      "assessment": "strong"
+    },
+    {
+      "title": "CLVisc Agent for autonomous relativistic hydrodynamics studies",
+      "authors_short": "Qi Wang, Long-Gang Pang, Shi Pu, Xin-Nian Wang",
+      "author_count": 4,
+      "arxiv_id": "2607.27822",
+      "url": "https://arxiv.org/abs/2607.27822",
+      "category": "AI/ML use",
+      "abstract": "The paper demonstrates an LLM-agent workflow for operating CLVisc, running hydrodynamic scans, comparing outputs, and producing figures for eta/s and O+O case studies.",
+      "tags": ["LLM agent", "CLVisc", "hydrodynamics", "QGP", "workflow automation"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. index.html exists, but the GitHub app tools exposed in this run still did not include a safe contents-API replacement action for updating an existing file, and the available commit fetch output did not expose the base tree SHA needed for a conservative tree-based homepage refresh. The homepage may remain stale even though the August 1 daily page and metadata record were archived successfully."
+}
