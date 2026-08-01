@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-01</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-01 Briefing</h1>
+    <p class="dek">Scheduled Saturday check. arXiv's relevant new-listing pages still point to the Friday, 31 July 2026 batch, so this run records no newly posted qualifying papers beyond the July 31 selection.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>No new Saturday arXiv listing was available for nucl-th, nucl-ex, hep-ph, hep-ex, or physics.data-an at the time of this scheduled run.</li>
+        <li>The latest screened batch remains the Friday, 31 July 2026 listing, already archived as <a href="2026-07-31.html">2026-07-31</a>.</li>
+        <li>The strongest papers from that batch remain STAR's hypernuclei/isobar measurement and the physics-informed CGC extraction of the nuclear dipole amplitude.</li>
+        <li>The most relevant AI/ML theme is constrained or workflow-oriented ML for nuclear physics: physics-informed BK evolution, CLVisc automation, collider pretraining, and causal time-series benchmarking.</li>
+        <li>No additional weak or overclaimed paper was identified in a fresh Saturday window, because there was no fresh arXiv submission window to screen.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.28113 STAR hypernuclei hypertriton isobar Ru+Ru Zr+Zr coalescence no new Saturday listing strong">
+        <div class="paper-head"><h4>Probing (Hyper)Nuclei Wave Functions and Production Mechanisms in sqrt(sNN)=200 GeV Isobar Collisions at RHIC</h4><span class="label strong">strong</span></div>
+        <p class="meta">STAR Collaboration | <a href="https://arxiv.org/abs/2607.28113">arXiv:2607.28113</a> | covered in the July 31 report</p>
+        <p><strong>Summary:</strong> STAR reports centrality-dependent hypernuclei and light-nuclei production in 200 GeV Ru+Ru and Zr+Zr collisions. The ratios challenge simple thermal expectations and favor coalescence calculations with more realistic non-Gaussian wave functions.</p>
+        <p><strong>Why it matters:</strong> It uses heavy-ion data as a probe of hypertriton structure and hyperon-nucleon interactions, giving the result unusually direct physics leverage.</p>
+        <p><strong>Critical assessment:</strong> Strong, with the usual coalescence-model caveat. It remains the top heavy-ion experimental item in the latest available arXiv batch.</p>
+      </article>
+
+      <h3>Phenomenology / AI/ML Use</h3>
+      <article class="paper" data-search="2607.27603 CGC nuclear dipole amplitude BK evolution physics-informed neural network saturation small-x strong">
+        <div class="paper-head"><h4>Unbiased Data-Driven Determination of the Nuclear Dipole Amplitude in the Color Glass Condensate</h4><span class="label strong">strong</span></div>
+        <p class="meta">Si-Wei Dai, Haowu Duan, Long-Gang Pang, Guang-You Qin, Shu-Yi Wei, Han-Zhong Zhang, Wenbin Zhao (7 authors) | <a href="https://arxiv.org/abs/2607.27603">arXiv:2607.27603</a> | covered in the July 31 report</p>
+        <p><strong>Summary:</strong> The paper embeds collinearly improved BK evolution and positivity constraints into a neural extraction of the Pb dipole amplitude from forward-hadron and coherent J/psi photoproduction data.</p>
+        <p><strong>Why it matters:</strong> This is a serious example of ML used as constrained inference for small-x nuclear structure, with possible impact on pA baselines and EIC/heavy-ion phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Strong, but the term "unbiased" should be read as "less parametrized" rather than assumption-free.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2607.27822 CLVisc Agent autonomous hydrodynamics LLM agent QGP workflow automation mixed">
+        <div class="paper-head"><h4>CLVisc Agent for autonomous relativistic hydrodynamics studies</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Qi Wang, Long-Gang Pang, Shi Pu, Xin-Nian Wang (4 authors) | <a href="https://arxiv.org/abs/2607.27822">arXiv:2607.27822</a> | covered in the July 31 report</p>
+        <p><strong>Summary:</strong> The authors demonstrate an LLM-agent workflow that operates CLVisc, runs hydrodynamic scans, compares results, and generates figures for eta/s and O+O case studies.</p>
+        <p><strong>Why it matters:</strong> It points toward reproducible automation for hydrodynamic simulation campaigns.</p>
+        <p><strong>Critical assessment:</strong> Mixed. It is a useful workflow prototype, but the scientific value depends on reliability, uncertainty handling, and expert validation under less curated conditions.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2607.27263 DoTime causal time series benchmark detector operations counterfactual interventions mixed">
+        <div class="paper-head"><h4>DoTime: A Synthetic Benchmark Generator for Interventional and Counterfactual Time Series</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Dennis Thumm, Billy Tim Anthony, Ying Chen (3 authors) | <a href="https://arxiv.org/abs/2607.27263">arXiv:2607.27263</a> | covered in the July 31 report</p>
+        <p><strong>Method and result:</strong> DoTime creates temporal structural causal model benchmarks with interventions, counterfactuals, regime switches, nonstationarity, and exact ground truth.</p>
+        <p><strong>Likely use case:</strong> Transfer value is indirect but credible for detector operations, run-quality monitoring, and causal modeling of time-dependent experimental conditions.</p>
+        <p><strong>Critical assessment:</strong> Mixed-positive as a benchmark. Its utility for HEP or nuclear physics will depend on building domain-realistic time-series generators rather than relying on generic synthetic suites.</p>
+      </article>
+
+      <article class="paper" data-search="2607.28628 Seiberg dualities quiver graph search theoretical physics AI benchmark mixed">
+        <div class="paper-head"><h4>Learning to Trace Seiberg Dualities</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu (4 authors) | <a href="https://arxiv.org/abs/2607.28628">arXiv:2607.28628</a> | covered in the July 31 report</p>
+        <p><strong>Method and result:</strong> The paper trains transformer and MLP strategies, aided by pathfinder algorithms, to trace dualities in supersymmetric quiver gauge theories.</p>
+        <p><strong>Likely use case:</strong> Most relevant as a theoretical-physics benchmark for graph search and symbolic/structural reasoning, not as a near-term heavy-ion analysis tool.</p>
+        <p><strong>Critical assessment:</strong> Interesting but specialized. Transfer to HEP workflows is plausible for theory search problems, but not yet demonstrated for experimental or phenomenological heavy-ion tasks.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.27572 d+Au event activity Angantyr generator level hard-soft correlations caution">
+        <div class="paper-head"><h4>Photon-calibrated event-activity bias and subcollision geometry in d+Au collisions at sqrt(sNN)=200 GeV with PYTHIA 8 Angantyr</h4><span class="label caution">caution</span></div>
+        <p class="meta">Muhammad Ajaz, Haifa I. Alrebdi, Muhammad Waqas (3 authors) | <a href="https://arxiv.org/abs/2607.27572">arXiv:2607.27572</a> | covered in the July 31 report</p>
+        <p><strong>Why caution:</strong> The generator-level study is useful as an event-activity diagnostic, but the abstract explicitly notes that it does not identify a unique microscopic origin for residual correlations. Its scientific weight is therefore limited until tested against data or varied across model assumptions.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Archive Note</h2>
+      <p>This scheduled run found no fresh Saturday listing beyond the Friday, 31 July 2026 arXiv batch. To avoid duplicate paper cards, the complete paper-level report remains the <a href="2026-07-31.html">2026-07-31 briefing</a>; this page records the August 1 check and its no-new-listings conclusion.</p>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
