@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-02",
+  "path": "reports/2026-08-02.html",
+  "summary": "Scheduled Sunday check: the relevant arXiv new-listing pages still pointed to the Friday, 31 July 2026 batch, so no newly posted qualifying heavy-ion or physics-AI/ML papers were identified in the strict Sunday window. The latest scientifically relevant screened items remain STAR hypernuclei production in RHIC isobars, a physics-informed CGC nuclear dipole extraction, and cautiously useful AI/ML workflow or benchmark papers for heavy-ion and HEP transfer.",
+  "keywords": [
+    "no new Sunday arXiv listing",
+    "Friday 31 July 2026 batch",
+    "hypernuclei production",
+    "hypertriton wave function",
+    "coalescence",
+    "CGC",
+    "nuclear dipole amplitude",
+    "BK evolution",
+    "physics-informed neural networks",
+    "CLVisc agent",
+    "collider foundation model",
+    "causal time series",
+    "event-activity bias caution"
+  ],
+  "arxiv_ids": [
+    "2607.28113",
+    "2607.27603",
+    "2607.28569",
+    "2607.27822",
+    "2607.27501",
+    "2607.27263",
+    "2607.27572"
+  ],
+  "total_paper_count": 0,
+  "represented_categories": [
+    "No new listing",
+    "Experiment",
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "No newly posted qualifying paper in the August 2 Sunday check; see 2026-07-31 for the latest full selection.",
+  "top_takeaway": "No fresh Sunday arXiv batch was available. The latest valid selection remains the July 31 report, led by STAR hypernuclei production and the physics-informed CGC dipole-amplitude extraction.",
+  "caution_count": 0,
+  "candidate_count_inspected": 45,
+  "papers": [],
+  "carried_forward_highlights": [
+    {
+      "title": "Probing (Hyper)Nuclei Wave Functions and Production Mechanisms in sqrt(sNN)=200 GeV Isobar Collisions at RHIC",
+      "authors_short": "STAR Collaboration",
+      "author_count": null,
+      "arxiv_id": "2607.28113",
+      "url": "https://arxiv.org/abs/2607.28113",
+      "category": "Experiment",
+      "abstract": "STAR reports centrality-dependent hypernuclei and light-nuclei production in 200 GeV Ru+Ru and Zr+Zr collisions, with ratios favoring realistic non-Gaussian coalescence wave functions over simple thermal expectations.",
+      "tags": ["STAR", "hypernuclei", "coalescence", "isobars", "hypertriton"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Unbiased Data-Driven Determination of the Nuclear Dipole Amplitude in the Color Glass Condensate",
+      "authors_short": "Si-Wei Dai, Haowu Duan, Long-Gang Pang, Guang-You Qin, Shu-Yi Wei, Han-Zhong Zhang, Wenbin Zhao",
+      "author_count": 7,
+      "arxiv_id": "2607.27603",
+      "url": "https://arxiv.org/abs/2607.27603",
+      "category": "Phenomenology / AI/ML use",
+      "abstract": "The paper embeds collinearly improved BK evolution and positivity constraints into a neural extraction of the Pb dipole amplitude from forward-hadron and coherent J/psi photoproduction data.",
+      "tags": ["CGC", "BK evolution", "PINN", "saturation", "J/psi photoproduction"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Relativistic transport near moving interfaces",
+      "authors_short": "Lorenzo Gavassino",
+      "author_count": 1,
+      "arxiv_id": "2607.28569",
+      "url": "https://arxiv.org/abs/2607.28569",
+      "category": "Theory",
+      "abstract": "A formal treatment of linear disturbances near moving planar interfaces in relativistic media, unifying boundary layers, wakes, and shock-tail asymptotics through a propagator and mode-selection construction.",
+      "tags": ["relativistic transport", "hydrodynamics", "kinetic theory", "wakes", "shocks"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "CLVisc Agent for autonomous relativistic hydrodynamics studies",
+      "authors_short": "Qi Wang, Long-Gang Pang, Shi Pu, Xin-Nian Wang",
+      "author_count": 4,
+      "arxiv_id": "2607.27822",
+      "url": "https://arxiv.org/abs/2607.27822",
+      "category": "AI/ML use",
+      "abstract": "The paper demonstrates an LLM-agent workflow that learns CLVisc operations, runs 3+1D viscous hydrodynamic simulations, performs scans, compares results, and generates figures for eta/s and O+O nuclear-structure case studies.",
+      "tags": ["LLM agent", "CLVisc", "hydrodynamics", "QGP", "workflow automation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "A Lightweight Foundation Model for Collider Physics with Multi-Domain Adaptation",
+      "authors_short": "Liangyu Wu, Qibin Liu, Alexander Yue, Julia Gonski",
+      "author_count": 4,
+      "arxiv_id": "2607.27501",
+      "url": "https://arxiv.org/abs/2607.27501",
+      "category": "AI/ML use",
+      "abstract": "NEXUS pretrains a small autoencoder on charged-particle track features from collider data and fine-tunes for kinematic regression and event classification with limited labels.",
+      "tags": ["collider ML", "foundation model", "autoencoder", "track features", "low-label learning"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "DoTime: A Synthetic Benchmark Generator for Interventional and Counterfactual Time Series",
+      "authors_short": "Dennis Thumm, Billy Tim Anthony, Ying Chen",
+      "author_count": 3,
+      "arxiv_id": "2607.27263",
+      "url": "https://arxiv.org/abs/2607.27263",
+      "category": "AI/ML use",
+      "abstract": "DoTime creates temporal structural causal model benchmarks with interventions, counterfactuals, regime switches, nonstationarity, and exact ground truth for evaluating causal time-series models.",
+      "tags": ["causal inference", "time series", "counterfactuals", "benchmark", "detector operations transfer"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Photon-calibrated event-activity bias and subcollision geometry in d+Au collisions at sqrt(sNN)=200 GeV with PYTHIA 8 Angantyr",
+      "authors_short": "Muhammad Ajaz, Haifa I. Alrebdi, Muhammad Waqas",
+      "author_count": 3,
+      "arxiv_id": "2607.27572",
+      "url": "https://arxiv.org/abs/2607.27572",
+      "category": "Caution",
+      "abstract": "A PYTHIA 8 Angantyr generator-level study of hard-event activity bias in d+Au collisions using photons, pions, and jets. The abstract notes that the calculation does not identify a unique microscopic origin for residual correlations.",
+      "tags": ["d+Au", "event activity", "Angantyr", "generator-level", "hard-soft bias"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. index.html exists, but the GitHub app tools exposed in this run did not provide a safe contents-API replacement action for an existing file, and commit/tree metadata sufficient for conservative homepage replacement was not exposed. The homepage may remain stale even though the August 2 daily page and metadata record were archived successfully."
+}
