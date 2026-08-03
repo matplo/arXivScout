@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-03</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-03 briefing</h1>
+    <p class="dek">STAR BES-II observables, magnetized rotating matter, transferable collider event representations, low-yield search statistics, PDE discovery, kinetic closures, and jet-tagging limits.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The most directly heavy-ion-relevant new item is STAR's BES-II proceedings summary, covering sqrt(sNN)=3.0--27 GeV collider/fixed-target data and observables tied to QCD phase-structure searches.</li>
+        <li>The strongest physics-AI/ML paper is the BESIII Particle-Transformer pretraining study: it is real HEP event data workflow work, includes 12 downstream decay-channel benchmarks, and reports clear low-statistics gains.</li>
+        <li>For analysis design, the Canonero-Cowan counting-experiment paper is immediately useful: higher-order profile-likelihood corrections matter precisely in the low-yield regimes common to rare-signal and cut-optimization studies.</li>
+        <li>The PDE-discovery and neural-operator-closure papers are not HEP-specific, but their validation targets sparse/noisy fields and kinetic/fluid closures, making them plausible transfers to hydrodynamic emulation, transport closures, and simulation diagnostics.</li>
+        <li>The symbolic-regression LLM paper is worth watching but should be treated cautiously for HEP or heavy-ion use: the transfer path is indirect and the key risk is robustness of closed-loop prompt/tool search under realistic physics baselines.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2607.29616 STAR BES-II QCD phase structure fluctuation observables hyperon polarization strangeness femtoscopy collectivity Experiment strong">
+        <div class="paper-head"><h4>Recent STAR Measurements from the RHIC Beam Energy Scan II</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ashish Pandav for the STAR Collaboration | <a href="https://arxiv.org/abs/2607.29616">arXiv:2607.29616</a> | Nuclear Experiment</p>
+        <p><strong>Summary:</strong> This SQM 2026 proceedings contribution summarizes recent STAR BES-II results from high-statistics collider and fixed-target data over sqrt(sNN)=3.0--27 GeV, plus 200 GeV isobar results. The covered observables include bulk properties, strangeness production, femtoscopy, collectivity, hyperon polarization, and fluctuations sensitive to QCD phase structure.</p>
+        <p><strong>Why it matters:</strong> Even as a proceedings overview, it is a useful map of where BES-II constraints are maturing: fluctuations, polarization, and lower-energy fixed-target coverage are central to the RHIC phase-diagram program.</p>
+        <p><strong>Critical assessment:</strong> Strong relevance and strong experimental provenance, but this is a compact proceedings synthesis rather than a full analysis paper. Treat it as a high-value pointer to STAR's current BES-II result set, not as a standalone precision interpretation.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-search="2607.29297 weak Bose-Einstein condensation rotating magnetized charged Bose gas QGP neutron-star matter diamagnetism paramagnetism Theory mixed">
+        <div class="paper-head"><h4>Weak Bose-Einstein condensation in a rigidly rotating magnetized charged Bose gas</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">E. Siri, N. Sadooghi | <a href="https://arxiv.org/abs/2607.29297">arXiv:2607.29297</a> | High Energy Physics - Phenomenology; Nuclear Theory</p>
+        <p><strong>Summary:</strong> The authors analyze a noninteracting charged Bose gas in strong magnetic field and rigid rotation using finite-temperature field theory and generalized Fock-Schwinger methods. They find that rotation does not qualitatively alter weak BEC induced by Landau quantization, but can modify magnetic response, with stronger effects under QGP-like conditions than neutron-star-matter-like conditions.</p>
+        <p><strong>Why it matters:</strong> Rotation and magnetic fields are recurring ingredients in heavy-ion spin/polarization and early-time QGP discussions, so a controlled thermodynamic calculation can be useful as a limiting case.</p>
+        <p><strong>Critical assessment:</strong> Scientifically coherent but idealized. The noninteracting gas, lowest-Landau-level, and rigid-rotation assumptions make the connection to real heavy-ion observables indirect; I would not treat the QGP implications as phenomenologically established without dynamical and interacting extensions.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <p>No new phenomenology paper in the screened Monday window cleared the selectivity bar strongly enough for inclusion. Most hep-ph items were BSM, cosmology, or general collider methodology rather than heavy-ion phenomenology.</p>
+
+      <h3>AI/ML Use</h3>
+      <p>No new heavy-ion-specific AI/ML paper appeared in the screened Monday window. The AI/ML papers below are included for HEP or nuclear-physics transfer value.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2607.29088 BESIII Particle Transformer transferable event representations Lambda_c charmed baryon low-statistics fine-tuning classification regression AI ML strong">
+        <div class="paper-head"><h4>Learning transferable event representations for charmed baryon physics at BESIII</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kaixuan Huang, Yangu Li, Junpeng Zhao, Peilian Li, Peirong Li, Xiaorui Lyu, Yunxuan Song, Shengsen Sun, Yangheng Zheng | <a href="https://arxiv.org/abs/2607.29088">arXiv:2607.29088</a> | Data Analysis, Statistics and Probability; HEP Experiment</p>
+        <p><strong>Method and result:</strong> A Particle Transformer is pretrained on BESIII Monte Carlo for event classification and momentum-direction regression, then fine-tuned across Lambda_c+ benchmark channels. The abstract reports 97.0% background rejection at 90.0% signal efficiency and performance comparable to or better than training from scratch, especially in low-statistics regimes.</p>
+        <p><strong>Likely use case:</strong> This is directly transferable to HEP workflows with many related decay modes or channels. For heavy-ion, the lesson is not the charmed-baryon target itself but the reusable event-representation strategy for low-statistics selections, rare probes, and detector-specific reconstruction tasks.</p>
+        <p><strong>Critical assessment:</strong> Strong by today's standard because it uses a domain-specific architecture, multiple downstream benchmarks, and a realistic low-statistics motivation. Remaining questions are domain shift from simulation to data and whether systematic uncertainties are improved or merely classifier metrics.</p>
+      </article>
+
+      <article class="paper" data-search="2607.29436 discovery sensitivity counting experiment background uncertainty profile likelihood Asimov Barndorff-Nielsen low yields AI ML statistics strong">
+        <div class="paper-head"><h4>Discovery Sensitivity for a Counting Experiment with Background Uncertainty</h4><span class="label strong">strong</span></div>
+        <p class="meta">Enzo Canonero, Glen Cowan | <a href="https://arxiv.org/abs/2607.29436">arXiv:2607.29436</a> | Data Analysis, Statistics and Probability</p>
+        <p><strong>Method and result:</strong> The paper derives approximate median discovery-significance formulae for Poisson counting experiments with known or control-measurement-constrained backgrounds. It combines profile-likelihood Asimov approximations with Barndorff-Nielsen higher-order corrections and compares against Monte Carlo and common significance formulae.</p>
+        <p><strong>Likely use case:</strong> Useful for HEP and nuclear searches where expected counts are small, control regions are finite, and cut optimization depends sensitively on background uncertainty. It is especially relevant to rare probes, exotic-object searches, and trigger/selection studies with sparse yields.</p>
+        <p><strong>Critical assessment:</strong> Strong and practical. It is not AI/ML per se, but it is high-value analysis methodology for ML-assisted cut optimization or search design, where naive asymptotics can mis-rank selections in low-yield regimes.</p>
+      </article>
+
+      <article class="paper" data-search="2607.29665 PDE discovery sparse observations structured field adapter stability validated weak selection Kuramoto Sivashinsky surrogate hydrodynamics AI ML strong">
+        <div class="paper-head"><h4>Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations</h4><span class="label strong">strong</span></div>
+        <p class="meta">Juncheng Zhong, Chenghuang Shen, Jianfeng Liu, Zhengdong Xiao, Longjiu Luo, Qianrong Wang, Wenjun Xu, Wenlian Lu | <a href="https://arxiv.org/abs/2607.29665">arXiv:2607.29665</a> | Machine Learning; Numerical Analysis</p>
+        <p><strong>Method and result:</strong> The method first reconstructs a continuous field with a structured adapter, freezes it, then performs stability-validated weak-form term selection. It reports the best exact-support recovery across six sparse MDBench regimes, with clear gains on challenging Kuramoto-Sivashinsky dynamics, and extends to genetic-programming-generated nonlinear diffusion expressions.</p>
+        <p><strong>Likely use case:</strong> Transfer value is credible for extracting effective equations or diagnosing surrogate dynamics from sparse hydrodynamic, transport, or detector-field simulations. It could also help test whether learned heavy-ion emulator fields encode physically meaningful differential structure.</p>
+        <p><strong>Critical assessment:</strong> Strong transferable methodology, provided users keep the benchmark-to-physics gap in mind. The key unresolved issue for heavy-ion use is performance on relativistic, noisy, multi-scale fields with conservation laws and realistic uncertainty propagation.</p>
+      </article>
+
+      <article class="paper" data-search="2607.29364 neural operator closure Landau damping plasma Fourier Neural Operator kinetic fluid closure memory window AI ML mixed">
+        <div class="paper-head"><h4>A Neural Operator Closure for Landau Damping in Electrostatic Plasma</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Samuel Burles, Enrico Camporeale, Oreste Pezzi | <a href="https://arxiv.org/abs/2607.29364">arXiv:2607.29364</a> | Plasma Physics</p>
+        <p><strong>Method and result:</strong> A Fourier Neural Operator is trained online inside a differentiable fluid solver to learn a non-Markovian heat-flux closure for one-dimensional linear and nonlinear Landau damping. The closure uses a trailing window of resolved moment history and remains stable in independent fluid simulations.</p>
+        <p><strong>Likely use case:</strong> The transfer path is to kinetic-to-fluid closure problems, including heavy-ion transport reductions, hydrodynamic closure tests, and surrogate modeling of memory effects. The idea of training on closed-loop trajectories rather than isolated snapshots is particularly relevant.</p>
+        <p><strong>Critical assessment:</strong> Promising but mixed for HEP transfer. The validation is careful for 1D plasma damping, but the authors themselves note scheme and training-data dependence of the learned flux; heavy-ion use would need stress tests under relativistic, expanding, non-Abelian, and uncertainty-aware conditions.</p>
+      </article>
+
+      <article class="paper" data-search="2607.29508 jet tagging fundamental limit likelihood ratio transformer generative models W Z H gg collider ML mixed">
+        <div class="paper-head"><h4>The fundamental limit of jet tagging: Beyond top jets</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Sarah Koller, Humberto Reyes-Gonzalez | <a href="https://arxiv.org/abs/2607.29508">arXiv:2607.29508</a> | HEP Phenomenology</p>
+        <p><strong>Method and result:</strong> This ACAT proceedings note extends prior likelihood-ratio comparisons between modern taggers and estimated optimal classifiers from boosted top jets to boosted W, Z, and H->gg jets. It uses transformer-based generative models with known probability densities and finds that the performance gap is strongly jet dependent.</p>
+        <p><strong>Likely use case:</strong> For HEP and heavy-ion jet ML, the useful idea is benchmark discipline: compare taggers to density-ratio or likelihood-ratio estimates rather than only to other taggers. Heavy-ion transfer would be natural for quenched-jet tagging, quark/gluon studies, or medium-response classification, if the generative model remains realistic under background and detector effects.</p>
+        <p><strong>Critical assessment:</strong> Conceptually strong but evidence-limited because this is a proceedings contribution. The result is best read as a benchmark design direction, not a final statement about universal jet-tagger optimality.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2607.29561 MOT-SR symbolic regression LLM equation discovery Pareto EMRI transfer caution">
+        <div class="paper-head"><h4>MOT-SR: Multi-Objective Tool-Augmented Scientific Equation Discovery with Large Language Models</h4><span class="label caution">caution</span></div>
+        <p class="meta">Boxiao Wang, Runxiang Wang, Kai Li, Chongming Li, Zhiwei Chen, Yifan Zhang, Jian Cheng | <a href="https://arxiv.org/abs/2607.29561">arXiv:2607.29561</a> | Machine Learning; AI</p>
+        <p><strong>Why caution:</strong> The framework is interesting: tool-augmented LLM modules propose symbolic-regression strategies and equations while a Pareto module balances accuracy, complexity, and generalization. The paper reports gains on 40 standard tasks and an EMRI orbital-modeling validation case, but the HEP/heavy-ion transfer path is indirect.</p>
+        <p><strong>Critical assessment:</strong> Worth watching, not yet worth adopting uncritically. For nuclear or heavy-ion workflows, the central tests would be baseline fairness against non-LLM symbolic regression, robustness to prompt/tool choices, reproducibility of the closed-loop search, uncertainty propagation, and behavior on noisy simulation or experimental observables.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
