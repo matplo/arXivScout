@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-03",
+  "path": "reports/2026-08-03.html",
+  "summary": "The Monday arXiv window is strongest on STAR BES-II fluctuation and bulk-observable updates, BESIII transferable event representations, and practical statistical or scientific-ML methods that could transfer to HEP and nuclear-physics workflows. Heavy-ion-specific new material is mostly proceedings-level or idealized theory; the more actionable methodological contributions are low-yield discovery-significance formulae, pretrained event representations, sparse-observation PDE discovery, and learned kinetic closures.",
+  "keywords": [
+    "STAR BES-II",
+    "QCD phase structure",
+    "fluctuation observables",
+    "hyperon polarization",
+    "weak Bose-Einstein condensation",
+    "magnetized rotating QGP",
+    "Particle Transformer",
+    "transferable event representations",
+    "low-statistics fine-tuning",
+    "profile likelihood",
+    "Asimov significance",
+    "PDE discovery",
+    "Fourier neural operator closure",
+    "Landau damping",
+    "jet tagging limits",
+    "symbolic regression caution"
+  ],
+  "arxiv_ids": [
+    "2607.29616",
+    "2607.29297",
+    "2607.29088",
+    "2607.29436",
+    "2607.29665",
+    "2607.29364",
+    "2607.29508",
+    "2607.29561"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2607.29088: Learning transferable event representations for charmed baryon physics at BESIII",
+  "top_takeaway": "The most directly useful new physics-AI/ML item is the BESIII Particle-Transformer pretraining study; the most directly heavy-ion-relevant item is the STAR BES-II proceedings synthesis, which is scientifically important but not a full new analysis paper.",
+  "caution_count": 1,
+  "candidate_count_inspected": 50,
+  "papers": [
+    {
+      "title": "Recent STAR Measurements from the RHIC Beam Energy Scan II",
+      "authors_short": "Ashish Pandav for the STAR Collaboration",
+      "author_count": null,
+      "arxiv_id": "2607.29616",
+      "url": "https://arxiv.org/abs/2607.29616",
+      "category": "Experiment",
+      "abstract": "The proceedings contribution summarizes selected STAR BES-II results from collider and fixed-target running over sqrt(sNN)=3.0--27 GeV, plus isobar results at 200 GeV. The covered observables include bulk properties, strangeness production, femtoscopy, collectivity, hyperon polarization, and fluctuation observables relevant to QCD phase-structure searches.",
+      "tags": ["STAR", "BES-II", "QCD phase structure", "fluctuations", "hyperon polarization"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Weak Bose-Einstein condensation in a rigidly rotating magnetized charged Bose gas",
+      "authors_short": "E. Siri, N. Sadooghi",
+      "author_count": 2,
+      "arxiv_id": "2607.29297",
+      "url": "https://arxiv.org/abs/2607.29297",
+      "category": "Theory",
+      "abstract": "The paper studies an idealized noninteracting charged Bose gas under strong magnetic field and rigid rotation using finite-temperature field theory and generalized Fock-Schwinger methods. It argues that rotation modifies magnetic response and is more pronounced under parameter choices relevant to QGP than neutron-star matter, while not qualitatively changing weak BEC from Landau quantization.",
+      "tags": ["magnetized matter", "rotation", "weak BEC", "QGP transfer", "finite-temperature field theory"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Learning transferable event representations for charmed baryon physics at BESIII",
+      "authors_short": "Kaixuan Huang, Yangu Li, Junpeng Zhao, Peilian Li, Peirong Li, Xiaorui Lyu, Yunxuan Song, Shengsen Sun, Yangheng Zheng",
+      "author_count": 9,
+      "arxiv_id": "2607.29088",
+      "url": "https://arxiv.org/abs/2607.29088",
+      "category": "AI/ML use",
+      "abstract": "A Particle Transformer framework is pretrained on BESIII Monte Carlo samples for event classification and momentum-direction regression, then fine-tuned across Lambda_c+ decay channels. The abstract reports 97.0% background rejection at 90.0% signal efficiency and consistent gains in low-statistics regimes across 12 benchmark decay channels.",
+      "tags": ["Particle Transformer", "BESIII", "event representation", "transfer learning", "low-statistics analyses"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Discovery Sensitivity for a Counting Experiment with Background Uncertainty",
+      "authors_short": "Enzo Canonero, Glen Cowan",
+      "author_count": 2,
+      "arxiv_id": "2607.29436",
+      "url": "https://arxiv.org/abs/2607.29436",
+      "category": "AI/ML use",
+      "abstract": "The paper derives approximate median discovery-significance formulae for Poisson counting experiments with known or control-region-constrained background. It uses profile-likelihood Asimov formulae plus Barndorff-Nielsen higher-order corrections and validates them against Monte Carlo and common particle-physics approximations.",
+      "tags": ["profile likelihood", "background uncertainty", "low yields", "Asimov data", "search optimization"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
+      "authors_short": "Juncheng Zhong, Chenghuang Shen, Jianfeng Liu, Zhengdong Xiao, Longjiu Luo, Qianrong Wang, Wenjun Xu, Wenlian Lu",
+      "author_count": 8,
+      "arxiv_id": "2607.29665",
+      "url": "https://arxiv.org/abs/2607.29665",
+      "category": "AI/ML use",
+      "abstract": "The method decouples sparse field reconstruction from equation selection by training a structured field adapter without a PDE residual, freezing the field, and selecting recurrent terms through stability-validated weak-form systems. It reports the best exact-support recovery across six sparse MDBench regimes and strong gains on Kuramoto-Sivashinsky dynamics.",
+      "tags": ["PDE discovery", "sparse observations", "weak form", "support recovery", "surrogate modeling"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A Neural Operator Closure for Landau Damping in Electrostatic Plasma",
+      "authors_short": "Samuel Burles, Enrico Camporeale, Oreste Pezzi",
+      "author_count": 3,
+      "arxiv_id": "2607.29364",
+      "url": "https://arxiv.org/abs/2607.29364",
+      "category": "AI/ML use",
+      "abstract": "A Fourier Neural Operator is trained online inside a differentiable fluid solver to provide a non-Markovian closure for linear and nonlinear one-dimensional electrostatic Landau damping. The closure acts on a trailing window of resolved moments and remains stable in independent simulations, though the learned flux is expected to depend on the numerical scheme and training data.",
+      "tags": ["Fourier neural operator", "kinetic closure", "Landau damping", "memory effects", "fluid surrogate"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "The fundamental limit of jet tagging: Beyond top jets",
+      "authors_short": "Sarah Koller, Humberto Reyes-Gonzalez",
+      "author_count": 2,
+      "arxiv_id": "2607.29508",
+      "url": "https://arxiv.org/abs/2607.29508",
+      "category": "AI/ML use",
+      "abstract": "This ACAT proceedings note extends likelihood-ratio-based studies of jet-tagger performance limits from boosted top jets to W, Z, and H->gg jets using transformer-based generative models with known densities. It reports that the gap between modern taggers and the estimated optimal limit is strongly jet dependent and smaller for some difficult tagging tasks.",
+      "tags": ["jet tagging", "likelihood ratio", "generative models", "benchmarking", "classifier limits"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "MOT-SR: Multi-Objective Tool-Augmented Scientific Equation Discovery with Large Language Models",
+      "authors_short": "Boxiao Wang, Runxiang Wang, Kai Li, Chongming Li, Zhiwei Chen, Yifan Zhang, Jian Cheng",
+      "author_count": 7,
+      "arxiv_id": "2607.29561",
+      "url": "https://arxiv.org/abs/2607.29561",
+      "category": "Caution",
+      "abstract": "The paper proposes an LLM-assisted multi-objective symbolic-regression loop with external analysis tools, Pareto optimization over accuracy/complexity/generalization, and a gravitational-wave EMRI validation case. It reports gains across 40 standard tasks, but the HEP/heavy-ion transfer path is indirect and the strength depends heavily on baseline fairness, prompt/tool robustness, and reproducibility of the closed-loop search.",
+      "tags": ["symbolic regression", "LLM agents", "Pareto optimization", "equation discovery", "transfer caution"],
+      "assessment": "caution"
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. The GitHub app tools exposed in this run still did not include a safe contents-API replacement action for updating existing index.html, nor enough base-tree metadata for a conservative tree-based homepage refresh. The August 3 daily page and metadata were archived successfully, but the homepage may remain stale."
+}
