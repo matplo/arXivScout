@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-04",
+  "path": "reports/2026-08-04.html",
+  "summary": "The August 4 arXiv window is unusually relevant for small-system and lower-energy heavy-ion physics. The strongest experimental item is LHCb's Upsilon suppression measurement in pO and OO, which directly tests how quarkonium suppression emerges in a compact collision system. The theory and phenomenology set emphasizes causality constraints for anisotropic hydrodynamics, proton-proton femtoscopy as a short-range nuclear-structure probe in O+O, light-cluster effects on FOPI-energy collective flow, and RHIC radial-flow fluctuations. The strongest AI/ML-relevant papers are a nuclear many-body normalizing-flow sampling framework and a realistic supervised-ML versus response-matrix study for total-absorption gamma spectroscopy.",
+  "keywords": [
+    "OO collisions",
+    "pO collisions",
+    "Upsilon suppression",
+    "small-system QGP",
+    "radial flow fluctuations",
+    "bulk viscosity",
+    "anisotropic hydrodynamics",
+    "nonlinear causality",
+    "proton-proton femtoscopy",
+    "short-range correlations",
+    "light-cluster formation",
+    "FOPI energies",
+    "normalizing flows",
+    "high-dimensional sampling",
+    "nuclear many-body states",
+    "TAGS deconvolution",
+    "supervised machine learning"
+  ],
+  "arxiv_ids": [
+    "2608.00182",
+    "2608.00190",
+    "2608.01190",
+    "2608.01900",
+    "2608.02383",
+    "2608.00529",
+    "2608.00090"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2608.00182: Modification of Upsilon production in pO and OO collisions at LHCb",
+  "top_takeaway": "The standout heavy-ion result is the LHCb OO Upsilon suppression measurement; the standout transferable physics-ML work is the Schrodinger Generator, because it combines learned coordinate transformations with unbiased resampling for nuclear many-body integration in dimensions above 600.",
+  "caution_count": 0,
+  "candidate_count_inspected": 34,
+  "papers": [
+    {
+      "title": "Modification of Upsilon production in pO and OO collisions at LHCb",
+      "authors_short": "LHCb Collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, F. Abudinen, T. Ackernley, et al.",
+      "author_count": 1190,
+      "arxiv_id": "2608.00182",
+      "url": "https://arxiv.org/abs/2608.00182",
+      "category": "Experiment",
+      "abstract": "LHCb measures Upsilon(2S)/Upsilon(1S) and Upsilon(3S)/Upsilon(1S) production-rate ratios in pp, pO, and OO collisions. The pp ratios agree with earlier LHCb measurements, pO shows only slight relative suppression, and OO shows roughly factor-two Upsilon(2S) suppression with evidence for Upsilon(3S) suppression. Models including QGP formation in OO describe the data and the paper discusses cold-nuclear-matter effects versus color screening in a deconfined medium.",
+      "tags": ["Upsilon suppression", "OO collisions", "pO collisions", "small-system QGP", "quarkonium"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Collision energy and system size dependence of pT-differential radial flow fluctuations v0(pT) at RHIC",
+      "authors_short": "Zaining Wang for the STAR Collaboration",
+      "author_count": null,
+      "arxiv_id": "2608.00190",
+      "url": "https://arxiv.org/abs/2608.00190",
+      "category": "Experiment",
+      "abstract": "STAR reports the first RHIC measurements of v0(pT) in Au+Au collisions from sqrt(sNN)=7.7--200 GeV and O+O collisions at 200 GeV. The integral fluctuation v0 follows a common charged-multiplicity dependence in large and small systems, while normalized v0(pT)/v0 factorizes across systems and centralities. Identified-hadron mass ordering and comparisons with viscous models suggest sensitivity to bulk viscosity.",
+      "tags": ["STAR", "radial flow fluctuations", "O+O", "Au+Au", "bulk viscosity"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Proton-proton Femtoscopy as a Probe of Short-range Structure in High-Energy O+O Collisions",
+      "authors_short": "Baoshan Xi, Pei Li, Chunjian Zhang, Jinhui Chen, Su-Ya-La-Tu Zhang, Yu-Gang Ma",
+      "author_count": 6,
+      "arxiv_id": "2608.01190",
+      "url": "https://arxiv.org/abs/2608.01190",
+      "category": "Phenomenology",
+      "abstract": "The paper studies proton-proton femtoscopy in O+O collisions at sqrt(sNN)=200 GeV using mean-field, low-resolution cluster, and short-range-correlated nuclear-structure inputs. The p-p correlation function separates the three inputs, most strongly in peripheral events, where the ab initio input lowers the extracted source radius by about 5 percent relative to a mean-field baseline. The proposed Cpp/Cpipi double ratio retains the effect and the leading theoretical systematic from the strong-interaction potential is quantified.",
+      "tags": ["proton-proton femtoscopy", "O+O", "short-range correlations", "nuclear structure", "source radii"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Necessary and sufficient conditions of nonlinear causality in viscous anisotropic hydrodynamics",
+      "authors_short": "Kento Yoshida, Shujun Zhao, Tetsufumi Hirano",
+      "author_count": 3,
+      "arxiv_id": "2608.01900",
+      "url": "https://arxiv.org/abs/2608.01900",
+      "category": "Theory",
+      "abstract": "The authors derive necessary and sufficient nonlinear-causality conditions for viscous anisotropic hydrodynamics in an approximation that neglects small correction terms. By analyzing characteristic velocities, they obtain inequalities that enforce causal signal propagation in all directions and interpret them through characteristic modes of an anisotropic medium. The motivation is the use of anisotropic hydrodynamics for the early, pressure-anisotropic stage of relativistic heavy-ion collisions.",
+      "tags": ["anisotropic hydrodynamics", "causality", "early-time dynamics", "pressure anisotropy", "relativistic hydro"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Effects of light-cluster degrees of freedom on collective flows in heavy-ion collisions at FOPI energies",
+      "authors_short": "Xin Li, Si-Pei Wang, Rui Wang, Zhen Zhang, Jie Pu, Chun-Wang Ma, Lie-Wen Chen",
+      "author_count": 7,
+      "arxiv_id": "2608.02383",
+      "url": "https://arxiv.org/abs/2608.02383",
+      "category": "Phenomenology",
+      "abstract": "A lattice Boltzmann-Uehling-Uhlenbeck transport model coupled to kinetic light-cluster formation is used to study Au+Au collisions at FOPI beam energies from 120 to 1500 A MeV. The authors benchmark light-cluster yields against FOPI central-collision data and study proton and light-nucleus directed, elliptic, triangular, and quadrangular flows. Dynamical cluster effects are appreciable below about 600 A MeV and the model qualitatively reproduces v2/A scaling for light nuclei.",
+      "tags": ["FOPI energies", "light clusters", "collective flow", "transport model", "Au+Au"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Schrodinger Generator for High-Dimensional Integration and Sampling on Quantum Many-Body States",
+      "authors_short": "Lin-Jing Jiang, Fu Ma, Pei Li, Kai-Jia Sun, Guo-Liang Ma, Yu-Gang Ma",
+      "author_count": 6,
+      "arxiv_id": "2608.00529",
+      "url": "https://arxiv.org/abs/2608.00529",
+      "category": "AI/ML use",
+      "abstract": "The paper introduces a learned integration and sampling framework that optimizes coordinate transformations through an adaptive marginal map plus a normalizing-flow transformation for non-factorizable correlations. A final resampling step guarantees unbiased sampling even when the learned transformation is imperfect. The method is demonstrated on nuclear quantum many-body states in dimensions above 600 and reproduces short-range nucleon correlations in finite nuclei.",
+      "tags": ["normalizing flows", "high-dimensional sampling", "nuclear many-body", "unbiased resampling", "short-range correlations"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Rethinking Total Absorption Gamma Spectroscopy Deconvolution: Supervised Machine Learning vs Response-Matrix Methods",
+      "authors_short": "J. Balibrea-Correa, E. Nacher, C. Fonseca-Vargas, J. L. Tain",
+      "author_count": 4,
+      "arxiv_id": "2608.00090",
+      "url": "https://arxiv.org/abs/2608.00090",
+      "category": "AI/ML use",
+      "abstract": "The paper compares supervised machine-learning deconvolution with response-matrix methods for extracting beta-feeding distributions in total-absorption gamma spectroscopy. Using realistic Monte Carlo simulations of an experimental total-absorption spectrometer, supervised ML improves reconstruction of individual feeding intensities while response-matrix methods provide physically consistent starting solutions. The authors argue for a hybrid strategy: response-matrix initialization followed by supervised-ML refinement.",
+      "tags": ["TAGS", "deconvolution", "supervised ML", "response matrix", "nuclear experiment"],
+      "assessment": "strong"
+    }
+  ],
+  "cautions": [],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. The GitHub app tools exposed in this run could read index.html and create new files, but did not expose a safe contents-API replacement action for an existing index.html, and the available commit metadata did not provide enough base-tree information for a conservative tree-based homepage refresh. The 2026-08-03 report is also present in metadata but missing from the current homepage, so the homepage remains stale pending a safe replacement-capable archive pass."
+}
