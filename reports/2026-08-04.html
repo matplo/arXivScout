@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-04</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-04 briefing</h1>
+    <p class="dek">OO quarkonium suppression, RHIC radial-flow fluctuations, O+O femtoscopy, anisotropic-hydrodynamic causality, light-cluster transport, and nuclear ML inverse/sampling methods.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion paper today is LHCb's Upsilon production measurement in pO and OO: pO shows only slight relative suppression, while OO shows a roughly factor-two Upsilon(2S) suppression and evidence for Upsilon(3S) suppression.</li>
+        <li>Small-system collectivity and structure are the recurring themes: OO collisions appear in the LHCb quarkonium result, STAR radial-flow fluctuations, and the proton-proton femtoscopy proposal.</li>
+        <li>The most theoretically useful contribution is the anisotropic-hydrodynamics causality paper, because it sharpens the regime where early-time VAH can be used without acausal signal propagation.</li>
+        <li>The FOPI-energy light-cluster transport paper is a solid lower-energy phenomenology entry: it benchmarks yields and demonstrates non-negligible cluster feedback on proton flow below about 600 A MeV.</li>
+        <li>For AI/ML, the strongest transfer items are not generic ML: one targets high-dimensional nuclear many-body sampling with normalizing flows and unbiased resampling; the other compares supervised ML to response-matrix deconvolution for a concrete nuclear inverse problem.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.00182 Upsilon suppression pO OO LHCb quarkonium small-system QGP cold nuclear matter color screening Experiment strong">
+        <div class="paper-head"><h4>Modification of Upsilon production in pO and OO collisions at LHCb</h4><span class="label strong">strong</span></div>
+        <p class="meta">LHCb Collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, F. Abudinen, T. Ackernley, et al. (1190 authors) | <a href="https://arxiv.org/abs/2608.00182">arXiv:2608.00182</a> | Nuclear Experiment; HEP Experiment</p>
+        <p><strong>Summary:</strong> LHCb measures relative Upsilon(2S) and Upsilon(3S) production with respect to Upsilon(1S) in pp, pO, and OO. The pO data show only slight relative suppression, while OO shows about a factor-two Upsilon(2S) suppression and evidence for Upsilon(3S) suppression; models with QGP formation in OO describe the data.</p>
+        <p><strong>Why it matters:</strong> This is a clean and timely small-system quarkonium result. The pp/pO/OO comparison gives leverage on cold-nuclear-matter effects versus color screening or hot-medium suppression in a compact system.</p>
+        <p><strong>Critical assessment:</strong> Strong experimental provenance and high relevance. Interpretation will still depend on how well models separate initial-state nuclear effects, feed-down, and small-system medium formation, but the observable itself is sharply chosen.</p>
+      </article>
+
+      <article class="paper" data-search="2608.00190 STAR radial flow fluctuations v0 pT Au+Au O+O BES RHIC bulk viscosity collectivity Experiment mixed">
+        <div class="paper-head"><h4>Collision energy and system size dependence of pT-differential radial flow fluctuations v0(pT) at RHIC</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Zaining Wang for the STAR Collaboration | <a href="https://arxiv.org/abs/2608.00190">arXiv:2608.00190</a> | Nuclear Experiment</p>
+        <p><strong>Summary:</strong> STAR reports first RHIC measurements of v0(pT) in Au+Au at sqrt(sNN)=7.7--200 GeV and O+O at 200 GeV. The integral v0 follows a common charged-multiplicity dependence, while normalized v0(pT)/v0 factorizes across systems and centralities; mass ordering and viscous comparisons indicate sensitivity to bulk viscosity.</p>
+        <p><strong>Why it matters:</strong> Radial-flow fluctuations are a useful complement to anisotropic-flow observables because they probe event-by-event transverse-size fluctuations and the bulk hydrodynamic response.</p>
+        <p><strong>Critical assessment:</strong> Interesting and relevant, but this is a four-page SQM proceedings contribution. Treat it as an important pointer to STAR measurements and model comparisons rather than the final word on zeta/s constraints.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.01900 anisotropic hydrodynamics nonlinear causality VAH early-time dynamics pressure anisotropy characteristic velocities Theory strong">
+        <div class="paper-head"><h4>Necessary and sufficient conditions of nonlinear causality in viscous anisotropic hydrodynamics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kento Yoshida, Shujun Zhao, Tetsufumi Hirano | <a href="https://arxiv.org/abs/2608.01900">arXiv:2608.01900</a> | Nuclear Theory; HEP Phenomenology; Nuclear Experiment</p>
+        <p><strong>Summary:</strong> The authors derive nonlinear-causality conditions for viscous anisotropic hydrodynamics in an approximation that neglects small correction terms. They analyze characteristic velocities and obtain inequalities that ensure causal signal propagation in all directions.</p>
+        <p><strong>Why it matters:</strong> VAH is often invoked exactly where conventional viscous hydrodynamics is strained: the early, far-from-equilibrium, pressure-anisotropic stage of heavy-ion collisions. A clean causality domain is essential if such calculations are to be trusted beyond formal convenience.</p>
+        <p><strong>Critical assessment:</strong> Strong theory utility. The caveat is explicit in the setup: the conditions are derived within an approximation, so implementation-level checks in full VAH codes remain important.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.01190 proton-proton femtoscopy O+O short-range correlations nuclear structure ab initio source radius double ratio Phenomenology strong">
+        <div class="paper-head"><h4>Proton-proton Femtoscopy as a Probe of Short-range Structure in High-Energy O+O Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Baoshan Xi, Pei Li, Chunjian Zhang, Jinhui Chen, Su-Ya-La-Tu Zhang, Yu-Gang Ma | <a href="https://arxiv.org/abs/2608.01190">arXiv:2608.01190</a> | Nuclear Theory; Nuclear Experiment</p>
+        <p><strong>Summary:</strong> The paper compares mean-field, low-resolution cluster, and short-range-correlated O-16 inputs in O+O collisions at sqrt(sNN)=200 GeV. Proton-proton correlations separate the inputs, especially in peripheral events, with an ab initio input suppressing the extracted source radius by about 5 percent relative to a mean-field baseline.</p>
+        <p><strong>Why it matters:</strong> O+O has become a high-value testing ground for how nuclear structure propagates into heavy-ion observables. The proposed p-p femtoscopy observable probes short-range structure that one-body density and low-order flow moments largely miss.</p>
+        <p><strong>Critical assessment:</strong> Strong and well targeted. The work is still predictive, so experimental feasibility and background/systematic robustness will decide its eventual impact.</p>
+      </article>
+
+      <article class="paper" data-search="2608.02383 light clusters FOPI energies Au+Au collective flow LBUU transport v1 v2 v3 v4 Phenomenology strong">
+        <div class="paper-head"><h4>Effects of light-cluster degrees of freedom on collective flows in heavy-ion collisions at FOPI energies</h4><span class="label strong">strong</span></div>
+        <p class="meta">Xin Li, Si-Pei Wang, Rui Wang, Zhen Zhang, Jie Pu, Chun-Wang Ma, Lie-Wen Chen | <a href="https://arxiv.org/abs/2608.02383">arXiv:2608.02383</a> | Nuclear Theory; HEP Experiment; HEP Phenomenology; Nuclear Experiment</p>
+        <p><strong>Summary:</strong> A lattice Boltzmann-Uehling-Uhlenbeck transport model with kinetic light-cluster formation is applied to Au+Au collisions at 120--1500 A MeV. The authors benchmark cluster yields against FOPI data and compare proton and light-nucleus flow harmonics with and without dynamical cluster degrees of freedom.</p>
+        <p><strong>Why it matters:</strong> At lower beam energies, light clusters are not a harmless afterburner detail: they feed back into proton flow and affect how one interprets EOS-sensitive collective observables.</p>
+        <p><strong>Critical assessment:</strong> Strong phenomenology because it couples a concrete mechanism to data benchmarks and flow observables. The results are most compelling below about 600 A MeV; at higher energies the cluster effect is small.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2608.00529 Schrodinger Generator normalizing flow high-dimensional sampling nuclear many-body states unbiased resampling short-range correlations AI ML strong">
+        <div class="paper-head"><h4>Schrodinger Generator for High-Dimensional Integration and Sampling on Quantum Many-Body States</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lin-Jing Jiang, Fu Ma, Pei Li, Kai-Jia Sun, Guo-Liang Ma, Yu-Gang Ma | <a href="https://arxiv.org/abs/2608.00529">arXiv:2608.00529</a> | Nuclear Theory; Quantum Physics</p>
+        <p><strong>Summary:</strong> The method learns coordinate transformations for high-dimensional integration and sampling using an adaptive marginal map plus a normalizing-flow transformation for correlations. A final resampling step preserves unbiased sampling when the learned map is imperfect, and demonstrations reach nuclear many-body states above 600 dimensions.</p>
+        <p><strong>Why it matters:</strong> Efficient, unbiased high-dimensional sampling is a genuine bottleneck across nuclear many-body theory, Bayesian calibration, and transport/hydro uncertainty propagation.</p>
+        <p><strong>Critical assessment:</strong> Strong and unusually relevant ML use: the method is tied to a hard physics computation rather than a superficial classifier task. The natural next test is comparison to established nuclear Monte Carlo workflows on harder observables and wall-clock cost.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2608.00529 Schrodinger Generator normalizing flow high-dimensional sampling Bayesian inference nuclear many-body AI ML strong">
+        <div class="paper-head"><h4>Schrodinger Generator for High-Dimensional Integration and Sampling on Quantum Many-Body States</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lin-Jing Jiang, Fu Ma, Pei Li, Kai-Jia Sun, Guo-Liang Ma, Yu-Gang Ma | <a href="https://arxiv.org/abs/2608.00529">arXiv:2608.00529</a></p>
+        <p><strong>Method and result:</strong> A learned adaptive map captures marginal structure and a normalizing flow captures non-factorizable correlations, followed by unbiased resampling. The reported validation on nuclear many-body states above 600 dimensions and short-range nucleon correlations makes this a serious physics-ML contribution.</p>
+        <p><strong>Likely use case:</strong> Nuclear many-body integration, Bayesian posterior sampling, emulator calibration, and potentially high-dimensional initial-condition or transport parameter inference.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value. The important caveat is whether the efficiency survives when observables, priors, and correlations become less tailored than the demonstrated nuclear examples.</p>
+      </article>
+
+      <article class="paper" data-search="2608.00090 total absorption gamma spectroscopy TAGS deconvolution supervised machine learning response matrix beta feeding nuclear experiment AI ML strong">
+        <div class="paper-head"><h4>Rethinking Total Absorption Gamma Spectroscopy Deconvolution: Supervised Machine Learning vs Response-Matrix Methods</h4><span class="label strong">strong</span></div>
+        <p class="meta">J. Balibrea-Correa, E. Nacher, C. Fonseca-Vargas, J. L. Tain | <a href="https://arxiv.org/abs/2608.00090">arXiv:2608.00090</a> | Data Analysis; Machine Learning; Nuclear Experiment</p>
+        <p><strong>Method and result:</strong> The authors compare supervised ML and response-matrix methods for extracting beta-feeding distributions in total-absorption gamma spectroscopy using realistic Monte Carlo simulations. ML improves reconstruction of individual feeding intensities, while response-matrix methods provide robust physically consistent initial solutions.</p>
+        <p><strong>Likely use case:</strong> Nuclear inverse problems where detector responses are high dimensional and ill posed; for HEP and heavy-ion detector work, the main lesson is hybridization of physics-constrained inversion with supervised residual refinement.</p>
+        <p><strong>Critical assessment:</strong> Strong because the comparison is concrete and the proposed hybrid strategy respects physical constraints. The main missing evidence is performance on real experimental spectra with mismodeled response and systematic uncertainties.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <p>No paper from the selected set warranted a dedicated caution entry. I excluded several generic physics-informed or collider-ML items because the transfer path to HEP, heavy-ion, or nuclear physics was either too indirect or not scientifically specific enough for this briefing.</p>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
