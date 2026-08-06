@@ -1,0 +1,139 @@
+{
+  "date": "2026-08-06",
+  "path": "reports/2026-08-06.html",
+  "summary": "The August 6 scout window emphasizes low-mass dileptons as QCD equation-of-state probes, forward-rapidity jet suppression, SPS hadron-production systematics, preliminary BM@N directed flow, analytic spin-polarization formulation dependence, and transferable physics AI/ML methods for symbolic model discovery, spatiotemporal data assimilation, and parameterized PDE surrogates. The strongest directly new heavy-ion phenomenology paper is 2608.04598 on separating first-order-transition dynamics from hadronic rescattering in dilepton spectra. The strongest experimental result in the recent catch-up window is 2608.03261 from ATLAS, slightly outside the strict 24-hour submission window but scientifically important as the first forward-rapidity inclusive-jet suppression measurement in heavy-ion collisions.",
+  "keywords": [
+    "low-mass dileptons",
+    "QCD equation of state",
+    "hadronic rescattering",
+    "forward jet suppression",
+    "Pb+Pb RAA",
+    "NA61/SHINE hadron production",
+    "strangeness horn",
+    "BM@N directed flow",
+    "light-nucleus formation",
+    "spin polarization",
+    "thermal vorticity",
+    "symbolic regression",
+    "LLM-guided model discovery",
+    "latent flow matching",
+    "data assimilation",
+    "continual-learning PINNs",
+    "holographic jet quenching caution"
+  ],
+  "arxiv_ids": ["2608.03945", "2608.03261", "2608.04758", "2608.04592", "2608.04598", "2608.05120", "2608.05103", "2608.04778", "2608.04541"],
+  "total_paper_count": 9,
+  "represented_categories": ["Theory", "Experiment", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2608.04598: Separating Equation-of-State Dynamics from Hadronic Rescattering in Low-Mass Dileptons",
+  "top_takeaway": "Dilepton and jet-quenching observables dominate the heavy-ion signal today, while the best AI/ML transfer items are methods for interpretable model discovery and sparse spatiotemporal reconstruction rather than core HEP/NP applications.",
+  "caution_count": 1,
+  "candidate_count_inspected": 43,
+  "papers": [
+    {
+      "title": "Local Spin Polarization in Anisotropic Gubser Flow: Suppression Mechanism and Formulation Dependence",
+      "authors_short": "Kenji Fukushima, Shi Pu, Dong-Lin Wang",
+      "author_count": 3,
+      "arxiv_id": "2608.03945",
+      "url": "https://arxiv.org/abs/2608.03945",
+      "category": "Theory",
+      "abstract": "The authors analytically study longitudinal spin polarization in perturbed anisotropic Gubser flow. Thermal vorticity and thermal shear are comparable, can cancel, and the sign agreement with experiment depends strongly on the reference-vector formulation. A freeze-out-normal formulation shows exact leading-order cancellation in the large-system-size limit.",
+      "tags": ["spin polarization", "anisotropic Gubser flow", "thermal vorticity", "thermal shear", "formulation dependence"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Measurement of forward jet suppression in Pb+Pb collisions at sqrt(sNN)=5.02 TeV with the ATLAS detector",
+      "authors_short": "ATLAS Collaboration",
+      "author_count": null,
+      "arxiv_id": "2608.03261",
+      "url": "https://arxiv.org/abs/2608.03261",
+      "category": "Experiment",
+      "abstract": "ATLAS measures inclusive anti-kt R=0.4 jet RAA at forward rapidities 2.8<|y|<3.6 using Pb+Pb and pp data at 5.02 TeV. Jet suppression increases from peripheral to central collisions and has mild pT dependence. The 2.8<|y|<3.2 interval appears more suppressed than |y|<2.8, while the most forward interval is less conclusive.",
+      "tags": ["ATLAS", "forward jets", "Pb+Pb", "RAA", "jet quenching"],
+      "assessment": "strong"
+    },
+    {
+      "title": "News on charged and neutral hadron production from NA61/SHINE",
+      "authors_short": "Yuliia Balkova, Maciej P. Lewicki",
+      "author_count": 2,
+      "arxiv_id": "2608.04758",
+      "url": "https://arxiv.org/abs/2608.04758",
+      "category": "Experiment",
+      "abstract": "A compact NA61/SHINE status paper on charged and neutral hadron production in Ar+Sc, Xe+La, Be+Be, and Pb+Pb over SPS energies. It discusses K+/pi+ horn systematics, kaon inverse slopes, normalized proton rapidity spectra, Lambda production, and a possible charged-over-neutral kaon excess in central Ar+Sc.",
+      "tags": ["NA61/SHINE", "SPS", "strangeness", "baryon transport", "kaon ratios"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Directed Flow of Protons and Deuterons in Xe+Cs(I) Collisions: Preliminary BM@N Data and THESEUS Modeling",
+      "authors_short": "M. E. Kozhevnikova, M. V. Mamaev, I. A. Zhavoronkova, A. V. Taranenko, Yu. B. Ivanov",
+      "author_count": 5,
+      "arxiv_id": "2608.04592",
+      "url": "https://arxiv.org/abs/2608.04592",
+      "category": "Experiment",
+      "abstract": "Preliminary BM@N v1 measurements for protons and deuterons in Xe+Cs(I) at 3.8 A GeV are compared with THESEUS. The model describes proton directed flow well but slightly and systematically overestimates deuteron flow at low and intermediate rapidities.",
+      "tags": ["BM@N", "directed flow", "deuterons", "THESEUS", "baryon-rich matter"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Separating Equation-of-State Dynamics from Hadronic Rescattering in Low-Mass Dileptons",
+      "authors_short": "Apiwit Kittiratpattana, Ayut Limphirat, Yupeng Yan, Christoph Herold",
+      "author_count": 4,
+      "arxiv_id": "2608.04598",
+      "url": "https://arxiv.org/abs/2608.04598",
+      "category": "Phenomenology",
+      "abstract": "The authors study dilepton emission in non-equilibrium chiral fluid dynamics for first-order phase-transition and crossover EoS scenarios at sqrt(sNN)=2.20--6.20 GeV. In-medium rho and omega spectral functions are evaluated from resonance-driven forward scattering with pions and nucleons to distinguish hadronic broadening from phase-transition dynamics.",
+      "tags": ["low-mass dileptons", "QCD EoS", "phase transition", "hadronic rescattering", "spectral functions"],
+      "assessment": "strong"
+    },
+    {
+      "title": "DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery",
+      "authors_short": "Roberto Aliaga Medina, Paulina Quintanilla, Antonio del Rio Chanona",
+      "author_count": 3,
+      "arxiv_id": "2608.05120",
+      "url": "https://arxiv.org/abs/2608.05120",
+      "category": "AI/ML use",
+      "abstract": "The framework embeds an LLM in an iterative symbolic-regression algorithm to critique candidate kinetic laws and propose domain-informed alternatives. In four in-silico kinetic case studies, it reduces iterations to recover ground-truth models by roughly 42--79 percent compared with a state-of-the-art symbolic regression baseline while retaining high validation accuracy.",
+      "tags": ["symbolic regression", "LLM", "kinetic model discovery", "interpretable models", "domain knowledge"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Multimodal Spatiotemporal Atmospheric Data Assimilation with Latent Flow-matching",
+      "authors_short": "Dibyajyoti Chakraborty, Romit Maulik",
+      "author_count": 2,
+      "arxiv_id": "2608.05103",
+      "url": "https://arxiv.org/abs/2608.05103",
+      "category": "AI/ML use",
+      "abstract": "A latent video flow-matching prior trained on ERA5 samples temporally consistent atmospheric trajectories, while posterior sampling assimilates sparse real observations. The same formulation handles filtering, smoothing, and sparse-observation ensemble forecasting by changing observed frames.",
+      "tags": ["flow matching", "data assimilation", "spatiotemporal fields", "sparse observations", "fluid dynamics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Continual-Learning Physics-Informed Neural Networks for Parameterized Partial Differential Equations",
+      "authors_short": "Xujia Chen, Xinyue Hu, Letian Chen, Yi Liu, Wenhui Fan",
+      "author_count": 5,
+      "arxiv_id": "2608.04778",
+      "url": "https://arxiv.org/abs/2608.04778",
+      "category": "AI/ML use",
+      "abstract": "CL-PINN treats PDE instances at different parameter values as related sequential tasks. It combines Bayesian-optimization-based active parameter selection, dynamic loss weighting, sparse physics-constrained replay, and optional parameter subnetworks, reporting more balanced accuracy than fixed-sampling and grid-greedy baselines on benchmark PDEs.",
+      "tags": ["PINNs", "continual learning", "parameterized PDEs", "active sampling", "surrogates"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Holographic light quark jet quenching in flavor resolved QCD plasmas",
+      "authors_short": "Huwei Zhu, Ke Ma, Zi-qiang Zhang",
+      "author_count": 3,
+      "arxiv_id": "2608.04541",
+      "url": "https://arxiv.org/abs/2608.04541",
+      "category": "Caution",
+      "abstract": "The paper computes stopping distances and differential energy loss for light quarks in lattice-calibrated Einstein-Maxwell-dilaton backgrounds with different flavor compositions and finite baryon chemical potential. It reports stronger quenching near the crossover with more dynamical flavors, a high-temperature flavor hierarchy reversal, and sensitivity near a critical endpoint.",
+      "tags": ["holography", "jet quenching", "finite baryon chemical potential", "critical endpoint", "caution"],
+      "assessment": "caution"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2608.04541",
+      "reason": "Relevant setup, but the abstract makes unusually strong claims about critical-endpoint sensitivity, RHIC beam-energy-scan anomalies, and ruling out formalism-specific artifacts from a limited holographic comparison. Treat as hypothesis-generating until tested against broader observables and competing models."
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. index.html was read and found stale relative to existing August 4 metadata, but the connector tools exposed in this run still did not include a direct safe replacement action for an existing contents-API file, nor enough base-tree SHA information for a conservative tree-based homepage refresh. The homepage could therefore not be refreshed safely in this run."
+}
