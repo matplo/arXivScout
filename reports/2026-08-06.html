@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-06</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-06 briefing</h1>
+    <p class="dek">Low-mass dileptons as EoS probes, forward jet suppression, SPS hadron production, BM@N directed flow, spin-polarization formulation dependence, and transferable physics ML for symbolic model discovery, flow-matching data assimilation, and parameterized PDE surrogates.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest directly new heavy-ion phenomenology item is the low-mass dilepton paper, because it targets a concrete separation of equation-of-state dynamics from hadronic rescattering in the RHIC/BES-to-FAIR energy regime.</li>
+        <li>The strongest experimental result in the recent window is ATLAS forward jet suppression in Pb+Pb. It is slightly outside the strict 24-hour submission window but important enough to keep in view because it is the first forward-rapidity inclusive-jet RAA measurement in heavy-ion collisions.</li>
+        <li>Several new experimental/proceedings items are useful but should be read as conference-status signals: NA61/SHINE hadron-production systematics and BM@N directed flow are relevant, but neither has the evidentiary weight of a full analysis paper.</li>
+        <li>For theory, the spin-polarization paper is valuable because it clarifies how thermal-vorticity, shear, and formulation choices affect the sign and magnitude of longitudinal polarization in analytic flow backgrounds.</li>
+        <li>The AI/ML papers today are mostly outside core HEP/NP, so inclusion is selective: symbolic regression with domain critique, latent flow-matching data assimilation, and continual-learning PINNs have credible transfer value for model discovery, state estimation, and surrogate construction.</li>
+        <li>The holographic light-quark jet-quenching paper is worth cautioning about: the setup is relevant, but the abstract makes unusually strong claims about critical-endpoint sensitivity and artifact exclusion from a limited holographic model comparison.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.03945 spin polarization anisotropic Gubser flow thermal vorticity thermal shear formulation dependence longitudinal polarization Theory strong">
+        <div class="paper-head"><h4>Local Spin Polarization in Anisotropic Gubser Flow: Suppression Mechanism and Formulation Dependence</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kenji Fukushima, Shi Pu, Dong-Lin Wang | <a href="https://arxiv.org/abs/2608.03945">arXiv:2608.03945</a> | Nuclear Theory; HEP Phenomenology</p>
+        <p><strong>Summary:</strong> The authors analytically study longitudinal spin polarization using perturbed anisotropic Gubser flow. They show that thermal vorticity and thermal shear are comparable, can partially cancel, and that the sign agreement with experiment depends strongly on the reference-vector formulation.</p>
+        <p><strong>Why it matters:</strong> Spin polarization remains a sensitive and conceptually unsettled probe of QGP vorticity, shear, and freeze-out physics. A controlled analytic calculation helps isolate which parts of the polarization signal are robust and which are convention-sensitive.</p>
+        <p><strong>Critical assessment:</strong> Strong as a theory-clarification paper. It should not be mistaken for a complete phenomenological description, because Gubser-flow analytics intentionally trade realism for interpretability.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.03261 ATLAS forward jet suppression Pb+Pb pp RAA jet quenching forward rapidity energy loss Experiment strong">
+        <div class="paper-head"><h4>Measurement of forward jet suppression in Pb+Pb collisions at sqrt(sNN)=5.02 TeV with the ATLAS detector</h4><span class="label strong">strong</span></div>
+        <p class="meta">ATLAS Collaboration | <a href="https://arxiv.org/abs/2608.03261">arXiv:2608.03261</a> | Nuclear Experiment; HEP Experiment</p>
+        <p><strong>Summary:</strong> ATLAS measures inclusive anti-kt R=0.4 jet RAA at forward rapidities 2.8&lt;|y|&lt;3.6 in Pb+Pb and pp at 5.02 TeV. Suppression grows from peripheral to central events, has mild pT dependence, and appears stronger in 2.8&lt;|y|&lt;3.2 than at |y|&lt;2.8, while the most forward bin is statistically less decisive.</p>
+        <p><strong>Why it matters:</strong> Forward jet quenching probes path length, initial parton flavor, medium density gradients, and nuclear-PDF/systematic effects in a kinematic region that central-rapidity measurements do not cover.</p>
+        <p><strong>Critical assessment:</strong> Strong experimental result with clear novelty. Its submission date is August 4, so I treat it as a near-window catch-up rather than strictly today's listing.</p>
+      </article>
+
+      <article class="paper" data-search="2608.04758 NA61 SHINE charged neutral hadron production SPS Ar+Sc Xe+La strangeness horn kaon proton rapidity Experiment mixed">
+        <div class="paper-head"><h4>News on charged and neutral hadron production from NA61/SHINE</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Yuliia Balkova, Maciej P. Lewicki | <a href="https://arxiv.org/abs/2608.04758">arXiv:2608.04758</a> | Nuclear Experiment; HEP Experiment</p>
+        <p><strong>Summary:</strong> The paper summarizes NA61/SHINE results on charged and neutral hadron production in medium-size systems such as Ar+Sc and Xe+La over SPS energies. It discusses K+/pi+ systematics, kaon inverse slopes, normalized proton rapidity spectra, Lambda production, and a reported charged-over-neutral kaon excess in central Ar+Sc.</p>
+        <p><strong>Why it matters:</strong> These system-size and energy-scan measurements are central to mapping the onset of deconfinement and baryon transport outside the largest Pb+Pb systems.</p>
+        <p><strong>Critical assessment:</strong> Useful and relevant, but it is a compact status/proceedings-style contribution. The anomalous kaon-ratio statement is interesting, but needs full systematic context before being weighted heavily.</p>
+      </article>
+
+      <article class="paper" data-search="2608.04592 BMN directed flow protons deuterons Xe CsI THESEUS light nuclei baryon-rich matter Nuclotron Experiment mixed">
+        <div class="paper-head"><h4>Directed Flow of Protons and Deuterons in Xe+Cs(I) Collisions: Preliminary BM@N Data and THESEUS Modeling</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">M. E. Kozhevnikova, M. V. Mamaev, I. A. Zhavoronkova, A. V. Taranenko, Yu. B. Ivanov | <a href="https://arxiv.org/abs/2608.04592">arXiv:2608.04592</a> | Nuclear Experiment; HEP Phenomenology; Nuclear Theory</p>
+        <p><strong>Summary:</strong> Preliminary BM@N v1 measurements for protons and deuterons in Xe+Cs(I) at 3.8 A GeV are compared with THESEUS. The model describes proton v1 well but systematically overestimates deuteron flow at low and intermediate rapidities.</p>
+        <p><strong>Why it matters:</strong> Directed flow at Nuclotron energies is sensitive to baryon-rich matter dynamics and to light-nucleus production mechanisms, especially when protons and deuterons are compared directly.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but the evidence level is preliminary: 4 pages, one figure, and proceedings context. The deuteron discrepancy is useful as a model diagnostic, not yet a firm physics conclusion.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.04598 low-mass dileptons QCD equation of state phase transition crossover hadronic rescattering rho omega spectral functions Phenomenology strong">
+        <div class="paper-head"><h4>Separating Equation-of-State Dynamics from Hadronic Rescattering in Low-Mass Dileptons</h4><span class="label strong">strong</span></div>
+        <p class="meta">Apiwit Kittiratpattana, Ayut Limphirat, Yupeng Yan, Christoph Herold | <a href="https://arxiv.org/abs/2608.04598">arXiv:2608.04598</a> | HEP Phenomenology; Nuclear Theory</p>
+        <p><strong>Summary:</strong> The paper studies dilepton emission in non-equilibrium chiral fluid dynamics for first-order and crossover EoS scenarios at sqrt(sNN)=2.20--6.20 GeV. It evaluates in-medium rho and omega spectral functions from resonance-driven forward scattering with pions and nucleons to separate hadronic broadening from first-order-transition dynamics.</p>
+        <p><strong>Why it matters:</strong> Low-mass dileptons are among the cleaner probes of the full fireball history because they escape without strong final-state interactions. A discriminant between EoS softening and hadronic rescattering would be valuable for FAIR/NICA/RHIC-BES physics.</p>
+        <p><strong>Critical assessment:</strong> Strong and directly relevant. The key uncertainty is model dependence: the claimed separation should eventually be stress-tested against alternate transport/hydro backgrounds and experimental acceptance effects.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2608.05120 DASyR LLM symbolic regression kinetic model discovery domain-aware model discovery chemical kinetics AI ML strong transferable">
+        <div class="paper-head"><h4>DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">Roberto Aliaga Medina, Paulina Quintanilla, Antonio del Rio Chanona | <a href="https://arxiv.org/abs/2608.05120">arXiv:2608.05120</a> | Machine Learning; Computational Engineering; Symbolic Computation</p>
+        <p><strong>Method and result:</strong> The framework embeds an LLM in an iterative symbolic-regression loop to critique candidate kinetic laws and propose domain-informed alternatives. In four in-silico kinetic case studies, it reduces iterations to recover ground-truth models by about 42--79% relative to a state-of-the-art SR baseline while maintaining validation R2 above 0.98.</p>
+        <p><strong>Likely use case:</strong> Transfer value is strongest for interpretable emulator discovery: reduced-order hydro response laws, transport-rate parameterizations, or hadronic afterburner corrections where physical plausibility constraints matter.</p>
+        <p><strong>Critical assessment:</strong> Strong method paper, but transfer is not automatic. The examples are chemical/bioprocess kinetics; HEP/NP use would need domain-specific constraints, uncertainty propagation, and non-synthetic benchmarks.</p>
+      </article>
+
+      <article class="paper" data-search="2608.05103 latent flow matching data assimilation spatiotemporal fields ensemble forecasts sparse observations fluid dynamics AI ML mixed transfer">
+        <div class="paper-head"><h4>Multimodal Spatiotemporal Atmospheric Data Assimilation with Latent Flow-matching</h4><span class="label mixed">mixed transfer</span></div>
+        <p class="meta">Dibyajyoti Chakraborty, Romit Maulik | <a href="https://arxiv.org/abs/2608.05103">arXiv:2608.05103</a> | Machine Learning; Mathematical Physics; Atmospheric/Oceanic Physics; Fluid Dynamics</p>
+        <p><strong>Method and result:</strong> A latent video flow-matching prior trained on ERA5 samples temporally consistent atmospheric trajectories, while posterior sampling assimilates sparse real observations. The model handles filtering, smoothing, and sparse-observation ensemble forecasting by changing observed frames.</p>
+        <p><strong>Likely use case:</strong> The transfer path is to heavy-ion and detector state-estimation problems with sparse/noisy observations: event-by-event field reconstruction, emulator priors over hydro histories, or detector condition interpolation.</p>
+        <p><strong>Critical assessment:</strong> Interesting and technically plausible, but indirect. Atmospheric DA has richer temporal observations than heavy-ion events, so adaptation would require careful conditioning design and closure against known physics.</p>
+      </article>
+
+      <article class="paper" data-search="2608.04778 continual learning PINNs parameterized PDE Bayesian optimization active parameter selection sparse replay physics-informed surrogates AI ML mixed transfer">
+        <div class="paper-head"><h4>Continual-Learning Physics-Informed Neural Networks for Parameterized Partial Differential Equations</h4><span class="label mixed">mixed transfer</span></div>
+        <p class="meta">Xujia Chen, Xinyue Hu, Letian Chen, Yi Liu, Wenhui Fan | <a href="https://arxiv.org/abs/2608.04778">arXiv:2608.04778</a> | Machine Learning</p>
+        <p><strong>Method and result:</strong> CL-PINN treats different parameter values of a PDE as sequential tasks, combining Bayesian-optimization-based active parameter selection, dynamic loss weighting, sparse physics-constrained replay, and optional parameter subnetworks. Multi-seed tests on benchmark PDEs report more balanced accuracy than fixed-sampling and grid-greedy baselines.</p>
+        <p><strong>Likely use case:</strong> Parameterized surrogates for hydro, diffusion, detector fields, or transport toy models where one needs broad parameter coverage without dense simulation grids.</p>
+        <p><strong>Critical assessment:</strong> Useful but still generic. The paper is extensive and careful at benchmark level, but HEP/NP credibility would require tests on stiff, discontinuous, or multi-scale physics closer to actual collision modeling.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.04541 holographic light quark jet quenching EMD QCD plasmas critical endpoint baryon chemical potential caution">
+        <div class="paper-head"><h4>Holographic light quark jet quenching in flavor resolved QCD plasmas</h4><span class="label caution">caution</span></div>
+        <p class="meta">Huwei Zhu, Ke Ma, Zi-qiang Zhang | <a href="https://arxiv.org/abs/2608.04541">arXiv:2608.04541</a> | HEP Phenomenology</p>
+        <p><strong>Why it looks relevant:</strong> Flavor-resolved, lattice-calibrated EMD backgrounds and light-quark stopping distances are clearly connected to jet-quenching phenomenology, including finite baryon chemical potential.</p>
+        <p><strong>Concern:</strong> The abstract moves from model scans to very strong language about critical-endpoint sensitivity, RHIC beam-energy-scan anomalies, and ruling out formalism-specific artifacts. With only three figures and a holographic setup, those claims should be treated as hypothesis-generating unless validated against broader jet-quenching observables and competing models.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
