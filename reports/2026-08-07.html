@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-07</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-07 Briefing</h1>
+    <p class="dek">Dense-QCD crossover constraints, ALICE three-baryon femtoscopy, EIC early-science planning, and physics-oriented ML surrogates with realistic transfer paths to HEP and nuclear workflows.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Most directly important for nuclear/HEP physics:</strong> ALICE's three-proton femtoscopy paper turns high-statistics LHC pp data into a practical probe of three-body hadronic interactions, with a careful background-correction strategy and comparison to continuum calculations.</li>
+        <li><strong>Best finite-density-QCD development:</strong> the Lee-Yang-edge reconstruction of the QCD crossover line is compact but scientifically meaningful because it ties lattice Lee-Yang-zero information to universal chiral scaling without imposing the usual small-muB curvature input.</li>
+        <li><strong>Experimental program signal:</strong> the ePIC Early Science Report is not a result paper, but it is a serious roadmap based on realistic early-running configurations and detailed detector simulation; it is worth tracking for EIC nuclear-PDF, gluon-saturation, jet, and heavy-flavor workflows.</li>
+        <li><strong>Most concrete HEP ML use:</strong> the CMS semivisible-jet search deploys graph and dense neural networks inside a full 138 fb^-1 analysis and sets the first constraints on lepton-enriched semivisible jets.</li>
+        <li><strong>Transferable ML methods:</strong> NestyNet, neural-operator U-Nets, and label-free finite-element surrogate training all have credible use cases for fast response surfaces, inverse detector/reconstruction tasks, or simulation surrogates, but only NestyNet reports broad physics-function benchmarks; the others should be treated as method papers awaiting domain tests.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="ALICE three-baryon femtoscopy three-proton correlation pp 13.6 TeV hadronic interactions three-body continuum partial waves strangeness 2608.05708 Experiment strong">
+        <div class="paper-head"><h4>Three-baryon femtoscopy as an effective 3-&gt;3 scattering experiment</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: ALICE Collaboration (large collaboration; author list starts on page 23). arXiv: <a href="https://arxiv.org/abs/2608.05708">2608.05708</a>. Submitted 2026-08-06.</p>
+        <p><strong>Abstract:</strong> The paper measures the three-proton correlation function in pp collisions at sqrt(s)=13.6 TeV and uses a new strategy to isolate the p-p-p contribution after correcting background channels and detector effects. It compares the resulting observable with state-of-the-art three-body continuum calculations and reports sensitivity to the partial-wave structure of the nucleon-nucleon interaction.</p>
+        <p><strong>Summary:</strong> This is a high-value experimental result because it uses femtoscopy as an indirect but physically sharp access route to three-body hadron dynamics, including systems that cannot be studied with conventional scattering. The work is not a heavy-ion collision paper in the narrow A+A sense, but it is squarely relevant to the femtoscopy and hadronic-interaction toolkit used across heavy-ion and small-system analyses.</p>
+        <p><strong>Why it matters:</strong> Three-body dynamics, especially with future hyperon extensions, are a bottleneck for precision hadron-interaction constraints in dense QCD matter and astrophysical applications.</p>
+        <p><strong>Critical assessment:</strong> Strong. The claim is supported by a real LHC measurement, an explicit correction strategy, and direct comparison to continuum calculations. The main caution is interpretive: femtoscopy is model-dependent, so the reported long-range attractive component should be tested against alternative correlation and source-model assumptions.</p>
+      </article>
+
+      <article class="paper" data-search="ePIC Early Science Report EIC electron ion dense gluonic matter nuclear PDFs TMDs jets heavy flavor Geant4 detector simulation 2608.05377 Experiment mixed">
+        <div class="paper-head"><h4>ePIC Early Science Report</h4><span class="label mixed">mixed/important roadmap</span></div>
+        <p class="meta">Authors: D. Abbott, N. Abdelrahman, S. Abhijit, I. Abualrob, R. B. Achari, and the ePIC Collaboration (large collaboration). arXiv: <a href="https://arxiv.org/abs/2608.05377">2608.05377</a>. Submitted 2026-08-05; listed in the 2026-08-07 arXiv new feed.</p>
+        <p><strong>Abstract:</strong> The report lays out the physics program expected in the early years of the Electron-Ion Collider with ePIC, using realistic early-running beam configurations and detailed Geant4 detector simulations with digitization and reconstruction. It covers inclusive, semi-inclusive, exclusive, diffractive, tagging, jet, and heavy-flavor measurements in electron-proton and electron-ion collisions.</p>
+        <p><strong>Summary:</strong> This is not a discovery paper, but it is important as a validated early-operation map for EIC nuclear structure and dense-gluon measurements. The report is especially relevant to heavy-ion-adjacent work on nuclear PDFs, gluon saturation, jet observables, and heavy flavor in e+A environments.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion phenomenology increasingly depends on improved cold-nuclear and initial-state constraints; ePIC early measurements should directly reduce uncertainties in nuclear PDFs and small-x gluon dynamics.</p>
+        <p><strong>Critical assessment:</strong> Mixed but worth highlighting. The strength is realistic detector-level simulation and a broad, coherent program. The limitation is that projected sensitivities and early-running assumptions are not substitutes for data, so claims of world-leading impact should be read as programmatic rather than established.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="QCD chiral crossover Lee-Yang edge singularities lattice QCD finite baryon chemical potential crossover line chiral scaling 2608.05752 Phenomenology strong">
+        <div class="paper-head"><h4>QCD Chiral Crossover Line from Lee-Yang Edge Singularities</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: Heng-Tong Ding, Swagato Mukherjee, Peter Petreczky, Kai-Fan Ye. arXiv: <a href="https://arxiv.org/abs/2608.05752">2608.05752</a>. Submitted 2026-08-06.</p>
+        <p><strong>Abstract:</strong> The authors reconstruct the QCD chiral crossover line from Lee-Yang edge singularities in the complex baryon chemical potential plane. They map lattice-extracted Lee-Yang-zero estimates to the universal chiral Lee-Yang edge and recover a crossover curvature consistent with continuum lattice-QCD results at small muB.</p>
+        <p><strong>Summary:</strong> The paper offers a clean bridge between finite-density lattice information and universal chiral scaling. Its strongest point is that it avoids using the established small-muB crossover expansion as an input, then obtains consistency with that expansion as an output.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion Beam Energy Scan interpretation depends on reliable finite-muB crossover and critical-region constraints; methods based on Lee-Yang singularities are an important route around direct sign-problem limitations.</p>
+        <p><strong>Critical assessment:</strong> Strong, with scope limits. The framework is quantitatively coherent and extensible, but the demonstration is based on existing Lee-Yang-zero estimates in a limited temperature window; the real impact will depend on future lattice determinations and systematic-error control.</p>
+      </article>
+
+      <article class="paper" data-search="heavy quark dynamics anisotropic quark-gluon plasma Gribov resummation drag diffusion energy loss nuclear modification factor 2506.01922 Phenomenology mixed">
+        <div class="paper-head"><h4>Anisotropy effects on heavy quark dynamics in Gribov modified gluon plasma</h4><span class="label mixed">mixed/useful</span></div>
+        <p class="meta">Authors: Sumit, Jai Prakash, Santosh Kumar Das, Najmul Haque. arXiv: <a href="https://arxiv.org/abs/2506.01922">2506.01922</a>. Revised 2026-08-06; journal reference J. Phys. G 53 (2026) 085101.</p>
+        <p><strong>Abstract:</strong> The paper studies charm and bottom transport in an anisotropic quark-gluon plasma using a nonperturbative Gribov-resummed framework within a Fokker-Planck treatment. The calculated drag and diffusion coefficients are propagated to heavy-quark energy loss and nuclear modification factors including elastic and inelastic collisions.</p>
+        <p><strong>Summary:</strong> This is directly on-scope for heavy-ion phenomenology because it addresses early-time momentum anisotropy and its consequences for heavy flavor. The topic is important, and the angular dependence of anisotropy relative to heavy-quark motion is a useful feature.</p>
+        <p><strong>Why it matters:</strong> Heavy-flavor R_AA and flow remain central constraints on QGP transport, and anisotropic early-time dynamics are one of the persistent theory systematics.</p>
+        <p><strong>Critical assessment:</strong> Mixed. The calculation is relevant and now journal-published, but the predictive power depends strongly on modeling choices in the Gribov-resummed medium, weak-anisotropy assumptions, and how the transport coefficients are embedded in realistic space-time evolution.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <p>No new purely theoretical heavy-ion paper from the inspected set cleared the inclusion bar more strongly than the lattice/phenomenology crossover paper above. I did not force this category.</p>
+
+      <h3>AI/ML Use</h3>
+      <p>The heavy-ion-specific AI/ML yield was thin today. The most relevant ML papers are listed below because their transfer paths are HEP/nuclear workflows rather than direct heavy-ion analyses.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="CMS semivisible jets graph neural network fully connected neural network background estimation dark sector lepton enriched jets 2608.05323 AI ML HEP strong">
+        <div class="paper-head"><h4>Search for resonant production of lepton-enriched semivisible jets in proton-proton collisions at sqrt(s) = 13 TeV</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: CMS Collaboration (large collaboration). arXiv: <a href="https://arxiv.org/abs/2608.05323">2608.05323</a>. Submitted 2026-08-05; listed in the 2026-08-07 arXiv new feed.</p>
+        <p><strong>Method and result:</strong> CMS searches 138 fb^-1 of 13 TeV pp data for lepton-enriched semivisible jets from a strongly coupled dark sector. The analysis uses a graph neural network for jet identification and a dense neural network combining jet- and event-level inputs; it excludes benchmark Z' mediator masses up to 4.7 TeV in the all-lepton-flavor scenario and 1.8-3.5 TeV in the tau-enriched scenario.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The GNN strategy is relevant to jet-substructure tagging where object composition is irregular and soft/hidden components matter. Heavy-ion transfer is not direct, but the architecture and validation questions map onto quark/gluon, heavy-flavor, and medium-modified jet tagging under large backgrounds.</p>
+        <p><strong>Critical assessment:</strong> Strong as an HEP ML application because the ML is embedded in a full experimental analysis with data-scale backgrounds and published limits. Transfer to heavy-ion would require stress tests against high occupancy, combinatorial backgrounds, and domain-shift uncertainties.</p>
+      </article>
+
+      <article class="paper" data-search="NestyNet analytic surrogate derivatives Hessian Laplacian AI Feynman benchmark physics functions uncertainty constraints 2608.05862 AI ML physics strong">
+        <div class="paper-head"><h4>NestyNet. I. Physics Functions Are Hard to Fit with Neural Networks: A Framework for Accurate Surrogates and Analytic Derivatives</h4><span class="label strong">strong transfer candidate</span></div>
+        <p class="meta">Authors: Rodrigo Ibata, Wassim Tenachi, Foivos Diakogiannis, Neil Ibata, Anirudh Shankar. arXiv: <a href="https://arxiv.org/abs/2608.05862">2608.05862</a>. Submitted 2026-08-06.</p>
+        <p><strong>Method and result:</strong> NestyNet is a deterministic segmented analytic surrogate with a tailored second-order Levenberg-Marquardt optimizer, designed to fit smooth but stiff physics functions while providing analytic gradients, Hessians, Laplacians, and antiderivatives. On the AI Feynman benchmark, the paper reports large median improvements over standard neural networks and L-BFGS-refined baselines, plus faster derivative evaluation than autograd.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This could be useful for differentiable response surfaces, likelihood scans, surrogate equations of state, detector-calibration functions, or differentiable components in Bayesian inference where accurate derivatives matter.</p>
+        <p><strong>Critical assessment:</strong> Strong but still needs domain confrontation. The benchmark and derivative claims are unusually relevant for physics ML, yet the method should be tested on noisy simulation outputs, discontinuities/cuts, and high-dimensional nuisance spaces before being trusted in collider inference.</p>
+      </article>
+
+      <article class="paper" data-search="neural operator U-Net inverse imaging limited angle CT resolution invariance detector reconstruction calorimeter tracking 2608.05839 AI ML physics mixed">
+        <div class="paper-head"><h4>A neural operator view on U-Nets for inverse imaging problems</h4><span class="label mixed">mixed transfer candidate</span></div>
+        <p class="meta">Authors: Alexander Auras, Martin Burger, Samira Kabri, Michael Moeller, Michael Schopf-Kuester. arXiv: <a href="https://arxiv.org/abs/2608.05839">2608.05839</a>. Submitted 2026-08-06.</p>
+        <p><strong>Method and result:</strong> The paper studies U-Net-like neural operator architectures for ill-posed inverse imaging, including how models trained at one discretization resolution generalize to other resolutions. It reports extensive numerical experiments for limited-angle CT reconstruction and finds classical U-Nets more robust to resolution changes than expected.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The transfer path is detector inverse problems: calorimeter image reconstruction, sparse tracking projections, event-plane or tomography-like reconstruction, and simulation-to-detector resolution changes.</p>
+        <p><strong>Critical assessment:</strong> Mixed. The resolution-generalization question is exactly the right kind of issue for detector ML, but the evidence is still from imaging benchmarks, not collider detector geometries or pileup/heavy-ion occupancy.</p>
+      </article>
+
+      <article class="paper" data-search="label-free finite-element surrogate discrete energy exact training objective stiffness norm JEPA simulation surrogates 2608.05437 AI ML physics mixed">
+        <div class="paper-head"><h4>Discrete energy as an exact label-free training objective for finite-element surrogates</h4><span class="label mixed">useful theory note</span></div>
+        <p class="meta">Authors: Ruifeng Cao, Xidan Song. arXiv: <a href="https://arxiv.org/abs/2608.05437">2608.05437</a>. Submitted 2026-08-05.</p>
+        <p><strong>Method and result:</strong> The note proves that, for linear elastostatics, minimizing assembled discrete potential energy is equivalent to supervised regression in the stiffness norm: the energy gap equals half the squared stiffness-norm error and the energy gradient is the stiffness-weighted error. It includes executable falsification checks and explicitly notes why direct action minimization does not extend to elastodynamics without a time-discrete reformulation.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The immediate domain is finite-element surrogate modeling, but the broader idea is relevant to label-efficient detector mechanics, accelerator components, and simulation surrogates where the governing discrete functional is known but reference solves are expensive.</p>
+        <p><strong>Critical assessment:</strong> Mixed but scientifically careful. It is narrow and not a collider paper, yet the exact-objective proof and falsification checks make it more useful than a generic surrogate claim. Transfer to QCD/hydrodynamic simulations is indirect because those systems lack the same simple quadratic energy structure.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="Lyapunov exponents forecast-error contraction short trajectories k nearest neighbors experimental validation future work caution 2608.05522">
+        <div class="paper-head"><h4>Equation-Free Period-Aware Forecast-Error Contraction for Estimating Negative Largest Lyapunov Exponents from Short Trajectory Ensembles</h4><span class="label caution">caution</span></div>
+        <p class="meta">Authors: Andrei Velichko, N'Gbo N'Gbo, Viet-Thanh Pham. arXiv: <a href="https://arxiv.org/abs/2608.05522">2608.05522</a>. Submitted 2026-08-06.</p>
+        <p>This method is interesting for data-driven dynamics, and it reports good results on logistic-map and two-dimensional map tests. I would not treat it as ready for HEP or heavy-ion use yet: the abstract itself says experimental validation remains future work, and the demonstrated systems are far simpler than noisy, high-dimensional, nonstationary collider or detector dynamics.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
