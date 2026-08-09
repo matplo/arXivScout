@@ -1,0 +1,151 @@
+{
+  "date": "2026-08-09",
+  "path": "reports/2026-08-09.html",
+  "summary": "Sunday scheduled run with no new Sunday arXiv submission batch; the screened recent window is the Friday, 7 August 2026 arXiv listings plus targeted recent physics-AI/ML papers. The strongest heavy-ion-adjacent result is ALICE three-proton femtoscopy as a three-body hadronic-interaction probe. The strongest dense-QCD item is the Lee-Yang-edge reconstruction of the QCD chiral crossover line. The strongest concrete HEP AI/ML use is the CMS graph-network semivisible-jet search. NestyNet and Kastor have credible transfer value for nuclear and HEP surrogate modeling, while the Lyapunov-exponent estimator is flagged as caution because experimental validation remains future work.",
+  "keywords": [
+    "Sunday arXiv check",
+    "three-baryon femtoscopy",
+    "three-proton correlations",
+    "QCD chiral crossover",
+    "Lee-Yang edge singularities",
+    "finite baryon chemical potential",
+    "EIC early science",
+    "dense gluonic matter",
+    "heavy-quark transport",
+    "anisotropic QGP",
+    "graph neural networks",
+    "semivisible jets",
+    "analytic physics surrogates",
+    "PDE emulation",
+    "spectral fidelity",
+    "scientific AI validation",
+    "Lyapunov exponent caution"
+  ],
+  "arxiv_ids": [
+    "2608.05708",
+    "2608.05752",
+    "2608.05377",
+    "2506.01922",
+    "2608.05323",
+    "2608.05862",
+    "2608.06107",
+    "2608.05812",
+    "2608.05522"
+  ],
+  "total_paper_count": 9,
+  "selected_count": 8,
+  "caution_count": 1,
+  "represented_categories": [
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "ALICE arXiv:2608.05708 is the strongest directly relevant nuclear/HEP result in the screened recent window: it measures three-proton correlations at 13.6 TeV and uses femtoscopy to probe three-body hadronic dynamics with background and detector corrections.",
+  "candidate_count_inspected": 42,
+  "papers": [
+    {
+      "title": "Three-baryon femtoscopy as an effective 3->3 scattering experiment",
+      "authors_short": "ALICE Collaboration",
+      "author_count": null,
+      "arxiv_id": "2608.05708",
+      "url": "https://arxiv.org/abs/2608.05708",
+      "category": "Experiment",
+      "abstract": "ALICE measures the three-proton correlation function in pp collisions at sqrt(s)=13.6 TeV and introduces an analysis strategy to isolate the p-p-p contribution after correcting background channels and detector effects. The observable is compared to three-body continuum calculations and is reported to be sensitive to partial-wave structure in the nucleon-nucleon interaction.",
+      "tags": ["ALICE", "three-baryon femtoscopy", "three-proton correlations", "hadronic interactions", "continuum calculations"],
+      "assessment": "strong"
+    },
+    {
+      "title": "QCD Chiral Crossover Line from Lee-Yang Edge Singularities",
+      "authors_short": "Heng-Tong Ding, Swagato Mukherjee, Peter Petreczky, Kai-Fan Ye",
+      "author_count": 4,
+      "arxiv_id": "2608.05752",
+      "url": "https://arxiv.org/abs/2608.05752",
+      "category": "Phenomenology",
+      "abstract": "The paper reconstructs the QCD chiral crossover line from Lee-Yang edge singularities in the complex baryon chemical potential plane, mapping lattice-extracted Lee-Yang-zero estimates to the universal chiral Lee-Yang edge. The resulting curvature is consistent with continuum lattice-QCD results at small muB without using that expansion as input.",
+      "tags": ["QCD crossover", "Lee-Yang singularities", "lattice QCD", "finite muB", "chiral scaling"],
+      "assessment": "strong"
+    },
+    {
+      "title": "ePIC Early Science Report",
+      "authors_short": "D. Abbott, N. Abdelrahman, S. Abhijit, I. Abualrob, R. B. Achari, and the ePIC Collaboration",
+      "author_count": 799,
+      "arxiv_id": "2608.05377",
+      "url": "https://arxiv.org/abs/2608.05377",
+      "category": "Experiment",
+      "abstract": "The ePIC Collaboration outlines early EIC measurements using realistic early-running beam configurations and detailed Geant4 detector simulation, digitization, and reconstruction. It spans inclusive, semi-inclusive, exclusive, diffractive, tagging, jet, and heavy-flavor measurements in electron-proton and electron-ion collisions.",
+      "tags": ["EIC", "ePIC", "nuclear PDFs", "dense gluonic matter", "detector simulation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Anisotropy effects on heavy quark dynamics in Gribov modified gluon plasma",
+      "authors_short": "Sumit, Jai Prakash, Santosh Kumar Das, Najmul Haque",
+      "author_count": 4,
+      "arxiv_id": "2506.01922",
+      "url": "https://arxiv.org/abs/2506.01922",
+      "category": "Phenomenology",
+      "abstract": "This revised paper studies charm and bottom transport in an anisotropic quark-gluon plasma using a nonperturbative Gribov-resummed framework within a Fokker-Planck treatment. Drag and diffusion coefficients are propagated to heavy-quark energy loss and nuclear modification factors including elastic and inelastic collisions.",
+      "tags": ["heavy-quark transport", "anisotropic QGP", "Gribov resummation", "drag and diffusion", "RAA"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Search for resonant production of lepton-enriched semivisible jets in proton-proton collisions at sqrt(s) = 13 TeV",
+      "authors_short": "CMS Collaboration",
+      "author_count": null,
+      "arxiv_id": "2608.05323",
+      "url": "https://arxiv.org/abs/2608.05323",
+      "category": "AI/ML use",
+      "abstract": "CMS searches 138 fb^-1 of 13 TeV pp data for lepton-enriched semivisible jets. The analysis uses a graph neural network for jet identification and a fully connected neural network that combines jet- and event-level information, setting first constraints on lepton-enriched semivisible jets.",
+      "tags": ["CMS", "graph neural network", "semivisible jets", "dark sector", "jet tagging"],
+      "assessment": "strong"
+    },
+    {
+      "title": "NestyNet. I. Physics Functions Are Hard to Fit with Neural Networks",
+      "authors_short": "Rodrigo Ibata, Wassim Tenachi, Foivos Diakogiannis, Neil Ibata, Anirudh Shankar",
+      "author_count": 5,
+      "arxiv_id": "2608.05862",
+      "url": "https://arxiv.org/abs/2608.05862",
+      "category": "AI/ML use",
+      "abstract": "NestyNet is a deterministic segmented analytic surrogate with a tailored Levenberg-Marquardt optimizer for stiff physics functions. It reports large median improvements over standard neural networks on AI Feynman function values and derivatives, while providing analytic gradients, Hessians, Laplacians, and antiderivatives.",
+      "tags": ["analytic surrogate", "derivatives", "AI Feynman", "uncertainty", "physics ML"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Kastor: An efficient fine-tuning strategy for generative emulation of PDE simulations",
+      "authors_short": "Guillaume Couairon, Alexis Jacq, Yu-Han Wu, Renu Singh, Yana Hasson, Quentin Berthet, Romuald Elie",
+      "author_count": 7,
+      "arxiv_id": "2608.06107",
+      "url": "https://arxiv.org/abs/2608.06107",
+      "category": "AI/ML use",
+      "abstract": "Kastor adapts a deterministic physics foundation model into a generative PDE surrogate with large-stride autoregression, temporal super-resolution, mean-prediction regularization, and spatial-gradient matching. It reports improved forecasting accuracy, spectral consistency, and computational efficiency on The Well benchmark.",
+      "tags": ["PDE emulation", "physics foundation model", "generative surrogate", "spectral fidelity", "long-horizon forecasting"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Machine Learning is Good for Physics - and Vice Versa",
+      "authors_short": "Michael Kramer, Tilman Plehn",
+      "author_count": 2,
+      "arxiv_id": "2608.05812",
+      "url": "https://arxiv.org/abs/2608.05812",
+      "category": "AI/ML use",
+      "abstract": "A perspective article on how scientific AI interacts with fundamental-physics methodology, emphasizing statistical validation and theory-level generalization as central standards for new-physics discovery in large datasets.",
+      "tags": ["scientific AI", "statistical validation", "fundamental physics", "methodology", "new physics searches"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Equation-Free Period-Aware Forecast-Error Contraction for Estimating Negative Largest Lyapunov Exponents from Short Trajectory Ensembles",
+      "authors_short": "Andrei Velichko, N'Gbo N'Gbo, Viet-Thanh Pham",
+      "author_count": 3,
+      "arxiv_id": "2608.05522",
+      "url": "https://arxiv.org/abs/2608.05522",
+      "category": "Caution",
+      "abstract": "The method estimates dominant negative Lyapunov exponents from short scalar trajectory ensembles using period-aware forecast-error contraction. It performs well on controlled maps, but the abstract states that experimental validation remains future work.",
+      "tags": ["Lyapunov exponents", "forecast error", "short trajectories", "dynamics", "validation caution"],
+      "assessment": "caution",
+      "reason": "Potentially useful for stability diagnostics, but transfer to HEP, detector operations, or heavy-ion dynamics is speculative until tested on experimental or simulator-derived data with realistic noise and systematics."
+    }
+  ],
+  "archive_note": "Daily report and metadata were created through the GitHub app. Existing assets/site.css and assets/filter.js were present and left unchanged. index.html exists but was already stale relative to later metadata. The available GitHub-app replacement route in this run did not expose the base tree SHA or update_file action needed for a conservative homepage refresh, so the homepage was not updated."
+}
