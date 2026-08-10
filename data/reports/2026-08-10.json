@@ -1,0 +1,158 @@
+{
+  "date": "2026-08-10",
+  "path": "reports/2026-08-10.html",
+  "summary": "The screened August 10 arXiv window emphasizes heavy-quark transport systematics, quarkonium open-system algorithms, resonance sensitivity to the hadronic stage, magnetic-field spectral-function modeling, and physics-constrained AI/ML surrogates. The most actionable heavy-ion result is the laboratory-frame T-matrix correction to heavy-quark drag. The most transferable AI/ML result is the neural-operator plasma surrogate with residual and geometry validation. Two papers are flagged as caution: one uses ML in a generic collider-sensitivity study with unclear robustness, and one uses an overstrong quantum-computing title relative to the demonstrated finite-density QCD scale.",
+  "keywords": [
+    "heavy-quark transport",
+    "QGP T-matrix",
+    "bottomonium Lindblad dynamics",
+    "resonance reconstructability",
+    "directed flow",
+    "magnetic-field spectral functions",
+    "pion GPD neural extraction",
+    "neural operator plasma surrogate",
+    "PDE foundation model adaptation",
+    "Fourier-enhanced PINNs",
+    "collider ML caution",
+    "quantum-computing EoS caution"
+  ],
+  "arxiv_ids": [
+    "2608.06731",
+    "2608.06754",
+    "2608.06444",
+    "2608.06788",
+    "2608.07085",
+    "2608.05555",
+    "2608.07053",
+    "2608.05892",
+    "2608.06957",
+    "2608.06515"
+  ],
+  "total_paper_count": 10,
+  "selected_count": 8,
+  "caution_count": 2,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2608.06731 is the strongest directly relevant heavy-ion paper: it removes a medium-frame ambiguity in nonperturbative T-matrix transport and reports 25-40% low-momentum heavy-quark drag corrections.",
+  "candidate_count_inspected": 34,
+  "papers": [
+    {
+      "title": "Laboratory-frame T-matrix and heavy quark drag in the quark-gluon plasma",
+      "authors_short": "Anurag Tiwari, Min He",
+      "author_count": 2,
+      "arxiv_id": "2608.06731",
+      "url": "https://arxiv.org/abs/2608.06731",
+      "category": "Theory",
+      "abstract": "The paper develops a laboratory-frame in-medium two-body T-matrix framework for heavy-light scattering in the QGP. It finds that center-of-mass-frame approximations can shift low-momentum heavy-quark drag coefficients by about 25-40%.",
+      "tags": ["heavy-quark transport", "QGP", "T-matrix", "drag coefficients", "lab-frame scattering"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Quantum simulation of bottomonium dynamics in the quark-gluon plasma via the Lindblad equation",
+      "authors_short": "Linyuan Wei, Jin Hu, Anping Huang, Yunpeng Liu, Baoyi Chen",
+      "author_count": 5,
+      "arxiv_id": "2608.06754",
+      "url": "https://arxiv.org/abs/2608.06754",
+      "category": "Theory",
+      "abstract": "The authors map an isotropic next-to-leading-order Lindblad equation for bottomonium in the QGP onto qubits and simulate Upsilon(1S) survival probability. They report a small final color-octet contribution and a circuit optimization requiring a single ancillary qubit.",
+      "tags": ["bottomonium", "open quantum systems", "Lindblad equation", "quantum simulation", "QGP"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Reconstructability and directed flow of short-lived resonances in Au+Au collisions at 19.6 and 200 GeV",
+      "authors_short": "Junyi Han, Xialei Jiang, Hongcan Li, Yaping Wang",
+      "author_count": 4,
+      "arxiv_id": "2608.06444",
+      "url": "https://arxiv.org/abs/2608.06444",
+      "category": "Phenomenology",
+      "abstract": "Using UrQMD, the paper studies rho0, K*0, and Lambda(1520) reconstructability and directed flow in Au+Au at 19.6 and 200 GeV. It finds reconstructability is mainly controlled by resonance lifetime and that mid-central resonance flow can differ from stable-hadron flow.",
+      "tags": ["resonance reconstructability", "directed flow", "UrQMD", "hadronic stage", "Au+Au"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "q qbar scattering phase shift in the pi0 channel and pi0 meson spectral function under external magnetic field and finite meson momentum",
+      "authors_short": "Min Zhou, Zhiyang Liu, Yvming Tian, Chonglong Xie, Guoyun Shao, Shijun Mao",
+      "author_count": 6,
+      "arxiv_id": "2608.06788",
+      "url": "https://arxiv.org/abs/2608.06788",
+      "category": "Phenomenology",
+      "abstract": "The paper computes pi0-channel q qbar phase shifts and spectral functions in a two-flavor NJL model under external magnetic field and finite meson momentum. It identifies bound, resonant, and non-Breit-Wigner structures and magnetic-field-induced anisotropy.",
+      "tags": ["magnetic field", "pi0 spectral function", "NJL model", "phase shift", "chiral restoration"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Extraction of Pion Unpolarized Quark and Gluon Generalized Parton Distributions using Deep Neural-Networks",
+      "authors_short": "Satyajit Puhan, Shubham Sharma, Narinder Kumar",
+      "author_count": 3,
+      "arxiv_id": "2608.07085",
+      "url": "https://arxiv.org/abs/2608.07085",
+      "category": "AI/ML use",
+      "abstract": "The authors use a physics-informed neural-network parameterization to extract pion quark and gluon GPDs from JAM21/xFitter PDFs, pion electromagnetic form-factor data, gravitational form-factor constraints, and lattice-QCD results. PDF replica ensembles provide uncertainty bands.",
+      "tags": ["pion GPDs", "physics-informed neural network", "lattice QCD", "uncertainty", "hadron tomography"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Millisecond-Scale Neural Operator Surrogates for Double-Null Free-Boundary Grad-Shafranov Equilibria",
+      "authors_short": "Plamen G. Krastev",
+      "author_count": 1,
+      "arxiv_id": "2608.05555",
+      "url": "https://arxiv.org/abs/2608.05555",
+      "category": "AI/ML use",
+      "abstract": "A geometrically conditioned Fourier Neural Operator is trained on FreeGS double-null equilibrium solutions and reaches 0.05% mean relative L2 error, X-point recovery within 0.2 cm, FreeGS-level residual diagnostics, and millisecond evaluation latency.",
+      "tags": ["neural operator", "plasma surrogate", "Grad-Shafranov", "physics residual", "low latency"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Unsupervised Adaptation of PDE Foundation Models",
+      "authors_short": "Ziye Song, Zhao Wei, Xin Yu, Ivor Tsang, Yueming Lyu",
+      "author_count": 5,
+      "arxiv_id": "2608.07053",
+      "url": "https://arxiv.org/abs/2608.07053",
+      "category": "AI/ML use",
+      "abstract": "The paper pretrains a neighborhood-attention Transformer on diverse PDEs and adapts it to unseen PDEs without ground-truth solutions, using PDE residuals, boundary conditions, LoRA, and a Newton-Schulz orthogonalized variant.",
+      "tags": ["PDE foundation model", "unsupervised adaptation", "LoRA", "physics residual", "neural operators"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Alternating Levenberg-Marquardt Training of Physics-Informed Neural Networks with Fourier-Enhanced Features",
+      "authors_short": "Yulun Wu, Matthieu Barreau, Miguel Aguiar, Karl H. Johansson",
+      "author_count": 4,
+      "arxiv_id": "2608.05892",
+      "url": "https://arxiv.org/abs/2608.05892",
+      "category": "AI/ML use",
+      "abstract": "FALM-PINN decouples Fourier-enhanced representation learning from coefficient fitting using a lower-level Levenberg-Marquardt nonlinear least-squares solve. The paper reports up to two orders of magnitude lower relative L2 error on high-frequency and nonlinear PDE benchmarks.",
+      "tags": ["PINNs", "Fourier features", "Levenberg-Marquardt", "multiscale PDEs", "spectral bias"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Probing dark matter through charged Higgs pair production at future multi-TeV muon colliders: A machine-learning analysis",
+      "authors_short": "Khiem Hong Phan, Quang Hoang-Minh Pham",
+      "author_count": 2,
+      "arxiv_id": "2608.06957",
+      "url": "https://arxiv.org/abs/2608.06957",
+      "category": "Caution",
+      "abstract": "The paper studies Inert Doublet Model charged-Higgs pair production at future muon colliders and reports that ML improves signal sensitivity over cut-based selections for several benchmark points.",
+      "tags": ["charged Higgs", "dark matter", "muon collider", "ML classifier", "cut-based comparison"],
+      "assessment": "caution",
+      "reason": "This is a plausible collider-phenomenology exercise, but the abstract presents ML mainly as a sensitivity enhancer without enough visible information about robustness, systematic uncertainties, or transferability. It should not be treated as a strong physics-AI contribution from the abstract alone."
+    },
+    {
+      "title": "Quantum Computers will constrain the Equation of State of Neutron Stars",
+      "authors_short": "Adrian Castano-Garcia, Nahia J. Dios-Bilbao, J. J. Galvez-Viruet, Felipe J. Llanes-Estrada, Mario Logrosan-Alvarez, Nicolas M. Arenaza, Maria Gomez-Rocha",
+      "author_count": 7,
+      "arxiv_id": "2608.06515",
+      "url": "https://arxiv.org/abs/2608.06515",
+      "category": "Caution",
+      "abstract": "The paper frames future quantum computers as a route to finite-density QCD and neutron-star EoS constraints, develops canonical Hamiltonian ingredients, and demonstrates finite-chemical-potential QCD for a few particles and momentum modes on a classical cluster.",
+      "tags": ["quantum computing", "neutron-star EoS", "finite-density QCD", "sign problem", "small demonstration"],
+      "assessment": "caution",
+      "reason": "The long-term motivation is legitimate, but the title overstates present capability. A three-to-four-particle demonstration is far from constraining neutron-star observables, so this should be read as algorithmic groundwork rather than a near-term EoS result."
+    }
+  ]
+}
