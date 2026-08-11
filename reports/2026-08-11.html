@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-11</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-11 Briefing</h1>
+    <p class="dek">The screened August 11 arXiv window is dominated by uncertainty-aware nuclear-EOS inference, QGP momentum-broadening corrections in short path-length regimes, EIC heavy-quark feasibility baselines, and maturing HEP-ML curation/statistical-validation workflows. The most scientifically strong entries are arXiv:2608.09678, arXiv:2608.08894, arXiv:2608.09608, and arXiv:2608.09203. Two papers are flagged for caution because their abstracts make ambitious claims that require stronger validation than is visible at screening level.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Best overall paper:</strong> arXiv:2608.09678 provides a serious Gaussian-process framework for propagating correlated microscopic-EOS uncertainties into derived nuclear and neutron-star observables.</li>
+        <li><strong>Most relevant QGP theory paper:</strong> arXiv:2608.08894 revisits GLV momentum broadening with all-path-length and improved sub-Regge corrections, especially relevant for small systems and short in-medium paths.</li>
+        <li><strong>Most useful near-term nuclear-physics phenomenology:</strong> arXiv:2608.09608 gives parton-level early-EIC heavy-quark yield and nuclear-modification estimates, a practical baseline for detector and feasibility studies.</li>
+        <li><strong>Best HEP/AI infrastructure item:</strong> arXiv:2608.09531 is not a new algorithm, but it is a valuable field-navigation update: the HEP-ML Living Review is frozen and replaced by a curated Living Guide.</li>
+        <li><strong>Most transferable statistics paper:</strong> arXiv:2608.09203 gives a concrete diagnostic for silent coverage failures in rare-event searches, directly relevant to HEP and nuclear counting analyses.</li>
+        <li><strong>Caution:</strong> arXiv:2608.08259 and arXiv:2608.09831 may attract attention, but the abstracts leave important validation questions open.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.08894 QGP momentum broadening GLV all-path-length sub-Regge jet quenching short path length Theory strong Dario van den Berg Isobel Kolbe">
+        <div class="paper-head"><h4>Improved Regge Kinematics and All-Path-Length Corrections to Momentum Broadening in the Quark-Gluon Plasma</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: Dario van den Berg, Isobel Kolbe. Total authors: 2. arXiv: <a href="https://arxiv.org/abs/2608.08894">2608.08894</a>.</p>
+        <p><strong>Summary:</strong> The paper extends first-order opacity GLV momentum broadening by relaxing large-separation/large-formation-time assumptions and by adding improved sub-Regge kinematics. The key claim is that these corrections substantially affect the broadening distribution and qhat, especially for short paths and high exchanged momentum.</p>
+        <p><strong>Why it matters:</strong> Short path lengths are central to small-system and edge-of-medium jet-quenching interpretations. A controlled correction to standard GLV assumptions is more useful than another parameter tune.</p>
+        <p><strong>Critical assessment:</strong> Strong within its scope. It is a compact proceedings-length contribution, so the next value step is implementation in realistic jet-quenching phenomenology, but the physics question is well targeted.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental measurement from the screened window passed the selectivity threshold. The nuclear-experiment papers were either outside heavy-ion physics or better treated as cautionary/adjacent nuclear items.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.09608 EIC heavy quark electroproduction electron nucleus nuclear PDFs shadowing anti-shadowing EMC Phenomenology strong Allencris John Rubesh Rajan Laboni Manna">
+        <div class="paper-head"><h4>Prospects for early heavy-quark measurements at the EIC</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: Allencris John Rubesh Rajan, Laboni Manna. Total authors: 2. arXiv: <a href="https://arxiv.org/abs/2608.09608">2608.09608</a>.</p>
+        <p><strong>Summary:</strong> This parton-level study estimates inclusive heavy-quark-pair and double-charm-pair electroproduction in early EIC ep and eA running. It maps expected yields and kinematic coverage in Q2, x_Bj, heavy-quark pT, and rapidity, and estimates nuclear modification ratios using nPDFs.</p>
+        <p><strong>Why it matters:</strong> Heavy-quark production at the EIC will constrain nuclear gluon structure, shadowing, anti-shadowing, and EMC-like effects that also enter heavy-ion initial-state baselines.</p>
+        <p><strong>Critical assessment:</strong> Strong as a feasibility baseline. It is not yet a detector-level or higher-order precision study, but the assumptions are appropriately framed and the output is useful for early-science planning.</p>
+      </article>
+      <article class="paper" data-search="2608.08614 thermal photons magnetized QGP Landau levels photon v2 magnetic fields heavy ion Phenomenology mixed Zhaolu Ouyang Xinyang Wang">
+        <div class="paper-head"><h4>The role of thermal photons in a magnetized plasma and their significance in heavy ion collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Authors: Zhaolu Ouyang, Xinyang Wang. Total authors: 2. arXiv: <a href="https://arxiv.org/abs/2608.08614">2608.08614</a>.</p>
+        <p><strong>Summary:</strong> The paper studies thermal photon production in magnetized QGP using Landau-level quantization, exploring magnetic-field, chemical-potential, and chiral-chemical-potential effects on yield and polarization.</p>
+        <p><strong>Why it matters:</strong> Electromagnetic probes remain a difficult but important route to early-time QGP information, and magnetic-field-sensitive photon polarization/yield ideas are worth tracking.</p>
+        <p><strong>Critical assessment:</strong> Mixed. The topic is relevant, but this is an 8-page workshop contribution and the abstract's connection to resolving the photon v2 puzzle sounds more prospective than demonstrated.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2608.08259 topological data analysis deep learning intermittency QCD critical point CMC EPOS heavy ion AI ML caution Salman Khurshid Malik Ramni Gupta Fakhar Ul Haider Balwan Singh">
+        <div class="paper-head"><h4>Topological analysis of scale-invariant spatial fluctuations in ultrarelativistic heavy-ion collisions</h4><span class="label caution">caution</span></div>
+        <p class="meta">Authors: Salman Khurshid Malik, Ramni Gupta, Fakhar Ul Haider, Balwan Singh. Total authors: 4. arXiv: <a href="https://arxiv.org/abs/2608.08259">2608.08259</a>.</p>
+        <p><strong>Summary:</strong> The paper applies a two-stage topological machine-learning pipeline to simulated critical fluctuations in eta-phi point clouds: Betti-curve features plus TopoPointNet/BDT classification, followed by a particle-level density filter intended to recover intermittency scaling.</p>
+        <p><strong>Why it matters:</strong> If validated on realistic detector-level backgrounds, topological summaries could become useful for QCD critical-point searches and weak-cluster detection.</p>
+        <p><strong>Critical assessment:</strong> Caution. The abstract claims robust recovery of critical scaling, but the evidence appears simulation-defined and the method risks learning generator artifacts or hand-constructed signal structure. Strong claims require mixed-event, detector, centrality, and model-transfer stress tests.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.09678 Gaussian process correlated uncertainties nuclear equation of state GPDiff JAX automatic differentiation chiral interactions AI ML strong Y G Lee J Kim T Zhao C Drischler">
+        <div class="paper-head"><h4>A Gaussian Process framework for constraining the nuclear equation of state from microscopic calculations with correlated uncertainties</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: Y. G. Lee, J. Kim, T. Zhao, C. Drischler. Total authors: 4. arXiv: <a href="https://arxiv.org/abs/2608.09678">2608.09678</a>.</p>
+        <p><strong>Method and result:</strong> The paper introduces GPDiff, a JAX-based multivariate Gaussian-process framework with automatic differentiation for EOS predictions and derivatives, trained on microscopic asymmetric-matter calculations with correlated uncertainty.</p>
+        <p><strong>Likely use case:</strong> Directly useful for nuclear-EOS inference and transferable to heavy-ion Bayesian calibration where correlated emulator uncertainties and derivative observables matter.</p>
+        <p><strong>Critical assessment:</strong> Strong. The work addresses a real bottleneck in uncertainty propagation rather than adding ML ornamentation. The main limitation is the initial application range, about up to twice saturation density at zero temperature.</p>
+      </article>
+      <article class="paper" data-search="2608.09531 HEP ML Living Guide curated bibliography machine learning particle physics foundation benchmarks simulation inference strong Claudius Krause Ramon Winterhalder Matthew Feickert Benjamin Nachman">
+        <div class="paper-head"><h4>The Living Guide of Machine Learning for Particle Physics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Authors: Claudius Krause, Ramon Winterhalder, Matthew Feickert, Benjamin Nachman. Total authors: 4. arXiv: <a href="https://arxiv.org/abs/2608.09531">2608.09531</a>.</p>
+        <p><strong>Method and result:</strong> This is a community-resource paper: the earlier near-comprehensive HEP-ML Living Review is frozen as an archival record through June 1, 2026, and replaced by a curated, annotated Living Guide.</p>
+        <p><strong>Likely use case:</strong> Highly useful for onboarding and for avoiding reinvention in collider ML, including heavy-ion transfer areas such as simulation, reconstruction, unfolding, inference, and foundation-model workflows.</p>
+        <p><strong>Critical assessment:</strong> Strong as infrastructure, not as a scientific result. Its value depends on continued community curation and clear criteria for representative versus merely popular papers.</p>
+      </article>
+      <article class="paper" data-search="2608.09203 rare-event searches coverage failures Poisson Fisher degeneracy index upper limits dark matter neutrinoless double beta HEP statistics strong Davide Pagno">
+        <div class="paper-head"><h4>Silent coverage failures in rare-event searches and a degeneracy index that predicts them</h4><span class="label strong">strong</span></div>
+        <p class="meta">Author: Davide Pagno. Total authors: 1. arXiv: <a href="https://arxiv.org/abs/2608.09203">2608.09203</a>.</p>
+        <p><strong>Method and result:</strong> The paper studies interval coverage under controlled model misspecification in exact Poisson counting, dark-matter spectra, and neutrinoless-double-beta searches, introducing a Poisson-Fisher degeneracy index to diagnose endpoint vulnerability.</p>
+        <p><strong>Likely use case:</strong> Transfer value is high for HEP/nuclear rare-event limits, low-count resonance searches, and auxiliary-constraint design in analyses where simulator calibration alone can be misleading.</p>
+        <p><strong>Critical assessment:</strong> Strong. It is not an ML paper, but it is directly relevant to AI-assisted inference because it warns that nominal-simulator calibration does not protect against undiagnosed data-generating misspecification.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.08259 caution topological machine learning critical point intermittency heavy ion validation generator artifacts">
+        <div class="paper-head"><h4>Topological analysis of scale-invariant spatial fluctuations in ultrarelativistic heavy-ion collisions</h4><span class="label caution">caution</span></div>
+        <p class="meta">arXiv: <a href="https://arxiv.org/abs/2608.08259">2608.08259</a>.</p>
+        <p>The method is interesting, but the abstract's strong language around recovering QCD critical scaling appears to rest on simulated signal extraction. Treat it as a methodological proposal until it survives realistic detector response, mixed backgrounds, centrality variation, and generator-transfer tests.</p>
+      </article>
+      <article class="paper" data-search="2608.09831 caution alpha particle induced collision cascade fusion neutron excess Po-210 D-D fusion small counts background subtraction">
+        <div class="paper-head"><h4>Alpha Particle Induced Collision Cascade Fusion</h4><span class="label caution">caution</span></div>
+        <p class="meta">Authors: Sandeep Puri, Noah D'Amico, Andrew Gillespie, Ian Jones, Cuikun Lin, Bo Zhao, R. V. Duncan. Total authors: 7. arXiv: <a href="https://arxiv.org/abs/2608.09831">2608.09831</a>.</p>
+        <p>This is outside heavy-ion-collision physics but worth cautioning about because the claim is unusual: neutron excesses of order 74 and 268 counts after background subtraction from a Po-210/deuterium setup. The abstract reports MCNP agreement, but independent replication, background controls, detector systematics, and activation/neutron-source cross-checks are essential before treating the fusion-rate interpretation as established.</p>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
