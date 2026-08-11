@@ -1,0 +1,136 @@
+{
+  "date": "2026-08-11",
+  "path": "reports/2026-08-11.html",
+  "summary": "The August 11 screening emphasizes uncertainty-aware nuclear-EOS inference, QGP momentum-broadening corrections for short in-medium path lengths, EIC heavy-quark feasibility baselines, and maturing HEP-ML/statistical-validation infrastructure. Strongest scientific items: GPDiff for correlated EOS uncertainty propagation, improved GLV momentum-broadening corrections, early-EIC heavy-quark projections, the HEP-ML Living Guide, and a rare-event coverage-failure diagnostic.",
+  "keywords": [
+    "nuclear EOS uncertainty",
+    "Gaussian processes",
+    "QGP momentum broadening",
+    "short path-length corrections",
+    "EIC heavy quarks",
+    "nuclear PDFs",
+    "HEP-ML curation",
+    "rare-event coverage",
+    "thermal photons",
+    "topological ML caution"
+  ],
+  "arxiv_ids": [
+    "2608.09678",
+    "2608.08894",
+    "2608.09608",
+    "2608.08614",
+    "2608.08259",
+    "2608.09531",
+    "2608.09203",
+    "2608.09831"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "arXiv:2608.09678, a Gaussian-process framework for correlated nuclear-EOS uncertainty propagation from microscopic calculations.",
+  "caution_count": 2,
+  "homepage_lines": [
+    "2608.09678: nuclear EOS uncertainty, Gaussian processes, GPDiff",
+    "2608.08894: QGP momentum broadening, GLV corrections, short path lengths",
+    "2608.09608: EIC heavy quarks, nuclear PDFs, early-science yields",
+    "2608.08614: thermal photons, magnetized QGP, photon polarization",
+    "2608.08259: caution, topological ML, critical-point intermittency",
+    "2608.09531: HEP-ML Living Guide, curated ML bibliography",
+    "2608.09203: rare-event coverage, Poisson-Fisher degeneracy, limits",
+    "2608.09831: caution, D-D fusion claims, neutron-count systematics"
+  ],
+  "papers": [
+    {
+      "title": "A Gaussian Process framework for constraining the nuclear equation of state from microscopic calculations with correlated uncertainties",
+      "authors_short": "Y. G. Lee, J. Kim, T. Zhao, C. Drischler",
+      "total_author_count": 4,
+      "arxiv_id": "2608.09678",
+      "url": "https://arxiv.org/abs/2608.09678",
+      "category": "AI/ML use",
+      "abstract": "Introduces GPDiff, a JAX-based multivariate Gaussian-process framework with automatic differentiation for EOS predictions and derivatives, applied to microscopic asymmetric matter calculations with correlated uncertainties.",
+      "tags": ["nuclear EOS", "Gaussian process", "correlated uncertainty", "automatic differentiation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Improved Regge Kinematics and All-Path-Length Corrections to Momentum Broadening in the Quark-Gluon Plasma",
+      "authors_short": "Dario van den Berg, Isobel Kolbe",
+      "total_author_count": 2,
+      "arxiv_id": "2608.08894",
+      "url": "https://arxiv.org/abs/2608.08894",
+      "category": "Theory",
+      "abstract": "Extends first-order opacity GLV momentum broadening by adding all-path-length and improved sub-Regge corrections, with largest effects for short path lengths and high exchanged momentum.",
+      "tags": ["QGP", "momentum broadening", "jet quenching", "GLV"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Prospects for early heavy-quark measurements at the EIC",
+      "authors_short": "Allencris John Rubesh Rajan, Laboni Manna",
+      "total_author_count": 2,
+      "arxiv_id": "2608.09608",
+      "url": "https://arxiv.org/abs/2608.09608",
+      "category": "Phenomenology",
+      "abstract": "Estimates early-EIC heavy-quark electroproduction yields and eA nuclear modification ratios across Q2, x_Bj, pT, and rapidity, using projected luminosities and nPDFs.",
+      "tags": ["EIC", "heavy quarks", "nuclear PDFs", "shadowing"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The role of thermal photons in a magnetized plasma and their significance in heavy ion collisions",
+      "authors_short": "Zhaolu Ouyang, Xinyang Wang",
+      "total_author_count": 2,
+      "arxiv_id": "2608.08614",
+      "url": "https://arxiv.org/abs/2608.08614",
+      "category": "Phenomenology",
+      "abstract": "Studies thermal photon production in magnetized QGP with Landau-level quantization, including magnetic-field, chemical-potential, and chiral-chemical-potential effects.",
+      "tags": ["thermal photons", "magnetized QGP", "Landau levels", "photon v2"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Topological analysis of scale-invariant spatial fluctuations in ultrarelativistic heavy-ion collisions",
+      "authors_short": "Salman Khurshid Malik, Ramni Gupta, Fakhar Ul Haider, Balwan Singh",
+      "total_author_count": 4,
+      "arxiv_id": "2608.08259",
+      "url": "https://arxiv.org/abs/2608.08259",
+      "category": "AI/ML use",
+      "abstract": "Uses topological data analysis, TopoPointNet/BDT classification, and a density filter to recover simulated critical intermittency scaling in eta-phi point clouds.",
+      "tags": ["topological ML", "critical point", "intermittency", "heavy-ion fluctuations"],
+      "assessment": "caution"
+    },
+    {
+      "title": "The Living Guide of Machine Learning for Particle Physics",
+      "authors_short": "Claudius Krause, Ramon Winterhalder, Matthew Feickert, Benjamin Nachman",
+      "total_author_count": 4,
+      "arxiv_id": "2608.09531",
+      "url": "https://arxiv.org/abs/2608.09531",
+      "category": "AI/ML use",
+      "abstract": "Freezes the HEP-ML Living Review through June 1, 2026 and replaces it with a curated, annotated Living Guide for a mature and rapidly diversifying field.",
+      "tags": ["HEP ML", "curated bibliography", "community resource", "benchmarks"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Silent coverage failures in rare-event searches and a degeneracy index that predicts them",
+      "authors_short": "Davide Pagno",
+      "total_author_count": 1,
+      "arxiv_id": "2608.09203",
+      "url": "https://arxiv.org/abs/2608.09203",
+      "category": "AI/ML use",
+      "abstract": "Studies interval coverage under model misspecification in Poisson counting, dark-matter spectra, and neutrinoless-double-beta searches, introducing a Poisson-Fisher degeneracy index.",
+      "tags": ["rare events", "coverage", "model misspecification", "statistics"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Alpha Particle Induced Collision Cascade Fusion",
+      "authors_short": "Sandeep Puri, Noah D'Amico, Andrew Gillespie, Ian Jones, Cuikun Lin, Bo Zhao, R. V. Duncan",
+      "total_author_count": 7,
+      "arxiv_id": "2608.09831",
+      "url": "https://arxiv.org/abs/2608.09831",
+      "category": "Caution",
+      "abstract": "Reports small neutron excesses from a Po-210/deuterium setup and interprets them as D-D fusion via an alpha-induced collision-cascade mechanism with MCNP agreement.",
+      "tags": ["fusion claim", "neutron background", "nuclear experiment", "replication needed"],
+      "assessment": "caution"
+    }
+  ]
+}
