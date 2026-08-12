@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-12</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-12 Briefing</h1>
+    <p class="dek">Recent arXiv screening, roughly covering 2026-08-11 17:07 UTC to 2026-08-12 17:07 UTC. Themes: finite-density fluctuation extraction, ultra-central Pb-Pb flow, soft-QGP scaling in O-O, CME modeling in small systems, detector reconstruction ML, and PDE/PINN methods with credible transfer value.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion paper is <a href="https://arxiv.org/abs/2608.10238">arXiv:2608.10238</a>, which turns RHIC BES proton cumulants into Bayesian constraints on finite-density baryon susceptibilities with acceptance, particlization, and exact baryon-number conservation handled explicitly.</li>
+        <li>The clearest new experimental heavy-ion item is <a href="https://arxiv.org/abs/2608.11199">arXiv:2608.11199</a>, an ALICE Run 3 ultra-central Pb-Pb flow contribution focused on the v3{2}/v2{2} ratio and nuclear-structure fluctuations.</li>
+        <li>Model-survey phenomenology is active but uneven: EPOS4 soft-observable scaling in Pb-Pb, Xe-Xe, and O-O is useful as a baseline, while rotating-HRG and CME-in-small-system claims need careful treatment of model priors and backgrounds.</li>
+        <li>For AI/ML, the most transferable items are detector/pileup recovery, HL-LHC track reconstruction, and PINN derivative computation; these address real workflow constraints rather than generic model novelty.</li>
+        <li>The main caution flags are overconfident physics-informed deep-learning pole extraction in a sparse hadronic channel and the claim that a CME observable is essentially background-free in p^up+Au based on model-injected signal studies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.10496 chiral magnetic effect charge separation pAu AMPT small systems CME background caution theory">
+        <div class="paper-head"><h4>Event-by-event analysis of chiral charge separation in p^up+Au collisions within an improved AMPT model</h4><span class="label caution">caution</span></div>
+        <p class="meta">Chen Gao, Gui-Zhen Wu, Yi Xu, Wei-Tian Deng | <a href="https://arxiv.org/abs/2608.10496">arXiv:2608.10496</a></p>
+        <p>The paper introduces an improved string-melting AMPT setup for p^up+Au at 200 GeV, adding a formation-time delay and a model CME source scaled with the event magnetic field. It reports that partonic evolution preserves much of the injected signal, while coalescence and hadronic rescattering strongly dilute it.</p>
+        <p><strong>Why it matters:</strong> Small-system CME proposals are experimentally enticing because geometry handles could help separate signal from background.</p>
+        <p><strong>Critical assessment:</strong> Worth reading, but the key conclusion that an inter-scheme difference is essentially background-free is too strong from an injected-source transport study. Background realism and data-facing closure tests are the limiting issues.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.11199 ALICE ultra-central Pb-Pb anisotropic flow v3 v2 Run 3 nuclear deformation UCC puzzle experiment">
+        <div class="paper-head"><h4>Anisotropic Flow in Ultra-Central Pb-Pb Collisions at sqrt(sNN)=5.36 TeV with ALICE</h4><span class="label strong">strong</span></div>
+        <p class="meta">Iris Likmeta | <a href="https://arxiv.org/abs/2608.11199">arXiv:2608.11199</a></p>
+        <p>This contribution reports ALICE Run 3 measurements of v3{2}/v2{2} in ultra-central Pb-Pb collisions, where initial geometric anisotropy is small and fluctuations dominate. The work directly targets the ultra-central-collision puzzle and comparisons to hydrodynamic calculations with possible Pb-208 octupole deformation effects.</p>
+        <p><strong>Why it matters:</strong> Ultra-central flow ratios are unusually sensitive to initial-state fluctuations and nuclear-structure inputs, so even a short proceedings-style result can constrain hydrodynamic interpretations.</p>
+        <p><strong>Critical assessment:</strong> Strong relevance, but likely limited depth as a conference contribution. The value will depend on the quantitative model comparisons and eventual full ALICE publication.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.10238 baryon number susceptibilities finite density QCD RHIC Beam Energy Scan proton cumulants Bayesian hydrodynamic particlization phenomenology">
+        <div class="paper-head"><h4>Extraction of baryon number susceptibilities at finite density from heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gregoire Pihan, Roman Poberezhniuk, Volodymyr A. Kuznietsov, Volodymyr Vovchenko | <a href="https://arxiv.org/abs/2608.10238">arXiv:2608.10238</a></p>
+        <p>The paper presents a Bayesian extraction of QCD baryon-number susceptibilities from RHIC Beam Energy Scan proton cumulants. It embeds equation-of-state susceptibilities into realistic hydrodynamic particlization hypersurfaces via maximum-entropy freeze-out, maps baryons to protons, applies acceptance, and includes exact baryon-number conservation.</p>
+        <p><strong>Why it matters:</strong> This is the kind of statistically disciplined bridge needed between fluctuation measurements and finite-density QCD thermodynamics.</p>
+        <p><strong>Critical assessment:</strong> Strong and highly relevant. The tight chi2B constraints and the statement that nonmonotonic C3/C1 can arise without irreducible higher-order correlations are important, while the weak constraints on third- and fourth-order ratios are appropriately conservative.</p>
+      </article>
+
+      <article class="paper" data-search="2608.10578 EPOS4 Pb-Pb Xe-Xe O-O soft QGP signatures UrQMD flow pT fluctuations phenomenology mixed">
+        <div class="paper-head"><h4>Scaling of soft QGP signatures in relativistic lead, xenon and oxygen collisions in EPOS4</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Salman Khurshid Malik, Fakhar Ul Haider, Pratibha Bhagat, Anju Bhasin, Ramni Gupta | <a href="https://arxiv.org/abs/2608.10578">arXiv:2608.10578</a></p>
+        <p>This EPOS4 study compares Pb-Pb and Xe-Xe soft observables to ALICE data and projects O-O results, covering multiplicity, identified spectra, pT fluctuations, and v2/v3. It finds UrQMD important for baryon yields and treats O-O as a small-system QGP diagnostic.</p>
+        <p><strong>Why it matters:</strong> O-O baselines will matter for upcoming small-system collectivity discussions, and a single-generator survey can be a useful reference point.</p>
+        <p><strong>Critical assessment:</strong> Useful but not decisive. The paper is strongest as a model baseline; claims about QGP droplets in small systems should be viewed as generator-dependent unless supported by broader model comparison and uncertainty treatment.</p>
+      </article>
+
+      <article class="paper" data-search="2608.10561 rotating hadron resonance gas vorticity p/pi K/pi fluctuations ALICE Pb-Pb phenomenology caution">
+        <div class="paper-head"><h4>Probing vorticity and fluctuations in a rotating hadron resonance gas at LHC energy</h4><span class="label caution">caution</span></div>
+        <p class="meta">S. Ipsita Sahoo, Sanjeebani Biswal, D. Dutta, D. K. Mishra | <a href="https://arxiv.org/abs/2608.10561">arXiv:2608.10561</a></p>
+        <p>The authors model rotation in an HRG through an effective chemical potential and compare p/pi trends to ALICE Pb-Pb centrality dependence, extracting freeze-out vorticity estimates. They also discuss effects on conserved-charge fluctuations.</p>
+        <p><strong>Why it matters:</strong> Vorticity and polarization remain central heavy-ion topics, and yield-ratio proxies are tempting because they are experimentally accessible.</p>
+        <p><strong>Critical assessment:</strong> Caution. Inferring vorticity from integrated yield ratios risks strong degeneracy with chemical freeze-out, hadronic feed-down, and centrality systematics; it needs more discriminating observables before being treated as a robust extraction.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2608.10301 physics-informed deep learning simulation-based inference MDN PINN analytic continuation hadronic rescattering pole Omega caution">
+        <div class="paper-head"><h4>The near-threshold cross section of e+e- to Omega- anti-Omega+: Heavy-flavor rescattering and physics-informed deep learning</h4><span class="label caution">caution</span></div>
+        <p class="meta">Sara Rahmani | <a href="https://arxiv.org/abs/2608.10301">arXiv:2608.10301</a></p>
+        <p>The paper combines a coupled-channel hadronic model with simulation-based inference via a mixture-density network and a Cauchy-Riemann PINN for analytic continuation into the complex plane. It reports a bound-state pole near the Ds anti-Ds threshold.</p>
+        <p><strong>Why it matters:</strong> SBI and differentiable analytic-continuation tools could become useful in hadron spectroscopy and amplitude analyses.</p>
+        <p><strong>Critical assessment:</strong> Interesting but caution-worthy. A zero-width pole claim from a one-author ML-assisted analysis needs robust conventional cross-checks, posterior predictive validation, and stress tests against model assumptions before it should influence spectroscopy conclusions.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.10143 photon pileup spectroscopy 3D CNN PointNet detector ML energy deposition active interrogation transfer HEP nuclear">
+        <div class="paper-head"><h4>Machine learning methods for spectroscopic information recovery under ultrafast photon pileup</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jayson R. Vavrek, Thomas D. MacDonald, Yue Shi Lai | <a href="https://arxiv.org/abs/2608.10143">arXiv:2608.10143</a></p>
+        <p>The authors use 3D CNNs, FCNNs, and PointNet++-style models to recover signal fractions and photon multiplicities from spatial energy-deposition patterns under severe pileup. They compare to non-ML baselines and include synthetic pileup built from real Cs-137 data for multiplicity recovery.</p>
+        <p><strong>Likely transfer:</strong> Strong transfer to high-rate calorimetry, active detector readout, and heavy-ion environments where overlapping energy deposits degrade conventional reconstruction.</p>
+        <p><strong>Critical assessment:</strong> Strong for transfer because the task is detector-realistic and baseline-aware. The main caveat is domain shift from representative photon-interaction examples to full experimental detector conditions.</p>
+      </article>
+
+      <article class="paper" data-search="2608.10900 HL-LHC CMS Phase2 tracker machine learning reconstruction efficiency fake rate resolution transfer HEP">
+        <div class="paper-head"><h4>Particle tracking at high luminosities using a novel reconstruction approach</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">B. K. Sirasva, S. Dugad, Y. Kumar, P. Suryadevra, M. Yadav | <a href="https://arxiv.org/abs/2608.10900">arXiv:2608.10900</a></p>
+        <p>This paper proposes an ML-based track-reconstruction algorithm for a Phase-2 CMS-like outer tracker, evaluated on Pythia8 plus Geant4 high-luminosity samples. It reports strong efficiency, fake-rate, and resolution performance versus traditional methods.</p>
+        <p><strong>Likely transfer:</strong> Directly relevant to HEP tracking and potentially to heavy-ion high-occupancy reconstruction if validated under realistic pileup and detector effects.</p>
+        <p><strong>Critical assessment:</strong> Worth tracking, but abstract-level evidence is not enough to call it strong. The key tests are benchmark comparability, occupancy scaling, latency, robustness to misalignment/noise, and reproducibility.</p>
+      </article>
+
+      <article class="paper" data-search="2608.11020 PINNs automatic differentiation finite differences derivative computation GPU memory batchnorm attention computational physics transfer hydrodynamics lattice">
+        <div class="paper-head"><h4>Derivative Computation in PINNs: Automatic Differentiation, Finite Differences and Beyond</h4><span class="label strong">strong</span></div>
+        <p class="meta">Maciej J. Mikulski, Tadeusz Uhl | <a href="https://arxiv.org/abs/2608.11020">arXiv:2608.11020</a></p>
+        <p>The paper systematically compares finite-difference derivatives with automatic differentiation in PINNs across PDE benchmarks. It argues calibrated finite differences can match AD accuracy, reduce memory, improve runtime, and avoid silently incorrect per-sample derivatives in architectures with inter-sample dependencies such as BatchNorm or attention.</p>
+        <p><strong>Likely transfer:</strong> High value for physics surrogate modeling, hydrodynamic PDE learning, lattice/transport inverse problems, and any PINN workflow operating at large batch sizes.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value because it addresses a concrete numerical failure mode rather than selling a new architecture. Needs independent replication across stiff and conservation-law-heavy physics PDEs.</p>
+      </article>
+
+      <article class="paper" data-search="2608.10234 Kuramoto Neural Operator PDE operator learning coupled oscillators surrogate modeling heavy-ion hydro transfer mixed">
+        <div class="paper-head"><h4>The Kuramoto Neural Operator: Learning to Solve PDEs via Coupled Oscillator Dynamics</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Petr Badolia, Leonid Obukhov, Dmitry Bylinkin, Aleksandr Beznosikov | <a href="https://arxiv.org/abs/2608.10234">arXiv:2608.10234</a></p>
+        <p>KNO represents PDE solution operators through a latent field of coupled spherical oscillators and reports strong benchmark performance with ablations and robustness/resolution-transfer experiments. The synchronization dynamics are used as a partial interpretability handle.</p>
+        <p><strong>Likely transfer:</strong> Possible surrogate-modeling use in repeated hydro, transport, or detector-field solves where local interactions matter.</p>
+        <p><strong>Critical assessment:</strong> Promising but indirect for HEP/NP. It earns inclusion because the PDE/operator-learning connection is concrete, but transfer claims should wait for tests on conservation laws, discontinuities, and uncertainty propagation.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="caution 2608.10301 physics-informed deep learning pole extraction analytic continuation spectroscopy">
+        <div class="paper-head"><h4>arXiv:2608.10301 - ML-assisted pole extraction in Omega-pair production</h4><span class="label caution">caution</span></div>
+        <p>The method mix is interesting, but the pole claim is much stronger than the abstract-level validation supports. Treat as a methods experiment until conventional analytic continuation and model-systematic tests are shown clearly.</p>
+      </article>
+      <article class="paper" data-search="caution 2608.10496 CME pAu background-free observable AMPT model injection">
+        <div class="paper-head"><h4>arXiv:2608.10496 - CME signal in p^up+Au from improved AMPT</h4><span class="label caution">caution</span></div>
+        <p>The proposed observable may be useful, but calling it essentially background-free is premature. A transport model with an injected CME source is not a substitute for data-driven background closure.</p>
+      </article>
+      <article class="paper" data-search="caution 2608.10561 rotating HRG vorticity yield ratios degeneracy">
+        <div class="paper-head"><h4>arXiv:2608.10561 - vorticity extraction from rotating HRG yield ratios</h4><span class="label caution">caution</span></div>
+        <p>The topic is relevant, but the inference route appears underconstrained. Yield ratios alone are too degenerate with ordinary freeze-out and hadronic chemistry effects to carry a precise vorticity interpretation.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
