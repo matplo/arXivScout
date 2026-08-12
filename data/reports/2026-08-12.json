@@ -1,0 +1,164 @@
+{
+  "date": "2026-08-12",
+  "path": "reports/2026-08-12.html",
+  "summary": "The August 12 screening emphasizes finite-density baryon-susceptibility extraction from RHIC BES proton cumulants, ALICE ultra-central Pb-Pb flow ratios, EPOS4 soft-observable scaling from Pb-Pb and Xe-Xe toward O-O, and ML methods with concrete detector or PDE-surrogate transfer value. The strongest scientific item is the Bayesian susceptibility extraction; the most useful AI/ML items concern photon-pileup recovery and derivative computation in PINNs. Caution is warranted for model-injected CME claims, rotating-HRG vorticity extraction from yield ratios, and ML-assisted pole extraction with limited visible validation.",
+  "keywords": [
+    "baryon number susceptibilities",
+    "finite-density QCD",
+    "RHIC Beam Energy Scan",
+    "ultra-central Pb-Pb flow",
+    "ALICE Run 3",
+    "EPOS4 O-O predictions",
+    "CME small systems",
+    "detector pileup ML",
+    "HL-LHC tracking ML",
+    "PINN derivatives",
+    "PDE operator learning"
+  ],
+  "arxiv_ids": [
+    "2608.10238",
+    "2608.11199",
+    "2608.10578",
+    "2608.10496",
+    "2608.10561",
+    "2608.10301",
+    "2608.10143",
+    "2608.10900",
+    "2608.11020",
+    "2608.10234"
+  ],
+  "total_paper_count": 10,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "arXiv:2608.10238, a Bayesian extraction of finite-density baryon-number susceptibilities from RHIC Beam Energy Scan proton cumulants with acceptance, particlization, and exact baryon conservation included.",
+  "caution_count": 4,
+  "homepage_lines": [
+    "2608.10238: baryon susceptibilities, finite-density QCD, BES cumulants",
+    "2608.11199: ALICE ultra-central Pb-Pb, v3/v2, nuclear deformation",
+    "2608.10578: EPOS4, Pb-Pb Xe-Xe O-O, soft QGP signatures",
+    "2608.10496: caution, CME in p+Au, AMPT injected signal",
+    "2608.10561: caution, rotating HRG, vorticity from yield ratios",
+    "2608.10301: caution, ML analytic continuation, hadronic pole claim",
+    "2608.10143: detector pileup ML, 3D CNN, PointNet++ spectroscopy",
+    "2608.10900: HL-LHC tracking ML, CMS Phase-2, fake-rate studies",
+    "2608.11020: PINN derivatives, finite differences, AD failure modes",
+    "2608.10234: Kuramoto neural operator, PDE surrogates, local dynamics"
+  ],
+  "papers": [
+    {
+      "title": "Extraction of baryon number susceptibilities at finite density from heavy-ion collisions",
+      "authors_short": "Gregoire Pihan, Roman Poberezhniuk, Volodymyr A. Kuznietsov, Volodymyr Vovchenko",
+      "total_author_count": 4,
+      "arxiv_id": "2608.10238",
+      "url": "https://arxiv.org/abs/2608.10238",
+      "category": "Phenomenology",
+      "abstract": "Bayesian extraction of QCD baryon-number susceptibilities from RHIC BES proton cumulants using realistic hydrodynamic particlization, maximum-entropy freeze-out, acceptance, proton mapping, and exact baryon-number conservation.",
+      "tags": ["finite-density QCD", "proton cumulants", "Bayesian extraction", "baryon conservation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Anisotropic Flow in Ultra-Central Pb-Pb Collisions at sqrt(sNN)=5.36 TeV with ALICE",
+      "authors_short": "Iris Likmeta",
+      "total_author_count": 1,
+      "arxiv_id": "2608.11199",
+      "url": "https://arxiv.org/abs/2608.11199",
+      "category": "Experiment",
+      "abstract": "ALICE Run 3 contribution measuring v3{2}/v2{2} in ultra-central Pb-Pb collisions and comparing to hydrodynamic calculations motivated by initial-state fluctuations and possible Pb-208 octupole deformation.",
+      "tags": ["ALICE", "ultra-central collisions", "anisotropic flow", "nuclear deformation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Scaling of soft QGP signatures in relativistic lead, xenon and oxygen collisions in EPOS4",
+      "authors_short": "Salman Khurshid Malik, Fakhar Ul Haider, Pratibha Bhagat, Anju Bhasin, Ramni Gupta",
+      "total_author_count": 5,
+      "arxiv_id": "2608.10578",
+      "url": "https://arxiv.org/abs/2608.10578",
+      "category": "Phenomenology",
+      "abstract": "EPOS4 survey of multiplicity, identified spectra, pT fluctuations, and v2/v3 in Pb-Pb, Xe-Xe, and O-O, including ALICE comparisons and UrQMD afterburner effects.",
+      "tags": ["EPOS4", "O-O", "soft observables", "UrQMD"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Event-by-event analysis of chiral charge separation in p^up+Au collisions within an improved AMPT model",
+      "authors_short": "Chen Gao, Gui-Zhen Wu, Yi Xu, Wei-Tian Deng",
+      "total_author_count": 4,
+      "arxiv_id": "2608.10496",
+      "url": "https://arxiv.org/abs/2608.10496",
+      "category": "Theory",
+      "abstract": "Improved AMPT study of CME-induced charge separation in p^up+Au with an event-by-event source scaled by the magnetic field and subsequent partonic, coalescence, and hadronic dilution.",
+      "tags": ["CME", "AMPT", "small systems", "charge separation"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Probing vorticity and fluctuations in a rotating hadron resonance gas at LHC energy",
+      "authors_short": "S. Ipsita Sahoo, Sanjeebani Biswal, D. Dutta, D. K. Mishra",
+      "total_author_count": 4,
+      "arxiv_id": "2608.10561",
+      "url": "https://arxiv.org/abs/2608.10561",
+      "category": "Phenomenology",
+      "abstract": "Rotating-HRG model study of hadron yields, p/pi and K/pi ratios, and conserved-charge fluctuations, with freeze-out vorticity estimates from ALICE Pb-Pb centrality trends.",
+      "tags": ["vorticity", "HRG", "yield ratios", "fluctuations"],
+      "assessment": "caution"
+    },
+    {
+      "title": "The near-threshold cross section of e+e- to Omega- anti-Omega+: Heavy-flavor rescattering and physics-informed deep learning",
+      "authors_short": "Sara Rahmani",
+      "total_author_count": 1,
+      "arxiv_id": "2608.10301",
+      "url": "https://arxiv.org/abs/2608.10301",
+      "category": "AI/ML use",
+      "abstract": "Coupled-channel hadronic model with simulation-based inference and a Cauchy-Riemann PINN for analytic continuation, reporting a Ds anti-Ds bound-state pole near threshold.",
+      "tags": ["simulation-based inference", "PINN", "analytic continuation", "hadron spectroscopy"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Machine learning methods for spectroscopic information recovery under ultrafast photon pileup",
+      "authors_short": "Jayson R. Vavrek, Thomas D. MacDonald, Yue Shi Lai",
+      "total_author_count": 3,
+      "arxiv_id": "2608.10143",
+      "url": "https://arxiv.org/abs/2608.10143",
+      "category": "AI/ML use",
+      "abstract": "3D CNN, FCNN, and PointNet++-style recovery of photon signal fractions and multiplicity from spatial energy-deposition patterns under severe pileup, compared with non-ML baselines.",
+      "tags": ["detector ML", "photon pileup", "3D CNN", "PointNet++"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Particle tracking at high luminosities using a novel reconstruction approach",
+      "authors_short": "B. K. Sirasva, S. Dugad, Y. Kumar, P. Suryadevra, M. Yadav",
+      "total_author_count": 5,
+      "arxiv_id": "2608.10900",
+      "url": "https://arxiv.org/abs/2608.10900",
+      "category": "AI/ML use",
+      "abstract": "ML-based charged-particle tracking for a CMS Phase-2-like outer tracker, evaluated on Pythia8 and Geant4 high-luminosity samples using efficiency, fake-rate, and resolution metrics.",
+      "tags": ["HL-LHC", "tracking", "CMS Phase-2", "fake rate"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Derivative Computation in PINNs: Automatic Differentiation, Finite Differences and Beyond",
+      "authors_short": "Maciej J. Mikulski, Tadeusz Uhl",
+      "total_author_count": 2,
+      "arxiv_id": "2608.11020",
+      "url": "https://arxiv.org/abs/2608.11020",
+      "category": "AI/ML use",
+      "abstract": "Systematic comparison of finite-difference and automatic-differentiation derivatives in PINNs, including memory/runtime benefits and failure modes for inter-sample-dependent architectures.",
+      "tags": ["PINNs", "finite differences", "automatic differentiation", "PDE surrogates"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The Kuramoto Neural Operator: Learning to Solve PDEs via Coupled Oscillator Dynamics",
+      "authors_short": "Petr Badolia, Leonid Obukhov, Dmitry Bylinkin, Aleksandr Beznosikov",
+      "total_author_count": 4,
+      "arxiv_id": "2608.10234",
+      "url": "https://arxiv.org/abs/2608.10234",
+      "category": "AI/ML use",
+      "abstract": "Neural operator architecture representing PDE solution operators through latent coupled-oscillator dynamics, with benchmark results, ablations, and resolution-transfer studies.",
+      "tags": ["neural operator", "PDE", "coupled oscillators", "surrogate modeling"],
+      "assessment": "mixed"
+    }
+  ]
+}
