@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-13</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-13 Briefing</h1>
+    <p class="dek">Selective scan of the Thursday, 13 August 2026 arXiv new listings and recent cross-lists for heavy-ion collision research and AI/ML use in physics. Triage emphasized abstracts first, with deeper checks on selected arXiv pages.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>Pre-equilibrium and real-time QCD dynamics were the strongest theme: one paper maps classical-field particle production onto small-lattice quantum-computing workflows, while another gives a controlled quenched-lattice proof of concept for nonzero-momentum topological rates.</li>
+        <li>Photon emission from rotating QGP is an interesting phenomenological direction because it connects vorticity, soft photons, elliptic flow, and magnetic-field instability, but its experimental leverage will depend on realistic rotation profiles and backgrounds.</li>
+        <li>The most credible AI/ML contribution in nuclear physics is the physically constrained variational neural-network treatment of the proton-halo tail in 17F: the value is not generic ML performance, but enforcing the Coulomb-Whittaker asymptotics that control observables.</li>
+        <li>Two broader physics-ML papers have plausible transfer value: quantum/classical robustness tests for collider event selection under detector smearing, and physics-aware latent-space surrogates for inverse calibration of dynamical systems.</li>
+        <li>One recent heavy-ion-adjacent replacement is worth caution: the fractional-derivative tetraquark-in-plasma study makes broad interpretive claims from a model-heavy setup with limited direct validation against finite-temperature QCD or data.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.11316 particle production equilibration quantum recurrences classical fields pre-equilibrium heavy-ion quantum computation lattice scalar field">
+        <div class="paper-head"><h4>Particle Production, Equilibration, and Quantum Recurrences from Classical Fields</h4><span class="label strong">strong</span></div>
+        <p class="meta">Iván Cuntín, Wenyang Qian, Bin Wu. <a href="https://arxiv.org/abs/2608.11316">arXiv:2608.11316</a></p>
+        <p>The paper studies particle production from classical fields, explicitly framing the problem as central to pre-equilibrium dynamics in relativistic heavy-ion collisions. Its proof-of-principle lattice lambda phi^4 simulations show equilibration of field expectation values, occupation distributions, and pressure before quantum recurrences appear.</p>
+        <p><strong>Why it matters:</strong> It is a clean bridge between nonequilibrium QFT questions and future quantum-computing implementations, with direct conceptual relevance to the earliest stages of small and large QGP systems.</p>
+        <p><strong>Critical assessment:</strong> Strong but early-stage. The strength is the first-principles framing and explicit mapping to quantum computation; the limitation is that scalar-theory small lattices remain several steps from QCD phenomenology.</p>
+      </article>
+      <article class="paper" data-search="2608.12066 real-time topological rate nonzero momentum quenched QCD sphaleron HLT inverse problem lattice QCD chiral magnetic heavy-ion">
+        <div class="paper-head"><h4>Real-time topological rate at non-zero momentum in quenched QCD</h4><span class="label strong">strong</span></div>
+        <p class="meta">Claudio Bonanno, Massimo D'Elia, Roberto Dionisio, Giuseppe Gagliardi, Andrea Giorgieri, Francesco Sanfilippo, Alessandra Valentino, Giovanni Villadoro. <a href="https://arxiv.org/abs/2608.12066">arXiv:2608.12066</a></p>
+        <p>This is a proof-of-concept calculation of a real-time topological rate at nonzero momentum in quenched lattice QCD at about 1.24 Tc. It uses the Hansen-Lupo-Tantalo inverse-problem method on Euclidean topological-charge correlators and explicitly addresses continuum, smearing-width, and smoothing-radius limits.</p>
+        <p><strong>Why it matters:</strong> Topological real-time rates feed into anomalous transport and axial-charge dynamics, which remain important for heavy-ion questions such as CME-related observables and hot-QCD transport.</p>
+        <p><strong>Critical assessment:</strong> Strong methodology for a proof of concept. The quenched setup and lack of full-QCD phenomenological propagation are real limitations, but the abstract signals unusually careful control of numerical limits.</p>
+      </article>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.12098 photon emission rotating plasma McLerran-Toimela superradiance QGP vorticity magnetic instability heavy-ion">
+        <div class="paper-head"><h4>Photon emission from rotating plasmas: a generalized McLerran-Toimela formula and the onset of superradiance</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Kirill Tuchin. <a href="https://arxiv.org/abs/2608.12098">arXiv:2608.12098</a></p>
+        <p>The paper derives photon emission and absorption spectra for a uniformly rotating plasma using current-current spectral functions. It applies the result to rotating QGP photon spectra and elliptic flow, and argues that superradiant cylindrical modes can drive an instability of magnetic fields produced in heavy-ion collisions.</p>
+        <p><strong>Why it matters:</strong> Soft photons and vorticity-sensitive electromagnetic probes are persistent heavy-ion puzzles; a compact analytic extension of McLerran-Toimela is potentially useful if it survives realistic modeling.</p>
+        <p><strong>Critical assessment:</strong> Interesting and worth reading, but the key phenomenological claim needs stress-testing against finite lifetime, nonuniform rotation, expansion, and backgrounds. I would treat the superradiance/instability part as a hypothesis rather than established phenomenology.</p>
+      </article>
+      <article class="paper" data-search="2608.11712 Electron-Ion Collider in China EicC nucleon structure nuclei AI applications high-energy nuclear physics review">
+        <div class="paper-head"><h4>Physics of the Electron-Ion Collider in China</h4><span class="label mixed">review</span></div>
+        <p class="meta">Bo-Wen Xiao, Yuxiang Zhao, Jian Zhou. <a href="https://arxiv.org/abs/2608.11712">arXiv:2608.11712</a></p>
+        <p>This invited review summarizes the EicC physics program: polarized electron-ion collisions, 3D nucleon/nuclear structure, mass decomposition, energy-energy correlations, quantum information, and AI applications in high-energy nuclear physics.</p>
+        <p><strong>Why it matters:</strong> It is not a heavy-ion collision paper, but it is highly relevant to nuclear QCD infrastructure and to methods that can cross-pollinate with heavy-ion initial-state, small-x, and nuclear-structure studies.</p>
+        <p><strong>Critical assessment:</strong> Useful as a landscape document rather than new research. Its strength is synthesis and facility context; any AI-specific claims should be evaluated section by section.</p>
+      </article>
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2608.11600 variational artificial neural network proton halo 17F Coulomb Whittaker asymptotic normalization nuclear theory astrophysical S factors">
+        <div class="paper-head"><h4>Variational neural-network solution of the two-body 17F proton-halo problem with a Coulomb-Whittaker tail</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lucas A. Souza, Tobias Frederico. <a href="https://arxiv.org/abs/2608.11600">arXiv:2608.11600</a></p>
+        <p>The authors use a variational artificial neural-network ansatz for 17F in a two-body 16O+p model, but impose the correct Coulomb-Whittaker tail rather than relying on unconstrained energy minimization. They benchmark against Numerov solutions and report good agreement for energies, nodes, radii, overlaps, ANCs, and resulting astrophysical S factors.</p>
+        <p><strong>Why it matters:</strong> This is the kind of nuclear-physics ML that is actually substantive: the network is constrained by known asymptotics tied to observables, not used as decoration.</p>
+        <p><strong>Critical assessment:</strong> Strong within the adopted two-body benchmark. It is not yet a broad many-body method, but it identifies exactly where ML ansätze are fragile: the asymptotic tail.</p>
+      </article>
+    </section>
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2608.11330 robust quantum machine learning collider event selection detector variability anomaly detection quantum autoencoder smearing HEP">
+        <div class="paper-head"><h4>Robust Quantum Machine Learning for Collider Event Selection under Detector Variability</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Christopher Brown, Michael Spannowsky, Simon Williams. <a href="https://arxiv.org/abs/2608.11330">arXiv:2608.11330</a></p>
+        <p><strong>Method and result:</strong> Quantum autoencoders and quantum classifiers are compared with classical baselines for anomaly detection and supervised collider-event selection under controlled feature-level smearing. The quantum models reportedly retain discrimination better under smearing while staying competitive on clean inputs.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Robust triggering, anomaly detection, and event selection under detector drift or changing run conditions; the heavy-ion transfer would be to robust classifiers under occupancy, calibration, and centrality-dependent shifts.</p>
+        <p><strong>Critical assessment:</strong> Worth watching, but not yet production-convincing. The abstract uses controlled feature smearing, and the next credibility step is realistic detector simulation, finite-shot effects, and quantum-device noise.</p>
+      </article>
+      <article class="paper" data-search="2608.11435 physics-aware latent-space surrogates variational parameter calibration inverse modeling CFD differentiable reduced-order heavy-ion hydrodynamics">
+        <div class="paper-head"><h4>Variational Parameter Calibration with Physics-Aware Latent-Space Surrogates</h4><span class="label mixed">transfer candidate</span></div>
+        <p class="meta">Qiyao Zhou, Xujia Zhu, Pierre Joli, Yu Cong, Sibo Cheng. <a href="https://arxiv.org/abs/2608.11435">arXiv:2608.11435</a></p>
+        <p><strong>Method and result:</strong> The paper builds an autoencoder-based differentiable surrogate for parametric dynamical systems and uses it for variational parameter estimation. CFD benchmarks with noisy, low-resolution, masked, and partial observations show reduced calibration error and variability relative to standard surrogates.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Transfer is plausible for hydrodynamic emulator calibration, Bayesian inverse modeling of transport coefficients, and fast detector or medium-response surrogates where observations are partial and noisy.</p>
+        <p><strong>Critical assessment:</strong> Credible transfer candidate, not direct evidence for heavy-ion workflows. The value is the calibration-aware latent design; the missing piece is validation on stochastic event-by-event physics models with realistic uncertainty propagation.</p>
+      </article>
+      <article class="paper" data-search="2608.11600 nuclear ML physically constrained neural wave functions asymptotic tails transfer reaction theory">
+        <div class="paper-head"><h4>Variational neural-network solution of the two-body 17F proton-halo problem with a Coulomb-Whittaker tail</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lucas A. Souza, Tobias Frederico. <a href="https://arxiv.org/abs/2608.11600">arXiv:2608.11600</a></p>
+        <p><strong>Method and result:</strong> A neural interior wave function is coupled to the correct charged-particle asymptotic form, then benchmarked against Numerov calculations and reaction observables. The reported compact-state ANC agrees within about one percent, while the halo ANC differs by about 4.2 percent.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The concrete transfer lesson is to hard-wire physics constraints into ML surrogates where tails, conservation laws, or asymptotic structures dominate observables.</p>
+        <p><strong>Critical assessment:</strong> Strong as a controlled nuclear ML benchmark; its generality remains to be shown beyond a two-body potential model.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2606.23732 caution tetraquarks anisotropic plasma fractional derivatives generalized fractional derivative Cornell potential Debye screening">
+        <div class="paper-head"><h4>Spectroscopy and Dissociation of Tetraquarks in Anisotropic Plasma within the Generalized Fractional Derivatives Framework</h4><span class="label caution">caution</span></div>
+        <p class="meta">H. M. Fath-Allah, M. Abu-Shady, E. M. Khokha. <a href="https://arxiv.org/abs/2606.23732">arXiv:2606.23732</a> (v2 revised 12 Aug 2026)</p>
+        <p>The paper studies fully heavy tetraquarks with an extended Cornell potential, Debye screening, plasma anisotropy, and a generalized fractional-derivative framework. The abstract claims broad modeling usefulness and agreement with previous theory.</p>
+        <p><strong>Why caution:</strong> The central physics conclusions appear highly model-dependent, and the abstract does not indicate validation against lattice-QCD spectral information, experimental constraints, or robust uncertainty quantification. Treat the fractional-derivative interpretation and heavy-ion plasma relevance as speculative unless the full text supplies much stronger checks.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
