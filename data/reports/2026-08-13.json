@@ -1,0 +1,124 @@
+{
+  "date": "2026-08-13",
+  "path": "reports/2026-08-13.html",
+  "summary": "The most relevant recent papers center on pre-equilibrium and real-time QCD dynamics, rotating-QGP photon emission, physically constrained nuclear neural wave functions, and robustness-oriented physics ML. Stronger contributions either control numerical/systematic limits or encode physics constraints directly; broader ML transfer candidates remain promising but need realistic detector or event-by-event validation.",
+  "keywords": [
+    "pre-equilibrium dynamics",
+    "quantum computation for QFT",
+    "real-time topological rate",
+    "rotating quark-gluon plasma",
+    "soft photon emission",
+    "physically constrained neural wave functions",
+    "collider-event robustness",
+    "latent-space surrogate calibration"
+  ],
+  "arxiv_ids": [
+    "2608.11316",
+    "2608.12066",
+    "2608.12098",
+    "2608.11712",
+    "2608.11600",
+    "2608.11330",
+    "2608.11435",
+    "2606.23732"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "Particle Production, Equilibration, and Quantum Recurrences from Classical Fields provides a clean first-principles bridge between pre-equilibrium heavy-ion dynamics and quantum-computing formulations, while the quenched-QCD topological-rate paper is the strongest controlled numerical-method contribution.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Particle Production, Equilibration, and Quantum Recurrences from Classical Fields",
+      "authors": "Ivan Cuntin, Wenyang Qian, Bin Wu",
+      "author_count": 3,
+      "arxiv_id": "2608.11316",
+      "url": "https://arxiv.org/abs/2608.11316",
+      "category": "Theory",
+      "abstract": "The paper studies particle production from classical fields, central to pre-equilibrium dynamics in relativistic heavy-ion collisions, using small-lattice lambda phi^4 simulations mapped to future quantum-computing implementations. It reports equilibration of field, occupation-number, and pressure observables before quantum recurrences appear.",
+      "tags": ["pre-equilibrium", "quantum computation", "nonequilibrium QFT"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Real-time topological rate at non-zero momentum in quenched QCD",
+      "authors": "Claudio Bonanno, Massimo D'Elia, Roberto Dionisio, Giuseppe Gagliardi, Andrea Giorgieri, Francesco Sanfilippo, Alessandra Valentino, Giovanni Villadoro",
+      "author_count": 8,
+      "arxiv_id": "2608.12066",
+      "url": "https://arxiv.org/abs/2608.12066",
+      "category": "Theory",
+      "abstract": "A proof-of-concept numerical study extracts a real-time topological rate at nonzero momentum in quenched lattice QCD at about 1.24 Tc using the Hansen-Lupo-Tantalo inverse-problem method and controlled continuum, smearing-width, and smoothing-radius limits.",
+      "tags": ["lattice QCD", "topological rate", "anomalous transport"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Photon emission from rotating plasmas: a generalized McLerran-Toimela formula and the onset of superradiance",
+      "authors": "Kirill Tuchin",
+      "author_count": 1,
+      "arxiv_id": "2608.12098",
+      "url": "https://arxiv.org/abs/2608.12098",
+      "category": "Phenomenology",
+      "abstract": "The paper derives photon emission and absorption spectra for uniformly rotating plasma in terms of current-current spectral functions and applies the result to rotating QGP photon emission, elliptic flow, and possible superradiant magnetic-field instability.",
+      "tags": ["rotating QGP", "soft photons", "superradiance"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Physics of the Electron-Ion Collider in China",
+      "authors": "Bo-Wen Xiao, Yuxiang Zhao, Jian Zhou",
+      "author_count": 3,
+      "arxiv_id": "2608.11712",
+      "url": "https://arxiv.org/abs/2608.11712",
+      "category": "Phenomenology",
+      "abstract": "An invited review of the EicC physics program, including nucleon and nuclear tomography, mass decomposition, nuclear parton structure, quantum information, and AI applications in high-energy nuclear physics.",
+      "tags": ["EicC", "nuclear structure", "AI in nuclear physics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Variational neural-network solution of the two-body 17F proton-halo problem with a Coulomb-Whittaker tail",
+      "authors": "Lucas A. Souza, Tobias Frederico",
+      "author_count": 2,
+      "arxiv_id": "2608.11600",
+      "url": "https://arxiv.org/abs/2608.11600",
+      "category": "AI/ML use",
+      "abstract": "A variational neural-network ansatz for the 17F proton-halo problem is constrained with the Coulomb-Whittaker tail and benchmarked against Numerov calculations for energies, nodes, radii, ANCs, and astrophysical S factors.",
+      "tags": ["nuclear ML", "halo nuclei", "physics constraints"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Robust Quantum Machine Learning for Collider Event Selection under Detector Variability",
+      "authors": "Christopher Brown, Michael Spannowsky, Simon Williams",
+      "author_count": 3,
+      "arxiv_id": "2608.11330",
+      "url": "https://arxiv.org/abs/2608.11330",
+      "category": "AI/ML use",
+      "abstract": "Quantum autoencoders and quantum classifiers are compared with classical baselines for collider anomaly detection and supervised event selection under controlled feature smearing, with quantum models reportedly more stable under smearing.",
+      "tags": ["quantum ML", "collider event selection", "detector variability"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Variational Parameter Calibration with Physics-Aware Latent-Space Surrogates",
+      "authors": "Qiyao Zhou, Xujia Zhu, Pierre Joli, Yu Cong, Sibo Cheng",
+      "author_count": 5,
+      "arxiv_id": "2608.11435",
+      "url": "https://arxiv.org/abs/2608.11435",
+      "category": "AI/ML use",
+      "abstract": "An autoencoder-based differentiable surrogate for parametric dynamical systems is used for variational parameter calibration and tested on CFD benchmarks with noisy, partial, low-resolution, and masked observations.",
+      "tags": ["surrogate modeling", "inverse calibration", "computational physics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Spectroscopy and Dissociation of Tetraquarks in Anisotropic Plasma within the Generalized Fractional Derivatives Framework",
+      "authors": "H. M. Fath-Allah, M. Abu-Shady, E. M. Khokha",
+      "author_count": 3,
+      "arxiv_id": "2606.23732",
+      "url": "https://arxiv.org/abs/2606.23732",
+      "category": "Caution",
+      "abstract": "A model study of tetraquark spectroscopy and dissociation in anisotropic plasma using a generalized fractional-derivative framework, Debye-screened extended Cornell potentials, and parametric Nikiforov-Uvarov methods.",
+      "tags": ["caution", "tetraquarks", "anisotropic plasma"],
+      "assessment": "caution"
+    }
+  ]
+}
