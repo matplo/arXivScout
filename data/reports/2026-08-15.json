@@ -1,0 +1,138 @@
+{
+  "date": "2026-08-15",
+  "path": "reports/2026-08-15.html",
+  "summary": "The recent arXiv window is dominated by theory and phenomenology rather than new heavy-ion experimental measurements. The strongest directly relevant heavy-ion paper is the WAGASHI event-generator study of non-perturbative quark production and transport in the glasma. Other useful items address quasi-hydrodynamic EFT from kinetic theory, magnetized-QGP photon production, nuclear many-body emulation, differentiable neutrino-analysis infrastructure, and scalable Bayesian calibration. Caution is warranted for rotating-QCD critical-exponent claims that remain mean-field-model limited and for broad generative-model unification whose transfer to HEP workflows is still mostly conceptual.",
+  "keywords": [
+    "glasma",
+    "Schwinger pair production",
+    "Wong transport",
+    "quasi-hydrodynamics",
+    "Israel-Stewart dynamics",
+    "magnetized QGP",
+    "thermal photons",
+    "nuclear emulation",
+    "parametric matrix models",
+    "differentiable analysis",
+    "Bayesian calibration",
+    "physics ML transfer"
+  ],
+  "arxiv_ids": [
+    "2608.13393",
+    "2608.13542",
+    "2608.13364",
+    "2608.12837",
+    "2608.13429",
+    "2608.12603",
+    "2608.13469",
+    "2608.12438"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "arXiv:2608.13393, WAGASHI, because it combines event-by-event classical Yang-Mills glasma evolution, Wong-equation transport, and Schwinger quark-pair production into a concrete early-time heavy-ion modeling tool.",
+  "caution_count": 2,
+  "homepage_lines": [
+    "2608.13393: glasma quark production, Schwinger pairs, Wong transport",
+    "2608.13542: quasi-hydrodynamics, kinetic theory, Israel-Stewart universality",
+    "2608.13364: magnetized QGP, thermal photons, MHD",
+    "2608.12837: nuclear emulation, parametric matrix models, pyPMM",
+    "2608.13429: differentiable neutrino oscillations, autodiff analysis pipelines",
+    "2608.12603: Bayesian calibration, GP emulators, accelerator experiments",
+    "2608.13469: caution, rotating QCD critical exponents, mean-field NJL",
+    "2608.12438: caution, path-integral generative models, conceptual transfer"
+  ],
+  "papers": [
+    {
+      "title": "Non-perturbative quark production and transport in the evolving glasma: the WAGASHI event generator",
+      "authors_short": "Nicholas J. Benoit, Chiho Nonaka, Hidetoshi Taya",
+      "total_author_count": 3,
+      "arxiv_id": "2608.13393",
+      "url": "https://arxiv.org/abs/2608.13393",
+      "category": "Phenomenology",
+      "abstract": "Develops WAGASHI, combining classical Yang-Mills glasma evolution, Wong-equation transport, and Schwinger pair production event by event. The authors report sizeable early quark production, momentum broadening, spin randomization, and event-by-event conserved-charge and polarization distributions for Pb-Pb and O-O at LHC energies.",
+      "tags": ["glasma", "Schwinger production", "early equilibration", "O-O", "Pb-Pb"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Effective field theory of quasi-hydrodynamics from kinetic theory",
+      "authors_short": "Lorenzo Gavassino",
+      "total_author_count": 1,
+      "arxiv_id": "2608.13542",
+      "url": "https://arxiv.org/abs/2608.13542",
+      "category": "Theory",
+      "abstract": "Derives a systematic effective-field-theory framework for linear quasi-hydrodynamics from causal kinetic-like theories with slow degrees of freedom. The result places Israel-Stewart-like transient hydrodynamics in a universal slow-relaxation class with inherited causality, positivity, Onsager, and symmetry constraints.",
+      "tags": ["quasi-hydrodynamics", "kinetic theory", "causality", "Israel-Stewart"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Magnetization and Magnetic Field-Induced Correction: Implications for QGP Thermal Photon Production in Magnetohydrodynamic",
+      "authors_short": "Jing Jing, Duan She, Ze-Fang Jiang",
+      "total_author_count": 3,
+      "arxiv_id": "2608.13364",
+      "url": "https://arxiv.org/abs/2608.13364",
+      "category": "Phenomenology",
+      "abstract": "Studies thermal photons from magnetized QGP in 1+1D relativistic MHD, including magnetic susceptibility and weak-field corrections to quark distributions. The work finds photon yields are mainly governed by initial field strength and decay, while weak-field distribution corrections enhance intermediate-pT photons.",
+      "tags": ["magnetized QGP", "thermal photons", "MHD", "weak-field corrections"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Parametric Matrix Models for Emulation in Nuclear and Many-Body Physics",
+      "authors_short": "Patrick Cook",
+      "total_author_count": 1,
+      "arxiv_id": "2608.12837",
+      "url": "https://arxiv.org/abs/2608.12837",
+      "category": "AI/ML use",
+      "abstract": "PhD thesis presenting parametric matrix models as interpretable, physically adjustable emulators for expensive nuclear and many-body calculations, with an accompanying GPU-optimized pyPMM package. The abstract emphasizes reduced-basis connections, modular deployment, and uncertainty-fitting workflows.",
+      "tags": ["nuclear emulation", "reduced basis", "pyPMM", "many-body physics"],
+      "assessment": "strong"
+    },
+    {
+      "title": "MANGO: An Autodiff Neutrino Oscillation Engine for Differentiable Analysis Pipelines",
+      "authors_short": "Pierre Granger",
+      "total_author_count": 1,
+      "arxiv_id": "2608.13429",
+      "url": "https://arxiv.org/abs/2608.13429",
+      "category": "AI/ML use",
+      "abstract": "Introduces a differentiable neutrino-oscillation engine whose gradients pass through propagation geometry, Earth-shell densities, detector response, event weighting, binning, and likelihoods. Benchmarks against existing oscillation tools and finite differences are reported at high precision.",
+      "tags": ["autodiff", "differentiable analysis", "neutrino oscillations", "experimental design"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Hierarchical Bayesian Calibration with Bayesian Committee Machine",
+      "authors_short": "Sebastian Heinekamp, David M. Higdon, Andreas Adelmann",
+      "total_author_count": 3,
+      "arxiv_id": "2608.12603",
+      "url": "https://arxiv.org/abs/2608.12603",
+      "category": "AI/ML use",
+      "abstract": "Develops hierarchical Bayesian calibration for repeated scientific experiments with experiment-specific parameters, using Bayesian Committee Machine Gaussian-process emulators for scalability and NUTS/automatic differentiation in Julia. Demonstrated on benchmarks and simulated Argonne Wakefield Accelerator data.",
+      "tags": ["Bayesian calibration", "GP emulators", "uncertainty quantification", "accelerator physics"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Critical behavior and critical exponents of rotating QCD matter",
+      "authors_short": "Kai Xiao, Fei Sun, Shuang Li, Xun Chen",
+      "total_author_count": 4,
+      "arxiv_id": "2608.13469",
+      "url": "https://arxiv.org/abs/2608.13469",
+      "category": "Caution",
+      "abstract": "Mean-field two-flavor NJL study of rotating strongly interacting matter and critical exponents near a CEP in the temperature-angular-velocity plane. The authors find mean-field scaling and argue rotation does not change the universality class within the model.",
+      "tags": ["rotating QCD", "critical exponents", "NJL", "mean-field caution"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Unifying Generative Models with Path Integrals",
+      "authors_short": "Ramon Winterhalder",
+      "total_author_count": 1,
+      "arxiv_id": "2608.12438",
+      "url": "https://arxiv.org/abs/2608.12438",
+      "category": "Caution",
+      "abstract": "Formulates flow, diffusion, variational, and adversarial generative models within a path-integral master-action language and reports one-loop corrections for deterministic samplers on controlled drifts. Cross-listed with hep-ph, but the immediate HEP/heavy-ion use case is still conceptual.",
+      "tags": ["generative models", "path integrals", "EFT language", "transfer caution"],
+      "assessment": "caution"
+    }
+  ]
+}
