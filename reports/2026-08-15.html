@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-15</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-15 Briefing</h1>
+    <p class="dek">Recent heavy-ion and physics-AI/ML papers screened from the Friday arXiv window around 14 August 2026. Emphasis: glasma dynamics, quasi-hydrodynamics, magnetized-QGP photons, nuclear emulation, and differentiable inference.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Best heavy-ion pick:</strong> WAGASHI is the most directly relevant paper, because it turns glasma quark production, Wong transport, and Schwinger pair creation into an event-by-event modeling framework for Pb-Pb and O-O initial conditions.</li>
+        <li><strong>Theory trend:</strong> the day is stronger on foundations of nonequilibrium dynamics than on new experimental observables: quasi-hydrodynamic EFT, glasma transport, and MHD photon production all target early-time or electromagnetic probes.</li>
+        <li><strong>AI/ML trend:</strong> the strongest transferable papers are not generic foundation-model pieces; they are tools for emulation, differentiable likelihood pipelines, and scalable Bayesian calibration.</li>
+        <li><strong>Main caveat:</strong> rotating-QCD critical behavior in a mean-field NJL model and path-integral unification of generative models are interesting but should not be read as experimentally validated heavy-ion or HEP-ML advances yet.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.13542 quasi-hydrodynamics kinetic theory Israel-Stewart causality positivity Onsager Theory strong">
+        <div class="paper-head"><h4>Effective field theory of quasi-hydrodynamics from kinetic theory</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lorenzo Gavassino | <a href="https://arxiv.org/abs/2608.13542">arXiv:2608.13542</a></p>
+        <p>The paper derives linear quasi-hydrodynamics from causal kinetic-like theories with slow nonconserved degrees of freedom. Its key claim is that Israel-Stewart-like transient hydrodynamics emerges as the universal leading description, with higher-order corrections constrained by causality, positivity, Onsager relations, and symmetries.</p>
+        <p><strong>Why it matters:</strong> heavy-ion phenomenology leans heavily on transient hydrodynamics; a cleaner microscopic derivation helps clarify which ingredients are universal and which are model-specific.</p>
+        <p><strong>Assessment:</strong> strong conceptual contribution, though it is linear and formal rather than a direct phenomenological calculation.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.13393 glasma WAGASHI Schwinger pair production Wong transport Pb-Pb O-O early equilibration Phenomenology strong">
+        <div class="paper-head"><h4>Non-perturbative quark production and transport in the evolving glasma: the WAGASHI event generator</h4><span class="label strong">strong</span></div>
+        <p class="meta">Nicholas J. Benoit, Chiho Nonaka, Hidetoshi Taya | <a href="https://arxiv.org/abs/2608.13393">arXiv:2608.13393</a></p>
+        <p>WAGASHI combines classical Yang-Mills glasma evolution, Wong-equation transport, and Schwinger pair production event by event. The authors report sizeable quark production already in the glasma stage, substantial momentum broadening and spin randomization, and conserved-charge distributions for Pb-Pb and O-O at LHC energies.</p>
+        <p><strong>Why it matters:</strong> this targets one of the hardest pieces of the heavy-ion modeling chain: flavor, charge, and spin structure in the earliest pre-hydrodynamic stage.</p>
+        <p><strong>Assessment:</strong> the scope is ambitious but concrete. The short format limits visible validation details, so the next thing to watch is benchmarking against other pre-equilibrium frameworks and sensitivity to glasma initial conditions.</p>
+      </article>
+      <article class="paper" data-search="2608.13364 magnetized QGP thermal photons MHD weak-field correction magnetic susceptibility Phenomenology mixed">
+        <div class="paper-head"><h4>Magnetization and Magnetic Field-Induced Correction: Implications for QGP Thermal Photon Production in Magnetohydrodynamic</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jing Jing, Duan She, Ze-Fang Jiang | <a href="https://arxiv.org/abs/2608.13364">arXiv:2608.13364</a></p>
+        <p>The study computes thermal photon production in magnetized QGP within 1+1D relativistic MHD, including magnetic susceptibility and weak-field corrections to quark distributions. It finds photon yields are controlled mainly by initial magnetic-field strength and decay, while weak-field corrections enhance intermediate-pT photons.</p>
+        <p><strong>Why it matters:</strong> electromagnetic probes are central because they escape with little final-state interaction; magnetic-field effects remain a persistent uncertainty in photon interpretation.</p>
+        <p><strong>Assessment:</strong> useful and already accepted in PRD, but the 1+1D setup and magnetic-field lifetime assumptions limit immediate quantitative use for full event-by-event comparisons.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2608.12837 nuclear emulation parametric matrix models reduced basis pyPMM many-body physics AI/ML strong">
+        <div class="paper-head"><h4>Parametric Matrix Models for Emulation in Nuclear and Many-Body Physics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Patrick Cook | <a href="https://arxiv.org/abs/2608.12837">arXiv:2608.12837</a></p>
+        <p>This PhD thesis presents parametric matrix models as interpretable, physics-adjustable emulators for expensive nuclear and many-body calculations, together with the GPU-optimized pyPMM package.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> emulator construction for Bayesian calibration of expensive nuclear, dense-matter, or heavy-ion model components where interpretability and controlled physical structure matter.</p>
+        <p><strong>Assessment:</strong> strong transfer value. Because it is a thesis, the key practical question is how easily pyPMM examples map onto full heavy-ion simulation pipelines.</p>
+      </article>
+      <article class="paper" data-search="2608.13429 MANGO autodiff differentiable neutrino oscillation detector response likelihood experimental design AI/ML strong">
+        <div class="paper-head"><h4>MANGO: An Autodiff Neutrino Oscillation Engine for Differentiable Analysis Pipelines</h4><span class="label strong">strong</span></div>
+        <p class="meta">Pierre Granger | <a href="https://arxiv.org/abs/2608.13429">arXiv:2608.13429</a></p>
+        <p>MANGO makes neutrino oscillation probabilities and their full analysis chain differentiable, including geometry, Earth-shell densities, detector response, event weighting, binning, and likelihoods. The paper reports agreement with benchmark tools and finite-difference checks.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> differentiable end-to-end sensitivity studies, detector-design gradients, nuisance profiling, and analysis optimization. The direct physics domain is neutrinos, but the workflow maps cleanly onto modern HEP inference.</p>
+        <p><strong>Assessment:</strong> strong method paper with clear validation claims and concrete infrastructure value.</p>
+      </article>
+      <article class="paper" data-search="2608.12603 hierarchical Bayesian calibration Bayesian Committee Machine Gaussian process emulator accelerator uncertainty quantification AI/ML strong">
+        <div class="paper-head"><h4>Hierarchical Bayesian Calibration with Bayesian Committee Machine</h4><span class="label strong">strong</span></div>
+        <p class="meta">Sebastian Heinekamp, David M. Higdon, Andreas Adelmann | <a href="https://arxiv.org/abs/2608.12603">arXiv:2608.12603</a></p>
+        <p>The authors develop a hierarchical Bayesian calibration framework for repeated scientific experiments with experiment-specific parameters, using Bayesian Committee Machine GP emulators for scalable inference and NUTS with automatic differentiation.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> calibration of accelerator, detector, or event-generator models where repeated experimental configurations share population-level structure but require run-specific parameters.</p>
+        <p><strong>Assessment:</strong> strong transfer value because the paper addresses a real bottleneck: scalable calibration with uncertainty rather than a generic neural-network substitute.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.13469 rotating QCD critical exponents NJL mean-field critical endpoint caution">
+        <div class="paper-head"><h4>Critical behavior and critical exponents of rotating QCD matter</h4><span class="label caution">caution</span></div>
+        <p class="meta">Kai Xiao, Fei Sun, Shuang Li, Xun Chen | <a href="https://arxiv.org/abs/2608.13469">arXiv:2608.13469</a></p>
+        <p>The paper extracts critical exponents for rotating QCD matter in a two-flavor mean-field NJL model and finds mean-field scaling. Interesting as a model study, but the conclusion that rotation does not alter critical scaling is only established within this simplified framework.</p>
+      </article>
+      <article class="paper" data-search="2608.12438 generative models path integrals diffusion flow variational adversarial EFT transfer caution">
+        <div class="paper-head"><h4>Unifying Generative Models with Path Integrals</h4><span class="label caution">caution</span></div>
+        <p class="meta">Ramon Winterhalder | <a href="https://arxiv.org/abs/2608.12438">arXiv:2608.12438</a></p>
+        <p>The field-theory language is attractive for HEP audiences, and the one-loop sampler correction is a neat controlled result. But the heavy-ion or detector-analysis transfer path is still conceptual; this should be watched as mathematical infrastructure, not counted as a proven physics-AI application yet.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
