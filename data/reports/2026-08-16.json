@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-16",
+  "path": "reports/2026-08-16.html",
+  "summary": "No genuinely new qualifying arXiv papers were found in the latest available Sunday scan beyond the Friday/August 15 archive window. The most recent category pages still show the Friday, August 14, 2026 listing block for the checked heavy-ion and physics-AI categories, and the strongest relevant papers from that block were already archived on 2026-08-15. This run therefore records a zero-new-selection day rather than duplicating prior selections.",
+  "keywords": [
+    "no new qualifying papers",
+    "weekend arXiv gap",
+    "heavy-ion screening",
+    "physics AI screening",
+    "glasma carry-forward",
+    "quasi-hydrodynamics carry-forward",
+    "magnetized QGP carry-forward",
+    "Bayesian calibration carry-forward"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [],
+  "strongest_paper": "No fresh strongest paper was selected for 2026-08-16 because the latest qualifying papers were already covered in the 2026-08-15 run.",
+  "caution_count": 0,
+  "homepage_lines": [
+    "No new qualifying arXiv IDs: weekend listing gap; see 2026-08-15 for latest selected glasma, quasi-hydrodynamics, magnetized-QGP, and physics-ML papers"
+  ],
+  "papers": [],
+  "screening": {
+    "checked_categories": [
+      "nucl-th",
+      "nucl-ex",
+      "hep-ph",
+      "physics.data-an",
+      "cs.LG"
+    ],
+    "latest_available_listing_block": "Fri, 14 Aug 2026",
+    "candidate_ceiling": 50,
+    "selection_rationale": "No new abstracts in the latest available posting window exceeded the threshold for fresh inclusion beyond papers already archived on 2026-08-15."
+  }
+}
