@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-18",
+  "path": "reports/2026-08-18.html",
+  "summary": "The latest screened arXiv window is strongest on intermediate-mass dilepton thermometry, statistically validated heavy-ion calorimeter inpainting, interpretable generator-systematics decompositions, and efficient transformer jet tagging. The direct heavy-ion theory highlight is arXiv:2608.16102, which clarifies why dilepton inverse slopes track an emission-weighted harmonic temperature while warning that the mapping is nonuniversal. The most practical physics-AI/ML result is arXiv:2608.14801 because it evaluates uncertainty calibration and spatial bias for detector inpainting rather than relying on generic generative-model quality metrics.",
+  "keywords": [
+    "intermediate-mass dileptons",
+    "thermal history",
+    "heavy-ion thermometry",
+    "calorimeter inpainting",
+    "diffusion priors",
+    "uncertainty calibration",
+    "generator systematics",
+    "Pythia-Herwig differences",
+    "Kolmogorov-Arnold networks",
+    "transformer jet tagging",
+    "parameter redundancy",
+    "graph particle reconstruction",
+    "flow matching caution"
+  ],
+  "arxiv_ids": ["2608.16102", "2608.14801", "2608.15952", "2608.16061", "2608.14278", "2608.15042"],
+  "total_paper_count": 6,
+  "represented_categories": ["Theory", "AI/ML use", "Caution"],
+  "strongest_paper": "2608.16102: Origin and limits of intermediate-mass dilepton thermometry",
+  "top_takeaway": "Dilepton thermometry and validation-focused detector AI are the strongest signals; broader HEP-ML papers are useful where they expose model differences, reduce compute cost, or keep topology reconstruction uncertainty visible.",
+  "caution_count": 1,
+  "candidate_count_inspected": 22,
+  "homepage_lines": [
+    "2608.16102: dilepton thermometry, thermal history, harmonic temperature",
+    "2608.14801: calorimeter inpainting, diffusion priors, uncertainty calibration",
+    "2608.15952: Pythia-Herwig differences, KAN density ratios, generator systematics",
+    "2608.16061: transformer jet tagging, parameter redundancy, JetClass",
+    "2608.14278: graph reconstruction, short-lived particles, pairformer",
+    "2608.15042: caution, flow matching, autoencoder correlations"
+  ],
+  "papers": [
+    {"title":"Origin and limits of intermediate-mass dilepton thermometry","authors_short":"Lipei Du","author_count":1,"arxiv_id":"2608.16102","url":"https://arxiv.org/abs/2608.16102","category":"Theory","abstract":"Controlled expanding-fireball study showing that intermediate-mass dilepton inverse slopes track an emission-weighted harmonic mean of source temperatures while remaining nonuniversal under changes in cooling history or source composition.","tags":["dilepton thermometry","thermal history","QGP"],"assessment":"strong"},
+    {"title":"Statistical validation of calorimeter inpainting with generative diffusion priors","authors_short":"Himanshu Raj, Roli Esha","author_count":2,"arxiv_id":"2608.14801","url":"https://arxiv.org/abs/2608.14801","category":"AI/ML use","abstract":"Bayesian heavy-ion calorimeter inpainting with diffusion priors, evaluated through energy response, spatial bias, uncertainty calibration, centrality, and mask-size diagnostics.","tags":["detector ML","calorimeter inpainting","diffusion priors"],"assessment":"strong"},
+    {"title":"Functional anatomy of Pythia-Herwig differences with Kolmogorov-Arnold networks","authors_short":"Arghya Chattopadhyay","author_count":1,"arxiv_id":"2608.15952","url":"https://arxiv.org/abs/2608.15952","category":"AI/ML use","abstract":"KAN decomposition of classifier-derived log density ratios identifies which jet-observable components drive Pythia-Herwig differences across generator stages.","tags":["generator systematics","KAN","density ratios"],"assessment":"strong"},
+    {"title":"Assessing Parameter Redundancy in Transformers for Jet Tagging","authors_short":"Huitong Cheng, Yabo Dong, Jun Fan, Kun Wang, Haijun Yang, Jingya Zhu, Yifan Zhu","author_count":7,"arxiv_id":"2608.16061","url":"https://arxiv.org/abs/2608.16061","category":"AI/ML use","abstract":"Hourglass feed-forward blocks and lightweight embeddings reduce ParT/MIParT parameter counts while retaining most top-tagging and quark-gluon discrimination performance.","tags":["jet tagging","transformers","efficient ML"],"assessment":"strong"},
+    {"title":"Pairton: Iterative Reconstruction of Short-Lived Particles","authors_short":"Andreas Hermansen, Chris Scheulen, Tobias Golling","author_count":3,"arxiv_id":"2608.14278","url":"https://arxiv.org/abs/2608.14278","category":"AI/ML use","abstract":"Iterative masked graph-prediction framework for short-lived particle reconstruction, demonstrated on fully hadronic top-pair decays.","tags":["graph reconstruction","pairformer","short-lived particles"],"assessment":"mixed"},
+    {"title":"Uncovering Hidden Leptonic Correlations with Flow Matching and Autoencoders","authors_short":"Haruto Kitagawa, Satsuki Nishimura, Hajime Otsuka","author_count":3,"arxiv_id":"2608.15042","url":"https://arxiv.org/abs/2608.15042","category":"Caution","abstract":"Flow matching and autoencoders are used to explore Type-I seesaw parameter correlations, but the abstract-level evidence does not yet establish robust physical interpretability or transfer value.","tags":["flow matching","autoencoders","phenomenology caution"],"assessment":"caution"}
+  ],
+  "screening": {"checked_categories":["nucl-th","nucl-ex","hep-ph","hep-ex","physics.data-an","physics.ins-det","cs.LG"],"candidate_ceiling":50,"selection_rationale":"Abstract-first triage selected direct heavy-ion papers and physics AI/ML papers with concrete HEP or nuclear transfer value; loosely related phenomenology and generic ML papers were omitted."}
+}
