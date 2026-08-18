@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-18</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-18 briefing</h1>
+    <p class="dek">Selective review of recent arXiv papers relevant to heavy-ion collisions and physics AI/ML, emphasizing dilepton thermometry, detector inpainting, generator-systematics interpretability, and efficient collider ML.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest direct heavy-ion paper is arXiv:2608.16102, which gives a clean physical interpretation of intermediate-mass dilepton inverse slopes while stressing that the temperature mapping is nonuniversal.</li>
+        <li>Detector-level AI/ML is the most practically relevant AI theme today: arXiv:2608.14801 frames calorimeter inpainting as probabilistic reconstruction and evaluates calibration, bias, and centrality dependence.</li>
+        <li>Two HEP-ML papers are useful for transfer into heavy-ion workflows: arXiv:2608.15952 for interpretable generator-difference decompositions, and arXiv:2608.16061 for reducing transformer jet-tagger size while preserving most benchmark performance.</li>
+        <li>The broader ML signal is mixed: graph reconstruction and flow-matching studies are interesting, but their transfer value depends strongly on topology/domain-shift tests and physically meaningful validation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.16102 Origin and limits of intermediate-mass dilepton thermometry Lipei Du heavy-ion theory dileptons thermometry harmonic mean temperature early thermal history">
+        <div class="paper-head"><h4>Origin and limits of intermediate-mass dilepton thermometry</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lipei Du. <a href="https://arxiv.org/abs/2608.16102">arXiv:2608.16102</a></p>
+        <p><strong>Summary:</strong> The paper uses a controlled expanding-fireball setup with thermal dilepton rates to explain why the inverse slope of intermediate-mass dilepton spectra tracks an emission-weighted harmonic mean of source temperatures. It argues that the correlation with the initial temperature can be close to linear, but not universal, because cooling history and source composition alter which temperatures are sampled.</p>
+        <p><strong>Why it matters:</strong> Dileptons are among the cleanest probes of early hot QCD matter, and this paper clarifies both the origin and limitations of a commonly used thermometry argument.</p>
+        <p><strong>Critical assessment:</strong> Strong as a conceptual and phenomenological baseline. The controlled setup is a strength for isolating the mechanism, but realistic hydrodynamic and hadronic source comparisons remain necessary before turning inverse slopes into precision initial-temperature constraints.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2608.14801 Statistical validation calorimeter inpainting generative diffusion priors heavy-ion detector Bayesian posterior diagnostics centrality uncertainty calibration">
+        <div class="paper-head"><h4>Statistical validation of calorimeter inpainting with generative diffusion priors</h4><span class="label strong">strong</span></div>
+        <p class="meta">Himanshu Raj, Roli Esha. <a href="https://arxiv.org/abs/2608.14801">arXiv:2608.14801</a></p>
+        <p><strong>Summary:</strong> The work treats localized calorimeter inefficiencies in relativistic heavy-ion collisions as a Bayesian inpainting problem, using pretrained diffusion models as priors conditioned on surrounding measurements. It compares several inpainting algorithms using posterior diagnostics for energy response, spatial bias, uncertainty calibration, collision centrality, and mask size.</p>
+        <p><strong>Why it matters:</strong> This is directly relevant to heavy-ion detector operations because missing or inefficient calorimeter regions can bias jet, photon, and event-activity observables.</p>
+        <p><strong>Critical assessment:</strong> Strong abstract-level signal because the evaluation focuses on calibration and bias rather than only image-quality metrics. The main thing to verify in the full paper is whether the simulated detector/pathology model is realistic enough for analysis deployment.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2608.15952 Pythia Herwig differences Kolmogorov-Arnold networks generator systematics density ratio jet observables interpretability">
+        <div class="paper-head"><h4>Functional anatomy of Pythia-Herwig differences with Kolmogorov-Arnold networks</h4><span class="label strong">strong</span></div>
+        <p class="meta">Arghya Chattopadhyay. <a href="https://arxiv.org/abs/2608.15952">arXiv:2608.15952</a></p>
+        <p><strong>Method/result:</strong> The paper trains additive KAN representations of classifier-derived log density ratios to decompose Pythia-Herwig differences across shower-only, hadronized, and full-generator stages. It finds that multiplicity dominates at shower level, jet mass and shape enter after hadronization, and support limitations can be exposed component by component.</p>
+        <p><strong>Likely use case:</strong> Heavy-ion analyses comparing event generators, afterburners, jet-medium modules, or detector embeddings could use similar staged density-ratio decompositions to identify which observables actually carry model differences.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value because interpretability is tied to generator-systematics anatomy rather than generic feature attribution. It still needs stress tests in higher-dimensional, detector-level, and heavy-ion-background environments.</p>
+      </article>
+
+      <article class="paper" data-search="2608.16061 transformer jet tagging parameter redundancy Particle Transformer hourglass MIParT JetClass efficient collider ML">
+        <div class="paper-head"><h4>Assessing Parameter Redundancy in Transformers for Jet Tagging</h4><span class="label strong">strong</span></div>
+        <p class="meta">Huitong Cheng, Yabo Dong, Jun Fan, Kun Wang, Haijun Yang, Jingya Zhu, Yifan Zhu. <a href="https://arxiv.org/abs/2608.16061">arXiv:2608.16061</a></p>
+        <p><strong>Method/result:</strong> Hourglass feed-forward blocks and lighter particle embeddings are substituted into ParT and MIParT while preserving the particle-interaction attention structure. The authors report comparable top-tagging and quark-gluon performance with roughly 40-48% of the original parameters and less than 1% AUC/accuracy loss on JetClass.</p>
+        <p><strong>Likely use case:</strong> Useful for heavy-ion jet tagging or online/large-scale embedding workflows where transformer cost is a real bottleneck, especially if retraining must be repeated across centrality, detector, or background scenarios.</p>
+        <p><strong>Critical assessment:</strong> Strong engineering relevance with code availability. The scientific payoff depends on whether robustness under pileup, detector degradation, and heavy-ion underlying event is preserved, which is not established by standard pp-style tagger benchmarks alone.</p>
+      </article>
+
+      <article class="paper" data-search="2608.14278 Pairton iterative reconstruction short-lived particles graph masked prediction pairformer hadronic ttbar topology transfer">
+        <div class="paper-head"><h4>Pairton: Iterative Reconstruction of Short-Lived Particles</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Andreas Hermansen, Chris Scheulen, Tobias Golling. <a href="https://arxiv.org/abs/2608.14278">arXiv:2608.14278</a></p>
+        <p><strong>Method/result:</strong> Pairton formulates decay reconstruction as iterative masked prediction on graph adjacency matrices, using dynamically updated pairwise representations and global event consistency. It reports state-of-the-art performance for fully hadronic top-pair decays.</p>
+        <p><strong>Likely use case:</strong> The graph formulation could transfer to resonance reconstruction, displaced-object association, or heavy-flavor topology reconstruction, though heavy-ion combinatorics and occupancy would be a much harder regime.</p>
+        <p><strong>Critical assessment:</strong> Interesting and potentially useful, but transfer strength is mixed until demonstrated beyond clean benchmark topologies and under realistic combinatorial backgrounds.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2608.15042 flow matching autoencoders leptonic correlations Type-I seesaw caution hidden correlations generative AI">
+        <div class="paper-head"><h4>Uncovering Hidden Leptonic Correlations with Flow Matching and Autoencoders</h4><span class="label caution">caution</span></div>
+        <p class="meta">Haruto Kitagawa, Satsuki Nishimura, Hajime Otsuka. <a href="https://arxiv.org/abs/2608.15042">arXiv:2608.15042</a></p>
+        <p><strong>Why caution:</strong> The abstract describes flow matching to generate Type-I seesaw parameter solutions and an autoencoder to uncover nonlinear lepton-sector correlations. That is plausible as exploratory phenomenology, but the visible evidence does not yet establish that the discovered correlations are robust, physically interpretable, or transferable to HEP/nuclear workflows beyond generic generative sampling.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
