@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-19</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-19: Jet-medium systematics, quarkonium transport, and validation-first physics AI</h1>
+    <p class="dek">Selective scan of the Wednesday, 19 August 2026 arXiv new listings in nucl-th, nucl-ex, hep-ph, hep-ex, physics.data-an, and stat.ML, with deeper abstract-level triage for heavy-ion and physics-AI relevance.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion thread is improved uncertainty control for jet-medium extractions: arXiv:2608.17161 and 2608.17160 target approximations in thermal QCD scattering rates and their impact on Bayesian constraints of qhat and ehat.</li>
+        <li>Quarkonium transport also has a solid theory contribution: arXiv:2608.17372 connects universal Lindblad evolution to coupled Boltzmann equations, giving a cleaner bridge between quantum open-system treatments and semiclassical transport in the QGP.</li>
+        <li>For jet wake phenomenology, arXiv:2608.17967 proposes an experimentally motivated gamma-jet observable for elliptic-flow distortion of soft jet-induced medium response; the observable idea is attractive, but validation will depend on model/systematic studies beyond the abstract.</li>
+        <li>The AI/ML papers worth attention are unusually relevant: symbolic regression for intermediate-energy heavy-ion flow, normalizing-flow ensembles for chiral EFT interactions, diffusion-prior neutron-star EOS inference, and the PHYSTAT-rooted VERaiPHY validation framework.</li>
+        <li>No new direct heavy-ion experimental measurement stood out in the inspected listings; the useful experimental connections today are proposed observables, future JLab/accelerator relevance, or cross-listed nuclear-experiment context.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.17372 universal Lindblad Boltzmann quarkonium QGP pNRQCD NRQCD open quantum systems strong theory Aoumeur Daddi Hammou Pol Bernard Gossiaux">
+        <div class="paper-head"><h4>From the universal Lindblad equation to Boltzmann equations: in-QGP quarkonium dynamics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Aoumeur Daddi Hammou; Pol Bernard Gossiaux. <a href="https://arxiv.org/abs/2608.17372">arXiv:2608.17372</a></p>
+        <p><strong>Abstract:</strong> The paper derives universal Lindblad equations in pNRQCD/NRQCD and takes their semiclassical limit to obtain coupled singlet-octet Boltzmann equations for heavy-quark pairs in the QGP, including behavior beyond the small-dipole approximation and a leading quantum correction.</p>
+        <p><strong>Summary:</strong> This is a technical bridge between open-quantum-system quarkonium theory and the transport equations used in phenomenology. The key claim is that the Lindblad framework reproduces known singlet-sector results while adding an octet continuum transition term absent in rotating-wave-derived treatments.</p>
+        <p><strong>Why it matters:</strong> Quarkonium suppression remains a major QGP probe, and a more systematic derivation of semiclassical transport can reduce ambiguity in transport kernels used for charmonium and bottomonium phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Scientifically strong on foundations and relevance. The immediate experimental payoff is indirect, and the abstract does not establish numerical impact yet, but the formal comparison to existing Boltzmann equations is exactly the kind of theory cleanup that can matter downstream.</p>
+      </article>
+      <article class="paper" data-search="2608.17967 elliptic wind jet wakes gamma jet correlations QGP shear viscosity medium response Kai-Yi Wu Zhong Yang Xin-Nian Wang mixed theory">
+        <div class="paper-head"><h4>The elliptic wind on jet wakes in high-energy heavy-ion collisions</h4><span class="label mixed">mixed-to-strong</span></div>
+        <p class="meta">Kai-Yi Wu; Zhong Yang; Xin-Nian Wang. <a href="https://arxiv.org/abs/2608.17967">arXiv:2608.17967</a></p>
+        <p><strong>Abstract:</strong> The authors calculate how elliptic density gradients and collective flow distort jet-induced medium response, proposing in-plane versus out-of-plane differences in soft charged-hadron correlations in gamma-jet events as observables of wake broadening and diffusion-wake deepening.</p>
+        <p><strong>Summary:</strong> The work targets a concrete missing piece in jet-wake phenomenology: the QGP background is anisotropic and flowing, so jet-induced response should inherit azimuthal structure. It also studies sensitivity to shear viscosity.</p>
+        <p><strong>Why it matters:</strong> A measurable azimuthal modulation of jet wakes could provide a complementary constraint on QGP transport properties and medium response, especially at RHIC/LHC where gamma-jet channels are already used to control initial jet kinematics.</p>
+        <p><strong>Critical assessment:</strong> The observable is well motivated and the author team has relevant track record, but the abstract alone leaves open robustness questions: background subtraction, hadronization/afterburner effects, and sensitivity to initial-state modeling will determine whether this becomes analysis-grade.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new direct heavy-ion experimental measurement in the inspected Wednesday listing was strong enough for inclusion. The LHCb multimuon search is a solid HEP-ex result but not heavy-ion or physics-AI relevant for this briefing.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.17161 tree-level gluon-gluon scattering qhat ehat jet-medium Monte Carlo Bayesian theoretical systematic uncertainty Lukas Opitz Hemanth Regi Gojko Vujanovic strong phenomenology">
+        <div class="paper-head"><h4>Closed-form expressions for tree-level gluon-gluon scattering: a framework for obtaining theoretical systematic uncertainties for jet-medium Monte Carlo simulations</h4><span class="label strong">strong</span></div>
+        <p class="meta">Lukas Opitz; Hemanth Regi; Gojko Vujanovic. <a href="https://arxiv.org/abs/2608.17161">arXiv:2608.17161</a></p>
+        <p><strong>Abstract:</strong> The paper revisits tree-level gluon-gluon scattering in thermal QCD and argues that commonly used approximations distort scattering rates and the kinematic dependence of qhat and ehat; the deviations are used to define theoretical systematic uncertainties for Bayesian jet-medium analyses.</p>
+        <p><strong>Summary:</strong> This is the deeper companion to arXiv:2608.17160, providing a closed-form framework rather than only a short uncertainty estimate. It directly targets the reliability of large-scale jet-medium Monte Carlo constraints.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion jet phenomenology increasingly relies on Bayesian calibration. If the microscopic scattering approximation biases qhat, then published uncertainty bands may understate theory uncertainty.</p>
+        <p><strong>Critical assessment:</strong> High relevance and strong methodological motivation. The real test is whether the proposed covariance/systematic prescription propagates cleanly through full event-generator comparisons, but this is a valuable contribution because it attacks an uncertainty that is usually hand-waved.</p>
+      </article>
+      <article class="paper" data-search="2608.17160 thermal QCD high energy scattering qhat jet-medium Monte Carlo QGP systematic uncertainty Lukas Opitz Hemanth Regi Gojko Vujanovic mixed strong phenomenology">
+        <div class="paper-head"><h4>The high-energy behavior of tree-level scattering in finite-temperature QCD: estimates of theoretical systematic uncertainty in jet-medium Monte Carlo simulations</h4><span class="label mixed">mixed-to-strong</span></div>
+        <p class="meta">Lukas Opitz; Hemanth Regi; Gojko Vujanovic. <a href="https://arxiv.org/abs/2608.17160">arXiv:2608.17160</a></p>
+        <p><strong>Abstract:</strong> The authors examine high-energy finite-temperature QCD scattering and report significant deviations from approximations commonly used in jet-medium Monte Carlo simulations, with consequences for qhat and Bayesian uncertainty bands.</p>
+        <p><strong>Summary:</strong> The short paper appears to distill the phenomenological consequence of the longer gluon-gluon scattering study: a practical estimate of theory systematics for jet transport coefficients.</p>
+        <p><strong>Why it matters:</strong> It is directly relevant to qhat extractions and the credibility of precision jet-quenching claims.</p>
+        <p><strong>Critical assessment:</strong> Important if the estimated deviations survive generator-level propagation. Because the abstract frames the impact strongly but the paper is short, I would read it alongside 2608.17161 rather than treating it as standalone closure.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2608.17828 symbolic regression interpretable emulation proton collective flow IBUU DNN in-medium nucleon-nucleon cross section Nicholas Cox Xavier Grundler Bao-An Li strong AI ML heavy-ion">
+        <div class="paper-head"><h4>Symbolic Regression for Interpretable Emulation of Proton Collective Flow in Intermediate-Energy Heavy-Ion Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Nicholas Cox; Xavier Grundler; Bao-An Li. <a href="https://arxiv.org/abs/2608.17828">arXiv:2608.17828</a></p>
+        <p><strong>Abstract:</strong> The authors build symbolic-regression emulators for the IBUU transport model, reproducing proton mid-rapidity slopes of directed and elliptic flow with DNN-comparable accuracy while yielding explicit analytic formulas; they also invert the relation to infer the in-medium NN cross-section modification factor.</p>
+        <p><strong>Summary:</strong> This is a real ML-for-physics paper rather than decoration: it trades slower training and larger run-to-run variation for interpretable, fast-evaluating analytic relations.</p>
+        <p><strong>Why it matters:</strong> Intermediate-energy heavy-ion flow is used to constrain the nuclear equation of state and in-medium interactions. Transparent emulators can make sensitivity analysis and uncertainty propagation easier to audit.</p>
+        <p><strong>Critical assessment:</strong> Strong and domain-specific. The caveat is that reuse of prior transport-model data may limit evidence for extrapolation; future value depends on validation across beam energies, systems, and transport-model variants.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2608.17724 VERaiPHY validation evaluation robust AI physics uncertainty quantification PHYSTAT HEP Gaia Grosso Ramon Winterhalder Lydia Brenner Louis Lyons Tilman Plehn strong transferable">
+        <div class="paper-head"><h4>VERaiPHY -- Validation &amp; Evaluation for Robust AI in PHYsics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gaia Grosso; Ramon Winterhalder; Lydia Brenner; Louis Lyons; Tilman Plehn. <a href="https://arxiv.org/abs/2608.17724">arXiv:2608.17724</a></p>
+        <p><strong>Method/result:</strong> This PHYSTAT-linked opening article sets statistical foundations, notation, and evaluation questions for robust ML in fundamental physics, emphasizing uncertainty quantification, validation, and robustness rather than only predictive accuracy.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Directly useful for ML-based unfolding, simulation-based inference, anomaly detection, fast simulation, and surrogate models in heavy-ion and collider analyses where coverage and robustness matter.</p>
+        <p><strong>Critical assessment:</strong> Strong as a standards-setting and pedagogy paper, not as a new algorithm. Its transfer value is high because the weak points it targets - validation, UQ, and robustness - are exactly where many HEP/NP ML applications remain fragile.</p>
+      </article>
+      <article class="paper" data-search="2608.17457 denoising diffusion neutron-star matter equation of state heavy-ion-informed inference pQCD constraints Julia Yu. Panteleeva Herzallah Alharazin Evgeny Epelbaum mixed strong AI ML nuclear physics">
+        <div class="paper-head"><h4>Generative artificial intelligence for reconstructing neutron-star matter</h4><span class="label mixed">mixed-to-strong</span></div>
+        <p class="meta">Julia Yu. Panteleeva; Herzallah Alharazin; Evgeny Epelbaum. <a href="https://arxiv.org/abs/2608.17457">arXiv:2608.17457</a></p>
+        <p><strong>Method/result:</strong> A denoising diffusion model learns an inspectable, physics-motivated prior for the neutron-star equation of state while imposing perturbative-QCD and astrophysical constraints exactly; the inferred 1.4 solar-mass radius and tidal deformability match Gaussian-process and heavy-ion-informed inferences despite a broader prior.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The key transferable idea is separating learned priors from exact physics/data constraints in ill-posed inverse problems, relevant to finite-density EOS inference, transport-coefficient extraction, and model calibration.</p>
+        <p><strong>Critical assessment:</strong> Promising and technically relevant, but still needs careful scrutiny of prior construction, coverage, and calibration. The abstract’s broad claim that future measurements can update by reweighting alone is attractive, but should be stress-tested under prior misspecification.</p>
+      </article>
+      <article class="paper" data-search="2608.17813 normalizing flows chiral EFT low-energy constants nuclear interactions Bayesian inference neutron-proton phase shifts Pengsheng Wen Jeremy Holt strong AI ML nuclear physics">
+        <div class="paper-head"><h4>Data-Driven Statistical Ensembles of Chiral Nuclear Interactions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Pengsheng Wen; Jeremy W. Holt. <a href="https://arxiv.org/abs/2608.17813">arXiv:2608.17813</a></p>
+        <p><strong>Method/result:</strong> Normalizing flows infer joint probability distributions of two-body chiral EFT low-energy constants across resolution scales, reproducing neutron-proton scattering phase-shift distributions and revealing non-Gaussian LEC correlations.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Useful template for probabilistic ensembles of theory inputs in nuclear transport, EOS modeling, and uncertainty propagation where non-Gaussian correlated parameters matter.</p>
+        <p><strong>Critical assessment:</strong> Strong nuclear-theory ML with a concrete validation target. Transfer to heavy-ion workflows is indirect but credible because model-parameter ensembles and correlated theory uncertainties are central to transport and EOS inference.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2608.17737 chi_cJ nuclear bound states cutoff sensitivity finite nuclei JLab photoproduction Tian-Le Gao Ze-Hua Zhang Xiang Liu caution">
+        <div class="paper-head"><h4>Bound-state spectra of chi_cJ in finite nuclei and the universal pattern of mass levels</h4><span class="label caution">caution</span></div>
+        <p class="meta">Tian-Le Gao; Ze-Hua Zhang; Xiang Liu. <a href="https://arxiv.org/abs/2608.17737">arXiv:2608.17737</a></p>
+        <p><strong>Why it may look promising:</strong> The topic connects charmonium in-medium mass shifts, finite nuclei, and possible near-threshold photoproduction tests, with calculations across several nuclear targets.</p>
+        <p><strong>Why caution is warranted:</strong> The abstract reports bound states for all systems but also says absolute binding energies depend appreciably on the cutoff parameter. The claimed universal level-spacing pattern may be useful, but the main physical predictions appear model-sensitive and need stronger uncertainty quantification before being treated as robust experimental guidance.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
