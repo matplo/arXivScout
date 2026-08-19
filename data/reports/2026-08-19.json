@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-19",
+  "path": "reports/2026-08-19.html",
+  "summary": "The strongest 2026-08-19 selection centers on jet-medium theory systematics, quarkonium transport foundations, and validation-first physics AI. Key topics include thermal-QCD scattering approximations for qhat/ehat extraction, Lindblad-to-Boltzmann quarkonium dynamics, elliptic-flow distortion of jet wakes, symbolic-regression emulators for intermediate-energy collective flow, normalizing-flow ensembles for chiral EFT interactions, diffusion-prior dense-matter inference, and statistical validation standards for robust AI in fundamental physics.",
+  "keywords": [
+    "jet-medium systematics",
+    "thermal QCD scattering",
+    "qhat uncertainty",
+    "quarkonium transport",
+    "Lindblad equation",
+    "Boltzmann equation",
+    "jet wakes",
+    "gamma-jet correlations",
+    "symbolic regression",
+    "normalizing flows",
+    "diffusion model",
+    "robust physics AI"
+  ],
+  "arxiv_ids": ["2608.17161", "2608.17160", "2608.17372", "2608.17967", "2608.17828", "2608.17724", "2608.17457", "2608.17813", "2608.17737"],
+  "total_paper_count": 9,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "arXiv:2608.17161 gives a focused framework for theoretical systematic uncertainties in jet-medium Monte Carlo constraints, directly addressing qhat/ehat extraction reliability.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Closed-form expressions for tree-level gluon-gluon scattering: a framework for obtaining theoretical systematic uncertainties for jet-medium Monte Carlo simulations",
+      "authors": "Lukas Opitz; Hemanth Regi; Gojko Vujanovic",
+      "author_count": 3,
+      "arxiv_id": "2608.17161",
+      "url": "https://arxiv.org/abs/2608.17161",
+      "category": "Phenomenology",
+      "abstract": "Modern Bayesian theory-to-data comparisons for jet-medium interactions lack careful accounting of theoretical systematic uncertainties. The paper revisits tree-level gluon-gluon scattering in thermal QCD, finds deviations from common approximations, and uses them to estimate systematics for qhat and ehat in Bayesian analysis.",
+      "tags": ["jet-medium", "qhat", "thermal QCD", "Bayesian calibration"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The high-energy behavior of tree-level scattering in finite-temperature QCD: estimates of theoretical systematic uncertainty in jet-medium Monte Carlo simulations",
+      "authors": "Lukas Opitz; Hemanth Regi; Gojko Vujanovic",
+      "author_count": 3,
+      "arxiv_id": "2608.17160",
+      "url": "https://arxiv.org/abs/2608.17160",
+      "category": "Phenomenology",
+      "abstract": "The authors examine high-energy thermal-QCD scattering and argue that common approximations bias scattering rates and qhat, motivating a covariance-style theory uncertainty for jet-medium Monte Carlo analyses.",
+      "tags": ["qhat", "jet quenching", "Monte Carlo", "systematics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "From the universal Lindblad equation to Boltzmann equations: in-QGP quarkonium dynamics",
+      "authors": "Aoumeur Daddi Hammou; Pol Bernard Gossiaux",
+      "author_count": 2,
+      "arxiv_id": "2608.17372",
+      "url": "https://arxiv.org/abs/2608.17372",
+      "category": "Theory",
+      "abstract": "The paper derives pNRQCD/NRQCD universal Lindblad equations and their semiclassical limit, yielding coupled singlet-octet Boltzmann equations for quarkonium in the QGP, including beyond-small-dipole behavior and a leading quantum correction.",
+      "tags": ["quarkonium", "Lindblad", "Boltzmann", "QGP"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The elliptic wind on jet wakes in high-energy heavy-ion collisions",
+      "authors": "Kai-Yi Wu; Zhong Yang; Xin-Nian Wang",
+      "author_count": 3,
+      "arxiv_id": "2608.17967",
+      "url": "https://arxiv.org/abs/2608.17967",
+      "category": "Theory",
+      "abstract": "The authors calculate how elliptic density gradients and flow distort jet-induced medium response, proposing in-plane/out-of-plane gamma-jet soft-hadron correlation differences as probes of wake broadening and viscosity sensitivity.",
+      "tags": ["jet wake", "elliptic flow", "gamma-jet", "shear viscosity"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Symbolic Regression for Interpretable Emulation of Proton Collective Flow in Intermediate-Energy Heavy-Ion Collisions",
+      "authors": "Nicholas Cox; Xavier Grundler; Bao-An Li",
+      "author_count": 3,
+      "arxiv_id": "2608.17828",
+      "url": "https://arxiv.org/abs/2608.17828",
+      "category": "AI/ML use",
+      "abstract": "Symbolic-regression emulators reproduce IBUU proton flow observables with DNN-comparable accuracy while providing analytic expressions and fast inference; inverse symbolic relations estimate an in-medium NN cross-section modification factor.",
+      "tags": ["symbolic regression", "collective flow", "IBUU", "interpretable emulator"],
+      "assessment": "strong"
+    },
+    {
+      "title": "VERaiPHY -- Validation & Evaluation for Robust AI in PHYsics",
+      "authors": "Gaia Grosso; Ramon Winterhalder; Lydia Brenner; Louis Lyons; Tilman Plehn",
+      "author_count": 5,
+      "arxiv_id": "2608.17724",
+      "url": "https://arxiv.org/abs/2608.17724",
+      "category": "AI/ML use",
+      "abstract": "The opening VERaiPHY article establishes probabilistic, statistical, and ML foundations for later PHYSTAT articles on validation, uncertainty quantification, and robustness of AI methods in fundamental physics.",
+      "tags": ["validation", "uncertainty quantification", "robust AI", "PHYSTAT"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Generative artificial intelligence for reconstructing neutron-star matter",
+      "authors": "Julia Yu. Panteleeva; Herzallah Alharazin; Evgeny Epelbaum",
+      "author_count": 3,
+      "arxiv_id": "2608.17457",
+      "url": "https://arxiv.org/abs/2608.17457",
+      "category": "AI/ML use",
+      "abstract": "A denoising diffusion model learns a physics-motivated EOS prior for neutron-star matter while imposing perturbative-QCD and astrophysical constraints exactly; inferred radii and tidal deformabilities align with Gaussian-process and heavy-ion-informed results.",
+      "tags": ["diffusion model", "dense matter", "EOS inference", "heavy-ion-informed"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Data-Driven Statistical Ensembles of Chiral Nuclear Interactions",
+      "authors": "Pengsheng Wen; Jeremy W. Holt",
+      "author_count": 2,
+      "arxiv_id": "2608.17813",
+      "url": "https://arxiv.org/abs/2608.17813",
+      "category": "AI/ML use",
+      "abstract": "Normalizing flows infer joint probability distributions of chiral EFT low-energy constants over multiple resolution scales, reproducing neutron-proton phase-shift distributions and revealing non-Gaussian correlations.",
+      "tags": ["normalizing flows", "chiral EFT", "LEC ensembles", "uncertainty propagation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Bound-state spectra of chi_cJ in finite nuclei and the universal pattern of mass levels",
+      "authors": "Tian-Le Gao; Ze-Hua Zhang; Xiang Liu",
+      "author_count": 3,
+      "arxiv_id": "2608.17737",
+      "url": "https://arxiv.org/abs/2608.17737",
+      "category": "Caution",
+      "abstract": "The paper predicts chi_cJ-nuclear bound states across finite nuclei using in-medium mass shifts from virtual D meson loops, with level-spacing systematics that scale approximately as A^(-2/3), but absolute binding energies depend strongly on the cutoff parameter.",
+      "tags": ["charmonium nuclei", "cutoff sensitivity", "bound states", "JLab"],
+      "assessment": "caution"
+    }
+  ]
+}
