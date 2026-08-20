@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-20</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-20: small-system baryon enhancement and validation-focused physics AI</h1>
+    <p class="dek">Selected from recent arXiv listings through the 2026-08-20 run. Emphasis: oxygen-oxygen QGP signatures, jet-wake observables, CGC numerical infrastructure, quarkonium-in-jet phenomenology, and AI/ML methods with credible HEP or nuclear-physics transfer value.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>CMS reports the first observation of a Lambda/K0S baryon-to-meson enhancement in O-O collisions at 5.36 TeV, a compact but important small-system QGP benchmark.</li>
+        <li>The most directly useful heavy-ion theory paper proposes gamma-jet observables for azimuthal modulation of jet wakes, tying jet-induced medium response to elliptic-flow geometry and viscosity sensitivity.</li>
+        <li>A CGC Filon-quadrature/GPU paper looks technically strong: it attacks a real oscillatory-transform bottleneck, validates on analytic cases, and releases code.</li>
+        <li>The strongest AI/ML transfer papers are not generic model demos; they target simulation-to-data domain adaptation, transferable calorimeter shower generation, validation standards, and interpretable transport-model emulation.</li>
+        <li>Several methods are promising but still abstract-level or simulation-only: FAST-HEP needs real multi-analysis deployment evidence, and proton-pion calorimeter separation needs detector realism beyond isolated Geant4 particles.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.17967 elliptic wind jet wakes gamma-jet QGP shear viscosity theory heavy-ion">
+        <div class="paper-head"><h4>The elliptic wind on jet wakes in high-energy heavy-ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kai-Yi Wu, Zhong Yang, Xin-Nian Wang. <a href="https://arxiv.org/abs/2608.17967">arXiv:2608.17967</a></p>
+        <p>The paper studies how elliptic flow and density gradients distort Mach-cone-like jet wakes in non-central heavy-ion collisions. It proposes in-plane versus out-of-plane differences in soft charged-hadron correlations in gamma-jet events as observables for wake broadening, diffusion-wake deepening, and shear-viscosity sensitivity.</p>
+        <p><strong>Why it matters:</strong> This is a concrete, experimentally motivated bridge between jet substructure/medium response and bulk QGP geometry.</p>
+        <p><strong>Critical assessment:</strong> Strong conceptual relevance and a plausible observable strategy. The key caveat is whether backgrounds and event-plane systematics in real gamma-jet samples leave enough sensitivity.</p>
+      </article>
+      <article class="paper" data-search="2608.18589 Color Glass Condensate Filon quadrature Wilson-line correlators Hankel transforms GPU proton-nucleus electron-ion">
+        <div class="paper-head"><h4>Fourier Transforms of Color Glass Condensate Multi-Wilson-Line Correlators via Filon Quadrature</h4><span class="label strong">strong</span></div>
+        <p class="meta">Haowu Duan, Si-Wei Dai, Cong Yi, Wenbin Zhao. <a href="https://arxiv.org/abs/2608.18589">arXiv:2608.18589</a></p>
+        <p>This paper introduces Filon-type quadrature for oscillatory Hankel transforms of CGC multi-Wilson-line correlators and implements GPU acceleration. It reports validation on DIS dijet cross sections beyond the correlation limit and analytic Gaussian tests, with single-input runtimes reduced from hours to about two minutes on an A800 GPU.</p>
+        <p><strong>Why it matters:</strong> It improves a real numerical bottleneck for NLO proton-nucleus and electron-ion scattering calculations, which directly affects precision small-x phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Strong technical contribution if the public code is usable. Its importance is infrastructural rather than a new physics result, but that is exactly where CGC phenomenology often needs help.</p>
+      </article>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.18256 CMS oxygen-oxygen O-O strange hadrons Lambda K0S baryon enhancement small-system QGP experiment">
+        <div class="paper-head"><h4>Observation of enhanced baryon production using strange hadrons in oxygen-oxygen collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">CMS Collaboration. <a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a></p>
+        <p>CMS measures K0S and Lambda transverse-momentum spectra in O-O and pp collisions at sqrt(sNN) = 5.36 TeV. The Lambda-to-K0S cross-section ratio is enhanced in O-O relative to pp, while K0S modifications track inclusive charged-hadron behavior.</p>
+        <p><strong>Why it matters:</strong> This is a high-value small-system result: baryon-to-meson enhancement in oxygen systems gives a new handle on strangeness, radial flow, and quark coalescence outside large Pb-Pb collisions.</p>
+        <p><strong>Critical assessment:</strong> Strong experimental relevance and PRL-level framing. Interpretation as deconfined-medium evidence is plausible but should be read alongside baseline, multiplicity, and coalescence-model systematics.</p>
+      </article>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.18922 Upsilon bottomonium jets NRQCD FJF LDME feeddown LHC phenomenology">
+        <div class="paper-head"><h4>Upsilon(nS) Production within Jets at the LHC</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Taewook Ha, Hee Sok Chung, Daekyoung Kang, Yunlu Wang, Haixiang Zhu. <a href="https://arxiv.org/abs/2608.18922">arXiv:2608.18922</a></p>
+        <p>The authors present an NLO fragmenting-jet-function study of Upsilon(1S), Upsilon(2S), and Upsilon(3S) production in jets, including DGLAP evolution, threshold resummation, and feeddown. They argue bottomonium-in-jet momentum-fraction distributions are much less sensitive to LDME sets than charmonium due to dominant color-octet production and chi_b feeddown.</p>
+        <p><strong>Why it matters:</strong> It gives a useful benchmark for LHC quarkonium-in-jet measurements and helps clarify what bottomonium can and cannot constrain in NRQCD.</p>
+        <p><strong>Critical assessment:</strong> Methodologically solid from the abstract, but less directly heavy-ion than the CMS and jet-wake papers. The central claim should be checked against the details of feeddown uncertainties and CMS comparison quality.</p>
+      </article>
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2608.17828 symbolic regression proton collective flow IBUU transport model interpretable emulator heavy-ion AI ML">
+        <div class="paper-head"><h4>Symbolic Regression for Interpretable Emulation of Proton Collective Flow in Intermediate-Energy Heavy-Ion Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Nicholas Cox, Xavier Grundler, Bao-An Li. <a href="https://arxiv.org/abs/2608.17828">arXiv:2608.17828</a></p>
+        <p>This work builds symbolic-regression emulators for IBUU transport-model predictions of proton directed- and elliptic-flow observables and compares them to DNN emulators. It also constructs inverse analytic relations from flow observables to an in-medium nucleon-nucleon cross-section modification factor.</p>
+        <p><strong>Why it matters:</strong> Interpretable, fast emulators are valuable for transport-model sensitivity studies and uncertainty workflows, especially at intermediate energies where model dependence is substantial.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value within nuclear transport. The authors acknowledge longer training times and run-to-run variation, which is the right caveat rather than a weakness hidden under model novelty.</p>
+      </article>
+    </section>
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.18233 transferable fast calorimeter shower generation multi-geometry pre-training Geant4 point cloud generative model HEP ML">
+        <div class="paper-head"><h4>Transferable Fast Calorimeter Shower Generation via Multi-Geometry Pre-training</h4><span class="label strong">strong</span></div>
+        <p class="meta">Thorsten Buss, Henry Day-Hall, Frank Gaede, Gregor Kasieczka, Katja Kruger, Peter McKeown, Lorenzo Valente. <a href="https://arxiv.org/abs/2608.18233">arXiv:2608.18233</a></p>
+        <p>The paper trains a point-cloud shower generator across many synthetic calorimeter geometries, then fine-tunes on unseen detector layouts. With 1000 target showers, pretraining reduces aggregate sliced-Wasserstein distance to Geant4 by factors of 5.2 to 8.0 relative to training from scratch.</p>
+        <p><strong>Likely use case:</strong> Fast simulation for detector R&D, geometry optimization, and low-statistics adaptation in HEP and possibly EIC/heavy-ion calorimetry studies.</p>
+        <p><strong>Critical assessment:</strong> Strong and directly transferable. The decisive test will be whether synthetic geometry diversity continues to help under more realistic detector material, electronics, pileup, and calibration effects.</p>
+      </article>
+      <article class="paper" data-search="2608.18190 safe domain adaptation simulation priors label shift detector response nuisance physics ML">
+        <div class="paper-head"><h4>Safe Domain Adaptation for Physics: Overcoming Nuisances, Label Shifts, and Simulation Priors</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ivan Kharuk. <a href="https://arxiv.org/abs/2608.18190">arXiv:2608.18190</a></p>
+        <p>This paper critiques standard adversarial domain adaptation when simulation and data differ not only in detector nuisances but also in the target distribution itself. On a toy air-shower benchmark, it shows that adversarial alignment can imprint the simulation prior, and proposes reweighted adaptive domain adaptation plus label-free model selection.</p>
+        <p><strong>Likely use case:</strong> Heavy-ion and HEP simulation-to-data transfer where spectra, centrality, flavor composition, or kinematic priors are themselves measured quantities.</p>
+        <p><strong>Critical assessment:</strong> Scientifically valuable because it targets a common failure mode rather than just improving accuracy. Evidence is still toy-benchmark level, so adoption needs realistic detector studies.</p>
+      </article>
+      <article class="paper" data-search="2608.19064 Deep Sets proton pion separation granular calorimeter Geant4 timing particle identification detector ML">
+        <div class="paper-head"><h4>Exploring the limits of high-energy proton-pion separation in granular calorimeters</h4><span class="label mixed">mixed-positive</span></div>
+        <p class="meta">Andrea De Vita, Abhishek, Tommaso Dorigo, Pietro Vischia. <a href="https://arxiv.org/abs/2608.19064">arXiv:2608.19064</a></p>
+        <p>A Deep Sets model operating on calorimeter cell positions, energy, and time outperforms a BDT based on reconstructed shower observables for isolated proton/pion separation in Geant4. The quoted accuracy falls from 93.8% at 10 GeV to 67.2% at 100 GeV for fine 3 x 3 x 6 mm cells.</p>
+        <p><strong>Likely use case:</strong> Future detector optimization, particle-flow reconstruction, and hadron-ID feature studies in collider environments.</p>
+        <p><strong>Critical assessment:</strong> Useful benchmark, but it is simulation-only and isolated-particle based. Transfer to real HEP or heavy-ion events will depend strongly on pileup/occupancy, calibration, hadronic-model uncertainty, and particle-flow context.</p>
+      </article>
+      <article class="paper" data-search="2608.17724 VERaiPHY validation evaluation robust AI physics uncertainty quantification statistics HEP ML standards">
+        <div class="paper-head"><h4>VERaiPHY -- Validation &amp; Evaluation for Robust AI in PHYsics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Gaia Grosso, Ramon Winterhalder, Lydia Brenner, Louis Lyons, Tilman Plehn. <a href="https://arxiv.org/abs/2608.17724">arXiv:2608.17724</a></p>
+        <p>This opening PHYSTAT-linked article sets probabilistic, statistical, and ML foundations for a series on validation, uncertainty quantification, and robustness of AI methods in fundamental physics.</p>
+        <p><strong>Likely use case:</strong> Analysis review checklists, uncertainty reporting, robustness tests, and ML paper evaluation standards across collider, heavy-ion, and nuclear workflows.</p>
+        <p><strong>Critical assessment:</strong> Strong as standards-setting infrastructure. It is not a new algorithm, so its impact depends on whether later articles and collaborations operationalize the proposed validation language.</p>
+      </article>
+      <article class="paper" data-search="2608.18745 FAST-HEP declarative workflows compiler provenance reproducibility HEP computational physics">
+        <div class="paper-head"><h4>FAST-HEP: Compiling Declarative Analysis Workflows for High-Energy Physics and Beyond</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Luke Kreczko. <a href="https://arxiv.org/abs/2608.18745">arXiv:2608.18745</a></p>
+        <p>FAST-HEP and its Flow engine separate scientific workflow descriptions from implementation details, compiling declarative analyses into backend-independent plans with validation, provenance, and replaceable runtime capabilities.</p>
+        <p><strong>Likely use case:</strong> Long-lived HEP and nuclear-analysis preservation, reproducibility, backend migration, and systematic workflow auditing.</p>
+        <p><strong>Critical assessment:</strong> The problem is important and the compiler framing is credible. The abstract does not show performance, adoption, or real multi-analysis case studies, so treat it as promising infrastructure rather than demonstrated field impact.</p>
+      </article>
+      <article class="paper" data-search="2608.18728 exact time-correlated coincidence modeling reset boundaries accidental backgrounds rare searches dead time Markov chain">
+        <div class="paper-head"><h4>Exact time-correlated coincidence modeling with reset boundaries</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jinjing Li. <a href="https://arxiv.org/abs/2608.18728">arXiv:2608.18728</a></p>
+        <p>This is not an ML paper, but it is a useful statistical-inference tool for rare prompt-delayed searches. It derives ordered coincidence rates with reset boundaries and dead time, validates against streaming toy Monte Carlo, and provides truncation-error bounds.</p>
+        <p><strong>Likely use case:</strong> Neutrino, dark-matter, nuclear-decay, and detector-background analyses where accidental coincidence estimates are a limiting systematic.</p>
+        <p><strong>Critical assessment:</strong> Strong if the stated stochastic model matches the experiment. The main caution is model adequacy, not the mathematics.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="caution FAST-HEP proton pion calorimeter simulation-only domain adaptation toy benchmark">
+        <div class="paper-head"><h4>Promising infrastructure and detector-ML papers with incomplete validation evidence</h4><span class="label caution">caution</span></div>
+        <p>No selected paper looked scientifically weak enough to exclude while also needing a named warning. The main caution is interpretive: FAST-HEP is promising but needs real deployment evidence, proton-pion calorimeter separation is isolated-Geant4 rather than full-event realism, and safe domain adaptation is compelling but still demonstrated on a toy air-shower benchmark.</p>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
