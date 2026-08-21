@@ -1,0 +1,152 @@
+{
+  "date": "2026-08-21",
+  "path": "reports/2026-08-21.html",
+  "summary": "The relevant recent arXiv set is led by CMS oxygen-oxygen strange-hadron measurements, lattice-QCD crossover thermodynamics, non-Gaussian heavy-quark transport, quarkonium open-system transport, jet-wake anisotropy, CGC numerical acceleration, and validation-oriented AI/ML papers for trigger deployment, simulation-to-data adaptation, and statistical robustness.",
+  "keywords": [
+    "oxygen-oxygen collisions",
+    "Lambda/K0S baryon enhancement",
+    "QCD crossover temperature",
+    "heavy-quark transport",
+    "quarkonium Lindblad dynamics",
+    "jet wakes",
+    "Color Glass Condensate",
+    "normalizing-flow distillation",
+    "domain adaptation",
+    "AI validation standards"
+  ],
+  "arxiv_ids": [
+    "2608.18256",
+    "2608.19330",
+    "2608.19313",
+    "2608.17372",
+    "2608.17967",
+    "2608.18589",
+    "2608.17828",
+    "2608.19912",
+    "2608.18190",
+    "2608.17724",
+    "2608.19994"
+  ],
+  "total_paper_count": 11,
+  "represented_categories": [
+    "Experiment",
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "CMS observation of enhanced Lambda/K0S production in oxygen-oxygen collisions is the cleanest experimental heavy-ion highlight and provides a concrete small-system QGP/coalescence test.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Observation of enhanced baryon production using strange hadrons in oxygen-oxygen collisions",
+      "authors": "CMS Collaboration",
+      "arxiv_id": "2608.18256",
+      "url": "https://arxiv.org/abs/2608.18256",
+      "category": "Experiment",
+      "abstract": "CMS measures K0S and Lambda spectra in oxygen-oxygen and proton-proton collisions at 5.36 TeV. The Lambda-to-K0S ratio is enhanced in OO relative to pp, while K0S spectral modification follows inclusive charged-hadron behavior, suggesting radial-flow and coalescence-like physics in a smaller system.",
+      "tags": ["OO collisions", "strangeness", "baryon enhancement", "small-system QGP"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The QCD crossover temperature and curvature coefficient from unbiased exponential resummation at physical quark masses in (2+1)-flavor lattice QCD",
+      "authors": "Sabarnya Mitra",
+      "arxiv_id": "2608.19330",
+      "url": "https://arxiv.org/abs/2608.19330",
+      "category": "Theory",
+      "abstract": "The paper applies unbiased exponential resummation to finite-density baryon susceptibility and obtains pseudocritical temperatures near 158-160 MeV, with curvature estimates consistent with previous lattice-QCD scaling and Taylor-expansion results.",
+      "tags": ["lattice QCD", "crossover", "finite baryon density", "susceptibilities"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy quark transport in quark-gluon plasma beyond the non-relativistic limit",
+      "authors": "Krishna Rajagopal, Bruno Scheihing-Hitschfeld, Urs Achim Wiedemann",
+      "arxiv_id": "2608.19313",
+      "url": "https://arxiv.org/abs/2608.19313",
+      "category": "Theory",
+      "abstract": "This SQM proceeding argues for heavy-quark transport descriptions that retain non-Gaussian momentum-transfer information rather than relying on quasiparticle or Gaussian-kick assumptions, with a demonstrative example in strongly coupled N=4 SYM.",
+      "tags": ["heavy flavor", "QGP transport", "non-Gaussian momentum transfer", "open quantum dynamics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "From the universal Lindblad equation to Boltzmann equations: in-QGP quarkonium dynamics",
+      "authors": "Aoumeur Daddi Hammou, Pol Bernard Gossiaux",
+      "arxiv_id": "2608.17372",
+      "url": "https://arxiv.org/abs/2608.17372",
+      "category": "Theory",
+      "abstract": "The authors derive semiclassical singlet-octet Boltzmann equations from universal Lindblad equations for in-QGP quarkonium dynamics, going beyond the small-dipole approximation and identifying an additional octet continuum transition term.",
+      "tags": ["quarkonium", "Lindblad equation", "Boltzmann transport", "pNRQCD"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The elliptic wind on jet wakes in high-energy heavy-ion collisions",
+      "authors": "Kai-Yi Wu, Zhong Yang, Xin-Nian Wang",
+      "arxiv_id": "2608.17967",
+      "url": "https://arxiv.org/abs/2608.17967",
+      "category": "Phenomenology",
+      "abstract": "The paper predicts azimuthally dependent jet-wake broadening in non-central heavy-ion collisions and proposes in-plane/out-of-plane gamma-jet soft-hadron correlations as observables sensitive to elliptic flow and QGP viscosity.",
+      "tags": ["jet wakes", "gamma-jet", "elliptic flow", "viscosity"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Fourier Transforms of Color Glass Condensate Multi-Wilson-Line Correlators via Filon Quadrature",
+      "authors": "Haowu Duan, Si-Wei Dai, Cong Yi, Wenbin Zhao",
+      "arxiv_id": "2608.18589",
+      "url": "https://arxiv.org/abs/2608.18589",
+      "category": "Phenomenology",
+      "abstract": "A Filon-type quadrature and GPU implementation accelerate oscillatory Hankel transforms of CGC multi-Wilson-line correlators, with validation on DIS dijet cross sections beyond the correlation-limit approximation and public code.",
+      "tags": ["CGC", "Filon quadrature", "Hankel transforms", "GPU acceleration"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Symbolic Regression for Interpretable Emulation of Proton Collective Flow in Intermediate-Energy Heavy-Ion Collisions",
+      "authors": "Nicholas Cox, Xavier Grundler, Bao-An Li",
+      "arxiv_id": "2608.17828",
+      "url": "https://arxiv.org/abs/2608.17828",
+      "category": "AI/ML use",
+      "abstract": "Symbolic-regression emulators reproduce IBUU proton collective-flow observables with DNN-comparable accuracy and provide analytic forward and inverse relations involving the in-medium nucleon-nucleon cross-section modification factor.",
+      "tags": ["symbolic regression", "IBUU", "collective flow", "interpretable emulation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Distilling Normalizing Flows for Real-Time Anomaly Detection at the LHC",
+      "authors": "Tara P. A. Tahseen, Noah Clarke Hall, Nikolaos Konstantinidis, Paula Martinez Suarez",
+      "arxiv_id": "2608.19912",
+      "url": "https://arxiv.org/abs/2608.19912",
+      "category": "AI/ML use",
+      "abstract": "A conditional normalizing-flow likelihood is distilled into lightweight decision-tree and quantized neural-network students for FPGA-compatible real-time LHC anomaly detection, including missing-feature handling.",
+      "tags": ["normalizing flows", "trigger", "FPGA", "anomaly detection"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Safe Domain Adaptation for Physics: Overcoming Nuisances, Label Shifts, and Simulation Priors",
+      "authors": "Ivan Kharuk",
+      "arxiv_id": "2608.18190",
+      "url": "https://arxiv.org/abs/2608.18190",
+      "category": "AI/ML use",
+      "abstract": "The paper shows that adversarial domain adaptation can encode wrong simulation priors when target-label distributions differ, and proposes reweighted adaptive domain adaptation plus label-free model selection on an air-shower benchmark.",
+      "tags": ["domain adaptation", "label shift", "simulation priors", "robust ML"],
+      "assessment": "strong"
+    },
+    {
+      "title": "VERaiPHY - Validation & Evaluation for Robust AI in PHYsics",
+      "authors": "Gaia Grosso, Ramon Winterhalder, Lydia Brenner, Louis Lyons, Tilman Plehn",
+      "arxiv_id": "2608.17724",
+      "url": "https://arxiv.org/abs/2608.17724",
+      "category": "AI/ML use",
+      "abstract": "This PHYSTAT opening article lays statistical and ML foundations for a series on validation, uncertainty quantification, robustness, and deployment standards for AI in physics.",
+      "tags": ["validation", "uncertainty quantification", "robust AI", "PHYSTAT"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Green BOA: Determining the environmental break-even point for ML-based data compression",
+      "authors": "Caterina Doglioni, Akshat Gupta, Thomas Elliott, Hanzila Hussain, Sanjiban Sengupta",
+      "arxiv_id": "2608.19994",
+      "url": "https://arxiv.org/abs/2608.19994",
+      "category": "Caution",
+      "abstract": "A 3-page lightning-talk summary estimates the environmental break-even point for ML-based lossless compression by comparing ML training/inference carbon cost with storage savings.",
+      "tags": ["ML compression", "HEP computing", "sustainability", "lifecycle accounting"],
+      "assessment": "caution"
+    }
+  ]
+}
