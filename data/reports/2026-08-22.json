@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-22",
+  "path": "reports/2026-08-22.html",
+  "summary": "The recent arXiv selection emphasizes hydrodynamic-frame consistency, lattice-driven finite-temperature gluon-matter response functions, FRG stability issues in high-density QCD models, conserved-current probes of hadronization, ALICE heavy-flavour pp baselines, quarkonium-pair fragmentation, and deployable normalizing-flow distillation for LHC trigger anomaly detection. The main caution is that ML-based compression sustainability claims remain too thinly documented in a short lightning-talk contribution.",
+  "keywords": [
+    "hydrodynamic frames",
+    "transport coefficients",
+    "SU(3) gluon matter",
+    "specific heat",
+    "isentropic bulk modulus",
+    "functional renormalization group",
+    "negative diffusion",
+    "heavy-flavour baselines",
+    "conserved-current hadronization",
+    "quarkonium-pair fragmentation",
+    "normalizing-flow distillation",
+    "FPGA trigger anomaly detection",
+    "ML compression caution"
+  ],
+  "arxiv_ids": [
+    "2608.20324",
+    "2608.20031",
+    "2608.20196",
+    "2608.19714",
+    "2608.19708",
+    "2608.20329",
+    "2608.19912",
+    "2608.19994"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "The hydrodynamic-frame correspondence paper is the strongest heavy-ion theory infrastructure item because it directly clarifies how frame conventions affect transport-coefficient comparisons while preserving physical mode attenuation.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Correspondence between hydrodynamic frames, transport coefficients, and hydrodynamic modes in relativistic fluids",
+      "authors": "Md Hasanujjaman, Mahfuzur Rahaman",
+      "arxiv_id": "2608.20324",
+      "url": "https://arxiv.org/abs/2608.20324",
+      "category": "Theory",
+      "abstract": "The paper derives transformations between Eckart and Landau-Lifshitz frames, shows frame-dependent thermal conductivities in a baryon-rich nucleon gas, and verifies invariant sound attenuation.",
+      "tags": ["hydrodynamic frames", "transport coefficients", "baryon-rich matter", "sound attenuation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Lattice-data-driven specific heat and isentropic bulk modulus of SU(3) gluon matter at finite temperature",
+      "authors": "Wei Shen, Zhen-Yan Lu, Muhammad Waqas, Xun Chen, Zhi-Jun Ma, Guang-Xiong Peng",
+      "arxiv_id": "2608.20031",
+      "url": "https://arxiv.org/abs/2608.20031",
+      "category": "Theory",
+      "abstract": "A lattice-pressure-constrained effective-gluon-mass model is used to calculate finite-temperature response functions, including specific heat and isentropic bulk modulus across deconfinement.",
+      "tags": ["SU(3) gluon matter", "equation of state", "specific heat", "bulk modulus"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Negative diffusion in the Functional Renormalization Group flow for the Quark-Diquark Model",
+      "authors": "Johannes Poeplau, Ashutosh Dash, Dirk H. Rischke",
+      "arxiv_id": "2608.20196",
+      "url": "https://arxiv.org/abs/2608.20196",
+      "category": "Theory",
+      "abstract": "The authors identify negative diffusion in the FRG flow as a model-level source of oscillatory instabilities at low temperature and high quark chemical potential, then propose hyperdiffusion regularization.",
+      "tags": ["FRG", "quark-diquark model", "negative diffusion", "QCD phase diagram"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Heavy-flavour production and correlations in pp collisions: precision tests of pQCD and hadronisation with ALICE",
+      "authors": "Deependra Sharma, for the ALICE Collaboration",
+      "arxiv_id": "2608.19714",
+      "url": "https://arxiv.org/abs/2608.19714",
+      "category": "Experiment",
+      "abstract": "A compact ALICE proceeding reports prompt D-meson, B0, rapidity-ratio, and D0-J/psi associated-production measurements in pp collisions relevant to heavy-flavour baselines.",
+      "tags": ["ALICE", "heavy flavour", "pp baseline", "multiparton interactions"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Tracing Vacuum Hadronization with Conserved Currents",
+      "authors": "Weiyao Ke, Hai Tao Li, Wanchen Li, Xiaohui Liu, Ding Yu Shao",
+      "arxiv_id": "2608.19708",
+      "url": "https://arxiv.org/abs/2608.19708",
+      "category": "Phenomenology",
+      "abstract": "The paper proposes conserved-current moments of charge, baryon number, and strangeness in jets as flavor-resolved probes of vacuum pair production and hadronization.",
+      "tags": ["hadronization", "conserved currents", "baryon number flow", "strangeness"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Production of quarkonium pairs via the fragmentation mechanism",
+      "authors": "Franco Barattini, Benjamin Guiot, Marat Siddikov",
+      "arxiv_id": "2608.20329",
+      "url": "https://arxiv.org/abs/2608.20329",
+      "category": "Phenomenology",
+      "abstract": "The paper estimates single- and dihadron-fragmentation contributions to heavy-quarkonium-pair production using perturbative fragmentation modeling and CGC heavy-quark amplitudes.",
+      "tags": ["quarkonium pairs", "fragmentation", "CGC", "double parton scattering"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Distilling Normalizing Flows for Real-Time Anomaly Detection at the LHC",
+      "authors": "Tara P. A. Tahseen, Noah Clarke Hall, Nikolaos Konstantinidis, Paula Martinez Suarez",
+      "arxiv_id": "2608.19912",
+      "url": "https://arxiv.org/abs/2608.19912",
+      "category": "AI/ML use",
+      "abstract": "A conditional normalizing-flow likelihood is distilled into lightweight FPGA-suitable decision-tree and quantized neural-network students for real-time anomaly detection with missing-feature handling.",
+      "tags": ["normalizing flows", "anomaly detection", "FPGA", "trigger"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Green BOA: Determining the environmental break-even point for ML-based data compression",
+      "authors": "Caterina Doglioni, Akshat Gupta, Thomas Elliott, Hanzila Hussain, Sanjiban Sengupta",
+      "arxiv_id": "2608.19994",
+      "url": "https://arxiv.org/abs/2608.19994",
+      "category": "Caution",
+      "abstract": "A short lightning-talk contribution estimates when ML-based lossless compression may break even environmentally relative to storage savings.",
+      "tags": ["ML compression", "HEP computing", "sustainability", "lifecycle accounting"],
+      "assessment": "caution"
+    }
+  ]
+}

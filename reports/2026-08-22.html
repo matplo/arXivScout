@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-22</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-22 Briefing</h1>
+    <p class="dek">Recent arXiv selections from roughly the last 24 hours around the August 20-21 posting cycle. Themes: hydrodynamic-frame dependence, finite-temperature gluon-matter response functions, high-density QCD FRG stability, conserved-current hadronization observables, ALICE heavy-flavour baselines, and deployable AI/ML for collider trigger anomaly detection.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>The most directly useful heavy-ion theory item is the hydrodynamic-frame paper</strong>: it clarifies how transport coefficients change between Eckart and Landau-Lifshitz decompositions while physical sound attenuation remains frame invariant.</li>
+        <li><strong>Finite-temperature QCD thermodynamics had two relevant technical contributions</strong>: the SU(3) gluon-matter response-function paper is useful as a thermodynamically consistent lattice-driven model, while the quark-diquark FRG paper is important mainly because it diagnoses a model-level instability.</li>
+        <li><strong>ALICE heavy-flavour pp measurements are a baseline result rather than a QGP claim</strong>: they matter for charm/beauty production, hadronization, and multiparton-interaction constraints that feed heavy-ion reference calculations.</li>
+        <li><strong>The strongest AI/ML paper remains practical rather than decorative</strong>: distilling conditional normalizing-flow likelihoods into FPGA-compatible students addresses actual LHC trigger latency and missing-feature constraints.</li>
+        <li><strong>The sustainability/compression note is worth cautioning about</strong>: the question is relevant to HEP computing, but the current 3-page lightning-talk format is too thin to support strong operational conclusions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.20324 hydrodynamic frames transport coefficients relativistic fluids Eckart Landau Lifshitz baryon rich sound attenuation heavy ion theory strong">
+        <div class="paper-head"><h4>Correspondence between hydrodynamic frames, transport coefficients, and hydrodynamic modes in relativistic fluids</h4><span class="label strong">strong</span></div>
+        <p class="meta">Md Hasanujjaman, Mahfuzur Rahaman. <a href="https://arxiv.org/abs/2608.20324">arXiv:2608.20324</a></p>
+        <p><strong>Summary:</strong> The authors derive exact transformations between Eckart and Landau-Lifshitz hydrodynamic frames and show how thermal conductivity changes under frame choice. In a baryon-rich Boltzmann nucleon gas, the Landau-Lifshitz conductivity is suppressed relative to Eckart, while sound attenuation remains invariant.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion extractions of transport coefficients, especially at finite baryon density, can become confusing if frame conventions are compared naively. This paper is a useful cleanup of that bookkeeping problem.</p>
+        <p><strong>Critical assessment:</strong> Strong as theory infrastructure. It does not by itself extract new QGP properties, but it reduces ambiguity in comparing hydrodynamic, kinetic-theory, and lattice-motivated inputs.</p>
+      </article>
+
+      <article class="paper" data-search="2608.20031 lattice data driven SU3 gluon matter specific heat isentropic bulk modulus deconfinement response functions QGP equation of state theory mixed">
+        <div class="paper-head"><h4>Lattice-data-driven specific heat and isentropic bulk modulus of SU(3) gluon matter at finite temperature</h4><span class="label mixed">mixed/useful</span></div>
+        <p class="meta">Wei Shen, Zhen-Yan Lu, Muhammad Waqas, Xun Chen, Zhi-Jun Ma, Guang-Xiong Peng. <a href="https://arxiv.org/abs/2608.20031">arXiv:2608.20031</a></p>
+        <p><strong>Summary:</strong> A temperature-dependent effective-gluon-mass model constrained by lattice-QCD pressure data is used to derive pressure, trace anomaly, gluon density, specific heat, and isentropic bulk modulus. The response functions peak or stiffen across the deconfinement region and approach conformal reference values at high temperature.</p>
+        <p><strong>Why it matters:</strong> Response functions near T_c are relevant to equation-of-state modeling and hydrodynamic sensitivity studies, even though pure SU(3) gluodynamics is not full QCD.</p>
+        <p><strong>Critical assessment:</strong> Useful but not transformational. The model is thermodynamically organized and accepted in EPJC, but phenomenological translation to heavy-ion matter with dynamical quarks requires care.</p>
+      </article>
+
+      <article class="paper" data-search="2608.20196 negative diffusion functional renormalization group quark diquark model QCD phase diagram color superconductivity inhomogeneous phases theory mixed caution">
+        <div class="paper-head"><h4>Negative diffusion in the Functional Renormalization Group flow for the Quark-Diquark Model</h4><span class="label mixed">mixed/diagnostic</span></div>
+        <p class="meta">Johannes Poeplau, Ashutosh Dash, Dirk H. Rischke. <a href="https://arxiv.org/abs/2608.20196">arXiv:2608.20196</a></p>
+        <p><strong>Summary:</strong> The paper traces low-temperature, high-chemical-potential instabilities in a quark-diquark FRG calculation to a negative diffusion coefficient in the flow of the derivative of the effective potential. It argues this is a model feature, not merely a numerical artifact, and proposes a hyperdiffusion regularization.</p>
+        <p><strong>Why it matters:</strong> The high-density QCD phase diagram is a key target for FAIR/NICA/RHIC-BES-adjacent theory, and numerical artifacts in color-superconducting or inhomogeneous regions can be scientifically misleading.</p>
+        <p><strong>Critical assessment:</strong> Important as a warning and repair attempt. The proposed regularization appears practical, but any phase-diagram conclusions from the regularized model should be treated as model-dependent until benchmarked against alternatives.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.19714 ALICE heavy flavour production correlations pp collisions pQCD hadronisation multiparton interactions charm beauty baseline experiment mixed">
+        <div class="paper-head"><h4>Heavy-flavour production and correlations in pp collisions: precision tests of pQCD and hadronisation with ALICE</h4><span class="label mixed">mixed/baseline</span></div>
+        <p class="meta">Deependra Sharma, for the ALICE Collaboration. <a href="https://arxiv.org/abs/2608.19714">arXiv:2608.19714</a></p>
+        <p><strong>Summary:</strong> This conference proceeding reports preliminary prompt D-meson results, final B0 production down to low pT at midrapidity, rapidity comparisons to LHCb, and D0-J/psi associated production in pp collisions at 13.6 TeV.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion heavy-flavour interpretation depends on reliable pp baselines for production, hadronization, and single- versus double-parton scattering contributions.</p>
+        <p><strong>Critical assessment:</strong> Useful but limited by proceeding format. The ALICE measurements are important, but the paper is a compact status report rather than a full heavy-ion analysis.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.19708 conserved currents hadronization baryon number strangeness charge flow jets fragmentation QCD phenomenology strong">
+        <div class="paper-head"><h4>Tracing Vacuum Hadronization with Conserved Currents</h4><span class="label strong">strong</span></div>
+        <p class="meta">Weiyao Ke, Hai Tao Li, Wanchen Li, Xiaohui Liu, Ding Yu Shao. <a href="https://arxiv.org/abs/2608.19708">arXiv:2608.19708</a></p>
+        <p><strong>Summary:</strong> The authors propose flavor-resolved conserved-current moments in jets as probes of vacuum hadronization, relating charge, baryon number, and strangeness flows through symmetry constraints. The framework connects measurable jet quantum-number flow to diquark and strange-pair production probabilities.</p>
+        <p><strong>Why it matters:</strong> Hadronization baselines and baryon/strangeness transport are central for interpreting heavy-ion modifications. A conserved-current approach could provide cleaner vacuum reference measurements.</p>
+        <p><strong>Critical assessment:</strong> Strong conceptual phenomenology. The main risk is experimental reconstruction of net quantum-number flow with sufficient purity, but the proposal is concrete and symmetry anchored.</p>
+      </article>
+
+      <article class="paper" data-search="2608.20329 quarkonium pairs fragmentation dihadron fragmentation CGC LHC double parton scattering phenomenology mixed">
+        <div class="paper-head"><h4>Production of quarkonium pairs via the fragmentation mechanism</h4><span class="label mixed">mixed/relevant</span></div>
+        <p class="meta">Franco Barattini, Benjamin Guiot, Marat Siddikov. <a href="https://arxiv.org/abs/2608.20329">arXiv:2608.20329</a></p>
+        <p><strong>Summary:</strong> The paper estimates single- and dihadron-fragmentation contributions to inclusive heavy-quarkonium-pair production, using a microscopic perturbative model for dihadron fragmentation and CGC amplitudes for heavy-quark production.</p>
+        <p><strong>Why it matters:</strong> Quarkonium-pair baselines affect interpretations of double-parton scattering, heavy-quark production, and potentially pA/AA quarkonium reference modeling.</p>
+        <p><strong>Critical assessment:</strong> Interesting but not yet a heavy-ion centerpiece. The sizeable dihadron-fragmentation claim is worth tracking, but its immediate QGP relevance is indirect.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.19912 normalizing flows distillation anomaly detection LHC trigger FPGA quantization missing features AI ML strong">
+        <div class="paper-head"><h4>Distilling Normalizing Flows for Real-Time Anomaly Detection at the LHC</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tara P. A. Tahseen, Noah Clarke Hall, Nikolaos Konstantinidis, Paula Martinez Suarez. <a href="https://arxiv.org/abs/2608.19912">arXiv:2608.19912</a></p>
+        <p><strong>Method/result:</strong> A conditional normalizing flow is used as a high-quality likelihood teacher, then distilled into lightweight decision-tree and quantized neural-network students for FPGA-compatible trigger deployment. The setup explicitly handles missing input features.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Real-time anomaly detection at LHC triggers, online data quality monitoring, and potentially heavy-ion trigger streams where latency, bandwidth, and incomplete detector information matter.</p>
+        <p><strong>Critical assessment:</strong> Strong and transferable. The value is in matching a principled density estimator to hardware constraints; the remaining test is full realistic trigger integration rather than offline performance alone.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.19994 Green BOA ML data compression environmental break even sustainability HEP computing caution">
+        <div class="paper-head"><h4>Green BOA: Determining the environmental break-even point for ML-based data compression</h4><span class="label caution">caution</span></div>
+        <p class="meta">Caterina Doglioni, Akshat Gupta, Thomas Elliott, Hanzila Hussain, Sanjiban Sengupta. <a href="https://arxiv.org/abs/2608.19994">arXiv:2608.19994</a></p>
+        <p><strong>Why caution:</strong> The environmental break-even framing is genuinely relevant to HEP data operations, especially if ML compression is proposed for large detector datasets. But this submission is a 3-page lightning-talk summary; it should be read as an operational question and lifecycle-accounting sketch, not as strong evidence for adopting a particular compression strategy.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
