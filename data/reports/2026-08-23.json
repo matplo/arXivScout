@@ -1,0 +1,166 @@
+{
+  "date": "2026-08-23",
+  "path": "reports/2026-08-23.html",
+  "summary": "Weekend-aware scan of the latest arXiv recent listings found no new Sunday submissions; the strongest relevant papers are concentrated in small-system collectivity, finite-density QCD response, heavy-quark transport, CGC computational phenomenology, and validation/deployment-oriented physics AI/ML.",
+  "keywords": [
+    "oxygen-oxygen collisions",
+    "Lambda/K0S baryon enhancement",
+    "small-system QGP",
+    "hydrodynamic frames",
+    "QCD crossover temperature",
+    "heavy-quark transport",
+    "medium-induced photons",
+    "CGC Filon quadrature",
+    "symbolic regression emulators",
+    "normalizing-flow trigger distillation",
+    "safe domain adaptation",
+    "declarative HEP workflows",
+    "ML compression carbon accounting"
+  ],
+  "arxiv_ids": [
+    "2608.18256",
+    "2608.20324",
+    "2608.20196",
+    "2608.19330",
+    "2608.19313",
+    "2608.19561",
+    "2608.18589",
+    "2608.17828",
+    "2608.19912",
+    "2608.18190",
+    "2608.18745",
+    "2608.19994"
+  ],
+  "total_paper_count": 12,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "CMS arXiv:2608.18256 is the most directly consequential heavy-ion result: a first O-O strange-hadron baryon-to-meson enhancement measurement that constrains how QGP-like hadronization signatures evolve with system size.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Observation of enhanced baryon production using strange hadrons in oxygen-oxygen collisions",
+      "short_authors": "CMS Collaboration",
+      "arxiv_id": "2608.18256",
+      "url": "https://arxiv.org/abs/2608.18256",
+      "category": "Experiment",
+      "abstract": "CMS measures K0S and Lambda spectra in O-O and pp collisions at 5.36 TeV and reports a pronounced Lambda-to-K0S enhancement in O-O, interpreted as evidence relevant to strangeness, radial flow, coalescence, and possible small-system deconfinement.",
+      "tags": ["O-O collisions", "strange hadrons", "baryon enhancement", "small-system QGP"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Correspondence between hydrodynamic frames, transport coefficients, and hydrodynamic modes in relativistic fluids",
+      "short_authors": "Md Hasanujjaman; Mahfuzur Rahaman",
+      "arxiv_id": "2608.20324",
+      "url": "https://arxiv.org/abs/2608.20324",
+      "category": "Theory",
+      "abstract": "Derives transformations between Eckart and Landau-Lifshitz frames and shows sound attenuation remains invariant while thermal conductivity values differ in a baryon-rich relativistic fluid example.",
+      "tags": ["hydrodynamic frames", "transport coefficients", "baryon-rich fluids"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Negative diffusion in the Functional Renormalization Group flow for the Quark-Diquark Model",
+      "short_authors": "Johannes Poeplau; Ashutosh Dash; Dirk H. Rischke",
+      "arxiv_id": "2608.20196",
+      "url": "https://arxiv.org/abs/2608.20196",
+      "category": "Theory",
+      "abstract": "Identifies negative diffusion in FRG quark-diquark-model flows as a model feature rather than a numerical artifact and proposes hyperdiffusion regularization for high-density phase-diagram studies.",
+      "tags": ["FRG", "quark-diquark model", "dense QCD", "negative diffusion"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "The QCD crossover temperature and curvature coefficient from unbiased exponential resummation at physical quark masses in (2+1)-flavor lattice QCD",
+      "short_authors": "Sabarnya Mitra",
+      "arxiv_id": "2608.19330",
+      "url": "https://arxiv.org/abs/2608.19330",
+      "category": "Phenomenology",
+      "abstract": "Applies unbiased exponential resummation to finite-density baryon susceptibilities and obtains pseudocritical temperatures and curvature estimates consistent with earlier Taylor-expansion lattice-QCD results.",
+      "tags": ["lattice QCD", "crossover temperature", "curvature coefficient", "finite baryon density"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy quark transport in quark-gluon plasma beyond the non-relativistic limit",
+      "short_authors": "Krishna Rajagopal; Bruno Scheihing-Hitschfeld; Urs Achim Wiedemann",
+      "arxiv_id": "2608.19313",
+      "url": "https://arxiv.org/abs/2608.19313",
+      "category": "Phenomenology",
+      "abstract": "Proposes a heavy-quark transport description that encodes non-Gaussian momentum-transfer distributions rather than relying on quasiparticles or Gaussian diffusion assumptions.",
+      "tags": ["heavy quarks", "QGP transport", "non-Gaussian momentum transfer"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Photon bremsstrahlung from heavy quarks in a dense nuclear matter",
+      "short_authors": "Le Zhang; Shanshan Cao; De-Fu Hou; Guang-You Qin",
+      "arxiv_id": "2608.19561",
+      "url": "https://arxiv.org/abs/2608.19561",
+      "category": "Phenomenology",
+      "abstract": "Derives medium-induced photon radiation from heavy and light quarks at next-to-leading twist while retaining the exchanged-gluon momentum distribution beyond collinear expansion.",
+      "tags": ["jet-induced photons", "heavy quarks", "dense nuclear matter"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Fourier Transforms of Color Glass Condensate Multi-Wilson-Line Correlators via Filon Quadrature",
+      "short_authors": "Haowu Duan; Si-Wei Dai; Cong Yi; Wenbin Zhao",
+      "arxiv_id": "2608.18589",
+      "url": "https://arxiv.org/abs/2608.18589",
+      "category": "Phenomenology",
+      "abstract": "Develops and validates Filon-type quadrature and GPU kernels for oscillatory Hankel transforms of CGC multi-Wilson-line correlators, with public code and large runtime improvements.",
+      "tags": ["CGC", "Filon quadrature", "Hankel transforms", "GPU acceleration"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Symbolic Regression for Interpretable Emulation of Proton Collective Flow in Intermediate-Energy Heavy-Ion Collisions",
+      "short_authors": "Nicholas Cox; Xavier Grundler; Bao-An Li",
+      "arxiv_id": "2608.17828",
+      "url": "https://arxiv.org/abs/2608.17828",
+      "category": "AI/ML use",
+      "abstract": "Builds symbolic-regression emulators for IBUU proton flow observables and inverse relations for in-medium nucleon-nucleon cross-section modification, comparing with DNN emulators.",
+      "tags": ["symbolic regression", "IBUU", "collective flow", "interpretable emulation"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Distilling Normalizing Flows for Real-Time Anomaly Detection at the LHC",
+      "short_authors": "Tara P. A. Tahseen; Noah Clarke Hall; Nikolaos Konstantinidis; Paula Martinez Suarez",
+      "arxiv_id": "2608.19912",
+      "url": "https://arxiv.org/abs/2608.19912",
+      "category": "AI/ML use",
+      "abstract": "Distills likelihoods from conditional normalizing flows into lightweight FPGA-suitable decision-tree and neural-network students for low-latency anomaly detection at the LHC.",
+      "tags": ["normalizing flows", "FPGA trigger", "anomaly detection", "quantization"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Safe Domain Adaptation for Physics: Overcoming Nuisances, Label Shifts, and Simulation Priors",
+      "short_authors": "Ivan Kharuk",
+      "arxiv_id": "2608.18190",
+      "url": "https://arxiv.org/abs/2608.18190",
+      "category": "AI/ML use",
+      "abstract": "Shows that adversarial domain adaptation can import simulation-prior bias under label shifts and proposes adaptive reweighting plus label-free model selection on a physics benchmark.",
+      "tags": ["domain adaptation", "label shift", "simulation priors", "physics ML validation"],
+      "assessment": "strong"
+    },
+    {
+      "title": "FAST-HEP: Compiling Declarative Analysis Workflows for High-Energy Physics and Beyond",
+      "short_authors": "Luke Kreczko",
+      "arxiv_id": "2608.18745",
+      "url": "https://arxiv.org/abs/2608.18745",
+      "category": "AI/ML use",
+      "abstract": "Presents a declarative workflow language, compiler, and runtime intended to separate scientific analysis descriptions from execution details while preserving validation and provenance.",
+      "tags": ["HEP workflows", "compiler", "provenance", "reproducibility"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Green BOA: Determining the environmental break-even point for ML-based data compression",
+      "short_authors": "Caterina Doglioni; Akshat Gupta; Thomas Elliott; Hanzila Hussain; Sanjiban Sengupta",
+      "arxiv_id": "2608.19994",
+      "url": "https://arxiv.org/abs/2608.19994",
+      "category": "Caution",
+      "abstract": "Estimates environmental break-even points for ML-based lossless compression by comparing training/inference carbon costs with disk-storage savings.",
+      "tags": ["ML compression", "carbon accounting", "HEP data operations"],
+      "assessment": "caution"
+    }
+  ]
+}
