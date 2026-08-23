@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-23</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-23 Briefing</h1>
+    <p class="dek">Weekend-aware scan of the latest arXiv recent listings for heavy-ion collision physics and physics AI/ML. No new Sunday arXiv submissions were available; the strongest relevant items came from the latest Friday listing and closely adjacent recent submissions.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Small-system collectivity remains the most experimentally consequential theme:</strong> CMS reports a first O-O baryon-to-meson enhancement using strange hadrons, a clean and important datapoint for whether QGP-like hadronization extends to smaller ions.</li>
+        <li><strong>Transport and QCD-response papers are methodologically serious but often upstream:</strong> hydrodynamic-frame covariance, finite-density crossover resummation, and heavy-quark non-Gaussian transport improve foundations more than immediate phenomenology.</li>
+        <li><strong>Computational phenomenology is unusually strong this cycle:</strong> the CGC Filon-quadrature paper provides a validated, public, GPU-ready route around a real bottleneck in multi-Wilson-line cross sections.</li>
+        <li><strong>Physics AI/ML papers worth attention are validation- and deployment-oriented:</strong> normalizing-flow distillation for LHC triggers and safe domain adaptation both address concrete failure modes rather than merely applying fashionable models.</li>
+        <li><strong>The main caution item is not wrong, just thin:</strong> Green BOA raises an important sustainability question for ML-based compression, but the evidence base is too short and example-dependent for strong operational conclusions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.18256 Observation enhanced baryon production strange hadrons oxygen oxygen CMS Lambda K0S small-system QGP Experiment strong">
+        <div class="paper-head"><h4>Observation of enhanced baryon production using strange hadrons in oxygen-oxygen collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">CMS Collaboration. <a href="https://arxiv.org/abs/2608.18256">arXiv:2608.18256</a></p>
+        <p>CMS measures K0S and Lambda spectra in O-O and pp collisions at 5.36 TeV and reports a pronounced Lambda/K0S enhancement in O-O relative to pp. The abstract frames this as the first observation of baryon-to-meson enhancement in O-O collisions, with implications for strangeness, radial flow, coalescence, and possible small-system deconfinement.</p>
+        <p><strong>Why it matters:</strong> O-O is a crucial lever arm between pp/pA and Pb-Pb, so this directly tests how far QGP-like hadronization signatures persist as system size shrinks.</p>
+        <p><strong>Critical assessment:</strong> Strong experimental relevance and clean observable choice. The QGP-formation interpretation is plausible but should be treated as inference: baryon enhancement is suggestive, not by itself a complete proof of deconfinement.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.20324 hydrodynamic frames transport coefficients Eckart Landau Lifshitz sound attenuation baryon rich relativistic fluids Theory mixed strong">
+        <div class="paper-head"><h4>Correspondence between hydrodynamic frames, transport coefficients, and hydrodynamic modes in relativistic fluids</h4><span class="label mixed">mixed-strong</span></div>
+        <p class="meta">Md Hasanujjaman, Mahfuzur Rahaman. <a href="https://arxiv.org/abs/2608.20324">arXiv:2608.20324</a></p>
+        <p>The paper derives explicit transformations between Eckart and Landau-Lifshitz frames and shows that sound attenuation remains frame invariant even when thermal conductivity values differ. The calculation is illustrated with a baryon-rich Boltzmann nucleon gas equation of state.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion extractions of transport coefficients can be confused by frame conventions, especially at finite baryon density where heat flow and diffusion are entangled.</p>
+        <p><strong>Critical assessment:</strong> Conceptually useful and disciplined, but the physical model is simplified. Its value is mainly as a conventions-and-consistency paper rather than a direct new constraint on QGP transport.</p>
+      </article>
+
+      <article class="paper" data-search="2608.20196 negative diffusion Functional Renormalization Group quark diquark model QCD phase diagram color superconductivity inhomogeneous phases Theory mixed strong">
+        <div class="paper-head"><h4>Negative diffusion in the Functional Renormalization Group flow for the Quark-Diquark Model</h4><span class="label mixed">mixed-strong</span></div>
+        <p class="meta">Johannes Poeplau, Ashutosh Dash, Dirk H. Rischke. <a href="https://arxiv.org/abs/2608.20196">arXiv:2608.20196</a></p>
+        <p>The authors identify negative diffusion in the FRG flow of the quark-diquark effective potential derivative as a model feature, not merely a numerical artifact. They propose a hyperdiffusion regularization and argue it is needed for reliable exploration of the low-temperature, high-density phase diagram.</p>
+        <p><strong>Why it matters:</strong> Dense-QCD model calculations are highly sensitive to numerical stability; diagnosing a structural instability is more useful than simply tuning solvers.</p>
+        <p><strong>Critical assessment:</strong> Technically credible and valuable for model builders. The regularization should be watched carefully, because stabilizing an ill-posed flow can also introduce regulator dependence into phase-structure claims.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.19330 QCD crossover temperature curvature coefficient lattice QCD exponential resummation finite baryon density Phenomenology strong">
+        <div class="paper-head"><h4>The QCD crossover temperature and curvature coefficient from unbiased exponential resummation at physical quark masses in (2+1)-flavor lattice QCD</h4><span class="label strong">strong</span></div>
+        <p class="meta">Sabarnya Mitra. <a href="https://arxiv.org/abs/2608.19330">arXiv:2608.19330</a></p>
+        <p>This short lattice-QCD paper applies unbiased exponential resummation to finite-density baryon susceptibility and obtains pseudocritical temperatures around 158-160 MeV, consistent with earlier Taylor-expansion work. It also estimates the leading curvature coefficient through scaling relations involving chi4B and thermal derivatives of chi2B.</p>
+        <p><strong>Why it matters:</strong> The crossover line and curvature are central inputs for beam-energy-scan phenomenology and finite-density QCD comparisons.</p>
+        <p><strong>Critical assessment:</strong> Strong because it cross-checks an important quantity with a complementary resummation method. Still, it is a compact single-author contribution and the direct muB-dependence extraction is described as less constrained.</p>
+      </article>
+
+      <article class="paper" data-search="2608.19313 heavy quark transport quark gluon plasma non Gaussian momentum transfer QGP Phenomenology strong proceedings">
+        <div class="paper-head"><h4>Heavy quark transport in quark-gluon plasma beyond the non-relativistic limit</h4><span class="label strong">strong, proceedings</span></div>
+        <p class="meta">Krishna Rajagopal, Bruno Scheihing-Hitschfeld, Urs Achim Wiedemann. <a href="https://arxiv.org/abs/2608.19313">arXiv:2608.19313</a></p>
+        <p>The paper argues that heavy-quark transport should encode the full non-Gaussian momentum-transfer distribution rather than assuming quasiparticles or Gaussian kicks. It presents a transport description whose ingredients are QFT-defined and demonstrates the framework with heavy-quark equilibration in strongly coupled N=4 SYM.</p>
+        <p><strong>Why it matters:</strong> Heavy flavor is one of the cleanest probes of QGP microscopic dynamics; non-Gaussian transport could change how energy-loss and diffusion coefficients are inferred.</p>
+        <p><strong>Critical assessment:</strong> Scientifically strong and authored by leaders in the area, but it is a 4-page SQM proceeding. Treat it as a roadmap and conceptual advance, not yet a complete phenomenological extraction pipeline.</p>
+      </article>
+
+      <article class="paper" data-search="2608.19561 photon bremsstrahlung heavy quarks dense nuclear matter medium induced photons jet induced photon production heavy ion Phenomenology mixed strong">
+        <div class="paper-head"><h4>Photon bremsstrahlung from heavy quarks in a dense nuclear matter</h4><span class="label mixed">mixed-strong</span></div>
+        <p class="meta">Le Zhang, Shanshan Cao, De-Fu Hou, Guang-You Qin. <a href="https://arxiv.org/abs/2608.19561">arXiv:2608.19561</a></p>
+        <p>This work derives medium-induced photon radiation from heavy and light quarks at next-to-leading twist, going beyond the collinear expansion by retaining the exchanged-gluon momentum distribution. The authors present it as improved input for quark-mass effects in jet-induced photon production in relativistic heavy-ion collisions.</p>
+        <p><strong>Why it matters:</strong> Jet-medium photons can provide complementary constraints on scattering rates and heavy-quark mass effects.</p>
+        <p><strong>Critical assessment:</strong> The theoretical target is useful and concrete. Its strength will depend on how robustly the required medium scattering distribution can be modeled or constrained in later phenomenology.</p>
+      </article>
+
+      <article class="paper" data-search="2608.18589 Color Glass Condensate Wilson line correlators Filon quadrature Hankel transforms GPU electron ion proton nucleus Phenomenology strong computational physics">
+        <div class="paper-head"><h4>Fourier Transforms of Color Glass Condensate Multi-Wilson-Line Correlators via Filon Quadrature</h4><span class="label strong">strong</span></div>
+        <p class="meta">Haowu Duan, Si-Wei Dai, Cong Yi, Wenbin Zhao. <a href="https://arxiv.org/abs/2608.18589">arXiv:2608.18589</a></p>
+        <p>The paper develops Filon-type quadrature for oscillatory Hankel transforms of CGC multi-Wilson-line correlators, validates it on DIS dijet cross sections beyond the correlation limit, removes a 0/0 instability in the quadrupole correlator, and reports a GPU implementation reducing runtimes from hours to roughly minutes. The authors state that code is public.</p>
+        <p><strong>Why it matters:</strong> This is a real computational bottleneck for pA and EIC-relevant small-x calculations, with potential impact on heavy-ion initial-state and saturation phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Strong: clear bottleneck, method validation, GPU implementation, and public code. The physics payoff depends on downstream adoption in full NLO cross-section calculations.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2608.17828 symbolic regression interpretable emulation proton collective flow IBUU transport model intermediate energy heavy ion AI ML mixed strong">
+        <div class="paper-head"><h4>Symbolic Regression for Interpretable Emulation of Proton Collective Flow in Intermediate-Energy Heavy-Ion Collisions</h4><span class="label mixed">mixed-strong</span></div>
+        <p class="meta">Nicholas Cox, Xavier Grundler, Bao-An Li. <a href="https://arxiv.org/abs/2608.17828">arXiv:2608.17828</a></p>
+        <p>The paper builds symbolic-regression emulators for IBUU transport-model proton flow observables and compares them with DNN emulators. It claims comparable accuracy, faster post-training evaluation, and interpretable analytic inverse relations for the in-medium nucleon-nucleon cross-section modification factor.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion transport inference badly needs fast, interpretable emulators for sensitivity and uncertainty studies.</p>
+        <p><strong>Critical assessment:</strong> Worth attention because it is domain-specific and admits limitations: longer training and run-to-run variability. The comparison is strongest if future work tests out-of-distribution behavior and uncertainty propagation beyond reused emulator data.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.19912 Distilling Normalizing Flows real time anomaly detection LHC FPGA trigger conditional normalizing flow quantization AI ML HEP strong">
+        <div class="paper-head"><h4>Distilling Normalizing Flows for Real-Time Anomaly Detection at the LHC</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tara P. A. Tahseen, Noah Clarke Hall, Nikolaos Konstantinidis, Paula Martinez Suarez. <a href="https://arxiv.org/abs/2608.19912">arXiv:2608.19912</a></p>
+        <p>The method distills likelihoods from a larger conditional normalizing flow into lightweight decision-tree and neural-network students suitable for FPGA trigger deployment. The abstract reports improved likelihood quality and reduced inference cost relative to existing flow-based approaches.</p>
+        <p><strong>Likely use case:</strong> Real-time anomaly triggers for LHC and possibly heavy-ion rare-event or ultraperipheral-trigger streams where latency and resource budgets dominate.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value: it targets a real hardware constraint and handles missing features. The key caveat is whether the student preserves calibration and robustness under real detector shifts.</p>
+      </article>
+
+      <article class="paper" data-search="2608.18190 safe domain adaptation physics nuisances label shifts simulation priors air shower benchmark HEP nuclear transfer AI ML strong">
+        <div class="paper-head"><h4>Safe Domain Adaptation for Physics: Overcoming Nuisances, Label Shifts, and Simulation Priors</h4><span class="label strong">strong</span></div>
+        <p class="meta">Ivan Kharuk. <a href="https://arxiv.org/abs/2608.18190">arXiv:2608.18190</a></p>
+        <p>The paper dissects a common domain-adaptation failure mode: if simulated and real target-label spectra differ, adversarial alignment can bake in the simulation prior. It proposes reweighting simulated events so adaptation focuses on physical mismatch and gives a label-free model-selection rule on a toy air-shower benchmark.</p>
+        <p><strong>Likely use case:</strong> HEP and nuclear analyses using simulation-trained networks for reconstruction, PID, centrality, or unfolding when the target distribution is part of the measurement.</p>
+        <p><strong>Critical assessment:</strong> Strong and transferable because it attacks a real source of bias. Evidence is still benchmark-level; the next test is a realistic collider or nuclear detector workflow with known nuisance and label-shift structure.</p>
+      </article>
+
+      <article class="paper" data-search="2608.18745 FAST HEP declarative analysis workflows compiler provenance reproducibility computational physics HEP AI ML adjacent mixed strong">
+        <div class="paper-head"><h4>FAST-HEP: Compiling Declarative Analysis Workflows for High-Energy Physics and Beyond</h4><span class="label mixed">mixed-strong</span></div>
+        <p class="meta">Luke Kreczko. <a href="https://arxiv.org/abs/2608.18745">arXiv:2608.18745</a></p>
+        <p>FAST-HEP separates the scientific description of an analysis workflow from execution details using a declarative language, compiler, and runtime. It emphasizes static validation, modular backend replacement, and provenance capture.</p>
+        <p><strong>Likely use case:</strong> Long-lived HEP and heavy-ion analyses where reproducibility must survive changing software stacks, storage systems, and execution backends.</p>
+        <p><strong>Critical assessment:</strong> Not ML itself, but highly relevant to AI-enabled analysis operations. The abstract is architecturally convincing; scientific strength depends on adoption, examples, and comparison with existing workflow systems.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.19994 Green BOA environmental break even ML based data compression HEP computational physics caution">
+        <div class="paper-head"><h4>Green BOA: Determining the environmental break-even point for ML-based data compression</h4><span class="label caution">caution</span></div>
+        <p class="meta">Caterina Doglioni, Akshat Gupta, Thomas Elliott, Hanzila Hussain, Sanjiban Sengupta. <a href="https://arxiv.org/abs/2608.19994">arXiv:2608.19994</a></p>
+        <p>The paper estimates when ML-based lossless compression offsets training and inference carbon costs through disk-storage savings. The question is important for HEP data operations, but the contribution is a 3-page lightning-talk summary with one example and limited methodological detail in the abstract.</p>
+        <p><strong>Critical assessment:</strong> Useful as a prompt for cost accounting, not yet strong enough to guide compression strategy. Treat any break-even number as workload-, hardware-, storage-, and energy-mix dependent until validated across realistic experiment scenarios.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
