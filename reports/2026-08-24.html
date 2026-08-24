@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-24</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="../index.html">Back to archive</a>
+  <p class="eyebrow">Daily arXiv Physics Scout</p>
+  <h1>2026-08-24: QCD matter phenomenology and deployable physics AI</h1>
+  <p class="dek">Recent relevant listings were concentrated in QCD matter phenomenology and practical physics AI/ML: multidimensional QCD equations of state, bottomonium transport in a strongly coupled QGP, heavy-flavor energy correlators in nuclear matter, GPU normalizing-flow event generation, on-detector ML for muon-collider backgrounds, conditional-flow accelerator surrogates, symbolic-regression law discovery, and validation risks for neural PDE operators.</p>
+  <label class="search-label" for="archive-search">Search by keyword</label>
+  <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+</header>
+<main class="report" id="archive-list">
+<section>
+<h2>Executive Takeaways</h2>
+<ul class="takeaways">
+<li>The most substantial HEP-AI contribution is the normalizing-flow GPU event-generation workflow, because it reports end-to-end integration with Pepper, standard event output, and billion-event benchmarks rather than a standalone surrogate demo.</li>
+<li>The heavy-ion core is led by bottomonium transport in a strongly coupled QGP, with a concrete RHIC/LHC systematics target: explaining similar Upsilon(1S) production despite hotter LHC matter.</li>
+<li>Finite-density QCD equation-of-state construction remains active: today’s EoS-merging paper is methodologically relevant, but its proceedings format makes it a proof of principle rather than a settled phenomenology tool.</li>
+<li>Detector and accelerator ML papers are increasingly hardware- and operations-aware: on-detector background rejection and conditional-flow particle tracking both focus on deployment constraints, not only offline accuracy.</li>
+<li>The strongest caution is provenance failure in neural PDE operators: clean error and physically plausible outputs can miss parameter-wrong predictions, a direct risk for simulation-trained HEP and nuclear surrogates.</li>
+</ul>
+</section>
+<section>
+<h2>Heavy-Ion Collision Papers</h2>
+<h3>Theory</h3>
+<article class="paper" data-search="2608.20526 Thermodynamically Consistent Merging of Multidimensional QCD Equations of State Prachi Garella Yumu Yang Musa R. Khan QCD equation of state finite baryon density critical endpoint heavy-ion phenomenology Theory mixed">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.20526">Thermodynamically Consistent Merging of Multidimensional QCD Equations of State</a></h4><span class="label mixed">mixed</span></div>
+<p class="meta">Prachi Garella, Yumu Yang, Musa R. Khan, Tulio E. Restrepo, Joaquin Grefa, Johannes Jahan, Mauricio Hippert, Jorge Noronha, Claudia Ratti, Romulo Rougemont (10 authors) · Theory · <a href="https://arxiv.org/abs/2608.20526">arXiv:2608.20526</a></p>
+<p><strong>Summary:</strong> This compact SQM proceedings contribution proposes a thermodynamically consistent way to merge complementary finite-density QCD equations of state by minimizing one grand potential with an internal mixing variable. As a proof of principle, it merges a quantum van der Waals hadron-resonance-gas model with a holographic Einstein-Maxwell-Dilaton model and reports lattice-QCD agreement in the appropriate regime.</p>
+<p><strong>Why it matters:</strong> Equation-of-state interpolation and matching remain bottlenecks for BES-style heavy-ion phenomenology, where stability and thermodynamic consistency matter as much as fit quality.</p>
+<p><strong>Critical assessment:</strong> Promising, but still a proof of principle. The proceedings length means uncertainty propagation, hydrodynamic deployment, and sensitivity to model choices are not yet stress-tested in the abstract-level evidence.</p>
+<p><strong>Abstract:</strong> The authors present a framework for merging complementary models into a multidimensional QCD equation of state by minimizing a single grand potential at fixed temperature and baryon chemical potential. The resulting EoS can encode crossover, critical-endpoint, and first-order behavior and is intended for broad heavy-ion phenomenology.</p>
+<div class="tags"><span>QCD equation of state</span><span>finite baryon density</span><span>critical endpoint</span><span>heavy-ion phenomenology</span></div>
+</article>
+<article class="paper" data-search="2608.21344 Bottomonium transport sQGP RHIC LHC Biaogang Wu Jacob Boyd Ralf Rapp bottomonium strongly coupled QGP regeneration Theory strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21344">Bottomonium transport in the sQGP at RHIC and the LHC</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Biaogang Wu, Jacob Boyd, Ralf Rapp · Theory · <a href="https://arxiv.org/abs/2608.21344">arXiv:2608.21344</a></p>
+<p><strong>Summary:</strong> This is the day’s most directly heavy-ion paper. It combines a kinetic bottomonium rate equation with 3+1D viscous hydrodynamics, T-matrix reaction rates constrained by lattice QCD, in-medium masses, and feed-down across nine bottomonium states.</p>
+<p><strong>Why it matters:</strong> Bottomonium remains one of the cleaner heavy-flavor probes of color screening and regeneration. A framework that can reconcile RHIC/LHC Upsilon(1S) systematics despite different temperatures is phenomenologically useful.</p>
+<p><strong>Critical assessment:</strong> Strong relevance and a mature modeling lineage. The key sensitivity is model dependence in T-matrix rates, equilibrium limits, nuclear absorption, and feed-down assumptions, so the result is best read as a serious interpretation framework rather than a unique extraction.</p>
+<p><strong>Abstract:</strong> The work studies bottomonium transport in heavy-ion collisions at RHIC and the LHC using a kinetic rate equation embedded in hydrodynamic QGP evolution. It argues that large LHC rates rapidly suppress excited states and make regeneration important, while RHIC regeneration is smaller, helping explain comparable Upsilon(1S) production at RHIC and LHC.</p>
+<div class="tags"><span>bottomonium</span><span>transport</span><span>strongly coupled QGP</span><span>regeneration</span></div>
+</article>
+<h3>Phenomenology</h3>
+<article class="paper" data-search="2608.21145 Unraveling QCD dynamics with heavy quark energy correlators Ivan Vitev heavy-flavor jets EEC dead cone nuclear matter Phenomenology mixed">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21145">Unraveling QCD dynamics with heavy quark energy correlators</a></h4><span class="label mixed">mixed</span></div>
+<p class="meta">Ivan Vitev · Phenomenology · <a href="https://arxiv.org/abs/2608.21145">arXiv:2608.21145</a></p>
+<p><strong>Summary:</strong> The paper pushes energy-energy-correlator jet substructure observables into heavy-flavor and nuclear environments. The main physics target is the competition between finite-mass dead-cone suppression and medium-induced radiation.</p>
+<p><strong>Why it matters:</strong> Heavy-flavor EECs could become sharper observables for separating mass, vacuum shower, and nuclear-medium effects than inclusive suppression alone.</p>
+<p><strong>Critical assessment:</strong> Interesting and timely, but it is a short proceedings contribution. The formalism is useful; the strength will depend on realistic reconstruction studies, backgrounds, and quantitative comparison to current or future small-system data.</p>
+<p><strong>Abstract:</strong> The paper studies heavy-quark EECs sensitive to charm and bottom mass effects, including angular distributions, energy flow, and the dead-cone effect, and extends the calculation to reactions with nuclei using effective field theory.</p>
+<div class="tags"><span>heavy-flavor jets</span><span>energy-energy correlators</span><span>dead cone</span><span>nuclear matter</span></div>
+</article>
+<h3>AI/ML use</h3>
+<article class="paper" data-search="2608.21338 Efficient Event Generation High-Multiplicity LHC Processes GPU Normalizing Flows Enrico Bothmann Joshua Isaacson Claudius Krause normalizing flows GPU event generation AI ML strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21338">Efficient Event Generation for High-Multiplicity LHC Processes: An End-to-End GPU Workflow with Normalizing Flows</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Enrico Bothmann, Joshua Isaacson, Claudius Krause, Carla J. Lopez-Zurita, Maximilian Spannring, Daohan Wang · AI/ML use · <a href="https://arxiv.org/abs/2608.21338">arXiv:2608.21338</a></p>
+<p><strong>Summary:</strong> This is one of the strongest AI/ML-in-HEP items in the scan. It integrates helicity-conditioned normalizing-flow proposals into an end-to-end GPU-resident Pepper event-generation workflow with standard event output and large-scale high-multiplicity benchmarks.</p>
+<p><strong>Why it matters:</strong> Monte Carlo statistics are a real bottleneck for high-multiplicity collider analyses. The workflow ideas could transfer to hard-probe production, embedding, or rare high-multiplicity generation in nuclear contexts if target densities and phase-space structure are handled carefully.</p>
+<p><strong>Critical assessment:</strong> Strong and concrete, with billion-event benchmarks and up to two orders of magnitude speedup. Transfer to heavy-ion is plausible but not automatic because nuclear PDFs, medium response, and event embedding add structure beyond the pp examples.</p>
+<p><strong>Abstract:</strong> The workflow combines normalizing-flow proposals with Pepper, keeps generation GPU-resident, trains online with sample replay, and benchmarks pp to dileptons plus jets, ttbar plus jets, and multijet final states; on four H100 GPUs it reports 10^9 unweighted events per benchmark and turns multi-week generation into sub-day computation.</p>
+<div class="tags"><span>normalizing flows</span><span>GPU event generation</span><span>high multiplicity</span><span>Monte Carlo statistics</span></div>
+</article>
+<article class="paper" data-search="2608.21327 On-Detector Machine Learning Beam-Induced Background Rejection 10 TeV Muon Collider Daniel Abadjiev Eliza Howard Tsz Ngong You AI ML detector strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21327">On-Detector Machine Learning for Beam-Induced Background Rejection at a 10 TeV Muon Collider</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Daniel Abadjiev, Eliza Howard, Tsz Ngong You, Ryan Michaud, Benjamin Ryan Roberts, et al. (39 authors) · AI/ML use · <a href="https://arxiv.org/abs/2608.21327">arXiv:2608.21327</a></p>
+<p><strong>Summary:</strong> This is a practical detector-AI paper aimed at beam-induced background overwhelming occupancy and readout bandwidth at a future muon collider. It uses pixel-cluster shapes, lightweight neural networks, and high-level synthesis feasibility checks.</p>
+<p><strong>Why it matters:</strong> The design pattern is relevant to HEP trigger/readout systems and potentially to high-rate nuclear-physics detectors where early background rejection must be resource-aware.</p>
+<p><strong>Critical assessment:</strong> Strong application focus. The open questions are robustness under detector aging, calibration drift, pileup/model mismodeling, and whether the reported data-reduction performance survives full detector integration.</p>
+<p><strong>Abstract:</strong> Selected architectures achieve 88-90% data reduction at 99% signal efficiency while requiring resources compatible with possible ASIC implementation, demonstrating substantial BIB rejection directly in pixel readout.</p>
+<div class="tags"><span>on-detector ML</span><span>beam-induced background</span><span>vertex detector</span><span>ASIC feasibility</span></div>
+</article>
+</section>
+<section>
+<h2>AI/ML Use Cases in Physics</h2>
+<article class="paper" data-search="2608.21080 Flow-based surrogate models for particle tracking Matthias Remta Yann Dutheil Francesco Velotti conditional flow matching accelerator tracking space charge strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21080">Flow-based surrogate models for particle tracking</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Matthias Remta, Yann Dutheil, Francesco Velotti · AI/ML use · <a href="https://arxiv.org/abs/2608.21080">arXiv:2608.21080</a></p>
+<p><strong>Method and result:</strong> Conditional flow matching is trained on CERN Proton Synchrotron tracking simulations over a 10-dimensional parameter space; the baseline reaches median MMD^2 of 3e-4 and 0.04 s inference, about three orders of magnitude faster than conventional tracking. Cross-attention improves a space-charge benchmark, and Hybrid-CFM uses a small conventionally tracked anchor set to cut training cost and improve worst-case MMD.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> Fast beam-background studies, detector response surrogates, or expensive ensemble-evolution emulators where a few high-fidelity anchor evaluations can condition a fast generative surrogate.</p>
+<p><strong>Critical assessment:</strong> Strong within accelerator physics. Transfer to heavy-ion dynamics would require conservation-law checks, correlation preservation, and uncertainty calibration beyond MMD alone.</p>
+<p><strong>Abstract:</strong> The paper introduces conditional-flow-matching surrogates for particle tracking, including cross-attention over initial ensembles and a hybrid version using auxiliary conventional tracking.</p>
+<div class="tags"><span>conditional flow matching</span><span>accelerator physics</span><span>particle tracking</span><span>space charge</span></div>
+</article>
+<article class="paper" data-search="2608.21051 NestyNet Symbolic Regression Analytic Neural Surrogates Rodrigo Ibata Wassim Tenachi Foivos Diakogiannis interpretable laws strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21051">NestyNet. III. Symbolic Regression from Analytic Neural Surrogates</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Rodrigo Ibata, Wassim Tenachi, Foivos Diakogiannis, Neil Ibata, Anirudh Shankar · AI/ML use · <a href="https://arxiv.org/abs/2608.21051">arXiv:2608.21051</a></p>
+<p><strong>Method and result:</strong> NestyNet-SR uses analytic neural surrogates to detect separability, recursively reduce multivariate functions, and distill closed-form expressions through factorized symbolic search. It reports exact recovery of all 120 noiseless AI Feynman equations, noisy-audit behavior, multi-dataset support, dimensional-analysis pruning, and a SPARC galaxy real-data vignette.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> Interpretable response surfaces for transport coefficients, detector corrections, closure-test diagnostics, and emulator simplification where abstention and non-identifiability are important.</p>
+<p><strong>Critical assessment:</strong> Promising and unusually aligned with physics workflows. The transfer risk is correlated experimental and simulation systematics, which are harder than noiseless benchmarks and astrophysical examples.</p>
+<p><strong>Abstract:</strong> Neural surrogates with analytic derivatives find representations and internal coordinates that make symbolic-regression search tractable, with calibration and statistical auditing under noise.</p>
+<div class="tags"><span>symbolic regression</span><span>analytic neural surrogates</span><span>feature discovery</span><span>dimensional analysis</span></div>
+</article>
+<article class="paper" data-search="2608.20985 Resolving positive semi-definiteness physics-informed kernels scientific machine learning J Moser C Albert S Ranftl strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.20985">Resolving positive semi-definiteness in physics-informed kernels for scientific machine learning</a></h4><span class="label strong">strong</span></div>
+<p class="meta">J. Moser, C. Albert, S. Ranftl · AI/ML use · <a href="https://arxiv.org/abs/2608.20985">arXiv:2608.20985</a></p>
+<p><strong>Method and result:</strong> The paper gives a sufficient condition for differential-operator-informed kernels to preserve positive semi-definiteness: an order-m linear operator requires an m-times continuously differentiable base kernel, including non-constant or discontinuous coefficient cases.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> Better-founded Gaussian-process or kernel surrogates for transport, hydrodynamic response, diffusion, detector response, and uncertainty propagation.</p>
+<p><strong>Critical assessment:</strong> Strong as a theoretical validity result. It does not solve numerical conditioning or misspecification, so practical workflows still need stress tests.</p>
+<p><strong>Abstract:</strong> The authors clarify when physics-informed kernel constructions define valid ML models and argue that remaining instabilities under the stated conditions are numerical rather than ill-posed modeling failures.</p>
+<div class="tags"><span>physics-informed kernels</span><span>Gaussian processes</span><span>operator constraints</span><span>scientific ML</span></div>
+</article>
+<article class="paper" data-search="2608.20686 CDRL Certification-Driven Reinforcement Learning Neutrino Flavor Model Discovery Piyush Jha symbolic reasoning constraints mixed">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.20686">CDRL: Certification-Driven Reinforcement Learning for Neutrino Flavor Model Discovery</a></h4><span class="label mixed">mixed</span></div>
+<p class="meta">Piyush Jha, Jake Rudolph, Victoria Knapp-Perez, Max Fieg, Aishik Ghosh, Vijay Ganesh · AI/ML use · <a href="https://arxiv.org/abs/2608.20686">arXiv:2608.20686</a></p>
+<p><strong>Method and result:</strong> CDRL combines reinforcement learning with symbolic-reasoning certificates that identify why candidate models violate constraints, then converts those certificates into reusable constraints. In neutrino flavor model spaces above 10^26 candidates, it reports higher valid-model and neutrino-model rates with fewer evaluated candidates.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> Constrained model scans, detector-design searches, symbolic ansatz discovery, and analysis-configuration searches where failures can be converted into structured reusable constraints.</p>
+<p><strong>Critical assessment:</strong> Worth watching, but mixed until broader independent physics domains are shown. The gains may depend strongly on the availability and quality of symbolic certificates.</p>
+<p><strong>Abstract:</strong> The paper reports up to 1.95x higher valid-model rates and up to 6.33x higher neutrino-model rates over a previous RL approach, plus interpretable rules extracted from trajectories.</p>
+<div class="tags"><span>reinforcement learning</span><span>symbolic reasoning</span><span>constraint certificates</span><span>model discovery</span></div>
+</article>
+</section>
+<section>
+<h2>Weak or Overclaimed Papers Worth Caution</h2>
+<article class="paper" data-search="2608.20439 Wrong-Physics Backdoors Neural PDE Operators Hanbing Liang Fujun Liu neural operators PDE surrogates data poisoning provenance caution">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.20439">Wrong-Physics Backdoors in Neural PDE Operators</a></h4><span class="label caution">caution</span></div>
+<p class="meta">Hanbing Liang, Fujun Liu · AI/ML use · <a href="https://arxiv.org/abs/2608.20439">arXiv:2608.20439</a></p>
+<p><strong>Summary:</strong> This is included as a caution rather than a normal methods recommendation. It highlights a realistic validation gap for neural operators trained from large simulation archives: physically plausible outputs can still be wrong for the intended parameter.</p>
+<p><strong>Why it matters:</strong> Heavy-ion and HEP surrogate models often rely on large generated datasets with parameter labels, tunes, and provenance. The warning transfers directly to emulator repositories, detector response libraries, and simulation-derived ML training sets.</p>
+<p><strong>Critical assessment:</strong> Useful and timely caution. The adversarial setup is stylized, so the numerical attack rates should not be overgeneralized, but the provenance lesson is solid: clean validation error and smooth outputs are not enough.</p>
+<p><strong>Abstract:</strong> The authors introduce cross-parameter relinking, a poisoning primitive where triggered inputs select valid solutions from the same PDE family under incorrect physical parameters. They evaluate Burgers, advection-diffusion, 2D Navier-Stokes, and Poisson cases and show high backdoor success with low clean error for neural operators.</p>
+<div class="tags"><span>neural operators</span><span>PDE surrogates</span><span>data poisoning</span><span>provenance</span></div>
+</article>
+</section>
+<p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+</main>
+<script src="../assets/filter.js"></script>
+</body>
+</html>
