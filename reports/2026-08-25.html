@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-25</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="../index.html">Back to archive</a>
+  <p class="eyebrow">Daily arXiv Physics Scout</p>
+  <h1>2026-08-25: Nuclear geometry, spin systematics, QGP spectroscopy, and scientific-ML validation</h1>
+  <p class="dek">Selected papers emphasize ab initio nuclear-structure inputs for O-O and Ne-Ne flow interpretation, femtoscopic biases in hyperon spin correlations, pre-equilibrium photon production, quarkonium spectral functions, small-x/eikonal theory, HEP reconstruction ML, neural kinetic equations, and cautionary validation failures in PINNs, neural surrogates, and CNN-based spectroscopy claims.</p>
+  <label class="search-label" for="archive-search">Search by keyword</label>
+  <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+</header>
+<main class="report" id="archive-list">
+<section>
+<h2>Executive Takeaways</h2>
+<ul class="takeaways">
+<li>The strongest heavy-ion paper is the ab initio analysis of quadrupole correlations in O-16 and Ne-20, because it connects microscopic nuclear correlations directly to LHC flow-based nuclear imaging.</li>
+<li>Hyperon spin-correlation measurements get an important systematic warning: femtoscopic effects alone can create apparent angular modulations comparable to preliminary CMS-scale signals in low relative-momentum regions.</li>
+<li>The photon-production paper is relevant to the direct-photon puzzle but should be read carefully: agreement with PHENIX from magnetic-field-induced pre-equilibrium processes is interesting, but strongly model dependent.</li>
+<li>For physics AI/ML, the best constructive papers are HEP-specific jet assignment for all-hadronic ttbar and neural Boltzmann-equation methods; the most valuable transferable lesson is actually cautionary, from PINN and surrogate-solver failure studies.</li>
+<li>The Lambda(1405) CNN paper is worth flagging as potentially overclaimed: machine-learning classification of near-degenerate lineshapes does not by itself establish pole structure without strong amplitude-model and uncertainty controls.</li>
+</ul>
+</section>
+<section>
+<h2>Heavy-Ion Collision Papers</h2>
+<h3>Theory</h3>
+<article class="paper" data-search="2608.22699 Ab initio anatomy quadrupole correlations O16 Ne20 Chenrong Ding Benjamin Bally Stavros Bofos Thomas Duguet Yi Li Jiangming Yao nuclear geometry elliptic flow LHC Theory strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.22699">Ab initio anatomy of quadrupole correlations in O-16 and Ne-20</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Chenrong Ding, Benjamin Bally, Stavros Bofos, Thomas Duguet, Yi Li, Jiangming Yao · Theory · <a href="https://arxiv.org/abs/2608.22699">arXiv:2608.22699</a></p>
+<p><strong>Summary:</strong> The paper uses chiral-interaction ab initio methods, combining IMSRG with quantum-number-projected generator-coordinate calculations, to decompose how antisymmetrization, collective rotation/vibration, and non-collective dynamics affect quadrupole eccentricity in O-16 and Ne-20. The key claim is that large individual correlation effects partly compensate, explaining why a classical-rotor picture can still map reasonably onto elliptic-flow observables.</p>
+<p><strong>Why it matters:</strong> O-O and Ne-Ne runs at the LHC are explicitly motivated by nuclear-shape imaging. This work gives a microscopic bridge between nuclear many-body structure and initial-state eccentricities used in heavy-ion flow interpretation.</p>
+<p><strong>Critical assessment:</strong> Strong and timely. The abstract-level evidence is unusually well aligned with an imminent experimental interpretation problem, though the final impact depends on how these nuclear-structure outputs propagate through initial-condition, hydrodynamic, and final-state uncertainties.</p>
+<p><strong>Abstract:</strong> The authors argue that flow measurements can image nuclear multipole correlations, then show how different many-body correlation mechanisms contribute to mean-square quadrupole eccentricity and why effective deformation inferred from flow remains close to intrinsic deformation.</p>
+<div class="tags"><span>ab initio nuclear structure</span><span>O-O collisions</span><span>Ne-Ne collisions</span><span>elliptic flow</span></div>
+</article>
+<article class="paper" data-search="2608.22536 Eikonal Expansion Classical Gluon Fields Weak Strong Shane Brown Alex DeBrizzi Alex Kovner small-x gluodynamics subeikonal Theory mixed">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.22536">Eikonal Expansion for Classical Gluon Fields: from Weak to Strong</a></h4><span class="label mixed">mixed</span></div>
+<p class="meta">Shane Brown, Alex DeBrizzi, Alex Kovner · Theory · <a href="https://arxiv.org/abs/2608.22536">arXiv:2608.22536</a></p>
+<p><strong>Summary:</strong> This formal paper develops an eikonal expansion for classical gluon fields, showing that weak-field expansions behave straightforwardly but strong-field nonlinearities mix nominal eikonal orders. The proposed fix integrates out high-longitudinal-momentum modes to obtain a low-momentum classical action with renormalized currents.</p>
+<p><strong>Why it matters:</strong> Eikonal and subeikonal structure underlies small-x, CGC, and initial-state calculations relevant to high-energy nuclear collisions.</p>
+<p><strong>Critical assessment:</strong> Conceptually important for theory specialists, but not yet a phenomenology result. The abstract contains enough typos and compressed formal claims that practical value should be judged from the full derivation and downstream applications.</p>
+<p><strong>Abstract:</strong> The authors show that strong classical gluon fields invalidate naive eikonal power counting because nonlinearities mix orders, and propose a renormalized-current effective action for low-momentum fields.</p>
+<div class="tags"><span>small-x theory</span><span>classical gluon fields</span><span>subeikonal effects</span><span>CGC foundations</span></div>
+</article>
+<h3>Phenomenology</h3>
+<article class="paper" data-search="2608.22707 femtoscopic correlations spin-spin measurements Bijun Fan Like Liu Shusu Shi Lambda LambdaBar CMS hyperon spin systematics Phenomenology strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.22707">Effects of femtoscopic correlations on spin-spin correlation measurements</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Bijun Fan, Like Liu, Shusu Shi · Phenomenology · <a href="https://arxiv.org/abs/2608.22707">arXiv:2608.22707</a></p>
+<p><strong>Summary:</strong> The authors combine AMPT with Lednicky-Lyuboshits spin-dependent femtoscopic weights to quantify contamination in Lambda-Lambda and Lambda-antiLambda spin-correlation measurements. They find that femtoscopic weighting can induce apparent angular modulation even without intrinsic spin correlation, especially at low q_inv.</p>
+<p><strong>Why it matters:</strong> Hyperon spin correlations are becoming a sensitive probe of vorticity and spin dynamics. A fake-correlation mechanism comparable to preliminary CMS-scale measurements is a high-priority systematic.</p>
+<p><strong>Critical assessment:</strong> Strong as a targeted systematic study. It still depends on AMPT source modeling and the femtoscopic implementation, so experiments need data-driven variation and differential cuts, but the warning is concrete.</p>
+<p><strong>Abstract:</strong> Femtoscopic quantum-statistical and final-state-interaction effects can create angular modulations in weak-decay distributions, biasing spin-correlation extraction in low-relative-momentum pair samples.</p>
+<div class="tags"><span>hyperon spin correlations</span><span>femtoscopy</span><span>AMPT</span><span>CMS systematics</span></div>
+</article>
+<article class="paper" data-search="2608.21600 Photon production gluon splitting fusion magnetic field arbitrary strength heavy-ion Alejandro Ayala Santiago Bernal-Langarica Jose Jorge Medina-Serna Ana Julia Mizher photon puzzle PHENIX glasma Phenomenology mixed">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21600">Photon production from gluon splitting and fusion induced by a magnetic field of arbitrary strength in relativistic heavy-ion collisions</a></h4><span class="label mixed">mixed</span></div>
+<p class="meta">Alejandro Ayala, Santiago Bernal-Langarica, Jose Jorge Medina-Serna, Ana Julia Mizher · Phenomenology · <a href="https://arxiv.org/abs/2608.21600">arXiv:2608.21600</a></p>
+<p><strong>Summary:</strong> The paper calculates photon yields and v2 from magnetic-field-induced gluon splitting and fusion in the pre-equilibrium stage, using glasma-inspired and anisotropic initial gluon distributions. It reports good agreement with PHENIX yield and elliptic-flow data.</p>
+<p><strong>Why it matters:</strong> Direct photons remain a persistent heavy-ion puzzle because they appear to carry both early-time and sizable flow information. A pre-equilibrium magnetic-field source is therefore interesting if it survives realistic modeling.</p>
+<p><strong>Critical assessment:</strong> Worth attention but mixed. The claimed agreement is notable, yet it likely depends on magnetic-field lifetime, conductivity, pre-equilibrium distributions, and background photon sources; it is not a solved-puzzle result from the abstract alone.</p>
+<p><strong>Abstract:</strong> The authors compute photon production from gluon fusion and splitting in a magnetic field of arbitrary strength and compare the resulting yields and elliptic flow with PHENIX data.</p>
+<div class="tags"><span>direct photons</span><span>magnetic field</span><span>pre-equilibrium</span><span>photon puzzle</span></div>
+</article>
+<article class="paper" data-search="2608.22596 Charmonia finite momentum spatial correlators QGP Thomas Hardin Ralf Rapp quarkonium lattice QCD T-matrix zero mode Phenomenology strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.22596">Charmonia at Finite Momentum and Spatial Correlators in Quark-Gluon Plasma</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Thomas Hardin, Ralf Rapp · Phenomenology · <a href="https://arxiv.org/abs/2608.22596">arXiv:2608.22596</a></p>
+<p><strong>Summary:</strong> This work uses a thermodynamic T-matrix approach with a Lorentz-covariant separable scattering equation, heavy-quark selfenergies, lattice-constrained potential screening, and particle-hole zero modes to interpret finite-momentum Euclidean and spatial charmonium correlators in QGP.</p>
+<p><strong>Why it matters:</strong> Lattice-QCD spatial correlators are precise but hard to translate into microscopic spectral information. Improved momentum-dependent quarkonium spectral modeling feeds directly into heavy-ion quarkonium transport and suppression interpretation.</p>
+<p><strong>Critical assessment:</strong> Strong within a known modeling program. The result is qualitative reproduction, not a unique spectral extraction, but the use of lattice correlator constraints and explicit finite-momentum structure is valuable.</p>
+<p><strong>Abstract:</strong> The paper qualitatively reproduces the momentum rise of Euclidean correlators and suppression of spatial correlators seen in lattice QCD, with zero modes essential for the former.</p>
+<div class="tags"><span>charmonium</span><span>QGP spectral functions</span><span>lattice correlators</span><span>T-matrix</span></div>
+</article>
+</section>
+<section>
+<h2>AI/ML Use Cases in Physics</h2>
+<article class="paper" data-search="2608.21982 Down-Type Jet Identification Fully Hadronic ttbar Jinhui Guo Chenhao Peng GNN Transformer diffusion spin correlations HEP AI strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21982">Down-Type Jet Identification in Fully Hadronic ttbar Events</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Jinhui Guo, Chenhao Peng · AI/ML use · <a href="https://arxiv.org/abs/2608.21982">arXiv:2608.21982</a></p>
+<p><strong>Method and result:</strong> A two-stage ML reconstruction uses a GNN+Transformer to assign jets to legal six-parton ttbar candidates, then a hybrid assignment/classifier with a conditional diffusion head to resolve down/up hypotheses inside hadronic W decays. The learned second stage improves spin-analyzer performance and reconstructs the standard spin-correlation coefficient D compatibly with truth within resampling spread.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> The immediate use is HEP top spin/entanglement, but the architecture is transferable to jet-parton assignment and combinatorial reconstruction in high-occupancy environments, including heavy-ion hard-probe analyses if backgrounds are modeled realistically.</p>
+<p><strong>Critical assessment:</strong> Strong because it evaluates both reconstruction and physics observables against calibrated QCD and unmatched ttbar backgrounds. It remains simulation-driven, so data/control-region validation is the next real test.</p>
+<p><strong>Abstract:</strong> The authors show that down/up identification in fully hadronic ttbar can retain useful spin-correlation information when reconstruction is treated as a structured assignment problem rather than simple classification.</p>
+<div class="tags"><span>GNN+Transformer</span><span>jet assignment</span><span>spin correlations</span><span>conditional diffusion</span></div>
+</article>
+<article class="paper" data-search="2608.23022 Neural Boltzmann Equations Jonas Spinner Jack Shergold Boltzmann equations natural gradient Monte Carlo HEP AI strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.23022">Neural Boltzmann Equations</a></h4><span class="label strong">strong</span></div>
+<p class="meta">Jonas Spinner, Jack Shergold · AI/ML use · <a href="https://arxiv.org/abs/2608.23022">arXiv:2608.23022</a></p>
+<p><strong>Method and result:</strong> The method represents particle distributions with physics-inspired neural functions, evaluates phase-space integrals by Monte Carlo with collider-style importance sampling, and evolves the system using natural gradients. The demonstration computes the effective number of relativistic neutrino degrees of freedom.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> Transfer value is strongest for high-dimensional kinetic equations, parameter scans, transport-like evolution, and phase-space integration bottlenecks in early-universe, collider, or possibly partonic/hadronic transport problems.</p>
+<p><strong>Critical assessment:</strong> Strong conceptually and technically relevant. Heavy-ion transfer is plausible but unproven because collision kernels, conservation constraints, stiffness, and non-equilibrium anisotropies can be more demanding than the demonstrated cosmology problem.</p>
+<p><strong>Abstract:</strong> Neural Boltzmann Equations aim to replace fixed-grid quadrature evolution with neural distribution functions, Monte Carlo phase-space integration, and natural-gradient time evolution.</p>
+<div class="tags"><span>neural kinetic equations</span><span>Boltzmann equations</span><span>importance sampling</span><span>natural gradient</span></div>
+</article>
+<article class="paper" data-search="2608.21683 Inverted model selection PINNs Rabiu Musah residual worse solution scientific ML validation caution">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.21683">Inverted model selection in physics-informed neural networks: when a lower residual selects a worse solution</a></h4><span class="label caution">caution</span></div>
+<p class="meta">Rabiu Musah · AI/ML caution · <a href="https://arxiv.org/abs/2608.21683">arXiv:2608.21683</a></p>
+<p><strong>Method and result:</strong> Across constrained PDE systems, penalized PINN variants often achieve lower aggregate residuals while violating defining structural identities by orders of magnitude. The author proposes a lexicographic admissibility gate over structural identity, boundary trace, and solvability constraints before comparing residuals.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> This is directly relevant to hydrodynamic, transport, detector-field, and lattice-inspired surrogate models where conservation laws or identities must hold independently of scalar training loss.</p>
+<p><strong>Critical assessment:</strong> Valuable caution, not a universal indictment of PINNs. The paper is strongest as a validation-design warning: residual-only ranking is unsafe for physics claims.</p>
+<p><strong>Abstract:</strong> Lower residual can systematically select a worse constrained-PDE solution; admissibility checks catch several artifact classes, though one structure-prior artifact survives single-run checks.</p>
+<div class="tags"><span>PINNs</span><span>model selection</span><span>structural constraints</span><span>validation failure</span></div>
+</article>
+<article class="paper" data-search="2608.23075 neural surrogate cannot accelerate solver Laurenz Thummler T Kuroda stiff coupled simulation uncertainty gating neutrino radiation hydrodynamics AI caution strong">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.23075">When a neural surrogate cannot accelerate a solver: runtime share, closed-loop drift, and the economics of uncertainty gating in a stiff coupled simulation</a></h4><span class="label strong">strong caution</span></div>
+<p class="meta">L. Thummler, T. Kuroda · AI/ML caution · <a href="https://arxiv.org/abs/2608.23075">arXiv:2608.23075</a></p>
+<p><strong>Method and result:</strong> This controlled negative result tests learned surrogates for a neutrino-radiation/matter Newton solve in a GR radiation-hydrodynamics code. The target block is only 16.9% of critical-rank wall time, limiting possible speedup; gating defers most cells because closed-loop states leave the training distribution, and even stable gated runs accumulate a directed density bias.</p>
+<p><strong>Likely HEP/heavy-ion use case:</strong> The transfer value is excellent for expensive hydro, transport, detector, and reconstruction surrogates: measure runtime share, closed-loop distribution shift, fallback cost, and systematic bias, not just offline error.</p>
+<p><strong>Critical assessment:</strong> Strong precisely because it is a negative result with an operational cost model. It should temper broad surrogate-speedup claims in physics simulation.</p>
+<p><strong>Abstract:</strong> Per-call speedups do not guarantee end-to-end acceleration; offline error does not predict deployment survival; and uncertainty gates can slow a solver when the deployed loop leaves the training manifold.</p>
+<div class="tags"><span>neural surrogates</span><span>uncertainty gating</span><span>runtime economics</span><span>closed-loop drift</span></div>
+</article>
+</section>
+<section>
+<h2>Weak or Overclaimed Papers Worth Caution</h2>
+<article class="paper" data-search="2608.22747 Revisiting Lambda 1405 pole structure convolutional neural networks Julius Pagayon Vince Chavez Denny Sombillo spectroscopy overclaim caution">
+<div class="paper-head"><h4><a href="https://arxiv.org/abs/2608.22747">Revisiting the Lambda(1405) pole structure with convolutional neural networks</a></h4><span class="label caution">caution</span></div>
+<p class="meta">Julius B. Pagayon, Vince Angelo A. Chavez, Denny Lane B. Sombillo · Caution · <a href="https://arxiv.org/abs/2608.22747">arXiv:2608.22747</a></p>
+<p><strong>Summary:</strong> The paper recasts Lambda(1405) pole-structure ambiguity as a CNN classification problem using subtle lineshape differences and empirical CLAS data, then claims a data-driven consensus favoring a two-pole plus additional-pole structure.</p>
+<p><strong>Why it matters:</strong> Strange-baryon spectroscopy is relevant to nuclear/strangeness physics, and ML-assisted amplitude analysis could be useful if uncertainty-controlled.</p>
+<p><strong>Critical assessment:</strong> This looks overclaimed from the abstract. A CNN consensus over near-degenerate lineshapes is not, by itself, robust evidence for analytic pole structure unless amplitude-model priors, training-set generation, systematic uncertainties, and calibration of classifier confidence are handled very carefully.</p>
+<p><strong>Abstract:</strong> The authors train CNNs to distinguish lineshape variations and use the output to infer dominant Lambda(1405) pole structures and molecular/non-molecular components.</p>
+<div class="tags"><span>Lambda(1405)</span><span>CNN classification</span><span>amplitude analysis</span><span>spectroscopy caution</span></div>
+</article>
+</section>
+<p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+</main>
+<script src="../assets/filter.js"></script>
+</body>
+</html>
