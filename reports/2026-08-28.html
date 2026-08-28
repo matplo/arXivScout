@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-28</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-28 Briefing</h1>
+    <p class="dek">Selective review of recent arXiv papers relevant to heavy-ion collision physics and transferable AI/ML or computing methods for HEP and nuclear physics.</p>
+    <label class="search-label" for="paper-search">Search by keyword</label>
+    <input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main>
+    <section class="summary-block">
+      <h2>Executive takeaways</h2>
+      <ul>
+        <li>The most consequential heavy-ion thread is a matched pair of perturbative jet-quenching papers connecting BMS evolution, color coherence, and saturation-like nonlinear dynamics.</li>
+        <li>Dense-QCD phase-structure papers are active today, with useful work on inhomogeneous magnetic fields and finite-momentum chiral instabilities; phenomenological reach is mixed but the theory questions are clean.</li>
+        <li>The best AI/ML-transfer papers are not generic classifiers: they target inference structure, differentiable generators, interpretable latent spaces, and fast likelihood minimization.</li>
+        <li>Quantum ML for trigger-like event selection appears useful mainly as a controlled benchmark, not as evidence for quantum advantage or deployable trigger readiness.</li>
+      </ul>
+    </section>
+
+    <section class="paper-list" id="archive-list">
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper-card" data-search="2608.25984 color coherence soft QCD jets QGP BMS evolution Wilson-line correlators jet quenching saturation theory">
+        <div class="card-top"><span>Theory</span><a href="https://arxiv.org/abs/2608.25984">arXiv:2608.25984</a></div>
+        <h4>Color Coherence and the Soft Structure of QCD Jets in Vacuum and the QGP</h4>
+        <p><strong>Authors:</strong> Paul Caucal; Yacine Mehtar-Tani (2 authors)</p>
+        <p><strong>Summary:</strong> The paper builds a perturbative framework for soft jet evolution in vacuum and QGP using BMS evolution for Wilson-line correlators. Medium effects enter through boundary conditions while the ultraviolet structure remains vacuum-like, leading to an analogy between the medium coherence angle and the saturation scale.</p>
+        <p><strong>Why it matters:</strong> It gives a coherent language for connecting vacuum-like radiation, decoherent energy loss, and saturation-inspired nonlinear evolution in jet quenching.</p>
+        <p><strong>Assessment:</strong> Strong. The formulation is ambitious and technically grounded, though phenomenological impact will depend on how observables and uncertainties are built on top of the formalism.</p>
+      </article>
+      <article class="paper-card" data-search="2608.27319 chiral soliton lattice inhomogeneous magnetic fields QCD heavy-ion collisions neutron stars theory">
+        <div class="card-top"><span>Theory</span><a href="https://arxiv.org/abs/2608.27319">arXiv:2608.27319</a></div>
+        <h4>Chiral soliton lattice in inhomogeneous magnetic fields</h4>
+        <p><strong>Authors:</strong> Tomas Brauner; Ramkumar Radhakrishnan (2 authors)</p>
+        <p><strong>Summary:</strong> This work asks whether the chiral soliton lattice expected in strong uniform magnetic fields can persist for nonuniform fields relevant to heavy-ion collisions and neutron stars. In a neutral-pion effective theory, the authors characterize supportive field profiles analytically in the chiral limit and add finite-mass numerical examples.</p>
+        <p><strong>Why it matters:</strong> It tests whether an elegant QCD phase idea survives the field gradients that real heavy-ion environments would impose.</p>
+        <p><strong>Assessment:</strong> Mixed-to-strong. The theoretical setup is clean, but direct heavy-ion observability remains remote because the calculation is still low-energy and equilibrium-oriented.</p>
+      </article>
+      <article class="paper-card" data-search="2608.25857 finite-momentum instabilities dense matter inhomogeneous chiral phases NJL regularization nuclear theory">
+        <div class="card-top"><span>Theory</span><a href="https://arxiv.org/abs/2608.25857">arXiv:2608.25857</a></div>
+        <h4>Robust Finite-Momentum Instabilities in Dense Matter</h4>
+        <p><strong>Authors:</strong> Andre G. da Silva; Ricardo L. S. Farias; Theo Motta; William R. Tavares (4 authors)</p>
+        <p><strong>Summary:</strong> The authors revisit regulator dependence of inhomogeneous chiral phases in a two-flavor NJL model. By restricting regulators to divergent vacuum terms, they find that different regularization prescriptions give nearly identical finite-momentum instability regions.</p>
+        <p><strong>Why it matters:</strong> If correct, the result strengthens the case that finite-momentum chiral correlations are physical dense-medium features rather than cutoff artifacts.</p>
+        <p><strong>Assessment:</strong> Strong within an effective-model scope. It addresses a known methodological weakness directly, but conclusions still inherit NJL-model limitations.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper-card" data-search="2608.25983 jet quenching gluon saturation BMS evolution nuclear modification factor RHIC LHC phenomenology">
+        <div class="card-top"><span>Phenomenology</span><a href="https://arxiv.org/abs/2608.25983">arXiv:2608.25983</a></div>
+        <h4>Jet Quenching Meets Gluon Saturation</h4>
+        <p><strong>Authors:</strong> Paul Caucal; Kevin Eisenberg; Yacine Mehtar-Tani (3 authors)</p>
+        <p><strong>Summary:</strong> A compact companion paper applies the BMS/saturation analogy to jet fragmentation in heavy-ion collisions and computes a proof-of-principle jet nuclear modification factor. Medium-induced energy loss and color decoherence are encoded in the initial condition for the jet function.</p>
+        <p><strong>Why it matters:</strong> It is a promising bridge between formal jet-evolution theory and observables used at RHIC and the LHC.</p>
+        <p><strong>Assessment:</strong> Strong but early. The proof-of-principle observable is not yet a full phenomenological program, but the scale separation and nonlinear-evolution structure look scientifically valuable.</p>
+      </article>
+      <article class="paper-card" data-search="2608.25501 p-O collisions LHC ALICE Run 3 charged hadrons three-source model CGC relativistic diffusion phenomenology">
+        <div class="card-top"><span>Phenomenology</span><a href="https://arxiv.org/abs/2608.25501">arXiv:2608.25501</a></div>
+        <h4>Particle production in p-O collisions at LHC energy</h4>
+        <p><strong>Authors:</strong> Chuan Li; Georg Wolschin (2 authors)</p>
+        <p><strong>Summary:</strong> The paper compares earlier predictions for charged-hadron production in p-O at sqrt(sNN)=9.618 TeV with preliminary ALICE Run 3 data and retunes a three-source relativistic diffusion model. It predicts a centrality-dependent inversion of the production-amplitude pattern at larger pseudorapidity.</p>
+        <p><strong>Why it matters:</strong> p-O data are important baselines for light-ion and cosmic-ray-motivated nuclear effects at the LHC.</p>
+        <p><strong>Assessment:</strong> Mixed. The comparison to new data is timely, but the model is compact and parameter-adapted; it should be treated as phenomenological guidance rather than a decisive mechanism test.</p>
+      </article>
+
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper-card" data-search="2608.27077 conditional diffusion transverse momentum distributions TMD PDFs SIDIS CLAS12 EIC AI ML physics inference">
+        <div class="card-top"><span>AI/ML use</span><a href="https://arxiv.org/abs/2608.27077">arXiv:2608.27077</a></div>
+        <h4>Learning Transverse Momentum Distributions from Raw Scattering Events via Conditional Diffusion</h4>
+        <p><strong>Authors:</strong> Jitao Xu; Christopher Cocuzza; Kevin Braga; Daniel Lersch; Nobuo Sato; Yaohang Li (6 authors)</p>
+        <p><strong>Method and result:</strong> A conditional diffusion model maps raw SIDIS event kinematics to TMD PDFs, aiming to avoid fixed functional forms. On simulated CLAS12-like data it recovers the underlying TMD and produces uncertainty bands that improve with event statistics.</p>
+        <p><strong>Likely transfer:</strong> The event-conditioned inference idea could transfer to heavy-ion and nuclear analyses where parameterized response functions limit flexibility, provided closure tests and systematic variations are much broader than in the first demonstration.</p>
+        <p><strong>Assessment:</strong> Strong concept, moderate evidence. Simulation-only validation is the main caveat, but the task is physics-specific and better motivated than generic diffusion use.</p>
+      </article>
+      <article class="paper-card" data-search="2608.26090 sparse autoencoders mechanistic interpretability neutrino foundation model IceCube uncertainty head AI ML HEP">
+        <div class="card-top"><span>AI/ML use</span><a href="https://arxiv.org/abs/2608.26090">arXiv:2608.26090</a></div>
+        <h4>Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders</h4>
+        <p><strong>Authors:</strong> Raphael Bonnet-Guerrini; Johann Ioannou-Nikolaides; Inar Timiryasov; Vincenzo Piuri (4 authors)</p>
+        <p><strong>Method and result:</strong> Sparse autoencoders are used to identify interpretable latent concepts in an IceCube neutrino foundation model, with held-out checks, nuisance controls, and replicated dictionary training. A downstream uncertainty head uses those latents to sharply improve selected-event angular resolution.</p>
+        <p><strong>Likely transfer:</strong> The validation protocol is directly relevant for HEP detector foundation models, jet tagging, reconstruction-quality estimation, and heavy-ion event classification where latent shortcuts are a serious risk.</p>
+        <p><strong>Assessment:</strong> Strong. The causal-intervention and nuisance-control pieces make this more convincing than a visualization-only interpretability study.</p>
+      </article>
+      <article class="paper-card" data-search="2608.25107 ADoNIS differentiable neutrino interaction generator exact derivatives nuclear ground state intranuclear cascade inference">
+        <div class="card-top"><span>AI/ML use</span><a href="https://arxiv.org/abs/2608.25107">arXiv:2608.25107</a></div>
+        <h4>ADoNIS: A Differentiable generatOr of Neutrino Interaction Samples</h4>
+        <p><strong>Authors:</strong> Cesar Jesus-Valls (1 author)</p>
+        <p><strong>Method and result:</strong> A differentiable neutrino event generator propagates derivatives through nuclear ground-state modeling, hard scattering, and intranuclear cascade components while matching ACHILLES-style predictions. The Jacobian is used to diagnose which observables constrain parameters and break degeneracies.</p>
+        <p><strong>Likely transfer:</strong> Differentiable generator design is highly transferable to heavy-ion emulator calibration, hadronic afterburners, detector response unfolding, and Bayesian inference workflows.</p>
+        <p><strong>Assessment:</strong> Strong and practical. It targets a concrete bottleneck in physics inference rather than using ML as decoration.</p>
+      </article>
+      <article class="paper-card" data-search="2608.26376 Rabbit binned profile likelihood differentiable programming TensorFlow exact gradients Hessian vector products LHC precision measurements">
+        <div class="card-top"><span>AI/ML-adjacent computing</span><a href="https://arxiv.org/abs/2608.26376">arXiv:2608.26376</a></div>
+        <h4>Efficient binned profile likelihood minimization for precision measurements with RABBIT</h4>
+        <p><strong>Authors:</strong> David Walter; Josh Bendavid; Kenneth Long (3 authors)</p>
+        <p><strong>Method and result:</strong> RABBIT uses differentiable programming in TensorFlow 2, exact gradients, Hessian-vector products, and trust-region Krylov minimization for very large binned likelihoods. Synthetic benchmarks show strong scaling and convergence advantages in regimes where established tools struggle.</p>
+        <p><strong>Likely transfer:</strong> Directly relevant to heavy-ion global fits, unfolded differential measurements, high-dimensional nuisance models, and fast iteration for HL-LHC-style analyses.</p>
+        <p><strong>Assessment:</strong> Strong, with the usual benchmark caveat. Real analysis adoption will depend on robustness against non-synthetic nuisance structures and collaboration integration.</p>
+      </article>
+
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper-card caution" data-search="2608.26224 quantum machine learning trigger CMS open data eight qubits PCA benchmark caution no quantum advantage">
+        <div class="card-top"><span>Caution</span><a href="https://arxiv.org/abs/2608.26224">arXiv:2608.26224</a></div>
+        <h4>Classical and Hybrid Quantum Machine Learning for Trigger-Like Event Selection on CMS Open Data</h4>
+        <p><strong>Authors:</strong> Tariq Mahmood; Muhammad Awais Rafique; Talab Hussain; Juan Pablo Perez Aguilar; Alfredo Raya; Muhammad Ahsan (6 authors)</p>
+        <p><strong>Why caution:</strong> The paper is useful precisely because it states the boundary: classical models outperform the eight-qubit simulated quantum models on the reported trigger-like task. It should not be cited as evidence that quantum ML is ready for HEP triggering; the PCA compression, state-vector simulation, and absence of latency/hardware constraints keep it far from deployment.</p>
+        <p><strong>Assessment:</strong> Fair benchmark, weak transfer if oversold. Best value is as a controlled negative/neutral reference for quantum-ML expectations.</p>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
