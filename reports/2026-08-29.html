@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-29</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-29 Briefing</h1>
+    <p class="dek">Selective scan of the most recent available arXiv cycle for heavy-ion collision physics and transferable AI/ML methods for HEP and nuclear physics. No Saturday arXiv replacement list was available, so this run emphasizes late-week submissions still within the relevant review window.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion contribution remains the paired BMS/color-coherence jet-quenching work, which gives a technically coherent route from soft jet evolution to saturation-like nonlinear dynamics in the QGP.</li>
+        <li>Hot and dense QCD theory is active but uneven: the holographic review is useful for phase-structure orientation, while direct heavy-ion phenomenology remains model-dependent.</li>
+        <li>The best AI/ML papers are inference- or workflow-facing rather than generic classifiers: conditional diffusion for TMD extraction, neural-network nuclear response functions, cross-simulator summaries, and phase-space sampler reuse.</li>
+        <li>Quantum ML papers deserve careful framing. Track-based quantum kernels and trigger-like quantum classifiers are useful benchmarks, but neither establishes deployable quantum advantage for HEP.</li>
+        <li>A recent-list QGP-star paper is worth explicit caution: mass-range consistency alone is weak evidence for an exotic compact-object interpretation.</li>
+      </ul>
+    </section>
+
+    <section id="archive-list">
+      <h2>Heavy-ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.25984 color coherence soft QCD jets QGP BMS evolution Wilson-line correlators jet quenching saturation theory">
+        <div class="paper-head"><h4>Color Coherence and the Soft Structure of QCD Jets in Vacuum and the QGP</h4><span class="label strong">strong</span></div>
+        <p class="meta">Paul Caucal; Yacine Mehtar-Tani (2 authors) | <a href="https://arxiv.org/abs/2608.25984">arXiv:2608.25984</a></p>
+        <p>The paper formulates soft jet evolution in vacuum and QGP through BMS evolution of Wilson-line correlators. Medium interactions modify boundary conditions while preserving the ultraviolet structure, creating an analogy between the medium coherence angle and the saturation scale.</p>
+        <p><strong>Why it matters:</strong> It gives a controlled perturbative language for combining vacuum-like radiation, medium-induced energy loss, and color decoherence.</p>
+        <p><strong>Critical assessment:</strong> Strong formal work. Its real phenomenological value will depend on whether the framework can be turned into robust, uncertainty-aware predictions for measured jet substructure observables.</p>
+      </article>
+
+      <article class="paper" data-search="2608.27023 holographic hot dense QCD matter Witten Sakai Sugimoto baryonic quarkyonic pion condensation phase diagram theory">
+        <div class="paper-head"><h4>Advances in the holographic description of hot and dense QCD matter</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Nicolas Kovensky; Andreas Schmitt (2 authors) | <a href="https://arxiv.org/abs/2608.27023">arXiv:2608.27023</a></p>
+        <p>This invited review summarizes and extends work on QCD-like phases at nonzero temperature and chemical potential using the top-down Witten-Sakai-Sugimoto model. It covers pion condensation, baryonic matter, quarkyonic matter, and limitations of the holographic approach.</p>
+        <p><strong>Why it matters:</strong> It is a compact map of where holography may still inform dense-QCD questions relevant to heavy-ion theory and compact matter.</p>
+        <p><strong>Critical assessment:</strong> Useful and scientifically honest about limitations, but not a direct phenomenology paper. Treat as a theory-orientation resource rather than evidence for a specific heavy-ion observable.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.25983 jet quenching gluon saturation BMS evolution nuclear modification factor RHIC LHC phenomenology">
+        <div class="paper-head"><h4>Jet Quenching Meets Gluon Saturation</h4><span class="label strong">strong</span></div>
+        <p class="meta">Paul Caucal; Kevin Eisenberg; Yacine Mehtar-Tani (3 authors) | <a href="https://arxiv.org/abs/2608.25983">arXiv:2608.25983</a></p>
+        <p>This companion paper applies the BMS/saturation analogy to jet fragmentation in heavy-ion collisions and computes a proof-of-principle jet nuclear modification factor. Medium-induced energy loss and color decoherence are encoded as the jet-function initial condition.</p>
+        <p><strong>Why it matters:</strong> It provides an explicit bridge from the formal jet-evolution construction to RHIC/LHC observables.</p>
+        <p><strong>Critical assessment:</strong> Strong but early. The proof-of-principle calculation is promising, but precision phenomenology will require broader observable studies and systematic uncertainty control.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental paper from the inspected recent cycle cleared the threshold for inclusion beyond proceedings-level summaries or papers outside the collision-physics scope.</p>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2608.26988 artificial neural networks dipole strength predictions light nuclei uncertainty weighted training photonuclear databases nuclear theory ML">
+        <div class="paper-head"><h4>Optimizing artificial neural networks for dipole strength predictions in light nuclei</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Tim Egert; Weiguang Jiang; Sonia Bacca (3 authors) | <a href="https://arxiv.org/abs/2608.26988">arXiv:2608.26988</a></p>
+        <p>The authors refine a neural-network model for electric dipole strength functions in nuclei with A &lt; 50 using two-stage training, learned proton-number embeddings, low-energy onset information, uncertainty-weighted losses, and high-energy regularization. Withheld-isotope tests show improved stability for elements represented in training.</p>
+        <p><strong>Why it matters:</strong> Smooth nuclear response functions are valuable inputs for nuclear applications, and the paper addresses uncertainty and stability rather than only point prediction.</p>
+        <p><strong>Critical assessment:</strong> Mixed-to-strong. The design choices are physically motivated, but extrapolation to underrepresented elements remains the key limitation for deployment in nuclear workflows.</p>
+      </article>
+
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2608.27077 conditional diffusion transverse momentum distributions TMD PDFs SIDIS CLAS12 EIC AI ML physics inference">
+        <div class="paper-head"><h4>Learning Transverse Momentum Distributions from Raw Scattering Events via Conditional Diffusion</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jitao Xu; Christopher Cocuzza; Kevin Braga; Daniel Lersch; Nobuo Sato; Yaohang Li (6 authors) | <a href="https://arxiv.org/abs/2608.27077">arXiv:2608.27077</a></p>
+        <p>The method uses a conditional diffusion model to map raw SIDIS event kinematics directly to TMD PDFs, avoiding fixed functional forms. In simulated CLAS12-like studies, uncertainty estimates tighten with event statistics and remain informative in low-statistics regimes.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Event-conditioned inference could transfer to nuclear PDF, jet-quenching parameter, or heavy-ion initial-condition inference where rigid parameterizations are a bottleneck.</p>
+        <p><strong>Critical assessment:</strong> Strong concept with simulation-only evidence. The next decisive test is robustness under generator mismatch and correlated experimental systematics.</p>
+      </article>
+
+      <article class="paper" data-search="2608.27333 quantum kernel methods track classification HEP CLAS12 drift chamber QSVC SVM noise model quantum ML">
+        <div class="paper-head"><h4>Evaluating Quantum Kernel Methods for Track-Based Classification in High-Energy Physics</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Emmanuel Billias; Nikos Chrisochoides (2 authors) | <a href="https://arxiv.org/abs/2608.27333">arXiv:2608.27333</a></p>
+        <p>The paper scales an exactly constructed quantum-kernel SVM workflow to 100k training and 400k test events using CLAS12 drift-chamber features. It reports strong ideal-simulation classification and quantifies performance loss under a calibrated hardware-noise model.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The scalable benchmarking workflow and noise-degradation study are more transferable than the specific quantum model, especially for detector-track classification benchmarks.</p>
+        <p><strong>Critical assessment:</strong> Mixed. The scale and controls are useful, but ideal-kernel performance and simulated noise do not yet imply practical quantum advantage or trigger compatibility.</p>
+      </article>
+
+      <article class="paper" data-search="2608.26354 cross simulator transfer foundation model summaries self supervised ViT JEPA simulation based inference calibrated posteriors transfer learning">
+        <div class="paper-head"><h4>Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yannic Pietschke; Caroline Heneka; Ayodele Ore; Romain Meriot (4 authors) | <a href="https://arxiv.org/abs/2608.26354">arXiv:2608.26354</a></p>
+        <p>A self-supervised ViT is pretrained on low-cost 21cmFAST simulations and reused as a frozen encoder for parameter inference on hydrodynamical Loreli II lightcones, including noisy SKA-like settings. The reported posteriors are more precise and better calibrated than several supervised baselines while requiring fewer expensive simulations.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is a credible transfer template for simulator hierarchy problems: cheap event generators or fast detector simulations used to pretrain summaries, then calibrated against expensive transport, hydrodynamic, or full-detector samples.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer evidence for an astro setting. Transfer to HEP will still require stress tests with domain shifts that mimic detector mismodeling and physics-model uncertainty.</p>
+      </article>
+
+      <article class="paper" data-search="2608.27104 phase space points multijet processes continuous normalizing flows Monte Carlo event generators sampler training HEP ML transfer">
+        <div class="paper-head"><h4>Too good to go: Upcycling Phase-Space Points for Multijet Processes</h4><span class="label strong">strong</span></div>
+        <p class="meta">Konrad Helms; Timo Janssen; Steffen Schumann (3 authors) | <a href="https://arxiv.org/abs/2608.27104">arXiv:2608.27104</a></p>
+        <p>The paper exploits the nested structure of N- and N+1-particle phase spaces to initialize sampler adaptation from augmented lower-multiplicity samples. Demonstrations with continuous normalizing-flow samplers reduce expensive matrix-element evaluations while preserving unbiased Monte Carlo estimates through exact event weights.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Useful for expensive multijet backgrounds, jet-substructure simulations, and possibly rare high-multiplicity calibration samples used around heavy-ion reference measurements.</p>
+        <p><strong>Critical assessment:</strong> Strong workflow paper. It is not heavy-ion-specific, but the computational idea is concrete and immediately relevant to event-generation bottlenecks.</p>
+      </article>
+
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.26224 quantum machine learning trigger CMS open data eight qubits PCA benchmark caution no quantum advantage">
+        <div class="paper-head"><h4>Classical and Hybrid Quantum Machine Learning for Trigger-Like Event Selection on CMS Open Data</h4><span class="label caution">caution</span></div>
+        <p class="meta">Tariq Mahmood; Muhammad Awais Rafique; Talab Hussain; Juan Pablo Perez Aguilar; Alfredo Raya; Muhammad Ahsan (6 authors) | <a href="https://arxiv.org/abs/2608.26224">arXiv:2608.26224</a></p>
+        <p>The paper is useful as a controlled benchmark, but the strongest classical model still outperforms the simulated eight-qubit quantum models. PCA compression, state-vector simulation, and missing real trigger-latency constraints mean the result should not be framed as deployable quantum triggering.</p>
+        <p><strong>Critical assessment:</strong> Good neutral reference, weak evidence for practical quantum advantage.</p>
+      </article>
+
+      <article class="paper" data-search="2608.24505 QGP star hypothesis omega Centauri mass gap compact object color superconducting quark gluon plasma star caution overclaim">
+        <div class="paper-head"><h4>Testing the QGP Star Hypothesis: The oMEGACat BH-2 System as a Candidate Color-Superconducting Quark-Gluon Plasma Star</h4><span class="label caution">caution</span></div>
+        <p class="meta">Herman J. Mosquera Cuesta (1 author) | <a href="https://arxiv.org/abs/2608.24505">arXiv:2608.24505</a></p>
+        <p>This paper appeared in the recent nuclear-theory/phenomenology stream through cross-listing, but its original submission date was July 22, 2026. The central evidence is consistency between an inferred compact-object mass and a broad proposed QGP-star mass range.</p>
+        <p><strong>Critical assessment:</strong> Worth caution. Mass-range overlap is a very weak discriminator among compact-object hypotheses, and the heavy-ion connection is mostly terminological rather than collision-physics evidence.</p>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
