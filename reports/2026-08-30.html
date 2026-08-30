@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-30</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-30: Weekend no-new-announcement scan</h1>
+    <p class="dek">No normal Sunday arXiv announcement cycle was visible on Aug. 30; the latest relevant arXiv recent listings were late-week Aug. 27-28 postings. This selective scan therefore emphasizes durable late-week items: color-coherent jet-quenching theory, saturation analogies for medium-modified jet evolution, conditional diffusion for TMD inference, cross-simulator foundation-model summaries, and quantum-kernel tracking benchmarks with clear noise caveats.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>No normal Sunday arXiv release was visible; this is a weekend scan of the newest available recent-list material, not a fresh Sunday submission list.</li>
+        <li>The Caucal/Mehtar-Tani jet-quenching framework and companion letter are the strongest heavy-ion items, linking color decoherence in QGP jets to BMS/BK-style nonlinear evolution.</li>
+        <li>The conditional-diffusion TMD paper is the strongest AI/ML use case because it pairs event-level conditioning with uncertainty behavior that scales sensibly with statistics.</li>
+        <li>Cross-simulator foundation-model summaries from 21 cm cosmology are outside HEP, but the validation setup is directly relevant to generator mismatch and simulation-based inference in collider and nuclear workflows.</li>
+        <li>Quantum-kernel tracking studies are worth watching, but practical claims should remain conservative until noisy, hardware-level, latency-aware comparisons improve.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.25984 Color Coherence QCD Jets Vacuum QGP Paul Caucal Yacine Mehtar-Tani jet quenching BMS color coherence factorization strong">
+        <div class="paper-head"><h4>Color Coherence and the Soft Structure of QCD Jets in Vacuum and the QGP</h4><span class="label strong">strong</span></div>
+        <p class="meta">Paul Caucal, Yacine Mehtar-Tani (2 authors) | <a href="https://arxiv.org/abs/2608.25984">arXiv:2608.25984</a> | Theory</p>
+        <p>A substantial theory paper developing a factorized all-order language for soft jet evolution in dense QCD matter. It formulates near-threshold jet observables with Wilson-line correlators obeying BMS evolution, with medium-induced energy loss and decoherence entering as boundary data rather than changing the ultraviolet evolution.</p>
+        <p><strong>Why it matters:</strong> If this survives detailed phenomenological implementation, it could sharpen high-pT jet and jet-substructure calculations at RHIC and the LHC by putting color coherence, vacuum radiation, and medium response in a common perturbative structure.</p>
+        <p><strong>Critical assessment:</strong> Scientifically strong and conceptually important, with careful scale-separation logic. The main limitation is that realistic medium profiles, finite-Nc effects, and uncertainty propagation remain future work.</p>
+      </article>
+      <article class="paper" data-search="2608.27319 Chiral soliton lattice inhomogeneous magnetic fields Tomas Brauner Ramkumar Radhakrishnan QCD phases heavy-ion neutron stars mixed">
+        <div class="paper-head"><h4>Chiral soliton lattice in inhomogeneous magnetic fields</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Tomas Brauner, Ramkumar Radhakrishnan (2 authors) | <a href="https://arxiv.org/abs/2608.27319">arXiv:2608.27319</a> | Theory</p>
+        <p>The authors ask whether QCD chiral soliton lattice states persist when magnetic fields are spatially nonuniform, as motivated by heavy-ion collisions and neutron stars. They obtain analytic control in the massless-pion limit and numerical examples away from it, finding that field bending reduces but does not necessarily remove CSL-like ordering.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion magnetic fields are short-lived and structured, so this is a necessary step beyond uniform-field toy models.</p>
+        <p><strong>Critical assessment:</strong> Solid within low-energy EFT, but transfer to real heavy-ion collisions is still tentative because time dependence, conductivity, backreaction, and non-equilibrium evolution are not central.</p>
+      </article>
+      <h3>Experiment</h3>
+      <p>No new heavy-ion collision experiment paper passed the selection threshold in the latest available arXiv cycle. A nearby nuclear-medium PRL on direct eta-prime mass modification was noted but not counted as heavy-ion collision research.</p>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.25983 Jet Quenching Meets Gluon Saturation Paul Caucal Kevin Eisenberg Yacine Mehtar-Tani nuclear modification factor BMS strong">
+        <div class="paper-head"><h4>Jet Quenching Meets Gluon Saturation</h4><span class="label strong">strong</span></div>
+        <p class="meta">Paul Caucal, Kevin Eisenberg, Yacine Mehtar-Tani (3 authors) | <a href="https://arxiv.org/abs/2608.25983">arXiv:2608.25983</a> | Phenomenology</p>
+        <p>A compact companion letter translating the longer formal development into a phenomenological bridge between jet quenching and saturation physics. The jet function obeys BMS evolution, while medium-induced energy loss and color decoherence are encoded in the initial condition; a proof-of-principle jet nuclear modification factor illustrates the interplay.</p>
+        <p><strong>Why it matters:</strong> This is the more immediately readable entry point for heavy-ion phenomenologists interested in connecting color coherence, saturation concepts, and jet suppression observables.</p>
+        <p><strong>Critical assessment:</strong> Strong as a conceptual and calculational letter, but not yet a precision phenomenology paper. Its quantitative payoff depends on full evolution with realistic boundary conditions.</p>
+      </article>
+      <article class="paper" data-search="2608.25501 Particle production p-O collisions LHC ALICE Run 3 Chuan Li Georg Wolschin relativistic diffusion mixed">
+        <div class="paper-head"><h4>Particle production in p-O collisions at LHC energy</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Chuan Li, Georg Wolschin (2 authors) | <a href="https://arxiv.org/abs/2608.25501">arXiv:2608.25501</a> | Phenomenology</p>
+        <p>This short update compares earlier charged-hadron production predictions for p-O at sqrt(sNN)=9.618 TeV with preliminary ALICE Run 3 data and retunes a three-source relativistic diffusion model. It predicts a centrality-dependent inversion of the larger-pseudorapidity production amplitude.</p>
+        <p><strong>Why it matters:</strong> p-O provides important control data for nuclear initial conditions and small-system collectivity claims at the LHC.</p>
+        <p><strong>Critical assessment:</strong> Useful as a baseline/model-comparison contribution, but parameter retuning limits the standalone scientific force until finalized ALICE measurements and broader generator comparisons arrive.</p>
+      </article>
+    </section>
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.27077 conditional diffusion TMD PDFs SIDIS CLAS12 EIC Jitao Xu Christopher Cocuzza Kevin Braga Daniel Lersch Nobuo Sato Yaohang Li strong transferable">
+        <div class="paper-head"><h4>Learning Transverse Momentum Distributions from Raw Scattering Events via Conditional Diffusion</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jitao Xu, Christopher Cocuzza, Kevin Braga, Daniel Lersch, Nobuo Sato, Yaohang Li (6 authors) | <a href="https://arxiv.org/abs/2608.27077">arXiv:2608.27077</a> | AI/ML use</p>
+        <p>A conditional diffusion model maps raw simulated SIDIS event kinematics to TMD PDFs, avoiding fixed functional forms. On CLAS12-like simulated data, uncertainty bands narrow with event statistics and remain informative even around 1,000 conditioning events.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> A template for simulation-conditioned posterior generation from variable-size event sets, especially sparse kinematic bins, unfolding, and emulator-assisted inference in HEP/nuclear workflows.</p>
+        <p><strong>Critical assessment:</strong> Strong and transferable, with the right caveat: validation is currently simulated, leading-order, and detector-simplified. Real data, NLO theory, polarized observables, and detector effects are decisive next tests.</p>
+      </article>
+      <article class="paper" data-search="2608.26354 cross-simulator transfer foundation model summaries simulation-based inference JEPA ViT calibration Yannic Pietschke Caroline Heneka Ayodele Ore Romain Meriot strong">
+        <div class="paper-head"><h4>Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yannic Pietschke, Caroline Heneka, Ayodele Ore, Romain Meriot (4 authors) | <a href="https://arxiv.org/abs/2608.26354">arXiv:2608.26354</a> | AI/ML use</p>
+        <p>Although astrophysics-focused, this paper attacks a shared problem: simulation-trained summaries often fail under model mismatch. A self-supervised ViT/JEPA-style encoder is pretrained on inexpensive simulations, frozen, and used for inference on a different radiative-transfer simulator, with reported calibration gains under simulator shift and realistic SKA noise.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> A benchmark pattern for cross-generator SBI: pretrain summaries on cheap approximate simulations, freeze them, and test calibration on expensive or higher-fidelity simulators.</p>
+        <p><strong>Critical assessment:</strong> Strong transfer value because the evaluation directly stresses simulator shift and calibration. Domain distance means it is a workflow template rather than a plug-in collider solution.</p>
+      </article>
+      <article class="paper" data-search="2608.27333 quantum kernels track classification CLAS12 HEP Emmanuel Billias Nikos Chrisochoides noise model mixed caution">
+        <div class="paper-head"><h4>Evaluating Quantum Kernel Methods for Track-Based Classification in High-Energy Physics</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Emmanuel Billias, Nikos Chrisochoides (2 authors) | <a href="https://arxiv.org/abs/2608.27333">arXiv:2608.27333</a> | AI/ML use</p>
+        <p>The paper scales an exact quantum-kernel SVM workflow to 100k training and 400k test track-classification events using CLAS12 drift-chamber features and HPC kernel evaluation. Ideal simulation performs well, while a calibrated noise model substantially reduces AUC and significance improvement.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Use mainly as a benchmark design and cautionary scaling/noise study for QML in reconstruction, not as evidence that quantum kernels are ready for online HEP use.</p>
+        <p><strong>Critical assessment:</strong> Mixed but worth reading. The noisy study is much smaller and simulated; hardware execution, fake-rate control, latency, and stronger classical deep baselines remain unresolved.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.26224 quantum machine learning trigger CMS open data PCA state-vector simulation caution">
+        <div class="paper-head"><h4>Classical and Hybrid Quantum Machine Learning for Trigger-Like Event Selection on CMS Open Data</h4><span class="label caution">caution</span></div>
+        <p class="meta">Tariq Mahmood, Muhammad Awais Rafique, Talab Hussain, Juan Pablo Perez Aguilar, Alfredo Raya, Muhammad Ahsan (6 authors) | <a href="https://arxiv.org/abs/2608.26224">arXiv:2608.26224</a></p>
+        <p>Useful because it explicitly avoids claiming quantum advantage and reports the classical ANN as the strongest model. Caution is still warranted because the task is simplified, PCA compression is severe, quantum models are state-vector simulated, and latency/hardware constraints are far from a real trigger menu.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
