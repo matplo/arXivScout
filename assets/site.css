@@ -77,13 +77,32 @@ h1 {
   font-size: 1.08rem;
 }
 
+.filter-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(170px, 220px) minmax(135px, 170px) minmax(135px, 170px);
+  gap: 12px;
+  align-items: end;
+  margin-top: 26px;
+}
+
+.filter-field {
+  min-width: 0;
+}
+
+.filter-field-search {
+  min-width: min(100%, 300px);
+}
+
 .search-label {
   display: block;
-  margin: 26px 0 8px;
+  margin: 0 0 8px;
   font-weight: 800;
 }
 
-#archive-search {
+#archive-search,
+#archive-period,
+#archive-start,
+#archive-end {
   width: 100%;
   min-height: 48px;
   padding: 12px 14px;
@@ -92,6 +111,12 @@ h1 {
   background: var(--panel);
   color: var(--text);
   font: inherit;
+}
+
+#archive-start:disabled,
+#archive-end:disabled {
+  color: #8b918d;
+  background: #eef1ed;
 }
 
 main {
@@ -112,6 +137,10 @@ main {
 
 .archive-card {
   padding: 18px;
+}
+
+.loading-card {
+  color: var(--muted);
 }
 
 .card-top,
@@ -257,6 +286,16 @@ mark {
   color: inherit;
 }
 
+@media (max-width: 880px) {
+  .filter-panel {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-field-search {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 640px) {
   .site-header,
   main {
@@ -265,6 +304,10 @@ mark {
 
   .site-header {
     padding-top: 28px;
+  }
+
+  .filter-panel {
+    grid-template-columns: 1fr;
   }
 
   .paper,

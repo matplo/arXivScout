@@ -11,49 +11,57 @@
     <p class="eyebrow">Daily arXiv Physics Scout</p>
     <h1>Searchable Archive</h1>
     <p class="dek">High-signal daily briefings on heavy-ion collision physics and AI/ML use cases in physics.</p>
-    <label class="search-label" for="archive-search">Search by keyword</label>
-    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+    <div class="filter-panel" aria-label="Archive filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+      <div class="filter-field">
+        <label class="search-label" for="archive-period">Date range</label>
+        <select id="archive-period">
+          <option value="all">All archived days</option>
+          <option value="3">Last 3 days</option>
+          <option value="7">Last 7 days</option>
+          <option value="14">Last 14 days</option>
+          <option value="30">Last 30 days</option>
+          <option value="custom">Custom range</option>
+        </select>
+      </div>
+      <div class="filter-field date-field">
+        <label class="search-label" for="archive-start">Start date</label>
+        <input id="archive-start" type="date">
+      </div>
+      <div class="filter-field date-field">
+        <label class="search-label" for="archive-end">End date</label>
+        <input id="archive-end" type="date">
+      </div>
+    </div>
   </header>
   <main>
-    <section class="archive-list" id="archive-list">
-      <article class="archive-card" data-search="2026-08-31 chemical equilibration strange fugacity QGP net-proton cumulants fRG SMASH Beam Energy Scan strangeness horn thermal broadening ALICE heavy flavor detector-level Bayesian inference HEPToolBench HEPLocalAgent HIBEAM TPC MMD anomaly localization 2608.27687 2608.28299 2608.28297 2608.28189 2608.28456 2608.28277 2608.27683 2608.28232 2608.28244 2608.28314 2608.28375 2608.21756 Theory Experiment Phenomenology AI/ML use Caution">
-        <div class="card-top"><time datetime="2026-08-31">2026-08-31</time><span>12 selected papers + 2 cautions</span></div>
-        <h2><a href="reports/2026-08-31.html">Chemical equilibration, BES cumulant backgrounds, and validation-first physics AI</a></h2>
-        <p>Selected papers emphasize light/strange QGP chemical equilibration, hadronic rescattering backgrounds for net-proton cumulants, strangeness system-size tests, thermal broadening in resonance feed-down, ALICE heavy-flavor hadronization, detector-level Bayesian amplitude inference, schema-mediated HEP software agents, TPC representation transfer, and contextual anomaly localization.</p>
-        <div class="arxiv-lines"><p><strong>2608.27687:</strong> chemical equilibration, strange fugacity, Bayesian heavy-ion inference</p><p><strong>2608.28299:</strong> net-proton cumulants, fRG, SMASH, BES critical-point background</p><p><strong>2608.28297:</strong> ALICE, heavy-flavor hadronization, strangeness enhancement</p><p><strong>2608.28189:</strong> K+/pi+ horn, system-size scan, core-corona, SMES</p><p><strong>2608.28456:</strong> thermal broadening, FastReso, soft pion puzzle</p><p><strong>2608.28277:</strong> Upsilon suppression, thermal decay, color-screening caution</p><p><strong>2608.27683:</strong> score-based diffusion, detector-level Bayesian amplitude inference</p><p><strong>2608.28232:</strong> HEPToolBench, typed representations, collider-simulation agents</p><p><strong>2608.28244:</strong> HEPLocalAgent, approval-gated workflow construction</p><p><strong>2608.28314:</strong> HIBEAM TPC vertexing, GNN versus classical baselines</p><p><strong>2608.28375:</strong> MMD, anomaly localization, LHC Olympics</p><p><strong>2608.21756:</strong> TPC embeddings, random-weight controls, cross-detector transfer</p></div>
-        <div class="tags"><span>Theory</span><span>Experiment</span><span>Phenomenology</span><span>AI/ML</span><span>Caution: 2</span></div>
-      </article>
-      <article class="archive-card" data-search="2026-08-30 weekend no new arxiv announcement jet quenching color coherence BMS evolution gluon saturation QGP chiral soliton lattice p-O ALICE conditional diffusion TMD PDFs cross-simulator transfer quantum kernels quantum ML caution 2608.25984 2608.25983 2608.27319 2608.25501 2608.27077 2608.26354 2608.27333 2608.26224 Theory Phenomenology AI/ML use Caution">
-        <div class="card-top"><time datetime="2026-08-30">2026-08-30</time><span>7 selected papers + 1 caution</span></div>
-        <h2><a href="reports/2026-08-30.html">Weekend scan: jet-quenching theory and transferable physics AI</a></h2>
-        <p>No normal Sunday arXiv announcement cycle was visible. The selected late-week papers emphasize BMS/color-coherence jet-quenching theory, saturation analogies for medium-modified jet evolution, inhomogeneous magnetic-field QCD phases, p-O phenomenology, conditional diffusion for TMD inference, simulator-shift-robust summaries, and quantum-kernel tracking caveats.</p>
-        <div class="arxiv-lines"><p><strong>2608.25984:</strong> jet quenching, color coherence, BMS evolution, QGP</p><p><strong>2608.25983:</strong> jet quenching, gluon saturation, nuclear modification factor</p><p><strong>2608.27319:</strong> chiral soliton lattice, magnetic fields, QCD phases</p><p><strong>2608.25501:</strong> p-O collisions, ALICE Run 3, charged hadrons</p><p><strong>2608.27077:</strong> conditional diffusion, TMD PDFs, SIDIS inference</p><p><strong>2608.26354:</strong> cross-simulator transfer, foundation-model summaries</p><p><strong>2608.27333:</strong> quantum kernels, track classification, noise caveat</p><p><strong>2608.26224:</strong> caution, quantum ML trigger benchmark</p></div>
-        <div class="tags"><span>Theory</span><span>Phenomenology</span><span>AI/ML</span><span>Caution: 1</span></div>
-      </article>
-      <article class="archive-card" data-search="2026-08-29 jet quenching color coherence BMS evolution gluon saturation QGP holographic QCD dipole strength neural networks conditional diffusion TMD PDFs quantum kernels track classification cross-simulator transfer foundation model phase-space sampling quantum ML caution QGP star caution 2608.25984 2608.27023 2608.25983 2608.26988 2608.27077 2608.27333 2608.26354 2608.27104 2608.26224 2608.24505 Theory Phenomenology AI/ML use Caution">
-        <div class="card-top"><time datetime="2026-08-29">2026-08-29</time><span>8 selected papers + 2 cautions</span></div>
-        <h2><a href="reports/2026-08-29.html">Color-coherent jet quenching and transfer-tested physics AI</a></h2>
-        <p>Selected papers emphasize BMS/color-coherence jet-quenching theory, saturation analogies for QGP jet evolution, holographic hot and dense QCD phase structure, neural-network nuclear response functions, conditional diffusion for TMD inference, quantum-kernel tracking benchmarks, cross-simulator foundation-model summaries, and phase-space sampler reuse.</p>
-        <div class="arxiv-lines"><p><strong>2608.25984:</strong> color coherence, BMS evolution, QGP jet structure</p><p><strong>2608.27023:</strong> holographic QCD, hot/dense phase structure</p><p><strong>2608.25983:</strong> jet quenching, gluon saturation, nuclear modification factor</p><p><strong>2608.26988:</strong> neural networks, dipole strength functions, light nuclei</p><p><strong>2608.27077:</strong> conditional diffusion, TMD PDFs, SIDIS inference</p><p><strong>2608.27333:</strong> quantum kernels, track classification, CLAS12</p><p><strong>2608.26354:</strong> cross-simulator transfer, foundation-model summaries</p><p><strong>2608.27104:</strong> phase-space upcycling, normalizing-flow samplers</p><p><strong>2608.26224:</strong> caution, quantum ML trigger benchmark</p><p><strong>2608.24505:</strong> caution, QGP-star overclaim risk</p></div>
-        <div class="tags"><span>Theory</span><span>Phenomenology</span><span>AI/ML</span><span>Caution: 2</span></div>
-      </article>
-      <article class="archive-card" data-search="2026-08-28 2026-08-25 2026-08-24 2026-08-23 2026-08-22 recent archive heavy-ion AI ML reports jet quenching dense QCD nuclear geometry QCD matter small-system baryon hydrodynamic frames trigger ML">
-        <div class="card-top"><time datetime="2026-08-28">2026-08-28 to 2026-08-22</time><span>recent archived reports</span></div>
-        <h2>Recent Earlier Archive</h2>
-        <p>Earlier high-detail daily report pages remain available and searchable through this compact card.</p>
-        <div class="arxiv-lines"><p><strong>2026-08-28:</strong> <a href="reports/2026-08-28.html">jet-quenching theory, dense-QCD phases, transferable inference tools</a></p><p><strong>2026-08-25:</strong> <a href="reports/2026-08-25.html">nuclear geometry, spin systematics, QGP spectroscopy, scientific-ML validation</a></p><p><strong>2026-08-24:</strong> <a href="reports/2026-08-24.html">QCD matter phenomenology and deployable physics AI</a></p><p><strong>2026-08-23:</strong> <a href="reports/2026-08-23.html">small-system baryon enhancement, QCD transport, deployment-ready physics AI</a></p><p><strong>2026-08-22:</strong> <a href="reports/2026-08-22.html">hydrodynamic-frame clarity, QCD response functions, deployable trigger ML</a></p></div>
-        <div class="tags"><span>Earlier reports</span><span>Backfilled links</span></div>
-      </article>
-      <article class="archive-card" data-search="older archive 2026-08-21 2026-08-20 2026-08-19 2026-08-18 2026-08-17 2026-08-16 2026-08-15 2026-08-13 2026-08-12 2026-08-11 2026-08-10 2026-08-09 2026-08-08 2026-08-07 2026-08-06 2026-08-04 2026-08-03 2026-08-02 2026-08-01 2026-07 2026-06 heavy-ion AI ML reports">
-        <div class="card-top"><time datetime="2026-08-21">2026-08-21 to 2026-06-26</time><span>older archived reports</span></div>
-        <h2>Older Archive</h2>
-        <p>Older report pages remain archived under <a href="reports/2026-08-21.html">2026-08-21</a> through <a href="reports/2026-06-26.html">2026-06-26</a>.</p>
-        <div class="arxiv-lines"><p><strong>2026-08-21:</strong> small-system QGP signals, QCD transport, validation-first physics AI</p><p><strong>2026-08-20:</strong> small-system baryon enhancement and validation-focused physics AI</p><p><strong>2026-08-18:</strong> dilepton thermometry and validation-focused detector AI</p><p><strong>2026-08-17 and older:</strong> daily archive pages continue in the reports directory.</p></div>
-        <div class="tags"><span>Older reports</span><span>Archive index</span></div>
+    <section class="archive-list" id="archive-list" aria-live="polite">
+      <article class="archive-card loading-card">
+        <div class="card-top"><span>Loading archive metadata</span></div>
+        <h2>Preparing daily report cards</h2>
+        <p>The archive index is loading the existing report metadata files.</p>
       </article>
     </section>
     <p id="empty-state" class="empty-state" hidden>No reports match that filter.</p>
   </main>
+  <script>
+    window.ARCHIVE_REPORTS = [
+      "2026-08-31", "2026-08-30", "2026-08-29", "2026-08-28", "2026-08-25", "2026-08-24", "2026-08-23",
+      "2026-08-22", "2026-08-21", "2026-08-20", "2026-08-19", "2026-08-18", "2026-08-17", "2026-08-16",
+      "2026-08-15", "2026-08-13", "2026-08-12", "2026-08-11", "2026-08-10", "2026-08-09", "2026-08-08",
+      "2026-08-07", "2026-08-06", "2026-08-04", "2026-08-03", "2026-08-02", "2026-08-01", "2026-07-31",
+      "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-26", "2026-07-25", "2026-07-24",
+      "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-19", "2026-07-18", "2026-07-17",
+      "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-12", "2026-07-11", "2026-07-10",
+      "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-06", "2026-07-05", "2026-07-04", "2026-07-03",
+      "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-28", "2026-06-27", "2026-06-26"
+    ].map(function (date) {
+      return {date: date, path: "reports/" + date + ".html", metadata: "data/reports/" + date + ".json"};
+    });
+  </script>
   <script src="assets/filter.js"></script>
 </body>
 </html>
