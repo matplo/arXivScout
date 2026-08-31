@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-08-31</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-08-31: Heavy-ion and physics AI briefing</h1>
+    <p class="dek">Selective Monday scan of arXiv new listings after the weekend release gap. The strongest themes are chemically non-equilibrated QGP modeling, Beam Energy Scan cumulant backgrounds, strangeness system-size systematics, thermal spectral broadening in hadron feed-down, detector-level Bayesian inverse problems, and validation-first AI interfaces for HEP software.</p>
+    <label class="search-label" for="archive-search">Search by keyword</label>
+    <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion item is Andrew Gordeev's dissertation on light/strange flavor equilibration, because it embeds chemical non-equilibrium into a full multistage Bayesian heavy-ion framework rather than treating it as a qualitative add-on.</li>
+        <li>Net-proton cumulants and the QCD critical-point program get a useful correction study: fRG input propagated through SMASH shows hadronic rescattering can reduce C4/C2 by about 20% near sqrt(sNN)=4.9 GeV while preserving non-monotonic structure.</li>
+        <li>Two strangeness/hadron-production papers are practically useful but should be read with model-dependence in mind: one quantifies the K+/pi+ horn across system size, and one adds thermally broadened rho/omega feed-down to light-hadron spectra.</li>
+        <li>The best AI/ML use case is detector-level Bayesian helicity-amplitude inference with a score-based posterior model; it attacks a real inverse problem with coverage checks and detector-response transfer tests.</li>
+        <li>HEPToolBench and HEPLocalAgent are valuable less for autonomy claims than for their core lesson: typed intermediate representations plus deterministic validators are much more reliable than asking language models to emit raw HEP-tool syntax.</li>
+        <li>Several AI papers are scientifically useful precisely because they show limits: HIBEAM vertexing finds classical methods competitive with GNN chains, and noisy quantum-kernel studies remain far from deployment-level reconstruction claims.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2608.27687 Constraining Light and Strange Flavor Equilibration Relativistic Heavy-Ion Collisions Andrew Gordeev QGP Bayesian fugacity hydrodynamics strange quarks strong theory phenomenology">
+        <div class="paper-head"><h4>Constraining Light and Strange Flavor Equilibration in Relativistic Heavy-Ion Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Andrew Gordeev (1 author) | <a href="https://arxiv.org/abs/2608.27687">arXiv:2608.27687</a> | Theory / phenomenology</p>
+        <p>This dissertation builds a dynamical framework in which light and strange quark fugacities modify both the QGP equation of state and particlization. It is implemented in a multistage model with fluctuating initial conditions, viscous hydrodynamics, particlization, hadronic transport, and Gaussian-process Bayesian inference against RHIC Au+Au data.</p>
+        <p><strong>Why it matters:</strong> Chemical equilibration is often assumed rather than constrained. The reported preference for initially undersaturated strangeness, with slower equilibration than light flavors, is directly relevant to strangeness yields, electromagnetic probes, and hydrodynamic initialization.</p>
+        <p><strong>Critical assessment:</strong> Strong and highly relevant because the physics question is central and the modeling is integrated into realistic inference. The caution is that equilibration times remain weakly constrained, and dissertation-scale results need careful separation between robust posterior features and model-prior structure.</p>
+      </article>
+      <article class="paper" data-search="2608.28299 Hadronic rescattering effects net-proton cumulants fRG SMASH Beam Energy Scan QCD critical point Qianru Lin Shi Yin Jianing Li Hannah Elfner Fabian Rennecke Long-Gang Pang Jan Pawlowski strong theory">
+        <div class="paper-head"><h4>Hadronic rescattering effects on net-proton cumulants from functional renormalization group calculations</h4><span class="label strong">strong</span></div>
+        <p class="meta">Qianru Lin, Shi Yin, Jianing Li, Hannah Elfner, Fabian Rennecke, Long-Gang Pang, Jan M. Pawlowski (7 authors) | <a href="https://arxiv.org/abs/2608.28299">arXiv:2608.28299</a> | Theory</p>
+        <p>The authors construct event-by-event proton and antiproton distributions from fRG cumulants using maximum entropy, then propagate them through SMASH in a simplified spherical hadronic evolution. They examine BES energies from sqrt(sNN)=3.0 to 7.7 GeV and find rescattering can substantially suppress higher-order cumulant ratios.</p>
+        <p><strong>Why it matters:</strong> Critical-point searches hinge on separating genuine critical fluctuation signals from late-stage hadronic backgrounds. A roughly 20% reduction in C4/C2 near 4.9 GeV is large enough to matter for interpretation.</p>
+        <p><strong>Critical assessment:</strong> Strong as a controlled correction study with a clear target observable. The simplified geometry means it should not be overread as a direct experimental correction, but the direction and scale of the effect are important.</p>
+      </article>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.28297 ALICE strangeness baryon enhancement heavy-quark hadronisation pp Pb-Pb Lambda_c D0 Xi_c Ds Fabrizio Chinu experiment mixed">
+        <div class="paper-head"><h4>The role of strangeness and baryon enhancement in heavy-quark hadronisation from pp to Pb-Pb collisions with ALICE</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Fabrizio Chinu for the ALICE Collaboration | <a href="https://arxiv.org/abs/2608.28297">arXiv:2608.28297</a> | Experiment</p>
+        <p>This short SQM2026 proceeding summarizes ALICE charm-meson and charm-baryon measurements, including Lambda_c+/D0 in pp at 13.6 TeV, Xi_c0 RAA in Pb-Pb at 5.02 TeV, Ds+/D+ across pp to Pb-Pb, and Ds1(2536)+/Ds+.</p>
+        <p><strong>Why it matters:</strong> Heavy-flavor baryon/strangeness enhancement remains one of the key handles on hadronization in dense and high-multiplicity QCD environments.</p>
+        <p><strong>Critical assessment:</strong> Useful as an experimental status snapshot, but scientifically limited as a four-page proceedings contribution. The underlying ALICE measurements are the real payload; this is a pointer rather than a full analysis paper.</p>
+      </article>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.28189 System-size dependence strangeness production pp PbPb K pi horn SMASH PHSD core-corona SMES Neeraj Amal Sarkar strong phenomenology">
+        <div class="paper-head"><h4>System-size dependence of strangeness production from p+p to Pb+Pb: quantitative tests of the K+/pi+ horn</h4><span class="label strong">strong</span></div>
+        <p class="meta">Neeraj, Amal Sarkar (2 authors) | <a href="https://arxiv.org/abs/2608.28189">arXiv:2608.28189</a> | Phenomenology</p>
+        <p>The paper confronts SMASH, PHSD, core-corona, canonical suppression, and SMES descriptions with NA61/SHINE, NA49, and STAR K+/pi+ data across a broad system-size ladder. It reports that no single framework describes the full range, with transport models failing to generate the horn and a 3.7 sigma double-ratio step between light and heavy systems.</p>
+        <p><strong>Why it matters:</strong> The system-size dependence of strangeness production is a sensitive discriminator between geometry, canonical conservation, and genuine thermodynamic equilibration scenarios.</p>
+        <p><strong>Critical assessment:</strong> Strong because it compares multiple model classes using explicit chi-square tests and uses cancellation-friendly double ratios. The main caveat is reliance on preliminary Xe+La inputs for part of the discrimination.</p>
+      </article>
+      <article class="paper" data-search="2608.28456 thermal broadening light hadron production heavy-ion collisions rho omega FastReso blast-wave PbPb XeXe Q'inich Coc Oscar Garcia-Montero Aleksas Mazeliauskas mixed phenomenology">
+        <div class="paper-head"><h4>Effect of Thermal Broadening on Light Hadron Production in Heavy-Ion Collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Q'inich Coc, Oscar Garcia-Montero, Aleksas Mazeliauskas (3 authors) | <a href="https://arxiv.org/abs/2608.28456">arXiv:2608.28456</a> | Phenomenology</p>
+        <p>The authors generalize FastReso to finite-width in-medium spectral functions and test rho/omega thermal broadening in resonance-decay feed-down to pion, kaon, and proton spectra. Simultaneous blast-wave fits to central Pb-Pb and Xe-Xe spectra show extra low-pT pion yield that reduces, but does not solve, the soft-pion discrepancy.</p>
+        <p><strong>Why it matters:</strong> It targets a concrete systematic in thermal-model and particlization-to-hadron-decay pipelines: if resonances are in medium, their spectral widths should not be silently treated as vacuum-like.</p>
+        <p><strong>Critical assessment:</strong> Good, focused phenomenology with practical code-level implications. The result is intentionally modest, and broader resonance content plus dynamical freeze-out effects remain open.</p>
+      </article>
+      <article class="paper" data-search="2608.28277 Upsilon suppression color screening thermal decay quarkonium RHIC Yida Yang Baoyi Chen Jiaxing Zhao Pengfei Zhuang caution mixed phenomenology">
+        <div class="paper-head"><h4>Color screening versus thermal decay as the mechanism of Upsilon suppression in high energy nuclear collisions</h4><span class="label mixed">mixed / caution</span></div>
+        <p class="meta">Yida Yang, Baoyi Chen, Jiaxing Zhao, Pengfei Zhuang (4 authors) | <a href="https://arxiv.org/abs/2608.28277">arXiv:2608.28277</a> | Phenomenology</p>
+        <p>This short paper compares Upsilon suppression at RHIC using a transport equation driven by suppression rates. It argues that sudden color-screening suppression cannot describe ground and excited states simultaneously, whereas continuous thermal decay can reproduce the available measurements.</p>
+        <p><strong>Why it matters:</strong> Separating screening from inelastic thermal parton scattering is central to quarkonium tomography.</p>
+        <p><strong>Critical assessment:</strong> Worth reading, but the phrase "strong evidence" should be treated cautiously. A six-page, three-figure model comparison based on one observable class is suggestive, not a definitive mechanism separation.</p>
+      </article>
+      <h3>AI/ML use</h3>
+      <p>The heavy-ion-adjacent AI/ML papers are listed in the dedicated AI/ML section below because their methods transfer across HEP/nuclear workflows rather than belonging to a single heavy-ion observable.</p>
+    </section>
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2608.27683 Direct Bayesian Inference Helicity Amplitudes detector-level scattering score-based diffusion posterior forward simulator coverage EIC strong AI ML nuclear experiment">
+        <div class="paper-head"><h4>Direct Bayesian Inference of Helicity Amplitudes from Detector-Level Scattering Data</h4><span class="label strong">strong</span></div>
+        <p class="meta">Bhawani Singh, Harut Avakian, Shohini Bhattacharya, Volker D. Burkert, Latifa Elouadrhiri, Derek I. Glazier, Valery Kubarovsky, Dillon Leahy, Yaohang Li, Richard G. Milner, Yijie Wang (11 authors) | <a href="https://arxiv.org/abs/2608.27683">arXiv:2608.27683</a></p>
+        <p>A score-based diffusion model, trained on a forward simulator, returns full posteriors for identifiable helicity-amplitude parameters directly from detector-level scattering measurements. The abstract reports empirical coverage, retained correlations, robustness in weakly constrained sectors, and transfer to a realistic detector response absent from training.</p>
+        <p><strong>Likely use case:</strong> Partial-wave analysis, exclusive vector-meson programs, EIC amplitude extraction, and more generally detector-aware inverse problems where unfolding and physics inference should be coupled.</p>
+        <p><strong>Critical assessment:</strong> Strong because it addresses a real statistical bottleneck and evaluates posterior behavior rather than only point-estimate accuracy. The next important test is performance on real data and realistic systematic uncertainty models.</p>
+      </article>
+      <article class="paper" data-search="2608.28232 HEPToolBench language models particle physics software collider simulation typed representation deterministic scorers MadGraph Pythia Delphes strong AI ML">
+        <div class="paper-head"><h4>HEPToolBench 1.2: Testing How Reliably Language Models Can Drive Particle Physics Software</h4><span class="label strong">strong</span></div>
+        <p class="meta">Aadarsh Singh, Sudhir K. Vempati (2 authors) | <a href="https://arxiv.org/abs/2608.28232">arXiv:2608.28232</a></p>
+        <p>This benchmark evaluates 42 model deployments on collider-simulation tasks with deterministic task-specific scorers. Its key result is that schema-mediated typed representations substantially outperform direct generation of native HEP-tool syntax, with pass counts rising from 21/210 to 159/210 in the matched comparison.</p>
+        <p><strong>Likely use case:</strong> Safer LLM interfaces for MadGraph/Pythia/Delphes-style workflows, internal analysis assistants, reproducible workflow builders, and benchmark design for scientific agents.</p>
+        <p><strong>Critical assessment:</strong> Strong and refreshingly careful about scorer asymmetries and runtime caveats. The benchmark measures artifact correctness, not full scientific validity, but that boundary is stated clearly.</p>
+      </article>
+      <article class="paper" data-search="2608.28244 HEPLocalAgent local collider simulations plain-language requests deterministic backend expert approval MadGraph Pythia8 Delphes MadAnalysis mixed AI ML caution">
+        <div class="paper-head"><h4>HEPLocalAgent 1.0: Running Collider Simulations from Plain-Language Requests on Your Own Computer</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Aadarsh Singh, Sudhir K. Vempati (2 authors) | <a href="https://arxiv.org/abs/2608.28244">arXiv:2608.28244</a></p>
+        <p>HEPLocalAgent builds bounded collider-simulation workflows from natural language by having an LLM propose a typed workflow that deterministic software validates and serializes. The authors report improved benchmark artifacts after deterministic repair, four of seven approved workflows running to completion, and explicit limitations around MadAnalysis routing and OS-level containment.</p>
+        <p><strong>Likely use case:</strong> Local, approval-gated workflow construction for standard collider simulation chains; useful for lowering friction but not replacing expert review.</p>
+        <p><strong>Critical assessment:</strong> Useful and honest, but not an autonomous science agent. The dropped/defaulted/reinterpreted request cases are exactly where a production HEP assistant would need stronger provenance and user-facing diffing.</p>
+      </article>
+      <article class="paper" data-search="2608.28314 HIBEAM NNBAR vertex reconstruction TPC graph neural network classical methods neutron antineutron conversions mixed AI ML detector">
+        <div class="paper-head"><h4>Vertex reconstruction for a search for neutron-antineutron conversions with HIBEAM</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Alexander Burgman, Sze Chun Yiu, Yamna Shaikh, David Milstead, Eily Merjy, Lucas Astrand, Kenneth Osterberg, Fredrik Oljemark, Matthias Holl, Valentina Santoro, Andre Nepomuceno, Joshua L. Barrow (12 authors) | <a href="https://arxiv.org/abs/2608.28314">arXiv:2608.28314</a></p>
+        <p>The paper compares deterministic clustering, trackless projection, and hybrid graph-neural-network reconstruction for foil-plane vertices in a TPC-based neutron-antineutron conversion search. For geometrically simple events, classical reconstruction performs on par with the ML chain for vertex coordinates, while ML can add event-shape information.</p>
+        <p><strong>Likely use case:</strong> A useful benchmark for deciding when GNN reconstruction is scientifically justified in sparse detector topologies, including low-multiplicity nuclear and fixed-target TPC analyses.</p>
+        <p><strong>Critical assessment:</strong> Strong as a cautionary evaluation: ML is not forced into the result when classical methods already solve the main observable. Transfer value is high for detector-method benchmarking.</p>
+      </article>
+      <article class="paper" data-search="2608.28375 Localizing Global Discrepancies contextual anomaly detection MMD LHC Olympics Tommaso Dorigo event-level anomaly detection strong AI ML">
+        <div class="paper-head"><h4>Localizing Global Discrepancies: Marginal Contributions and Contextual Anomaly Detection</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tommaso Dorigo (1 author) | <a href="https://arxiv.org/abs/2608.28375">arXiv:2608.28375</a></p>
+        <p>This statistics/ML paper assigns observation-level contributions to global discrepancy tests and connects the construction to influence functions, U-statistics, and MMD witnesses. On the LHC Olympics anomaly benchmark, the efficient pair estimator reproduces the direct MMD witness with very high correlation and essentially identical AUC in the reported setting.</p>
+        <p><strong>Likely use case:</strong> Model-agnostic anomaly localization, data-quality debugging, and event-level explanation of distributional shifts in collider or nuclear event samples.</p>
+        <p><strong>Critical assessment:</strong> Strong and mathematically grounded. The shared-latent toy example is especially useful because it clarifies when context adds real class information beyond single-event features.</p>
+      </article>
+      <article class="paper" data-search="2608.21756 How Architecture and Training Affect TPC Representations Across Experiments sparse ResNet PointNet frozen encoders GADGET AT-TPC nuclear experiment reusable detector models mixed strong AI ML">
+        <div class="paper-head"><h4>How Architecture and Training Affect TPC Representations Across Experiments</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tyler Wheeler, Michelle P. Kuchera, Raghuram Ramanujan, William Sieland, Ryan Krupp, Yassid Ayyad, Daniel Bazin, Connor L. Cross, Hoi Yan Ian Heung, Andrew J. Jones, Ruchi Mahajan, Saiprasad Ravishankar, Pranjal Singh, Benjamin Votaw, Chris Wrede (15 authors) | <a href="https://arxiv.org/abs/2608.21756">arXiv:2608.21756</a> | revised 2026-08-27</p>
+        <p>This revised paper probes frozen sparse-ResNet and PointNet-style TPC encoders across GADGET II and AT-TPC tasks, including random-weight controls. A notable result is that architecture-induced structure itself can remain informative across detectors, and neither architecture shows a large systematic cross-detector utility loss.</p>
+        <p><strong>Likely use case:</strong> Representation-learning evaluation for TPCs, heavy-ion tracking detectors, and nuclear active-target detectors where reusable embeddings are attractive but must be separated from architecture priors.</p>
+        <p><strong>Critical assessment:</strong> Strong because the random-weight controls directly test a common overclaim in foundation-model work: that downstream performance necessarily proves learned transferable physics structure.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.28277 Upsilon suppression strong evidence caution thermal decay color screening quarkonium">
+        <div class="paper-head"><h4>Quarkonium mechanism separation claims in arXiv:2608.28277</h4><span class="label caution">caution</span></div>
+        <p>The Upsilon suppression paper is interesting and relevant, but its abstract-level claim of "strong evidence" that thermal parton scattering dominates over color screening should be read as model-dependent. A short transport comparison to RAA data is valuable, yet mechanism separation in quarkonium generally needs broader observables, uncertainty propagation, feed-down treatment, and cross-energy/system checks.</p>
+      </article>
+      <article class="paper" data-search="2608.28244 HEPLocalAgent caution autonomous language model collider simulations expert approval">
+        <div class="paper-head"><h4>Autonomy framing around HEPLocalAgent</h4><span class="label caution">caution</span></div>
+        <p>HEPLocalAgent is worthwhile because it is bounded and approval-gated, but it should not be cited as evidence that LLMs can autonomously run scientifically valid collider simulations. The paper itself says reliable MadAnalysis routing was not demonstrated and OS-level containment was not established.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
