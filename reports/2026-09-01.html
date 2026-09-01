@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-01</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-01 Briefing</h1>
+    <p class="dek">Heavy-ion and physics-AI scan of recent arXiv submissions, centered on papers announced or submitted around 31 Aug-1 Sep 2026. Selection is intentionally narrow: 7 papers included and 1 caution item.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest experimental contribution is LHCb SMOG2's fixed-target pAr/pp charmonium-ratio measurement, which gives a clean cold-nuclear-matter baseline for future larger-system interpretations.</li>
+        <li>Small-x/TMD phenomenology receives a technically useful warning: JIMWLK evolution can spoil Gaussian-truncation accuracy for many gluon and quark-gluon TMDs, so approximations need observable-by-observable validation.</li>
+        <li>Spin alignment and strangeness/hadronization studies remain active, with useful model baselines, but their conclusions are more qualitative because they depend on equilibrium assumptions or generator/blast-wave ingredients.</li>
+        <li>The most credible AI/ML paper is the lattice-QCD bias-correction study: it treats ML as a cost-reduction estimator and explicitly checks nonlinear downstream bias rather than just reporting regression accuracy.</li>
+        <li>A computer-vision paper cross-listed to hep-ex appears scientifically respectable as CV, but its abstract gives no HEP dataset, detector task, or physics validation; it should not be treated as physics-AI evidence without more domain grounding.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2608.30534 LHCb charmonium psi(2S) J/psi pAr pp SMOG2 cold nuclear matter experiment">
+        <div class="paper-head"><h4>First measurement of the ratio of psi(2S)-to-J/psi inclusive production in pAr and pp collisions at sqrt(sNN)=113 GeV with SMOG2</h4><span class="label strong">strong</span></div>
+        <p class="meta">LHCb collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, F. Abudinen, et al. (1191 authors) | <a href="https://arxiv.org/abs/2608.30534">arXiv:2608.30534</a></p>
+        <p><strong>Summary:</strong> LHCb reports a fixed-target measurement of the psi(2S)-to-J/psi production cross-section ratio in pAr and pp at sqrt(sNN)=113 GeV using SMOG2 gas targets. The double ratio pAr/pp is 0.90 +/- 0.04 +/- 0.02 over -2.3 &lt; y* &lt; 0.0 and 0 &lt; pT &lt; 8 GeV/c, indicating measurable nuclear effects in the pAr system.</p>
+        <p><strong>Why it matters:</strong> The measurement directly supports interpretation of quarkonium suppression and nuclear-matter effects in future LHCb fixed-target and larger-system data.</p>
+        <p><strong>Critical assessment:</strong> Strong because it is a first measurement in a constrained kinematic regime with a clean pp reference from the same fixed-target program. The abstract-level caveat is that detailed systematics, feed-down treatment, and model comparison need inspection before over-interpreting the mechanism.</p>
+        <p><strong>Abstract:</strong> A measurement of the psi(2S)-to-J/psi production cross-section ratio is performed in proton-argon and proton-proton collisions in fixed-target mode at sqrt(sNN)=113 GeV. The ratio is measured versus transverse momentum and rapidity, and the pAr-over-pp double ratio indicates the emergence of nuclear effects.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2608.30687 small-x TMD JIMWLK Gaussian truncation CGC saturation nuclear PDFs phenomenology">
+        <div class="paper-head"><h4>Small-x TMD distributions: JIMWLK evolution and the Gaussian truncation</h4><span class="label strong">strong</span></div>
+        <p class="meta">Florian Cougoulic, Piotr Korcyl | <a href="https://arxiv.org/abs/2608.30687">arXiv:2608.30687</a></p>
+        <p><strong>Summary:</strong> The paper evolves small-x TMD distributions with JIMWLK dynamics from McLerran-Venugopalan initial conditions and compares the result with Gaussian truncation of the Balitsky hierarchy. It finds that Gaussian truncation, though good at the initial condition, fails for many evolved distributions.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion and EIC phenomenology often leans on controlled approximations in the CGC/saturation regime; this work identifies where those approximations may break down for phenomenologically relevant observables.</p>
+        <p><strong>Critical assessment:</strong> Strong technical contribution. Its value is methodological rather than immediately data-facing, but the observable-by-observable failure analysis is exactly the kind of approximation audit the field needs.</p>
+        <p><strong>Abstract:</strong> The authors study energy evolution for three quark-gluon and seven gluon-gluon small-x TMD distributions using JIMWLK evolution at fixed Nc=3, compare to Gaussian truncation, and show that the truncation often fails after evolution.</p>
+      </article>
+
+      <article class="paper" data-search="2608.30930 spin alignment vector mesons rho00 holography strange charm QGP angular velocity baryon chemical potential">
+        <div class="paper-head"><h4>Medium effect on spin alignment of strange and charm vector mesons</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ruixiang Chen, Hiwa A. Ahmed, Yidian Chen, Mei Huang | <a href="https://arxiv.org/abs/2608.30930">arXiv:2608.30930</a></p>
+        <p><strong>Summary:</strong> This study uses a four-flavor soft-wall holographic model at finite temperature, baryon chemical potential, and angular velocity to compute spin-resolved spectral functions for K*, phi, D*, Ds*, and J/psi. It predicts flavor-separated behavior in rho00, with charm vector mesons above 1/3 at low pT and strange vector mesons below 1/3.</p>
+        <p><strong>Why it matters:</strong> Vector-meson spin alignment is a persistent heavy-ion puzzle, and the paper gives an equilibrium in-medium baseline across flavor sectors.</p>
+        <p><strong>Critical assessment:</strong> Interesting and relevant, but mixed: holographic spectral-function modeling plus instantaneous freeze-out can clarify mechanisms, yet it is not a full dynamical description. Treat the qualitative trends as baseline physics, not a settled explanation of the data.</p>
+        <p><strong>Abstract:</strong> The authors determine spin alignment from medium-induced splitting of spin-resolved vector-current spectral functions and report qualitative agreement with low- and intermediate-pT trends, while finding weak sensitivity to baryon chemical potential and angular velocity.</p>
+      </article>
+
+      <article class="paper" data-search="2608.30891 phi omega strangeness recombination jet showers Q-PYTHIA HIJING coalescence blast-wave heavy-ion">
+        <div class="paper-head"><h4>Production of the phi and Omega via recombination of jet parton showers in relativistic heavy ion collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Kyong Chol Han, Sungtae Cho, Su Houng Lee | <a href="https://arxiv.org/abs/2608.30891">arXiv:2608.30891</a></p>
+        <p><strong>Summary:</strong> The paper studies phi(1020) and Omega(1672) production at sqrt(sNN)=5.02 TeV using both a coalescence model and a hybrid shower-thermal recombination plus remnant string-fragmentation framework. It uses blast-wave thermal partons and Q-PYTHIA/HIJING shower inputs, reporting good agreement with measurements.</p>
+        <p><strong>Why it matters:</strong> Strange hadron production is a sensitive hadronization probe, especially in the intermediate-pT region where thermal recombination and jet fragments can overlap.</p>
+        <p><strong>Critical assessment:</strong> Worth reading but mixed. Agreement with data is encouraging, yet the framework combines several phenomenological components, so the discriminating power depends on whether parameter choices and uncertainties are constrained tightly.</p>
+        <p><strong>Abstract:</strong> Two complementary approaches are used for phi and Omega production in heavy-ion collisions, including a hybrid recombination/string-fragmentation setup; both are said to reproduce experimental measurements and illuminate strangeness components.</p>
+      </article>
+
+      <article class="paper" data-search="2608.31173 quantum simulation open quantum systems non-Markovian Markovian heavy-ion jets heavy quarks quarkonia">
+        <div class="paper-head"><h4>Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Doojin Kim, Balbeer Singh | <a href="https://arxiv.org/abs/2608.31173">arXiv:2608.31173</a></p>
+        <p><strong>Summary:</strong> The authors propose a quantum-computing framework for Markovian and non-Markovian open quantum systems relevant to heavy-ion probes. The non-Markovian case is represented through an auxiliary two-level pseudomode carrying memory and reproducing the target kernel after tracing out that mode.</p>
+        <p><strong>Why it matters:</strong> Open-system dynamics are central for heavy quarks, quarkonia, and jet-medium interactions, and efficient quantum simulation could eventually help where classical methods are expensive.</p>
+        <p><strong>Critical assessment:</strong> Conceptually useful, but currently mixed: it establishes a framework and feasibility argument rather than a validated heavy-ion calculation. The practical value depends on scaling, noise tolerance, and whether realistic kernels and observables can be handled.</p>
+        <p><strong>Abstract:</strong> The paper introduces a pseudomode-based quantum circuit construction for non-Markovian open-system evolution and shows convergence to the Markovian limit under relevant time-scale hierarchy assumptions.</p>
+      </article>
+
+      <article class="paper" data-search="2608.30264 thermal photons chirally imbalanced QGP HTL photon emission rate chiral imbalance">
+        <div class="paper-head"><h4>High energy thermal photons from chirally imbalanced QGP</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Sourav Duari, Nilanjan Chaudhuri, Pradip Roy, Sourav Sarkar | <a href="https://arxiv.org/abs/2608.30264">arXiv:2608.30264</a></p>
+        <p><strong>Summary:</strong> This paper computes thermal photon emission from a chirally asymmetric QGP, combining a new hard contribution with prior soft HTL/Braaten-Pisarski treatment and demonstrating cutoff independence. It finds that chiral imbalance enhances the high-energy thermal photon rate.</p>
+        <p><strong>Why it matters:</strong> Thermal photons are among the few penetrating probes of early QGP conditions, and chiral imbalance links electromagnetic emission to anomalous transport physics.</p>
+        <p><strong>Critical assessment:</strong> Relevant but incremental from the abstract. The calculation may be useful as a rate ingredient, but phenomenological strength will depend on embedding in realistic space-time evolution and confronting photon spectra/flow constraints.</p>
+        <p><strong>Abstract:</strong> The authors compute hard thermal photon production from chiral quark scattering and combine it with a previous soft contribution, finding an overall enhancement when chiral imbalance is present.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-search="2608.30416 lattice QCD machine learning bias correction chiral condensate cumulants Dirac operator reweighting cost reduction">
+        <div class="paper-head"><h4>Bias-Corrected Machine-Learning Estimation of Chiral Condensate Cumulants: A Retrospective Lattice QCD Case Study</h4><span class="label strong">strong</span></div>
+        <p class="meta">Benjamin J. Choi, Hiroshi Ohno, Akio Tomiya | <a href="https://arxiv.org/abs/2608.30416">arXiv:2608.30416</a></p>
+        <p><strong>Method and result:</strong> The paper tests supervised ML estimators for traces of inverse Dirac operators on a fixed lattice-QCD dataset, with explicit bias correction and downstream checks on chiral-condensate cumulants and multi-ensemble reweighting. In the studied setup, bias-corrected estimates track the full-data reference while uncorrected estimates can drift after nonlinear cumulant/reweighting steps; nominal solve-count accounting suggests reducing inversion cost to about 25.75% of the conventional calculation.</p>
+        <p><strong>Likely use case for HEP/nuclear physics:</strong> Cost-controlled surrogate estimation for expensive lattice observables, with the same bias-correction logic transferable to emulator-assisted heavy-ion parameter inference and expensive detector/calibration estimators.</p>
+        <p><strong>Critical assessment:</strong> Strong by physics-AI standards because it targets a concrete computational bottleneck and explicitly audits bias propagation. The authors are appropriately cautious that the cost number is a projection, not an end-to-end benchmark including training and analysis overhead.</p>
+        <p><strong>Abstract:</strong> The work studies bias-corrected ML estimates of Tr M^-n for n=1-4, evaluates derived chiral-condensate cumulants and reweighting applications, and emphasizes the risks of uncorrected estimates in nonlinear downstream analyses.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2608.30183 ConCA concentration-aware channel attention fine-grained visual recognition hep-ex cross-list caution no detector validation">
+        <div class="paper-head"><h4>ConCA: Concentration-Aware Channel Attention for Fine-Grained Visual Recognition</h4><span class="label caution">caution</span></div>
+        <p class="meta">Yu-Sheng Liu, Yu-Chen Tung | <a href="https://arxiv.org/abs/2608.30183">arXiv:2608.30183</a></p>
+        <p><strong>Why caution:</strong> The paper may be a valid computer-vision contribution, but the abstract describes FGVR benchmarks and image backbones, not a detector, event reconstruction, physics-analysis, or HEP-specific validation problem. Its hep-ex cross-listing should therefore be treated as weak evidence of relevance until the full paper demonstrates a concrete HEP task.</p>
+        <p><strong>Critical assessment:</strong> Not selected as a physics-AI paper. Potential transfer to detector imaging or particle-identification workflows is speculative from the abstract alone.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>

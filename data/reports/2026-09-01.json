@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-01",
+  "path": "reports/2026-09-01.html",
+  "summary": "Recent selected papers emphasize charmonium cold-nuclear-matter baselines, small-x TMD evolution, vector-meson spin alignment, strangeness recombination, thermal photon rates in chirally imbalanced QGP, quantum-simulation frameworks for open heavy-ion dynamics, and bias-corrected ML estimators for lattice-QCD cumulants.",
+  "keywords": [
+    "charmonium nuclear effects",
+    "SMOG2 fixed target",
+    "small-x TMD evolution",
+    "JIMWLK Gaussian truncation",
+    "vector-meson spin alignment",
+    "strangeness recombination",
+    "thermal photons",
+    "open quantum systems",
+    "bias-corrected lattice QCD ML"
+  ],
+  "arxiv_ids": ["2608.30534", "2608.30687", "2608.30930", "2608.30891", "2608.31173", "2608.30264", "2608.30416"],
+  "total_paper_count": 7,
+  "represented_categories": ["Experiment", "Phenomenology", "AI/ML use"],
+  "strongest_paper_summary": "LHCb SMOG2's psi(2S)-to-J/psi pAr/pp double-ratio measurement and the JIMWLK small-x TMD approximation audit are the most immediately useful heavy-ion contributions; the lattice-QCD ML study is the strongest physics-AI paper because it directly tests bias propagation.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "First measurement of the ratio of psi(2S)-to-J/psi inclusive production in pAr and pp collisions at sqrt(sNN)=113 GeV with SMOG2",
+      "short_authors": "LHCb collaboration: R. Aaij, M. Abdelfatah, A.S.W. Abdelmotteleb, C. Abellan Beteta, F. Abudinen, et al.",
+      "total_author_count": 1191,
+      "arxiv_id": "2608.30534",
+      "url": "https://arxiv.org/abs/2608.30534",
+      "category": "Experiment",
+      "abstract": "A measurement of the psi(2S)-to-J/psi production cross-section ratio is performed in proton-argon and proton-proton collisions in fixed-target mode at sqrt(sNN)=113 GeV. The pAr-over-pp double ratio is 0.90 +/- 0.04 +/- 0.02, indicating nuclear effects in the pAr system.",
+      "tags": ["charmonium", "cold nuclear matter", "SMOG2", "fixed target"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Small-x TMD distributions: JIMWLK evolution and the Gaussian truncation",
+      "short_authors": "Florian Cougoulic, Piotr Korcyl",
+      "arxiv_id": "2608.30687",
+      "url": "https://arxiv.org/abs/2608.30687",
+      "category": "Phenomenology",
+      "abstract": "The authors evolve small-x quark-gluon and gluon-gluon TMD distributions with JIMWLK dynamics and compare against Gaussian truncation of the Balitsky hierarchy, finding that the truncation fails for many evolved distributions.",
+      "tags": ["small-x", "TMD", "JIMWLK", "CGC"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Medium effect on spin alignment of strange and charm vector mesons",
+      "short_authors": "Ruixiang Chen, Hiwa A. Ahmed, Yidian Chen, Mei Huang",
+      "arxiv_id": "2608.30930",
+      "url": "https://arxiv.org/abs/2608.30930",
+      "category": "Phenomenology",
+      "abstract": "A four-flavor soft-wall holographic framework is used to compute spin-resolved spectral functions and rho00 trends for strange and charm vector mesons in finite-temperature, finite-density, rotating medium conditions.",
+      "tags": ["spin alignment", "vector mesons", "holography", "QGP medium"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Production of the phi and Omega via recombination of jet parton showers in relativistic heavy ion collisions",
+      "short_authors": "Kyong Chol Han, Sungtae Cho, Su Houng Lee",
+      "arxiv_id": "2608.30891",
+      "url": "https://arxiv.org/abs/2608.30891",
+      "category": "Phenomenology",
+      "abstract": "The paper combines coalescence and a hybrid shower-thermal recombination plus remnant string-fragmentation framework to describe phi and Omega production in sqrt(sNN)=5.02 TeV heavy-ion collisions.",
+      "tags": ["strangeness", "recombination", "jet showers", "coalescence"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Quantum Simulation of Markovian and Non-Markovian Open Quantum Dynamics in Heavy-Ion Collisions",
+      "short_authors": "Doojin Kim, Balbeer Singh",
+      "arxiv_id": "2608.31173",
+      "url": "https://arxiv.org/abs/2608.31173",
+      "category": "Phenomenology",
+      "abstract": "The authors propose a quantum-computing framework for Markovian and non-Markovian open quantum systems, using an auxiliary pseudomode to carry memory and reproduce the target memory kernel.",
+      "tags": ["open quantum systems", "quantum simulation", "quarkonia", "hard probes"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "High energy thermal photons from chirally imbalanced QGP",
+      "short_authors": "Sourav Duari, Nilanjan Chaudhuri, Pradip Roy, Sourav Sarkar",
+      "arxiv_id": "2608.30264",
+      "url": "https://arxiv.org/abs/2608.30264",
+      "category": "Phenomenology",
+      "abstract": "The paper computes hard thermal photon emission from a chirally asymmetric QGP and combines it with previous soft HTL results, finding an enhanced emission rate in the presence of chiral imbalance.",
+      "tags": ["thermal photons", "chiral imbalance", "HTL", "QGP"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Bias-Corrected Machine-Learning Estimation of Chiral Condensate Cumulants: A Retrospective Lattice QCD Case Study",
+      "short_authors": "Benjamin J. Choi, Hiroshi Ohno, Akio Tomiya",
+      "arxiv_id": "2608.30416",
+      "url": "https://arxiv.org/abs/2608.30416",
+      "category": "AI/ML use",
+      "abstract": "The paper tests bias-corrected supervised ML estimates of inverse-Dirac-operator traces and derived chiral-condensate cumulants, showing agreement with full-data references under the adopted criteria and warning that uncorrected estimates can amplify downstream deviations.",
+      "tags": ["lattice QCD", "bias correction", "chiral cumulants", "ML surrogate"],
+      "assessment": "strong"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "ConCA: Concentration-Aware Channel Attention for Fine-Grained Visual Recognition",
+      "short_authors": "Yu-Sheng Liu, Yu-Chen Tung",
+      "arxiv_id": "2608.30183",
+      "url": "https://arxiv.org/abs/2608.30183",
+      "category": "Caution",
+      "abstract": "The abstract presents a general computer-vision channel-attention module evaluated on fine-grained visual-recognition benchmarks, without a detector, reconstruction, or physics-analysis validation task.",
+      "tags": ["computer vision", "channel attention", "weak HEP grounding"],
+      "assessment": "caution"
+    }
+  ]
+}
