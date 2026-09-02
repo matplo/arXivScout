@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-02",
+  "path": "reports/2026-09-02.html",
+  "summary": "Recent relevant submissions emphasize geometry-response limits in relativistic heavy-ion inference, femtoscopic sensitivity to the dense-matter equation of state, small-x saturation observables in UPC/diffractive heavy-quark production, and practical AI/ML workflows for nuclear DFT, dipole-evolution surrogates, HEP anomaly detection, and scientific data compression.",
+  "keywords": ["heavy-ion geometry", "nuclear surface diffuseness", "femtoscopy", "dense-matter EOS", "small-x saturation", "gluon TMDs", "nuclear DFT ML", "HEP anomaly detection", "scientific compression", "PDE surrogates"],
+  "arxiv_ids": ["2609.01229", "2609.00897", "2609.01163", "2609.00836", "2609.00230", "2609.00132", "2608.30262", "2608.30328"],
+  "total_paper_count": 8,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use", "AI/ML use cases in physics"],
+  "strongest_paper_summary": "arXiv:2609.01229 gives the most directly useful heavy-ion contribution: it quantifies parameter degeneracies that limit extraction of nuclear surface diffuseness from geometry-driven observables.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "Fundamental geometric limitations on disentangling nuclear-surface properties in relativistic heavy ion collisions",
+      "authors_short": "Hadi Mehrabpour, Behnaz Behzadmoghaddam, S. M. A. Tabatabaee Mehr, Oscar Garcia-Montero, Li Yan",
+      "author_count": 5,
+      "arxiv_id": "2609.01229",
+      "url": "https://arxiv.org/abs/2609.01229",
+      "category": "Theory",
+      "abstract": "The extraction of the nuclear surface diffuseness from relativistic heavy ion collisions is limited by the intertwined responses of geometry-driven observables to surface diffuseness and intrinsic nuclear deformation. The authors use event-by-event Monte Carlo Glauber simulations, multidimensional response maps, information-geometric measures, and Bayesian analysis to identify local degeneracies among surface diffuseness and quadrupole/octupole deformation parameters.",
+      "tags": ["geometry response", "surface diffuseness", "deformation", "Bayesian constraints"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Femtoscopy as a New Probe of the Nuclear Equation of State",
+      "authors_short": "Xialei Jiang, Jiaxing Zhao, Yingjie Zhou, Xiaofeng Luo",
+      "author_count": 4,
+      "arxiv_id": "2609.00897",
+      "url": "https://arxiv.org/abs/2609.00897",
+      "category": "Phenomenology",
+      "abstract": "Using PHQMD transport calculations for Au+Au at sqrt(sNN)=3, 4.5, 7.7, and 19.6 GeV, the paper argues that nuclear mean fields add a dynamical low-k* contribution to two- and three-body femtoscopic correlations, with sensitivity to equation-of-state stiffness and momentum dependence.",
+      "tags": ["femtoscopy", "PHQMD", "dense baryonic matter", "EOS"],
+      "assessment": "strong-to-mixed"
+    },
+    {
+      "title": "Saturation effects in diffractive deep inelastic scattering",
+      "authors_short": "Jani Penttala, Christophe Royon, Jarno Vierros",
+      "author_count": 3,
+      "arxiv_id": "2609.01163",
+      "url": "https://arxiv.org/abs/2609.01163",
+      "category": "Phenomenology",
+      "abstract": "The paper compares inclusive and diffractive heavy-quark photoproduction predictions with nonlinear BK and linear BFKL dipole evolution, focusing on UPC-accessible kinematics. It predicts roughly doubled coherent diffractive fractions in the saturation model relative to PDF/shadowing baselines.",
+      "tags": ["small-x", "saturation", "UPCs", "diffractive heavy quarks"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Neural-Network-Based Variational Method in Nuclear Density Functional Theory: Application to the Kohn-Sham method",
+      "authors_short": "Kenta Yoshimura, Kazuyuki Sekizawa",
+      "author_count": 2,
+      "arxiv_id": "2609.00836",
+      "url": "https://arxiv.org/abs/2609.00836",
+      "category": "AI/ML use",
+      "abstract": "The authors represent complex spinor single-particle orbitals with multilayer perceptrons in a Kohn-Sham nuclear DFT setting, analyze tangent-space equivalence to the variational condition, and compare binding energies, charge radii, deformations, and nuclear pasta configurations against conventional calculations and experiment where applicable.",
+      "tags": ["nuclear DFT", "variational neural networks", "Kohn-Sham", "GPU-oriented computing"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Probing Dense Nuclear Matter at Small-x: A workflow for a global analysis framework",
+      "authors_short": "Junaid S. Khan, Rebecca L. Lustberg, Fredrick Olness, Peter Risse, Bjoern Schenke, Brandon Stevenson",
+      "author_count": 6,
+      "arxiv_id": "2609.00230",
+      "url": "https://arxiv.org/abs/2609.00230",
+      "category": "AI/ML use",
+      "abstract": "This proceedings contribution proposes ML surrogates for nonlinear dipole-nucleus evolution to reduce the computational cost of global analyses while retaining accuracy on relevant experimental-data descriptions.",
+      "tags": ["dipole evolution", "ML surrogate", "global analysis", "small-x nuclei"],
+      "assessment": "mixed-to-strong"
+    },
+    {
+      "title": "Anomaly detection for multijet scenarios",
+      "authors_short": "Gregor Kasieczka, Sung Hak Lim, Louis Moureaux, Tore von Schwartz, David Shih, Chitrakshee Yede",
+      "author_count": 6,
+      "arxiv_id": "2609.00132",
+      "url": "https://arxiv.org/abs/2609.00132",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The paper extends weakly supervised HEP anomaly detection beyond dijet-resonance assumptions by combining recursive soft drop with CATHODE for arbitrary multijet final states.",
+      "tags": ["anomaly detection", "weak supervision", "jet substructure", "CATHODE"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Multivariate Scientific Data Compression with Learned Cross-Variable Latent Decorrelation and Autoregressive Entropy Modeling",
+      "authors_short": "Liangji Zhu, Anand Rangarajan, Sanjay Ranka",
+      "author_count": 3,
+      "arxiv_id": "2608.30262",
+      "url": "https://arxiv.org/abs/2608.30262",
+      "category": "AI/ML use cases in physics",
+      "abstract": "CAESAR-LDAR is an error-controlled learned compressor for multivariate scientific fields, combining a trainable orthogonal latent transform with a causal autoregressive hierarchical prior and residual correction to meet reconstruction tolerance.",
+      "tags": ["scientific data compression", "multivariate fields", "latent decorrelation", "autoregressive entropy"],
+      "assessment": "strong-to-mixed"
+    },
+    {
+      "title": "Learning PDE Time-Stepping with Neural Cellular Automata",
+      "authors_short": "Esha Saha, Hao Wang",
+      "author_count": 2,
+      "arxiv_id": "2608.30328",
+      "url": "https://arxiv.org/abs/2608.30328",
+      "category": "AI/ML use cases in physics",
+      "abstract": "A neural cellular automata surrogate learns local homogeneous update rules for PDE time stepping and is benchmarked against PDE-Net, a modified PINN, and FNO on canonical PDEs, including extrapolation beyond the training time horizon.",
+      "tags": ["PDE surrogate", "neural cellular automata", "long-horizon dynamics", "operator learning"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2609.00107",
+      "title": "Reining in an Agentic Harness for High Energy Physics",
+      "reason": "Useful community-design discussion, but the abstract signals principles and proposed contracts rather than a validated HEP agent benchmark. Treat as workflow architecture, not demonstrated scientific capability."
+    },
+    {
+      "arxiv_id": "2609.01261",
+      "title": "Spin alignment of vector mesons in a plasma at finite density",
+      "reason": "The observable is relevant, but the quantitative conclusions rest on a soft-wall holographic model. Interesting for qualitative mechanisms, weaker as direct phenomenology without stronger model/systematic comparisons."
+    }
+  ]
+}
