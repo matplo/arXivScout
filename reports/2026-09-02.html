@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-02</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-02 Briefing</h1>
+    <p class="dek">Selective review of recent arXiv submissions relevant to heavy-ion collision physics and AI/ML use in physics.</p>
+    <div class="filter-panel">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="paper-search">Search by keyword</label>
+        <input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report-page">
+    <section class="summary-block">
+      <h2>Executive Takeaways</h2>
+      <ul>
+        <li>The strongest heavy-ion paper is arXiv:2609.01229, which frames nuclear-surface extraction as an information/degeneracy problem rather than a simple observable-sensitivity exercise.</li>
+        <li>Femtoscopy appears as a potentially useful dense-matter EOS handle at low beam energy, but the claim will need cross-model and experimental stress tests.</li>
+        <li>Small-x saturation remains a productive bridge between EIC, UPC, and nuclear-structure phenomenology; diffractive heavy-quark production is the clearest near-term observable in today’s set.</li>
+        <li>The best AI/ML contributions are those tied to concrete bottlenecks: neural variational nuclear DFT, dipole-evolution surrogates, multijet anomaly detection, and lossy scientific compression with explicit error control.</li>
+        <li>Agentic HEP tooling and holographic spin-alignment calculations are worth watching, but both should be read carefully: useful ideas, limited validation for quantitative claims.</li>
+      </ul>
+    </section>
+
+    <section class="paper-section" data-section="Heavy-ion collision papers">
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper-card" data-search="2609.01229 Fundamental geometric limitations nuclear surface diffuseness deformation relativistic heavy ion collisions Bayesian response maps Hadi Mehrabpour Behnaz Behzadmoghaddam Oscar Garcia-Montero Li Yan Theory strong">
+        <div class="card-top"><span>Theory</span><span class="assessment strong">strong</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.01229">Fundamental geometric limitations on disentangling nuclear-surface properties in relativistic heavy ion collisions</a></h4>
+        <p class="authors">Hadi Mehrabpour, Behnaz Behzadmoghaddam, S. M. A. Tabatabaee Mehr, Oscar Garcia-Montero, Li Yan</p>
+        <p><strong>Summary.</strong> The paper studies why extracting Woods-Saxon surface diffuseness from relativistic heavy-ion observables is intrinsically entangled with quadrupole and octupole deformation. It uses event-by-event Monte Carlo Glauber simulations, local response maps, information-geometric measures, and Bayesian constraints to show that elliptic observables can have strong diffuseness-deformation degeneracies while triangular correlations retain more independent information.</p>
+        <p><strong>Why it matters.</strong> This is directly useful for precision initial-condition inference and for the current program of using isobar and deformed-nucleus collisions to learn nuclear structure.</p>
+        <p><strong>Critical assessment.</strong> Strong: the question is sharp, the methodology is diagnostic rather than purely descriptive, and the result cautions against overinterpreting individual geometry-driven observables. The main limitation is that the conclusion is Glauber-response based, so hydrodynamic response and full experimental covariance remain the next stress tests.</p>
+        <p class="abstract"><strong>Abstract note.</strong> The authors report local degeneracies among surface diffuseness and deformation parameters and identify multiparticle correlations with more independent sensitivity to diffuseness.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper-card" data-search="2609.00897 femtoscopy nuclear equation of state PHQMD AuAu low energy baryon rich dense matter Xialei Jiang Jiaxing Zhao Xiaofeng Luo Phenomenology strong mixed">
+        <div class="card-top"><span>Phenomenology</span><span class="assessment mixed">strong-to-mixed</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.00897">Femtoscopy as a New Probe of the Nuclear Equation of State</a></h4>
+        <p class="authors">Xialei Jiang, Jiaxing Zhao, Yingjie Zhou, Xiaofeng Luo</p>
+        <p><strong>Summary.</strong> Using PHQMD for Au+Au collisions at sqrt(sNN)=3, 4.5, 7.7, and 19.6 GeV, the paper argues that nuclear mean fields generate additional low-k* structure in two- and three-body femtoscopic correlations. The effect is strongest at the lowest beam energies and is claimed to encode EOS stiffness and momentum dependence.</p>
+        <p><strong>Why it matters.</strong> If robust, this would add a microscopic observable to the low-energy dense-baryonic-matter program, complementary to flow and subthreshold strangeness.</p>
+        <p><strong>Critical assessment.</strong> Promising and physically motivated, but still model-facing. The strongest next validation would be comparison across transport implementations, realistic afterburner uncertainties, and experimental correlation-function systematics.</p>
+      </article>
+
+      <article class="paper-card" data-search="2609.01163 saturation diffractive DIS ultra peripheral collisions UPC heavy quark BK BFKL small-x Jani Penttala Christophe Royon Jarno Vierros Phenomenology strong">
+        <div class="card-top"><span>Phenomenology</span><span class="assessment strong">strong</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.01163">Saturation effects in diffractive deep inelastic scattering</a></h4>
+        <p class="authors">Jani Penttala, Christophe Royon, Jarno Vierros</p>
+        <p><strong>Summary.</strong> The authors compare inclusive and diffractive heavy-quark photoproduction with nonlinear BK versus linear BFKL dipole evolution in high-energy regimes accessible through LHC ultra-peripheral collisions. They predict coherent diffractive fractions around 20 percent in the saturation model, roughly twice some PDF/shadowing expectations.</p>
+        <p><strong>Why it matters.</strong> Diffractive heavy-quark UPC measurements are a realistic discriminator of nonlinear small-x dynamics and connect heavy-ion UPCs to the EIC/nuclear-PDF program.</p>
+        <p><strong>Critical assessment.</strong> Strong phenomenological target and clean observable logic. The risk is the usual one: saturation-model separation must survive nuclear geometry, flux, and heavy-quark modeling uncertainties.</p>
+      </article>
+    </section>
+
+    <section class="paper-section" data-section="AI/ML use">
+      <h2>AI/ML Use in Nuclear and High-Energy Physics</h2>
+      <article class="paper-card" data-search="2609.00836 neural network variational nuclear DFT Kohn Sham Skyrme Hartree Fock pasta GPU Kenta Yoshimura Kazuyuki Sekizawa AI ML strong">
+        <div class="card-top"><span>AI/ML use</span><span class="assessment strong">strong</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.00836">Neural-Network-Based Variational Method in Nuclear Density Functional Theory: Application to the Kohn-Sham method</a></h4>
+        <p class="authors">Kenta Yoshimura, Kazuyuki Sekizawa</p>
+        <p><strong>Method and result.</strong> Complex spinor single-particle orbitals are represented by multilayer perceptrons inside a Kohn-Sham nuclear DFT workflow. The authors compare binding energies, charge radii, deformations, and pasta phases against conventional calculations and experiment where applicable.</p>
+        <p><strong>Likely use case.</strong> GPU-oriented high-throughput nuclear structure calculations, including deformed systems and nontrivial spatial phases relevant to dense matter.</p>
+        <p><strong>Critical assessment.</strong> Strong for an ML-in-physics paper because it targets the variational structure of the problem rather than using ML as a post-hoc emulator. Scaling, convergence diagnostics, pairing treatment, and uncertainty estimates remain important next checks.</p>
+      </article>
+
+      <article class="paper-card" data-search="2609.00230 dense nuclear matter small-x dipole evolution machine learning surrogate global analysis gluon distributions Junaid Khan Rebecca Lustberg Fredrick Olness Bjoern Schenke AI ML mixed">
+        <div class="card-top"><span>AI/ML use</span><span class="assessment mixed">mixed-to-strong</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.00230">Probing Dense Nuclear Matter at Small-x: A workflow for a global analysis framework</a></h4>
+        <p class="authors">Junaid S. Khan, Rebecca L. Lustberg, Fredrick Olness, Peter Risse, Bjoern Schenke, Brandon Stevenson</p>
+        <p><strong>Method and result.</strong> This proceedings paper proposes ML surrogates for nonlinear dipole-nucleus evolution to reduce global-analysis cost while preserving accuracy for experimental data descriptions.</p>
+        <p><strong>Likely use case.</strong> Fast likelihood scans for nuclear small-x fits, bridging dipole and parton-model descriptions for EIC and UPC observables.</p>
+        <p><strong>Critical assessment.</strong> The workflow is well targeted and scientifically relevant, but the short format limits evidence. I would treat it as a promising infrastructure direction rather than a settled global-analysis result.</p>
+      </article>
+
+      <article class="paper-card" data-search="2609.00132 anomaly detection multijet recursive soft drop CATHODE weak supervision LHC HEP Gregor Kasieczka Sung Hak Lim Louis Moureaux David Shih AI ML strong">
+        <div class="card-top"><span>AI/ML use cases in physics</span><span class="assessment strong">strong</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.00132">Anomaly detection for multijet scenarios</a></h4>
+        <p class="authors">Gregor Kasieczka, Sung Hak Lim, Louis Moureaux, Tore von Schwartz, David Shih, Chitrakshee Yede</p>
+        <p><strong>Method and result.</strong> The paper combines recursive soft drop with CATHODE to extend weakly supervised anomaly detection beyond dijet-resonance settings to arbitrary multijet final states.</p>
+        <p><strong>Likely use case.</strong> Directly relevant to LHC searches, with possible transfer to heavy-ion rare-topology or jet-modification anomaly studies if backgrounds and centrality/systematics are handled carefully.</p>
+        <p><strong>Critical assessment.</strong> Strong because it relaxes a real structural limitation of earlier weak-supervision methods and uses physics-informed jet representation. Transfer to heavy-ion is plausible but not automatic because heavy-ion backgrounds are much less benign than pp multijet samples.</p>
+      </article>
+
+      <article class="paper-card" data-search="2608.30262 scientific data compression multivariate physical fields latent decorrelation autoregressive entropy CAESAR LDAR Liangji Zhu Anand Rangarajan Sanjay Ranka AI ML compression strong mixed">
+        <div class="card-top"><span>AI/ML use cases in physics</span><span class="assessment mixed">strong-to-mixed</span></div>
+        <h4><a href="https://arxiv.org/abs/2608.30262">Multivariate Scientific Data Compression with Learned Cross-Variable Latent Decorrelation and Autoregressive Entropy Modeling</a></h4>
+        <p class="authors">Liangji Zhu, Anand Rangarajan, Sanjay Ranka</p>
+        <p><strong>Method and result.</strong> CAESAR-LDAR adds an exactly invertible orthogonal latent transform and autoregressive entropy model to an error-controlled learned compressor for multivariate scientific fields. Experiments on combustion, climate, and turbulence show complementary gains from cross-channel decorrelation and local probabilistic context.</p>
+        <p><strong>Likely use case.</strong> Compression of hydrodynamic event ensembles, detector simulations, field histories, and lattice/transport outputs where multiple correlated fields must be stored with controlled error.</p>
+        <p><strong>Critical assessment.</strong> Technically credible and unusually transferable because it addresses a real scientific-computing bottleneck. It still needs domain-specific tests on discontinuities, rare structures, and analysis-observable preservation before use in HEP/NP production workflows.</p>
+      </article>
+
+      <article class="paper-card" data-search="2608.30328 PDE time stepping neural cellular automata surrogates FNO PINN long horizon dynamics Esha Saha Hao Wang AI ML mixed">
+        <div class="card-top"><span>AI/ML use cases in physics</span><span class="assessment mixed">mixed</span></div>
+        <h4><a href="https://arxiv.org/abs/2608.30328">Learning PDE Time-Stepping with Neural Cellular Automata</a></h4>
+        <p class="authors">Esha Saha, Hao Wang</p>
+        <p><strong>Method and result.</strong> A neural cellular automata model learns a local homogeneous update rule for PDE time stepping and is benchmarked against PDE-Net, a modified PINN, and FNO on canonical equations with extrapolation beyond the training horizon.</p>
+        <p><strong>Likely use case.</strong> Conceptually relevant to hydrodynamic or transport surrogate modeling because locality and repeated updates mirror differential operators.</p>
+        <p><strong>Critical assessment.</strong> Interesting but tentative for HEP/NP. The benchmarks are canonical PDEs, not relativistic viscous hydrodynamics or stiff coupled transport, so transfer value is mainly methodological at this stage.</p>
+      </article>
+    </section>
+
+    <section class="paper-section caution-section">
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper-card" data-search="2609.00107 agentic harness high energy physics LLM tools skills contracts Tony Menzo George Fleming Stephen Mrenna Alexander Roman caution">
+        <div class="card-top"><span>Caution</span><span class="assessment caution">caution</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.00107">Reining in an Agentic Harness for High Energy Physics</a></h4>
+        <p class="authors">Tony Menzo, George T. Fleming, Konstantin T. Matchev, Stephen Mrenna, Alexander Roman</p>
+        <p>Useful as workflow architecture: versioned scientific operations, common protocols, registries, and machine-readable contracts are sensible directions. But the abstract describes principles and evaluation guidelines, not a validated HEP agent benchmark. Treat it as a design memo rather than evidence that agentic systems are scientifically reliable.</p>
+      </article>
+      <article class="paper-card" data-search="2609.01261 spin alignment vector mesons plasma finite density holographic soft wall Jpsi phi Fei Wang Zi-qiang Zhang caution">
+        <div class="card-top"><span>Caution</span><span class="assessment caution">caution</span></div>
+        <h4><a href="https://arxiv.org/abs/2609.01261">Spin alignment of vector mesons in a plasma at finite density</a></h4>
+        <p class="authors">Fei Wang, Zi-qiang Zhang</p>
+        <p>The observable is genuinely relevant to heavy-ion spin physics, and the finite-density dependence is interesting. The limitation is quantitative: conclusions come from a soft-wall holographic model, so I would read the result as qualitative mechanism-building unless it is backed by broader model comparisons or phenomenological uncertainty estimates.</p>
+      </article>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var input = document.getElementById('paper-search');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.paper-card'));
+      if (!input) return;
+      input.addEventListener('input', function () {
+        var query = input.value.toLowerCase().trim();
+        cards.forEach(function (card) {
+          var haystack = (card.getAttribute('data-search') + ' ' + card.textContent).toLowerCase();
+          card.hidden = query && haystack.indexOf(query) === -1;
+        });
+      });
+    }());
+  </script>
+</body>
+</html>
