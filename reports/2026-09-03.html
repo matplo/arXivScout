@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-03</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-03 Briefing</h1>
+    <p class="dek">Selective review of recent arXiv submissions relevant to heavy-ion collision physics and AI/ML use in HEP or nuclear physics. Candidate scan covered recent nucl-th, nucl-ex, hep-ph, hep-ex, physics.data-an, and adjacent AI/ML listings, with abstract-first triage.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest heavy-ion submission is <a href="https://arxiv.org/abs/2609.01229">2609.01229</a>, which treats nuclear-surface diffuseness extraction as a parameter-identifiability problem rather than a single-observable claim.</li>
+        <li>Critical-point fluctuation work in <a href="https://arxiv.org/abs/2609.01859">2609.01859</a> is worth watching because it proposes a differential cumulant observable designed to separate baryon-number conservation from critical correlations.</li>
+        <li>Small-x and saturation papers emphasize experimentally tunable recoil or diffractive handles: forward Z recoil geometry in <a href="https://arxiv.org/abs/2609.02356">2609.02356</a> and heavy-quark diffraction in UPCs in <a href="https://arxiv.org/abs/2609.01163">2609.01163</a>.</li>
+        <li>The most transferable AI/ML paper is <a href="https://arxiv.org/abs/2609.00611">2609.00611</a>, which tests a point-cloud foundation model across LArTPC, collider TPC, and water-Cherenkov modalities rather than on one detector silo.</li>
+        <li>LLM tooling for HEP appears more mature in <a href="https://arxiv.org/abs/2609.01095">2609.01095</a> than in higher-level agentic manifestos because it reports an executable ROOT benchmark with ablations and success-rate gains.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Fundamental geometric limitations on disentangling nuclear-surface properties in relativistic heavy ion collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Hadi Mehrabpour, Behnaz Behzadmoghaddam, S. M. A. Tabatabaee Mehr, Oscar Garcia-Montero, Li Yan. <a href="https://arxiv.org/abs/2609.01229">arXiv:2609.01229</a></p>
+        <p><strong>Abstract:</strong> The paper studies how surface diffuseness, quadrupole deformation, and octupole deformation become entangled in event-by-event Glauber responses for relativistic heavy-ion observables. It uses multidimensional response maps, local sensitivity measures, information geometry, and Bayesian constraints to quantify degeneracies.</p>
+        <p><strong>Why it matters:</strong> Nuclear-structure extraction from isobaric or deformed-ion collisions is increasingly precision-limited by geometry degeneracies. This paper gives a useful diagnostic vocabulary for which multiparticle correlations carry independent surface information.</p>
+        <p><strong>Assessment:</strong> Strong conceptually and methodologically. It is still Glauber-level, so full hydro response and experimental systematics will decide the practical reach, but the identifiability framing is exactly the right kind of caution for deformation programs.</p>
+        <div class="tags"><span>nuclear deformation</span><span>surface diffuseness</span><span>multiparticle correlations</span><span>Bayesian constraints</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Unveiling QCD Criticality with Cross-Rapidity Net-Baryon Cumulants</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jianing Li, Shuzhe Shi, Lipei Du. <a href="https://arxiv.org/abs/2609.01859">arXiv:2609.01859</a></p>
+        <p><strong>Abstract:</strong> The authors propose correlations of net-baryon fluctuations between separated rapidity windows to distinguish global baryon-number conservation from long-wavelength critical fluctuations. In their canonical independent-source framework, the leading conservation background and critical signal enter additively, enabling a subtraction strategy.</p>
+        <p><strong>Why it matters:</strong> Acceptance and conservation effects are central obstacles in beam-energy-scan cumulants. A rapidity-differential observable with an explicit conservation subtraction could be experimentally useful if robust to realistic efficiency and transport effects.</p>
+        <p><strong>Assessment:</strong> Strong as an observable proposal, with a clear physics target and falsifiable sign structure. The main caveat is that equilibrium Ising-mapped behavior and thermal smearing are idealized; transport, baryon stopping, and detector effects need stress tests.</p>
+        <div class="tags"><span>QCD critical point</span><span>net-baryon cumulants</span><span>rapidity correlations</span><span>beam-energy scan</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Femtoscopy as a New Probe of the Nuclear Equation of State</h4><span class="label strong">strong</span></div>
+        <p class="meta">Xialei Jiang, Jiaxing Zhao, Yingjie Zhou, Xiaofeng Luo. <a href="https://arxiv.org/abs/2609.00897">arXiv:2609.00897</a></p>
+        <p><strong>Abstract:</strong> Using PHQMD for Au+Au at 3, 4.5, 7.7, and 19.6 GeV, the paper argues that nuclear mean fields add a dynamical component to pp, p-Lambda, three-proton, and pp-Lambda femtoscopic correlations. It finds low-k* enhancements and heightened sensitivity of higher-order correlations to EoS stiffness and momentum dependence.</p>
+        <p><strong>Why it matters:</strong> It proposes femtoscopy as a microscopic EoS constraint complementary to flow and strangeness observables in baryon-rich collisions.</p>
+        <p><strong>Assessment:</strong> Scientifically interesting and experimentally motivated. The claim is model-dependent, so robustness across transport implementations and after realistic source/resolution treatment will be essential.</p>
+        <div class="tags"><span>femtoscopy</span><span>nuclear EoS</span><span>PHQMD</span><span>baryon-rich matter</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Spin transport in intermediate-energy heavy-ion collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jun Xu, Bao-An Li. <a href="https://arxiv.org/abs/2609.01994">arXiv:2609.01994</a></p>
+        <p><strong>Abstract:</strong> This invited mini-review summarizes spin- and isospin-dependent BUU simulations and observables such as global/local nucleon polarization, spin splitting of collective flow, and light-cluster flow by spin state.</p>
+        <p><strong>Why it matters:</strong> Spin transport is a plausible route to constrain spin-orbit potentials in dense neutron-rich matter, and the review usefully gathers observables for intermediate-energy experiments.</p>
+        <p><strong>Assessment:</strong> Useful synthesis rather than a new decisive result. Worth reading for orientation, but its scientific weight depends on the underlying SIBUU assumptions and the experimental feasibility of spin-resolved observables.</p>
+        <div class="tags"><span>spin transport</span><span>SIBUU</span><span>spin-orbit potential</span><span>intermediate energy</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Impact of nuclear triaxial deformation on electromagnetic fields in relativistic Xe+Xe collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Maidi Huang, Jin Hu, Yunpeng Liu, Baoyi Chen. <a href="https://arxiv.org/abs/2609.02053">arXiv:2609.02053</a></p>
+        <p><strong>Abstract:</strong> The authors calculate electric and magnetic fields in 129Xe+129Xe at 5.44 TeV using Lienard-Wiechert potentials with triaxially deformed Woods-Saxon densities. They report deformation-driven field redistributions relative to spherical baselines.</p>
+        <p><strong>Why it matters:</strong> Electromagnetic fields affect charge-dependent observables and may carry information about intrinsic nuclear shape.</p>
+        <p><strong>Assessment:</strong> Relevant but more incremental than the geometry-identifiability paper. The next question is whether the field differences survive into robust, measurable final-state observables after medium evolution.</p>
+        <div class="tags"><span>Xe-Xe</span><span>electromagnetic fields</span><span>triaxial deformation</span><span>Lienard-Wiechert</span></div>
+      </article>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Recoil Geometry Unmasks Gluon Saturation in Forward Z0 Production</h4><span class="label strong">strong</span></div>
+        <p class="meta">Wanchen Li, Ding Yu Shao, Shu-Yi Wei, Jian Zhou. <a href="https://arxiv.org/abs/2609.02356">arXiv:2609.02356</a></p>
+        <p><strong>Abstract:</strong> The paper combines CGC small-x dynamics with SCET resummation and proposes fiducial recoil subtraction in forward Z production to reduce perturbative radiation masking of nuclear broadening. Detector rapidity coverage becomes a tunable transverse-momentum projector.</p>
+        <p><strong>Why it matters:</strong> It gives a concrete experimental handle for separating saturation broadening from Sudakov recoil in pA-like measurements.</p>
+        <p><strong>Assessment:</strong> Strong because it connects formal resummation, detector geometry, and an experimentally clean boson. It still needs detailed detector-level studies, but the observable design is sharp.</p>
+        <div class="tags"><span>gluon saturation</span><span>CGC</span><span>SCET</span><span>forward Z</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Saturation effects in diffractive deep inelastic scattering</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jani Penttala, Christophe Royon, Jarno Vierros. <a href="https://arxiv.org/abs/2609.01163">arXiv:2609.01163</a></p>
+        <p><strong>Abstract:</strong> The authors compare inclusive and diffractive heavy-quark photoproduction with nonlinear BK and linear BFKL dipole evolution, emphasizing UPC kinematics at the LHC. The saturation model predicts coherent diffractive fractions near 20%, roughly twice PDF-plus-shadowing expectations.</p>
+        <p><strong>Why it matters:</strong> Heavy-quark diffraction in UPCs could provide a saturation-sensitive observable with a large predicted separation between linear and nonlinear dynamics.</p>
+        <p><strong>Assessment:</strong> Worth attention, but the abstract-level claim needs scrutiny on model systematics, heavy-quark mass dependence, and feasibility of reconstructing diffractive heavy flavor cleanly in UPC environments.</p>
+        <div class="tags"><span>UPCs</span><span>diffractive heavy quarks</span><span>BK evolution</span><span>saturation</span></div>
+      </article>
+      <h3>Experiment</h3>
+      <p>No pure heavy-ion experimental result from the scanned window cleared the selectivity bar. The CLAS12 BDT validation below is experimental AI/ML rather than heavy-ion specific.</p>
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Neural-Network-Based Variational Method in Nuclear Density Functional Theory: Application to the Kohn-Sham method</h4><span class="label strong">strong</span></div>
+        <p class="meta">Kenta Yoshimura, Kazuyuki Sekizawa. <a href="https://arxiv.org/abs/2609.00836">arXiv:2609.00836</a></p>
+        <p><strong>Abstract:</strong> The paper extends a neural-network variational method for nuclear DFT to Kohn-Sham orbitals represented by multilayer perceptrons. It reports agreement with Skyrme-Hartree-Fock for closed-shell nuclei, reasonable deformations for open-shell cases, and representation of nuclear pasta motifs.</p>
+        <p><strong>Why it matters:</strong> A differentiable neural basis for nuclear DFT could become useful for GPU-heavy scans of nuclei and dense-matter configurations.</p>
+        <p><strong>Assessment:</strong> Strong and concrete, especially because it checks architecture width/depth and precision. The remaining risk is optimization reliability and comparison against broader deformed and paired systems.</p>
+        <div class="tags"><span>nuclear DFT</span><span>Kohn-Sham</span><span>neural variational method</span><span>nuclear pasta</span></div>
+      </article>
+    </section>
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Panda Diplomacy: Foundation Model Pre-training across Particle Imaging Detectors for High Energy and Nuclear Physics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Samuel Young, Cesar Jesus-Valls, Kazuhiro Terao. <a href="https://arxiv.org/abs/2609.00611">arXiv:2609.00611</a></p>
+        <p><strong>Method and result:</strong> A point-cloud self-distillation framework is pre-trained with minimal changes on LArTPC, collider TPC, and water-Cherenkov data. With 1,000 labeled images for adaptation, it reports matching or exceeding specialized detector foundation-model baselines, including 70x fewer labels on sPHENIX and up to 1,000x fewer labels for LArTPC reconstruction.</p>
+        <p><strong>Likely use case:</strong> Cross-detector pretraining for sparse labeled reconstruction, clustering, and particle-ID workflows in collider and nuclear experiments.</p>
+        <p><strong>Assessment:</strong> Strong because transfer across detector modalities is tested directly. The label-efficiency claims are large and should be checked against dataset leakage, simulation realism, and task-specific calibration, but this is one of the more credible foundation-model directions for HEP/NP.</p>
+        <div class="tags"><span>foundation models</span><span>detector imaging</span><span>sPHENIX</span><span>label efficiency</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Reliable LLM-Generated Programs for High-Energy Physics Experiments through Graph-Grounded Software Knowledge</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yue Sun, Tong Liu, Yipu Liao, Jingde Chen, Ke Li. <a href="https://arxiv.org/abs/2609.01095">arXiv:2609.01095</a></p>
+        <p><strong>Method and result:</strong> The system grounds LLM code generation with hybrid retrieval over a heterogeneous software knowledge graph, workflow examples, and execution-guided repair. On 275 ROOT tasks, first-attempt execution improves from 58.5% to 76.0% under Claude Code orchestration and final success from 90.5% to 96.0%.</p>
+        <p><strong>Likely use case:</strong> Analysis-code assistance for ROOT-heavy HEP workflows and, by extension, experiment frameworks with complex internal APIs and sparse documentation.</p>
+        <p><strong>Assessment:</strong> Stronger than most agent-for-science papers because it uses an executable benchmark and reports cost changes. Transfer beyond ROOT is plausible but not proven; the knowledge-graph construction burden is the practical bottleneck.</p>
+        <div class="tags"><span>LLM coding</span><span>ROOT</span><span>knowledge graph</span><span>execution repair</span></div>
+      </article>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Validating a BDT-based Electron-Positron Identification Algorithm at CLAS12 with Experimental Data</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Mariana Tenorio Pita, Pierre Chatagnon, Richard Tyson. <a href="https://arxiv.org/abs/2609.01336">arXiv:2609.01336</a></p>
+        <p><strong>Method and result:</strong> Two BDT electron/positron identification models are trained on simulation and validated on both simulation and CLAS12 experimental data. The abstract reports over 90% lepton retention while substantially reducing charged-pion contamination.</p>
+        <p><strong>Likely use case:</strong> Practical PID validation template for electron-beam experiments and detector subsystems where simulation-trained classifiers must be checked on data.</p>
+        <p><strong>Assessment:</strong> Useful and grounded, though algorithmically standard. The value is in data validation; strength depends on how carefully efficiency, purity, and domain shift are quantified in the full paper.</p>
+        <div class="tags"><span>BDT</span><span>particle ID</span><span>CLAS12</span><span>simulation-to-data validation</span></div>
+      </article>
+    </section>
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-date="2026-09-03">
+        <div class="paper-head"><h4>Reining in an Agentic Harness for High Energy Physics</h4><span class="label caution">caution</span></div>
+        <p class="meta">Tony Menzo, George T. Fleming, Konstantin T. Matchev, Stephen Mrenna, Alexander Roman. <a href="https://arxiv.org/abs/2609.00107">arXiv:2609.00107</a></p>
+        <p><strong>Why caution:</strong> The paper is likely valuable as a community design note on versioned scientific operations, protocols, registries, and machine-readable contracts for HEP agents. However, based on the abstract it is mostly a position/evaluation-guidelines paper rather than a demonstrated scientific or software advance; treat it as agenda-setting, not evidence that a portable HEP agent harness already works.</p>
+        <div class="tags"><span>agentic HEP</span><span>workflow protocols</span><span>evaluation guidelines</span><span>evidence-light</span></div>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
