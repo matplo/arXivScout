@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-04",
+  "path": "reports/2026-09-04.html",
+  "summary": "The day is dominated by practical small-x and femtoscopy methodology rather than new experimental heavy-ion measurements. Key themes are CGC event generation for EIC saturation observables, unstable light-nucleus resonance extraction through partial-wave femtoscopy, collider-inference validation under nuisance shifts, and profile-likelihood bias in localized signal searches.",
+  "keywords": ["CGC event generator", "gluon saturation", "EIC eAu", "unstable light nuclei", "partial-wave femtoscopy", "collider inference", "latent nuisance leakage", "look-elsewhere effect", "graph neural networks", "detector reconstruction"],
+  "arxiv_ids": ["2609.03434", "2609.03499", "2609.03636", "2609.03599", "2609.03581", "2609.03417", "2609.04049"],
+  "total_paper_count": 7,
+  "represented_categories": ["Experiment", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper": "2609.03434: CGC-py is the strongest heavy-ion-adjacent contribution because it turns full CGC DIS kinematics into a validated event-generator workflow while giving a sober assessment of EIC saturation reach.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "CGC-py: A Monte Carlo Event Generator for Gluon Saturation Physics",
+      "authors": "Haowu Duan, Cong Yi, Si-Wei Dai, Shu-Yi Wei, Wenbin Zhao, Liang Zheng",
+      "author_count": 6,
+      "arxiv_id": "2609.03434",
+      "url": "https://arxiv.org/abs/2609.03434",
+      "category": "Phenomenology",
+      "abstract": "The authors develop CGC-py, a DIS event generator coupling the full CGC cross section for gamma*p(A) to a parton-branching TMD backward initial-state shower, with Pythia 8 handling final-state radiation and hadronization. The generator keeps target-elastic and target-inelastic contributions without the back-to-back limit, validates single-inclusive spectra analytically and against H1 ep charged-hadron data, and predicts modest but structured eAu saturation effects at EIC kinematics.",
+      "tags": ["CGC", "gluon saturation", "EIC", "event generator", "eAu"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A Practical Partial-Wave Method for Identifying Unstable Light Nucleus Resonances in Heavy-Ion Collisions",
+      "authors": "Junlin Wu, Hongchan Li, Ke Mi, Yaping Wang, Guannan Xie",
+      "author_count": 5,
+      "arxiv_id": "2609.03499",
+      "url": "https://arxiv.org/abs/2609.03499",
+      "category": "Phenomenology",
+      "abstract": "This paper extends the Lednicky-Lyuboshitz femtoscopy framework to higher partial waves and uses low-energy scattering phase shifts to isolate resonance components in two-particle correlation functions. Demonstrations for p-3He and p-4He target the 4Li and 5Li ground-state resonances, producing correlation peaks consistent with known resonance parameters and spectra based on STAR 3 GeV proton/light-nuclei inputs.",
+      "tags": ["femtoscopy", "unstable light nuclei", "partial waves", "STAR BES"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Measurement of the forward angle 12C+12C fragmentation differential cross sections at 62 MeV/nucleon",
+      "authors": "G. Guo, G. Casini, B. H. Sun, S. Barlini, A. Camaiani, C. Frosin, et al.",
+      "author_count": 34,
+      "arxiv_id": "2609.03636",
+      "url": "https://arxiv.org/abs/2609.03636",
+      "category": "Experiment",
+      "abstract": "This work reports high-precision forward-angle fragmentation differential cross sections for 12C+12C at 62 MeV/nucleon using the FAZIA array. It extracts angular distributions for fragments with Z=1 to 6, compares heavier-fragment distributions to Van Bibber and Goldhaber descriptions, and finds an anomalously narrow alpha distribution plausibly tied to intrinsic 12C clustering.",
+      "tags": ["fragmentation", "FAZIA", "12C clustering", "transport benchmarks"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Reduced latent leakage does not reliably predict lower likelihood bias in collider inference",
+      "authors": "Tong Pan",
+      "author_count": 1,
+      "arxiv_id": "2609.03599",
+      "url": "https://arxiv.org/abs/2609.03599",
+      "category": "AI/ML use",
+      "abstract": "The paper tests whether reducing physics-label readability in a nuisance branch of reusable collider embeddings reliably reduces profiled signal-strength bias under unmodelled shifts. In CMS H->ZZ->4l and top-jet workflows, leakage reductions preserve task performance, but their association with maximum profiled bias is weak, and held-out confirmation sometimes increases bias.",
+      "tags": ["collider inference", "representation learning", "nuisance leakage", "profile likelihood"],
+      "assessment": "strong"
+    },
+    {
+      "title": "The Greedy Bump Bias: Local Profiling Geometry and the Look-Elsewhere Effect",
+      "authors": "Tommaso Dorigo",
+      "author_count": 1,
+      "arxiv_id": "2609.03581",
+      "url": "https://arxiv.org/abs/2609.03581",
+      "category": "AI/ML use",
+      "abstract": "The work connects positive amplitude bias from profiling an unknown localized signal with the look-elsewhere effect through the geometry of a family of signal templates. It derives asymptotic relations in Gaussian matched-filter models and decomposes global bias into local profiling and remote-peak competition terms.",
+      "tags": ["look-elsewhere effect", "profile likelihood", "bump hunts", "statistical bias"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Reconstruction of Shower-like Events in NEON Using Likelihood and Graph Neural Network Methods",
+      "authors": "Sujie Lin, Weiqin Huang, Yihan Liu, Chengyu Shao, Lili Yang, Huiming Zhang",
+      "author_count": 6,
+      "arxiv_id": "2609.03417",
+      "url": "https://arxiv.org/abs/2609.03417",
+      "category": "AI/ML use",
+      "abstract": "The paper builds a first shower-event reconstruction framework for the proposed NEON deep-sea neutrino telescope, comparing a calibrated maximum-likelihood pipeline with a two-stage graph neural network. Simulations report MLE angular resolution near 4.19 degrees and a GNN improvement to about 1.8 degrees at 30 TeV, with energy resolution around 20% in an intermediate range.",
+      "tags": ["graph neural network", "event reconstruction", "neutrino detector", "irregular geometry"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "TQ4Q2.0 Fragmentation Functions for Fully Heavy Tetraquark Production",
+      "authors": "Francesco Giovanni Celiberto",
+      "author_count": 1,
+      "arxiv_id": "2609.04049",
+      "url": "https://arxiv.org/abs/2609.04049",
+      "category": "Caution",
+      "abstract": "A compact proceedings update on collinear fragmentation functions for fully heavy tetraquark production, with NRQCD inputs, threshold evolution, fragmentation-scale uncertainties, and intrinsic-charm sensitivity at LHC/FCC energies.",
+      "tags": ["tetraquark fragmentation", "NRQCD", "intrinsic charm", "indirect relevance"],
+      "assessment": "caution"
+    }
+  ]
+}

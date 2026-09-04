@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-04</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-04 Briefing</h1>
+    <p class="dek">Selective review of recent arXiv submissions relevant to heavy-ion collision physics and AI/ML use in HEP or nuclear physics. Candidate scan covered the 2026-09-04 arXiv daily listings in nucl-th, nucl-ex, hep-ph, hep-ex, physics.data-an, and adjacent instrumentation/AI listings, with abstract-first triage and deeper inspection for the strongest or most caution-worthy items.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The highest-priority heavy-ion item is <a href="https://arxiv.org/abs/2609.03434">2609.03434</a>, which packages full CGC DIS kinematics into a usable event-generator workflow and is unusually explicit about modest EIC saturation reach.</li>
+        <li><a href="https://arxiv.org/abs/2609.03499">2609.03499</a> is a useful phenomenology bridge from femtoscopy to unstable light-nucleus resonance reconstruction, with a concrete STAR BES-scale demonstration.</li>
+        <li>The best AI/ML-statistics signal is methodological caution rather than model hype: <a href="https://arxiv.org/abs/2609.03599">2609.03599</a> shows that lower latent nuisance leakage is not, by itself, a likelihood-robustness certificate.</li>
+        <li><a href="https://arxiv.org/abs/2609.03581">2609.03581</a> gives a rigorous statistical treatment of profiling bias and the look-elsewhere effect, directly relevant to resonance and bump-hunt analyses.</li>
+        <li>Detector reconstruction work in <a href="https://arxiv.org/abs/2609.03417">2609.03417</a> is transferable to HEP because it compares a physics likelihood with a graph neural network under realistic geometry and background complications.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>Measurement of the forward angle 12C+12C fragmentation differential cross sections at 62 MeV/nucleon</h4><span class="label strong">strong</span></div>
+        <p class="meta">G. Guo, G. Casini, B. H. Sun, S. Barlini, A. Camaiani, C. Frosin, et al. (34 authors). <a href="https://arxiv.org/abs/2609.03636">arXiv:2609.03636</a></p>
+        <p><strong>Abstract:</strong> This work reports high-precision forward-angle fragmentation differential cross sections for 12C+12C at 62 MeV/nucleon using the FAZIA array. It extracts angular distributions for fragments with Z=1 to 6, compares heavier-fragment distributions to Van Bibber and Goldhaber descriptions, and finds an anomalously narrow alpha distribution plausibly tied to intrinsic 12C clustering.</p>
+        <p><strong>Why it matters:</strong> It is not a QGP paper, but it is a clean nuclear-collision dataset for fragmentation, dissipative components, and cluster-structure effects. Such measurements are useful benchmarks for transport and reaction models that feed into lower-energy heavy-ion programs.</p>
+        <p><strong>Assessment:</strong> Strong experimental contribution because the observable, detector method, and cross-check against existing data are clear. Relevance to relativistic heavy-ion phenomenology is indirect, so I would treat it as nuclear-reaction infrastructure rather than a central heavy-ion result.</p>
+        <div class="tags"><span>fragmentation</span><span>FAZIA</span><span>12C clustering</span><span>transport benchmarks</span></div>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>CGC-py: A Monte Carlo Event Generator for Gluon Saturation Physics</h4><span class="label strong">strong</span></div>
+        <p class="meta">Haowu Duan, Cong Yi, Si-Wei Dai, Shu-Yi Wei, Wenbin Zhao, Liang Zheng. <a href="https://arxiv.org/abs/2609.03434">arXiv:2609.03434</a></p>
+        <p><strong>Abstract:</strong> The authors develop CGC-py, a DIS event generator coupling the full CGC cross section for gamma*p(A) to a parton-branching TMD backward initial-state shower, with Pythia 8 handling final-state radiation and hadronization. The generator keeps target-elastic and target-inelastic contributions without the back-to-back limit, validates single-inclusive spectra analytically and against H1 ep charged-hadron data, and predicts modest but structured eAu saturation effects at EIC kinematics.</p>
+        <p><strong>Why it matters:</strong> This is a practical step toward making small-x saturation calculations usable in experimental-style EIC studies and nuclear modification observables. The paper's sober conclusion that genuine saturation broadening is strongest only at the highest considered energies is a strength, not a weakness.</p>
+        <p><strong>Assessment:</strong> Strong and relevant. Validation is meaningful at the generator level, though the nuclear predictions still need broader data confrontation, uncertainty propagation, and comparisons to alternative shower/hadronization choices.</p>
+        <div class="tags"><span>CGC</span><span>gluon saturation</span><span>EIC</span><span>event generator</span><span>eAu</span></div>
+      </article>
+
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>A Practical Partial-Wave Method for Identifying Unstable Light Nucleus Resonances in Heavy-Ion Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Junlin Wu, Hongchan Li, Ke Mi, Yaping Wang, Guannan Xie. <a href="https://arxiv.org/abs/2609.03499">arXiv:2609.03499</a></p>
+        <p><strong>Abstract:</strong> This paper extends the Lednicky-Lyuboshitz femtoscopy framework to higher partial waves and uses low-energy scattering phase shifts to isolate resonance components in two-particle correlation functions. Demonstrations for p-3He and p-4He target the 4Li and 5Li ground-state resonances, producing correlation peaks consistent with known resonance parameters and spectra based on STAR 3 GeV proton/light-nuclei inputs.</p>
+        <p><strong>Why it matters:</strong> Unstable light nuclei could become a new femtoscopic handle on freeze-out and final-state interactions in baryon-rich heavy-ion collisions. The use of empirical phase shifts reduces dependence on ad hoc potential parametrizations.</p>
+        <p><strong>Assessment:</strong> Strong as a practical method paper. The experimental payoff will depend on achievable pair statistics, source modeling, and background control, but the analysis target is concrete and testable.</p>
+        <div class="tags"><span>femtoscopy</span><span>unstable light nuclei</span><span>partial waves</span><span>STAR BES</span></div>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <p class="note">No new heavy-ion-specific AI/ML paper survived triage today. The most relevant AI/ML work is listed below under broader physics use cases.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>Reduced latent leakage does not reliably predict lower likelihood bias in collider inference</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tong Pan. <a href="https://arxiv.org/abs/2609.03599">arXiv:2609.03599</a></p>
+        <p><strong>Method and result:</strong> The paper tests whether reducing physics-label readability in a nuisance branch of reusable collider embeddings reliably reduces profiled signal-strength bias under unmodelled shifts. In CMS H-&gt;ZZ-&gt;4l and top-jet workflows, leakage reductions preserve task performance, but their association with maximum profiled bias is weak, and held-out confirmation sometimes increases bias.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is directly relevant to representation learning for collider inference, including heavy-ion embeddings where centrality, detector conditions, pileup-like backgrounds, or nuisance labels can leak into downstream measurements.</p>
+        <p><strong>Assessment:</strong> Strong because it is a negative-result validation paper with a prespecified likelihood-facing stress test. The message is highly transferable: auxiliary probes are diagnostics, not substitutes for end-to-end inference validation.</p>
+        <div class="tags"><span>collider inference</span><span>representation learning</span><span>nuisance leakage</span><span>profile likelihood</span></div>
+      </article>
+
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>The Greedy Bump Bias: Local Profiling Geometry and the Look-Elsewhere Effect</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tommaso Dorigo. <a href="https://arxiv.org/abs/2609.03581">arXiv:2609.03581</a></p>
+        <p><strong>Method and result:</strong> The work connects positive amplitude bias from profiling an unknown localized signal with the look-elsewhere effect through the geometry of a family of signal templates. It derives asymptotic relations in Gaussian matched-filter models and decomposes global bias into local profiling and remote-peak competition terms.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is relevant to resonance searches, localized excess scans, jet-substructure bump hunts, and any heavy-ion fluctuation analysis where a signal shape or location is profiled over many possibilities.</p>
+        <p><strong>Assessment:</strong> Strong mathematically and conceptually. It is idealized, so analysts will still need experiment-specific toys and nuisance models, but it gives a crisp framework for a bias that is often handled operationally rather than understood.</p>
+        <div class="tags"><span>look-elsewhere effect</span><span>profile likelihood</span><span>bump hunts</span><span>statistical bias</span></div>
+      </article>
+
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>Reconstruction of Shower-like Events in NEON Using Likelihood and Graph Neural Network Methods</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Sujie Lin, Weiqin Huang, Yihan Liu, Chengyu Shao, Lili Yang, Huiming Zhang. <a href="https://arxiv.org/abs/2609.03417">arXiv:2609.03417</a></p>
+        <p><strong>Method and result:</strong> The paper builds a first shower-event reconstruction framework for the proposed NEON deep-sea neutrino telescope, comparing a calibrated maximum-likelihood pipeline with a two-stage graph neural network. Simulations report MLE angular resolution near 4.19 degrees and a GNN improvement to about 1.8 degrees at 30 TeV, with energy resolution around 20% in an intermediate range.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The transferable piece is the side-by-side physics-likelihood and graph-based reconstruction design under irregular geometry, timing corrections, and high ambient backgrounds. Those ingredients map well to sparse detector reconstruction, calorimeter showers, and noisy tracking or timing subsystems.</p>
+        <p><strong>Assessment:</strong> Mixed-to-strong. The framework is credible and performance numbers are promising, but the evidence is simulation-only for a proposed detector, so real calibration, domain shift, and systematic uncertainty remain open.</p>
+        <div class="tags"><span>graph neural network</span><span>event reconstruction</span><span>neutrino detector</span><span>irregular geometry</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-date="2026-09-04">
+        <div class="paper-head"><h4>TQ4Q2.0 Fragmentation Functions for Fully Heavy Tetraquark Production</h4><span class="label caution">caution</span></div>
+        <p class="meta">Francesco Giovanni Celiberto. <a href="https://arxiv.org/abs/2609.04049">arXiv:2609.04049</a></p>
+        <p><strong>Why it may look relevant:</strong> It is cross-listed to hep-ex, nucl-ex, and nucl-th, and it discusses uncertainty-aware fragmentation functions for fully heavy tetraquark production at LHC/FCC energies.</p>
+        <p><strong>Caution:</strong> The abstract reads as a compact proceedings update centered on collinear fragmentation inputs and intrinsic-charm sensitivity, not as a heavy-ion or nuclear-medium study. It may be useful for exotic-hadron production baselines, but the heavy-ion transfer value is indirect and should not be overstated.</p>
+        <div class="tags"><span>tetraquark fragmentation</span><span>NRQCD</span><span>intrinsic charm</span><span>indirect relevance</span></div>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
