@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-06",
+  "path": "reports/2026-09-06.html",
+  "summary": "No new arXiv announcement batch appeared after the Friday, 2026-09-04 listings across the heavy-ion and physics-AI scope checked in this run. The strongest relevant papers in the current recency window were already archived on 2026-09-04: CGC-py for small-x saturation event generation, partial-wave femtoscopy for unstable light nuclei, collider-inference nuisance validation, and graph-based detector reconstruction. Today's scientifically conservative selection is therefore empty rather than a duplicate paper list.",
+  "keywords": ["no new arXiv listings", "weekend arXiv gap", "heavy-ion triage", "physics AI/ML triage", "CGC event generation", "partial-wave femtoscopy", "collider inference validation", "graph neural networks"],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": ["No qualifying new papers"],
+  "strongest_paper": "No new paper was selected for 2026-09-06 because arXiv's latest visible announcement batch remained Friday, 2026-09-04, and that batch is already archived.",
+  "caution_count": 0,
+  "papers": [],
+  "cautions": [],
+  "related_recent_archive": {
+    "date": "2026-09-04",
+    "path": "reports/2026-09-04.html",
+    "arxiv_ids": ["2609.03434", "2609.03499", "2609.03636", "2609.03599", "2609.03581", "2609.03417", "2609.04049"]
+  }
+}
