@@ -4,7 +4,7 @@
   "summary": "The latest visible arXiv announcement batch after the weekend contained a compact but high-quality set of papers around coherent vector-meson photoproduction in PbPb, small-x/EIC saturation observables after hadronization, relativistic hydrodynamic boundary conditions, DIS event-shape precision, and validation-centered physics AI/ML. The strongest selected papers emphasize experimentally or phenomenologically usable observables and likelihood- or simulation-facing validation rather than generic novelty claims.",
   "keywords": ["coherent J/psi photoproduction", "spin-dependent azimuthal asymmetry", "gluon saturation", "hadronization", "global hadronic recoil", "EIC", "relativistic hydrodynamic boundaries", "DIS one-jettiness", "differentiable detector simulation", "collider inference validation", "quantum graph neural networks", "nuclear code agents", "NCQ scaling", "spectator shadowing"],
   "arxiv_ids": ["2609.04376", "2609.04964", "2609.04925", "2609.04306", "2609.04695", "2609.03599", "2609.04367", "2609.04742", "2609.05306", "2609.05315"],
-  "total_paper_count": 8,
+  "total_paper_count": 9,
   "represented_categories": ["Theory", "Experiment", "Phenomenology", "AI/ML use", "AI/ML use cases", "Caution"],
   "strongest_paper": "CMS observes a greater-than-5-sigma spin-dependent azimuthal asymmetry in coherent J/psi photoproduction in hadronic PbPb collisions, while the eHIJING saturation study and collider-inference validation paper are the strongest phenomenology and AI/ML-methodology entries.",
   "caution_count": 1,
