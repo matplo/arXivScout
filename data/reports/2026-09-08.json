@@ -1,0 +1,146 @@
+{
+  "date": "2026-09-08",
+  "path": "reports/2026-09-08.html",
+  "summary": "The newest visible arXiv listings after the 2026-09-07 announcement emphasize coherent vector-meson photoproduction in hadronic PbPb collisions, EIC-ready saturation and DIS event-shape observables after hadronization, relativistic-hydrodynamic boundary conditions, and validation-centered AI/ML tools for detector simulation and nuclear-code execution. The strongest entries are experimentally or phenomenologically actionable; the main caution concerns broad phase-transition language in clustering nuclei without enough abstract-level evidence for robustness.",
+  "keywords": ["coherent J/psi photoproduction", "spin-dependent azimuthal asymmetry", "event plane", "heavy flavor", "quarkonia", "QGP transport", "NCQ scaling", "spectator shadowing", "gluon saturation", "EIC", "global hadronic recoil", "DIS one-jettiness", "differentiable detector simulation", "nuclear code agents", "quantum graph neural networks", "symbolic regression", "surrogate grounding"],
+  "arxiv_ids": ["2609.04376", "2609.04337", "2609.05315", "2609.04925", "2609.04964", "2609.04306", "2609.04742", "2609.04695", "2609.04367", "2609.05207", "2609.04267", "2609.05145"],
+  "total_paper_count": 11,
+  "represented_categories": ["Experiment", "Theory", "Phenomenology", "AI/ML use", "AI/ML use cases", "Caution"],
+  "strongest_paper": "CMS coherent J/psi photoproduction in hadronic PbPb collisions is the strongest heavy-ion result; the eHIJING saturation observable study and the differentiable IceCube photon-propagation surrogate are the strongest phenomenology and AI/ML transfer entries.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Spin-dependent azimuthal asymmetry of coherent J/psi photoproduction in hadronic PbPb collisions at sqrt(sNN) = 5.36 TeV",
+      "short_authors": "CMS Collaboration",
+      "arxiv_id": "2609.04376",
+      "url": "https://arxiv.org/abs/2609.04376",
+      "category": "Experiment",
+      "abstract": "CMS measures the azimuthal asymmetry of muons from coherently photoproduced J/psi mesons relative to the second-order event plane in hadronic PbPb collisions at 5.36 TeV using 1.26 nb^-1. A negative A2 = -0.194 +/- 0.022 stat. +/- 0.018 syst. is observed with significance above five standard deviations, with no strong rapidity or overlap dependence, and is consistent with photon-polarization inheritance by the vector meson.",
+      "tags": ["coherent J/psi photoproduction", "PbPb", "event plane", "spin asymmetry"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Heavy Flavors and Quarkonia at RHIC",
+      "short_authors": "Cameron Dean, Xin Dong, Rongrong Ma, Cesar Luiz da Silva",
+      "author_count": 4,
+      "arxiv_id": "2609.04337",
+      "url": "https://arxiv.org/abs/2609.04337",
+      "category": "Experiment",
+      "abstract": "A review of PHENIX and STAR open-heavy-flavor and quarkonium measurements at RHIC, focused mainly on 200 GeV collisions, covering production, cold nuclear matter effects, R_AA, elliptic flow, charm baryon-to-meson ratios, quarkonium suppression, and future RHIC/EIC connections.",
+      "tags": ["heavy flavor", "quarkonia", "RHIC", "QGP transport"],
+      "assessment": "strong review"
+    },
+    {
+      "title": "Spectator shadowing as the source of the breaking of NCQ scaling at RHIC-FXT and FAIR energies",
+      "short_authors": "Tom Reichert, Iurii Karpenko",
+      "author_count": 2,
+      "arxiv_id": "2609.05315",
+      "url": "https://arxiv.org/abs/2609.05315",
+      "category": "Theory",
+      "abstract": "The authors propose that spectator shadowing can explain the observed breaking of number-of-constituent-quark scaling in low-energy identified-hadron elliptic flow, using an idealized quark-coalescence source and ballistic Glauber spectator model.",
+      "tags": ["NCQ scaling", "spectator shadowing", "RHIC-FXT", "FAIR"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Thermal boundaries for relativistic fluids without a conserved charge",
+      "short_authors": "Lorenzo Gavassino, Soeren Schlichting, Gabriel S. Denicol",
+      "author_count": 3,
+      "arxiv_id": "2609.04925",
+      "url": "https://arxiv.org/abs/2609.04925",
+      "category": "Theory",
+      "abstract": "A kinetic-theory derivation of boundary conditions for an ultrarelativistic, no-charge fluid between thermally conducting plates. The walls act as modified absorbing boundaries, not thermostats, and the corresponding hydrodynamic initial-boundary-value problem is proved well posed.",
+      "tags": ["relativistic hydrodynamics", "boundary conditions", "kinetic theory", "QGP-adjacent"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Tracing Gluon Saturation through Hadronization at EIC",
+      "short_authors": "Weiyao Ke, Xu Liu, Yu Shi, Xin-Nian Wang, Jian Zhou",
+      "author_count": 5,
+      "arxiv_id": "2609.04964",
+      "url": "https://arxiv.org/abs/2609.04964",
+      "category": "Phenomenology",
+      "abstract": "Using eHIJING with nonlinear small-x initial-state radiation, beam remnants, final-state radiation, and hadronization, the paper finds that parton-level nuclear kT broadening is diluted in several conventional hadronic observables, while global hadronic recoil remains sensitive and can be unfolded toward the underlying hard-scattering kT distribution.",
+      "tags": ["gluon saturation", "EIC", "hadronization", "Bayesian unfolding"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Hadronization effects and electroweak contributions in DIS one-jettiness",
+      "short_authors": "Radja Boughezal, Haotian Cao, Zhong-Bo Kang, Xiaohui Liu, Sonny Mantry, Frank Petriello",
+      "author_count": 6,
+      "arxiv_id": "2609.04306",
+      "url": "https://arxiv.org/abs/2609.04306",
+      "category": "Phenomenology",
+      "abstract": "The paper derives leading hadronization effects and massive electroweak contributions for tau1 and tau1a DIS one-jettiness, showing universal shape-function structure with calculable kinematic dependence and presenting high-accuracy QCD plus electroweak predictions compared to Pythia for HERA/EIC kinematics.",
+      "tags": ["DIS one-jettiness", "hadronization", "event shapes", "EIC"],
+      "assessment": "strong"
+    },
+    {
+      "title": "FUSION: a skill-based research agent for publicly obtainable nuclear-physics codes",
+      "short_authors": "Jin Lei",
+      "author_count": 1,
+      "arxiv_id": "2609.04742",
+      "url": "https://arxiv.org/abs/2609.04742",
+      "category": "AI/ML use",
+      "abstract": "FUSION uses code-specific skills to obtain, run, parse, and benchmark public nuclear-physics codes before reporting results. The current release covers 20 codes spanning nuclear reactions, structure, fission/statistical models, R-matrix analysis, astrophysics, and heavy-ion transport, plus an offline nucl-th literature collection.",
+      "tags": ["research agents", "nuclear codes", "benchmark validation", "heavy-ion transport"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "A Differentiable Neural Surrogate for Photon Propagation in Neutrino Telescopes",
+      "short_authors": "Felix J. Yu, Berthy T. Feng, Nicholas Kamp, Carlos A. Arguelles",
+      "author_count": 4,
+      "arxiv_id": "2609.04695",
+      "url": "https://arxiv.org/abs/2609.04695",
+      "category": "AI/ML use cases",
+      "abstract": "candela is a differentiable SIREN neural field for IceCube photon Green's functions, predicting yield and arrival-time distributions for point deposits and sensors. It reports 50-100x faster event generation, median yields within 2% of Monte Carlo, timing agreement at the MC statistical floor, and end-to-end gradients for event and medium parameters.",
+      "tags": ["differentiable simulation", "photon propagation", "neutrino telescopes", "surrogate model"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Quantum Graph Neural Networks for Jet Tagging on Quantum Hardware",
+      "short_authors": "Benjamin Jobilal, Jinghong Yang, Trevor Smith, Vincent Calvo, Zhong-Bo Kang, Shabnam Jabeen",
+      "author_count": 6,
+      "arxiv_id": "2609.04367",
+      "url": "https://arxiv.org/abs/2609.04367",
+      "category": "AI/ML use cases",
+      "abstract": "A permutation-invariant quantum graph neural network is applied to particle-cloud jet tagging for quark/gluon and up/down discrimination. Ideal simulations are reported as competitive with Particle Flow Networks and QCD observables, scaled-down models are run on IBM and IonQ hardware, and interpretability connects learned features to generalized angularities and jet charge.",
+      "tags": ["quantum ML", "jet tagging", "particle clouds", "interpretability"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "FluxDisco: Symbolic Regression for Stoichiometric Dynamical Systems via Monte Carlo Graph Search",
+      "short_authors": "Cassandra Durr, Alvaro Koehn-Luque, Chris Jewell, Lloyd A. C. Chapman",
+      "author_count": 4,
+      "arxiv_id": "2609.05207",
+      "url": "https://arxiv.org/abs/2609.05207",
+      "category": "AI/ML use cases",
+      "abstract": "FluxDisco constrains symbolic regression for flux-based stoichiometric ODE systems using known stoichiometry, reducing the search space and enforcing physical adherence while adapting Monte Carlo Graph Search for joint flux discovery.",
+      "tags": ["symbolic regression", "dynamical systems", "conservation constraints", "interpretable models"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "A Data Fusion Framework for Grounding Aerospace Surrogate Model via Experimental Wind-Tunnel Observations",
+      "short_authors": "Nitin Nagesh Kulkarni, Dheeraj Vemula, Yin Yu, Peter Lyu, Juan J. Alonso",
+      "author_count": 5,
+      "arxiv_id": "2609.04267",
+      "url": "https://arxiv.org/abs/2609.04267",
+      "category": "AI/ML use cases",
+      "abstract": "A CFD-trained surrogate is corrected with spatially registered wind-tunnel pressure measurements, learning systematic simulation-to-experiment discrepancies without retraining the base surrogate and improving held-out pressure-field agreement.",
+      "tags": ["data fusion", "surrogate correction", "simulation-to-experiment", "domain shift"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Signals for Nuclear Solid-Liquid Phase Transition in Clustering Nuclei",
+      "short_authors": "Xi-Guang Cao, Yong-Hao Jin, Chun-Wang Ma, Wen-Bo Liu, Yu-Gang Ma",
+      "author_count": 5,
+      "arxiv_id": "2609.05145",
+      "url": "https://arxiv.org/abs/2609.05145",
+      "category": "Caution",
+      "abstract": "The paper claims a new first-order nuclear solid-liquid phase transition in low-energy heavy-ion collisions of clustering nuclei, with negative heat capacity, caloric plateaus, fragment and entropy signals, and melting-like pair-distance distributions.",
+      "tags": ["cluster nuclei", "phase transition", "negative heat capacity", "low-energy heavy ions"],
+      "assessment": "caution"
+    }
+  ]
+}

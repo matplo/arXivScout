@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-08</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-08 Briefing</h1>
+    <p class="dek">Recent arXiv listings relevant to heavy-ion physics, nuclear-QCD phenomenology, and AI/ML methods with plausible transfer value for HEP or nuclear physics.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest new heavy-ion item is the CMS coherent J/psi photoproduction measurement in hadronic PbPb collisions: a greater-than-5-sigma spin-dependent azimuthal asymmetry tied to the event plane, with a plausible polarization interpretation and possible reaction-plane utility.</li>
+        <li>Nuclear-QCD phenomenology is particularly strong today around EIC observables: global hadronic recoil is proposed as a more robust saturation handle after hadronization than dihadron decorrelation or nucleon energy correlators.</li>
+        <li>Heavy-flavor and quarkonium physics at RHIC is represented by a useful review rather than a new measurement; it is still worth flagging because it consolidates PHENIX/STAR constraints on transport, hadronization, quarkonium suppression and regeneration, and future sPHENIX/EIC connections.</li>
+        <li>AI/ML papers worth attention are those with validation discipline: differentiable photon propagation for IceCube-like detectors, benchmark-gated agents for nuclear codes, and simulation-to-experiment surrogate correction. Quantum jet-tagging is interesting but should be read as exploratory rather than evidence of near-term quantum advantage.</li>
+        <li>The nuclear solid-liquid phase-transition paper is a caution item: the abstract makes a broad claim about a new first-order transition from limited low-energy cluster systems, so the burden is on model dependence, finite-size interpretation, and experimental robustness.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04376 Spin-dependent azimuthal asymmetry coherent J/psi photoproduction hadronic PbPb CMS event plane vector meson polarization experiment strong">
+        <div class="paper-head"><h4>Spin-dependent azimuthal asymmetry of coherent J/psi photoproduction in hadronic PbPb collisions at sqrt(sNN) = 5.36 TeV</h4><span class="label strong">strong</span></div>
+        <p class="meta">CMS Collaboration. <a href="https://arxiv.org/abs/2609.04376">arXiv:2609.04376</a> [nucl-ex, hep-ex]</p>
+        <p><strong>Abstract:</strong> CMS reports the azimuthal asymmetry of decay muons from coherently photoproduced J/psi mesons relative to the second-order event plane in hadronic PbPb collisions at 5.36 TeV, using 1.26 nb^-1. The measured harmonic amplitude is negative, A2 = -0.194 +/- 0.022 stat. +/- 0.018 syst., with significance above five standard deviations; no strong rapidity or overlap dependence is observed. A model in which the J/psi inherits incident-photon linear polarization is consistent with the data.</p>
+        <p><strong>Why it matters:</strong> This is a clean new experimental handle on spin-dependent structure in coherent vector-meson photoproduction inside hadronic heavy-ion events, not only ultraperipheral collisions. The correlation with the event plane could also become a practical reaction-plane observable.</p>
+        <p><strong>Critical assessment:</strong> Strong. The signal is statistically compelling and directly in the core heavy-ion program. The interpretation still depends on model assumptions about photon polarization transfer and nuclear geometry, but the measurement itself is high value.</p>
+      </article>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04337 Heavy Flavors and Quarkonia at RHIC charm bottom QGP transport hadronization quarkonium review experiment strong">
+        <div class="paper-head"><h4>Heavy Flavors and Quarkonia at RHIC</h4><span class="label strong">strong review</span></div>
+        <p class="meta">Cameron Dean, Xin Dong, Rongrong Ma, Cesar Luiz da Silva. <a href="https://arxiv.org/abs/2609.04337">arXiv:2609.04337</a> [nucl-ex]</p>
+        <p><strong>Abstract:</strong> This review summarizes RHIC measurements of open heavy flavor and quarkonia from PHENIX and STAR, focused mainly on 200 GeV collisions from the first two decades of RHIC. It covers production cross sections, cold nuclear matter effects, nuclear modification factors, elliptic flow, charm baryon-to-meson ratios, and quarkonium suppression patterns, then connects these to heavy-quark transport, hadronization, dissociation, and regeneration.</p>
+        <p><strong>Why it matters:</strong> It is a compact state-of-the-field reference for RHIC heavy flavor and quarkonia, with direct relevance to sPHENIX and to EIC constraints on heavy-flavor production in ep and eA.</p>
+        <p><strong>Critical assessment:</strong> Strong as a review, not a new result. The likely value is synthesis and context-setting; the assessment of individual measurements should still be traced to the underlying STAR/PHENIX papers.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-date="2026-09-08" data-search="2609.05315 Spectator shadowing NCQ scaling RHIC-FXT FAIR quark coalescence elliptic flow heavy-ion theory mixed">
+        <div class="paper-head"><h4>Spectator shadowing as the source of the breaking of NCQ scaling at RHIC-FXT and FAIR energies</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Tom Reichert, Iurii Karpenko. <a href="https://arxiv.org/abs/2609.05315">arXiv:2609.05315</a> [nucl-th, nucl-ex]</p>
+        <p><strong>Abstract:</strong> The paper addresses the observed breaking of number-of-constituent-quark scaling in identified-hadron elliptic flow at lower RHIC energies, often discussed as a possible onset marker for partonic collectivity. The authors embed spectator shadowing into flow scaling relations and, using an idealized quark-coalescence source plus a ballistic Glauber spectator, argue that spectator shadowing can generate the observed breaking.</p>
+        <p><strong>Why it matters:</strong> If correct, this complicates a common interpretation of NCQ-scaling violation at RHIC-FXT and FAIR energies and pushes analyses to separate deconfinement signatures from late geometric shadowing.</p>
+        <p><strong>Critical assessment:</strong> Interesting but preliminary. The physics question is important, but the evidence is based on a short proceedings study with a toy model and one figure; it is best treated as a useful challenge to interpretation rather than a settled explanation.</p>
+      </article>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04925 relativistic fluids thermal boundaries kinetic theory hydrodynamics no conserved charge QGP theory strong">
+        <div class="paper-head"><h4>Thermal boundaries for relativistic fluids without a conserved charge</h4><span class="label strong">strong theory</span></div>
+        <p class="meta">Lorenzo Gavassino, Soeren Schlichting, Gabriel S. Denicol. <a href="https://arxiv.org/abs/2609.04925">arXiv:2609.04925</a> [nucl-th, hep-th, physics.flu-dyn]</p>
+        <p><strong>Abstract:</strong> The authors derive effective hydrodynamic boundary conditions for an ultrarelativistic, no-charge fluid in a slab between conducting plates, using kinetic theory for self-interacting radiation emitted and absorbed by the boundaries. They find that walls behave as modified absorbing boundaries, not thermostats, and prove well-posedness of the resulting initial-boundary-value problem.</p>
+        <p><strong>Why it matters:</strong> Boundary-condition rigor is not a daily heavy-ion observable, but it is relevant to relativistic hydrodynamics as a theoretical infrastructure problem, including QGP-motivated fluids and numerical formulations.</p>
+        <p><strong>Critical assessment:</strong> Strong formal work with limited immediate phenomenology. Its value is conceptual and mathematical; translation to expanding heavy-ion geometries or freeze-out-like boundaries is not demonstrated here.</p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04964 gluon saturation EIC hadronization eHIJING Bayesian unfolding global hadronic recoil small-x phenomenology strong">
+        <div class="paper-head"><h4>Tracing Gluon Saturation through Hadronization at EIC</h4><span class="label strong">strong</span></div>
+        <p class="meta">Weiyao Ke, Xu Liu, Yu Shi, Xin-Nian Wang, Jian Zhou. <a href="https://arxiv.org/abs/2609.04964">arXiv:2609.04964</a> [hep-ph]</p>
+        <p><strong>Abstract:</strong> The paper studies how hadronization reshapes saturation signatures at the EIC using an eHIJING event-generator framework with nonlinear small-x initial-state radiation, beam remnants, final-state radiation, and hadronization. It finds that parton-level nuclear kT broadening is strongly diluted in the nucleon energy correlator and leading-dihadron azimuthal decorrelation, while global hadronic recoil remains sensitive; Bayesian unfolding is proposed to recover the underlying hard-scattering kT distribution.</p>
+        <p><strong>Why it matters:</strong> This is directly useful for EIC nuclear-QCD analyses and for heavy-ion-adjacent small-x physics because it asks which saturation observables survive realistic hadronization.</p>
+        <p><strong>Critical assessment:</strong> Strong phenomenology. The event-generator completeness and explicit unfolding strategy make it more actionable than parton-level-only studies. Remaining risk is model dependence in eHIJING and the robustness of the unfolding under detector effects and alternative hadronization tunes.</p>
+      </article>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04306 DIS one-jettiness hadronization event shapes EIC N3LL electroweak shape function phenomenology strong">
+        <div class="paper-head"><h4>Hadronization effects and electroweak contributions in DIS one-jettiness</h4><span class="label strong">strong</span></div>
+        <p class="meta">Radja Boughezal, Haotian Cao, Zhong-Bo Kang, Xiaohui Liu, Sonny Mantry, Frank Petriello. <a href="https://arxiv.org/abs/2609.04306">arXiv:2609.04306</a> [hep-ph, nucl-th]</p>
+        <p><strong>Abstract:</strong> The authors compute leading hadronization effects and massive electroweak contributions for tau1 and tau1a DIS one-jettiness event shapes. They show that leading hadronization effects are universal across tau1, tau1a, and DIS thrust but acquire calculable kinematic dependence, present N^3LL plus O(alpha_s^2) results for QCD, include W/Z exchange contributions, and compare to Pythia across HERA- and EIC-relevant kinematics.</p>
+        <p><strong>Why it matters:</strong> Precision event-shape control at the EIC is a bridge between perturbative QCD, hadronization modeling, and nuclear measurements, especially where small effects can masquerade as medium or saturation signatures.</p>
+        <p><strong>Critical assessment:</strong> Strong. The perturbative accuracy and universality test are convincing from the abstract; practical impact will depend on experimental unfoldability and nuclear-target extensions.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04742 FUSION nuclear physics code agent benchmark validation heavy-ion transport AI ML use mixed strong">
+        <div class="paper-head"><h4>FUSION: a skill-based research agent for publicly obtainable nuclear-physics codes</h4><span class="label mixed">promising mixed</span></div>
+        <p class="meta">Jin Lei. <a href="https://arxiv.org/abs/2609.04742">arXiv:2609.04742</a> [nucl-th, physics.comp-ph]</p>
+        <p><strong>Abstract:</strong> FUSION proposes code-specific skills for running public nuclear-physics codes: each skill obtains a code, begins from verified inputs, runs and parses calculations, records known failure modes, and must reproduce a benchmark within tolerance before reporting. The release covers 20 codes across optical models, reactions, nuclear structure, fission/statistical models, astrophysics, R-matrix analysis, and heavy-ion transport, with an offline searchable collection of 61,167 pages from nucl-th literature.</p>
+        <p><strong>Why it matters:</strong> This targets a real bottleneck: reproducible use of specialized nuclear codes without silently changing conventions. The benchmark-gated design is much more credible than a generic agent wrapper.</p>
+        <p><strong>Critical assessment:</strong> Promising but needs independent stress testing. The strongest feature is validation before reporting; the main concerns are benchmark coverage, long-term maintenance, and how well failures are surfaced when a code is outside the curated skill set.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases In Physics</h2>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04695 differentiable neural surrogate photon propagation neutrino telescopes IceCube detector simulation SIREN gradients HEP transfer strong">
+        <div class="paper-head"><h4>A Differentiable Neural Surrogate for Photon Propagation in Neutrino Telescopes</h4><span class="label strong">strong transfer</span></div>
+        <p class="meta">Felix J. Yu, Berthy T. Feng, Nicholas Kamp, Carlos A. Arguelles. <a href="https://arxiv.org/abs/2609.04695">arXiv:2609.04695</a> [astro-ph.HE, cs.LG, hep-ex]</p>
+        <p><strong>Method and result:</strong> candela is a differentiable SIREN neural field trained to learn IceCube photon Green's functions, predicting expected photon yield and full arrival-time distributions between point-like deposits and sensors. The abstract reports 50-100x faster event generation than existing methods, median yields within 2% of Monte Carlo expectation, and timing agreement at the Monte Carlo statistical floor across six photon-count decades.</p>
+        <p><strong>Likely use case for HEP/heavy-ion:</strong> The most direct transfer is fast differentiable detector simulation and gradient-based calibration for scattering or optically complex media. Conceptually, it is relevant to calorimeter optical transport, Cherenkov/RICH systems, and simulation-based inference pipelines where detector propagation dominates cost.</p>
+        <p><strong>Critical assessment:</strong> Strong and unusually concrete for an ML surrogate paper. The validation metrics are domain-specific and quantitative. Transfer to collider or heavy-ion detectors is plausible but not automatic because geometry, material heterogeneity, and pileup/occupancy differ substantially from IceCube.</p>
+      </article>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04367 quantum graph neural networks jet tagging particle clouds quark gluon up down QGNN quantum hardware HEP caution mixed">
+        <div class="paper-head"><h4>Quantum Graph Neural Networks for Jet Tagging on Quantum Hardware</h4><span class="label mixed">exploratory</span></div>
+        <p class="meta">Benjamin Jobilal, Jinghong Yang, Trevor Smith, Vincent Calvo, Zhong-Bo Kang, Shabnam Jabeen. <a href="https://arxiv.org/abs/2609.04367">arXiv:2609.04367</a> [hep-ph, hep-ex, quant-ph]</p>
+        <p><strong>Method and result:</strong> The paper presents a permutation-invariant quantum graph neural network for particle-cloud jet representations, studying quark/gluon tagging and up/down flavor tagging. In ideal simulation it is reported as competitive with Particle Flow Networks and traditional QCD observables, and scaled-down versions are trained/evaluated on IBM and IonQ hardware. Interpretability connects learned behavior to generalized angularities and jet charge.</p>
+        <p><strong>Likely use case for HEP/heavy-ion:</strong> Jet tagging and flavor-sensitive jet observables are obviously relevant to collider and EIC workflows; heavy-ion relevance would require robustness under high background and medium-modified fragmentation.</p>
+        <p><strong>Critical assessment:</strong> Interesting, but caution is warranted. The hardware demonstrations are necessarily scaled down, and the abstract does not establish a practical advantage over mature classical architectures. The interpretability component is a real strength and makes the paper more useful than a pure quantum-ML benchmark.</p>
+      </article>
+      <article class="paper" data-date="2026-09-08" data-search="2609.05207 FluxDisco symbolic regression dynamical systems stoichiometry physical constraints Monte Carlo graph search transferable AI ML mixed">
+        <div class="paper-head"><h4>FluxDisco: Symbolic Regression for Stoichiometric Dynamical Systems via Monte Carlo Graph Search</h4><span class="label mixed">selective transfer</span></div>
+        <p class="meta">Cassandra Durr, Alvaro Koehn-Luque, Chris Jewell, Lloyd A. C. Chapman. <a href="https://arxiv.org/abs/2609.05207">arXiv:2609.05207</a> [stat.ML, cs.LG, physics.data-an]</p>
+        <p><strong>Method and result:</strong> FluxDisco is a physics-informed symbolic-regression framework for flux-based stoichiometric ODE systems. By using known stoichiometry, it constrains the search space and avoids expressions that violate conservation structure, adapting Monte Carlo Graph Search for joint flux discovery and testing recovery of governing dynamics in physical and biological systems.</p>
+        <p><strong>Likely use case for HEP/heavy-ion:</strong> Transfer value is strongest for interpretable reduced-order dynamics with explicit conservation or reaction-network structure, such as rate equations, hadrochemistry, afterburner sensitivity studies, or coarse-grained kinetic models. It is not directly a heavy-ion method as written.</p>
+        <p><strong>Critical assessment:</strong> Mixed but worth tracking. The conservation-aware symbolic search is scientifically sensible; the abstract does not yet show performance on HEP/nuclear systems or on stiff, high-dimensional transport equations.</p>
+      </article>
+      <article class="paper" data-date="2026-09-08" data-search="2609.04267 data fusion surrogate model experimental correction CFD wind tunnel simulation experiment discrepancy transfer HEP detector simulation mixed">
+        <div class="paper-head"><h4>A Data Fusion Framework for Grounding Aerospace Surrogate Model via Experimental Wind-Tunnel Observations</h4><span class="label mixed">method transfer</span></div>
+        <p class="meta">Nitin Nagesh Kulkarni, Dheeraj Vemula, Yin Yu, Peter Lyu, Juan J. Alonso. <a href="https://arxiv.org/abs/2609.04267">arXiv:2609.04267</a> [cs.LG]</p>
+        <p><strong>Method and result:</strong> A CFD-trained Geotransolver surrogate is corrected using spatially registered wind-tunnel pressure-sensitive-paint measurements, learning systematic simulation-to-experiment discrepancies without retraining the base surrogate. The corrected model improves pressure-field agreement at Mach 0.85 and achieves held-out angle-of-attack agreement within 2.3-2.7% of the measured Cp range.</p>
+        <p><strong>Likely use case for HEP/heavy-ion:</strong> The transfer path is calibration of simulation-trained surrogates against sparse real data: detector response emulators, fast simulation, hydrodynamic/emulator corrections, or closure corrections between generators and control measurements.</p>
+        <p><strong>Critical assessment:</strong> Worth attention as a workflow pattern, not as physics content. The validation is concrete, but extrapolation to HEP/nuclear systems would require uncertainty propagation, domain-shift diagnostics, and tests against withheld experimental regimes.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak Or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-date="2026-09-08" data-search="2609.05145 nuclear solid liquid phase transition clustering nuclei negative heat capacity caloric plateau low-energy heavy-ion caution overclaimed">
+        <div class="paper-head"><h4>Signals for Nuclear Solid-Liquid Phase Transition in Clustering Nuclei</h4><span class="label caution">caution</span></div>
+        <p class="meta">Xi-Guang Cao, Yong-Hao Jin, Chun-Wang Ma, Wen-Bo Liu, Yu-Gang Ma. <a href="https://arxiv.org/abs/2609.05145">arXiv:2609.05145</a> [nucl-th]</p>
+        <p><strong>What it claims:</strong> The paper argues that a new first-order nuclear solid-liquid phase transition emerges in low-energy heavy-ion collisions of clustering systems, with negative heat capacity in smaller systems, caloric plateaus in larger systems, fragment-species and entropy signals, and melting-like changes in pair-distance distributions.</p>
+        <p><strong>Why to be careful:</strong> The claim is broad, and the abstract does not make clear how model-dependent the signals are, how finite-size effects are controlled, or what experimental observables would robustly distinguish this from known cluster dissolution and fragmentation physics. It may be interesting, but it needs unusually careful scrutiny before being treated as a new phase-transition discovery.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
