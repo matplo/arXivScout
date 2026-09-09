@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-09</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-09 briefing</h1>
+    <p class="dek">Heavy-ion jet substructure, kinetic relaxation beyond viscosity, baryon stopping at high baryon density, and physics ML workflows for nuclear cross sections and quarkonium suppression.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest theme is jet substructure as a medium-resolution diagnostic: arXiv:2609.05609 and arXiv:2609.05614 connect energy-energy correlators, quark/gluon quenching factors, and color decoherence in a way that is directly testable with heavy-ion jet data.</li>
+        <li>arXiv:2609.05703 is conceptually sharp: it argues that dilute small systems retain information about a spectrum of microscopic angular relaxation rates, so viscosity matching alone can erase physically measurable differences.</li>
+        <li>Low-energy baryon stopping remains active and experimentally relevant. arXiv:2609.06502 gives a detailed UrQMD history-level decomposition, with a notable isospin-conversion component across FAIR/NICA energies.</li>
+        <li>The two ML papers worth attention are not generic AI wrappers: arXiv:2609.08463 studies domain adaptation under target-dependent data coverage, and arXiv:2609.09047 embeds a learned Debye mass inside an existing bottomonium transport framework.</li>
+        <li>The main caution is arXiv:2609.06834: it targets an important stopping observable and a STAR tension, but the proceedings-length evidence is too compact for strong conclusions without fuller systematic comparisons.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2609.05703 microscopic relaxation anisotropic flow small systems kinetic theory viscosity angular harmonics Olga Soloveva strong">
+        <div class="paper-head"><h4>Beyond Viscosity Matching: Microscopic Relaxation in Anisotropic Flow</h4><span class="label strong">strong</span></div>
+        <p class="meta">Olga Soloveva. <a href="https://arxiv.org/abs/2609.05703">arXiv:2609.05703</a></p>
+        <p><strong>Abstract-level summary:</strong> The paper studies how different angular harmonics of a velocity distribution relax at distinct rates, with special relevance for dilute small systems such as pp, p+Pb, and O+O. It argues that models tuned to the same shear viscosity can still predict different anisotropic-flow responses because viscosity captures only one relaxation channel.</p>
+        <p><strong>Why it matters:</strong> This is directly relevant to the interpretation of collectivity in small systems, where few-scattering dynamics may expose microscopic information hidden in hydrodynamic descriptions.</p>
+        <p><strong>Assessment:</strong> Scientifically strong at the abstract level: the question is precise, the observable consequence is clear, and the claimed kinetic-solver check is a useful validation. The main thing to inspect in detail is how robust the first-order-in-collisions argument remains against realistic initial-state and hadronization uncertainties.</p>
+      </article>
+      <article class="paper" data-search="2609.05614 energy-energy correlators color decoherence generating functional jet calculus QGP Yacine Mehtar-Tani strong">
+        <div class="paper-head"><h4>Energy-energy correlators and color decoherence from a generating functional</h4><span class="label strong">strong</span></div>
+        <p class="meta">Yacine Mehtar-Tani. <a href="https://arxiv.org/abs/2609.05614">arXiv:2609.05614</a></p>
+        <p><strong>Abstract-level summary:</strong> The work develops a leading-log generating-functional treatment for hard-collinear jet evolution in a quark-gluon plasma, producing coupled equations for jet nuclear modification factors and energy-energy correlators. It explicitly treats coherent-to-incoherent evolution in the large-Nc limit.</p>
+        <p><strong>Why it matters:</strong> EECs are becoming a concrete route to separating overall jet suppression from medium modification of internal jet structure.</p>
+        <p><strong>Assessment:</strong> Strong and timely theory. The method is analytically structured and paired with an observable program, though phenomenological utility will depend on how well the approximations survive realistic jet reconstruction and background subtraction.</p>
+      </article>
+      <article class="paper" data-search="2609.05923 magnetic field pre-equilibrium Boltzmann-Vlasov gluon pressure anisotropy heavy-ion mixed">
+        <div class="paper-head"><h4>Effective kinetic theory description of the magnetic field-induced anisotropic gluon pressure during pre-equilibrium in heavy-ion collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Khwahish Kushwah, Alejandro Ayala, Gabriel S. Denicol, Ana Mizher. <a href="https://arxiv.org/abs/2609.05923">arXiv:2609.05923</a></p>
+        <p><strong>Abstract-level summary:</strong> This paper formulates a Boltzmann-Vlasov treatment of gluons interacting with time-dependent magnetic fields during pre-equilibrium, modeling gluon fluctuations into charged quark-antiquark dipoles. The reported result is a non-monotonic early-time pressure response and reduced growth of transverse-to-longitudinal pressure ratio, without true isotropization because collisions are omitted.</p>
+        <p><strong>Why it matters:</strong> Magnetic-field effects remain a difficult early-time problem, and pressure anisotropy is a direct bridge to initialization of hydrodynamics.</p>
+        <p><strong>Assessment:</strong> Worth tracking, but mixed: the setup attacks an important issue, yet the collisionless approximation and model interaction term make the quantitative phenomenological reach limited until benchmarked against fuller pre-equilibrium dynamics.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new experimental heavy-ion paper from the screened set cleared the selectivity bar today. Several cross-listed experimental entries were dark-matter or general HEP searches rather than heavy-ion collision measurements.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2609.05609 colors jet quenching energy-energy correlators quark gluon quenching factors medium resolution scale Casimir scaling Bossi Larose Mehtar-Tani strong">
+        <div class="paper-head"><h4>The Colors of Jet Quenching</h4><span class="label strong">strong</span></div>
+        <p class="meta">Hannah Bossi, Maxence Larose, Yacine Mehtar-Tani. <a href="https://arxiv.org/abs/2609.05609">arXiv:2609.05609</a></p>
+        <p><strong>Abstract-level summary:</strong> The paper combines inclusive jet RAA with energy-energy correlators to extract quark and gluon quenching factors plus a medium resolution scale. Its key claim is that coherent energy loss alone gives quark/gluon quenching factors incompatible with Casimir scaling, while antenna-like color decoherence improves the data description.</p>
+        <p><strong>Why it matters:</strong> This is a focused attempt to turn jet substructure into a quantitative probe of QGP resolving power, not just another shape comparison.</p>
+        <p><strong>Assessment:</strong> Strong and highly relevant. The data-driven framing and falsifiable null hypothesis are compelling; the critical checks are sensitivity to quark/gluon fractions, EEC systematics, and background treatment.</p>
+      </article>
+      <article class="paper" data-search="2609.06502 baryon stopping low-energy heavy-ion UrQMD isospin conversion NICA FAIR Au Au PRC strong">
+        <div class="paper-head"><h4>Microscopic study of baryon stopping in low-energy heavy-ion collisions within UrQMD model</h4><span class="label strong">strong</span></div>
+        <p class="meta">Sudhir Pandurang Rode. <a href="https://arxiv.org/abs/2609.06502">arXiv:2609.06502</a></p>
+        <p><strong>Abstract-level summary:</strong> The study uses UrQMD interaction histories in Au+Au collisions from sqrt(sNN)=2.4-17.3 GeV to classify final protons by origin and quantify transported versus isospin-converted components. It compares proton-category flow to data and links isospin conversion to pion charge ratios and Kitazawa-Asakawa assumptions.</p>
+        <p><strong>Why it matters:</strong> This is directly aligned with the FAIR/NICA/RHIC-BES program, where net-baryon density and stopping mechanisms are central.</p>
+        <p><strong>Assessment:</strong> Strong as a transport-model phenomenology paper, especially because it is accepted in PRC and makes a concrete microscopic decomposition. Interpretation should still be model-aware: UrQMD histories are diagnostic, not direct observables.</p>
+      </article>
+      <article class="paper" data-search="2609.07442 K star K* resonance high baryon density AMPT-HC hadronic medium Au Au 3 GeV mixed">
+        <div class="paper-head"><h4>A phenomenological approach to direct K* production and hadronic medium effects in nucleus-nucleus collisions at high baryon density</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Hongcan Li, Yun Liu, Guangyu Zheng, Yaping Wang, Guannan Xie, Gao-chan Yong. <a href="https://arxiv.org/abs/2609.07442">arXiv:2609.07442</a></p>
+        <p><strong>Abstract-level summary:</strong> The authors use AMPT-HC for Au+Au at sqrt(sNN)=3 GeV and introduce a phenomenological direct K*(892) source by converting a controlled fraction of final kaons from associated-production channels. They predict different centrality trends depending on the balance of early direct production, later K+pi fusion, daughter rescattering, and reconstruction efficiency.</p>
+        <p><strong>Why it matters:</strong> Short-lived resonances at high baryon density can probe late hadronic dynamics in a region where data are sparse and upcoming measurements could be decisive.</p>
+        <p><strong>Assessment:</strong> Interesting and testable, but mixed because the central ingredient is a tunable production prescription. Its value will rise if the parameterization is constrained against independent strange-hadron data.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2609.09047 bottomonium suppression machine-learning Debye mass lattice-informed KSU potential quantum trajectories Pb Pb Upsilon strong mixed">
+        <div class="paper-head"><h4>Bottomonium suppression with a machine-learning-informed Debye mass</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ajaharul Islam, Shibo Chen, Fu-Peng Li, Long-Gang Pang, Guang-You Qin. <a href="https://arxiv.org/abs/2609.09047">arXiv:2609.09047</a></p>
+        <p><strong>Abstract-level summary:</strong> The paper inserts an ML-informed Debye mass, extracted from lattice-informed inputs, into the complex KSU heavy-quark potential and propagates bottomonium states with a quantum-trajectories framework. It compares Upsilon RAA and double ratios to ALICE, ATLAS, and CMS Pb-Pb data at 5.02 TeV, with improved agreement claimed especially for excited states.</p>
+        <p><strong>Why it matters:</strong> Quarkonium suppression is a sensitive QGP thermometer, and a learned screening mass could be useful if it improves interpolation between lattice constraints and phenomenology without hiding physics assumptions.</p>
+        <p><strong>Assessment:</strong> Promising but not a free pass. The comparison to data is relevant and the ML component is embedded in a physical model, but the decisive questions are baseline transparency, uncertainty propagation, and whether the learned Debye mass improves prediction beyond flexible retuning.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2609.08463 inclusive electron nucleus cross section domain adaptation transfer learning nuclear targets carbon oxygen calcium iron Graczyk strong HEP nuclear physics">
+        <div class="paper-head"><h4>Inclusive electron-nucleus cross section models from domain adaptation</h4><span class="label strong">strong</span></div>
+        <p class="meta">Krzysztof M. Graczyk, Beata E. Kowal, Rwik Dharmapal Banerjee, Jose Luis Bonilla, Hemant Prasad, Jan T. Sobczyk. <a href="https://arxiv.org/abs/2609.08463">arXiv:2609.08463</a></p>
+        <p><strong>Method and result:</strong> The authors pretrain deep-network ensembles on carbon inclusive electron-nucleus data, then fine-tune to He, Li, O, Al, Ca, and Fe. They explicitly study layer depth, training-data fraction and selection, kinematic-domain overlap, and compare predictions to the phenomenological F1F2 model.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The immediate relevance is neutrino and EIC nuclear modeling, but the transfer-learning design is also instructive for heavy-ion calibration problems where high-quality data are uneven across species, energies, and centrality.</p>
+        <p><strong>Assessment:</strong> Strong transfer value. The paper appears careful about target-dependent robustness and does not treat ML as magic; the caveat is that extrapolation remains data-coverage limited, especially for sparse nuclei such as lithium.</p>
+      </article>
+      <article class="paper" data-search="2609.09047 bottomonium suppression ML Debye mass QGP heavy-ion quarkonium transferable mixed">
+        <div class="paper-head"><h4>Bottomonium suppression with a machine-learning-informed Debye mass</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ajaharul Islam, Shibo Chen, Fu-Peng Li, Long-Gang Pang, Guang-You Qin. <a href="https://arxiv.org/abs/2609.09047">arXiv:2609.09047</a></p>
+        <p><strong>Method and result:</strong> ML is used to obtain a lattice-informed Debye mass that feeds a complex in-medium heavy-quark potential; bottomonium dynamics are then evolved with QTraj and compared to LHC Pb-Pb quarkonium observables.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is a direct heavy-ion use case: learned medium inputs for potential-model or transport calculations, provided uncertainties are carried through to final observables.</p>
+        <p><strong>Assessment:</strong> Worth watching, but the strength depends on whether the learned input is interpretable and predictive rather than a post-hoc fit-improver.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2609.06834 strangeness baryon electric charge stopping isobar STAR AMPT UrQMD caution">
+        <div class="paper-head"><h4>The role of strangeness in baryon and electric charge stoppings</h4><span class="label caution">caution</span></div>
+        <p class="meta">Zi-Wei Lin, Mason Alexander Ross. <a href="https://arxiv.org/abs/2609.06834">arXiv:2609.06834</a></p>
+        <p>This proceedings contribution flags an interesting stopping observable: ratios involving net-baryon and net-electric-charge stopping can be sensitive to strange versus anti-strange rapidity distributions and net-light-quark stopping. It is worth reading because it directly addresses a reported contradiction between AMPT/UrQMD expectations and recent STAR isobar data.</p>
+        <p><strong>Caution:</strong> The scientific issue is important, but the abstract indicates a compact model-comparison argument rather than a full systematic resolution. Treat it as a useful diagnostic note and motivation for fuller studies, not as a settled explanation of the stopping puzzle.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>

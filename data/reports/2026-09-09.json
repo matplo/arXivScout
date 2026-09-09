@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-09",
+  "path": "reports/2026-09-09.html",
+  "summary": "The selected papers emphasize jet substructure and color decoherence, microscopic relaxation beyond viscosity matching, low-energy baryon stopping and isospin conversion, magnetic-field effects during pre-equilibrium, and physics ML methods for nuclear cross-section transfer learning and bottomonium suppression. The strongest items are the jet-quenching/EEC pair and the kinetic-relaxation paper; the main caution concerns proceedings-level evidence for strangeness-sensitive stopping ratios.",
+  "keywords": ["jet quenching", "energy-energy correlators", "color decoherence", "anisotropic flow", "microscopic relaxation", "baryon stopping", "isospin conversion", "pre-equilibrium magnetic fields", "domain adaptation", "bottomonium suppression", "Debye mass"],
+  "arxiv_ids": ["2609.05609", "2609.05614", "2609.05703", "2609.05923", "2609.06502", "2609.07442", "2609.08463", "2609.09047"],
+  "total_paper_count": 8,
+  "represented_categories": ["Theory", "Phenomenology", "AI/ML use"],
+  "strongest_paper_summary": "arXiv:2609.05609 and arXiv:2609.05614 form the strongest heavy-ion theme, using energy-energy correlators and jet nuclear modification to probe QGP color decoherence and medium resolution.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "The Colors of Jet Quenching",
+      "short_authors": "Hannah Bossi, Maxence Larose, Yacine Mehtar-Tani",
+      "author_count": 3,
+      "arxiv_id": "2609.05609",
+      "url": "https://arxiv.org/abs/2609.05609",
+      "category": "Phenomenology",
+      "abstract": "The paper combines inclusive jet nuclear modification factors with energy-energy correlators to extract quark and gluon quenching factors and a medium resolution scale, finding that color decoherence improves the description of heavy-ion jet data.",
+      "tags": ["jet quenching", "EEC", "color decoherence", "Casimir scaling"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Energy-energy correlators and color decoherence from a generating functional",
+      "short_authors": "Yacine Mehtar-Tani",
+      "author_count": 1,
+      "arxiv_id": "2609.05614",
+      "url": "https://arxiv.org/abs/2609.05614",
+      "category": "Theory",
+      "abstract": "A leading-log generating-functional framework gives coupled evolution equations for jet RAA and EECs, including coherent-to-incoherent evolution in the large-Nc limit.",
+      "tags": ["EEC", "jet calculus", "QGP", "medium resolution"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Beyond Viscosity Matching: Microscopic Relaxation in Anisotropic Flow",
+      "short_authors": "Olga Soloveva",
+      "author_count": 1,
+      "arxiv_id": "2609.05703",
+      "url": "https://arxiv.org/abs/2609.05703",
+      "category": "Theory",
+      "abstract": "The paper argues that dilute anisotropic flow in small collision systems probes a spectrum of microscopic angular relaxation rates, not only the quadrupole rate encoded by shear viscosity.",
+      "tags": ["anisotropic flow", "small systems", "kinetic theory", "relaxation rates"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Effective kinetic theory description of the magnetic field-induced anisotropic gluon pressure during pre-equilibrium in heavy-ion collisions",
+      "short_authors": "Khwahish Kushwah, Alejandro Ayala, Gabriel S. Denicol, Ana Mizher",
+      "author_count": 4,
+      "arxiv_id": "2609.05923",
+      "url": "https://arxiv.org/abs/2609.05923",
+      "category": "Theory",
+      "abstract": "A Boltzmann-Vlasov model is used to estimate how time-dependent magnetic fields affect early gluon pressure anisotropy during the collisionless pre-equilibrium stage.",
+      "tags": ["magnetic field", "pre-equilibrium", "Boltzmann-Vlasov", "pressure anisotropy"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Microscopic study of baryon stopping in low-energy heavy-ion collisions within UrQMD model",
+      "short_authors": "Sudhir Pandurang Rode",
+      "author_count": 1,
+      "arxiv_id": "2609.06502",
+      "url": "https://arxiv.org/abs/2609.06502",
+      "category": "Phenomenology",
+      "abstract": "UrQMD interaction histories in Au+Au collisions from sqrt(sNN)=2.4-17.3 GeV are used to classify stopped protons and quantify a large isospin-converted component relevant to FAIR/NICA energies.",
+      "tags": ["baryon stopping", "UrQMD", "isospin conversion", "FAIR/NICA"],
+      "assessment": "strong"
+    },
+    {
+      "title": "A phenomenological approach to direct K* production and hadronic medium effects in nucleus-nucleus collisions at high baryon density",
+      "short_authors": "Hongcan Li, Yun Liu, Guangyu Zheng, Yaping Wang, Guannan Xie, Gao-chan Yong",
+      "author_count": 6,
+      "arxiv_id": "2609.07442",
+      "url": "https://arxiv.org/abs/2609.07442",
+      "category": "Phenomenology",
+      "abstract": "AMPT-HC is extended with a tunable direct K* production component to study K*/K centrality trends, daughter rescattering, and reconstruction efficiency in Au+Au at 3 GeV.",
+      "tags": ["K* resonance", "high baryon density", "AMPT-HC", "hadronic phase"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Inclusive electron-nucleus cross section models from domain adaptation",
+      "short_authors": "Krzysztof M. Graczyk, Beata E. Kowal, Rwik Dharmapal Banerjee, Jose Luis Bonilla, Hemant Prasad, Jan T. Sobczyk",
+      "author_count": 6,
+      "arxiv_id": "2609.08463",
+      "url": "https://arxiv.org/abs/2609.08463",
+      "category": "AI/ML use",
+      "abstract": "Transfer learning adapts carbon-trained neural-network ensembles to multiple nuclear targets while studying layer depth, training coverage, target dependence, and comparison to F1F2 phenomenology.",
+      "tags": ["domain adaptation", "transfer learning", "electron-nucleus scattering", "nuclear modeling"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Bottomonium suppression with a machine-learning-informed Debye mass",
+      "short_authors": "Ajaharul Islam, Shibo Chen, Fu-Peng Li, Long-Gang Pang, Guang-You Qin",
+      "author_count": 5,
+      "arxiv_id": "2609.09047",
+      "url": "https://arxiv.org/abs/2609.09047",
+      "category": "AI/ML use",
+      "abstract": "An ML-informed Debye mass from lattice-informed inputs is inserted into a complex KSU heavy-quark potential and used with QTraj to compute Upsilon suppression in Pb-Pb collisions.",
+      "tags": ["bottomonium", "Debye mass", "machine learning", "QGP screening"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "The role of strangeness in baryon and electric charge stoppings",
+      "short_authors": "Zi-Wei Lin, Mason Alexander Ross",
+      "author_count": 2,
+      "arxiv_id": "2609.06834",
+      "url": "https://arxiv.org/abs/2609.06834",
+      "category": "Phenomenology caution",
+      "abstract": "A proceedings contribution argues that baryon-to-charge stopping ratios are sensitive to strange-antistrange and light-quark rapidity distributions and highlights tension with STAR isobar data.",
+      "tags": ["stopping", "strangeness", "isobars", "STAR tension"],
+      "assessment": "caution"
+    }
+  ]
+}
