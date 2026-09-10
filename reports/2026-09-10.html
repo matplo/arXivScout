@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-10</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-10 briefing</h1>
+    <p class="dek">Selective scan of arXiv recent listings dated 2026-09-09 to 2026-09-10, centered on heavy-ion-adjacent QCD matter, heavy-flavour ML, SMEFT search automation, and transferable physics-dynamics learning.</p>
+    <div class="filter-panel" aria-label="Report filters"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest direct HEP-AI item is arXiv:2609.09275, which uses self-supervised transformer training on LHCb heavy-flavour environments and tests the learned anomaly score on both simulated Open Data and 2017 collision Open Data.</li>
+        <li>Heavy-ion collision coverage was thin in the newest announcement slice. arXiv:2609.09047 remains the main directly heavy-ion ML paper in the current recency window, but it should be read as promising and model-dependent rather than decisive.</li>
+        <li>arXiv:2609.09530 is not a collision-phenomenology paper, but it is a useful nuclear-QCD infrastructure contribution: reproducible MUSES workflows for pQCD dense-matter constraints with finite strange-quark mass.</li>
+        <li>arXiv:2609.10382 is an interesting SMEFT search-automation proposal, but the abstract-level claim that RL can find operators for any anomaly is broader than the demonstrated scope described there.</li>
+        <li>Among broader AI/ML papers, arXiv:2609.10464 has the clearest transfer path to HEP/nuclear workflows: latent dynamics models that generalize across physics parameters could inform fast surrogate models for transport, detector response, or simulation steering.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2609.09530 MUSES pQCD dense matter finite strange quark mass equation of state neutron stars nuclear QCD theory mixed">
+        <div class="paper-head"><h4>MUSES workflows for pQCD constraints on dense matter with finite quark masses</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Isabella Danhoni, Mateus Reinke Pelicer, Debora Mroczek, Yumu Yang, Mauricio Hippert, Jacquelyn Noronha-Hostler. <a href="https://arxiv.org/abs/2609.09530">arXiv:2609.09530</a></p>
+        <p><strong>Summary:</strong> The paper implements next-to-leading-order perturbative-QCD thermodynamics with finite strange-quark mass in the MUSES Calculation Engine. It compares renormalization-scale prescriptions in different conserved-charge bases and shows that finite-order symmetry choices can affect flavor composition and dense-matter equation-of-state priors.</p>
+        <p><strong>Why it matters:</strong> This is not a heavy-ion collision calculation, but it strengthens reproducible nuclear-QCD infrastructure around finite-density constraints, a theme shared by neutron-star and beam-energy-scan physics.</p>
+        <p><strong>Critical assessment:</strong> Methodologically useful and credible, especially because the workflow is modular and explicitly tracks scale choices. Its connection to heavy-ion phenomenology is indirect; the immediate payoff is EoS constraint infrastructure rather than a new collision observable.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No newly screened paper in the last arXiv announcement slice provided a strong direct heavy-ion collision measurement. The experimental papers that survived relevance screening were general HEP or heavy-flavour ML rather than heavy-ion collision results.</p>
+
+      <h3>Phenomenology</h3>
+      <p>No new non-ML heavy-ion phenomenology paper from the 2026-09-10 visible batch cleared the selectivity bar without duplicating stronger entries already archived on 2026-09-09.</p>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-search="2609.09047 bottomonium suppression machine-learning Debye mass lattice-informed KSU potential QTraj Pb Pb Upsilon QGP mixed">
+        <div class="paper-head"><h4>Bottomonium suppression with a machine-learning-informed Debye mass</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ajaharul Islam, Shibo Chen, Fu-Peng Li, Long-Gang Pang, Guang-You Qin. <a href="https://arxiv.org/abs/2609.09047">arXiv:2609.09047</a></p>
+        <p><strong>Summary:</strong> The authors extract an ML-informed Debye mass from lattice-informed inputs, insert it into the complex KSU heavy-quark potential, and evolve bottomonium states with the QTraj framework. They compare Upsilon nuclear modification factors and double ratios to ALICE, ATLAS, and CMS Pb-Pb data at 5.02 TeV, claiming improved agreement especially for excited states.</p>
+        <p><strong>Why it matters:</strong> Learned in-medium scales are potentially useful if they encode lattice constraints while remaining interpretable inside transport or potential models.</p>
+        <p><strong>Critical assessment:</strong> Worth following, but mixed. The work is physically embedded rather than generic ML decoration, yet the abstract does not establish whether improvement comes from genuine predictive structure, flexible retuning, or incomplete uncertainty propagation.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-search="2609.09275 LHCb self-supervised transformer heavy-flavour decays masked particle identification anomaly score Open Data strong">
+        <div class="paper-head"><h4>"Transforming" LHCb: self-supervised maps of heavy-flavour decays</h4><span class="label strong">strong</span></div>
+        <p class="meta">Marko Stamenkovic, Greg Landsberg. <a href="https://arxiv.org/abs/2609.09275">arXiv:2609.09275</a></p>
+        <p><strong>Method and result:</strong> The paper trains a self-supervised transformer on reconstructed heavy-hadron decay environments using masked particle-identification inference and constituent-completion tasks. In simulated LHCb Open Data, the self-supervised model beats a random-weight transformer and approaches a supervised transformer; in 2017 LHCb collision Open Data, constituent removal increases anomaly scores across eight heavy-flavour channels, with signal-region response above sidebands.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The immediate use is LHCb flavour tagging and incomplete-decay searches. The transferable idea for HEP and heavy-ion workflows is label-efficient representation learning on structured event environments, especially where rare or anomalous topologies are poorly labeled.</p>
+        <p><strong>Critical assessment:</strong> Strong for this scout: it has a concrete detector-analysis use case, multiple tasks, simulation-to-open-data checks, and nontrivial self-supervision. The next questions are robustness to real-analysis systematics, trigger/reconstruction biases, and whether the anomaly score remains calibrated in blind searches.</p>
+      </article>
+
+      <article class="paper" data-search="2609.10382 reinforcement learning SMEFT anomalies new physics operator search CDF W mass mixed caution">
+        <div class="paper-head"><h4>Searching for New Physics with Reinforcement Learning</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jacky Kumar, Marianne Bouchard, David London. <a href="https://arxiv.org/abs/2609.10382">arXiv:2609.10382</a></p>
+        <p><strong>Method and result:</strong> The authors frame SMEFT operator selection for anomaly explanation as a reinforcement-learning decision problem. They test it on the CDF W-mass anomaly and a multi-anomaly setting, reporting that the RL agent recovers or improves on known operator choices.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The direct use is HEP phenomenology, not heavy-ion physics. The transfer value is search-space navigation for high-dimensional effective models, which could be relevant to global calibration or model-selection problems in nuclear phenomenology if uncertainty treatment is made explicit.</p>
+        <p><strong>Critical assessment:</strong> Interesting but overclaim-prone at abstract level. The method may be genuinely useful for SMEFT triage, but a 6-page presentation and benchmark examples do not justify broad language about explaining any anomaly without stronger baselines, uncertainty accounting, and tests against adversarial or degenerate operator spaces.</p>
+      </article>
+
+      <article class="paper" data-search="2609.10464 Semigroup JEPA latent dynamics zero-shot physics generalization world model gravity rollout transfer surrogate mixed">
+        <div class="paper-head"><h4>Semigroup-JEPA: Latent Dynamics Consistency for Zero-Shot Physics Generalization</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Andy Zeyi Liu, Haoran Sun, Lucas Baker, Randall Balestriero, John Sous. <a href="https://arxiv.org/abs/2609.10464">arXiv:2609.10464</a></p>
+        <p><strong>Method and result:</strong> SG-JEPA conditions a latent temporal model on physics parameters and trains encoder-predictor rollouts for out-of-distribution dynamics. The authors report up to a factor-of-two lower open-loop prediction error on 2D dynamics tasks and up to 2.5 times better control success on 3D robotic datasets versus DINO-WM-style baselines.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The credible transfer path is parameter-conditioned surrogate modeling: fast emulators for transport, detector response, or simulation steering where the same equations are evaluated over different physical parameters.</p>
+        <p><strong>Critical assessment:</strong> Promising but not yet physics-domain validated for HEP or nuclear systems. The benchmark physics is simple compared with relativistic transport or detector simulation, so treat it as a method candidate, not evidence of readiness.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-search="2609.09785 QCD Masterclass lectures jet physics machine learning anomaly detection scaling laws educational caution">
+        <div class="paper-head"><h4>More QCD Masterclass Lectures on Jet Physics and Machine Learning</h4><span class="label caution">caution</span></div>
+        <p class="meta">Andrew J. Larkoski. <a href="https://arxiv.org/abs/2609.09785">arXiv:2609.09785</a></p>
+        <p>This looks valuable as a pedagogical reference on event metrics, anomaly detection, scaling laws, classification limits, and symmetry-respecting regression in QCD-motivated ML. I would not count it as a new research advance for today’s ranked list, because the abstract explicitly frames many results as known lecture material, with only some new derivations.</p>
+      </article>
+      <article class="paper" data-search="2609.09912 physics-guided ML extrapolation transient diffusion BiLSTM PINN recursive validation caution">
+        <div class="paper-head"><h4>Development and Validation of a Physics-Guided Machine Learning Extrapolation Framework Using a Classical Transient Diffusion Benchmark</h4><span class="label caution">caution</span></div>
+        <p class="meta">Ashutosh Yadav, Alok Dubey, Prodyut Ranjan Chakraborty, Harshal Akolekar. <a href="https://arxiv.org/abs/2609.09912">arXiv:2609.09912</a></p>
+        <p>The paper addresses a real problem, extrapolation beyond training domains, using a transient diffusion benchmark with analytic validation. The caution is transferability: a 1D benchmark with recursive self-extension is far from the uncertainty, dimensionality, and model-misspecification issues in HEP or nuclear applications, so this should not be taken as established reliability for complex physics inference.</p>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>

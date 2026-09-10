@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-10",
+  "path": "reports/2026-09-10.html",
+  "summary": "The newest screened arXiv slice was thin on direct heavy-ion collision measurements but useful for physics-AI and nuclear-QCD infrastructure. Key themes are self-supervised heavy-flavour representation learning at LHCb, machine-learning-informed quarkonium screening, reinforcement-learning search over SMEFT operator space, parameter-conditioned latent dynamics models, and reproducible pQCD dense-matter workflows with finite strange-quark mass.",
+  "keywords": ["self-supervised heavy flavour", "LHCb Open Data", "bottomonium suppression", "Debye mass", "SMEFT reinforcement learning", "latent dynamics", "zero-shot physics generalization", "MUSES", "pQCD dense matter", "finite strange quark mass"],
+  "arxiv_ids": ["2609.09530", "2609.09047", "2609.09275", "2609.10382", "2609.10464"],
+  "total_paper_count": 5,
+  "represented_categories": ["Theory", "AI/ML use", "Physics AI/ML"],
+  "strongest_paper_summary": "arXiv:2609.09275 is the strongest selected item: it gives a concrete self-supervised transformer workflow for LHCb heavy-flavour environments and checks anomaly-score behavior in both simulation and 2017 collision Open Data.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "MUSES workflows for pQCD constraints on dense matter with finite quark masses",
+      "short_authors": "Isabella Danhoni, Mateus Reinke Pelicer, Debora Mroczek, Yumu Yang, Mauricio Hippert, Jacquelyn Noronha-Hostler",
+      "author_count": 6,
+      "arxiv_id": "2609.09530",
+      "url": "https://arxiv.org/abs/2609.09530",
+      "category": "Theory",
+      "abstract": "The paper implements NLO pQCD thermodynamics with finite strange-quark mass in the MUSES Calculation Engine, comparing conserved-charge basis prescriptions and their effects on dense-matter flavor composition and EoS priors.",
+      "tags": ["MUSES", "pQCD", "dense matter", "finite strange mass"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Bottomonium suppression with a machine-learning-informed Debye mass",
+      "short_authors": "Ajaharul Islam, Shibo Chen, Fu-Peng Li, Long-Gang Pang, Guang-You Qin",
+      "author_count": 5,
+      "arxiv_id": "2609.09047",
+      "url": "https://arxiv.org/abs/2609.09047",
+      "category": "AI/ML use",
+      "abstract": "An ML-informed Debye mass is inserted into a complex KSU heavy-quark potential and propagated through QTraj to compute Upsilon suppression observables in Pb-Pb collisions.",
+      "tags": ["bottomonium", "Debye mass", "QTraj", "QGP screening"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "\"Transforming\" LHCb: self-supervised maps of heavy-flavour decays",
+      "short_authors": "Marko Stamenkovic, Greg Landsberg",
+      "author_count": 2,
+      "arxiv_id": "2609.09275",
+      "url": "https://arxiv.org/abs/2609.09275",
+      "category": "AI/ML use",
+      "abstract": "A self-supervised transformer learns heavy-flavour decay environments from masked particle-identification and constituent-completion tasks, performs competitively with supervised models in simulated LHCb Open Data, and shows anomaly-score response in 2017 collision Open Data.",
+      "tags": ["self-supervised learning", "LHCb", "heavy flavour", "anomaly score"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Searching for New Physics with Reinforcement Learning",
+      "short_authors": "Jacky Kumar, Marianne Bouchard, David London",
+      "author_count": 3,
+      "arxiv_id": "2609.10382",
+      "url": "https://arxiv.org/abs/2609.10382",
+      "category": "Physics AI/ML",
+      "abstract": "The paper frames SMEFT operator selection for anomaly explanation as a reinforcement-learning problem and tests it on the CDF W-mass anomaly and a more complex multi-anomaly scenario.",
+      "tags": ["reinforcement learning", "SMEFT", "operator search", "new physics"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Semigroup-JEPA: Latent Dynamics Consistency for Zero-Shot Physics Generalization",
+      "short_authors": "Andy Zeyi Liu, Haoran Sun, Lucas Baker, Randall Balestriero, John Sous",
+      "author_count": 5,
+      "arxiv_id": "2609.10464",
+      "url": "https://arxiv.org/abs/2609.10464",
+      "category": "Physics AI/ML",
+      "abstract": "SG-JEPA conditions latent rollouts on physics parameters and reports improved out-of-distribution prediction and control on simple dynamics and robotics benchmarks.",
+      "tags": ["latent dynamics", "world models", "zero-shot generalization", "surrogates"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "More QCD Masterclass Lectures on Jet Physics and Machine Learning",
+      "short_authors": "Andrew J. Larkoski",
+      "author_count": 1,
+      "arxiv_id": "2609.09785",
+      "url": "https://arxiv.org/abs/2609.09785",
+      "category": "Caution",
+      "abstract": "Lecture notes covering event metrics, anomaly detection, scaling laws, classification limits, and symmetry-respecting regression in QCD-motivated ML; useful pedagogically but not primarily a new research result.",
+      "tags": ["QCD lectures", "jet physics", "machine learning", "pedagogy"],
+      "assessment": "caution"
+    },
+    {
+      "title": "Development and Validation of a Physics-Guided Machine Learning Extrapolation Framework Using a Classical Transient Diffusion Benchmark",
+      "short_authors": "Ashutosh Yadav, Alok Dubey, Prodyut Ranjan Chakraborty, Harshal Akolekar",
+      "author_count": 4,
+      "arxiv_id": "2609.09912",
+      "url": "https://arxiv.org/abs/2609.09912",
+      "category": "Caution",
+      "abstract": "A physics-guided ML extrapolation framework is tested on a one-dimensional transient diffusion benchmark with analytic validation; relevance to complex HEP/nuclear inference remains unproven.",
+      "tags": ["physics-guided ML", "extrapolation", "diffusion benchmark", "PINN"],
+      "assessment": "caution"
+    }
+  ]
+}
