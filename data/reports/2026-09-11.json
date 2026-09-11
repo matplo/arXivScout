@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-11",
+  "path": "reports/2026-09-11.html",
+  "summary": "The screened 2026-09-11 arXiv slice contains one strong direct heavy-ion phenomenology contribution on efficient jet-wake medium response, a useful small-system non-flow caution, a compact light-nuclei/hypernuclei proceedings synthesis, and several high-value statistical or AI/ML methods with credible HEP/nuclear transfer. Recurring themes are jet-induced hydrodynamic wakes, multiplicity-biased non-flow, coalescence and feed-down, physics-guided Gaussian-process priors, nuisance-parameter-aware measurement combinations, distribution-shift quantification, detector-defined dataset contamination, and operations drift diagnosis.",
+  "keywords": ["jet wake", "medium response", "linearized hydrodynamics", "small-system non-flow", "multiplicity bias", "light nuclei", "hypernuclei", "coalescence", "physics-guided Gaussian processes", "uncertainty calibration", "BLUE combinations", "nuisance parameters", "distribution shift", "detector-defined contamination", "accelerator drift diagnosis", "quarkonium fragmentation"],
+  "arxiv_ids": ["2609.10679", "2609.11526", "2609.10963", "2609.11604", "2609.11714", "2609.11461", "2609.11874", "2609.11918", "2609.11449"],
+  "total_paper_count": 9,
+  "represented_categories": ["Theory", "Experiment", "Phenomenology", "AI/ML use", "Physics AI/ML"],
+  "strongest_paper_summary": "arXiv:2609.10679 is the strongest direct heavy-ion paper: it introduces an Efficient Wake procedure for jet-induced hydrodynamic response, benchmarks it against full 3+1D nonlinear hydrodynamics, and reports very large speedups suitable for Monte Carlo jet phenomenology.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Computationally Efficient Description of Medium Response to Jets in Heavy Ion Collisions",
+      "short_authors": "Jorge Casalderrey-Solana, Jose Guilherme Milhano, Daniel Pablos, Krishna Rajagopal, Xiaojun Yao",
+      "author_count": 5,
+      "arxiv_id": "2609.10679",
+      "url": "https://arxiv.org/abs/2609.10679",
+      "category": "Phenomenology",
+      "abstract": "The paper develops an Efficient Wake procedure for jet-induced hydrodynamic response using reusable linearized-hydrodynamic templates mapped onto freezeout with longitudinal expansion and radial-flow effects, benchmarked against full nonlinear 3+1D hydrodynamics.",
+      "tags": ["jet wake", "medium response", "linearized hydrodynamics", "Monte Carlo"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Study of the multiplicity dependence of non-flow correlations in pp collisions at sqrt(s)=200 GeV using PYTHIA",
+      "short_authors": "Milan Stojanovic, Joern Putschke",
+      "author_count": 2,
+      "arxiv_id": "2609.11526",
+      "url": "https://arxiv.org/abs/2609.11526",
+      "category": "Phenomenology",
+      "abstract": "Using PYTHIA at RHIC energy, the authors test whether non-flow correlations can be transferred from low to high multiplicity and find that multiplicity selections bias jet dynamics and non-flow scaling.",
+      "tags": ["small systems", "non-flow", "multiplicity bias", "PYTHIA"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Production of Light Nuclei and Hypernuclei in Heavy-Ion Collisions",
+      "short_authors": "Guannan Xie, Yue-Hang Leung",
+      "author_count": 2,
+      "arxiv_id": "2609.10963",
+      "url": "https://arxiv.org/abs/2609.10963",
+      "category": "Experiment",
+      "abstract": "A proceedings review of STAR and ALICE light-nucleus and hypernucleus yields, femtoscopy, and flow, emphasizing coalescence, feed-down, nuclear structure, and production chronology.",
+      "tags": ["light nuclei", "hypernuclei", "coalescence", "femtoscopy"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Collinear fragmentation of pseudoscalar quarkonia from NLO NRQCD",
+      "short_authors": "Francesco Giovanni Celiberto, Francesca Lonigro",
+      "author_count": 2,
+      "arxiv_id": "2609.11604",
+      "url": "https://arxiv.org/abs/2609.11604",
+      "category": "Phenomenology",
+      "abstract": "The paper announces NRFF1.0 collinear fragmentation functions for pseudoscalar quarkonia using NLO NRQCD inputs and heavy-flavor evolution, with possible use as a quarkonium-in-jet baseline for medium studies.",
+      "tags": ["quarkonium", "fragmentation", "NRQCD", "jet quenching"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Nuclear-physics-guided Gaussian Processes",
+      "short_authors": "Javier Rozalen Sarmiento, Hristijan Kochankovski, Arnau Rios, Angels Ramos",
+      "author_count": 4,
+      "arxiv_id": "2609.11714",
+      "url": "https://arxiv.org/abs/2609.11714",
+      "category": "AI/ML use",
+      "abstract": "Physics-motivated mean functions and kernels are encoded in Gaussian-process regression for nuclear phase shifts, mass excesses, and finite-temperature dense-matter equations of state, improving interpolation, calibration, and extrapolation over agnostic priors.",
+      "tags": ["Gaussian processes", "nuclear priors", "uncertainty calibration", "equation of state"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Combinations of measurements that are simultaneous fits of parameters of interest and systematic uncertainties using the BLUE method",
+      "short_authors": "Tomas Dado, Mark Owen, Michele Pinamonti",
+      "author_count": 3,
+      "arxiv_id": "2609.11461",
+      "url": "https://arxiv.org/abs/2609.11461",
+      "category": "Physics AI/ML",
+      "abstract": "The authors extend BLUE combinations to fitted nuisance parameters as well as parameters of interest, validate uncertainty behavior with pseudo-experiments, and provide an open-source implementation.",
+      "tags": ["BLUE", "measurement combination", "nuisance parameters", "systematics"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Physics-Informed Drift Diagnosis for Laser-Plasma Accelerator Operations",
+      "short_authors": "Ou Labun, Calin Hojbota, Mara Klebonas, Mike Downer, Rafal Zgadzaj, Phil Franke, Lance Labun",
+      "author_count": 7,
+      "arxiv_id": "2609.11874",
+      "url": "https://arxiv.org/abs/2609.11874",
+      "category": "Physics AI/ML",
+      "abstract": "A latent state-space model and extended Kalman filter infer effective laser-plasma variables from routine diagnostics in synthetic sessions, separating emission and transition models for drift attribution.",
+      "tags": ["state-space model", "Kalman filter", "accelerator operations", "drift diagnosis"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "General Quantification of Covariate and Concept Shifts",
+      "short_authors": "Hongbo Chen, Li Charlie Xia",
+      "author_count": 2,
+      "arxiv_id": "2609.11918",
+      "url": "https://arxiv.org/abs/2609.11918",
+      "category": "Physics AI/ML",
+      "abstract": "The paper introduces estimable covariate and concept shift measures based on entropic optimal transport, derives generalization bounds and concentration guarantees, and proposes the DataShifts algorithm.",
+      "tags": ["distribution shift", "optimal transport", "generalization", "simulation-to-data"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Prevalence Determines Precision: Silent Contamination in Detector-Defined Datasets",
+      "short_authors": "Jia Huang, Yankai Wan, Yangjun Ou",
+      "author_count": 3,
+      "arxiv_id": "2609.11449",
+      "url": "https://arxiv.org/abs/2609.11449",
+      "category": "Physics AI/ML",
+      "abstract": "The paper shows that detector- or heuristic-defined dataset precision depends strongly on true-positive prevalence, with contamination able to inherit detector-shaped structure rather than behave as additive noise.",
+      "tags": ["dataset contamination", "detector-defined labels", "prevalence", "Bayes"],
+      "assessment": "strong"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Bayesian Superiority in On/Off analysis",
+      "short_authors": "Gleb Babenov, Petr Satunin",
+      "author_count": 2,
+      "arxiv_id": "2609.11683",
+      "url": "https://arxiv.org/abs/2609.11683",
+      "category": "Caution",
+      "abstract": "The paper compares Bayesian non-informative-prior criteria with Li-Ma for On/Off counting problems and reports lower Type I and Type II error rates in simulations, including overdispersed backgrounds.",
+      "tags": ["On/Off analysis", "Bayesian criteria", "Li-Ma", "counting experiments"],
+      "assessment": "caution"
+    }
+  ]
+}
