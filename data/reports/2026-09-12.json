@@ -1,0 +1,143 @@
+{
+  "date": "2026-09-12",
+  "path": "reports/2026-09-12.html",
+  "summary": "The strongest heavy-ion-relevant item is a computationally efficient wake treatment for jet-medium response, because it targets a real bottleneck in Monte Carlo descriptions of soft jet-correlated hadrons and benchmarks against full 3+1D hydrodynamics. The day also contains useful but narrower work on light nuclei and hypernuclei at SQM 2026, non-flow multiplicity biases in RHIC-energy pp simulations, and physics-guided Gaussian processes for nuclear observables. On the AI/statistics side, the most transferable contributions concern uncertainty-aware nuclear emulation, collider jet tagging benchmarks, likelihood-combination methodology, detector-defined dataset contamination, and latent-state drift diagnosis for accelerator operations.",
+  "keywords": [
+    "jet-medium response",
+    "linearized hydrodynamics",
+    "light nuclei",
+    "hypernuclei",
+    "non-flow correlations",
+    "physics-guided Gaussian processes",
+    "semi-visible jets",
+    "systematic uncertainties",
+    "detector-defined datasets",
+    "accelerator drift diagnosis"
+  ],
+  "arxiv_ids": [
+    "2609.10679",
+    "2609.10963",
+    "2609.11526",
+    "2609.11714",
+    "2609.11692",
+    "2609.11461",
+    "2609.11874",
+    "2609.11449",
+    "2609.11683"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": [
+    "Phenomenology",
+    "Experiment",
+    "AI/ML use",
+    "Physics AI/ML",
+    "Data analysis/statistics",
+    "Caution"
+  ],
+  "strongest_paper": "2609.10679",
+  "strongest_paper_summary": "Efficient Wake model for jet-medium response, benchmarked against full 3+1D hydrodynamics and aimed at Monte Carlo jet analyses.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Computationally Efficient Description of Medium Response to Jets in Heavy Ion Collisions",
+      "short_authors": "Jorge Casalderrey-Solana, Jose Guilherme Milhano, Daniel Pablos, Krishna Rajagopal, Xiaojun Yao",
+      "total_author_count": 5,
+      "arxiv_id": "2609.10679",
+      "url": "https://arxiv.org/abs/2609.10679",
+      "category": "Phenomenology",
+      "abstract": "Develops an Efficient Wake procedure for hadrons from jet wakes in heavy-ion collisions, using linearized hydrodynamics template solutions in Bjorken flow with mappings that include radial flow. The authors benchmark against full 3+1D nonlinear hydrodynamics, report reasonable agreement, and claim speedups of at least tens of thousands over full hydro.",
+      "tags": ["jet wakes", "QGP hydrodynamic response", "linearized hydrodynamics", "Monte Carlo jets"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Production of Light Nuclei and Hypernuclei in Heavy-Ion Collisions",
+      "short_authors": "Guannan Xie, Yue-Hang Leung",
+      "total_author_count": 2,
+      "arxiv_id": "2609.10963",
+      "url": "https://arxiv.org/abs/2609.10963",
+      "category": "Experiment",
+      "abstract": "Reviews recent STAR and ALICE measurements of light-nucleus and hypernucleus yields, femtoscopic correlations, and collective flow from SQM 2026. The abstract emphasizes that statistical hadronization is useful but incomplete, while coalescence is broadly consistent for A<4 with sensitivity to hypertriton wave functions and feed-down treatment.",
+      "tags": ["light nuclei", "hypernuclei", "coalescence", "femtoscopy"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Study of the multiplicity dependence of non-flow correlations in pp collisions at sqrt(s)=200 GeV using PYTHIA",
+      "short_authors": "Milan Stojanovic, Joern Putschke",
+      "total_author_count": 2,
+      "arxiv_id": "2609.11526",
+      "url": "https://arxiv.org/abs/2609.11526",
+      "category": "Phenomenology",
+      "abstract": "Tests the common assumption that jet-induced non-flow correlations are independent of event multiplicity by studying two-particle correlations in PYTHIA pp events at RHIC energy. The authors find non-trivial multiplicity dependence tied to biases in jet production dynamics and challenge simple LHC-style subtraction procedures at lower energy.",
+      "tags": ["small systems", "non-flow", "multiplicity bias", "PYTHIA"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Nuclear-physics-guided Gaussian Processes",
+      "short_authors": "Javier Rozalen Sarmiento, Hristijan Kochankovski, Arnau Rios, Angels Ramos",
+      "total_author_count": 4,
+      "arxiv_id": "2609.11714",
+      "url": "https://arxiv.org/abs/2609.11714",
+      "category": "AI/ML use",
+      "abstract": "Applies physics-guided Gaussian process regression to nucleon-nucleon phase shifts, mass excesses, and finite-temperature dense-matter equations of state. The authors report improved interpolation, uncertainty calibration, and extrapolation reliability over agnostic GP baselines, emphasizing physically motivated mean functions and kernels.",
+      "tags": ["Gaussian processes", "uncertainty calibration", "dense matter EOS", "physics priors"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Hunting the Unseen: Deep Learning Analysis for Semi-Visible Jet Tagging",
+      "short_authors": "Miguel A. Avendano-Bernal, Srinandan Dasmahapatra, Ahmed Hammad, Stefano Moretti, Mihoko Nojiri, Michael H. Seymour, Claire Shepherd-Themistocleous",
+      "total_author_count": 7,
+      "arxiv_id": "2609.11692",
+      "url": "https://arxiv.org/abs/2609.11692",
+      "category": "Physics AI/ML",
+      "abstract": "Benchmarks five deep-learning classifiers for semi-visible jet discrimination in Hidden Valley models, combining global event kinematics with Lund jet plane images, energy correlations, angularity, charged multiplicity, and hierarchical jet representations. Global kinematics perform strongly, while multimodal combinations give the best overall performance.",
+      "tags": ["semi-visible jets", "deep learning", "jet substructure", "LHC searches"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Combinations of measurements that are simultaneous fits of parameters of interest and systematic uncertainties using the BLUE method",
+      "short_authors": "Tomas Dado, Mark Owen, Michele Pinamonti",
+      "total_author_count": 3,
+      "arxiv_id": "2609.11461",
+      "url": "https://arxiv.org/abs/2609.11461",
+      "category": "Data analysis/statistics",
+      "abstract": "Extends BLUE combinations to estimates of both parameters of interest and nuisance parameters from high-statistics likelihood fits. Pseudo-experiments indicate reliable uncertainties and show that an earlier approximate likelihood-combination approach implemented in Convino can underestimate uncertainties; the method is implemented in the open-source Combiner tool.",
+      "tags": ["BLUE combinations", "nuisance parameters", "systematic uncertainties", "HEP statistics"],
+      "assessment": "strong"
+    },
+    {
+      "title": "Physics-Informed Drift Diagnosis for Laser-Plasma Accelerator Operations",
+      "short_authors": "Ou Labun, Calin Hojbota, Mara Klebonas, Mike Downer, Rafal Zgadzaj, Phil Franke, Lance Labun",
+      "total_author_count": 7,
+      "arxiv_id": "2609.11874",
+      "url": "https://arxiv.org/abs/2609.11874",
+      "category": "Physics AI/ML",
+      "abstract": "Frames laser-plasma accelerator operations as a latent state-space model and uses an extended Kalman filter to infer effective interaction-point variables from routine beam observations. The authors test detection and attribution protocols in synthetic sessions and argue the limiting factor is the physical emission model rather than the inference algorithm.",
+      "tags": ["accelerator operations", "latent state-space model", "Kalman filter", "drift diagnosis"],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Prevalence Determines Precision: Silent Contamination in Detector-Defined Datasets",
+      "short_authors": "Jia Huang, Yankai Wan, Yangjun Ou",
+      "total_author_count": 3,
+      "arxiv_id": "2609.11449",
+      "url": "https://arxiv.org/abs/2609.11449",
+      "category": "Physics AI/ML transfer",
+      "abstract": "Analyzes ML datasets constructed by detector or heuristic selection and shows that precision depends strongly on true-positive prevalence in each candidate pool. In one detector-defined event dataset, the same detector yields phantom rates ranging from 81.7% to 0.0%, and Bayes-based prevalence modeling predicts precision much better than transferring rates across pools.",
+      "tags": ["dataset contamination", "selection bias", "detector-defined labels", "Bayesian precision"],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Bayesian Superiority in On/Off analysis",
+      "short_authors": "Gleb Babenov, Petr Satunin",
+      "total_author_count": 2,
+      "arxiv_id": "2609.11683",
+      "url": "https://arxiv.org/abs/2609.11683",
+      "category": "Caution",
+      "abstract": "Compares Bayesian criteria with flat, Jeffreys, and scale-invariant priors against the classical Li-Ma method for On/Off signal-versus-background tests. Monte Carlo studies report lower Type I and Type II error rates for Jeffreys-prior Bayesian criteria and better robustness under overdispersed backgrounds.",
+      "tags": ["On/Off analysis", "Bayesian testing", "Li-Ma", "background uncertainty"],
+      "assessment": "caution"
+    }
+  ]
+}

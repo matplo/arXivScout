@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-12</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>2026-09-12 Briefing</h1>
+    <p class="dek">A selective review of recent arXiv papers relevant to heavy-ion collision research and AI/ML use in physics, based primarily on the latest arXiv daily listings available at the Saturday run time.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report" id="archive-list">
+    <section>
+      <h2>Executive Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Jet-medium response is the strongest heavy-ion item.</strong> arXiv:2609.10679 targets a real computational bottleneck: adding soft hadrons from jet wakes to Monte Carlo jet analyses without running full 3+1D hydrodynamics for every event.</li>
+        <li><strong>Small-system collectivity analyses get a useful warning.</strong> arXiv:2609.11526 argues that multiplicity selections in RHIC-energy pp events bias jet-related non-flow, undermining simple low-to-high multiplicity subtraction assumptions.</li>
+        <li><strong>Light nuclei and hypernuclei remain model-discriminating observables.</strong> arXiv:2609.10963 emphasizes coalescence, feed-down, femtoscopy, wave-function sensitivity, and production chronology rather than treating integrated yields alone as decisive.</li>
+        <li><strong>The best AI/ML contribution is not generic ML decoration.</strong> arXiv:2609.11714 uses physics-informed GP priors and reports gains in accuracy, calibration, and extrapolation across nuclear phase shifts, mass excesses, and dense-matter EOS problems.</li>
+        <li><strong>Statistics and data-quality papers may be immediately useful to HEP workflows.</strong> arXiv:2609.11461 addresses combinations with constrained nuisance parameters, while arXiv:2609.11449 gives a transferable caution about detector-defined labels and prevalence-dependent contamination.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-Ion Collision Papers</h2>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Computationally Efficient Description of Medium Response to Jets in Heavy Ion Collisions</h4><span class="label strong">strong</span></div>
+        <p class="meta">Jorge Casalderrey-Solana, Jose Guilherme Milhano, Daniel Pablos, Krishna Rajagopal, Xiaojun Yao. <a href="https://arxiv.org/abs/2609.10679">arXiv:2609.10679</a></p>
+        <p><strong>Summary:</strong> The paper develops an Efficient Wake procedure for the hydrodynamic response of QGP to energy and momentum deposited by high-energy partons. It reuses template solutions to linearized hydrodynamics in Bjorken flow and maps them to freezeout while incorporating longitudinal expansion and radial flow. The authors benchmark against full 3+1D nonlinear hydrodynamics and report reasonable agreement plus speedups of at least tens of thousands.</p>
+        <p><strong>Why it matters:</strong> Jet substructure and soft correlated yield observables need a practical treatment of medium response; this is precisely the kind of model ingredient that can move from theory study into Monte Carlo phenomenology.</p>
+        <p><strong>Critical assessment:</strong> Strong. The problem is important, the approximation is physically motivated, and the full-hydro benchmark is the right validation target. The remaining risk is whether the simplified wake treatment preserves accuracy across realistic fluctuating backgrounds and full experimental observable definitions.</p>
+        <p><strong>Abstract:</strong> Develops an Efficient Wake procedure for hadrons from jet wakes in heavy-ion collisions, using linearized hydrodynamics template solutions and mappings that include radial flow; the authors benchmark against full 3+1D hydrodynamics and claim very large computational speedups.</p>
+      </article>
+
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Study of the multiplicity dependence of non-flow correlations in pp collisions at sqrt(s)=200 GeV using PYTHIA</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Milan Stojanovic, Joern Putschke. <a href="https://arxiv.org/abs/2609.11526">arXiv:2609.11526</a></p>
+        <p><strong>Summary:</strong> This study tests whether jet-induced non-flow correlations are independent of event multiplicity in pp collisions at RHIC energy. Using PYTHIA, it finds that selecting multiplicity ranges biases jet production dynamics and produces non-trivial multiplicity dependence in two-particle correlations.</p>
+        <p><strong>Why it matters:</strong> The result is directly relevant to ridge and collectivity claims in small systems, especially when low-multiplicity reference subtraction is imported from LHC-style analyses.</p>
+        <p><strong>Critical assessment:</strong> Mixed but useful. The message is important and operationally relevant, but PYTHIA-only conclusions should be treated as a controlled warning rather than a complete description of data-level non-flow in RHIC pp.</p>
+        <p><strong>Abstract:</strong> Studies two-particle non-flow correlations in PYTHIA pp events at sqrt(s)=200 GeV and argues that jet fragmentation and pT-differential cross sections depend non-trivially on multiplicity estimator and event class.</p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Production of Light Nuclei and Hypernuclei in Heavy-Ion Collisions</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Guannan Xie, Yue-Hang Leung. <a href="https://arxiv.org/abs/2609.10963">arXiv:2609.10963</a></p>
+        <p><strong>Summary:</strong> This SQM 2026 proceedings contribution reviews recent STAR and ALICE results on light-nucleus and hypernucleus yields, femtoscopy, and flow. It contrasts statistical-hadronization baselines with coalescence descriptions and highlights sensitivity to hypertriton wave functions, feed-down, nuclear structure, and late-stage dynamics.</p>
+        <p><strong>Why it matters:</strong> The observable set is central for distinguishing production chronology and hadronic afterburner/coalescence physics, especially as small-system and high-multiplicity pp measurements become more constraining.</p>
+        <p><strong>Critical assessment:</strong> Mixed-to-strong as a concise experimental synthesis, not a new analysis. Its value is in organizing multiple measurements and model tensions; proceedings format limits depth and independent validation.</p>
+        <p><strong>Abstract:</strong> Reviews STAR and ALICE measurements showing that statistical-hadronization calculations are useful but incomplete, while coalescence comparisons depend on few-body wave functions and feed-down treatment.</p>
+      </article>
+
+      <h3>AI/ML Use</h3>
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Nuclear-physics-guided Gaussian Processes</h4><span class="label strong">strong</span></div>
+        <p class="meta">Javier Rozalen Sarmiento, Hristijan Kochankovski, Arnau Rios, Angels Ramos. <a href="https://arxiv.org/abs/2609.11714">arXiv:2609.11714</a></p>
+        <p><strong>Summary:</strong> The paper applies physics-guided Gaussian process regression to nucleon-nucleon scattering phase shifts, nuclear mass excesses, and the finite-temperature dense-matter EOS. The key claim is that physically motivated mean functions and kernels improve interpolation, uncertainty calibration, and extrapolation compared with agnostic GP baselines.</p>
+        <p><strong>Why it matters:</strong> Heavy-ion and dense-QCD inference increasingly depend on calibrated emulators and credible uncertainty propagation; this paper focuses on exactly the part of ML that matters scientifically: priors, calibration, and extrapolation.</p>
+        <p><strong>Critical assessment:</strong> Strong from the abstract-level evidence. It treats ML as Bayesian surrogate modeling rather than decoration, and it compares against agnostic baselines. The next thing to inspect in depth is whether the benchmark splits are genuinely extrapolative and whether uncertainty coverage is robust in physically difficult regions.</p>
+        <p><strong>Abstract:</strong> Encodes nuclear-physics structures into Gaussian-process priors and reports systematic improvements across phase shifts, mass excesses, and finite-temperature dense-matter EOS tasks.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML Use Cases in Physics</h2>
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Hunting the Unseen: Deep Learning Analysis for Semi-Visible Jet Tagging</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Miguel A. Avendano-Bernal, Srinandan Dasmahapatra, Ahmed Hammad, Stefano Moretti, Mihoko Nojiri, Michael H. Seymour, Claire Shepherd-Themistocleous. <a href="https://arxiv.org/abs/2609.11692">arXiv:2609.11692</a></p>
+        <p><strong>Method and result:</strong> The study benchmarks five deep-learning classifiers for semi-visible jet tagging using global kinematics, Lund jet plane images, high-level jet substructure observables, hierarchical JetLOV representations, and multimodal combinations. It finds global kinematics are very strong, hierarchical jet representations outperform Lund images, and combined representations perform best.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The multimodal benchmarking logic is transferable to heavy-ion jet tagging and background-sensitive jet-substructure analyses, where one must quantify how much information comes from global event activity versus internal jet structure.</p>
+        <p><strong>Critical assessment:</strong> Mixed-to-strong. The comparison across representations is valuable, but the abstract suggests the high-level/global observables dominate; for discovery claims, robustness to detector simulation, pileup/background, and signal-model variation will matter more than classifier menu breadth.</p>
+      </article>
+
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Combinations of measurements that are simultaneous fits of parameters of interest and systematic uncertainties using the BLUE method</h4><span class="label strong">strong</span></div>
+        <p class="meta">Tomas Dado, Mark Owen, Michele Pinamonti. <a href="https://arxiv.org/abs/2609.11461">arXiv:2609.11461</a></p>
+        <p><strong>Method and result:</strong> The paper extends BLUE combinations to simultaneous estimates of physics parameters and nuisance parameters from likelihood fits. Pseudo-experiments indicate reliable uncertainties and identify undercoverage in an earlier approximate likelihood-combination approach implemented in Convino; an open-source tool, Combiner, is provided.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> Directly applicable to combinations of spectra, flow observables, cross sections, or nuclear modification factors where nuisance constraints differ across analyses or experiments.</p>
+        <p><strong>Critical assessment:</strong> Strong. This is not AI/ML, but it is highly relevant analysis infrastructure. Its value is practical: better treatment of constrained systematics and an explicit pseudo-experiment validation of uncertainty behavior.</p>
+      </article>
+
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Physics-Informed Drift Diagnosis for Laser-Plasma Accelerator Operations</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Ou Labun, Calin Hojbota, Mara Klebonas, Mike Downer, Rafal Zgadzaj, Phil Franke, Lance Labun. <a href="https://arxiv.org/abs/2609.11874">arXiv:2609.11874</a></p>
+        <p><strong>Method and result:</strong> The authors model accelerator operation as a latent state-space problem and use an extended Kalman filter to infer hidden interaction-point variables from routine beam diagnostics. Synthetic sessions suggest drift attribution is limited more by excitation of latent directions than by shot count or diagnostic resolution.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The state-space diagnosis workflow could transfer to detector calibration, accelerator operations, or time-dependent experimental conditions where latent physical states drive visible quality metrics.</p>
+        <p><strong>Critical assessment:</strong> Mixed. The architecture is sensible and physically interpretable, but the implemented emission model is described as a toy model and validation is synthetic, so transfer value is conceptual until demonstrated on real operations data.</p>
+      </article>
+
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Prevalence Determines Precision: Silent Contamination in Detector-Defined Datasets</h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Jia Huang, Yankai Wan, Yangjun Ou. <a href="https://arxiv.org/abs/2609.11449">arXiv:2609.11449</a></p>
+        <p><strong>Method and result:</strong> The paper studies datasets built by detector or heuristic selection and shows that precision is governed by true-positive prevalence in each candidate pool, not detector quality alone. In one detector-defined event dataset, phantom rates vary from 81.7% to 0.0% across pools; a Bayes expression predicts precision much better than transferring rates between pools.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> This is a clean warning for ML label construction in detector, trigger, reconstruction, anomaly-search, and weak-supervision pipelines. It maps naturally onto domain shifts across centrality, run period, detector region, or event activity.</p>
+        <p><strong>Critical assessment:</strong> Mixed but worth reading. The abstract is unusually concrete and the lesson is highly transferable, but the physics connection is indirect and depends on whether the underlying dataset example has comparable structure to HEP detector selections.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or Overclaimed Papers Worth Caution</h2>
+      <article class="paper" data-date="2026-09-12">
+        <div class="paper-head"><h4>Bayesian Superiority in On/Off analysis</h4><span class="label caution">caution</span></div>
+        <p class="meta">Gleb Babenov, Petr Satunin. <a href="https://arxiv.org/abs/2609.11683">arXiv:2609.11683</a></p>
+        <p><strong>Why it may attract attention:</strong> On/Off counting problems recur across astroparticle and HEP searches, and the paper compares Bayesian criteria against the familiar Li-Ma approach with Monte Carlo Type I and Type II error studies.</p>
+        <p><strong>Reason for caution:</strong> The title overstates the likely scope of the result. A six-page comparison under selected priors and simulated background assumptions can be useful, especially for overdispersed backgrounds, but it does not establish broad Bayesian superiority for analysis practice without coverage, prior-sensitivity, look-elsewhere, and collaboration-level systematic studies.</p>
+      </article>
+    </section>
+  </main>
+  <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
