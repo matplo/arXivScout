@@ -1,0 +1,173 @@
+{
+  "date": "2026-09-23",
+  "path": "reports/2026-09-23.html",
+  "summary": "The 23 September listing is unusually rich in heavy-ion physics. The leading results are a carefully controlled quenched-lattice gradient-flow benchmark for the jet transport coefficient and a no-retuning open-quantum-system test of bottomonium suppression from Pb-Pb to O-O and Ne-Ne. Electromagnetic flow tomography and intermediate-energy pion transport provide useful model diagnostics, while the strongest transferable AI/ML work emphasizes calibrated surrogate uncertainty and posterior conditioning rather than headline accuracy.",
+  "keywords": [
+    "jet transport coefficient",
+    "gradient flow",
+    "bottomonium suppression",
+    "light-ion collisions",
+    "thermal photons",
+    "dileptons",
+    "prethermal emission",
+    "pion transport",
+    "in-medium cross sections",
+    "nuclear collective surrogate",
+    "uncertainty calibration",
+    "Bayesian inverse problems",
+    "Lambda polarization"
+  ],
+  "arxiv_ids": [
+    "2609.25089",
+    "2609.25182",
+    "2609.25691",
+    "2609.25818",
+    "2609.25888",
+    "2609.25430",
+    "2609.25145",
+    "2609.26740"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "AI/ML use cases in physics",
+    "Caution"
+  ],
+  "strongest_paper": "arXiv:2609.25089, Gradient Flow for the Jet Transport Coefficient: A Quenched Lattice Benchmark",
+  "top_takeaway": "The gradient-flow lattice calculation is the day's cleanest methodological advance, while the bottomonium study gives the most direct near-term confrontation with new light-ion data.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Gradient Flow for the Jet Transport Coefficient: A Quenched Lattice Benchmark",
+      "authors": "Hai-Tao Shu; Cheng Zhang",
+      "arxiv_id": "2609.25089",
+      "category": "Theory",
+      "abstract": "The authors determine the leading-twist, nonperturbative medium contribution to the jet transport coefficient using gradient-flow energy-momentum tensors in quenched SU(3) lattice QCD over 0.76 Tc to 2.25 Tc. With three lattice spacings, controlled continuum and small-flow-time extrapolations, and one-loop short-distance matching, they obtain qhat/T^3 approximately 1.1 in the deconfined range and consistency with an earlier quenched calculation.",
+      "tags": [
+        "jet transport coefficient",
+        "gradient flow",
+        "lattice QCD",
+        "jet quenching"
+      ],
+      "assessment": "strong",
+      "url": "https://arxiv.org/abs/2609.25089",
+      "short_authors": "Hai-Tao Shu; Cheng Zhang"
+    },
+    {
+      "title": "System-size dependence of bottomonium suppression from Pb-Pb to light-ion collisions",
+      "authors": "Nora Brambilla; Tom Magorsch; Antonio Vairo",
+      "arxiv_id": "2609.25182",
+      "category": "Phenomenology",
+      "abstract": "Using the same NLO pNRQCD Lindblad evolution and microscopic transport coefficients previously constrained in Pb-Pb, the paper predicts integrated Upsilon double ratios in O-O and Ne-Ne hydrodynamic backgrounds. It reproduces the O-O sequential hierarchy within current uncertainties; Ne-Ne favors somewhat more suppression, but its uncertainty is still large.",
+      "tags": [
+        "bottomonium suppression",
+        "light ions",
+        "open quantum systems",
+        "pNRQCD"
+      ],
+      "assessment": "strong",
+      "url": "https://arxiv.org/abs/2609.25182",
+      "short_authors": "Nora Brambilla; Tom Magorsch; Antonio Vairo"
+    },
+    {
+      "title": "Physical interpretation and limits of photon--dilepton radial-flow tomography",
+      "authors": "Lipei Du",
+      "arxiv_id": "2609.25691",
+      "category": "Theory",
+      "abstract": "A controlled expanding-fireball calculation shows why dilepton and flow-free photon inverse slopes track the same thermal scale, and that the photon shift probes an emission-weighted velocity component rather than a bulk radial-flow average. Prethermal source changes can create apparent flow, while multiple photon and dilepton windows help separate source composition from flow.",
+      "tags": [
+        "thermal photons",
+        "dileptons",
+        "radial flow",
+        "prethermal emission"
+      ],
+      "assessment": "strong",
+      "url": "https://arxiv.org/abs/2609.25691",
+      "short_authors": "Lipei Du"
+    },
+    {
+      "title": "Effects of in-medium NN inelastic cross sections and the high-momentum tail of nucleon momentum distributions on pion production in heavy-ion collisions",
+      "authors": "Pengcheng Li; A. B. Larionov; Yongjia Wang; Gaochan Yong; Qingfeng Li",
+      "arxiv_id": "2609.25818",
+      "category": "Phenomenology",
+      "abstract": "The authors add relativistic-BUU in-medium NN inelastic cross sections and a short-range-correlation high-momentum tail to UrQMD for intermediate-energy Au+Au collisions. The former suppresses NDelta production, the latter partly restores pion yield, and their combination improves comparisons with HADES pion yields and the FOPI charged-pion ratio.",
+      "tags": [
+        "pion production",
+        "UrQMD",
+        "in-medium cross sections",
+        "short-range correlations"
+      ],
+      "assessment": "mixed",
+      "url": "https://arxiv.org/abs/2609.25818",
+      "short_authors": "Pengcheng Li; A. B. Larionov; Yongjia Wang; Gaochan Yong; Qingfeng Li"
+    },
+    {
+      "title": "Machine-learning modeling of nuclear collective observables and low-lying spectra",
+      "authors": "Dan Shi; Zu-Xing Yang; Xiao-Hua Fan; Zhi-Pan Li",
+      "arxiv_id": "2609.25888",
+      "category": "AI/ML use",
+      "abstract": "The Nuclear Collective Generator predicts a collective potential and six inertial functions on the beta-gamma plane from nuclear and shell descriptors, then propagates them through a five-dimensional collective Hamiltonian. Across 568 even-even nuclei it reports a 0.58 MeV mean RMS potential error and reasonable reproduction of deformation and low-lying spectroscopy.",
+      "tags": [
+        "nuclear surrogate",
+        "collective Hamiltonian",
+        "nuclear spectra",
+        "ensemble learning"
+      ],
+      "assessment": "mixed",
+      "url": "https://arxiv.org/abs/2609.25888",
+      "short_authors": "Dan Shi; Zu-Xing Yang; Xiao-Hua Fan; Zhi-Pan Li"
+    },
+    {
+      "title": "Predictive Uncertainty for Neural CAE Surrogates",
+      "authors": "Kaustubh Tangsali; Mohammad Amin Nabian; Kelvin Lee; Carmelo Gonzales; Sanjay Choudhry",
+      "arxiv_id": "2609.25430",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The paper compares a Gaussian-process-based method, concrete Monte Carlo dropout, and deep ensembles for geometry-conditioned neural surrogates on three large aerodynamics and crash datasets. It evaluates error ranking, interval coverage, unfamiliar-input response, and derived quantities, finding that no method dominates across datasets or decision criteria.",
+      "tags": [
+        "uncertainty quantification",
+        "neural surrogates",
+        "geometry conditioning",
+        "calibration"
+      ],
+      "assessment": "strong",
+      "url": "https://arxiv.org/abs/2609.25430",
+      "short_authors": "Kaustubh Tangsali; Mohammad Amin Nabian; Kelvin Lee; Carmelo Gonzales; Sanjay Choudhry"
+    },
+    {
+      "title": "Variational objectives for amortized Bayesian inference in inverse problems: The role of posterior conditioning",
+      "authors": "Abhishek Srivastava; Arijit Hazra; Rajesh Dubbaku",
+      "arxiv_id": "2609.25145",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The authors analyze KL-, Jensen-Shannon-, and Jensen-Shannon-Wasserstein-regularized amortized inference with a full-covariance Gaussian encoder and physics surrogate. Analytic linear-Gaussian tests and nonlinear ODE/PDE inverse problems show that the preferred objective depends on posterior conditioning, with the Wasserstein variant improving strongly ill-conditioned cases.",
+      "tags": [
+        "Bayesian inverse problems",
+        "amortized inference",
+        "posterior conditioning",
+        "uncertainty"
+      ],
+      "assessment": "strong",
+      "url": "https://arxiv.org/abs/2609.25145",
+      "short_authors": "Abhishek Srivastava; Arijit Hazra; Rajesh Dubbaku"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Longitudinal Lambda Polarization as a Quantitative Constraint on Geometric Relaxation in Pb-Pb Collisions at 5.36 TeV",
+      "authors": "Yilong Xie; Simin Wu; Laszlo P. Csernai",
+      "arxiv_id": "2609.26740",
+      "category": "Caution",
+      "abstract": "Across 48 initial states evolved with 3+1D ideal hydrodynamics and an isothermal local-equilibrium spin prescription, the authors fit a compact relation linking longitudinal Lambda polarization to freeze-out eccentricity and elliptic flow. A 12-state same-framework holdout retains roughly 86% explained variation, and a proof-of-principle inversion is applied to ALICE data.",
+      "tags": [
+        "Lambda polarization",
+        "freeze-out eccentricity",
+        "ideal hydrodynamics",
+        "model dependence"
+      ],
+      "assessment": "caution",
+      "url": "https://arxiv.org/abs/2609.26740",
+      "short_authors": "Yilong Xie; Simin Wu; Laszlo P. Csernai"
+    }
+  ]
+}
