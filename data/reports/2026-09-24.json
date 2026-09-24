@@ -1,0 +1,197 @@
+{
+  "date": "2026-09-24",
+  "path": "reports/2026-09-24.html",
+  "summary": "Seven papers survive a selective scan: controlled model comparisons for strangeness and light-ion nuclear structure lead the heavy-ion set, while FPGA GNN deployment, probabilistic multimodal surrogates, and differentiable GPU ODE ensembles provide the clearest AI/ML transfer value. The main recurring issue is identifiability: several observables are sensitive to interesting physics but remain conditioned on a single modeling pipeline.",
+  "keywords": [
+    "strangeness production",
+    "color ropes",
+    "O-O short-range correlations",
+    "femtoscopy",
+    "mean-pT fluctuations",
+    "FPGA GNNs",
+    "probabilistic surrogates",
+    "differentiable ODEs"
+  ],
+  "arxiv_ids": [
+    "2609.28070",
+    "2609.27566",
+    "2609.28394",
+    "2609.28074",
+    "2609.28144",
+    "2609.28116",
+    "2609.28458"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper_summary": "arXiv:2609.28070 provides the day's strongest heavy-ion analysis by comparing color-rope and hydrodynamic mechanisms within closely related transport frameworks and showing why yields must be combined with transverse dynamics.",
+  "caution_count": 0,
+  "papers": [
+    {
+      "title": "Strangeness Production in Heavy-Ion Collisions: Color Ropes or Hydrodynamic Evolution?",
+      "short_authors": [
+        "Carl Rosenkvist",
+        "Hannah Elfner"
+      ],
+      "total_author_count": 2,
+      "arxiv_id": "2609.28070",
+      "url": "https://arxiv.org/abs/2609.28070",
+      "category": "Theory",
+      "abstract": "The authors compare SMASH, a new SMASH color-rope extension, SMASH+vHLLE, and Angantyr variants over sqrt(sNN) about 2.5-20 GeV. Rope hadronization can reproduce the K+/pi+ ratio up to about 10 GeV but misses its high-energy turnover, while transverse-mass observables favor hydrodynamic evolution; strangeness enhancement alone is therefore not a unique signature of local equilibration.",
+      "tags": [
+        "strangeness",
+        "color ropes",
+        "SMASH",
+        "hydrodynamics"
+      ],
+      "assessment": "strong",
+      "summary": "A controlled comparison asks whether microscopic color-rope dynamics can mimic strangeness enhancement usually attributed to a thermalized medium. The answer is partly yes for yields, but not for the joint pattern of yields and transverse expansion.",
+      "why_it_matters": "It identifies a practical discriminator between nonthermal string collectivity and hydrodynamic evolution in the FAIR/RHIC-BES energy regime.",
+      "critical_assessment": "Strongest heavy-ion paper today. The shared SMASH basis reduces some model-comparison ambiguity, and the authors test several observables and an energy scan. Still, the rope implementation introduces tuned stopping, volume, and lifetime parameters, and its effective 3D overlap prescription is phenomenological; the conclusion is a useful model test, not a model-independent proof of equilibration."
+    },
+    {
+      "title": "Exploring the short-range correlations in 16O+16O collisions at the LHC",
+      "short_authors": [
+        "Qi Liu",
+        "Shanjin Wu",
+        "Huichao Song"
+      ],
+      "total_author_count": 3,
+      "arxiv_id": "2609.27566",
+      "url": "https://arxiv.org/abs/2609.27566",
+      "category": "Phenomenology",
+      "abstract": "Using VMC oxygen configurations with realistic nucleon short-range correlations inside iEBE-VISHNU with TRENTo initial conditions, the study predicts reduced v2{2} and v2{4} in the most central O-O events and enhanced correlation between elliptic flow and mean transverse momentum. Hard-core Woods-Saxon tests indicate that the repulsive core, rather than the attractive component, drives most of the effect.",
+      "tags": [
+        "O-O collisions",
+        "short-range correlations",
+        "elliptic flow",
+        "iEBE-VISHNU"
+      ],
+      "assessment": "strong",
+      "summary": "The paper maps realistic nuclear short-range correlations into flow cumulants and flow-mean-pT correlations in 5.36 TeV O-O collisions, with comparison ensembles designed to isolate repulsive-core and attractive contributions.",
+      "why_it_matters": "Light-ion data may become sensitive to sub-femtometer nuclear structure, and the proposed correlation observable appears more discriminating than v2 alone.",
+      "critical_assessment": "Strong and timely, with useful controlled configuration comparisons. The phrase 'direct consequences' is too strong: the result is shown within one initial-condition plus hydrodynamic pipeline, with no broad nuisance-parameter or alternative-model study. Treat it as a compelling target observable, not yet a clean extraction of the nuclear force."
+    },
+    {
+      "title": "Simulating the emission source function in very peripheral relativistic heavy-ion collisions",
+      "short_authors": [
+        "Angel Reina Ramirez",
+        "Volodymyr Magas",
+        "Juan M. Torres-Rincon"
+      ],
+      "total_author_count": 3,
+      "arxiv_id": "2609.28394",
+      "url": "https://arxiv.org/abs/2609.28394",
+      "category": "Phenomenology",
+      "abstract": "A SMASH-vHLLE-SMASH hybrid calculation reconstructs emission source functions for meson, baryon, and cross-species pairs in 80-90% Pb-Pb collisions at 5.02 TeV. Gaussian-plus-exponential forms describe a compact core and long tail better than simple Gaussians, and the extracted core radii show approximate mT scaling similar to pp.",
+      "tags": [
+        "femtoscopy",
+        "peripheral Pb-Pb",
+        "source functions",
+        "non-Gaussian tails"
+      ],
+      "assessment": "mixed",
+      "summary": "The authors use full space-time model histories to decompose femtoscopic sources into primordial, rescattering, and long-lived-resonance contributions in a low-multiplicity heavy-ion regime.",
+      "why_it_matters": "It offers a concrete bridge between transport components and the non-Gaussian structures that precision femtoscopy must model.",
+      "critical_assessment": "Substantial and careful as a simulation study, but the headline claims remain model-conditioned: there is no direct data confrontation in the abstract-level result, and peripheral centrality selection plus core-tail fitting can be sensitive to event definition and final-state interactions. Worth reading, but not yet a phenomenological constraint."
+    },
+    {
+      "title": "Mean-pT fluctuations in Au+Au collisions at sqrt(sNN)=3.0-19.6 GeV within JAM2",
+      "short_authors": [
+        "Yaqi Liu",
+        "Liuyao Zhang",
+        "Chunjian Zhang",
+        "Jinhui Chen",
+        "Chunwang Ma"
+      ],
+      "total_author_count": 5,
+      "arxiv_id": "2609.28074",
+      "url": "https://arxiv.org/abs/2609.28074",
+      "category": "Phenomenology",
+      "abstract": "JAM2 in an RQMDv mean-field mode broadly describes measured scaled mean-pT fluctuations from 7.7 to 19.6 GeV but predicts a stronger centrality dependence than data at 3.0-4.5 GeV. Species-dependent correlators are presented, while the authors emphasize that links to elliptic-flow evolution do not establish a common microscopic origin.",
+      "tags": [
+        "mean-pT fluctuations",
+        "JAM2",
+        "RHIC Beam Energy Scan",
+        "transport"
+      ],
+      "assessment": "mixed",
+      "summary": "A transport baseline maps energy, centrality, and particle-species dependence of second-order mean-pT fluctuations without an explicit partonic stage.",
+      "why_it_matters": "It provides testable low-energy species-resolved predictions and highlights where hadronic transport begins to miss fluctuation systematics.",
+      "critical_assessment": "Scientifically useful but not a mechanism extraction. The authors themselves note that controlled variations of mean fields, rescattering, and spectator interactions are still needed; qualitative spectra agreement and broad fluctuation agreement do not uniquely validate the underlying dynamics."
+    },
+    {
+      "title": "Integer Quantization of Graph Neural Networks for Real-Time FPGA Track Finding",
+      "short_authors": [
+        "Andrea Cardini",
+        "Pelayo Leguina",
+        "Elena Aller Gutierrez",
+        "Santiago Folgueras"
+      ],
+      "total_author_count": 4,
+      "arxiv_id": "2609.28144",
+      "url": "https://arxiv.org/abs/2609.28144",
+      "category": "AI/ML use",
+      "abstract": "A bit-exact workflow maps a two-layer GraphSAGE network onto an XCVU13P FPGA using INT8 weights and activations, INT32 biases, power-of-two scaling, and data-driven bit-width narrowing. On the Cora proxy benchmark it reaches 52.8 ns latency with 20% DSP, 6% FF, and 27% LUT use, at 75.0% accuracy versus 78.0% for FP32.",
+      "tags": [
+        "GNN",
+        "FPGA",
+        "Level-1 trigger",
+        "quantization"
+      ],
+      "assessment": "mixed",
+      "summary": "This is a concrete hardware-software co-design study for fixed-latency message-passing inference, motivated by displaced-muon tracking in the CMS Level-1 trigger.",
+      "why_it_matters": "The bit-exact emulation, synthesis validation, and resource accounting are directly relevant to HEP trigger deployment and potentially to high-occupancy heavy-ion online reconstruction.",
+      "critical_assessment": "Engineering methodology is strong and transferable, but the current demonstration explicitly decouples firmware feasibility from the physics task: Cora is not detector data, has fixed graph size, and does not test efficiency, fake rate, pileup robustness, or detector-domain latency. The paper establishes a deployment path, not a track-finding result."
+    },
+    {
+      "title": "Probabilistic and Geometry-Aware Neural Surrogate of Scrape-Off Layer Plasma Simulations",
+      "short_authors": [
+        "Gabriele Gianuzzo",
+        "Stefan Dasbach",
+        "Fleur Hendriks",
+        "Sven Wiesen",
+        "Vlado Menkovski"
+      ],
+      "total_author_count": 5,
+      "arxiv_id": "2609.28116",
+      "url": "https://arxiv.org/abs/2609.28116",
+      "category": "AI/ML use",
+      "abstract": "A geometry-preserving tensorization of a fixed SOLPS-ITER mesh is paired with conditional flow matching to represent multiple plausible steady states near divertor detachment. The model separates hot and cold modes, and a synthetic known-bifurcation test verifies recovery of both branches rather than their mean.",
+      "tags": [
+        "probabilistic surrogate",
+        "flow matching",
+        "plasma simulation",
+        "multimodality"
+      ],
+      "assessment": "mixed",
+      "summary": "The work replaces deterministic point prediction with a multimodal surrogate whose output distribution can represent bifurcating plasma states.",
+      "why_it_matters": "The transferable lesson for HEP and heavy-ion emulation is important: when simulator outputs are non-unique or transition-sensitive, conditional distributions are more honest than MSE-trained averages. The synthetic identifiability test is a good evaluation pattern.",
+      "critical_assessment": "Promising but bounded. The authors report no head-to-head point-accuracy comparison with the deterministic baseline, real data cannot validate the uncertainty magnitude, and the hand-built representation is tied to one mesh topology. Transfer value lies in uncertainty representation and validation design, not immediate reuse."
+    },
+    {
+      "title": "Differentiable astrophysics at scale: solving and differentiating ODE ensembles on the GPU",
+      "short_authors": [
+        "A. Spurio Mancini"
+      ],
+      "total_author_count": 1,
+      "arxiv_id": "2609.28458",
+      "url": "https://arxiv.org/abs/2609.28458",
+      "category": "AI/ML use",
+      "abstract": "GRADSOLVE is a public JAX library that integrates large ensembles of small ODE systems on GPUs with independent adaptive step sizes and parameter derivatives. At matched accuracy it reports 8.5-1500x speedups over 128-core serial CPU baselines for one million trajectories and 11-15x over DIFFRAX on the same GPU across three astrophysical examples.",
+      "tags": [
+        "differentiable simulation",
+        "GPU ODE ensembles",
+        "automatic differentiation",
+        "simulation-based inference"
+      ],
+      "assessment": "strong",
+      "summary": "A specialized differentiable ODE engine targets the common regime of millions of small, independent trajectories required by gradient-based inference.",
+      "why_it_matters": "This could transfer to transport-coefficient fits, kinetic-rate networks, detector response calibration, and differentiable phenomenology whenever the forward model is a large ensemble of modest ODE systems.",
+      "critical_assessment": "Strong computational paper: public code, matched-accuracy comparisons, three distinct applications, and same-GPU comparison to a leading JAX solver. Transfer is conditional on heavy-ion workloads fitting the independent small-ODE regime; PDE/hydrodynamic solvers and strongly coupled event evolution are outside its demonstrated scope."
+    }
+  ]
+}
