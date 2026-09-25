@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daily arXiv Physics Scout — 2026-09-25</title><link rel="stylesheet" href="../assets/site.css"></head>
+<body><header class="site-header"><p class="eyebrow">Daily arXiv Physics Scout</p><h1>2026-09-25</h1><p class="dek">Initial-state nuclear modification, femtoscopic source structure, spectator-neutron SRC probes, and validated AI/ML methods for detector calibration, uncertainty quantification, inference, and fast simulation.</p><div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div><p><a href="../index.html">Back to archive</a></p></header>
+<main>
+<section><h2>Executive takeaways</h2><ul>
+<li><strong>Lead paper:</strong> <a href="https://arxiv.org/abs/2609.29886">2609.29886</a> builds an initial-state-only, multi-system baseline for centrality-dependent nuclear modification and leaves a clear suppression deficit in O+O and Pb+Pb for final-state energy loss to explain.</li>
+<li><a href="https://arxiv.org/abs/2609.28394">2609.28394</a> makes a persuasive case that a single Gaussian is inadequate for peripheral Pb-Pb femtoscopic sources and identifies the physical origin of the long tail.</li>
+<li>The strongest AI/ML result is experimental: <a href="https://arxiv.org/abs/2609.28604">2609.28604</a> validates self-supervised detector calibration with independent reference wires and improves inferred position resolution by 33–44%.</li>
+<li><a href="https://arxiv.org/abs/2609.29969">2609.29969</a> is a useful example of honest UQ: strong in-distribution calibration, visible degradation out of distribution, and no claim that uncertainty propagation cures model misspecification.</li>
+<li>Two HEP ML papers are promising but bounded: hybrid neural density estimation is tested only on an analytic toy, while calorimeter transfer covers one source-target geometry pair.</li>
+</ul></section>
+<section><h2>Heavy-ion collision papers</h2>
+<h3>Theory</h3>
+<article class="paper" data-date="2026-09-25" data-search="2609.29237 short-range correlations spectator neutrons ZDC isobars theory">
+<div class="paper-meta"><span class="category">Theory</span><span class="assessment mixed">mixed</span></div>
+<h3><a href="https://arxiv.org/abs/2609.29237">Measuring short-range correlations using relativistic heavy-ion collisions</a></h3>
+<p class="authors">Lu-Meng Liu, Jun Xu, Xu-Guang Huang</p>
+<p><strong>Summary.</strong> The authors propose using the ratio of free spectator-neutron yields at large and small transverse distance as a proxy for the SRC-induced high-momentum-tail fraction; a Zr-96/Ru-96 ratio is intended to probe its isospin dependence.</p>
+<p><strong>Why it matters.</strong> If experimentally robust, this would provide a collider-based handle on SRCs with different final-state systematics from fixed-target scattering.</p>
+<p><strong>Critical assessment.</strong> Promising but mixed. The observable is clever and concrete, yet the seven-page study does not establish a detector-level uncertainty budget or robustness against spectator fragmentation, geometry, and transport-model variations.</p>
+<details><summary>Abstract</summary><p>The work proposes measuring nuclear short-range correlations through spectator-neutron yields at large versus small transverse distance in relativistic heavy-ion collisions. The high transverse velocities of nucleons in the SRC-induced high-momentum tail motivate the observable, while a Zr-96/Ru-96 large-radius neutron ratio is proposed to probe isospin dependence.</p></details><div class="tags"><span>short-range correlations</span><span>spectator neutrons</span><span>ZDC</span><span>isobars</span></div></article>
+<h3>Experiment</h3><p>No new experimental paper met the evidence threshold for a strong selection. The ALICE light-ion quarkonium proceeding is listed under caution because its abstract reports no quantitative result.</p>
+<h3>Phenomenology</h3>
+<article class="paper" data-date="2026-09-25" data-search="2609.29886 IP-Glasma centrality bias nuclear modification small systems phenomenology Faraday Horowitz Schenke">
+<div class="paper-meta"><span class="category">Phenomenology</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2609.29886">Centrality-dependent nuclear modification from hard-soft correlations in the glasma</a></h3>
+<p class="authors">Coleridge Faraday, W. A. Horowitz, Björn Schenke</p>
+<p><strong>Summary.</strong> IP-Glasma calculates centrality-dependent R_AB from initial-state physics across p+O, p+Pb, O+O, and Pb+Pb. Reproducing centrality biases while underpredicting observed O+O and Pb+Pb suppression creates a useful baseline for isolating final-state energy loss.</p>
+<p><strong>Why it matters.</strong> It directly addresses the small-system energy-loss problem and the entanglement of hard probes with multiplicity selection.</p>
+<p><strong>Critical assessment.</strong> Strong. Multi-system validation, HERA-only calibration, Bayesian parameter propagation, and explicit numerical checks are unusually substantial. Interpretation still inherits IP-Glasma’s limited quark treatment and its small-x, intermediate-pT domain.</p>
+<details><summary>Abstract</summary><p>The paper presents IP-Glasma predictions for centrality-dependent nuclear modification in p+O, p+Pb, O+O, and Pb+Pb from initial-state effects. A common color-field framework produces soft and semi-hard particles, describes multiplicity distributions and several R_AB measurements, predicts less suppression than measured in O+O and Pb+Pb, and attributes hard-soft correlations to event-by-event color-field fluctuations.</p></details><div class="tags"><span>IP-Glasma</span><span>centrality bias</span><span>nuclear modification</span><span>small systems</span></div></article>
+<article class="paper" data-date="2026-09-25" data-search="2609.28394 femtoscopy peripheral Pb-Pb SMASH vHLLE non-Gaussian sources Ramírez Magas Torres-Rincon">
+<div class="paper-meta"><span class="category">Phenomenology</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2609.28394">Simulating the emission source function in very peripheral relativistic heavy-ion collisions</a></h3>
+<p class="authors">Angel Reina Ramírez, Volodymyr Magas, Juan M. Torres-Rincon</p>
+<p><strong>Summary.</strong> A SMASH+vHLLE+SMASH evolution reconstructs emission sources for several pair species in 80–90% Pb-Pb and separates primordial, rescattering, and resonance contributions. A Gaussian-plus-exponential form captures the compact core and long tail better than a single Gaussian.</p>
+<p><strong>Why it matters.</strong> Source-shape systematics feed directly into femtoscopic interaction and radius extractions, especially in peripheral or small systems.</p>
+<p><strong>Critical assessment.</strong> Strong and careful model phenomenology. The physical decomposition is valuable, but conclusions remain generator dependent until compared with measured correlations and alternative initial-state or afterburner choices.</p>
+<details><summary>Abstract</summary><p>The study reconstructs space-time emission sources in very peripheral Pb-Pb collisions at 5.02 TeV using a hybrid transport framework. It analyzes meson, baryon, and cross-species pairs, finds a Gaussian-plus-exponential source superior to a Gaussian, and observes approximate mT scaling of core radii.</p></details><div class="tags"><span>femtoscopy</span><span>peripheral Pb-Pb</span><span>SMASH-vHLLE</span><span>non-Gaussian sources</span></div></article>
+<h3>AI/ML use</h3>
+<article class="paper" data-date="2026-09-25" data-search="2609.28604 self-supervised calibration MWPPAC detector VAMOS Lemasson Rejmund AI ML">
+<div class="paper-meta"><span class="category">AI/ML use</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2609.28604">Physics-Informed Self-Supervised Learning for Joint Wire Calibration and Interaction Position Reconstruction in Multi-Wire Parallel Plate Avalanche Counters</a></h3>
+<p class="authors">Antoine Lemasson, Maurycy Rejmund</p>
+<p><strong>Summary.</strong> Global wire gains and event-level positions are inferred jointly from detector geometry and charge-energy consistency, without labelled positions or dedicated calibration runs, on real VAMOS++ data.</p>
+<p><strong>Why it matters.</strong> Continuous label-free calibration is directly relevant to long-running HEP and nuclear detectors subject to drift and aging.</p>
+<p><strong>Critical assessment.</strong> Strong. Independent reference-wire checks show 33% and 44% resolution improvements over the conventional method. Transfer beyond linear gains and detectors with adequate physical redundancy remains unproven.</p>
+<details><summary>Abstract</summary><p>A physics-informed self-supervised framework jointly estimates wire gains and hit positions from detector constraints. Experimental VAMOS++ evaluation shows stable convergence, better spatial homogeneity, and improved position resolution while learning the induction response from data.</p></details><div class="tags"><span>self-supervised calibration</span><span>MWPPAC</span><span>detector reconstruction</span><span>VAMOS++</span></div></article>
+</section>
+<section><h2>AI/ML use cases in physics</h2>
+<article class="paper" data-date="2026-09-25" data-search="2609.29969 uncertainty quantification differentiable solver optical potential Fisher information nuclear">
+<div class="paper-meta"><span class="category">AI/ML use</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2609.29969">Rapid Uncertainty Quantification on a Latent Field using Fisher Information</a></h3>
+<p class="authors">Karl Daningburg, A. E. Lovell, Arvind T. Mohan, R. O'Shaughnessy</p>
+<p><strong>Method and result.</strong> Fisher information and a differentiable scattering solver propagate uncertainty from an inferred optical-potential field to observables without full posterior sampling.</p>
+<p><strong>Likely use case.</strong> Calibrated uncertainties for expensive differentiable inverse models, including surrogate-assisted transport or detector-response inference.</p>
+<p><strong>Critical assessment.</strong> Strong within domain. Held-out in-distribution cross sections reach 96.0% coverage for nominal 95% intervals with intervals 30% narrower than KDUQ. On a harder out-of-distribution corpus coverage drops to 89.3%, exposing the local-Gaussian/model limit.</p>
+<details><summary>Abstract</summary><p>The method combines Fisher information with a differentiable solver for rapid field and predictive uncertainty. In nuclear optical potentials it distinguishes data-constrained structure from prior-controlled structure and improves held-out predictive calibration relative to an established Bayesian model.</p></details><div class="tags"><span>uncertainty quantification</span><span>differentiable solver</span><span>optical potential</span><span>Fisher information</span></div></article>
+<article class="paper" data-date="2026-09-25" data-search="2609.30196 simulation-based inference neural density Asimov unbinned likelihood Coelho Lopes de Sa Sandesara">
+<div class="paper-meta"><span class="category">AI/ML use</span><span class="assessment mixed">mixed</span></div>
+<h3><a href="https://arxiv.org/abs/2609.30196">Simulation-Based Inference and Unbinned Asimov Construction with Hybrid Neural Density Estimation</a></h3>
+<p class="authors">Rafael Coelho Lopes de Sa, Jay Sandesara</p>
+<p><strong>Method and result.</strong> A normalizing-flow reference plus classifier density ratios yields an evaluable density, renewable pseudo-experiments, importance sampling, and weighted unbinned Asimov data with finite-sample closure for the learned likelihood.</p>
+<p><strong>Likely use case.</strong> Unbinned HEP fits, expected-sensitivity scans, and pseudo-experiment generation from implicit simulators.</p>
+<p><strong>Critical assessment.</strong> Serious but not deployment-grade. It includes analytic truth, likelihood comparisons, 100,000 pseudo-experiments, shape-systematic profiling, and open code; however, exact closure can hold for inaccurate classifiers, and validation is confined to a controlled five-dimensional toy.</p>
+<details><summary>Abstract</summary><p>Hybrid neural density estimation multiplies a tractable parameter-independent flow density by learned target-to-reference ratios. The resulting representation supports normalized density evaluation, sampling, Asimov construction, and lower-variance expected-test-statistic calculations in a HEP-motivated analytic toy.</p></details><div class="tags"><span>simulation-based inference</span><span>neural density estimation</span><span>Asimov data</span><span>unbinned likelihoods</span></div></article>
+<article class="paper" data-date="2026-09-25" data-search="2609.28661 calorimeter point clouds transfer learning model collapse CaloClouds">
+<div class="paper-meta"><span class="category">AI/ML use</span><span class="assessment mixed">mixed</span></div>
+<h3><a href="https://arxiv.org/abs/2609.28661">Cross-geometry transfer and model collapse in point cloud calorimeter shower generation</a></h3>
+<p class="authors">Thorsten Buss, Frank Gaede, Gregor Kasieczka, Lorenzo Valente, Duncan Weber</p>
+<p><strong>Method and result.</strong> CaloClouds II transfers from ILD photons to a different cylindrical electron calorimeter; with 100 target showers it improves geometric-mean Wasserstein distance by about 51% over scratch training, while BitFit stays within 5% of full fine-tuning using 17% of diffusion parameters.</p>
+<p><strong>Likely use case.</strong> Data-efficient geometry adaptation during detector design and fast-simulation development.</p>
+<p><strong>Critical assessment.</strong> Useful but compact proceedings evidence. Transfer spans one source-target pair with no direct multi-detector-pretraining baseline; recursive synthetic retraining shows genuine model collapse, and hadronic/mixed-particle tests remain open.</p>
+<details><summary>Abstract</summary><p>The study tests cross-geometry transfer in a point-cloud calorimeter generator and recursive retraining on generated showers. It finds substantial low-data transfer gains, parameter-efficient fine-tuning close to full tuning, and progressive distribution degradation across synthetic generations.</p></details><div class="tags"><span>calorimeter simulation</span><span>point clouds</span><span>transfer learning</span><span>model collapse</span></div></article>
+</section>
+<section><h2>Weak or overclaimed papers worth caution</h2>
+<article class="paper" data-date="2026-09-25" data-search="2609.29970 ALICE quarkonium O-O p-O caution proceedings">
+<div class="paper-meta"><span class="category">Experiment</span><span class="assessment caution">caution</span></div>
+<h3><a href="https://arxiv.org/abs/2609.29970">Quarkonium production in light-ion collisions with the ALICE experiment</a></h3><p class="authors">Rebecca Cerri (for the ALICE Collaboration)</p>
+<p><strong>Assessment.</strong> Potentially important new-system quarkonium data, but the four-page proceedings abstract contains no numerical result, uncertainty, or model-discriminating conclusion. Worth watching; not rankable as strong from the present public evidence.</p>
+<details><summary>Abstract</summary><p>The contribution motivates forward-rapidity charmonium measurements in 2025 O-O and p-O LHC data and states that new measurements will be shown and compared with models.</p></details><div class="tags"><span>ALICE</span><span>quarkonium</span><span>O-O</span><span>p-O</span></div></article>
+</section>
+<p class="method-note"><strong>Scope note.</strong> Abstract-first triage covered the 25 September new listings and relevant cross-lists in nucl-th, nucl-ex, hep-ph, instrumentation, and physics data analysis. Replacement submissions were not treated as new papers.</p><p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+</main><script src="../assets/filter.js"></script></body></html>
