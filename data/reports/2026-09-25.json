@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-25",
+  "path": "reports/2026-09-25.html",
+  "summary": "The strongest result is an IP-Glasma calculation that unifies soft and semi-hard production to quantify centrality bias across p+O, p+Pb, O+O, and Pb+Pb, while leaving a suppression deficit consistent with final-state energy loss. Other notable work addresses non-Gaussian femtoscopic sources, self-supervised detector calibration, calibrated nuclear optical-potential uncertainties, unbinned neural inference, and cross-geometry calorimeter simulation.",
+  "professional_summary": "Initial-state hard-soft correlations and centrality-dependent nuclear modification; non-Gaussian femtoscopic source structure; self-supervised detector calibration; differentiable uncertainty quantification; hybrid neural density estimation; cross-geometry calorimeter fast simulation.",
+  "keywords": [
+    "IP-Glasma",
+    "centrality bias",
+    "femtoscopy",
+    "short-range correlations",
+    "self-supervised calibration",
+    "uncertainty quantification",
+    "simulation-based inference",
+    "calorimeter transfer"
+  ],
+  "arxiv_ids": [
+    "2609.29886",
+    "2609.28394",
+    "2609.29237",
+    "2609.28604",
+    "2609.29969",
+    "2609.30196",
+    "2609.28661",
+    "2609.29970"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Experiment caution"
+  ],
+  "strongest_paper": "2609.29886: initial-state nuclear modification and hard-soft correlations in IP-Glasma",
+  "strongest_paper_summary": "IP-Glasma provides a multi-system initial-state baseline for R_AB and exposes the additional suppression that final-state energy loss must explain.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2609.29886",
+      "url": "https://arxiv.org/abs/2609.29886",
+      "title": "Centrality-dependent nuclear modification from hard-soft correlations in the glasma",
+      "short_authors": [
+        "Coleridge Faraday",
+        "W. A. Horowitz",
+        "Björn Schenke"
+      ],
+      "total_author_count": 3,
+      "category": "Phenomenology",
+      "tags": [
+        "IP-Glasma",
+        "centrality bias",
+        "nuclear modification",
+        "small systems"
+      ],
+      "assessment": "strong",
+      "summary": "IP-Glasma predicts centrality-dependent R_AB across p+O, p+Pb, O+O, and Pb+Pb from initial-state physics and leaves additional O+O and Pb+Pb suppression for final-state energy loss to explain.",
+      "abstract": "First predictions from IP-Glasma for centrality-dependent nuclear modification using a common description of soft and semi-hard production, with HERA-calibrated proton structure and event-by-event color-field fluctuations."
+    },
+    {
+      "arxiv_id": "2609.28394",
+      "url": "https://arxiv.org/abs/2609.28394",
+      "title": "Simulating the emission source function in very peripheral relativistic heavy-ion collisions",
+      "short_authors": [
+        "Angel Reina Ramírez",
+        "Volodymyr Magas",
+        "Juan M. Torres-Rincon"
+      ],
+      "total_author_count": 3,
+      "category": "Phenomenology",
+      "tags": [
+        "femtoscopy",
+        "peripheral Pb-Pb",
+        "SMASH-vHLLE",
+        "non-Gaussian sources"
+      ],
+      "assessment": "strong",
+      "summary": "A hybrid transport calculation decomposes peripheral Pb-Pb emission sources and finds that a Gaussian-plus-exponential form captures their compact core and long tail better than a Gaussian.",
+      "abstract": "A microscopic femtoscopic analysis reconstructs source functions for meson, baryon, and cross-species pairs and separates primordial, rescattering, and resonance-decay contributions."
+    },
+    {
+      "arxiv_id": "2609.29237",
+      "url": "https://arxiv.org/abs/2609.29237",
+      "title": "Measuring short-range correlations using relativistic heavy-ion collisions",
+      "short_authors": [
+        "Lu-Meng Liu",
+        "Jun Xu",
+        "Xu-Guang Huang"
+      ],
+      "total_author_count": 3,
+      "category": "Theory",
+      "tags": [
+        "short-range correlations",
+        "spectator neutrons",
+        "ZDC",
+        "isobars"
+      ],
+      "assessment": "mixed",
+      "summary": "Large-to-small-radius spectator-neutron yield ratios are proposed as probes of the SRC-induced high-momentum tail and its isospin dependence.",
+      "abstract": "The proposal uses the transverse displacement of spectator neutrons in relativistic ion collisions, including a Zr-96/Ru-96 ratio, to access short-range nuclear correlations."
+    },
+    {
+      "arxiv_id": "2609.28604",
+      "url": "https://arxiv.org/abs/2609.28604",
+      "title": "Physics-Informed Self-Supervised Learning for Joint Wire Calibration and Interaction Position Reconstruction in Multi-Wire Parallel Plate Avalanche Counters",
+      "short_authors": [
+        "Antoine Lemasson",
+        "Maurycy Rejmund"
+      ],
+      "total_author_count": 2,
+      "category": "AI/ML use",
+      "tags": [
+        "self-supervised calibration",
+        "MWPPAC",
+        "detector reconstruction",
+        "VAMOS++"
+      ],
+      "assessment": "strong",
+      "summary": "A self-supervised differentiable calibration tested on real VAMOS++ data improves independently measured position resolution by 33% and 44% over the conventional method.",
+      "abstract": "Global wire gains and event-level positions are inferred jointly from geometry and charge-energy constraints without labelled positions or dedicated calibration runs."
+    },
+    {
+      "arxiv_id": "2609.29969",
+      "url": "https://arxiv.org/abs/2609.29969",
+      "title": "Rapid Uncertainty Quantification on a Latent Field using Fisher Information",
+      "short_authors": [
+        "Karl Daningburg",
+        "A. E. Lovell",
+        "Arvind T. Mohan",
+        "R. O'Shaughnessy"
+      ],
+      "total_author_count": 4,
+      "category": "AI/ML use",
+      "tags": [
+        "uncertainty quantification",
+        "differentiable solver",
+        "optical potential",
+        "Fisher information"
+      ],
+      "assessment": "strong",
+      "summary": "Sampling-free local-Gaussian UQ reaches 96.0% coverage for nominal 95% held-out intervals that are 30% narrower than KDUQ, but coverage falls to 89.3% out of distribution.",
+      "abstract": "Fisher information and a differentiable scattering solver propagate uncertainty from an inferred nuclear optical-potential field to observables."
+    },
+    {
+      "arxiv_id": "2609.30196",
+      "url": "https://arxiv.org/abs/2609.30196",
+      "title": "Simulation-Based Inference and Unbinned Asimov Construction with Hybrid Neural Density Estimation",
+      "short_authors": [
+        "Rafael Coelho Lopes de Sa",
+        "Jay Sandesara"
+      ],
+      "total_author_count": 2,
+      "category": "AI/ML use",
+      "tags": [
+        "simulation-based inference",
+        "neural density estimation",
+        "Asimov data",
+        "unbinned likelihoods"
+      ],
+      "assessment": "mixed",
+      "summary": "The hybrid density construction is technically careful and supports exact finite-sample closure for the learned likelihood, but it is validated only on a controlled analytic HEP-like toy.",
+      "abstract": "A parameter-independent flow reference combined with classifier density ratios yields evaluable densities, renewable pseudo-experiments, importance sampling, and unbinned Asimov datasets."
+    },
+    {
+      "arxiv_id": "2609.28661",
+      "url": "https://arxiv.org/abs/2609.28661",
+      "title": "Cross-geometry transfer and model collapse in point cloud calorimeter shower generation",
+      "short_authors": [
+        "Thorsten Buss",
+        "Frank Gaede",
+        "Gregor Kasieczka",
+        "Lorenzo Valente",
+        "Duncan Weber"
+      ],
+      "total_author_count": 5,
+      "category": "AI/ML use",
+      "tags": [
+        "calorimeter simulation",
+        "point clouds",
+        "transfer learning",
+        "model collapse"
+      ],
+      "assessment": "mixed",
+      "summary": "With 100 target showers, transfer improves geometric-mean Wasserstein distance by about 51% over scratch training; evidence is limited to one source-target pair and a proceedings-length study.",
+      "abstract": "CaloClouds II transfers between detector geometries, supports parameter-efficient fine-tuning, and shows progressive model collapse under recursive synthetic retraining."
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2609.29970",
+      "url": "https://arxiv.org/abs/2609.29970",
+      "title": "Quarkonium production in light-ion collisions with the ALICE experiment",
+      "short_authors": [
+        "Rebecca Cerri (for the ALICE Collaboration)"
+      ],
+      "category": "Experiment",
+      "tags": [
+        "ALICE",
+        "quarkonium",
+        "O-O",
+        "p-O"
+      ],
+      "assessment": "caution",
+      "summary": "Potentially important new-system quarkonium data, but the four-page proceedings abstract contains no numerical result, uncertainty, or model-discriminating conclusion.",
+      "abstract": "The contribution motivates forward-rapidity charmonium measurements in 2025 O-O and p-O data and states that new measurements will be shown and compared with models."
+    }
+  ]
+}
