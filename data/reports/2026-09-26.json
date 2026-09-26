@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-26",
+  "path": "reports/2026-09-26.html",
+  "summary": "No new, non-duplicate papers were available in the latest roughly 24-hour window. arXiv had no Saturday announcement, and the latest relevant Friday heavy-ion and physics AI/ML cycle was already reviewed on 2026-09-25.",
+  "professional_summary": "Weekend arXiv update check; no new non-duplicate heavy-ion collision or physics AI/ML selections.",
+  "keywords": [
+    "no new announcement",
+    "weekend update",
+    "deduplicated review",
+    "heavy-ion physics",
+    "AI/ML in physics"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [],
+  "strongest_paper": null,
+  "strongest_paper_summary": "No new paper was eligible for ranking in this update window.",
+  "caution_count": 0,
+  "papers": [],
+  "cautions": []
+}
