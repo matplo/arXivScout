@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-28",
+  "path": "reports/2026-09-28.html",
+  "summary": "The new announcement window contains no major heavy-ion collision result. The strongest paper is instead a well-validated generative surrogate for FCC-ee detector simulation and reconstruction; useful companion work applies optimal transport to negative-weight mitigation and full-phase-space validation, while a physics-informed spectral solver has plausible but still untested transfer value for heavy-ion inverse problems.",
+  "professional_summary": "Generative detector surrogates with downstream validation; optimal-transport metrics for negative-weight mitigation and reweighting validation; information bounds for rapidity-window multiplicities; stiff physics-informed PDE solvers.",
+  "keywords": [
+    "generative detector simulation",
+    "flow matching",
+    "flavor tagging",
+    "optimal transport",
+    "negative weights",
+    "rapidity multiplicities",
+    "dipole cascade",
+    "physics-informed PDEs"
+  ],
+  "arxiv_ids": [
+    "2609.30775",
+    "2609.30357",
+    "2609.30418",
+    "2609.31499",
+    "2609.31539",
+    "2609.30403"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Theory",
+    "AI/ML use",
+    "Computational methods",
+    "Caution"
+  ],
+  "strongest_paper": "2609.30775: generative surrogate for full CLD detector simulation and reconstruction",
+  "strongest_paper_summary": "Parnassus combines broad distribution checks, held-out-flavor tests, downstream flavor-tagging validation, public artifacts, and an end-to-end speed benchmark.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2609.30775",
+      "url": "https://arxiv.org/abs/2609.30775",
+      "title": "Parnassus for the CLD Detector: A Generative Machine-Learning Surrogate for Detector Simulation and Reconstruction at the FCC-ee",
+      "short_authors": [
+        "Umar Sohail Qureshi",
+        "Benjamin Nachman",
+        "Caterina Vernieri"
+      ],
+      "total_author_count": 3,
+      "category": "AI/ML use",
+      "tags": [
+        "flow matching",
+        "detector surrogate",
+        "FCC-ee",
+        "flavor tagging"
+      ],
+      "assessment": "strong",
+      "summary": "A conditional flow-matching model emulates the combined Geant4-plus-PandoraPFA CLD response. It reproduces particle, jet, event, impact-parameter, and flavor-dependent distributions; a frozen full-simulation flavor tagger transfers with only a 0.012 absolute accuracy loss, while generation costs about 1.3 ms per event on an A100 versus about 6 s for full simulation and reconstruction on one CPU core.",
+      "abstract": "The model is trained on 2.125 million Z to qq and Z to bb events, tested on 500,000 events including held-out strange and charm flavors, and benchmarked against Delphes. Public code and data accompany the 32-page study."
+    },
+    {
+      "arxiv_id": "2609.30357",
+      "url": "https://arxiv.org/abs/2609.30357",
+      "title": "Optimizing Cell-Based Negative Weight Mitigation with Optimal Transport",
+      "short_authors": [
+        "Lauren Hay",
+        "Rishabh Jain",
+        "Matt LeBlanc",
+        "Jennifer Roloff"
+      ],
+      "total_author_count": 4,
+      "category": "Computational methods",
+      "tags": [
+        "negative weights",
+        "optimal transport",
+        "NLO Monte Carlo",
+        "effective sample size"
+      ],
+      "assessment": "mixed",
+      "summary": "Cell resampling uses an infrared- and collinear-safe optimal-transport distance to redistribute negative event weights locally. On roughly 100,000 NLO Z+jets events, reweighting 75% of cells reduces the inverse Kish effective sample fraction from 16 to 6 and introduces less bias than the earlier Euclidean metric.",
+      "abstract": "The proof-of-concept compares transport-based and Euclidean event metrics, evaluates full-phase-space and observable-level bias, and finds the hadron-level transport metric most stable. Code and datasets are public."
+    },
+    {
+      "arxiv_id": "2609.30418",
+      "url": "https://arxiv.org/abs/2609.30418",
+      "title": "A Phase-Space Inclusive Figure of Merit Based in Optimal Transport for Validating Monte Carlo Reweightings",
+      "short_authors": [
+        "Rishabh Jain",
+        "Lauren Hay",
+        "Matt LeBlanc",
+        "Jennifer Roloff"
+      ],
+      "total_author_count": 4,
+      "category": "Computational methods",
+      "tags": [
+        "Cross-Section-Mover's Distance",
+        "unbinned validation",
+        "Monte Carlo reweighting",
+        "generative-model validation"
+      ],
+      "assessment": "mixed",
+      "summary": "The paper adapts the Cross-Section-Mover's Distance into an unbinned, projection-independent diagnostic for full-phase-space reweighting bias. Its immediate value is as a companion validation tool for negative-weight mitigation, with a credible extension to detector surrogates and generative event models.",
+      "abstract": "The eight-page CHEP proceedings paper defines an event-level energy-mover distance and a theory-level transport distance, then demonstrates them on several negative-weight reweighting schemes."
+    },
+    {
+      "arxiv_id": "2609.31499",
+      "url": "https://arxiv.org/abs/2609.31499",
+      "title": "An information bound for multiplicities in rapidity windows of the dipole cascade behind the entanglement entropy picture",
+      "short_authors": [
+        "Olasantan Ebenezer Adelaja",
+        "Alex Prygarin",
+        "Karam Shekh Yusuf"
+      ],
+      "total_author_count": 3,
+      "category": "Theory",
+      "tags": [
+        "dipole cascade",
+        "rapidity correlations",
+        "conditional mutual information",
+        "factorial cumulants"
+      ],
+      "assessment": "mixed",
+      "summary": "For a one-dimensional Mueller dipole cascade, the authors derive a ceiling of one-half log(4/3) on a Gaussian proxy for conditional mutual information between outer rapidity windows at fixed middle multiplicity. Detector losses and independent window migration preserve the compound-counting law, but transverse-dimensional cascade simulations violate the single-source assumption and H1 multiplicity moments disfavor its simplest one-dipole realization.",
+      "abstract": "The work provides exact compound-counting relations, factorial-cumulant consistency tests, extensive reproducibility files, and an explicit failure test once transverse cascade dynamics are restored."
+    },
+    {
+      "arxiv_id": "2609.31539",
+      "url": "https://arxiv.org/abs/2609.31539",
+      "title": "NEXT: Physics-Informed Neuro-Spectral Exponential Time Differencing Architectures",
+      "short_authors": [
+        "Marcio Marques",
+        "Leonardo Mendonca",
+        "Leonardo M. Moreira",
+        "Christian Junior de Oliveira",
+        "et al."
+      ],
+      "total_author_count": 9,
+      "category": "AI/ML use",
+      "tags": [
+        "physics-informed learning",
+        "stiff PDEs",
+        "inverse problems",
+        "exponential integrators"
+      ],
+      "assessment": "mixed",
+      "summary": "NEXT integrates the stiff linear part of a spectral PDE discretization exactly with exponential time differencing and learns only the nonlinear remainder. It is stable where the parent NeuSA method diverges and supports sparse-data inverse problems, but all evidence is from canonical PDE benchmarks rather than realistic multi-dimensional physics workloads.",
+      "abstract": "Benchmarks cover heat, wave, Burgers, and KdV equations plus coefficient and boundary-flux inference. Code is public, and fourth-order integration substantially improves accuracy at higher training cost."
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2609.30403",
+      "url": "https://arxiv.org/abs/2609.30403",
+      "title": "Point-cloud generative models for fast calorimeter simulation across particles and geometries",
+      "short_authors": [
+        "Thorsten Buss",
+        "Henry Day-Hall",
+        "Frank Gaede",
+        "Gregor Kasieczka",
+        "et al."
+      ],
+      "total_author_count": 10,
+      "category": "AI/ML use",
+      "tags": [
+        "calorimeter simulation",
+        "point clouds",
+        "transfer learning",
+        "proceedings summary"
+      ],
+      "assessment": "caution",
+      "summary": "The headline is attractive: one point-cloud program covers electromagnetic, hadronic, multi-particle, and cross-geometry calorimeter simulation, with a reported 120-fold CPU speedup for one component. However, this is a six-page proceedings synthesis of several projects, so it does not provide enough unified validation to support the broad claim as a single new result.",
+      "abstract": "The contribution summarizes CaloClouds3, CaloHadronic, AllShowers, and cross-geometry transfer learning rather than presenting a standalone end-to-end validation study."
+    }
+  ]
+}
