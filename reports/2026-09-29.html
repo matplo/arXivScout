@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-29</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>29 September 2026</h1>
+    <p class="dek">Virtuality-resolved jet quenching, stochastic relativistic transport, spin hydrodynamics, and physics-ready AI data.</p>
+    <div class="filter-panel" aria-label="Report filter">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>The jet-function paper is today's strongest heavy-ion contribution.</strong> It derives a virtuality-differential in-medium jet function within a factorized gamma+jet setup and recovers standard BDMPS-Z results after integrating over virtuality. The framework is substantial, but still restricted to a Glauber starting point, soft radiation, and a simplified medium correlator.</li>
+        <li><strong>ShARK is a serious transport-method paper.</strong> The authors connect stochastic microcanonical momentum redraws to the Anderson-Witting equation, validate a 3D Monte Carlo solver against Bjorken and Gubser solutions, and demonstrate self-convergence on an optical-Glauber O-O geometry. Phenomenology is not yet shown.</li>
+        <li><strong>The spin-hydrodynamics result is conceptually important:</strong> at order hbar-squared, thermodynamic consistency and Maxwell relations favor the kinetic-theory pseudo-gauge over canonical and GLW choices. Its immediate scope is global equilibrium, so dynamical consequences remain to be established.</li>
+        <li><strong>The most useful physics-AI output is infrastructural.</strong> EXO-200 releases about one million calibration events with raw waveforms and reconstructed quantities; GlueX proposes deterministic FAIR and AI-readiness metrics. Neither paper demonstrates an ML performance gain, but both improve the conditions for reproducible work.</li>
+        <li><strong>Two general ML methods have credible transfer paths.</strong> NF2M offers likelihood-corrected Boltzmann sampling, while PhiBE-Flow learns continuous stochastic evolution from discrete snapshots. Both need domain-specific stress tests before HEP or nuclear-physics use.</li>
+      </ul>
+      <p class="meta">Window note: this report covers the Tuesday, 29 September arXiv announcement feed, dominated by submissions through 28 September UTC; weekend-held papers announced in the same feed are included where relevant. Fewer than 50 title/abstract candidates were screened, with deeper checks reserved for the strongest and most ambiguous papers.</p>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2609.35148 ShARK Nunes da Silva Barauna Torrieri theory stochastic transport relativistic Boltzmann Anderson Witting BGK Bjorken Gubser O-O Glauber">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.35148">ShARK: A Stochastic Transport Framework for the Relativistic Relaxation Time Approximation Boltzmann Equation</a></h4>
+          <span class="label strong">Strong</span>
+        </div>
+        <p class="meta">Tiago Nunes da Silva, Jadna L. Barauna, Giorgio Torrieri (3 authors) · arXiv:2609.35148</p>
+        <p><strong>Summary.</strong> The paper derives the Anderson-Witting relaxation-time equation as the large-particle-number limit of a stochastic gas whose collisions redraw momenta microcanonically and conserve local four-momentum event by event. The resulting ShARK solver uses continuous momentum space and an advection-relaxation split, reproducing exact Bjorken and Gubser kinetic solutions and their attractors.</p>
+        <p><strong>Why it matters.</strong> A genuinely three-dimensional kinetic solver that avoids finite-order momentum lattices could bridge microscopic transport and hydrodynamic descriptions in far-from-equilibrium heavy-ion evolution. The additional convergence study with an optical-Glauber O-O profile is a useful step beyond symmetry-only tests.</p>
+        <p><strong>Critical assessment.</strong> Strong numerical and conceptual validation for the relaxation-time model. The authors appropriately call the realistic-geometry test a self-consistency check rather than a full phenomenological validation; observable-, time-, and geometry-dependent convergence, realistic collision kernels, event-by-event initial conditions, and data comparisons remain open.</p>
+        <p><strong>Abstract.</strong> A stochastic particle construction converges to relativistic BGK kinetics and yields a 3D Monte Carlo solver validated on analytic conformal expansions.</p>
+        <div class="tags"><span>relativistic transport</span><span>Boltzmann equation</span><span>kinetic attractors</span><span>O-O geometry</span></div>
+      </article>
+
+      <article class="paper" data-search="2609.31819 Daher Wagner Shokri Rischke theory spin hydrodynamics pseudo gauge Wigner function thermal vorticity Maxwell relations hbar squared">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.31819">Global equilibrium at order O(hbar^2): pseudo-gauge ambiguity, Maxwell relations, and thermodynamic consistency</a></h4>
+          <span class="label strong">Strong</span>
+        </div>
+        <p class="meta">Asaad Daher, David Wagner, Masoud Shokri, Dirk H. Rischke (4 authors) · arXiv:2609.31819</p>
+        <p><strong>Summary.</strong> Using a Wigner-function treatment of massive spin-half Boltzmann particles, the authors derive vorticity-squared quantum corrections to the mass shell and calculate particle, energy-momentum, spin-current, and thermodynamic quantities in kinetic, canonical, and GLW pseudo-gauges. Global charges remain gauge independent, but local densities do not.</p>
+        <p><strong>Why it matters.</strong> Spin polarization and spin hydrodynamics are active heavy-ion topics, and pseudo-gauge choices can otherwise look like formal convention. Requiring Maxwell relations gives a concrete thermodynamic discriminator: they hold in the kinetic-theory pseudo-gauge and generally fail in the canonical and GLW forms studied.</p>
+        <p><strong>Critical assessment.</strong> This is a careful, internally constrained formal result rather than a phenomenological prediction. The preference is established for global equilibrium at order hbar-squared in a Boltzmann gas; its robustness for quantum statistics, interactions, gradients, dissipative evolution, and measurable polarization observables still has to be shown.</p>
+        <p><strong>Abstract.</strong> Quantum-corrected equilibrium thermodynamics exposes local pseudo-gauge dependence and selects the kinetic gauge through Maxwell consistency.</p>
+        <div class="tags"><span>spin hydrodynamics</span><span>pseudo-gauge</span><span>thermal vorticity</span><span>Wigner functions</span></div>
+      </article>
+
+      <h3>Experiment</h3>
+      <p>No new heavy-ion experimental paper cleared the quality and relevance threshold.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2609.35653 Lamas Salgado Wu phenomenology jets heavy ion virtuality jet function factorization BDMPS-Z gamma jet medium formation time">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.35653">Factorization and virtuality evolution of jet functions in heavy-ion collisions</a></h4>
+          <span class="label strong">Strong</span>
+        </div>
+        <p class="meta">Carlos Lamas, Carlos A. Salgado, Bin Wu (3 authors) · arXiv:2609.35653</p>
+        <p><strong>Summary.</strong> The authors derive an impact-parameter-dependent factorized gamma+jet cross section with an in-medium jet function differential in the initiating parton's virtuality, then compute broadening and soft radiation in BDMPS-Z. Integrating over virtuality recovers the standard results, while finite virtuality organizes the competition between vacuum-like and medium-induced evolution through the ratio of medium and jet formation times.</p>
+        <p><strong>Why it matters.</strong> Jet-quenching calculations still differ in how they join vacuum showers to medium dynamics. A common factorized object that retains virtuality could make model comparisons and pre-equilibrium matching more systematic, especially for early-time evolution and small systems.</p>
+        <p><strong>Critical assessment.</strong> Strong and unusually explicit about scope. It is a first step, not an all-orders theorem: the derivation uses uncorrelated Glauber nucleons, leading-order hard scattering, collinear/soft radiation, an eikonal single-parton jet, and a BDMPS-Z correlator whose instantaneous light-cone structure suppresses realistic temperature dependence. Jet algorithms, beam-collinear radiation, higher orders, and phenomenological data tests are future work.</p>
+        <p><strong>Abstract.</strong> A virtuality-resolved in-medium jet function extends BDMPS-Z and identifies when initial virtualities contribute to quenched-jet formation.</p>
+        <div class="tags"><span>jet quenching</span><span>virtuality evolution</span><span>factorization</span><span>BDMPS-Z</span></div>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <p>No new heavy-ion-specific AI/ML paper cleared the quality and relevance threshold.</p>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2609.34304 EXO-200 Al Kharusi Anton Badhrees Barbeau AI ML public data liquid xenon TPC waveforms calibration rare event physics HDF5">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.34304">EXO-200 Public Data Release for AI/ML Applications</a></h4>
+          <span class="label strong">Strong resource</span>
+        </div>
+        <p class="meta">S. Al Kharusi, G. Anton, I. Badhrees, P. S. Barbeau, V. Belov, et al. (106 authors) · arXiv:2609.34304</p>
+        <p><strong>Method and result.</strong> EXO-200 releases roughly one million thorium-228 calibration events from its liquid-xenon time-projection chamber. The HDF5 records pair raw U-wire, V-wire, and APD waveforms with reconstructed energies and charge-cluster quantities.</p>
+        <p><strong>Likely use case.</strong> The dataset supports waveform reconstruction, denoising, event topology, representation learning, anomaly detection, and calibrated comparisons between ML and conventional reconstruction in rare-event physics. Heavy-ion detectors differ substantially, but the paired raw-and-reconstructed release pattern is directly transferable to detector-ML benchmarking.</p>
+        <p><strong>Critical assessment.</strong> Strong as infrastructure, not as an algorithmic result. Real detector waveforms and reconstructed targets are valuable, but the release is a calibration subset from a short 2018 interval; labels, train/test protocols, detector-condition diversity, and benchmark tasks will determine whether it becomes a durable community standard.</p>
+        <p><strong>Abstract.</strong> A public, million-event calibration sample exposes both low-level detector waveforms and high-level reconstruction products for rare-event ML development.</p>
+        <div class="tags"><span>public detector data</span><span>liquid-xenon TPC</span><span>waveforms</span><span>rare-event ML</span></div>
+      </article>
+
+      <article class="paper" data-search="2609.34987 Panta Sawatzky Morean Romanov Higinbotham GlueX FAIR AI ready data deterministic metrics Jefferson Lab data ecosystem">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.34987">Toward FAIR and AI-Ready Data: An Assessment of the GlueX Experiment's Data Ecosystem at Jefferson Lab</a></h4>
+          <span class="label mixed">Mixed</span>
+        </div>
+        <p class="meta">Anil Panta, Brad Sawatzky, Casey Morean, Dmitry Romanov, Douglas Higinbotham (5 authors) · arXiv:2609.34987</p>
+        <p><strong>Method and result.</strong> The authors map the GlueX data ecosystem, separate FAIR compliance from AI readiness, and attach deterministic metrics to both. They also distinguish checks available in general-purpose validation software from experiment-specific requirements and pair findings with recommendations.</p>
+        <p><strong>Likely use case.</strong> HEP and nuclear experiments need auditable criteria for dataset discoverability, schemas, provenance, access, labels, and machine usability before model-building begins. The framework could guide heavy-ion open-data releases and internal analysis preservation.</p>
+        <p><strong>Critical assessment.</strong> Useful operational work and more concrete than generic calls for AI-ready data. Evidence is still a single-experiment assessment, and the abstract does not show that the proposed metrics predict downstream ML reproducibility, robustness, or scientific utility. It should be judged as governance methodology, not an ML breakthrough.</p>
+        <p><strong>Abstract.</strong> A GlueX case study turns FAIR and AI-readiness principles into deterministic assessment criteria and actionable recommendations.</p>
+        <div class="tags"><span>FAIR data</span><span>AI readiness</span><span>data provenance</span><span>GlueX</span></div>
+      </article>
+
+      <article class="paper" data-search="2609.31978 Grenioux OuYang Wu normalizing flows Boltzmann generator importance sampling stochastic flow maps equilibrium sampling uncertainty lattice field theory">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.31978">Bridging Stochastic Flow Maps and Boltzmann Generators with Normalizing Flows</a></h4>
+          <span class="label strong">Strong</span>
+        </div>
+        <p class="meta">Louis Grenioux, RuiKang OuYang, Luhuan Wu (3 authors) · arXiv:2609.31978</p>
+        <p><strong>Method and result.</strong> NF2M uses conditional normalizing flows inside a stochastic denoising chain, exploiting exact likelihoods to importance-correct every transition rather than correcting only the final generated sample. The authors prove consistency and an approximation-error propagation bound, then report improved efficiency and sample quality on peptide equilibrium systems.</p>
+        <p><strong>Likely use case.</strong> The credible HEP connection is equilibrium sampling for lattice field theory or other Boltzmann-weighted models where exact reweighting and effective sample size matter. It may also inform calibrated generative proposals for expensive physics simulators.</p>
+        <p><strong>Critical assessment.</strong> Methodologically strong: exact-density correction, theory, and nontrivial molecular tests are better evidence than an uncorrected generator. Transfer is not established; gauge symmetries, sign or complex-action problems, critical slowing down, volume scaling, and topological modes are absent from the current evidence.</p>
+        <p><strong>Abstract.</strong> Likelihood-tractable conditional flows correct a stochastic flow-map sampler step by step, with consistency guarantees and molecular benchmarks.</p>
+        <div class="tags"><span>Boltzmann sampling</span><span>normalizing flows</span><span>importance correction</span><span>lattice transfer</span></div>
+      </article>
+
+      <article class="paper" data-search="2609.32026 Shang Liu Zhu PhiBE Flow continuous time trajectories stochastic dynamics discrete observations Navier Stokes convergence uncertainty simulation">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.32026">Continuous-Time Trajectory Generation from Discrete Observations with Stochasticity</a></h4>
+          <span class="label mixed">Mixed</span>
+        </div>
+        <p class="meta">Ruifeng Shang, Shu Liu, Yuhua Zhu (3 authors) · arXiv:2609.32026</p>
+        <p><strong>Method and result.</strong> PhiBE-Flow estimates the probability-velocity field implied by stochastic dynamics directly from discrete observations, without known SDE coefficients or score estimation. It comes with discretization- and sample-error convergence results and is tested on synthetic systems, Navier-Stokes dynamics, and video generation.</p>
+        <p><strong>Likely use case.</strong> Heavy-ion simulations often produce stochastic ensemble snapshots at discrete proper times. A continuous-time density-evolution surrogate could support interpolation, emulation, or data assimilation if it preserves conservation laws and relevant event-by-event observables.</p>
+        <p><strong>Critical assessment.</strong> Credible but not yet domain-ready. The physics benchmark is helpful and the assumptions are stated, yet the method presumes an underlying SDE representation and can be expensive in high-dimensional observation space; latent encoders may discard the geometric or conserved structure that matters in transport applications.</p>
+        <p><strong>Abstract.</strong> A model-free flow method reconstructs continuous stochastic density evolution from discrete snapshots and preserves multiscale statistics in fluid benchmarks.</p>
+        <div class="tags"><span>stochastic dynamics</span><span>trajectory generation</span><span>Navier-Stokes</span><span>surrogate modeling</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-search="2609.32624 Song Wu Zhu caution neural network variational Monte Carlo pentaquark bound states shallow binding constituent quark model">
+        <div class="paper-head">
+          <h4><a href="https://arxiv.org/abs/2609.32624">Landscape of pentaquark bound states with neural-network Variational Monte Carlo</a></h4>
+          <span class="label caution">Caution</span>
+        </div>
+        <p class="meta">Jing-Zhe Song, Wei-Lin Wu, Shi-Lin Zhu (3 authors) · arXiv:2609.32624</p>
+        <p>The systematic scan of 387 color-spin-isospin configurations and the threshold checks are worthwhile, and neural variational Monte Carlo is a substantive computational tool here. The caution is quantitative: the claimed 21 bound candidates lie only 2-15 MeV below threshold, while the paper reports residual relative kinetic energies of a few MeV for localized scattering-state ansätze. With no explicit uncertainty budget for neural variational bias, Monte Carlo error, Hamiltonian parameters, continuum treatment, or model dependence beyond the constituent-quark potential, the weakest bindings should not yet be read as robust state predictions.</p>
+        <p><strong>Abstract.</strong> A constituent-quark neural-VMC survey finds shallow molecular candidates and no deeply bound or fully-heavy pentaquark state.</p>
+        <div class="tags"><span>pentaquarks</span><span>neural VMC</span><span>shallow binding</span><span>model systematics</span></div>
+      </article>
+    </section>
+    <p id="empty-state" class="empty-state" hidden>No papers match that filter.</p>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+{
+  "date": "2026-09-29",
+  "path": "reports/2026-09-29.html",
+  "summary": "The latest announcement feed contains three substantial heavy-ion contributions: a virtuality-resolved factorization framework for in-medium jet functions, a validated 3D stochastic solver for relativistic relaxation-time kinetics, and an order-hbar-squared thermodynamic analysis that favors the kinetic pseudo-gauge for spin hydrodynamics. Physics-AI value is led by real detector-data releases and calibrated sampling or dynamics methods, with transfer limits stated explicitly.",
+  "professional_summary": "Virtuality-resolved jet functions; stochastic relativistic transport and kinetic attractors; pseudo-gauge consistency in spin hydrodynamics; public detector waveforms; FAIR and AI-ready data; likelihood-corrected Boltzmann sampling; stochastic trajectory generation.",
+  "keywords": [
+    "jet quenching",
+    "virtuality evolution",
+    "relativistic transport",
+    "kinetic attractors",
+    "spin hydrodynamics",
+    "public detector data",
+    "AI-ready data",
+    "Boltzmann sampling",
+    "stochastic dynamics"
+  ],
+  "arxiv_ids": [
+    "2609.35653",
+    "2609.35148",
+    "2609.31819",
+    "2609.34304",
+    "2609.34987",
+    "2609.31978",
+    "2609.32026",
+    "2609.32624"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Data infrastructure",
+    "Caution"
+  ],
+  "strongest_paper": "2609.35653: factorized virtuality-resolved in-medium jet functions",
+  "strongest_paper_summary": "The jet-function paper supplies the day's most consequential heavy-ion result, with an explicit derivation, recovery of standard BDMPS-Z limits, numerical exploration, and a clear accounting of approximations.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2609.35653",
+      "url": "https://arxiv.org/abs/2609.35653",
+      "title": "Factorization and virtuality evolution of jet functions in heavy-ion collisions",
+      "short_authors": [
+        "Carlos Lamas",
+        "Carlos A. Salgado",
+        "Bin Wu"
+      ],
+      "total_author_count": 3,
+      "category": "Phenomenology",
+      "tags": [
+        "jet quenching",
+        "virtuality evolution",
+        "factorization",
+        "BDMPS-Z"
+      ],
+      "assessment": "strong",
+      "summary": "Derives a factorized gamma+jet cross section with an in-medium jet function differential in initial virtuality. Integration reproduces standard BDMPS-Z results, while finite virtuality exposes the transition between vacuum-like and medium-induced radiation.",
+      "abstract": "The framework identifies the medium-formation-time to jet-formation-time ratio as the control variable for relevant initial virtualities, under a Glauber, soft-radiation, eikonal setup."
+    },
+    {
+      "arxiv_id": "2609.35148",
+      "url": "https://arxiv.org/abs/2609.35148",
+      "title": "ShARK: A Stochastic Transport Framework for the Relativistic Relaxation Time Approximation Boltzmann Equation",
+      "short_authors": [
+        "Tiago Nunes da Silva",
+        "Jadna L. Barauna",
+        "Giorgio Torrieri"
+      ],
+      "total_author_count": 3,
+      "category": "Theory",
+      "tags": [
+        "relativistic transport",
+        "Boltzmann equation",
+        "kinetic attractors",
+        "O-O geometry"
+      ],
+      "assessment": "strong",
+      "summary": "Constructs a 3D continuous-momentum Monte Carlo solver from microcanonical stochastic collisions and validates it against exact Bjorken and Gubser kinetic solutions plus convergence tests on an optical-Glauber O-O profile.",
+      "abstract": "The stochastic N-body construction converges to Anderson-Witting kinetics while conserving local four-momentum event by event."
+    },
+    {
+      "arxiv_id": "2609.31819",
+      "url": "https://arxiv.org/abs/2609.31819",
+      "title": "Global equilibrium at order O(hbar^2): pseudo-gauge ambiguity, Maxwell relations, and thermodynamic consistency",
+      "short_authors": [
+        "Asaad Daher",
+        "David Wagner",
+        "Masoud Shokri",
+        "Dirk H. Rischke"
+      ],
+      "total_author_count": 4,
+      "category": "Theory",
+      "tags": [
+        "spin hydrodynamics",
+        "pseudo-gauge",
+        "thermal vorticity",
+        "Wigner functions"
+      ],
+      "assessment": "strong",
+      "summary": "Derives order-hbar-squared equilibrium corrections for rotating spin-half matter and finds that Maxwell relations hold in the kinetic pseudo-gauge but generally fail in canonical and GLW choices.",
+      "abstract": "Global charges are pseudo-gauge independent, while local densities and thermodynamic consistency are not."
+    },
+    {
+      "arxiv_id": "2609.34304",
+      "url": "https://arxiv.org/abs/2609.34304",
+      "title": "EXO-200 Public Data Release for AI/ML Applications",
+      "short_authors": [
+        "S. Al Kharusi",
+        "G. Anton",
+        "I. Badhrees",
+        "P. S. Barbeau",
+        "V. Belov",
+        "et al."
+      ],
+      "total_author_count": 106,
+      "category": "AI/ML use",
+      "tags": [
+        "public detector data",
+        "liquid-xenon TPC",
+        "waveforms",
+        "rare-event ML"
+      ],
+      "assessment": "strong",
+      "summary": "Releases roughly one million real calibration events with raw charge and light waveforms paired to reconstructed event quantities in HDF5.",
+      "abstract": "The resource enables reproducible detector-ML work, although benchmark tasks and detector-condition coverage remain to be developed."
+    },
+    {
+      "arxiv_id": "2609.34987",
+      "url": "https://arxiv.org/abs/2609.34987",
+      "title": "Toward FAIR and AI-Ready Data: An Assessment of the GlueX Experiment's Data Ecosystem at Jefferson Lab",
+      "short_authors": [
+        "Anil Panta",
+        "Brad Sawatzky",
+        "Casey Morean",
+        "Dmitry Romanov",
+        "Douglas Higinbotham"
+      ],
+      "total_author_count": 5,
+      "category": "AI/ML use",
+      "tags": [
+        "FAIR data",
+        "AI readiness",
+        "data provenance",
+        "GlueX"
+      ],
+      "assessment": "mixed",
+      "summary": "Defines deterministic FAIR and AI-readiness criteria and applies them to the GlueX data ecosystem, separating general-purpose checks from experiment-specific validation.",
+      "abstract": "A concrete governance case study with actionable recommendations, but no downstream evidence yet that the metrics predict ML utility."
+    },
+    {
+      "arxiv_id": "2609.31978",
+      "url": "https://arxiv.org/abs/2609.31978",
+      "title": "Bridging Stochastic Flow Maps and Boltzmann Generators with Normalizing Flows",
+      "short_authors": [
+        "Louis Grenioux",
+        "RuiKang OuYang",
+        "Luhuan Wu"
+      ],
+      "total_author_count": 3,
+      "category": "AI/ML use",
+      "tags": [
+        "Boltzmann sampling",
+        "normalizing flows",
+        "importance correction",
+        "lattice transfer"
+      ],
+      "assessment": "strong",
+      "summary": "Uses exact-likelihood conditional flows to importance-correct every stochastic denoising transition, proves consistency and error propagation bounds, and improves molecular equilibrium sampling.",
+      "abstract": "The method is a credible candidate for lattice or Boltzmann-weighted physics sampling, but current tests do not address gauge theories, topology, or volume scaling."
+    },
+    {
+      "arxiv_id": "2609.32026",
+      "url": "https://arxiv.org/abs/2609.32026",
+      "title": "Continuous-Time Trajectory Generation from Discrete Observations with Stochasticity",
+      "short_authors": [
+        "Ruifeng Shang",
+        "Shu Liu",
+        "Yuhua Zhu"
+      ],
+      "total_author_count": 3,
+      "category": "AI/ML use",
+      "tags": [
+        "stochastic dynamics",
+        "trajectory generation",
+        "Navier-Stokes",
+        "surrogate modeling"
+      ],
+      "assessment": "mixed",
+      "summary": "Learns continuous probability-velocity fields from discrete stochastic snapshots without known SDE coefficients or score estimation, with convergence theory and fluid-dynamics tests.",
+      "abstract": "Transfer to heavy-ion evolution is plausible but depends on conservation-aware representations and scaling to high-dimensional event ensembles."
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2609.32624",
+      "url": "https://arxiv.org/abs/2609.32624",
+      "title": "Landscape of pentaquark bound states with neural-network Variational Monte Carlo",
+      "short_authors": [
+        "Jing-Zhe Song",
+        "Wei-Lin Wu",
+        "Shi-Lin Zhu"
+      ],
+      "total_author_count": 3,
+      "category": "AI/ML use",
+      "tags": [
+        "pentaquarks",
+        "neural VMC",
+        "shallow binding",
+        "model systematics"
+      ],
+      "assessment": "caution",
+      "summary": "A systematic neural-VMC scan finds 21 candidates bound by 2-15 MeV, but the paper's own localized scattering states retain a few MeV of residual kinetic energy and no full uncertainty budget is supplied.",
+      "abstract": "The computational scan is useful, but the weakest shallow-binding claims are comparable to unresolved numerical and model scales."
+    }
+  ]
+}
