@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-09-30</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>30 September 2026</h1>
+    <p class="dek">Bayesian heavy-quark energy loss, magnetic-field QGP thermodynamics, inference with reliability guarantees, and audited scientific foundation-model transfer.</p>
+    <div class="filter-panel" aria-label="Report filter"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>The strongest direct heavy-ion paper is the Bayesian-improved CUJET analysis.</strong> Parameters calibrated only to light-hadron high-pT data also describe charm and bottom RAA and v2, a meaningful cross-sector test; the inference still remains conditional on the CUJET mechanism and medium model.</li>
+        <li><strong>No new heavy-ion collision measurement appeared in today's nuclear-experiment feed.</strong> The HADES pion-beam proposal is nevertheless useful experimental infrastructure because it targets cold-matter and elementary baselines needed to interpret dileptons and vector mesons in A+A collisions.</li>
+        <li><strong>The magnetic-field lattice-QCD result is technically relevant but should not be mistaken for a fully current precision calculation.</strong> It finds a potentially sizable fourth-order correction near the crossover, but uses Nt=8 ensembles, shows a roughly two-sigma volume dependence at 167 MeV, and was completed in 2014.</li>
+        <li><strong>Hybrid neural simulation-based inference is today's most immediately transferable HEP-ML method.</strong> It explicitly trades a modest amount of sensitivity for lower cost and retained parametric reliability, with released code.</li>
+        <li><strong>The broader foundation-model paper is unusually careful about negative evidence.</strong> Randomized-library controls separate preservation from actual reuse, and task-specific operators still win on three of five problems; that evaluation discipline is directly useful for detector and simulation surrogates.</li>
+      </ul>
+      <p class="meta">Window note: papers were screened from the Wednesday, 30 September announcement feeds, principally submissions on 29 September UTC, with one relevant late-feed paper submitted 28 September. Fewer than 50 candidates were inspected; abstracts were the primary triage signal and full-text features were checked only for the strongest or most ambiguous items.</p>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-search="2609.37799 Levkova DeTar theory lattice QCD equation state magnetic field QGP crossover susceptibility finite volume">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.37799">Equation of State of the Quark-Gluon Plasma in an External Magnetic Field to Fourth Order</a></h4><span class="label mixed">Mixed</span></div>
+        <p class="meta">L. Levkova, C. DeTar (2 authors) · arXiv:2609.37799</p>
+        <p><strong>Summary.</strong> A zero-net-flux magnetic-field construction enables derivatives of the pressure on B=0 lattice ensembles. Extending the Taylor expansion from O(B2) to O(B4), the authors find paramagnetism above the crossover, a small fourth-order term at high temperature, and an enhanced term near the crossover.</p>
+        <p><strong>Why it matters.</strong> At eB=0.2 GeV2, the large-volume fourth-order contribution near 167 MeV reaches roughly half the quadratic central value, so truncation order may matter when magnetic-field effects are mapped into early-time heavy-ion phenomenology.</p>
+        <p><strong>Critical assessment.</strong> The method is sound and the caveats are explicit, but this is not yet precision input: Nt=8 is coarse, the two spatial volumes differ by about two standard deviations at the most interesting temperature, and the calculation was completed in 2014. Continuum and volume control are needed before quantitative phenomenological use.</p>
+        <p><strong>Abstract.</strong> Taylor coefficients of the QGP pressure through fourth order in an external magnetic field show enhanced nonlinear response near the crossover and likely finite-volume effects.</p>
+        <div class="tags"><span>lattice QCD</span><span>magnetic field</span><span>QGP equation of state</span><span>finite-volume effects</span></div>
+      </article>
+
+      <article class="paper" data-search="2609.36649 Dwibedi Panja Ghosh theory elliptic flow rotating fireball vorticity beam energy scan">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.36649">Elliptic flow in an expanding and rotating fireball</a></h4><span class="label mixed">Mixed</span></div>
+        <p class="meta">Ashutosh Dwibedi, Anupam Panja, Sabyasachi Ghosh (3 authors) · arXiv:2609.36649</p>
+        <p><strong>Summary.</strong> The authors augment a thermal fireball model with global or differential rotation and compare spherical and spheroidal emission geometries. Rotation changes v2 far more than midrapidity spectra, enhancing v2 by about 10% at 7.7 GeV and 2% at 39 GeV in the spheroidal setup.</p>
+        <p><strong>Why it matters.</strong> It provides an interpretable estimate of how vorticity could contaminate or supplement geometry-driven elliptic flow in the beam-energy-scan regime.</p>
+        <p><strong>Critical assessment.</strong> Interesting as a sensitivity study, but the 2-10% statement is model dependent. The simplified freeze-out geometry and prescribed rotation are not a dynamical viscous-hydrodynamic calculation, and the abstract does not establish a calibrated comparison to data or other sources of v2.</p>
+        <p><strong>Abstract.</strong> An expanding and rotating thermal fireball yields a beam-energy-dependent vorticity contribution to elliptic flow while leaving midrapidity spectra nearly unchanged.</p>
+        <div class="tags"><span>elliptic flow</span><span>vorticity</span><span>rotating fireball</span><span>beam energy scan</span></div>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-search="2609.37548 HADES experiment GSI pion beam dileptons vector mesons cold nuclear matter A+A baseline">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.37548">π-QCD; Proposal for Experiments at the GSI Pion Beam Facility</a></h4><span class="label mixed">Mixed</span></div>
+        <p class="meta">HADES Collaboration: R. Abou Yassine, J. Adamczewski-Musch, G. Appagere, M. Becker, A. Blanco, et al. (129 authors) · arXiv:2609.37548</p>
+        <p><strong>Summary.</strong> HADES proposes an elementary pion-nucleon and pion-nucleus program up to sqrt(s) about 2.35 GeV, emphasizing baryon resonances, electromagnetic transition form factors, hyperon decays, and vector-meson propagation in cold nuclei.</p>
+        <p><strong>Why it matters.</strong> Precision rho-N and omega-N couplings, dilepton channels, and cold-matter line shapes are valuable reference inputs for interpreting emissivity and in-medium effects in hot, dense A+A systems.</p>
+        <p><strong>Critical assessment.</strong> Scientifically well motivated, but it is a program proposal rather than a result and is adjacent to heavy-ion collisions rather than a new collision measurement. Its eventual value depends on realized beam performance, systematic control, and integration with transport analyses.</p>
+        <p><strong>Abstract.</strong> A pion-beam program with HADES targets exclusive hadronic and electromagnetic channels needed to constrain strong-QCD dynamics and heavy-ion baselines.</p>
+        <div class="tags"><span>HADES</span><span>pion beam</span><span>dileptons</span><span>cold nuclear matter</span></div>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-search="2609.37729 Guo Liao Shi phenomenology heavy quark energy loss Bayesian CUJET RAA v2 diffusion charm bottom monopoles">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.37729">Heavy quark energy loss in the Bayesian-inference-improved CUJET model</a></h4><span class="label strong">Strong</span></div>
+        <p class="meta">Yu Guo, Jinfeng Liao, Shuzhe Shi (3 authors) · arXiv:2609.37729</p>
+        <p><strong>Summary.</strong> CUJET parameters governing the strong coupling and temperature-dependent chromo-magnetic monopole fraction are inferred from high-pT light-hadron RAA and v2 at RHIC and the LHC. Without recalibrating to heavy flavor, the posterior describes available charm- and bottom-hadron observables and gives 2πTDs broadly compatible with phenomenological and lattice constraints.</p>
+        <p><strong>Why it matters.</strong> Heavy flavor is an out-of-sample sector relative to the calibration data, so simultaneous light- and heavy-hadron agreement is a materially stronger validation than another single-channel fit. It also sharpens the case for near-Tc chromo-magnetic degrees of freedom within this framework.</p>
+        <p><strong>Critical assessment.</strong> Strong by today's standard, especially because of the cross-sector posterior prediction. The claimed universality remains conditional on CUJET's energy-loss kernel, bulk evolution, hadronization choices, correlated experimental systematics, and prior structure; agreement does not uniquely establish monopoles.</p>
+        <p><strong>Abstract.</strong> A light-hadron-calibrated Bayesian CUJET posterior describes high-pT open-heavy-flavor suppression and anisotropy and yields a diffusion coefficient consistent with existing constraints.</p>
+        <div class="tags"><span>heavy-quark energy loss</span><span>Bayesian inference</span><span>CUJET</span><span>chromo-magnetic monopoles</span></div>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-search="2609.36876 Wu AI ML nuclear masses kernel ridge regression Wigner mirror correlations uncertainty extrapolation">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.36876">Wigner and mirror correlations in nuclear mass predictions with kernel ridge regression</a></h4><span class="label mixed">Mixed</span></div>
+        <p class="meta">X. H. Wu (1 author) · arXiv:2609.36876</p>
+        <p><strong>Summary.</strong> Wigner and mirror symmetries are built into kernel functions, with an odd-even extension reaching a 98 keV leave-one-out RMS error on known masses. Gains concentrate near N=Z and for mirror pairs, with proposed benefits for an unknown nucleus whose mirror partner is measured.</p>
+        <p><strong>Why it matters.</strong> This is substantive physics-informed ML rather than a generic regressor: nuclear symmetry structure is encoded in the hypothesis class without extra fitted weights.</p>
+        <p><strong>Critical assessment.</strong> Promising but not yet fully convincing for extrapolation. Leave-one-out tests on a correlated nuclear chart can be optimistic, and the headline sub-100-keV result is localized rather than global; blocked holdouts by isotopic region and calibrated predictive uncertainties would be stronger tests.</p>
+        <p><strong>Abstract.</strong> Symmetry-aware kernel ridge regression improves nuclear mass residuals, especially for light N≈Z nuclei and mirror pairs.</p>
+        <div class="tags"><span>nuclear masses</span><span>kernel ridge regression</span><span>mirror symmetry</span><span>extrapolation</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-search="2609.36044 Benevedes Dehghan Ghosh Park hybrid neural simulation based inference latent categories reliability trigger HEP">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.36044">Hybrid Neural Simulation-Based Inference for Robust Applications and Limited-Budget Scenarios</a></h4><span class="label strong">Strong</span></div>
+        <p class="meta">Sean Benevedes, Mani Dehghan, Aishik Ghosh, Tae Hyoun Park (4 authors) · arXiv:2609.36044</p>
+        <p><strong>Method and result.</strong> Two hybrid inference schemes retain some or all parametric reliability guarantees while approaching neural SBI sensitivity at substantially lower inference cost. The authors recommend Latent Categories after comparison studies and release code.</p>
+        <p><strong>HEP/heavy-ion use case.</strong> The clearest route is expensive likelihood-free measurements with simulator access but tight latency or compute budgets: online selections, unfolding, detector-response nuisance inference, and event-level heavy-ion parameter estimation.</p>
+        <p><strong>Critical assessment.</strong> Strong and practical because cost, sensitivity, and reliability are treated as joint objectives. The abstract does not expose the full breadth of nuisance misspecification tests, so adoption should wait for stress tests under simulator mismatch and realistic high-dimensional systematics.</p>
+        <p><strong>Abstract.</strong> Hybrid neural and parametric inference preserves reliability while reducing compute cost with only a modest sensitivity loss.</p>
+        <div class="tags"><span>simulation-based inference</span><span>latent categories</span><span>reliability</span><span>trigger inference</span></div>
+      </article>
+
+      <article class="paper" data-search="2609.38067 Roy Tripura Lee Chakraborty Alam foundation model scientific interfaces wavelet operators transfer radiation dose reactor surrogate">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.38067">A foundation model for energy and radiation systems built on heterogeneous scientific interfaces</a></h4><span class="label strong">Strong</span></div>
+        <p class="meta">Samrendra Roy, Tapas Tripura, Yoon Pyo Lee, Souvik Chakraborty, Syed Bahauddin Alam (5 authors) · arXiv:2609.38067</p>
+        <p><strong>Method and result.</strong> GEODE connects task-specific interfaces to a shared routed wavelet-operator library across cavity flow, radiation dose, elastoplastic stress, heat exchangers, and reactor subchannels. New tasks train only a private 2.1% parameter interface; randomized-library controls test whether frozen pretrained computation is genuinely reused, and task-specific operators remain more accurate on three of five problems.</p>
+        <p><strong>HEP/heavy-ion use case.</strong> The interface-plus-shared-operator design could support multi-detector field surrogates, calorimeter dose maps, radiation transport, hydrodynamic fields, or geometry-dependent response models without forcing every domain onto one grid.</p>
+        <p><strong>Critical assessment.</strong> Strong evaluation discipline and a credible transfer path, particularly the negative controls and distinction between retention and reuse. It is not evidence for a universal physics model: transfer is conditional, and dedicated models still often win.</p>
+        <p><strong>Abstract.</strong> A routed wavelet foundation model spans heterogeneous physical interfaces while controlled experiments distinguish parameter isolation, genuine reuse, and task-specific superiority.</p>
+        <div class="tags"><span>scientific foundation model</span><span>wavelet operators</span><span>transfer controls</span><span>radiation systems</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper caution" data-search="2609.36007 He Liu Liu Wang caution AI infrared subtraction LLM NLO NNLO EERAD3">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2609.36007">Infrared Subtraction with Artificial Intelligence</a></h4><span class="label caution">Caution</span></div>
+        <p class="meta">Wenjie He, Xiaohui Liu, Yandong Liu, Zhan Wang (4 authors) · arXiv:2609.36007</p>
+        <p>The local-subtraction construction may be genuinely useful: it reproduces massless three- and four-jet NLO corrections against EERAD3, supplies extensive ancillary material, and sketches NNLO extensions. The caution is about attribution and maturity. The analytic construction is physics-led, “AI-developed” is difficult to evaluate as a scientific variable, the demonstrated benchmark space is narrow, and the NNLO result is described as an attempt with proposed extensions. Treat this as an interesting subtraction-method paper with AI-assisted development, not yet as evidence that LLM agents can autonomously deliver reliable higher-order calculations.</p>
+        <div class="tags"><span>infrared subtraction</span><span>LLM agents</span><span>NLO validation</span><span>NNLO maturity</span></div>
+      </article>
+    </section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
