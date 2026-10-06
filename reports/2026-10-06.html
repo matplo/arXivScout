@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout · 2026-10-06</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">← Archive index</a>
+    <p class="eyebrow">Daily arXiv Physics Scout · 2026-10-06</p>
+    <h1>Heavy-ion physics and AI/ML briefing</h1>
+    <p class="dek">Strict window: 2026-10-05 17:07 UTC to 2026-10-06 17:07 UTC. Two papers clear the inclusion bar; no new heavy-ion collision paper in the window was strong enough to feature.</p>
+    <div class="filter-panel">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="paper-search">Search by keyword</label>
+        <input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>HEP ML scaling is the standout result:</strong> the JetSet2 study makes model/data/compute tradeoffs explicit at the scale needed for foundation-model discussions.</li>
+        <li><strong>Detector-side ML is moving toward adaptive hardware:</strong> reconfigurable logic neural networks target the real constraints of high-rate, radiation-exposed pixel detectors.</li>
+        <li><strong>Heavy-ion coverage is thin today:</strong> no qualifying new heavy-ion theory, experiment, or phenomenology submission appeared after the cutoff; the report does not pad the list with older papers.</li>
+        <li><strong>Transfer signal:</strong> the first paper is methodologically relevant to heavy-ion simulation and jet analyses; the second is relevant to high-occupancy trigger and readout design, but its evidence is less complete.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <p>No paper submitted inside the strict 24-hour window met the bar for inclusion under Theory, Experiment, Phenomenology, or AI/ML use. Several nearby papers were screened, including recent charge-transport, heavy-quark, and quarkonium studies, but their submission times preceded the cutoff and they are left for the next wider-context review rather than misclassified as today's papers.</p>
+    </section>
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <h3>HEP and detector ML</h3>
+      <article class="paper" data-category="AI/ML use" data-assessment="strong">
+    <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.06784">How to scale your HEP ML models: A recipe for robust architecture comparisons at scale</a></h4><span class="label strong">strong</span></div>
+    <p class="meta">Matthias Vigl, Nikita Pond, Jackson Barr, Alexander Froch, Dan Guest et al. (8 authors) · arXiv:2610.06784 · AI/ML use</p>
+    <div class="tags"><span>scaling laws</span><span>jet foundation models</span><span>compute/data tradeoffs</span><span>ATLAS JetSet2</span></div>
+    <p>This is the clearest high-value paper in the window. It proposes a reproducible way to compare HEP architectures along compute and data budgets, validates the procedure on toy tasks, and then tests multi-task transformers on roughly 11 billion simulated ATLAS jets. The reported near-equal square-root scaling of model and dataset size, plus the explicit early-stopping optimum, turns a vague 'bigger models help' claim into a resource-allocation question.</p>
+    <p><strong>Why it matters.</strong> The work is directly relevant to jet representation learning and any future heavy-ion foundation-model effort, where simulation volume, detector fidelity, and training cost are coupled constraints.</p>
+    <p><strong>Critical assessment.</strong> Strong by abstract-level evidence: unusually large scale, explicit budget axes, toy validation, and a concrete HEP dataset. The main residual risk is that the scaling conclusions are tied to JetSet2 and the chosen transformer/task family; transfer to heavy-ion observables and real detector data still needs validation.</p>
+    <details><summary>Abstract</summary><p>Much of the recent progress in machine learning domains such as language models has come from scaling laws that predict performance as a function of training effort. In high-energy physics (HEP) similar behavior has now been observed. To aid further study, we present a systematic procedure to derive robust scaling laws and compare design choices on the relevant budget axes for HEP tasks. We first validate the full scaling trajectory on toy problems and then apply the procedure to multi-task transformers on the ~11 billion-jet ATLAS JetSet2 dataset, in both the compute- and data-constrained regimes. For the latter, we predict, to the best of our knowledge for the first time, the jointly optimal model size, training horizon, learning rate and batch size under early stopping. At compute-optimal scaling, we recover a near-equal sqrt(C) dependence of model and dataset size, and find that auxiliary objectives lower the primary jet-classification loss at equal compute budget. Expanding the inputs toward lower-level data systematically lowers the loss while leaving the scaling exponent nearly unchanged. The onset of the power-law regime is itself set by scale: below a threshold in dataset size the loss carries little information about high-compute scaling, underscoring the value of large, high-quality full-simulation datasets as a foundation for scaling studies and the development of foundation models in HEP.</p></details>
+  </article>
+      <article class="paper" data-category="AI/ML use" data-assessment="mixed">
+    <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.06816">Reconfigurable On-Chip AI for Particle Physics Detectors with Logic Neural Networks</a></h4><span class="label mixed">mixed</span></div>
+    <p class="meta">Mila Bileska, Lino Gerlach, Jennet Dickinson, Lindsey Gray, Giuseppe Di Guglielmo et al. (7 authors) · arXiv:2610.06816 · AI/ML use</p>
+    <div class="tags"><span>on-chip inference</span><span>logic neural networks</span><span>radiation tolerance</span><span>pixel detectors</span></div>
+    <p>The paper evaluates Boolean-logic neural networks as a detector-side inference primitive for high-rate pixel systems. Its concrete transfer path to HEP is clear: local filtering or feature extraction could reduce data movement under severe latency, power, and radiation constraints, while reconfiguration addresses changing detector response.</p>
+    <p><strong>Why it matters.</strong> The architecture is relevant to future collider and nuclear detector triggers, including high-occupancy heavy-ion environments where bandwidth and latency can dominate the design.</p>
+    <p><strong>Critical assessment.</strong> Mixed and provisional: the use case is credible and the paper addresses deployment constraints that many ML studies ignore, but the abstract does not expose task-level benchmarks, radiation-test scope, or a full comparison against strong low-bit baselines. The 'step change' and robustness claims should be treated as hypotheses until those details are inspected.</p>
+    <details><summary>Abstract</summary><p>On-device machine learning is increasingly important in applications where extreme data rates or resource constraints make centralized processing infeasible. Logic neural networks (LNNs), which directly learn Boolean logic instead of conventional arithmetic operations, have recently emerged as a state-of-the-art approach for efficient inference and are particularly well suited for deployment in custom silicon. Next-generation pixel detectors present a challenging use case because their high granularity and readout frequency generate data rates that cannot be centrally processed, while stringent space and power constraints necessitate highly efficient on-chip inference. Radiation damage progressively alters detector response, requiring models that can be re-trained and reconfigured after deployment. The authors evaluate LNNs for on-chip inference in pixel detectors, report resource-efficiency and bit-flip robustness advantages, and present reconfigurable LNNs intended to adapt after deployment.</p></details>
+  </article>
+    </section>
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <p><strong>2610.06816 is the caution item.</strong> It is a plausible hardware/ML contribution, but the abstract-level evidence is not enough to establish broad radiation robustness or a step-change in capability. Require explicit task definitions, resource tables, radiation-test conditions, and matched low-bit baselines before treating the claims as mature.</p>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var input = document.getElementById("paper-search");
+      var cards = Array.prototype.slice.call(document.querySelectorAll(".paper"));
+      input.addEventListener("input", function () {
+        var q = input.value.trim().toLowerCase();
+        cards.forEach(function (card) { card.hidden = q && card.textContent.toLowerCase().indexOf(q) === -1; });
+      });
+    }());
+  </script>
+</body>
+</html>

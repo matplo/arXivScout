@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-06",
+  "report_path": "reports/2026-10-06.html",
+  "summary": "The strict 24-hour window was sparse for heavy-ion collision research. Two HEP AI/ML papers were selected: a large-scale study of scaling laws for jet models on ATLAS JetSet2, and a detector-side logic-neural-network study focused on resource efficiency, radiation-induced bit flips, and post-deployment reconfiguration. No new heavy-ion paper in the window cleared the inclusion bar.",
+  "keywords": [
+    "HEP ML scaling",
+    "ATLAS JetSet2",
+    "jet foundation models",
+    "on-chip inference",
+    "logic neural networks",
+    "radiation tolerance",
+    "adaptive detector hardware"
+  ],
+  "arxiv_ids": [
+    "2610.06784",
+    "2610.06816"
+  ],
+  "total_paper_count": 2,
+  "represented_categories": [
+    "AI/ML use"
+  ],
+  "strongest_paper": "2610.06784 — systematic HEP scaling-law methodology validated on toy problems and applied to approximately 11 billion ATLAS jets.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "How to scale your HEP ML models: A recipe for robust architecture comparisons at scale",
+      "authors": [
+        "Matthias Vigl",
+        "Nikita Pond",
+        "Jackson Barr",
+        "Alexander Froch",
+        "Dan Guest"
+      ],
+      "author_count": 8,
+      "arxiv_id": "2610.06784",
+      "arxiv_url": "https://arxiv.org/abs/2610.06784",
+      "category": "AI/ML use",
+      "abstract": "Much of the recent progress in machine learning domains such as language models has come from scaling laws that predict performance as a function of training effort. In high-energy physics (HEP) similar behavior has now been observed. To aid further study, we present a systematic procedure to derive robust scaling laws and compare design choices on the relevant budget axes for HEP tasks. We first validate the full scaling trajectory on toy problems and then apply the procedure to multi-task transformers on the ~11 billion-jet ATLAS JetSet2 dataset, in both the compute- and data-constrained regimes. For the latter, we predict, to the best of our knowledge for the first time, the jointly optimal model size, training horizon, learning rate and batch size under early stopping. At compute-optimal scaling, we recover a near-equal sqrt(C) dependence of model and dataset size, and find that auxiliary objectives lower the primary jet-classification loss at equal compute budget. Expanding the inputs toward lower-level data systematically lowers the loss while leaving the scaling exponent nearly unchanged. The onset of the power-law regime is itself set by scale: below a threshold in dataset size the loss carries little information about high-compute scaling, underscoring the value of large, high-quality full-simulation datasets as a foundation for scaling studies and the development of foundation models in HEP.",
+      "tags": [
+        "scaling laws",
+        "jet foundation models",
+        "compute/data tradeoffs",
+        "ATLAS JetSet2"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Reconfigurable On-Chip AI for Particle Physics Detectors with Logic Neural Networks",
+      "authors": [
+        "Mila Bileska",
+        "Lino Gerlach",
+        "Jennet Dickinson",
+        "Lindsey Gray",
+        "Giuseppe Di Guglielmo"
+      ],
+      "author_count": 7,
+      "arxiv_id": "2610.06816",
+      "arxiv_url": "https://arxiv.org/abs/2610.06816",
+      "category": "AI/ML use",
+      "abstract": "On-device machine learning is increasingly important in applications where extreme data rates or resource constraints make centralized processing infeasible. Logic neural networks (LNNs), which directly learn Boolean logic instead of conventional arithmetic operations, have recently emerged as a state-of-the-art approach for efficient inference and are particularly well suited for deployment in custom silicon. Next-generation pixel detectors present a challenging use case because their high granularity and readout frequency generate data rates that cannot be centrally processed, while stringent space and power constraints necessitate highly efficient on-chip inference. Radiation damage progressively alters detector response, requiring models that can be re-trained and reconfigured after deployment. The authors evaluate LNNs for on-chip inference in pixel detectors, report resource-efficiency and bit-flip robustness advantages, and present reconfigurable LNNs intended to adapt after deployment.",
+      "tags": [
+        "on-chip inference",
+        "logic neural networks",
+        "radiation tolerance",
+        "pixel detectors"
+      ],
+      "assessment": "mixed"
+    }
+  ]
+}
