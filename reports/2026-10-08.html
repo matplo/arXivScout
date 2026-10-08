@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-08</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">&larr; Archive index</a>
+    <p class="eyebrow">Daily arXiv Physics Scout - 2026-10-08</p>
+    <h1>Heavy-ion physics and AI/ML briefing</h1>
+    <p class="dek">Strict window: 2026-10-07 17:07 UTC to 2026-10-08 17:07 UTC. Two papers clear the inclusion bar: one heavy-ion phenomenology paper and one HEP detector-ML study. No qualifying new heavy-ion experiment paper appeared in the window.</p>
+    <div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="paper-search">Search by keyword</label><input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  </header>
+  <main class="report">
+    <section><h2>Executive takeaways</h2><ul class="takeaways">
+      <li><strong>Pre-equilibrium chemistry is the main heavy-ion result:</strong> a new effective bulk-pressure variable maps quark chemical equilibration into hydrodynamic evolution that can be propagated through event-by-event simulations.</li>
+      <li><strong>Small systems are the sharpest discriminator:</strong> the model predicts sizable sensitivity of multiplicity and flow to the chemical reaction rate in O+O, p+Pb, and peripheral Pb+Pb collisions.</li>
+      <li><strong>Detector ML has a concrete calibration win:</strong> a compact Timepix4 network matches a bin-by-bin fit using only 20% of the calibration data while retaining full correction coverage.</li>
+      <li><strong>The day is selective rather than broad:</strong> no new heavy-ion experiment paper or independent heavy-ion AI/ML analysis met the evidence bar in this strict window.</li>
+    </ul></section>
+    <section><h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3><p>No standalone theory paper inside the strict window cleared the inclusion bar.</p>
+      <h3>Experiment</h3><p>No new heavy-ion experiment paper appeared in the strict window. The detector-ML paper below uses CERN SPS beam-telescope data, but it is an instrumentation result rather than a heavy-ion measurement.</p>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-category="Phenomenology" data-assessment="strong">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.10284">An effective macroscopic description of early-stage chemical equilibration in high-energy heavy-ion collisions</a></h4><span class="label strong">strong</span></div>
+        <p class="meta">Anar Akbarov, Hendrik Roch, Chun Shen (3 authors) &middot; arXiv:2610.10284 &middot; Phenomenology</p>
+        <div class="tags"><span>chemical equilibration</span><span>bulk pressure</span><span>pre-equilibrium QGP</span><span>IP-Glasma + MUSIC</span></div>
+        <p>The authors develop an effective hydrodynamic description in which microscopic quark chemical equilibration is represented by a relaxing, non-linear effective bulk viscous pressure. The construction is coupled to an IP-Glasma + JIMWLK + MUSIC + UrQMD event-by-event framework and propagated to Pb+Pb, O+O, and p+Pb final-state observables.</p>
+        <p><strong>Why it matters.</strong> It gives pre-equilibrium chemistry a place in the same dynamical language used for viscous hydrodynamics and makes the effect testable through multiplicity, mean transverse momentum, and anisotropic flow. The predicted 4-12% multiplicity changes as the reaction-rate parameter varies, with enhanced sensitivity in small systems, identify observables that could constrain the otherwise phenomenological rate.</p>
+        <p><strong>Critical assessment.</strong> Strong and worth following. The paper connects a clear microscopic motivation to a closed macroscopic evolution and propagates it through a modern simulation chain, including comparisons to existing data. The main limitation is model dependence: the reaction rate is parameterized phenomenologically, the pure-gluon equation of state is simplified as conformal in the baseline, and the calibration is not yet a global Bayesian extraction. The predictions are useful sensitivity targets, not a measurement of the equilibration time.</p>
+        <details><summary>Abstract</summary><p>The early stage of high-energy heavy-ion collisions undergoes transient dynamics, evolving non-perturbatively from a gluon-rich to a chemically equilibrated quark-gluon plasma. We develop an effective hydrodynamic approach that casts the microscopic quark equilibration dynamics as the relaxation evolution of an effective macroscopic bulk viscous pressure. The evolution of this effective bulk viscous pressure captures quark chemical equilibration and the breaking of conformal symmetry, thereby providing a smooth onset of the lattice QCD equation of state after a few fm/c in the hydrodynamic evolution. We investigate phenomenological effects of this macroscopic description on final-state observables in Pb+Pb, O+O, and p+Pb collisions at the Large Hadron Collider.</p></details>
+      </article>
+      <h3>AI/ML use</h3>
+      <article class="paper" data-category="AI/ML use" data-assessment="mixed">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.10328">Neural network-based timewalk correction for the Timepix4 ASIC</a></h4><span class="label mixed">mixed</span></div>
+        <p class="meta">David Bacher, Kazu Akiba, Martin van Beuzekom, Victor Coco, Raphael Dumps et al. (10 authors) &middot; arXiv:2610.10328 &middot; AI/ML use</p>
+        <div class="tags"><span>detector calibration</span><span>Timepix4</span><span>4D tracking</span><span>low-data regression</span></div>
+        <p>This paper replaces the conventional bin-by-bin heuristic timewalk fit with a compact feed-forward network using measured charge and reconstructed intrapixel position. Using 2025 CERN SPS beam-telescope data for 100 um and 300 um planar sensors, the network reaches the same reported asymptotic resolutions, 180 ps and 300 ps, with only 20% of the calibration data.</p>
+        <p><strong>Why it matters.</strong> The result is directly relevant to high-rate collider tracking and has a credible transfer path to heavy-ion instrumentation, where occupancy, calibration statistics, and timing coverage matter. The network is defined everywhere, unlike the fit baseline whose sparse bins can fail, and the study keeps the inputs and calibration sample size matched for the comparison.</p>
+        <p><strong>Critical assessment.</strong> Mixed-positive. The baseline comparison is concrete, the evaluation uses held-out test data, and the paper reports both time resolution and correction efficiency. But the study uses a narrow input set, one beam-telescope configuration, and does not yet test online retraining, changing operating conditions, or a full system-level latency and power budget. It is a solid calibration result, not evidence that neural networks are universally superior for detector timing.</p>
+        <details><summary>Abstract</summary><p>Timewalk corrections of hybrid pixel detectors conventionally employ heuristic fits performed independently in bins of the relevant input variables. This requires both an explicit functional ansatz and binning scheme, as well as densely populated calibration data whose required size grows rapidly as further input variables are added. This paper presents a timewalk correction for the Timepix4 readout chip based on a compact feed-forward neural network, which learns the dependence directly from the input variables without requiring an explicit functional ansatz or binning. The NN is compared against the fit-based baseline using data from the Timepix4 beam telescope at the CERN SPS in 2025, with 100 um and 300 um thick planar sensors. Both methods parameterise the timewalk correction as a function of the measured charge and reconstructed intrapixel impact position. With only 20% of the calibration data, the NN already achieves the same asymptotic time resolutions as the fit-based baseline: 180 ps and 300 ps for the two thicknesses, respectively.</p></details>
+      </article>
+    </section>
+    <section><h2>AI/ML use cases in physics</h2><p>The Timepix4 study is the only new ML paper in the strict window with a direct, experimentally benchmarked HEP transfer path. Its strongest lesson is methodological: compare learned calibration against a domain baseline at equal inputs, equal calibration budget, held-out data, and a coverage metric.</p></section>
+    <section><h2>Weak or overclaimed papers worth caution</h2><p><strong>2610.10328 is the caution item, despite being useful.</strong> The evidence supports a narrower claim - data-efficient timewalk correction for the tested Timepix4 configurations. It does not yet establish robustness across detector geometries, radiation damage, operating drift, online deployment, or system-level resource constraints.</p></section>
+  </main>
+  <script>(function(){var input=document.getElementById("paper-search"),cards=Array.prototype.slice.call(document.querySelectorAll(".paper"));input.addEventListener("input",function(){var q=input.value.trim().toLowerCase();cards.forEach(function(card){card.hidden=q&&card.textContent.toLowerCase().indexOf(q)===-1;});});}());</script>
+</body>
+</html>
