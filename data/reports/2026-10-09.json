@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-09",
+  "report_path": "reports/2026-10-09.html",
+  "summary": "The current review window was selective: quantum localization modifies transport-based femtoscopy in compact systems; an analytic finite-density thermal-photon rate removes a hard-soft cutoff ambiguity; active learning reduces an ab initio nuclear basis while preserving variational certification; and a new HENP ML review argues for physics-aware validation rather than architecture-only metrics. No new heavy-ion experiment paper met the inclusion bar.",
+  "keywords": [
+    "quantum localization",
+    "femtoscopy",
+    "thermal photons",
+    "finite-density QGP",
+    "active learning",
+    "hyperspherical harmonics",
+    "variational certification",
+    "physics-integrated ML",
+    "uncertainty quantification"
+  ],
+  "arxiv_ids": [
+    "2610.10892",
+    "2610.11263",
+    "2610.11933",
+    "2610.12293",
+    "2610.12422"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper": "2610.11933 - active learning saves most basis construction while preserving explicit variational certification.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "Quantum Localization Limit of Transport-Based Femtoscopy",
+      "authors": [
+        "Jiaxing Zhao",
+        "Joerg Aichelin",
+        "Elena Bratkovskaya"
+      ],
+      "author_count": 3,
+      "arxiv_id": "2610.10892",
+      "arxiv_url": "https://arxiv.org/abs/2610.10892",
+      "category": "Theory",
+      "abstract": "Femtoscopic correlations in proton-proton and heavy ion collisions are commonly calculated using emission sources from microscopic transport models, where emitted particles are represented as classical phase-space points. The authors replace each point with a minimum-uncertainty Gaussian phase-space distribution and find significant modifications to the proton-pair source and momentum correlation in 7 TeV pp simulations.",
+      "tags": [
+        "femtoscopy",
+        "quantum localization",
+        "transport modeling",
+        "small systems"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Thermal photon production rate from QGP at finite density: Analytic cutoff independence",
+      "authors": [
+        "Sourav Duari",
+        "Nilanjan Chaudhuri",
+        "Sourav Sarkar",
+        "Pradip Roy"
+      ],
+      "author_count": 4,
+      "arxiv_id": "2610.11263",
+      "arxiv_url": "https://arxiv.org/abs/2610.11263",
+      "category": "Phenomenology",
+      "abstract": "The paper derives analytic cancellation of the intermediate hard-soft momentum cutoff in the thermal photon rate for a QGP with nonzero quark chemical potential, providing a finite-density generalization intended for hydrodynamic implementation.",
+      "tags": [
+        "thermal photons",
+        "finite density QGP",
+        "cutoff cancellation",
+        "hydrodynamic rates"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Active-learning construction of hyperspherical-harmonics spaces for A = 3",
+      "authors": [
+        "Elena Filandri",
+        "Andrea Di Luca",
+        "Laura Elisa Marcucci",
+        "Michele Viviani"
+      ],
+      "author_count": 4,
+      "arxiv_id": "2610.11933",
+      "arxiv_url": "https://arxiv.org/abs/2610.11933",
+      "category": "AI/ML use",
+      "abstract": "A Gaussian-process surrogate and cost-aware acquisition rule select extensions of a hyperspherical-harmonics basis. Every accepted extension is explicitly solved, and the method reproduces uniform K=60 energies within 4 keV while leaving more than 60% of that space unbuilt.",
+      "tags": [
+        "active learning",
+        "Gaussian process",
+        "ab initio nuclear theory",
+        "variational certification"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery",
+      "authors": [
+        "Xun Chen",
+        "Weiyao Ke",
+        "Yu-Gang Ma",
+        "Long-Gang Pang",
+        "Kai Zhou"
+      ],
+      "author_count": 5,
+      "arxiv_id": "2610.12293",
+      "arxiv_url": "https://arxiv.org/abs/2610.12293",
+      "category": "AI/ML use",
+      "abstract": "A mini-review surveys physics-integrated ML workflows in heavy-ion, neutron-star, lattice, and QCD research, emphasizing physical constraints, uncertainty quantification, and validation.",
+      "tags": [
+        "HENP ML review",
+        "physics constraints",
+        "uncertainty quantification",
+        "simulation and inference"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "A Density Functional for Quark Matter with Screened Confinement Interactions",
+      "authors": [
+        "Oliver Heymer",
+        "David Blaschke"
+      ],
+      "author_count": 2,
+      "arxiv_id": "2610.12422",
+      "arxiv_url": "https://arxiv.org/abs/2610.12422",
+      "category": "Caution",
+      "abstract": "The paper derives a quark-matter density functional from a screened linear-confinement ansatz and proposes identifying the screening parameter with the Fermi momentum. The construction is potentially relevant to dense-matter equations of state but requires broader validation.",
+      "tags": [
+        "quark matter",
+        "density functional",
+        "screened confinement",
+        "model ansatz"
+      ],
+      "assessment": "caution"
+    }
+  ]
+}

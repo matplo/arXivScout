@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-09</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">&larr; Archive index</a>
+    <p class="eyebrow">Daily arXiv Physics Scout - 2026-10-09</p>
+    <h1>Heavy-ion physics and AI/ML briefing</h1>
+    <p class="dek">Review window: approximately 2026-10-08 to 2026-10-09 UTC. The strongest items concern quantum localization in femtoscopy, finite-density thermal photons, active-learning basis construction, and physics-integrated ML practice. No new heavy-ion experiment paper met the inclusion bar.</p>
+    <div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="paper-search">Search by keyword</label><input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  </header>
+  <main class="report">
+    <section><h2>Executive takeaways</h2><ul class="takeaways">
+      <li><strong>Femtoscopy gets a nontrivial quantum correction:</strong> replacing classical transport point emitters with minimum-uncertainty phase-space packets changes the inferred source and proton-pair correlation in small systems.</li>
+      <li><strong>Finite-density QGP photon rates become cleaner to implement:</strong> an analytic cancellation of the hard-soft separator is derived for nonzero quark chemical potential, removing a technical ambiguity in hydrodynamic photon calculations.</li>
+      <li><strong>Active learning is used substantively:</strong> a Gaussian-process acquisition rule selects hyperspherical-harmonics extensions, while every accepted basis is explicitly solved and remains variationally certified.</li>
+      <li><strong>The ML review is useful as a map, not as new evidence:</strong> it highlights physics constraints and uncertainty validation across HENP workflows, but it should not be counted as a new demonstrated physics result.</li>
+      <li><strong>Selection remains sparse:</strong> no new heavy-ion experimental measurement or independent heavy-ion AI analysis in the current feed was strong enough to include.</li>
+    </ul></section>
+
+    <section><h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-category="Theory" data-assessment="strong">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.10892">Quantum Localization Limit of Transport-Based Femtoscopy</a></h4><span class="label strong">strong</span></div>
+        <p class="meta">Jiaxing Zhao, Joerg Aichelin, Elena Bratkovskaya (3 authors) &middot; arXiv:2610.10892 &middot; Theory</p>
+        <div class="tags"><span>femtoscopy</span><span>quantum localization</span><span>transport modeling</span><span>small systems</span></div>
+        <p>The authors replace the classical phase-space points emitted by a microscopic transport model with minimum-uncertainty Gaussian packets. Finite localization produces both spatial and momentum smearing, and coordinate-momentum correlations make the source modification nontrivial. In PHSD simulations of 7 TeV pp collisions, the correction significantly changes the proton-pair source and momentum correlation.</p>
+        <p><strong>Why it matters.</strong> Femtoscopic radii and correlation shapes are often used to infer space-time structure from transport output. This work identifies a specific quantum-consistency limit for the point-emitter approximation, with direct implications for pp and small-system heavy-ion analyses where the source is compact.</p>
+        <p><strong>Critical assessment.</strong> Strong conceptual contribution with a concrete model-level demonstration. The key open issue is breadth: the abstract reports pp simulations and one transport framework, so the size of the effect in Pb+Pb, for different particle pairs, and across alternative emission models remains to be established. The paper supports a correction and validity study, not yet a universal replacement for transport femtoscopy.</p>
+        <details><summary>Abstract</summary><p>Femtoscopic correlations in proton-proton and heavy ion collisions are commonly calculated using emission sources from microscopic transport models, where emitted particles are represented by classical phase-space points with simultaneously specified positions and momenta. This point-emitter picture neglects the finite phase-space localization required by quantum mechanics, which can become relevant when the localization scale approaches the femtoscopic source size, particularly in small collision systems. We formulate a quantum treatment by replacing each transport phase-space point with a minimum-uncertainty Gaussian phase-space distribution. Finite localization then induces both spatial and momentum smearing; in the presence of coordinate-momentum correlations, the latter produces a nontrivial modification of the emission source. Using proton-proton collisions at sqrt(s)=7 TeV simulated with the microscopic Parton-Hadron-String Dynamics transport approach, we show that this effect significantly modifies the proton-pair source and its momentum correlation. Our results expose a quantum localization effect overlooked in transport-based femtoscopy and establish the regime in which the classical point-emitter approximation is valid.</p></details>
+      </article>
+
+      <h3>Experiment</h3><p>No new heavy-ion experiment paper met the inclusion bar in the current review window. The newly listed nuclear-experiment item concerns neutron-induced Fe cross sections rather than heavy-ion collisions, and the ATLAS J/psi-jet paper is an older June submission appearing only as a cross-list.</p>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-category="Phenomenology" data-assessment="strong">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.11263">Thermal photon production rate from QGP at finite density: Analytic cutoff independence</a></h4><span class="label strong">strong</span></div>
+        <p class="meta">Sourav Duari, Nilanjan Chaudhuri, Sourav Sarkar, Pradip Roy (4 authors) &middot; arXiv:2610.11263 &middot; Phenomenology</p>
+        <div class="tags"><span>thermal photons</span><span>finite density QGP</span><span>cutoff cancellation</span><span>hydrodynamic rates</span></div>
+        <p>This paper derives the cancellation of the intermediate momentum cutoff between the hard and soft contributions to the thermal photon rate when the QGP has nonzero baryon density. The authors present the result as an analytic generalization of earlier finite-temperature calculations and argue that it can be inserted directly into relativistic hydrodynamic evolution at finite quark chemical potential.</p>
+        <p><strong>Why it matters.</strong> Thermal photons are sensitive to the early and hot stages of heavy-ion collisions, while finite-density extensions matter for lower-energy programs. An analytic regulator cancellation is a useful technical improvement because it reduces a source of numerical and matching ambiguity in a rate that is later integrated over the full space-time evolution.</p>
+        <p><strong>Critical assessment.</strong> Promising and technically focused. The abstract supports a well-defined analytic advance, but it does not establish phenomenological impact on final photon spectra, anisotropic flow, or beam-energy-scan observables. The next decisive test is implementation in a complete hydrodynamic calculation with consistent finite-density equations of state and comparison against existing rate prescriptions.</p>
+        <details><summary>Abstract</summary><p>We compute the thermal photon production rate from a hot and dense quark-gluon plasma. While the mutual cancellation of the intermediate momentum cutoff kc between the hard and soft regimes in the presence of finite baryon density has been previously established only numerically, we demonstrate here, for the first time, that this cutoff independence can be shown analytically even in the presence of a nonzero quark chemical potential mu. This resolves a long-standing issue addressed in Ref. [1]. The final expression for the photon rate can be treated as a generalization of the results obtained in Refs. [2,3] in the presence of mu and can be implemented directly in the space-time evolution of a hot and dense QGP medium.</p></details>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-category="AI/ML use" data-assessment="strong">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.11933">Active-learning construction of hyperspherical-harmonics spaces for A = 3</a></h4><span class="label strong">strong</span></div>
+        <p class="meta">Elena Filandri, Andrea Di Luca, Laura Elisa Marcucci, Michele Viviani (4 authors) &middot; arXiv:2610.11933 &middot; AI/ML use</p>
+        <div class="tags"><span>active learning</span><span>Gaussian process</span><span>ab initio nuclear theory</span><span>variational certification</span></div>
+        <p>The method decomposes the hyperspherical-harmonics basis into physically identifiable hyperangular and hyperradial classes. A Gaussian-process surrogate predicts the marginal variational gain of candidate extensions, and a cost-aware acquisition rule selects the next basis element; every accepted extension is then solved explicitly in the enlarged space.</p>
+        <p><strong>Why it matters.</strong> This is a credible transfer pattern for expensive nuclear and HEP calculations: ML chooses where computation is valuable, but the physics solver remains the source of truth. For triton and helium-3 benchmarks with AV18 and Urbana IX, the adaptive space reaches the uniform K=60 energy within 4 keV while leaving more than 60% of that space unbuilt.</p>
+        <p><strong>Critical assessment.</strong> Strong among the day's AI/ML papers because the authors compare against a controlled uniform basis, report explicit accuracy and cost, and retain variational guarantees. Transfer to heavy-ion many-body or detector simulation is plausible at the workflow level, but the demonstrated problem is A=3 and structured; performance at larger A, with noisier objectives or non-variational solvers, is still untested.</p>
+        <details><summary>Abstract</summary><p>The hyperspherical-harmonics expansion does not require uniform resolution: different components of the wave function converge at very different hyperangular and hyperradial scales. We use active learning to exploit this structure, allowing the calculation to distribute resolution instead of prescribing it. The HH space is decomposed into physically identifiable classes whose hyperangular and hyperradial cutoffs evolve independently; a Gaussian-process surrogate learns the marginal variational gain of each admissible extension, and a cost-aware acquisition selects the next one. The surrogate never replaces the many-body solver: every accepted extension is followed by an explicit solution in the enlarged space, so each reported energy is variational in an explicitly constructed basis. We test the construction on 3H and 3He with the Argonne v18 two-nucleon interaction, without and with the Urbana IX three-nucleon interaction, against uniform HH ladders extended to K=60 that reproduce established benchmarks within 1 keV. Asked for 5 keV, the adaptive runs reproduce the energy of the uniform K=60 space within 4 keV in every case and certify it, leaving more than 60% of that space unbuilt.</p></details>
+      </article>
+    </section>
+
+    <section><h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-category="AI/ML use" data-assessment="mixed">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12293">Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery</a></h4><span class="label mixed">mixed</span></div>
+        <p class="meta">Xun Chen, Weiyao Ke, Yu-Gang Ma, Long-Gang Pang, Kai Zhou (5 authors) &middot; arXiv:2610.12293 &middot; AI/ML use</p>
+        <div class="tags"><span>HENP ML review</span><span>physics constraints</span><span>uncertainty quantification</span><span>simulation and inference</span></div>
+        <p>This 37-page mini-review surveys ML workflows in heavy-ion collisions, neutron-star physics, lattice QFT, and continuum or holographic QCD. It emphasizes physics-integrated uses such as Bayesian QCD-matter extraction, generative event modeling, neural unfolding, differentiable inverse solvers, and symmetry- or topology-aware lattice samplers.</p>
+        <p><strong>Likely HEP/nuclear use.</strong> The most transferable message is evaluative: ML systems should be judged with symmetry, conservation, causality, thermodynamic stability, topology, calibration, and uncertainty checks rather than architecture metrics alone. That framing is useful for designing heavy-ion emulator, inference, and detector workflows.</p>
+        <p><strong>Critical assessment.</strong> Useful synthesis, but not a new empirical result. Its claims are only as strong as the cited literature, and the abstract does not provide a systematic meta-analysis or new benchmark. Treat it as a map of mature directions and an evaluation checklist, not evidence that any specific ML method is ready for deployment.</p>
+        <details><summary>Abstract</summary><p>Machine learning in high-energy nuclear physics is entering a new stage in which physical knowledge is incorporated more directly into data analysis, simulation, and physics inference. This mini-review focuses on developments that have matured in the past several years. Whereas earlier applications emphasized event classification, pattern recognition, and surrogate models for selected observables, recent work has moved toward physics-integrated workflows: calibrated Bayesian extraction of QCD matter properties, dense-matter equation-of-state inference from heavy-ion and neutron-star data, generative event modeling, neural unfolding of weak physical signals, differentiable inverse solvers, gauge-equivariant and diffusion-based lattice-field samplers, and neural reconstruction of model functions in holographic QCD. We survey recent applications in heavy-ion collisions, neutron-star physics, lattice QFT, and holographic or continuum QCD, emphasizing physical constraints, uncertainty quantification, and validation.</p></details>
+      </article>
+    </section>
+
+    <section><h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-category="Caution" data-assessment="caution">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12422">A Density Functional for Quark Matter with Screened Confinement Interactions</a></h4><span class="label caution">caution</span></div>
+        <p class="meta">Oliver Heymer, David Blaschke (2 authors) &middot; arXiv:2610.12422 &middot; Nuclear Theory</p>
+        <div class="tags"><span>quark matter</span><span>density functional</span><span>screened confinement</span><span>model ansatz</span></div>
+        <p>The paper derives a quark-matter density functional from a screened linear-confinement ansatz and proposes identifying the screening parameter with the Fermi momentum. The result is potentially relevant to dense-matter equations of state, but the abstract primarily establishes the construction rather than a broad validation against lattice, perturbative QCD, nuclear saturation, or compact-star observables.</p>
+        <p><strong>Assessment.</strong> Worth monitoring, but currently cautionary rather than a top result. The central identification is a model choice, and the scientific payoff depends on demonstrating thermodynamic consistency, matching across density regimes, and phenomenological consequences that outperform or clarify existing quark-matter functionals.</p>
+      </article>
+    </section>
+  </main>
+  <script>(function(){var input=document.getElementById("paper-search"),cards=Array.prototype.slice.call(document.querySelectorAll(".paper"));input.addEventListener("input",function(){var q=input.value.trim().toLowerCase();cards.forEach(function(card){card.hidden=q&&card.textContent.toLowerCase().indexOf(q)===-1;});});}());</script>
+</body>
+</html>
