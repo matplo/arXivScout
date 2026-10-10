@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-10",
+  "path": "reports/2026-10-10.html",
+  "summary": "The window is dominated by physics-integrated modeling rather than new detector results: an effective bulk-viscous description of early quark chemical equilibration, a quantum-localization correction to transport femtoscopy, and an active-learning basis-selection workflow with variational control. A new HENP ML review consolidates credible transfer themes around constrained inference, differentiable solvers, and uncertainty validation.",
+  "keywords": [
+    "chemical equilibration",
+    "bulk viscosity",
+    "quantum femtoscopy",
+    "active learning",
+    "variational nuclear methods",
+    "physics-integrated ML",
+    "uncertainty validation"
+  ],
+  "arxiv_ids": [
+    "2610.10284",
+    "2610.10892",
+    "2610.11933",
+    "2610.12293",
+    "2610.11630",
+    "2610.12422",
+    "2610.12128"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Phenomenology",
+    "Theory",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2610.10284",
+  "strongest_paper_summary": "Effective macroscopic description of early-stage chemical equilibration with final-state tests across Pb+Pb, O+O, and p+Pb.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2610.10284",
+      "title": "An effective macroscopic description of early-stage chemical equilibration in high-energy heavy-ion collisions",
+      "short_authors": "Anar Akbarov, Hendrik Roch, Chun Shen",
+      "author_count": 3,
+      "category": "Phenomenology",
+      "abstract": "The early stage evolves from a gluon-rich to a chemically equilibrated QGP. An effective hydrodynamic bulk-viscous pressure captures quark chemical equilibration and conformal-symmetry breaking, with tests in Pb+Pb, O+O, and p+Pb.",
+      "tags": [
+        "chemical equilibration",
+        "hydrodynamics",
+        "bulk viscosity"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.10892",
+      "title": "Quantum Localization Limit of Transport-Based Femtoscopy",
+      "short_authors": "Jiaxing Zhao, Joerg Aichelin, Elena Bratkovskaya",
+      "author_count": 3,
+      "category": "Theory",
+      "abstract": "Minimum-uncertainty Gaussian phase-space emitters replace classical transport points; finite localization changes proton-pair sources and momentum correlations in 7 TeV pp PHSD simulations.",
+      "tags": [
+        "femtoscopy",
+        "quantum localization",
+        "transport"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.11933",
+      "title": "Active-learning construction of hyperspherical-harmonics spaces for A = 3",
+      "short_authors": "Elena Filandri, Andrea Di Luca, Laura Elisa Marcucci, Michele Viviani",
+      "author_count": 4,
+      "category": "AI/ML use",
+      "abstract": "A Gaussian-process surrogate and cost-aware acquisition select hyperspherical-harmonics extensions; explicit variational solves reproduce K=60 benchmarks within 4 keV while leaving over 60% of the space unbuilt.",
+      "tags": [
+        "active learning",
+        "Gaussian process",
+        "variational solver"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.12293",
+      "title": "Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery",
+      "short_authors": "Xun Chen, Weiyao Ke, Yu-Gang Ma, Long-Gang Pang, Kai Zhou",
+      "author_count": 5,
+      "category": "AI/ML use",
+      "abstract": "A mini-review surveys physics-integrated ML across heavy-ion, neutron-star, lattice, and QCD workflows, emphasizing constraints, uncertainty quantification, and validation.",
+      "tags": [
+        "physics-informed ML",
+        "Bayesian inference",
+        "uncertainty"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.11630",
+      "title": "Physics-informed interpretable forms for dipole resonances and quantities relevant for astrophysics",
+      "short_authors": "Gourab Banerjee, Jhilam Sadhukhan, Debasish Mondal, B. K. Agrawal, Chandrani Sen, S. Mukhopadhyay",
+      "author_count": 6,
+      "category": "AI/ML use",
+      "abstract": "Bayesian inference extracts dipole-resonance systematics with explicit structural effects and constrains symmetry-energy coefficients and neutron-skin correlations.",
+      "tags": [
+        "Bayesian inference",
+        "interpretable surrogate",
+        "symmetry energy"
+      ],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2610.12422",
+      "title": "A Density Functional for Quark Matter with Screened Confinement Interactions",
+      "short_authors": "Oliver Heymer, David Blaschke",
+      "author_count": 2,
+      "category": "Caution",
+      "abstract": "A density functional is derived for quark matter with screened linear confinement and an interaction energy density proportional to n^(2/3).",
+      "tags": [
+        "quark matter",
+        "density functional"
+      ],
+      "assessment": "caution"
+    },
+    {
+      "arxiv_id": "2610.12128",
+      "title": "Minimal-Length Corrections to Hyperon Polarization in Rotating Quark Gluon Plasma",
+      "short_authors": "Behnam Pourhassan, Sameer Ahmad Mir",
+      "author_count": 2,
+      "category": "Caution",
+      "abstract": "A generalized-uncertainty-principle correction to hyperon polarization cancels locally and survives only through freeze-out covariance; no exclusion limit is inferred because the linear expansion is outside its reliable domain at current precision.",
+      "tags": [
+        "hyperon polarization",
+        "GUP",
+        "thermal vorticity"
+      ],
+      "assessment": "caution"
+    }
+  ]
+}
