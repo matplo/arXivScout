@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-10</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Heavy-ion physics and physics AI</h1>
+    <p class="dek">Briefing for 2026-10-10. Window reviewed: approximately the preceding 24 hours, with the newest relevant submissions available on 8-9 October UTC.</p>
+    <div class="filter-panel" aria-label="Report filter">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="report-search">Search by keyword</label>
+        <input id="report-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The strongest direct heavy-ion result is an effective hydrodynamic treatment of early quark chemical equilibration, connected to final-state observables in Pb+Pb, O+O, and p+Pb.</li>
+        <li>A quantum-localization correction to transport-based femtoscopy is a technically focused result with immediate implications for small-system source extraction, although its phenomenological reach is demonstrated only with pp simulations.</li>
+        <li>Active learning is used substantively in a variational three-nucleon calculation: every accepted basis extension is explicitly solved, preserving variational control while reducing the built basis by more than 60% at 5 keV accuracy.</li>
+        <li>The new HENP machine-learning review is useful as a map of physics-integrated workflows, but it is a review rather than a new validation result and should not be treated as evidence that all listed methods are mature.</li>
+        <li>No new heavy-ion experimental paper in the narrow window met the selection bar; the closest items were proceedings or older measurements resurfacing in the recent listings.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-filter-text="2610.10284 chemical equilibration bulk viscosity hydrodynamics Pb Pb O O p Pb">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.10284">An effective macroscopic description of early-stage chemical equilibration in high-energy heavy-ion collisions</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Anar Akbarov, Hendrik Roch, Chun Shen (3 authors) | arXiv:2610.10284 | submitted 7 Oct 2026</p>
+        <p>The authors represent the early non-perturbative evolution from a gluon-rich state toward a chemically equilibrated QGP through an effective bulk-viscous pressure that relaxes during hydrodynamic evolution. The construction is matched to the onset of a lattice-QCD equation of state and is propagated into Pb+Pb, O+O, and p+Pb final-state observables.</p>
+        <p><strong>Why it matters:</strong> Chemical equilibration is usually handled through microscopic or highly parameterized treatments; a macroscopic degree of freedom could make it easier to embed the physics in Bayesian hydrodynamic inference and system-size comparisons.</p>
+        <p><strong>Assessment:</strong> Strong abstract-level motivation and direct phenomenological reach. The main open issue is identifiability: the same observable shifts may be absorbed by initial-state, transport, or freeze-out parameters, so a convincing result requires systematic parameter degeneracy tests and comparisons against explicit kinetic models.</p>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-filter-text="2610.10892 quantum localization femtoscopy transport PHSD pp source">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.10892">Quantum Localization Limit of Transport-Based Femtoscopy</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Jiaxing Zhao, Joerg Aichelin, Elena Bratkovskaya (3 authors) | arXiv:2610.10892 | submitted 7 Oct 2026</p>
+        <p>The paper replaces classical transport point emitters with minimum-uncertainty Gaussian phase-space distributions. It shows that finite spatial and momentum localization, especially when coordinate-momentum correlations are present, changes the proton-pair source and momentum correlation in 7 TeV pp events simulated with PHSD.</p>
+        <p><strong>Why it matters:</strong> Femtoscopic radii are interpreted as source properties, so an uncontrolled point-emitter approximation can bias the mapping from transport output to measured correlations, particularly in small systems.</p>
+        <p><strong>Assessment:</strong> Conceptually clean and testable, with a clear validity-regime question. The current evidence is a model study in pp; transfer to Pb+Pb, different species, and realistic detector-level analyses remains to be established before calling it a general correction.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-filter-text="2610.11933 active learning hyperspherical harmonics A3 triton helium variational Gaussian process">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.11933">Active-learning construction of hyperspherical-harmonics spaces for A = 3</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Elena Filandri, Andrea Di Luca, Laura Elisa Marcucci, Michele Viviani (4 authors) | arXiv:2610.11933 | submitted 8 Oct 2026</p>
+        <p>A Gaussian-process surrogate estimates the marginal variational gain of candidate hyperspherical-harmonics basis extensions, and a cost-aware acquisition rule chooses which extension to solve next. Crucially, the surrogate does not replace the many-body solver: accepted extensions are explicitly solved, and the resulting energies remain variational. Tests on triton and helium-3 with AV18 and Urbana IX reproduce the uniform K=60 benchmark within 4 keV while leaving more than 60% of that space unbuilt.</p>
+        <p><strong>Why it matters:</strong> This is a concrete example of ML reducing expensive basis construction while retaining a physics-controlled error story. The workflow could transfer to larger nuclear bases, emulator-assisted reaction calculations, or expensive transport parameter scans.</p>
+        <p><strong>Assessment:</strong> One of the strongest AI/ML papers in the window because the ML component is tied to a measurable computational objective and the solver remains the authority. The main limitation is scope: A=3 benchmark systems are a necessary proof of principle, not yet evidence of scaling to the harder many-body regimes relevant to heavy-ion phenomenology.</p>
+      </article>
+
+      <h3>AI/ML use cases in physics</h3>
+      <article class="paper" data-filter-text="2610.12293 machine learning high energy nuclear physics physics integrated discovery uncertainty validation">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12293">Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Xun Chen, Weiyao Ke, Yu-Gang Ma, Long-Gang Pang, Kai Zhou (5 authors) | arXiv:2610.12293 | submitted 8 Oct 2026</p>
+        <p>This 37-page mini-review surveys physics-integrated ML in heavy-ion collisions, neutron stars, lattice QFT, and holographic or continuum QCD. It emphasizes calibrated Bayesian extraction, equation-of-state inference, generative event modeling, neural unfolding, differentiable inverse solvers, gauge-equivariant samplers, and the role of symmetries, conservation laws, causality, thermodynamic stability, topology, uncertainty quantification, and validation.</p>
+        <p><strong>Likely HEP/NP use case:</strong> A useful taxonomy for designing end-to-end inference pipelines in which an ML model is constrained by the physics and audited against calibrated uncertainty, rather than used as a black-box classifier.</p>
+        <p><strong>Assessment:</strong> Relevant and well aligned with the field's real bottleneck, namely reliability rather than architecture novelty. Because it is a review, its value is organizational and critical rather than evidentiary; individual claims still need to be checked against the underlying papers, especially where the review uses broad language about maturity.</p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.11630 Bayesian inference physics informed dipole resonance symmetry energy neutron skin">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.11630">Physics-informed interpretable forms for dipole resonances and quantities relevant for astrophysics</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Gourab Banerjee, Jhilam Sadhukhan, Debasish Mondal, B. K. Agrawal, Chandrani Sen, S. Mukhopadhyay (6 authors) | arXiv:2610.11630 | submitted 8 Oct 2026</p>
+        <p>Bayesian inference is used to extract centroid energies and widths of isovector giant dipole resonances with explicit dependence on isospin asymmetry, deformation, and shell corrections. The inferred resonance systematics constrain symmetry-energy coefficients, which are then used in self-consistent mean-field models to study dipole polarizability and neutron-skin correlations.</p>
+        <p><strong>Likely HEP/NP use case:</strong> The transferable idea is interpretable, physics-structured surrogate modeling with uncertainty-aware calibration, applicable to nuclear response emulators and heavy-ion equation-of-state parameter inference.</p>
+        <p><strong>Assessment:</strong> More substantive than a generic regression because the parametrization encodes known nuclear structure effects and is checked against measurements. Transfer to heavy-ion observables is methodological rather than direct, and the abstract does not establish whether posterior uncertainties include model discrepancy or only parameter uncertainty.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-filter-text="2610.12422 density functional quark matter screened confinement Cornell potential caution">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12422">A Density Functional for Quark Matter with Screened Confinement Interactions</a><span class="label caution">caution</span></h4></div>
+        <p class="meta">Oliver Heymer, David Blaschke (2 authors) | arXiv:2610.12422 | submitted 8 Oct 2026</p>
+        <p>The paper derives a quark-matter density functional from a screened linear confinement interaction, proposing a saturation parameter tied to the Fermi momentum and an interaction energy density scaling as n^(2/3).</p>
+        <p><strong>Why caution:</strong> The idea may be useful for dense-matter modeling, but the abstract reports a construction rather than a demonstrated heavy-ion observable, benchmark against lattice or microscopic calculations, or uncertainty analysis. It is worth monitoring, not elevating to a result about QGP phenomenology yet.</p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.12128 minimal length GUP hyperon polarization rotating quark gluon plasma caution">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12128">Minimal-Length Corrections to Hyperon Polarization in Rotating Quark Gluon Plasma</a><span class="label caution">caution</span></h4></div>
+        <p class="meta">Behnam Pourhassan, Sameer Ahmad Mir (2 authors) | arXiv:2610.12128 | submitted 8 Oct 2026</p>
+        <p>The calculation studies a scalar generalized-uncertainty-principle modification of the phase-space density of states and finds cancellation in the local mean-spin ratio, leaving a freeze-out covariance as the leading effect in the integrated observable. The paper explicitly notes that present LHC precision probes a linear-sensitivity interval outside the reliable domain of the linear expansion, so it does not infer an exclusion limit.</p>
+        <p><strong>Why caution:</strong> The paper is unusually clear about its own limitation, but that limitation is decisive: the advertised new-physics sensitivity is formal rather than experimentally constraining. Freeze-out temperature and hydrodynamic correlations dominate the quoted estimate.</p>
+      </article>
+    </section>
+  </main>
+  <script>
+  (function () {
+    var input = document.getElementById("report-search");
+    var papers = Array.prototype.slice.call(document.querySelectorAll(".paper"));
+    if (!input) return;
+    input.addEventListener("input", function () {
+      var query = (input.value || "").toLowerCase().trim();
+      papers.forEach(function (paper) {
+        var haystack = (paper.getAttribute("data-filter-text") + " " + paper.textContent).toLowerCase();
+        paper.hidden = query && haystack.indexOf(query) === -1;
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
