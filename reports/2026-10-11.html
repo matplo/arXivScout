@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-11</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Heavy-ion physics and physics AI</h1>
+    <p class="dek">Briefing for 2026-10-11. No Sunday submission batch was posted; the latest eligible arXiv new-submission set is Friday, 2026-10-09 UTC.</p>
+    <div class="filter-panel" aria-label="Report filter">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="report-search">Search by keyword</label>
+        <input id="report-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The most technically interesting heavy-ion result is a quantum-localization correction to transport-based femtoscopy, which challenges the classical point-emitter approximation in small systems.</li>
+        <li>Active learning is used with unusually strong physics safeguards in a variational A=3 calculation: the surrogate selects basis extensions, but every accepted extension is explicitly solved.</li>
+        <li>Two detector-ML papers target deployment constraints rather than headline accuracy: a 4,014-parameter Lund-tree tagger and geometry-aware GNN blocks for high-granularity calorimeters.</li>
+        <li>The new HENP ML review is a useful map of physics-integrated workflows, but it is a synthesis paper, not fresh evidence for the maturity of each method it surveys.</li>
+        <li>No new heavy-ion experiment paper in the latest batch met the narrow selection bar; this is a real gap in the window, not an omitted category.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper" data-filter-text="2610.10892 quantum localization transport femtoscopy proton proton heavy ion source correlation">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.10892">Quantum Localization Limit of Transport-Based Femtoscopy</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Jiaxing Zhao, Joerg Aichelin, Elena Bratkovskaya (3 authors) | arXiv:2610.10892 | submitted 7 Oct 2026</p>
+        <p>The authors replace classical transport point emitters with minimum-uncertainty Gaussian phase-space distributions. Finite localization produces both spatial and momentum smearing; with coordinate-momentum correlations, it changes the emission source and proton-pair momentum correlation in 7 TeV pp events simulated with PHSD.</p>
+        <p><strong>Why it matters:</strong> Femtoscopic radii are interpreted as source properties, so an uncontrolled point-emitter approximation can bias the mapping from transport output to measured correlations, especially in small collision systems.</p>
+        <p><strong>Assessment:</strong> Conceptually clean and testable, with a clear validity-regime question. The evidence is still a pp model study; transfer to Pb+Pb, other species, and detector-level analyses remains to be demonstrated.</p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-filter-text="2610.11933 active learning hyperspherical harmonics A 3 triton helium variational Gaussian process nuclear">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.11933">Active-learning construction of hyperspherical-harmonics spaces for A = 3</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Elena Filandri, Andrea Di Luca, Laura Elisa Marcucci, Michele Viviani (4 authors) | arXiv:2610.11933 | submitted 8 Oct 2026</p>
+        <p>A Gaussian-process surrogate estimates the marginal variational gain of candidate hyperspherical-harmonics basis extensions, and a cost-aware acquisition rule chooses which extension to solve next. The surrogate never replaces the many-body solver: accepted extensions are explicitly solved, preserving variational control. For triton and helium-3 with AV18 and Urbana IX, the adaptive runs reproduce the uniform K=60 benchmark within 4 keV while leaving more than 60% of that space unbuilt.</p>
+        <p><strong>Why it matters:</strong> This is a concrete ML use case with a computational objective and a physics-controlled error story. The workflow could transfer to larger nuclear bases, emulator-assisted reaction calculations, or expensive transport parameter scans.</p>
+        <p><strong>Assessment:</strong> Strong for a proof of principle. The main limitation is scope: A=3 benchmarks do not yet show scaling to the many-body regimes most relevant to heavy-ion phenomenology.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-filter-text="2610.12408 Tree Tensor Network jet tagger Lund declustering Pythia Herwig top quark gluon transfer compact">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12408">A compact, interrogable Tree Tensor Network Jet Tagger on Lund declustering trees</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Fabrizio Napolitano, Luca Della Penna, Tommaso Tedeschi, Livio Fanò (4 authors) | arXiv:2610.12408 | submitted 8 Oct 2026</p>
+        <p>The paper builds a quantum-inspired Tree Tensor Network that shares a tensor core across Cambridge/Aachen declustering-tree nodes and uses Lund coordinates without particle-ID or detector-level inputs. A 4,014-parameter model is compared with the roughly 391,000-parameter LundNet on Pythia and Herwig, including Pythia-to-Herwig transfer; native quark/gluon performance is close to LundNet, while top tagging is slightly weaker.</p>
+        <p><strong>Likely HEP/NP use case:</strong> Compact, interpretable jet representations for trigger, embedded, or resource-limited workflows, with latent-space diagnostics that localize generator differences.</p>
+        <p><strong>Assessment:</strong> One of the better ML papers in the batch because it tests cross-generator transfer and reports a real parameter-efficiency tradeoff. The missing step is detector-level and heavy-ion validation; particle-level success should not be read as robustness in a high-occupancy environment.</p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.12058 geometric deep learning GNN high granularity calorimeter particle identification energy regression instance segmentation HIBOU">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12058">Optimising Geometric Deep Learning for Varied Reconstruction Tasks in High Granularity Calorimeters</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Matthieu Melennec, Frédéric Magniette (2 authors) | arXiv:2610.12058 | submitted 8 Oct 2026</p>
+        <p>The authors exploit known detector geometry to reduce the computational burden of GNN pipelines, which otherwise often scale quadratically with detector elements. They validate the optimized approach on particle identification, energy regression, and instance segmentation, and present HIBOU as a modular blueprint for experiment-specific reconstruction frameworks.</p>
+        <p><strong>Likely HEP/NP use case:</strong> The geometry-aware sparse-computation idea could transfer to high-occupancy heavy-ion tracking, calorimetry, and online reconstruction where detector structure is known and latency matters.</p>
+        <p><strong>Assessment:</strong> Methodologically relevant and plausibly transferable, but the abstract does not quantify the latency, memory, accuracy, or hardware tradeoffs in enough detail to judge deployment readiness. Treat HIBOU as an engineering direction pending reproducible benchmarks.</p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.12293 machine learning high energy nuclear physics physics integrated discovery Bayesian equation of state generative unfolding differentiable inverse solver uncertainty">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12293">Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Xun Chen, Weiyao Ke, Yu-Gang Ma, Long-Gang Pang, Kai Zhou (5 authors) | arXiv:2610.12293 | submitted 8 Oct 2026</p>
+        <p>This 37-page mini-review surveys physics-integrated ML in heavy-ion collisions, neutron stars, lattice QFT, and holographic or continuum QCD. It emphasizes calibrated Bayesian extraction, equation-of-state inference, generative event modeling, neural unfolding, differentiable inverse solvers, gauge-equivariant samplers, and the role of symmetries, conservation laws, causality, thermodynamic stability, topology, uncertainty quantification, and validation.</p>
+        <p><strong>Likely HEP/NP use case:</strong> A useful taxonomy for designing end-to-end inference pipelines in which an ML model is constrained by physics and audited against calibrated uncertainty, rather than used as a black-box classifier.</p>
+        <p><strong>Assessment:</strong> Valuable as a field map and checklist for credible transfer. Because it is a review, its claims about maturity must be checked against the underlying studies; it is not itself evidence that all listed workflows are experimentally ready.</p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.11630 Bayesian inference physics informed dipole resonance symmetry energy neutron skin nuclear response uncertainty">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.11630">Physics-informed interpretable forms for dipole resonances and quantities relevant for astrophysics</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Gourab Banerjee, Jhilam Sadhukhan, Debasish Mondal, B. K. Agrawal, Chandrani Sen, S. Mukhopadhyay (6 authors) | arXiv:2610.11630 | submitted 8 Oct 2026</p>
+        <p>Bayesian inference extracts centroid energies and widths of isovector giant dipole resonances with explicit dependence on isospin asymmetry, deformation, and shell corrections. The resulting parametrizations reproduce IVGDR systematics and constrain symmetry-energy coefficients, which are then used in self-consistent mean-field models to study dipole polarizability and neutron-skin correlations.</p>
+        <p><strong>Likely HEP/NP use case:</strong> Interpretable, physics-structured surrogate modeling with uncertainty-aware calibration, applicable to nuclear response emulators and heavy-ion equation-of-state inference.</p>
+        <p><strong>Assessment:</strong> More substantive than generic regression because it encodes known nuclear structure effects and checks against data. Transfer to heavy-ion observables is methodological rather than direct, and the abstract does not establish whether model discrepancy is included in the posterior.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-filter-text="2610.12422 density functional quark matter screened confinement Cornell potential caution">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12422">A Density Functional for Quark Matter with Screened Confinement Interactions</a><span class="label caution">caution</span></h4></div>
+        <p class="meta">Oliver Heymer, David Blaschke (2 authors) | arXiv:2610.12422 | submitted 8 Oct 2026</p>
+        <p>The paper derives a quark-matter density functional from a screened linear confinement interaction, proposing a saturation parameter tied to the Fermi momentum and an interaction energy density scaling as n^(2/3).</p>
+        <p><strong>Why caution:</strong> The construction may be useful for dense-matter modeling, but the abstract reports neither a demonstrated heavy-ion observable nor a benchmark against lattice or microscopic calculations. It is worth monitoring, not elevating to a QGP-phenomenology result yet.</p>
+      </article>
+    </section>
+  </main>
+  <script>
+  (function () {
+    var input = document.getElementById("report-search");
+    var papers = Array.prototype.slice.call(document.querySelectorAll(".paper"));
+    if (!input) return;
+    input.addEventListener("input", function () {
+      var query = (input.value || "").toLowerCase().trim();
+      papers.forEach(function (paper) {
+        var haystack = (paper.getAttribute("data-filter-text") + " " + paper.textContent).toLowerCase();
+        paper.hidden = query && haystack.indexOf(query) === -1;
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

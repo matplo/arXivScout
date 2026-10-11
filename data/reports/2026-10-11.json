@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-11",
+  "path": "reports/2026-10-11.html",
+  "summary": "The latest arXiv new-submission set available for this Sunday review is Friday 9 October UTC. The selected papers center on quantum-corrected transport femtoscopy, physics-controlled active learning in nuclear structure, compact jet tagging, geometry-aware calorimeter reconstruction, and physics-integrated uncertainty-aware ML workflows; no new heavy-ion experiment paper met the narrow selection bar.",
+  "keywords": [
+    "transport femtoscopy",
+    "quantum localization",
+    "active learning",
+    "jet tagging",
+    "geometric deep learning",
+    "physics-integrated ML",
+    "nuclear response"
+  ],
+  "arxiv_ids": [
+    "2610.10892",
+    "2610.11933",
+    "2610.12408",
+    "2610.12058",
+    "2610.12293",
+    "2610.11630"
+  ],
+  "total_paper_count": 6,
+  "represented_categories": [
+    "Theory",
+    "AI/ML use",
+    "Experiment methods"
+  ],
+  "strongest_paper": "arXiv:2610.10892",
+  "strongest_paper_summary": "Quantum localization corrections alter transport-based proton femtoscopy and define a regime where classical point emitters are valid.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2610.10892",
+      "title": "Quantum Localization Limit of Transport-Based Femtoscopy",
+      "short_authors": "Jiaxing Zhao, Joerg Aichelin, Elena Bratkovskaya",
+      "total_author_count": 3,
+      "category": "Theory",
+      "abstract": "Femtoscopic correlations in proton-proton and heavy ion collisions are commonly calculated using emission sources from microscopic transport models, where emitted particles are represented as classical phase-space points with simultaneously specified positions and momenta. This point-emitter picture neglects finite phase-space localization. The authors replace each point with a minimum-uncertainty Gaussian phase-space distribution and find significant changes in proton-pair source and momentum correlation in 7 TeV pp PHSD simulations.",
+      "tags": [
+        "femtoscopy",
+        "transport",
+        "quantum localization"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.11933",
+      "title": "Active-learning construction of hyperspherical-harmonics spaces for A = 3",
+      "short_authors": "Elena Filandri, Andrea Di Luca, Laura Elisa Marcucci, Michele Viviani",
+      "total_author_count": 4,
+      "category": "AI/ML use",
+      "abstract": "A Gaussian-process surrogate and cost-aware acquisition rule select hyperspherical-harmonics basis extensions, while every accepted extension is explicitly solved by the many-body method. Triton and helium-3 calculations reproduce the uniform K=60 benchmark within 4 keV while leaving more than 60% of that space unbuilt.",
+      "tags": [
+        "active learning",
+        "Gaussian process",
+        "ab initio nuclear"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.12408",
+      "title": "A compact, interrogable Tree Tensor Network Jet Tagger on Lund declustering trees",
+      "short_authors": "Fabrizio Napolitano, Luca Della Penna, Tommaso Tedeschi, Livio Fanò",
+      "total_author_count": 4,
+      "category": "AI/ML use",
+      "abstract": "A shared-core Tree Tensor Network processes Lund declustering trees. A 4,014-parameter model is compared with approximately 391,000-parameter LundNet on Pythia and Herwig, including transfer between generators; native quark/gluon performance is close to LundNet and top tagging is slightly weaker.",
+      "tags": [
+        "jet tagging",
+        "Lund plane",
+        "generator transfer"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.12058",
+      "title": "Optimising Geometric Deep Learning for Varied Reconstruction Tasks in High Granularity Calorimeters",
+      "short_authors": "Matthieu Melennec, Frédéric Magniette",
+      "total_author_count": 2,
+      "category": "AI/ML use",
+      "abstract": "Known detector geometry is used to optimize GNN pipelines for high-granularity calorimeters. The approach is validated on particle identification, energy regression, and instance segmentation, and organized into the HIBOU modular architecture.",
+      "tags": [
+        "geometric deep learning",
+        "calorimetry",
+        "reconstruction"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.12293",
+      "title": "Machine Learning Meets High-Energy Nuclear Physics: From Pattern Recognition to Physics-Integrated Discovery",
+      "short_authors": "Xun Chen, Weiyao Ke, Yu-Gang Ma, Long-Gang Pang, Kai Zhou",
+      "total_author_count": 5,
+      "category": "AI/ML use",
+      "abstract": "A mini-review surveys physics-integrated ML in heavy-ion collisions, neutron stars, lattice QFT, and QCD, emphasizing physical constraints, uncertainty quantification, and validation.",
+      "tags": [
+        "HENP ML",
+        "uncertainty quantification",
+        "physics-integrated inference"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.11630",
+      "title": "Physics-informed interpretable forms for dipole resonances and quantities relevant for astrophysics",
+      "short_authors": "Gourab Banerjee, Jhilam Sadhukhan, Debasish Mondal, B. K. Agrawal, Chandrani Sen, S. Mukhopadhyay",
+      "total_author_count": 6,
+      "category": "AI/ML use",
+      "abstract": "Bayesian inference extracts IVGDR parameters with explicit nuclear-structure dependence, constraining symmetry-energy coefficients and studying dipole polarizability and neutron-skin correlations.",
+      "tags": [
+        "Bayesian inference",
+        "nuclear response",
+        "symmetry energy"
+      ],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2610.12422",
+      "title": "A Density Functional for Quark Matter with Screened Confinement Interactions",
+      "short_authors": "Oliver Heymer, David Blaschke",
+      "total_author_count": 2,
+      "category": "Caution",
+      "abstract": "The paper derives a quark-matter density functional from a screened linear confinement interaction, with an interaction energy density proportional to n^(2/3).",
+      "tags": [
+        "quark matter",
+        "density functional",
+        "model construction"
+      ],
+      "assessment": "caution"
+    }
+  ]
+}
