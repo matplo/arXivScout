@@ -38,17 +38,13 @@
     </div>
   </header>
   <main>
-    <section class="archive-list" id="archive-list" aria-live="polite">
-      <article class="archive-card loading-card">
-        <div class="card-top"><span>Loading archive metadata</span></div>
-        <h2>Preparing daily report cards</h2>
-        <p>The archive index is loading the existing report metadata files.</p>
-      </article>
-    </section>
+    <section class="archive-list" id="archive-list" aria-live="polite"></section>
     <p id="empty-state" class="empty-state" hidden>No reports match that filter.</p>
   </main>
   <script>
-    window.ARCHIVE_REPORTS = [\n      "2026-10-11",
+    window.ARCHIVE_REPORTS = [
+      "2026-10-12",
+      "2026-10-11",
       "2026-10-10",
       "2026-10-09",
       "2026-10-08",
@@ -135,8 +131,7 @@
       "2026-06-29",
       "2026-06-28",
       "2026-06-27",
-      "2026-06-26"
-    ].map(function (date) {
+      "2026-06-26",    ].map(function (date) {
       return {date: date, path: "reports/" + date + ".html", metadata: "data/reports/" + date + ".json"};
     });
   </script>

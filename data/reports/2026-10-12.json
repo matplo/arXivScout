@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-12",
+  "path": "reports/2026-10-12.html",
+  "summary": "The current arXiv batch is strongest on model-to-observable links: neural surrogates expose centrality-definition biases in heavy-ion simulations; a transport-plus-hydrodynamics calculation proposes jet-associated hadrochemistry as a medium-response observable; and nCTEQ26 supplies a substantial new nuclear-PDF baseline. On the AI/ML side, the most transferable results are a physics-controlled centrality surrogate, a data-driven CMS fake-background method, and a rate-distortion study of HEP tokenization. Evidence remains limited for deployment claims that rely only on particle-level or simulated-detector benchmarks.",
+  "keywords": [
+    "heavy-ion centrality",
+    "jet-medium response",
+    "hadrochemistry",
+    "diffusion wake",
+    "nPDF global fit",
+    "physics-controlled ML",
+    "HEP tokenization",
+    "data-driven backgrounds"
+  ],
+  "arxiv_ids": [
+    "2610.13352",
+    "2610.13828",
+    "2610.13046",
+    "2610.13633",
+    "2610.13243",
+    "2610.13634",
+    "2610.13876"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "arXiv:2610.13828",
+  "strongest_paper_summary": "A small hybrid-event sample is used to emulate final-state centrality observables at 1--2% relative error while explicitly quantifying the physics impact of centrality rebinning.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2610.13352",
+      "title": "Levy-shaped femtoscopic sources from an exact solution of relativistic hydrodynamics",
+      "short_authors": "Bence Szentkuti, Mate Csanad",
+      "total_author_count": 2,
+      "category": "Theory",
+      "abstract": "The paper presents an exact relativistic-hydrodynamic solution intended to produce Levy-shaped emission sources, addressing the tension between Levy fits to QGP femtoscopy and the Gaussian profiles often expected from hydrodynamics. It analyzes whether the solution is compatible with observations.",
+      "tags": [
+        "femtoscopy",
+        "relativistic hydrodynamics",
+        "Levy sources"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.13828",
+      "title": "Final-state centrality in relativistic heavy-ion simulations from neural networks",
+      "short_authors": "Anibal Bezerra, Fernando G. Gardim",
+      "total_author_count": 2,
+      "category": "AI/ML use",
+      "abstract": "Neural networks trained on a few hundred hybrid events predict event-by-event charged-particle multiplicity and mean transverse momentum with 1--2% relative errors. For Pb-Pb at 2.76 TeV and Au-Au at 200 GeV, the study quantifies how initial- and final-state centrality definitions differ, including up to 20% event reassignment in 1%-wide classes, and applies the result to fluctuation and correlation observables.",
+      "tags": [
+        "centrality",
+        "hybrid simulations",
+        "surrogate modeling",
+        "Bayesian analysis"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13046",
+      "title": "Dijet hadrochemistry: tomography of jet-induced medium excitation and diffusion wake",
+      "short_authors": "Cong Yi, Xiang-Yu Wu, Zhong Yang, Pi Duan, Guang-You Qin, Xin-Nian Wang, Wenbin Zhao",
+      "total_author_count": 7,
+      "category": "Phenomenology",
+      "abstract": "A coupled linear-Boltzmann-transport plus hydrodynamics calculation with hybrid hadronization predicts enhanced K/pi and p/pi ratios around jets in central Pb-Pb, especially near the subleading jet. The model also predicts a depletion near Delta phi approximately pi/2 whose hadrochemistry retains the signature of jet-excited medium, interpreted as a diffusion wake.",
+      "tags": [
+        "jet-medium response",
+        "hadrochemistry",
+        "diffusion wake",
+        "coalescence"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13633",
+      "title": "nCTEQ26 nuclear parton distribution functions",
+      "short_authors": "nCTEQ Collaboration, K. Greve, T. Jezo, A. Kusina, J. Wissmann, M. Klasen, et al.",
+      "total_author_count": 13,
+      "category": "Phenomenology",
+      "abstract": "The nCTEQ26 global analysis combines DIS, fixed-target Drell-Yan, RHIC and LHC data, including open-heavy-quark and quarkonium information, with a more flexible nuclear parametrization and target-mass and deuteron corrections. It provides Hessian uncertainties, comparisons to other analyses, predictions for future measurements, and public grids through LHAPDF and HEPForge.",
+      "tags": [
+        "nPDFs",
+        "global fit",
+        "heavy flavor",
+        "quarkonium"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13243",
+      "title": "Probing high-momentum components in 16O via zero-degree (p,d) cross-section ratios",
+      "short_authors": "Super-FRS Experiment Collaboration, X. Wang, H. J. Ong, S. Terashima, I. Tanihata, Y. K. Tanaka, et al.",
+      "total_author_count": 154,
+      "category": "Experiment",
+      "abstract": "Zero-degree 16O(p,d)15O measurements at proton energies of 403--1209 MeV extend earlier cross-section-ratio results and add the first ratio for the 7.28-MeV 7/2+ state. The positive-parity ratios show pronounced momentum dependence consistent with representative variational Monte Carlo trends, providing an experimental handle on high-momentum neutron components.",
+      "tags": [
+        "nuclear experiment",
+        "high-momentum components",
+        "16O",
+        "transfer reaction"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.13634",
+      "title": "A machine-learning method for the estimation of the background from jets misidentified as hadronic tau lepton decays",
+      "short_authors": "CMS Collaboration",
+      "category": "AI/ML use",
+      "abstract": "The MUFFIN method uses boosted-decision-tree reweighting to learn multidimensional per-object correction factors directly from observed 13.6 TeV CMS data. Relative to low-dimensional fake-factor parametrizations, it improves key kinematic distributions, especially at high transverse momentum, and the abstract reports reductions of up to 70% in the associated systematic uncertainty.",
+      "tags": [
+        "data-driven background",
+        "tau fakes",
+        "BDT reweighting",
+        "systematics"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13876",
+      "title": "Precision Tokenization for Multi-Modal Data in High Energy Physics",
+      "short_authors": "Jeffrey Krupa, Samuel Klein, Nilotpal Kakati, Daniel Murnane, Baran Hashemi, Eilam Gross, Lukas Heinrich, Michael Kagan",
+      "total_author_count": 8,
+      "category": "AI/ML use",
+      "abstract": "The paper treats detector-data tokenization as a rate-distortion problem across four modalities and two simulated detectors. A systematic scan yields design rules; compression factors of about 4--11x retain performance for jet-pT regression, particle-flow reconstruction, and flavor tagging, with jet-pT resolution below 1%, and the authors release the heptokens library.",
+      "tags": [
+        "tokenization",
+        "foundation models",
+        "particle flow",
+        "compression"
+      ],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2610.12422",
+      "title": "A Density Functional for Quark Matter with Screened Confinement Interactions",
+      "short_authors": "Oliver Heymer, David Blaschke",
+      "total_author_count": 2,
+      "category": "Caution",
+      "abstract": "The paper constructs a quark-matter density functional from a screened linear confinement interaction and derives an interaction energy density proportional to n^(2/3).",
+      "tags": [
+        "quark matter",
+        "density functional",
+        "model construction"
+      ],
+      "assessment": "caution"
+    }
+  ]
+}
