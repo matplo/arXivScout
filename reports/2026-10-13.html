@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-13</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Heavy-ion physics and physics AI</h1>
+    <p class="dek">Briefing for 2026-10-13. Screened the newest arXiv listings available in the preceding 24-hour cycle, with abstract-first triage and deeper review of the strongest or most questionable records.</p>
+    <div class="filter-panel" aria-label="Report filter">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="report-search">Search by keyword</label>
+        <input id="report-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Best heavy-ion methods paper:</strong> a neural surrogate predicts final-state multiplicity and mean pT at 1--2% relative error from a few hundred hybrid events, while showing that 1%-wide centrality bins can reassign up to 20% of events.</li>
+        <li><strong>Best phenomenology proposal:</strong> dijet hadrochemistry combines transport, hydrodynamics, coalescence, and fragmentation to make diffusion-wake signatures experimentally testable through K/pi and p/pi ratios.</li>
+        <li><strong>Most useful infrastructure:</strong> nCTEQ26 provides a new global nuclear-PDF fit with public grids, heavy-flavor and quarkonium inputs, flexible A dependence, and Hessian uncertainties.</li>
+        <li><strong>Most transferable HEP ML:</strong> CMS MUFFIN learns multidimensional fake-rate corrections from observed data; HEP tokenization frames compression as rate-distortion and evaluates downstream reconstruction tasks rather than token quality alone.</li>
+        <li><strong>Main caution:</strong> the HEP-agent paper reports retrieval-efficiency improvements on PhysicsQA, but that is not yet evidence that an agent can produce correct, uncertainty-calibrated physics analyses.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+
+      <h3>Theory</h3>
+      <article class="paper" data-filter-text="2610.13352 Levy-shaped femtoscopic sources from an exact solution of relativistic hydrodynamics Bence Szentkuti Mate Csanad Theory femtoscopy relativistic hydrodynamics Levy sources">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13352">Levy-shaped femtoscopic sources from an exact solution of relativistic hydrodynamics</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Bence Szentkuti, Mate Csanad (2 authors) | arXiv:2610.13352 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> The paper presents an exact relativistic-hydrodynamic solution intended to produce Levy-shaped emission sources, addressing the tension between Levy fits to QGP femtoscopy and the Gaussian profiles often expected from hydrodynamics. It analyzes whether the solution is compatible with observations.</p>
+        <p><strong>Why it matters:</strong> It tries to connect a phenomenological Levy source shape to a dynamical spacetime solution instead of treating the fit form as purely empirical. That is a meaningful target for femtoscopy and source imaging.</p>
+        <p><strong>Critical assessment:</strong> Relevant and technically interesting, but the abstract gives limited evidence about robustness across realistic event-by-event dynamics, equation-of-state choices, or competing source models. Treat as a promising exact-solution study, not yet a resolved explanation of the Levy/Gaussian tension.</p>
+        <p class="tags"><span>femtoscopy</span><span>relativistic hydrodynamics</span><span>Levy sources</span></p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-filter-text="2610.13046 Dijet hadrochemistry tomography jet-induced medium excitation diffusion wake Cong Yi Xiang-Yu Wu Zhong Yang Pi Duan Guang-You Qin Xin-Nian Wang Wenbin Zhao Phenomenology jet-medium response hadrochemistry diffusion wake coalescence">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13046">Dijet hadrochemistry: tomography of jet-induced medium excitation and diffusion wake</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Cong Yi, Xiang-Yu Wu, Zhong Yang, Pi Duan, Guang-You Qin, Xin-Nian Wang, Wenbin Zhao (7 authors) | arXiv:2610.13046 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> A coupled linear-Boltzmann-transport plus hydrodynamics calculation with hybrid hadronization predicts enhanced K/pi and p/pi ratios around jets in central Pb-Pb, especially near the subleading jet. It also predicts a depletion near |Delta phi| approximately pi/2 whose hadrochemistry retains a signature of jet-excited medium, interpreted as a diffusion wake.</p>
+        <p><strong>Why it matters:</strong> Chemical composition around jets can distinguish shower, thermal, and medium-response contributions more directly than inclusive jet suppression. The prediction is concrete enough to motivate an experimental analysis and makes a nontrivial use of the subleading jet and out-of-cone angular structure.</p>
+        <p><strong>Critical assessment:</strong> Strong on scientific specificity and observable design. The central caveat is model dependence: the signal depends on coupled transport/hydrodynamics and hybrid hadronization assumptions, so discrimination against alternative medium-response mechanisms and realistic background subtraction will be essential.</p>
+        <p class="tags"><span>jet-medium response</span><span>hadrochemistry</span><span>diffusion wake</span><span>coalescence</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.13633 nCTEQ26 nuclear parton distribution functions nCTEQ Collaboration K. Greve T. Jezo A. Kusina J. Wissmann M. Klasen K. Kovarik C. Leger J.G. Morfin F.I. Olness P. Risse I. Schienbein J.Y. Yu Phenomenology nPDF global fit heavy flavor quarkonium">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13633">nCTEQ26 nuclear parton distribution functions</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">nCTEQ Collaboration, K. Greve, T. Jezo, A. Kusina, J. Wissmann, M. Klasen, et al. (13 authors) | arXiv:2610.13633 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> The nCTEQ26 global analysis combines neutral- and charged-current DIS, fixed-target Drell-Yan, RHIC and LHC data, including open-heavy-quark and quarkonium information. It introduces a more flexible x and A parametrization, target-mass and deuteron corrections, Hessian uncertainties, comparisons to other fits, and predictions for future measurements; public grids are available through LHAPDF and HEPForge.</p>
+        <p><strong>Why it matters:</strong> Nuclear PDFs are a shared baseline for pA and AA hard-process interpretation. This release is especially useful because it combines broader collider coverage with explicit uncertainty propagation and public implementation.</p>
+        <p><strong>Critical assessment:</strong> Strong infrastructure and likely high practical value. Users should still compare fit assumptions and data-selection choices before treating nCTEQ26 as a consensus central value, especially in poorly constrained x regions and where quarkonium data enter through data-driven approximations.</p>
+        <p class="tags"><span>nPDFs</span><span>global fit</span><span>heavy flavor</span><span>quarkonium</span></p>
+      </article>
+
+      <h3>Experiment</h3>
+      <article class="paper" data-filter-text="2610.13243 Probing high-momentum components in 16O via zero-degree p d cross-section ratios Super-FRS Experiment Collaboration X. Wang H. J. Ong S. Terashima I. Tanihata Y. K. Tanaka Experiment nuclear experiment high-momentum components 16O transfer reaction">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13243">Probing high-momentum components in 16O via zero-degree (p,d) cross-section ratios</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Super-FRS Experiment Collaboration, X. Wang, H. J. Ong, S. Terashima, I. Tanihata, Y. K. Tanaka, et al. (154 authors) | arXiv:2610.13243 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> Zero-degree 16O(p,d)15O measurements at proton energies of 403--1209 MeV extend earlier cross-section-ratio results and add the first ratio for the 7.28-MeV 7/2+ state. The positive-parity ratios show pronounced momentum dependence consistent with representative variational Monte Carlo trends, providing an experimental handle on high-momentum neutron components.</p>
+        <p><strong>Why it matters:</strong> This is not a relativistic heavy-ion measurement, but it is a useful nuclear-structure result in the same wider program. The added excited-state ratio gives an additional benchmark for high-momentum components and ab initio or variational descriptions of 16O.</p>
+        <p><strong>Critical assessment:</strong> Worth including as adjacent nuclear experiment, but the heavy-ion transfer value is indirect. The strength of the physics inference depends on reaction-model systematics and on how uniquely the ratios map to high-momentum components.</p>
+        <p class="tags"><span>nuclear experiment</span><span>high-momentum components</span><span>16O</span><span>transfer reaction</span></p>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-filter-text="2610.13828 Final-state centrality in relativistic heavy-ion simulations from neural networks Anibal Bezerra Fernando G. Gardim AI ML centrality hybrid simulations surrogate modeling Bayesian analysis">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13828">Final-state centrality in relativistic heavy-ion simulations from neural networks</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Anibal Bezerra, Fernando G. Gardim (2 authors) | arXiv:2610.13828 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> Neural networks trained on a few hundred hybrid events predict event-by-event multiplicity and mean transverse momentum with 1--2% relative errors. For Pb-Pb at 2.76 TeV and Au-Au at 200 GeV, initial- and final-state centrality definitions select nearly the same events in 10%-wide classes, but up to 20% of events change class in 1%-wide bins; the paper then tracks the impact on fluctuations and correlations.</p>
+        <p><strong>Why it matters:</strong> The network is used as a physics workflow surrogate, not as a generic classifier: it emulates expensive final-state observables so hybrid generators can reach millions of events, and it tests downstream observables under the resulting centrality definition.</p>
+        <p><strong>Critical assessment:</strong> Strong and unusually well aligned with a real computational bottleneck. The main open questions are extrapolation across model design points, uncertainty calibration of the surrogate, and whether detector-level centrality definitions produce comparable shifts.</p>
+        <p class="tags"><span>centrality</span><span>hybrid simulations</span><span>surrogate modeling</span><span>Bayesian analysis</span></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-filter-text="2610.13437 Local Diagnostics of Learned Event Representations for Anomaly Detection at the HL-LHC Donatella Genovese Philip Ploner Simone Scardapane Stefano Giagu Thea Klaeboe Aarrestad AI ML anomaly detection learned representations interpretability">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13437">Local Diagnostics of Learned Event Representations for Anomaly Detection at the HL-LHC</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Donatella Genovese, Philip Ploner, Simone Scardapane, Stefano Giagu, Thea Klaeboe Aarrestad (5 authors) | arXiv:2610.13437 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> The study evaluates supervised and self-supervised neural embeddings on the 750-million-event COLLIDE-2V simulated HL-LHC dataset. A latent-space autoencoder supplies the anomaly score; a Gaussian-mixture local-diagnostic pipeline profiles latent regions through high-level observables and ranks their local discriminating power. The ranking recovers defining kinematics of held-out processes.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The local-diagnostic idea could help heavy-ion anomaly searches distinguish unusual physics from detector or generator mismodeling, while producing interpretable follow-up observables instead of only an opaque event score.</p>
+        <p><strong>Critical assessment:</strong> Scientifically useful because it addresses the interpretation bottleneck directly. However, the strongest results use supervised objectives with process labels, so the paper is less model-agnostic than a discovery claim might imply; realistic detector shifts and heavy-ion occupancy remain untested.</p>
+        <p class="tags"><span>anomaly detection</span><span>latent diagnostics</span><span>interpretability</span><span>HL-LHC</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.13634 A machine-learning method for the estimation of the background from jets misidentified as hadronic tau lepton decays CMS Collaboration AI ML data-driven background tau fakes BDT reweighting systematics MUFFIN">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13634">A machine-learning method for the estimation of the background from jets misidentified as hadronic tau lepton decays</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">CMS Collaboration | arXiv:2610.13634 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> MUFFIN uses boosted-decision-tree reweighting to learn multidimensional per-object correction factors directly from observed 13.6 TeV CMS data. Compared with low-dimensional fake-factor parametrizations, it improves key kinematic distributions, particularly at high transverse momentum, and reports reductions of up to 70% in associated systematic uncertainty.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The general pattern transfers to data-driven background and misidentification corrections in high-occupancy analyses, provided control regions, correlations, and closure tests are re-established for the heavy-ion detector environment.</p>
+        <p><strong>Critical assessment:</strong> Strongest direct analysis-method paper in the ML set because it is embedded in observed-data estimation and uncertainty accounting. The reported uncertainty reduction needs careful reading: it is analysis-specific and does not mean ML removes the underlying modeling uncertainty.</p>
+        <p class="tags"><span>data-driven background</span><span>tau fakes</span><span>BDT reweighting</span><span>systematics</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.13876 Precision Tokenization for Multi-Modal Data in High Energy Physics Jeffrey Krupa Samuel Klein Nilotpal Kakati Daniel Murnane Baran Hashemi Eilam Gross Lukas Heinrich Michael Kagan AI ML tokenization foundation models particle flow compression">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.13876">Precision Tokenization for Multi-Modal Data in High Energy Physics</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Jeffrey Krupa, Samuel Klein, Nilotpal Kakati, Daniel Murnane, Baran Hashemi, Eilam Gross, Lukas Heinrich, Michael Kagan (8 authors) | arXiv:2610.13876 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> The paper treats detector-data tokenization as a rate-distortion problem across four modalities and two simulated detectors. A systematic scan yields design rules; compression factors of approximately 4--11x preserve much of the information needed for jet-pT regression, particle-flow reconstruction, and flavor tagging, with jet-pT resolution below 1%. The authors release the heptokens library.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The design rules could support compact multimodal inputs for future heavy-ion foundation models, fast detector emulation, or shared representations spanning tracks, calorimeter objects, and particle-flow candidates.</p>
+        <p><strong>Critical assessment:</strong> Good methodological hygiene: compression is evaluated through downstream tasks, not only reconstruction loss. Transfer to heavy-ion physics is plausible but not established, because the study uses simulated detectors and does not test high-multiplicity occupancy, calibration drift, or physics observables central to heavy-ion analyses.</p>
+        <p class="tags"><span>tokenization</span><span>foundation models</span><span>particle flow</span><span>compression</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.12862 HepUKE Uncertainty-aware Knowledge Evolution for High Energy Physics Analysis Agents Zijie Shang Ke Li Junkun Jiao Shengchun Wang Changzheng Yuan Xiongfei Wang Beijiang Liu Weimin Song Xiaoshen Kang AI ML HEP agents uncertainty retrieval PhysicsQA">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12862">HepUKE: Uncertainty-aware Knowledge Evolution for High Energy Physics Analysis Agents</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Zijie Shang, Ke Li, Junkun Jiao, Shengchun Wang, Changzheng Yuan, Xiongfei Wang, Beijiang Liu, Weimin Song, Xiaoshen Kang (9 authors) | arXiv:2610.12862 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> HepUKE uses entropy from sampled DSL generations to score evidence, builds a self-evolving domain-specific knowledge base, and adds an early-stopping controller based on posterior stationarity and marginal information gain. On a 1,000-pair BESIII PhysicsQA benchmark it reduces retrieval rounds by 43% while preserving most answer quality; on HotpotQA it reduces rounds by 14.5%.</p>
+        <p><strong>Likely HEP/heavy-ion use case:</strong> The evidence-management and early-stopping ideas could help analysis assistants handle large internal method libraries, provided they are coupled to executable validation, detector-aware checks, and explicit statistical/systematic uncertainty accounting.</p>
+        <p><strong>Critical assessment:</strong> Worth watching, but not yet strong evidence for reliable physics-analysis agents. Retrieval-round reduction is an efficiency result; the abstract does not establish calibrated uncertainty, correctness on full analysis workflows, or resistance to plausible but wrong precedents. This is a useful systems benchmark, not a validated analysis assistant.</p>
+        <p class="tags"><span>HEP agents</span><span>retrieval</span><span>uncertainty</span><span>PhysicsQA</span></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <article class="paper" data-filter-text="2610.12422 A Density Functional for Quark Matter with Screened Confinement Interactions Oliver Heymer David Blaschke caution quark matter density functional model construction">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.12422">A Density Functional for Quark Matter with Screened Confinement Interactions</a><span class="label caution">caution</span></h4></div>
+        <p class="meta">Oliver Heymer, David Blaschke (2 authors) | arXiv:2610.12422 | listed 12 Oct 2026</p>
+        <p><strong>Abstract:</strong> The paper constructs a quark-matter density functional from a screened linear confinement interaction and derives an interaction energy density proportional to n^(2/3).</p>
+        <p><strong>Why caution:</strong> The model construction may be useful as a dense-matter ingredient, but the abstract does not report a demonstrated heavy-ion observable, lattice benchmark, or systematic comparison with microscopic calculations. It is worth monitoring, not elevating to a validated QGP-phenomenology result.</p>
+        <p><strong>Critical assessment:</strong> The evidence is too sparse to justify a strong conclusion or a demonstrated HEP/heavy-ion use case from the abstract alone.</p>
+        <p class="tags"><span>quark matter</span><span>density functional</span><span>model construction</span></p>
+      </article>
+    </section>
+  </main>
+  <script>
+  (function () {
+    var input = document.getElementById("report-search");
+    var papers = Array.prototype.slice.call(document.querySelectorAll(".paper"));
+    if (!input) return;
+    input.addEventListener("input", function () {
+      var query = (input.value || "").toLowerCase().trim();
+      papers.forEach(function (paper) {
+        var haystack = (paper.getAttribute("data-filter-text") + " " + paper.textContent).toLowerCase();
+        paper.hidden = query && haystack.indexOf(query) === -1;
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
