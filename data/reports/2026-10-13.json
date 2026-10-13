@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-13",
+  "path": "reports/2026-10-13.html",
+  "summary": "The strongest new results are a neural surrogate for final-state centrality in heavy-ion simulations, a transport-plus-hydrodynamics prediction for jet-associated hadrochemistry and diffusion-wake tomography, and the nCTEQ26 nuclear-PDF release. The most credible AI/ML use cases are physics-constrained surrogate modeling, data-driven fake-background estimation, local diagnostics for learned event representations, and HEP tokenization evaluated through downstream reconstruction tasks. Evidence is weaker for analysis-agent claims measured mainly through retrieval efficiency, and for model-building papers without direct observable or benchmark validation.",
+  "keywords": [
+    "heavy-ion centrality",
+    "jet-medium response",
+    "hadrochemistry",
+    "diffusion wake",
+    "nPDF global fit",
+    "surrogate modeling",
+    "data-driven backgrounds",
+    "HEP tokenization",
+    "anomaly diagnostics",
+    "analysis agents"
+  ],
+  "arxiv_ids": [
+    "2610.13352",
+    "2610.13828",
+    "2610.13046",
+    "2610.13633",
+    "2610.13243",
+    "2610.13437",
+    "2610.13634",
+    "2610.13876",
+    "2610.12862"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "arXiv:2610.13828",
+  "strongest_paper_summary": "A small hybrid-event sample emulates final-state multiplicity and mean-pT observables at 1--2% relative error while quantifying how centrality rebinning changes event selection and downstream correlations.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2610.13352",
+      "title": "Levy-shaped femtoscopic sources from an exact solution of relativistic hydrodynamics",
+      "short_authors": "Bence Szentkuti, Mate Csanad",
+      "total_author_count": 2,
+      "category": "Theory",
+      "abstract": "An exact relativistic-hydrodynamic solution is proposed to generate Levy-shaped emission sources and address the tension between Levy fits to QGP femtoscopy and Gaussian source expectations.",
+      "tags": [
+        "femtoscopy",
+        "relativistic hydrodynamics",
+        "Levy sources"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.13828",
+      "title": "Final-state centrality in relativistic heavy-ion simulations from neural networks",
+      "short_authors": "Anibal Bezerra, Fernando G. Gardim",
+      "total_author_count": 2,
+      "category": "AI/ML use",
+      "abstract": "Neural networks trained on a few hundred hybrid events predict final-state multiplicity and mean pT at 1--2% relative error and quantify centrality-definition effects in Pb-Pb and Au-Au simulations.",
+      "tags": [
+        "centrality",
+        "hybrid simulations",
+        "surrogate modeling",
+        "Bayesian analysis"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13046",
+      "title": "Dijet hadrochemistry: tomography of jet-induced medium excitation and diffusion wake",
+      "short_authors": "Cong Yi, Xiang-Yu Wu, Zhong Yang, Pi Duan, Guang-You Qin, Xin-Nian Wang, Wenbin Zhao",
+      "total_author_count": 7,
+      "category": "Phenomenology",
+      "abstract": "A coupled transport and hydrodynamics model with hybrid hadronization predicts K/pi and p/pi enhancements around jets and chemically structured diffusion-wake depletion in central Pb-Pb.",
+      "tags": [
+        "jet-medium response",
+        "hadrochemistry",
+        "diffusion wake",
+        "coalescence"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13633",
+      "title": "nCTEQ26 nuclear parton distribution functions",
+      "short_authors": "nCTEQ Collaboration, K. Greve, T. Jezo, A. Kusina, J. Wissmann, M. Klasen, et al.",
+      "total_author_count": 13,
+      "category": "Phenomenology",
+      "abstract": "A new global nuclear-PDF analysis combines DIS, Drell-Yan, RHIC and LHC data, heavy flavor and quarkonium information, flexible parametrization, Hessian uncertainties, and public grids.",
+      "tags": [
+        "nPDFs",
+        "global fit",
+        "heavy flavor",
+        "quarkonium"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13243",
+      "title": "Probing high-momentum components in 16O via zero-degree (p,d) cross-section ratios",
+      "short_authors": "Super-FRS Experiment Collaboration, X. Wang, H. J. Ong, S. Terashima, I. Tanihata, Y. K. Tanaka, et al.",
+      "total_author_count": 154,
+      "category": "Experiment",
+      "abstract": "Zero-degree 16O(p,d)15O measurements extend cross-section ratios and add a new excited-state ratio relevant to high-momentum neutron components.",
+      "tags": [
+        "nuclear experiment",
+        "high-momentum components",
+        "16O",
+        "transfer reaction"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.13437",
+      "title": "Local Diagnostics of Learned Event Representations for Anomaly Detection at the HL-LHC",
+      "short_authors": "Donatella Genovese, Philip Ploner, Simone Scardapane, Stefano Giagu, Thea Klaeboe Aarrestad",
+      "total_author_count": 5,
+      "category": "AI/ML use",
+      "abstract": "A latent-space anomaly score is paired with local Gaussian-mixture diagnostics that rank high-level observables associated with flagged event regions in a large simulated HL-LHC dataset.",
+      "tags": [
+        "anomaly detection",
+        "latent diagnostics",
+        "interpretability",
+        "HL-LHC"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13634",
+      "title": "A machine-learning method for the estimation of the background from jets misidentified as hadronic tau lepton decays",
+      "short_authors": "CMS Collaboration",
+      "category": "AI/ML use",
+      "abstract": "MUFFIN uses boosted-decision-tree reweighting on observed CMS data to learn multidimensional fake-rate corrections and reduce high-pT background-modeling systematics.",
+      "tags": [
+        "data-driven background",
+        "tau fakes",
+        "BDT reweighting",
+        "systematics"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.13876",
+      "title": "Precision Tokenization for Multi-Modal Data in High Energy Physics",
+      "short_authors": "Jeffrey Krupa, Samuel Klein, Nilotpal Kakati, Daniel Murnane, Baran Hashemi, Eilam Gross, Lukas Heinrich, Michael Kagan",
+      "total_author_count": 8,
+      "category": "AI/ML use",
+      "abstract": "A rate-distortion study of tokenization across four HEP modalities and two simulated detectors finds 4--11x compression with limited degradation in jet-pT regression, particle-flow reconstruction, and flavor tagging.",
+      "tags": [
+        "tokenization",
+        "foundation models",
+        "particle flow",
+        "compression"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.12862",
+      "title": "HepUKE: Uncertainty-aware Knowledge Evolution for High Energy Physics Analysis Agents",
+      "short_authors": "Zijie Shang, Ke Li, Junkun Jiao, Shengchun Wang, Changzheng Yuan, Xiongfei Wang, Beijiang Liu, Weimin Song, Xiaoshen Kang",
+      "total_author_count": 9,
+      "category": "AI/ML use",
+      "abstract": "An entropy-scored, self-evolving HEP knowledge base and early-stopping controller reduce retrieval rounds on BESIII PhysicsQA and HotpotQA benchmarks.",
+      "tags": [
+        "HEP agents",
+        "retrieval",
+        "uncertainty",
+        "PhysicsQA"
+      ],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2610.12422",
+      "title": "A Density Functional for Quark Matter with Screened Confinement Interactions",
+      "short_authors": "Oliver Heymer, David Blaschke",
+      "total_author_count": 2,
+      "category": "Caution",
+      "abstract": "A screened-confinement quark-matter density functional is constructed, but the abstract does not report direct heavy-ion observables or systematic microscopic validation.",
+      "tags": [
+        "quark matter",
+        "density functional",
+        "model construction"
+      ],
+      "assessment": "caution"
+    }
+  ]
+}
