@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-14</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Heavy-ion physics and physics AI</h1>
+    <p class="dek">Briefing for 2026-10-14. The strict scan covers submissions from roughly 13 October 17:00 UTC onward; the AI/ML section also retains two near-window HEP papers from 11 October because they are unusually concrete and transferable.</p>
+    <div class="filter-panel" aria-label="Report filter">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="report-search">Search by keyword</label>
+        <input id="report-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>Best theory result:</strong> a four-dimensional lattice-constrained equation of state embeds a tunable 3D-Ising critical surface in the full (T, muB, muQ, muS) space, making criticality usable in BQS hydrodynamics rather than only in a two-variable construction.</li>
+        <li><strong>Best methods result:</strong> fluctuation-dissipation tests in vHLLE recover the input shear viscosity through Green-Kubo analysis and show that common numerical regulators can destroy the fluctuation physics they are meant to stabilize.</li>
+        <li><strong>Most concrete new QGP probe:</strong> magnetized-QGP LPM dilepton production yields a nonzero magnetic-field imprint through Landau-level-modified screening and density, although the result remains model- and regime-dependent.</li>
+        <li><strong>AI/ML signal:</strong> the strongest transferable papers use physics structure to define the learning problem or the evaluation protocol: renormalization-group views for jet SSL, object-level geometry for tracking, and controlled agent experiments for HEP.</li>
+        <li><strong>What is missing:</strong> no new heavy-ion experimental measurement in the strict window cleared the selection bar; the useful experimental-facing AI papers are detector and analysis infrastructure, not heavy-ion observables.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+
+      <h3>Theory</h3>
+      <article class="paper" data-filter-text="2610.18830 A 4D T-prime-expanded lattice QCD equation of state critical contribution Francesco Di Clemente Prachi Garella Johannes Jahan Micheal Kahangirwe Jamie M Karthein Jacquelyn Noronha-Hostler Claudia Ratti Mikhail Stephanov Theory equation of state critical point 3D Ising BQS conserved charges">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.18830">A 4D T′-expanded lattice QCD equation of state with a multi-dimensional 3D-Ising-type critical contribution</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Francesco Di Clemente, Prachi Garella, Johannes Jahan, Micheal Kahangirwe, Jamie M. Karthein, Jacquelyn Noronha-Hostler, Claudia Ratti, Mikhail Stephanov (8 authors) | arXiv:2610.18830 | submitted 13 Oct 2026</p>
+        <p><strong>Abstract:</strong> The paper constructs a four-dimensional equation of state in (T, muB, muQ, muS) by combining the lattice 4D T′-Expansion Scheme with a critical contribution mapped from the 3D Ising model. The critical point becomes a parametrizable critical surface, with independently variable geometry and critical strength at finite baryon, electric-charge, and strangeness chemical potentials.</p>
+        <p><strong>Why it matters:</strong> Beam-energy-scan interpretations need an equation of state that respects lattice constraints while allowing critical behavior in the same conserved-charge space used by realistic hydrodynamics. This is a direct enabling framework for studying how criticality propagates into multi-charge observables.</p>
+        <p><strong>Critical assessment:</strong> Strong and well-targeted as a framework paper. The main limitation is that a flexible critical surface is a parameterization, not evidence for a QCD critical point; its eventual value depends on implementation in full simulations, thermodynamic consistency checks, and constraints from data.</p>
+        <p class="tags"><span>equation of state</span><span>critical point</span><span>3D Ising</span><span>BQS charges</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.18554 Shear viscosity from fluctuations in linearized relativistic hydrodynamics Jakub Sterba Iurii Karpenko Marlene Nahrgang Boris Tomasik Theory fluctuation dissipation Green Kubo vHLLE Israel Stewart viscosity regulators">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.18554">Shear viscosity from fluctuations in linearized relativistic hydrodynamics</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Jakub Sterba, Iurii Karpenko, Marlene Nahrgang, Boris Tomasik (4 authors) | arXiv:2610.18554 | submitted 13 Oct 2026</p>
+        <p><strong>Abstract:</strong> Thermal fluctuations are incorporated into linearized vHLLE simulations using the fluctuation-dissipation theorem. The authors study cell-discretization effects with static structure factors, extract shear viscosity with a Green-Kubo relation, and find agreement with the input viscosity for Israel-Stewart simulations.</p>
+        <p><strong>Why it matters:</strong> Fluctuating hydrodynamics is increasingly relevant for event-by-event fluctuations and critical-point observables, but numerical implementations can quietly alter the fluctuation spectrum. The explicit warning that stability regulators break fluctuation-dissipation is practically important for heavy-ion codes.</p>
+        <p><strong>Critical assessment:</strong> Strong methodological validation at the linearized level, with a clear code-level failure mode. It is not yet a full nonlinear, expanding, or critical hydrodynamic validation, so the next test is whether the conclusions survive realistic event evolution and matching to particlization.</p>
+        <p class="tags"><span>fluctuating hydrodynamics</span><span>shear viscosity</span><span>Green-Kubo</span><span>numerical stability</span></p>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-filter-text="2610.18749 Virtual photon bremsstrahlung in a magnetized quark-gluon-plasma Aritra Bandyopadhyay Krzysztof Redlich Chihiro Sasaki Phenomenology dileptons virtual photons magnetic field LPM Landau levels Debye screening">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.18749">Virtual photon bremsstrahlung in a magnetized quark-gluon-plasma</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Aritra Bandyopadhyay, Krzysztof Redlich, Chihiro Sasaki (3 authors) | arXiv:2610.18749 | submitted 13 Oct 2026</p>
+        <p><strong>Abstract:</strong> The paper extends the LPM treatment of dilepton production to a hot magnetized QGP with Fermi-Dirac statistics. It argues that the electric-field-induced nonequilibrium correction integrates to zero over the full dilepton solid angle, while the leading magnetic-field dependence enters through Landau-level changes to the medium density and Debye screening mass.</p>
+        <p><strong>Why it matters:</strong> Dileptons are among the cleanest probes of the early medium, and a controlled magnetic-field correction could connect electromagnetic backgrounds to an observable rate. The calculation identifies a specific mechanism rather than merely asserting that fields modify dileptons.</p>
+        <p><strong>Critical assessment:</strong> Interesting but not yet robust phenomenology. The result is derived in a relaxation-time and hydrodynamic-phase regime, and the practical size of the effect, field time dependence, and angular acceptance dependence need systematic study before experimental relevance can be judged.</p>
+        <p class="tags"><span>dileptons</span><span>magnetized QGP</span><span>LPM effect</span><span>screening</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.16829 Conserved-charge diffusion in hot and dense QCD matter Dushmanta Sahu Kangkan Goswami Raghunath Sahoo Phenomenology baryon electric charge strangeness diffusion matrix NJL mobility">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.16829">Conserved-charge diffusion in hot and dense QCD matter</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Dushmanta Sahu, Kangkan Goswami, Raghunath Sahoo (3 authors) | arXiv:2610.16829 | submitted 12 Oct 2026; near-window inclusion</p>
+        <p><strong>Abstract:</strong> A three-flavor Nambu-Jona-Lasinio calculation evaluates the full coupled diffusion matrix for baryon number, electric charge, and strangeness, including off-diagonal transport coefficients. The paper finds distinct temperature and baryon-chemical-potential dependence and a crossing of baryon and strangeness mobility scales at finite density.</p>
+        <p><strong>Why it matters:</strong> Multi-charge diffusion is part of the transport problem needed for beam-energy-scan observables, especially when charge correlations are interpreted as QGP or criticality signals. The matrix-level output is more useful than independent single-charge estimates.</p>
+        <p><strong>Critical assessment:</strong> A useful model benchmark, but the relaxation-time treatment and NJL dynamics limit quantitative reach. It should be used to map qualitative transport structures and motivate full dynamical studies, not as a precision prediction.</p>
+        <p class="tags"><span>charge diffusion</span><span>baryon density</span><span>strangeness</span><span>NJL model</span></p>
+      </article>
+
+      <h3>Experiment</h3>
+      <p class="empty-state">No new heavy-ion experimental measurement in the strict 24-hour window met the selection bar. The relevant experimental-facing entries below are AI/ML detector and analysis methods.</p>
+
+      <h3>AI/ML use</h3>
+      <article class="paper" data-filter-text="2610.18454 HEPTABench framework portable controlled agentic evaluations high energy physics Tony Menzo Alexander Roman George T Fleming Sergei Gleyzer Konstantin Matchev Stephen Mrenna AI ML agents benchmark scientific evaluation long-lived particle decay symbolic tools">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.18454">HEPTABench: A framework for portable and controlled agentic evaluations in high energy physics</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Tony Menzo, Alexander Roman, George T. Fleming, Sergei Gleyzer, Konstantin Matchev, Stephen Mrenna (6 authors) | arXiv:2610.18454 | submitted 13 Oct 2026</p>
+        <p><strong>Abstract:</strong> HEPTABench separates tasks, scaffolding, models, providers, harnesses, and domain tools, while recording specifications, trajectories, and artifacts for reproducible grading. In two campaigns, HEP domain tools improve a long-lived-particle reach calculation and symbolic decay-task success; Claude Haiku 4.5 rises from 8% to 79% on one task family, while GPT-5.5 succeeds in every trial with built-in tools alone.</p>
+        <p><strong>Likely HEP/NP use case:</strong> This is directly useful for evaluating research agents that write analysis code, derive kinematics, or run detector and phenomenology workflows. The separation of tool effects from model effects is a template that could transfer to heavy-ion analysis agents.</p>
+        <p><strong>Critical assessment:</strong> Strong infrastructure contribution with unusually good attention to controlled comparisons and reproducibility. The benchmark tasks are still narrow and the results are not evidence of reliable end-to-end physics discovery; broader uncertainty, literature, and data-analysis tasks are needed.</p>
+        <p class="tags"><span>agent evaluation</span><span>HEP tools</span><span>reproducibility</span><span>scientific reliability</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.15919 RINO Renormalization Group Distillation with No Labels Zichun Hao Raghav Kansal Abhijith Gandrakota Chang Sun Haoyang Li Zihan Zhao Ngadiuba Jennifer Javier Duarte Maria Spiropulu AI ML self-supervised learning jets QCD out-of-distribution JetNet Higgs H 4q">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.15919">RINO: Renormalization Group Distillation with No Labels</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Zichun Hao, Raghav Kansal, Abhijith Gandrakota, Chang Sun, Haoyang Li, Zihan Zhao, Ngadiuba Jennifer, Javier Duarte, Maria Spiropulu (9 authors) | arXiv:2610.15919 | submitted 11 Oct 2026; near-window inclusion</p>
+        <p><strong>Abstract:</strong> RINO uses hierarchical jet clustering to define multi-scale teacher-student views for DINO-style self-distillation, pretraining only on QCD jets and testing transfer to rare signals. The paper reports supervised-level performance after finetuning on 1% of labels, a 5.9% OOD accuracy gain on top jets, and a 4.1% AUC gain on unseen H to 4q over the strongest SSL baseline.</p>
+        <p><strong>Likely HEP/NP use case:</strong> The same idea could help heavy-ion jet and substructure analyses where simulation labels are imperfect and abundant real data are unlabeled. The transferable ingredient is the use of physically meaningful scale structure, not the exact jet task.</p>
+        <p><strong>Critical assessment:</strong> One of the stronger ML papers in this scan because the inductive bias is tied to QCD and the evaluation includes OOD transfer and ablations. The main open issue is whether gains persist under detector effects, heavy-ion background, and realistic simulation-to-data shifts rather than curated JetNet-like conditions.</p>
+        <p class="tags"><span>self-supervised learning</span><span>jet physics</span><span>renormalization group</span><span>OOD transfer</span></p>
+      </article>
+
+      <article class="paper" data-filter-text="2610.15963 Using Line Segment Tracking to enable ML-based Track Reconstruction in CMS Aashay Arora CMS Collaboration AI ML tracking Transformer object condensation high pileup fake rate">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.15963">Using Line Segment Tracking to enable ML-based Track Reconstruction in CMS</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Aashay Arora on behalf of the CMS Collaboration (collaboration author list) | arXiv:2610.15963 | submitted 11 Oct 2026; near-window inclusion</p>
+        <p><strong>Abstract:</strong> A Transformer with geometrically masked sparse attention operates on line-segment tracking objects rather than raw hits and uses object condensation to assemble tracks in one inference step. In CMS Phase-2 t-tbar simulation at pileup 200, the method has comparable efficiency to the LST quintuplet baseline, roughly three times lower fake rate, and nearly eliminates duplicates.</p>
+        <p><strong>Likely HEP/NP use case:</strong> Object-level representations and geometry-aware attention are directly relevant to high-occupancy heavy-ion tracking, where combinatorics and fake candidates are central problems. The transfer path is credible, but the heavy-ion occupancy and detector conditions must be tested explicitly.</p>
+        <p><strong>Critical assessment:</strong> Promising engineering result with meaningful metrics and a strong baseline comparison. Evidence is limited to one simulated topology and Phase-2 conditions, so claims about deployment or heavy-ion performance should remain provisional.</p>
+        <p class="tags"><span>track reconstruction</span><span>high pileup</span><span>Transformers</span><span>object condensation</span></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <p>The three papers above are the selected AI/ML use cases. No neighboring physics-ML paper outside HEP/NP had a stronger or more concrete transfer path in this window.</p>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <ul>
+        <li><strong>Magnetized-QGP dileptons, arXiv:2610.18749:</strong> the mechanism is specific and interesting, but the abstract does not establish that the predicted field imprint survives realistic time-dependent fields, acceptance, and competing sources.</li>
+        <li><strong>HEPTABench and the agent papers:</strong> strong evaluation infrastructure should not be confused with evidence that current agents can perform reliable physics analyses. The reported task gains are narrow and tool-dependent.</li>
+        <li><strong>Near-window status:</strong> RINO and CMS LST were submitted on 11 October, not in the strict 24-hour window; they are retained because they are materially more relevant to HEP transfer than the generic physics-ML papers screened today.</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    window.REPORT_METADATA = "data/reports/2026-10-14.json";
+  </script>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
