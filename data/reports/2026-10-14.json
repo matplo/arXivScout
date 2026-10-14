@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-14",
+  "path": "reports/2026-10-14.html",
+  "summary": "A strong theory-and-methods day for heavy-ion physics: a 4D lattice-constrained critical equation of state, fluctuation-based viscosity validation, magnetized-QGP dilepton phenomenology, and a coupled conserved-charge diffusion benchmark. The strongest AI/ML work uses QCD structure or controlled evaluation to address HEP reliability rather than applying generic models.",
+  "keywords": [
+    "equation of state",
+    "critical surface",
+    "fluctuating hydrodynamics",
+    "shear viscosity",
+    "magnetized QGP",
+    "dileptons",
+    "charge diffusion",
+    "agent evaluation",
+    "self-supervised jet learning",
+    "track reconstruction"
+  ],
+  "arxiv_ids": [
+    "2610.18830",
+    "2610.18554",
+    "2610.18749",
+    "2610.16829",
+    "2610.18454",
+    "2610.15919",
+    "2610.15963"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper_summary": "The 4D T′-expanded lattice-QCD plus 3D-Ising equation of state is the most important heavy-ion theory contribution because it makes critical behavior configurable in the full BQS thermodynamic space needed by realistic hydrodynamic studies.",
+  "caution_count": 3,
+  "papers": [
+    {
+      "title": "A 4D T′-expanded lattice QCD equation of state with a multi-dimensional 3D-Ising-type critical contribution",
+      "authors": "Francesco Di Clemente, Prachi Garella, Johannes Jahan, Micheal Kahangirwe, Jamie M. Karthein, Jacquelyn Noronha-Hostler, Claudia Ratti, Mikhail Stephanov",
+      "author_count": 8,
+      "url": "https://arxiv.org/abs/2610.18830",
+      "category": "Theory",
+      "abstract": "A four-dimensional equation of state in (T, muB, muQ, muS) combines the lattice 4D T′-Expansion Scheme with a 3D-Ising critical contribution and a parametrizable critical surface.",
+      "tags": [
+        "equation of state",
+        "critical point",
+        "3D Ising",
+        "BQS charges"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Shear viscosity from fluctuations in linearized relativistic hydrodynamics",
+      "authors": "Jakub Sterba, Iurii Karpenko, Marlene Nahrgang, Boris Tomasik",
+      "author_count": 4,
+      "url": "https://arxiv.org/abs/2610.18554",
+      "category": "Theory",
+      "abstract": "Linearized vHLLE simulations use fluctuation-dissipation noise, static structure factors, and Green-Kubo extraction; the recovered viscosity matches the input and common regulators spoil the fluctuation spectrum.",
+      "tags": [
+        "fluctuating hydrodynamics",
+        "shear viscosity",
+        "Green-Kubo"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Virtual photon bremsstrahlung in a magnetized quark-gluon-plasma",
+      "authors": "Aritra Bandyopadhyay, Krzysztof Redlich, Chihiro Sasaki",
+      "author_count": 3,
+      "url": "https://arxiv.org/abs/2610.18749",
+      "category": "Phenomenology",
+      "abstract": "An LPM dilepton calculation in a magnetized QGP finds that the leading magnetic-field dependence enters through Landau-level changes to density and Debye screening.",
+      "tags": [
+        "dileptons",
+        "magnetized QGP",
+        "LPM"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Conserved-charge diffusion in hot and dense QCD matter",
+      "authors": "Dushmanta Sahu, Kangkan Goswami, Raghunath Sahoo",
+      "author_count": 3,
+      "url": "https://arxiv.org/abs/2610.16829",
+      "category": "Phenomenology",
+      "abstract": "A three-flavor NJL relaxation-time calculation evaluates the full coupled diffusion matrix for baryon number, electric charge, and strangeness at finite density.",
+      "tags": [
+        "charge diffusion",
+        "strangeness",
+        "NJL"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "HEPTABench: A framework for portable and controlled agentic evaluations in high energy physics",
+      "authors": "Tony Menzo, Alexander Roman, George T. Fleming, Sergei Gleyzer, Konstantin Matchev, Stephen Mrenna",
+      "author_count": 6,
+      "url": "https://arxiv.org/abs/2610.18454",
+      "category": "AI/ML use",
+      "abstract": "A reproducible framework separates HEP tasks, tools, models, harnesses, and artifacts; controlled campaigns show domain tools can improve long-lived-particle and symbolic decay tasks.",
+      "tags": [
+        "agent evaluation",
+        "HEP tools",
+        "reproducibility"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "RINO: Renormalization Group Distillation with No Labels",
+      "authors": "Zichun Hao, Raghav Kansal, Abhijith Gandrakota, Chang Sun, Haoyang Li, Zihan Zhao, Ngadiuba Jennifer, Javier Duarte, Maria Spiropulu",
+      "author_count": 9,
+      "url": "https://arxiv.org/abs/2610.15919",
+      "category": "AI/ML use",
+      "abstract": "Renormalization-group-inspired hierarchical jet views support self-distillation on unlabeled QCD jets and improve OOD transfer to top and Higgs jet classes.",
+      "tags": [
+        "self-supervised learning",
+        "jet physics",
+        "OOD transfer"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Using Line Segment Tracking to enable ML-based Track Reconstruction in CMS",
+      "authors": "Aashay Arora on behalf of the CMS Collaboration",
+      "author_count": null,
+      "url": "https://arxiv.org/abs/2610.15963",
+      "category": "AI/ML use",
+      "abstract": "A geometry-aware Transformer and object condensation on line-segment objects achieves comparable efficiency with about three times lower fake rate than an LST quintuplet baseline at pileup 200.",
+      "tags": [
+        "track reconstruction",
+        "high pileup",
+        "Transformers"
+      ],
+      "assessment": "mixed"
+    }
+  ]
+}
