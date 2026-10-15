@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-15",
+  "path": "reports/2026-10-15.html",
+  "professional_summary": "The narrow same-day scan yielded four relevant papers: glasma transport of hard probes, quark-level strangeness conservation, multihadron fragmentation-function evolution, and ML-assisted holographic-QCD calibration. The main themes are pre-equilibrium transport, strange-hadron correlations, multiscale factorization, and physics-constrained inverse modeling.",
+  "keywords": [
+    "glasma transport",
+    "heavy flavor",
+    "strangeness conservation",
+    "multihadron fragmentation",
+    "holographic QCD",
+    "physics-integrated ML"
+  ],
+  "arxiv_ids": [
+    "2610.20291",
+    "2610.20449",
+    "2610.20448",
+    "2610.20348"
+  ],
+  "total_paper_count": 4,
+  "represented_categories": [
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "arXiv:2610.20291",
+  "strongest_paper_summary": "Glasma transport gives concrete heavy-flavor and jet observables for testing pre-equilibrium effects.",
+  "caution_count": 0,
+  "papers": [
+    {
+      "title": "Transport of hard probes in the glasma",
+      "short_authors": "Dana Avramescu",
+      "total_author_count": 1,
+      "arxiv_id": "2610.20291",
+      "category": "Phenomenology",
+      "abstract": "Studies jet and heavy-quark transport through pre-equilibrium glasma fields with classical Yang-Mills and light-front quantum methods; finds enhanced anisotropic transport, potentially measurable D-Dbar decorrelations, and moderate R_AA effects.",
+      "tags": [
+        "glasma",
+        "heavy flavor",
+        "jets",
+        "pre-equilibrium"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Strangeness suppression, the phi meson and Lambda-antLambda spin correlations from exact strangeness conservation at the quark level",
+      "short_authors": "P. Castorina, H. Satz",
+      "total_author_count": 2,
+      "arxiv_id": "2610.20449",
+      "category": "Phenomenology",
+      "abstract": "Imposes exact strangeness conservation on quarks in finite causal clusters and describes strange-hadron yields in pp and p-Pb while linking phi suppression to Lambda-antLambda spin-correlation dilution.",
+      "tags": [
+        "strangeness",
+        "phi meson",
+        "spin correlations",
+        "small systems"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Evolution of multihadron fragmentation functions with nonperturbative behavior",
+      "short_authors": "K. Makino, T. C. Rogers",
+      "total_author_count": 2,
+      "arxiv_id": "2610.20448",
+      "category": "Phenomenology",
+      "abstract": "Develops evolution for multihadron fragmentation functions with multiple invariant-mass scales, separating extra-scale dependence from ordinary fragmentation evolution.",
+      "tags": [
+        "fragmentation",
+        "multihadron",
+        "factorization",
+        "QCD"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Thermal properties of the rho meson from a machine-learning-improved holographic QCD model",
+      "short_authors": "Jia-Jie Jiang, Han Tang, Danning Li, Lang Yu",
+      "total_author_count": 4,
+      "arxiv_id": "2610.20348",
+      "category": "AI/ML use",
+      "abstract": "Uses a neural-network-assisted inverse calibration of a soft-wall AdS/QCD background against lattice screening masses, then computes rho spectral functions and quasi-normal modes, obtaining a dissociation estimate near 168 MeV.",
+      "tags": [
+        "machine learning",
+        "holographic QCD",
+        "spectral functions",
+        "inverse modeling"
+      ],
+      "assessment": "mixed"
+    }
+  ],
+  "cautions": []
+}

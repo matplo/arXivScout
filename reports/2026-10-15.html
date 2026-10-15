@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-15</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Heavy-ion physics and physics AI</h1>
+    <p class="dek">15 October 2026. Selective review of arXiv submissions from roughly the preceding 24 hours, with emphasis on heavy-ion collision physics and credible AI/ML transfer value.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="archive-search">Search by keyword</label>
+        <input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The most immediately useful paper is a glasma-transport thesis that connects pre-equilibrium fields to measurable D-Dbar angular decorrelations and moderate changes in R_AA, while carefully addressing gauge artifacts.</li>
+        <li>A compact quark-level strangeness-conservation model gives one multiplicity-dependent mechanism for kaon, phi, Xi, Omega, and Lambda-antLambda spin-correlation trends in pp and p-Pb.</li>
+        <li>The fragmentation-function paper is formal rather than directly heavy-ion phenomenology, but its treatment of multiple invariant-mass scales is relevant to hadrochemistry and correlation observables in nuclear collisions.</li>
+        <li>The ML-assisted holographic-QCD study is a credible physics-integrated workflow, but its dissociation temperature should be treated as model output rather than a data-driven QCD determination.</li>
+        <li>No new experimental heavy-ion measurement met the selection bar in this narrow window; the relevant same-day submissions were theory and phenomenology.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Phenomenology</h3>
+      <article class="paper" data-paper>
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20291">Transport of hard probes in the glasma</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Dana Avramescu. One author. <a href="https://arxiv.org/abs/2610.20291">arXiv:2610.20291</a></p>
+        <p><strong>Summary.</strong> This doctoral-thesis submission studies jet and heavy-quark propagation through the pre-equilibrium glasma using real-time lattice classical Yang-Mills fields, classical transport, and a light-front quantum treatment. It finds larger and anisotropic transport coefficients than in the later QGP, a potentially measurable D-Dbar azimuthal decorrelation, and moderate R_AA modifications once nuclear PDFs are included. The gauge-invariance analysis distinguishing kinetic from canonical momentum is a particularly useful methodological component.</p>
+        <p><strong>Why it matters.</strong> Many phenomenological extractions effectively start transport after the glasma. This work supplies a systematic estimate of what that omission can do to heavy-flavor and jet observables and identifies a concrete correlation observable for future tests.</p>
+        <p><strong>Critical assessment.</strong> Strong as a synthesis and calculation program, with explicit control of gauge and classical-versus-quantum issues. The experimental discriminating power is still prospective, and the thesis format plus model choices mean the numerical shifts should be propagated through full event-level comparisons before being used in precision extractions.</p>
+      </article>
+      <article class="paper" data-paper>
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20449">Strangeness suppression, the phi meson and Lambda-antLambda spin correlations from exact strangeness conservation at the quark level</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">P. Castorina and H. Satz. Two authors. <a href="https://arxiv.org/abs/2610.20449">arXiv:2610.20449</a></p>
+        <p><strong>Summary.</strong> The paper imposes exact strangeness conservation on strange quarks in a causally connected cluster before hadronization, while separating same-pair combinations from other strange-quark pairings. With one multiplicity-dependent cluster parameter it describes kaon, phi, Xi, and Omega production in pp and p-Pb, and links phi suppression to the dilution of Lambda-antLambda spin correlations.</p>
+        <p><strong>Why it matters.</strong> It addresses a real weakness of hadron-level canonical suppression: an unsuppressed phi is difficult to reconcile with data. The unified treatment also makes a nontrivial cross-observable prediction rather than fitting each strange species independently.</p>
+        <p><strong>Critical assessment.</strong> Promising and unusually economical, with a stated five-sigma rejection of two limiting phi-formation pictures within the model comparison. The result is still conditional on the cluster ansatz and the selected data treatment; independent comparisons to modern event generators and differential spin-correlation data are needed before treating the mechanism as established.</p>
+      </article>
+      <article class="paper" data-paper>
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20448">Evolution of multihadron fragmentation functions with nonperturbative behavior</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">K. Makino and T. C. Rogers. Two authors. <a href="https://arxiv.org/abs/2610.20448">arXiv:2610.20448</a></p>
+        <p><strong>Summary.</strong> This formal QCD paper derives evolution for collinear multihadron fragmentation functions when the hard scale coexists with additional invariant-mass scales associated with internal motion in the multihadron system. It separates the extra-scale dependence from ordinary single-hadron evolution and gives a common treatment of perturbative and genuinely nonperturbative contributions.</p>
+        <p><strong>Why it matters.</strong> Multihadron correlations and hadrochemistry are increasingly used in pp and nuclear collisions, but interpreting them requires keeping several scales distinct. A consistent evolution framework can reduce ambiguities in connecting measured pair observables to partonic structure.</p>
+        <p><strong>Critical assessment.</strong> Technically substantial and directly relevant to the factorization side of heavy-ion observables, but it is not yet a phenomenological prediction for a collision system. Transfer value is high for future analyses; validation against data and concrete nuclear-modified fragmentation examples remain open.</p>
+      </article>
+    </section>
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-paper>
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20348">Thermal properties of the rho meson from a machine-learning-improved holographic QCD model</a><span class="label mixed">mixed</span></h4></div>
+        <p class="meta">Jia-Jie Jiang, Han Tang, Danning Li, and Lang Yu. Four authors. <a href="https://arxiv.org/abs/2610.20348">arXiv:2610.20348</a></p>
+        <p><strong>Method and result.</strong> A neural-network-assisted inverse procedure calibrates a soft-wall AdS/QCD dilaton background to lattice-QCD screening-mass data. The calibrated model is then used to compute vector spectral functions and quasi-normal modes, yielding a dissociation estimate near 168 MeV, a growing thermal width, and a transition toward a transport peak.</p>
+        <p><strong>Likely HEP/NP use case.</strong> The transferable idea is physics-integrated calibration: use ML to fit an effective model to lattice constraints, then propagate the calibrated model into spectral or transport observables. Similar workflows could support Bayesian surrogate calibration of heavy-ion response models, provided emulator error and model discrepancy are treated explicitly.</p>
+        <p><strong>Critical assessment.</strong> This is substantive ML use rather than a decorative classifier, and the downstream observables are physically interpretable. However, the inferred dissociation temperature is dominated by the holographic ansatz and by the chosen criterion for vanishing real quasi-normal-mode frequency; the paper does not establish a model-independent QCD result.</p>
+    </section>
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <p>No additional paper from the narrow same-day scan was strong enough to include as a separate caution item. The main caution is internal to the ML/holographic study above: its workflow is interesting, but the numerical temperature should not be read as a direct lattice-QCD extraction.</p>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var input = document.getElementById("archive-search");
+      var papers = Array.prototype.slice.call(document.querySelectorAll("[data-paper]"));
+      if (!input) return;
+      input.addEventListener("input", function () {
+        var query = (input.value || "").toLowerCase().trim();
+        papers.forEach(function (paper) {
+          paper.hidden = query && paper.textContent.toLowerCase().indexOf(query) === -1;
+        });
+      });
+    }());
+  </script>
+</body>
+</html>
