@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-16",
+  "path": "reports/2026-10-16.html",
+  "professional_summary": "The last-day screen yielded one especially strong baryon-rich heavy-ion transport comparison, one model-sensitive proposal for dynamical bubble-nucleus signatures, and two adjacent QCD/nuclear-theory results. The most transferable AI/ML lesson is methodological: compositional out-of-distribution predictions should be compared with simple structured baselines and calibrated against held-out truth. No new experimental heavy-ion paper met the inclusion bar in the screened window.",
+  "keywords": [
+    "baryon-rich Au+Au",
+    "strangeness hierarchy",
+    "PHSD/HSD",
+    "bubble-nuclei flow",
+    "three-nucleon forces",
+    "pion PDFs",
+    "compositional OOD"
+  ],
+  "arxiv_ids": [
+    "2610.19392",
+    "2610.19632",
+    "2610.20072",
+    "2610.19415",
+    "2610.18880"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Phenomenology",
+    "Theory",
+    "AI/ML use"
+  ],
+  "strongest_paper": "arXiv:2610.19392",
+  "strongest_paper_summary": "A controlled PHSD5.2 versus hadron-string comparison identifies a strangeness-ordered response and maps it to experimentally accessible excitation functions and elliptic flow.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Strange-quark-number-dependent response to partonic dynamics in baryon-rich Au+Au collisions",
+      "short_authors": "Di Zhao, Xun Zhu, Gao-Chan Yong",
+      "total_author_count": 3,
+      "arxiv_id": "2610.19392",
+      "arxiv_url": "https://arxiv.org/abs/2610.19392",
+      "category": "Phenomenology",
+      "abstract": "We identify a strange-quark-number-dependent hierarchy in the response to explicit partonic dynamics by comparing PHSD5.2 with its hadron--string limit in baryon-rich Au+Au collisions at √sNN=3.0–7.2 GeV. The hierarchy is strongest in fractional yields at the upper end of the scan, while abundant-hadron flow changes little at lower energies. The proposed discriminants are matched Ξ−/Λ and Ω−/Λ excitation functions together with high-mT proton elliptic flow.",
+      "tags": [
+        "Au+Au",
+        "PHSD/HSD",
+        "strangeness",
+        "BES energies"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Collective-flow signatures of bubble nuclei in intermediate-energy projectile fragmentation reactions",
+      "short_authors": "Ge Ren, Chun-Wang Ma, Xi-Guang Cao, Kai-Xuan Cheng, Jie Pu",
+      "total_author_count": 5,
+      "arxiv_id": "2610.19632",
+      "arxiv_url": "https://arxiv.org/abs/2610.19632",
+      "category": "Phenomenology",
+      "abstract": "The paper studies collective flow in 40Ca+9Be at 140 MeV/u with an extended quantum molecular dynamics model. The projectile is initialized as a relaxed ten-alpha cluster configuration with a bubble-like density, and the isoscalar monopole excitation strength is varied. Fragment yields, directed flow, cluster flow and rapidity slopes change markedly near ε≈0.5.",
+      "tags": [
+        "bubble nuclei",
+        "EQMD",
+        "collective flow",
+        "fragmentation"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Constraining three-nucleon forces in nuclear lattice effective field theory",
+      "short_authors": "Serdar Elhatisari, Ulf-G. Meißner, Zhengxue Ren, Shuang Zhang",
+      "total_author_count": 4,
+      "arxiv_id": "2610.20072",
+      "arxiv_url": "https://arxiv.org/abs/2610.20072",
+      "category": "Theory",
+      "abstract": "Short-range three-nucleon-force terms in nuclear lattice effective field theory are decomposed into locally and non-locally smeared components and supplemented by pair contacts coupled to the density of a third nucleon. Coefficients are constrained using binding energies for nuclei with A=3–40 and neutron-alpha finite-volume energies, yielding a minimal three-nucleon force for future precision studies.",
+      "tags": [
+        "NLEFT",
+        "three-nucleon forces",
+        "chiral EFT",
+        "finite volume"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Constraints on pion parton distributions at small x from leading-neutron electroproduction data",
+      "short_authors": "C. Yang, P. C. Barry, W. Melnitchouk, N. Sato",
+      "total_author_count": 4,
+      "arxiv_id": "2610.19415",
+      "arxiv_url": "https://arxiv.org/abs/2610.19415",
+      "category": "Phenomenology",
+      "abstract": "The authors revisit pion PDFs with a global QCD analysis of pion-nucleus Drell-Yan and leading-neutron electroproduction data, varying data coverage, parameterization and positivity constraints while fitting pion-nucleon splitting functions. The enlarged H1+ZEUS leading-neutron data set reduces parameterization dependence and strongly disfavors a vanishing pion gluon PDF.",
+      "tags": [
+        "pion PDFs",
+        "small x",
+        "global QCD fit",
+        "leading neutrons"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Do Perturbation Predictors Learn Gene Interactions? Diagnosing Extrapolation in Agentic Screening",
+      "short_authors": "Ziyuan Gao",
+      "total_author_count": 1,
+      "arxiv_id": "2610.18880",
+      "arxiv_url": "https://arxiv.org/abs/2610.18880",
+      "category": "AI/ML use",
+      "abstract": "The paper studies unseen gene pairs for which both individual genes appeared during training. It compares neural predictors with an additive baseline and defines additive disagreement as a signal of interaction extrapolation risk. Across eight methods and three Perturb-seq data sets, the specialized predictors do not consistently beat the additive baseline, while larger disagreement tracks larger error.",
+      "tags": [
+        "OOD evaluation",
+        "uncertainty",
+        "compositional extrapolation",
+        "active screening"
+      ],
+      "assessment": "mixed"
+    }
+  ]
+}
