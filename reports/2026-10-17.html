@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-17</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../index.html">Back to archive</a>
+    <p class="eyebrow">Daily arXiv Physics Scout</p>
+    <h1>Heavy-ion physics and physics AI</h1>
+    <p class="dek">Review window: approximately 24 hours through 2026-10-17. Selection emphasizes physics content, validation, and credible transfer value over paper volume.</p>
+    <div class="filter-panel" aria-label="Report filters">
+      <div class="filter-field filter-field-search">
+        <label class="search-label" for="paper-search">Search by keyword</label>
+        <input id="paper-search" type="search" placeholder="keyword, arXiv number" autocomplete="off">
+      </div>
+    </div>
+  </header>
+  <main class="report">
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul class="takeaways">
+        <li>The clearest AI/ML contribution is a generative neutrino-nucleus event surrogate calibrated to MicroBooNE differential cross sections, with a useful test of transfer across fluxes and observables.</li>
+        <li>Flow-based sampling for SU(3) Yang-Mills topology addresses a real lattice-QCD bottleneck and reports scaling evidence down to 0.03 fm; the next question is whether the gain survives larger volumes and full dynamical QCD.</li>
+        <li>The new nPDF summary is directly relevant to heavy-ion interpretation because it foregrounds A-dependence and uncertainty calibration, but it is a conference proceeding rather than a complete new global fit.</li>
+        <li>A tensor-network study of string fragmentation offers an intriguing microscopic link to the Lund area law, but its single-model, low-dimensional setting makes the connection to realistic heavy-ion hadronization provisional.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Heavy-ion collision papers</h2>
+      <h3>Theory</h3>
+      <article class="paper">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20793">Collective Organization of String Fragmentation</a><span class="label strong">strong, provisional transfer</span></h4></div>
+        <p class="meta">Romuald A. Janik, Maciej A. Nowak, Marek M. Rams, Ismail Zahed (4 authors) · <a href="https://arxiv.org/abs/2610.20793">arXiv:2610.20793</a></p>
+        <p><strong>Summary.</strong> The authors use real-time tensor-network simulations of the massive Schwinger model to study coherent string breaking. They report that, for intermediate masses, one collective mode captures more than 99% of the time evolution of the electric-field probability distribution, with a survival law matching the Gaussian dependence associated with the Lund world-sheet area law. The same mode is reported to control meson production, an effective equation of state, and entanglement growth.</p>
+        <p><strong>Why it matters.</strong> Hadronization is a major modeling uncertainty in event generators and in the interpretation of soft observables. A microscopic mechanism behind an area-law-like survival pattern could motivate better-controlled tests of string-fragmentation assumptions.</p>
+        <p><strong>Critical assessment.</strong> Strong as a controlled field-theory computation and conceptually interesting. The result is not yet a heavy-ion result: it uses a 1+1-dimensional Abelian model, so universality across QCD color, transverse structure, and realistic multiparticle fragmentation remains untested.</p>
+        <div class="tags"><span>hadronization</span><span>tensor networks</span><span>Lund area law</span></div>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.21697">Nuclear PDFs</a><span class="label mixed">mixed: useful summary, limited novelty</span></h4></div>
+        <p class="meta">K. Greve, T. Ježo, M. Klasen, A. Kusina, F. I. Olness, J. Wissmann (6 authors) · <a href="https://arxiv.org/abs/2610.21697">arXiv:2610.21697</a> · LHCP2026 contribution</p>
+        <p><strong>Summary.</strong> This contribution reviews model-independent global analyses of nuclear parton distribution functions. It stresses broad data coverage, modern theory input, and uncertainty estimates that do not artificially shrink from parametrization bias, and calls for more serious treatment of the A-dependence as LHC nuclei-collision data accumulate.</p>
+        <p><strong>Why it matters.</strong> nPDF uncertainties remain a limiting theory input for hard-probe baselines and many nuclear-modification observables. The emphasis on A-dependence and fit diagnostics is directly relevant to heavy-ion analyses.</p>
+        <p><strong>Critical assessment.</strong> Scientifically relevant and methodologically sound in emphasis, but this is a short conference proceeding and does not itself present a new fit, quantitative improvement, or full validation suite. Treat it as a useful status signal, not as a standalone result.</p>
+        <div class="tags"><span>nPDFs</span><span>nuclear uncertainty</span><span>hard probes</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>AI/ML use cases in physics</h2>
+      <article class="paper">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20870">Machine-learning-based neutrino-event generation constrained by experimental measurements</a><span class="label strong">strong</span></h4></div>
+        <p class="meta">Jose Luis Bonilla, Krzysztof M. Graczyk, Rwik Dharmapal Banerjee, Beata E. Kowal, Hemant Prasad, Jan T. Sobczyk (6 authors) · <a href="https://arxiv.org/abs/2610.20870">arXiv:2610.20870</a></p>
+        <p><strong>Summary.</strong> The paper builds a generative surrogate for charged-current muon-neutrino scattering on nuclei. It starts from a theoretical interaction model, calibrates to MicroBooNE differential cross-section data without requiring event-level experimental samples, and reports improved agreement for observables not used in the fit. The calibrated surrogate is also tested under different neutrino fluxes without retuning while retaining event-level outgoing-muon kinematics.</p>
+        <p><strong>HEP/NP use case.</strong> This is a concrete pattern for replacing expensive or imperfect nuclear event models while keeping detector-facing event generation and data-driven calibration. The same workflow could be relevant to heavy-ion response surrogates, unfolding, or Bayesian extraction, provided correlations, detector effects, and uncertainty propagation are retained.</p>
+        <p><strong>Critical assessment.</strong> This is stronger than a generic ML application because the model is constrained by measured cross sections and tested out of fit. The main unresolved risks are model misspecification, extrapolation beyond MicroBooNE kinematics, and whether calibration uncertainty is propagated into downstream physics inference.</p>
+        <div class="tags"><span>generative surrogate</span><span>neutrino-nucleus</span><span>data calibration</span><span>transfer learning</span></div>
+      </article>
+
+      <article class="paper">
+        <div class="paper-head"><h4><a href="https://arxiv.org/abs/2610.20747">Ergodic topology sampling toward the continuum with Stochastic Normalizing Flows</a><span class="label strong">strong, early stage</span></h4></div>
+        <p class="meta">Claudio Bonanno, Andrea Bulgarelli, Elia Cellini, Alessandro Nada, Dario Panfalone, Davide Vadacchino, Lorenzo Verzichelli (7 authors) · <a href="https://arxiv.org/abs/2610.20747">arXiv:2610.20747</a></p>
+        <p><strong>Summary.</strong> The authors combine open boundary conditions with stochastic normalizing flows to mitigate topological freezing in SU(3) Yang-Mills theory. They test lattice spacings as fine as 0.03 fm and report controlled integrated autocorrelation times for the squared topological charge and controlled uncertainty in the topological susceptibility using currently available resources.</p>
+        <p><strong>HEP/NP use case.</strong> Better topology sampling can make continuum-limit lattice calculations more practical and can transfer to finite-temperature QCD observables that inform heavy-ion equation-of-state and topological-physics studies.</p>
+        <p><strong>Critical assessment.</strong> The target is an important, concrete computational pathology and the evaluation uses the right observables rather than only likelihood or training metrics. Evidence is still limited to pure-gauge tests and the explored resource range; claims of broad lattice-QCD impact should wait for larger volumes, dynamical fermions, and independent cost comparisons.</p>
+        <div class="tags"><span>lattice QCD</span><span>normalizing flows</span><span>topological freezing</span><span>uncertainty</span></div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Weak or overclaimed papers worth caution</h2>
+      <p>No additional paper from the roughly 24-hour target window met the threshold for a separate caution entry. The nPDF item is retained with a mixed assessment because it is relevant but primarily a proceedings-level status summary; the string-fragmentation result is retained with explicit transfer limitations.</p>
+    </section>
+
+    <section>
+      <h2>Screening note</h2>
+      <p>The review screened recent hep-ph, hep-ex, and cross-listed machine-learning/lattice submissions surfaced for 2026-10-16. Older replacement submissions and papers without a concrete heavy-ion, HEP, nuclear-physics, or transferable physics-ML connection were excluded.</p>
+    </section>
+  </main>
+  <script>
+    (function () {
+      var input = document.getElementById("paper-search");
+      var papers = Array.prototype.slice.call(document.querySelectorAll(".paper"));
+      if (!input) return;
+      input.addEventListener("input", function () {
+        var query = input.value.toLowerCase().trim();
+        papers.forEach(function (paper) {
+          paper.hidden = query && paper.textContent.toLowerCase().indexOf(query) === -1;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
