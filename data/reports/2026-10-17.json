@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-17",
+  "path": "reports/2026-10-17.html",
+  "summary": "A selective review of recent submissions finds one physics-calibrated generative neutrino model and one flow-based lattice-QCD sampler as the strongest AI/ML-relevant results. Heavy-ion relevance is concentrated in nPDF uncertainty practice and a controlled tensor-network study of string fragmentation; neither should be overread as a direct heavy-ion measurement.",
+  "keywords": [
+    "generative surrogate",
+    "neutrino-nucleus",
+    "lattice QCD",
+    "normalizing flows",
+    "topological freezing",
+    "nPDFs",
+    "hadronization",
+    "string fragmentation"
+  ],
+  "arxiv_ids": [
+    "2610.20870",
+    "2610.20747",
+    "2610.21697",
+    "2610.20793"
+  ],
+  "total_paper_count": 4,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2610.20870",
+  "strongest_paper_summary": "Experimental calibration of an event-level neutrino-nucleus generative surrogate with cross-observable and cross-flux checks.",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2610.20870",
+      "title": "Machine-learning-based neutrino-event generation constrained by experimental measurements",
+      "short_authors": "J. L. Bonilla et al. (6 authors)",
+      "category": "AI/ML use",
+      "abstract": "Generative surrogate for charged-current nu_mu-nucleus scattering calibrated to MicroBooNE differential cross sections; improves held-out observables and transfers across fluxes without retuning.",
+      "tags": [
+        "generative surrogate",
+        "neutrino-nucleus",
+        "data calibration"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.20747",
+      "title": "Ergodic topology sampling toward the continuum with Stochastic Normalizing Flows",
+      "short_authors": "C. Bonanno et al. (7 authors)",
+      "category": "AI/ML use",
+      "abstract": "Combines open boundaries and stochastic normalizing flows to control topological freezing in SU(3) Yang-Mills down to 0.03 fm.",
+      "tags": [
+        "lattice QCD",
+        "normalizing flows",
+        "topology"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.21697",
+      "title": "Nuclear PDFs",
+      "short_authors": "K. Greve et al. (6 authors)",
+      "category": "Phenomenology",
+      "abstract": "LHCP2026 status contribution on global nPDF analyses, uncertainty calibration, and the need to treat A-dependence more carefully in the LHC nuclei-collision era.",
+      "tags": [
+        "nPDFs",
+        "nuclear uncertainty",
+        "hard probes"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.20793",
+      "title": "Collective Organization of String Fragmentation",
+      "short_authors": "R. A. Janik et al. (4 authors)",
+      "category": "Theory",
+      "abstract": "Real-time tensor-network simulations of the massive Schwinger model identify a dominant collective mode and an area-law-like string survival pattern.",
+      "tags": [
+        "hadronization",
+        "tensor networks",
+        "string fragmentation"
+      ],
+      "assessment": "strong"
+    }
+  ],
+  "cautions": []
+}
