@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daily arXiv Physics Scout - 2026-10-18</title><link rel="stylesheet" href="../assets/site.css"></head>
+<body><header class="site-header"><p class="eyebrow"><a href="../index.html">Daily arXiv Physics Scout</a></p>
+<h1>Research briefing: 18 October 2026</h1><p class="dek">Heavy-ion collision physics and credible AI/ML use in physics. Latest available announcement: Friday, 16 October 2026.</p>
+<div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div></header>
+<main>
+<section><h2>Executive takeaways</h2><ul>
+<li>There was no Saturday or Sunday arXiv announcement. This briefing reviews the latest Friday batch and excludes papers already highlighted in the 17 October archive.</li>
+<li>The most consequential heavy-ion paper is a four-dimensional, lattice-informed QCD equation of state with a constructed critical surface. It is a useful hydrodynamic input, but the quoted critical region is an extrapolation, not a lattice determination.</li>
+<li>A three-fluid study maps early nuclear friction to an effective shear viscosity at BES/FAIR energies. Its main value is exposing the limits of interpreting a far-from-equilibrium stage through a Navier-Stokes coefficient.</li>
+<li>PTagent is a credible LLM-for-physics workflow because language-model interpretation is separated from deterministic calculation and unresolved physics choices require review.</li>
+<li>Jianmu-Q has sensible validation gates, but its field-theory-to-hardware claim is supported only on small benchmark systems.</li>
+</ul></section>
+<section><h2>Heavy-ion collision papers</h2><h3>Theory</h3>
+<article class="paper" data-date="2026-10-18"><div class="card-top"><span>Theory</span><span>Strong, with a central caveat</span></div>
+<h3><a href="https://arxiv.org/abs/2610.20806">Four-dimensional QCD equation of state with a critical surface from contours of constant entropy density</a></h3>
+<p><strong>Authors:</strong> Tristan Gyure, Hitansh Shah, Lorenzo Formaggio, Francesco Di Clemente, Mauricio Hippert, Claudia Ratti, Volodymyr Vovchenko (7 authors)</p>
+<p><strong>Summary:</strong> Constant-entropy-density contour extrapolations are generalized to (T, muB, muQ, muS), producing a lattice-informed equation of state that can accommodate a critical surface and first-order transition. Under heavy-ion constraints, the construction places its critical point near T = 115 +/- 7 MeV and muB = 651 +/- 74 MeV and generates non-monotonic baryon susceptibilities below roughly 7.7 GeV.</p>
+<p><strong>Why it matters:</strong> A thermodynamically consistent multi-charge equation of state is directly useful for low-energy heavy-ion hydrodynamics and tests of charge and strangeness constraints near the conjectured critical region.</p>
+<p><strong>Critical assessment:</strong> This is the day's strongest heavy-ion contribution. However, the critical surface is enabled by the extrapolation rather than predicted ab initio, and the headline results use an O(mu^2) truncation whose high-density uncertainty is not yet quantified. The proposed 3-5.2 GeV critical region is a model benchmark, not a determination.</p>
+<div class="tags"><span>2610.20806</span><span>QCD equation of state</span><span>critical surface</span><span>conserved charges</span></div></article>
+<article class="paper" data-date="2026-10-18"><div class="card-top"><span>Theory</span><span>Mixed but useful</span></div>
+<h3><a href="https://arxiv.org/abs/2610.20872">Effective shear viscosity from the friction term in relativistic multi-fluid hydrodynamics</a></h3>
+<p><strong>Authors:</strong> Christian Spieles, Marcus Bleicher (2 authors)</p>
+<p><strong>Summary:</strong> A three-fluid model of Au+Au collisions from 1.23A to 29.7A GeV infers effective shear stress and eta/s from superposed projectile, target, and fireball fluids. Friction inputs come from UrQMD-derived transport cross sections, with beam-energy, grid-size, and cross-section tests.</p>
+<p><strong>Why it matters:</strong> It addresses the overlapping stopping and expansion stage relevant to RHIC-BES and FAIR, where fixed-time hydrodynamic initialization is least credible.</p>
+<p><strong>Critical assessment:</strong> The sensitivity studies are useful, but the authors' own result supplies the caveat: the early system is far from equilibrium, so eta_eff is not a material transport coefficient in the usual near-equilibrium sense. It is best read as a friction-model anisotropy diagnostic.</p>
+<div class="tags"><span>2610.20872</span><span>three-fluid hydrodynamics</span><span>shear viscosity</span><span>baryon stopping</span></div></article>
+<h3>Experiment</h3><p>No new heavy-ion experimental paper in the latest batch met the inclusion threshold.</p>
+<h3>Phenomenology</h3><p>No additional phenomenology paper was strong enough to include.</p>
+<h3>AI/ML use</h3><p>No heavy-ion-specific AI/ML paper survived triage; the strongest transferable workflow follows.</p></section>
+<section><h2>AI/ML use cases in physics</h2>
+<article class="paper" data-date="2026-10-18"><div class="card-top"><span>AI/ML use</span><span>Promising</span></div>
+<h3><a href="https://arxiv.org/abs/2610.21118">PTagent: An LLM-assisted tool for finite-temperature model construction in cosmological phase transitions</a></h3>
+<p><strong>Authors:</strong> Lei Wu, Yang Xiao, Jin Min Yang, Yang Zhang (4 authors)</p>
+<p><strong>Method and result:</strong> An LLM agent extracts assumptions and unresolved choices from SARAH files, papers, or DRalgo sources into a reviewed model contract; deterministic backends emit CosmoTransitions- or PhaseTracer-style potentials. Three input routes are checked for dimensions, spectra, thermal self-energies, pointwise values, and cross-backend consistency.</p>
+<p><strong>HEP/NP use case:</strong> The architecture transfers to analysis configuration, theory-to-code translation, generator setup, and other workflows where semantic interpretation helps but numerical physics must remain deterministic and approval-gated.</p>
+<p><strong>Critical assessment:</strong> Stronger than a generic coding-agent demo because it records provenance and blocks unresolved choices. Evidence remains limited to three curated examples and consistency tests; independent users and novel models are needed before trusting broad automation claims.</p>
+<div class="tags"><span>2610.21118</span><span>LLM agents</span><span>finite-temperature field theory</span><span>auditable workflows</span></div></article></section>
+<section><h2>Weak or overclaimed papers worth caution</h2>
+<article class="paper" data-date="2026-10-18"><div class="card-top"><span>Caution</span><span>Interesting workflow, narrow evidence</span></div>
+<h3><a href="https://arxiv.org/abs/2610.21942">Jianmu-Q: Bridging Quantum Field Theory and Quantum Hardware with AI Agents</a></h3>
+<p><strong>Authors:</strong> Xiaolin Wang, Xingyu Guo, Jinyang Li, Tianyin Li, Enke Wang, Lingxiao Wang, Hongxi Xing (7 authors)</p>
+<p><strong>Summary:</strong> A multi-agent pipeline translates field-theory tasks into lattice discretizations, qubit mappings, circuits, and checks against exact diagonalization and tensor networks. Demonstrations use small NJL, Schwinger, and Z2 gauge-theory systems, with selected IBM hardware runs.</p>
+<p><strong>Why caution:</strong> The validation design is responsible and hardware runs are explicitly treated as device tests. Still, the systems are small enough for classical solvers, and there is no evidence that the agentic layer improves accuracy, scaling, or expert effort. The broad title runs ahead of the demonstrated regime.</p>
+<div class="tags"><span>2610.21942</span><span>AI agents</span><span>quantum simulation</span><span>small benchmarks</span></div></article></section>
+</main><script src="../assets/filter.js"></script></body></html>
