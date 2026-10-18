@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-18",
+  "path": "reports/2026-10-18.html",
+  "summary": "No weekend arXiv batch was posted. From the latest Friday announcement, the strongest uncovered heavy-ion result is a four-dimensional lattice-informed QCD equation of state with a constructed critical surface; a three-fluid friction study provides a useful but non-equilibrium effective-viscosity diagnostic. PTagent offers an auditable LLM-to-deterministic-backend workflow, while Jianmu-Q warrants caution because its broad framing rests on small benchmarks.",
+  "keywords": ["4D QCD equation of state","critical surface","baryon stopping","effective shear viscosity","three-fluid hydrodynamics","LLM agents","finite-temperature models","quantum simulation"],
+  "arxiv_ids": ["2610.20806","2610.20872","2610.21118","2610.21942"],
+  "total_paper_count": 3,
+  "represented_categories": ["Theory","AI/ML use","Caution"],
+  "strongest_paper": "2610.20806",
+  "strongest_paper_summary": "A four-dimensional lattice-informed QCD equation of state with a critical surface, tempered by unquantified high-density truncation uncertainty.",
+  "caution_count": 1,
+  "papers": [
+    {"arxiv_id":"2610.20806","title":"Four-dimensional QCD equation of state with a critical surface from contours of constant entropy density","short_authors":"T. Gyure et al. (7 authors)","total_author_count":7,"arxiv_url":"https://arxiv.org/abs/2610.20806","category":"Theory","abstract":"A lattice-informed equation of state in (T, muB, muQ, muS) is constructed through constant-entropy-density contour extrapolations, yielding a critical surface and explicit heavy-ion observables.","tags":["QCD equation of state","critical surface","conserved charges","RHIC-BES"],"assessment":"strong"},
+    {"arxiv_id":"2610.20872","title":"Effective shear viscosity from the friction term in relativistic multi-fluid hydrodynamics","short_authors":"C. Spieles and M. Bleicher (2 authors)","total_author_count":2,"arxiv_url":"https://arxiv.org/abs/2610.20872","category":"Theory","abstract":"A three-fluid model maps friction-induced stress anisotropy onto an effective eta/s over BES/FAIR energies, with cross-section and grid-sensitivity tests.","tags":["three-fluid hydrodynamics","effective viscosity","baryon stopping","FAIR"],"assessment":"mixed"},
+    {"arxiv_id":"2610.21118","title":"PTagent: An LLM-assisted tool for finite-temperature model construction in cosmological phase transitions","short_authors":"L. Wu et al. (4 authors)","total_author_count":4,"arxiv_url":"https://arxiv.org/abs/2610.21118","category":"AI/ML use","abstract":"An LLM agent assembles an auditable model specification while deterministic backends generate and validate numerical potentials after human approval.","tags":["LLM agents","finite-temperature field theory","provenance","deterministic validation"],"assessment":"strong"}
+  ],
+  "cautions": [
+    {"arxiv_id":"2610.21942","title":"Jianmu-Q: Bridging Quantum Field Theory and Quantum Hardware with AI Agents","short_authors":"X. Wang et al. (7 authors)","total_author_count":7,"arxiv_url":"https://arxiv.org/abs/2610.21942","category":"Caution","abstract":"A multi-agent workflow builds quantum-simulation pipelines for three small field-theory benchmarks and validates them against classical solvers, with selected hardware tests.","tags":["AI agents","quantum simulation","QFT","small benchmarks"],"assessment":"caution"}
+  ]
+}
