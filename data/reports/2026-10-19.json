@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-19",
+  "path": "reports/2026-10-19.html",
+  "summary": "Soft-hadron energy correlators and a practical v0(pT) acceptance correction lead the heavy-ion selection. CEE proton-cumulant feasibility and the NA61/SHINE charged-to-neutral kaon anomaly are experimentally important but presently simulation- or uncertainty-limited. Two physics-informed statistical methods offer credible HEP transfer value: angular-basis anomaly detection and Maxwell-constrained magnetic-field reconstruction.",
+  "professional_summary": "The day is centered on flow/nonflow discrimination, acceptance-controlled radial-flow measurements, high-baryon-density fluctuation readiness, kaon isospin systematics, stochastic-hydrodynamic regularization, interpretable anomaly detection, and physics-constrained detector field mapping.",
+  "keywords": [
+    "soft energy correlators",
+    "flow versus nonflow",
+    "v0 acceptance correction",
+    "proton cumulants",
+    "kaon isospin anomaly",
+    "stochastic hydrodynamics",
+    "angular anomaly detection",
+    "physics-informed field mapping"
+  ],
+  "arxiv_ids": [
+    "2610.22477",
+    "2610.23442",
+    "2610.23427",
+    "2610.23460",
+    "2610.23498",
+    "2610.23667",
+    "2610.23691",
+    "2610.22504"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Heavy-ion theory",
+    "Heavy-ion experiment",
+    "Heavy-ion phenomenology",
+    "AI/ML use cases in physics",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2610.22477 introduces soft energy-correlator harmonics with a well-motivated separation of collective flow from connected nonflow correlations across p+p, O+O, and Pb+Pb.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Exploring QCD Matter through Energy Correlators of Soft Hadrons",
+      "short_authors": [
+        "Yiyang Peng",
+        "João Barata",
+        "Andrey V. Sadofyev",
+        "Huichao Song"
+      ],
+      "total_author_count": 4,
+      "arxiv_id": "2610.22477",
+      "arxiv_url": "https://arxiv.org/abs/2610.22477",
+      "category": "Heavy-ion theory",
+      "abstract": "We propose energy-energy correlators (EECs) of soft hadrons and their azimuthal harmonics as new soft observables to probe the collective flow and correlations beyond flow for large and small systems created in high energy nuclear collisions. We separate the soft EEC into a disconnected contribution determined by the mean energy flow and a connected contribution encoding correlations beyond it. Viscous hydrodynamic simulations demonstrate that the soft EEC of a fluid system is governed by the disconnected contribution, while its elliptic and triangular harmonics respond to the initial geometry and shear viscosity as traditional flow harmonics do. Comparisons between iEBE-VISHNU and PYTHIA for p+p, O+O, and Pb+Pb collisions show that the disconnected contribution dominates at large angles in all systems, whereas connected correlations beyond the mean energy flow grow toward small angles and small systems, most strongly for the harmonics.",
+      "summary": "Introduces soft-hadron energy-energy correlators and their azimuthal harmonics, decomposing them into mean-flow and connected-correlation pieces. VISH2+1/iEBE-VISHNU and PYTHIA comparisons show a clean system-size and angular-scale separation between collective flow and nonflow.",
+      "why_it_matters": "This creates an experimentally measurable bridge between field-theoretic energy-flow observables and the small-system collectivity problem, while retaining sensitivity to initial geometry and shear viscosity.",
+      "assessment": "Strong. The observable is analytically well motivated and tested across smooth and fluctuating hydrodynamics, a hybrid model, and PYTHIA. The main limitation is that discrimination is still model-level; detector effects and data closure tests remain to be demonstrated.",
+      "tags": [
+        "soft energy correlators",
+        "small-system collectivity",
+        "flow vs nonflow",
+        "viscous hydrodynamics"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Regularization of stochastic fluid dynamics and non-perturbative renormalization of the shear viscosity of incompressible fluids",
+      "short_authors": [
+        "Mattis Harhoff",
+        "Cedric Riedel",
+        "Johannes Roth",
+        "Sören Schlichting"
+      ],
+      "total_author_count": 4,
+      "arxiv_id": "2610.23442",
+      "arxiv_url": "https://arxiv.org/abs/2610.23442",
+      "category": "Heavy-ion theory",
+      "abstract": "We propose a regularization of stochastic fluid dynamics that preserves all relevant symmetries. By considering an incompressible fluid, we demonstrate explicitly that the regularized theory is UV finite, and therefore admits a continuum limit. The regularized theory is amenable both to direct numerical simulations of the lattice discretized theory and to functional methods in the continuum. We use it for renormalization-group-improved perturbative calculations of shear-viscosity renormalization in two and three spatial dimensions and compare with direct lattice simulations.",
+      "summary": "Builds a symmetry-preserving UV-finite regulator for stochastic hydrodynamics and compares renormalization-group-improved viscosity calculations with direct lattice simulations.",
+      "why_it_matters": "Hydrodynamic fluctuations and transport-coefficient renormalization are foundational issues for precision QGP modeling; a regulator compatible with both continuum functional methods and lattice simulation is a useful technical advance.",
+      "assessment": "Strong methodology, but indirect heavy-ion relevance today. The explicit validation is for incompressible fluids, so extension to relativistic, expanding QCD matter is essential before phenomenological impact can be claimed.",
+      "tags": [
+        "stochastic hydrodynamics",
+        "shear viscosity",
+        "renormalization group",
+        "lattice simulation"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Effects of kinematic cuts on v0(pT)",
+      "short_authors": [
+        "Tribhuban Parida",
+        "Rupam Samanta",
+        "Jean-Yves Ollitrault"
+      ],
+      "total_author_count": 3,
+      "arxiv_id": "2610.23427",
+      "arxiv_url": "https://arxiv.org/abs/2610.23427",
+      "category": "Heavy-ion phenomenology",
+      "abstract": "We show that the analysis of v0(pT) is biased when low-pT particles are not detected. The low-pT threshold shifts v0(pT) by a constant negative value, which depends on the threshold. We evaluate the shift using hydrodynamic simulations. Correcting for this bias significantly improves agreement between ALICE and ATLAS results for v0(pT) in Pb+Pb collisions.",
+      "summary": "Shows that a low-pT acceptance threshold induces an approximately constant negative offset in the radial-flow harmonic v0(pT), and derives a hydrodynamic correction that improves ALICE–ATLAS consistency.",
+      "why_it_matters": "This is a compact, directly actionable analysis correction for cross-experiment comparison of an emerging observable.",
+      "assessment": "Strong and practical. The logic is transparent and addresses a real discrepancy, although the correction inherits some model dependence from the hydrodynamic estimate and should be propagated through full experimental systematics.",
+      "tags": [
+        "radial flow",
+        "v0(pT)",
+        "acceptance bias",
+        "ALICE and ATLAS"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Proton-Number Fluctuations in 238U+238U Collisions at sqrt(sNN)=2.1 GeV with the CEE Fast Simulation",
+      "short_authors": [
+        "Shuaike Lv",
+        "Fan Si",
+        "Xionghong He",
+        "Xu Sun",
+        "Yige Huang",
+        "et al."
+      ],
+      "total_author_count": 9,
+      "arxiv_id": "2610.23460",
+      "arxiv_url": "https://arxiv.org/abs/2610.23460",
+      "category": "Heavy-ion experiment",
+      "abstract": "The CEE experiment at HIRFL offers an opportunity to map the high-baryon-density QCD phase diagram. Uranium-uranium collisions at 2.1 GeV are generated with JAM2 and processed through a CEE fast simulation including detector response, centrality determination, and particle identification. Proton-number cumulants through fourth order are compared with generator truth. Track-by-track efficiency and TPC azimuthal-gap corrections recover generator-level results within current statistical uncertainties, while acceptance compensation carries a substantial statistical cost.",
+      "summary": "A realistic fast-simulation feasibility study for proton cumulants through fourth order at CEE, including reconstruction efficiency, acceptance gaps, centrality, and PID.",
+      "why_it_matters": "It quantifies the data volume and correction burden for fluctuation measurements in a high-baryon-density regime that is otherwise sparsely covered.",
+      "assessment": "Useful and credible preparation work, but mixed as physics evidence: all conclusions are simulation-based and depend on JAM2 plus a fast detector model. Closure under alternative generators and full simulation will be decisive.",
+      "tags": [
+        "proton cumulants",
+        "CEE",
+        "high baryon density",
+        "efficiency correction"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Unexpectedly large violation of isospin symmetry in nucleus-nucleus collisions at CERN SPS energies",
+      "short_authors": [
+        "Andrzej Rybicki for the NA61/SHINE Collaboration"
+      ],
+      "total_author_count": null,
+      "arxiv_id": "2610.23498",
+      "arxiv_url": "https://arxiv.org/abs/2610.23498",
+      "category": "Heavy-ion experiment",
+      "abstract": "NA61/SHINE reports an excess of inclusive charged over neutral kaon production in 0–10% central Ar+Sc collisions at sqrt(sNN)=8.8 and 11.9 GeV that is not explained by mechanisms in present models. Comparisons to other experiments suggest a similar excess, with sizeable uncertainties, over 2.6–200 GeV; LHC results remain consistent with unity but are not precise. A similar discrepancy appears in minimum-bias pi−+C reactions.",
+      "summary": "Highlights a charged-to-neutral kaon-yield excess in central Ar+Sc collisions and compiles suggestive evidence across lower-energy systems.",
+      "why_it_matters": "If confirmed with controlled correlated uncertainties, the effect would challenge standard assumptions about isospin symmetry in hadron production and influence yield-based phenomenology.",
+      "assessment": "Important anomaly, but evidence remains mixed. This is a workshop proceeding rather than a definitive measurement paper; the cross-experiment combination contains sizeable and heterogeneous uncertainties, and the paper itself gives a broad significance range and calls for independent precision checks.",
+      "tags": [
+        "kaon yields",
+        "isospin symmetry",
+        "NA61/SHINE",
+        "SPS energies"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Equiprobability Anomaly Detector Using Angular Distributions",
+      "short_authors": [
+        "Alex Whitten",
+        "John Cicero",
+        "Tae Min Hong"
+      ],
+      "total_author_count": 3,
+      "arxiv_id": "2610.23667",
+      "arxiv_url": "https://arxiv.org/abs/2610.23667",
+      "category": "AI/ML use cases in physics",
+      "abstract": "The angular distribution of semileptonic top-quark pairs is expanded in Wigner D functions, with coefficients obtained by orthogonal-series density estimation. Equiprobable surfaces of the estimated top-pair density define bins in which non-top events concentrate at low density. Separation is quantified using the Kullback–Leibler divergence. Parton-level performance is comparable to normalizing flows, but reconstruction-level performance is limited by jet assignments.",
+      "summary": "A physics-structured density-estimation anomaly detector built from angular bases and equiprobable bins rather than a black-box neural density model.",
+      "transfer_value": "Credible transfer to heavy-ion analyses that use angular correlations, event-plane structure, or multidimensional reference distributions. Its explicit basis and density contours could make validation and systematic stress tests easier than for opaque generative models.",
+      "assessment": "Promising and interpretable, but mixed overall. The normalizing-flow comparison at parton level is encouraging; the marked reconstruction degradation shows that combinatorics, detector effects, and nuisance robustness remain the real test.",
+      "tags": [
+        "anomaly detection",
+        "Wigner D functions",
+        "density estimation",
+        "interpretable ML"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Reconstruction of Magnetic Fields with a Physics-Informed Neural Network",
+      "short_authors": [
+        "P. Adhikari",
+        "R. Bhattarai",
+        "J. Brewington",
+        "D. Buskirk",
+        "F. B. Hills",
+        "et al."
+      ],
+      "total_author_count": 12,
+      "arxiv_id": "2610.23691",
+      "arxiv_url": "https://arxiv.org/abs/2610.23691",
+      "category": "AI/ML use cases in physics",
+      "abstract": "A physics-informed neural network reconstructs three-dimensional magnetic fields and gradients from discrete measurement points while enforcing the source-free Maxwell constraints div B=0 and curl B=0. The method is applied to two distinct field profiles and benchmarked against spherical-harmonic and cubic-spline reconstructions; the associated datasets are public.",
+      "summary": "Uses Maxwell-constrained PINNs to interpolate three-dimensional magnetic fields and gradients from sparse measurements, with conventional interpolation benchmarks and public data.",
+      "transfer_value": "Directly relevant to detector field mapping and systematic-control workflows in HEP and nuclear experiments, particularly when sensor placement is sparse or regions are inaccessible.",
+      "assessment": "Solid transferable instrumentation work. Physics constraints, conventional benchmarks, and released data are strengths. The abstract and demonstrations do not yet establish superiority under realistic sensor noise, calibration drift, or out-of-domain geometry, so operational advantage remains to be shown.",
+      "tags": [
+        "physics-informed neural network",
+        "magnetic-field mapping",
+        "Maxwell constraints",
+        "detector systematics"
+      ],
+      "assessment_label": "strong"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "A comparative study of variational quantum classifiers and classical machine learning for tW–ttbar discrimination at the LHC",
+      "short_authors": [
+        "Rohan Hindocha",
+        "Priyanka"
+      ],
+      "total_author_count": 2,
+      "arxiv_id": "2610.22504",
+      "arxiv_url": "https://arxiv.org/abs/2610.22504",
+      "category": "Caution — quantum machine learning",
+      "abstract": "A variational quantum classifier is compared with boosted decision trees and a multilayer perceptron for simulated tW versus ttbar discrimination using CMS Open Data-derived samples across dilepton, boosted-hadronic, and resolved-hadronic regimes.",
+      "summary": "The VQC is benchmarked against standard classical classifiers, but all models achieve only moderate discrimination and are statistically similar.",
+      "assessment": "Worth cautioning about rather than selecting as a strong AI result. Reported AUCs are about 0.60–0.70, and the paper finds no statistically significant VQC advantage; some apparent differences are unstable or within bootstrap uncertainties. Demonstrating parity on a limited classical simulation is not evidence of quantum utility, scaling advantage, or deployment readiness.",
+      "tags": [
+        "variational quantum classifier",
+        "no quantum advantage",
+        "tW vs ttbar",
+        "benchmarking"
+      ],
+      "assessment_label": "caution"
+    }
+  ]
+}
