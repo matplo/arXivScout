@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-20",
+  "path": "reports/2026-10-20.html",
+  "summary": "Elliptic-flow response beyond linear-plus-cubic hydrodynamics and a data-trained low-latency BESIII trigger classifier are the strongest results. Local Lambda polarization and fractional heavy-quark transport are scientifically relevant but presently limited by weak trends or incomplete phenomenological validation; Bayesian calibration for MADMAX is transferable but awaits experiment-level validation.",
+  "professional_summary": "The selected papers emphasize nonlinear flow response, heavy-quark memory effects, local hyperon polarization, real-data trigger optimization, and calibration under simulator discrepancy.",
+  "keywords": [
+    "elliptic-flow fluctuations",
+    "nonlinear hydrodynamic response",
+    "heavy-quark transport",
+    "Lambda polarization",
+    "trigger ML",
+    "Bayesian calibration",
+    "LLM jet tagging"
+  ],
+  "arxiv_ids": [
+    "2610.26621",
+    "2610.26086",
+    "2610.25989",
+    "2610.26148",
+    "2610.26343",
+    "2610.24954"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Heavy-ion theory",
+    "Heavy-ion experiment",
+    "Heavy-ion phenomenology",
+    "AI/ML use in physics"
+  ],
+  "strongest_paper": "2610.26621: nonlinear elliptic-flow response beyond the linear-plus-cubic approximation; 2610.26148: experimentally trained low-latency trigger background suppression.",
+  "strongest_paper_summary": "Nonlinear v2 response and real-data FPGA-oriented trigger ML provide the day's clearest scientific and operational advances.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Fluctuations of v2 versus fluctuations of epsilon2: Beyond linear and cubic response",
+      "short_authors": "Andreas Kirchner, Mubarak Alqahtani, Jean-Yves Ollitrault",
+      "total_author_count": 3,
+      "arxiv_id": "2610.26621",
+      "url": "https://arxiv.org/abs/2610.26621",
+      "category": "Heavy-ion theory",
+      "abstract": "Elliptic flow (v2) is the most prominent signature of collective flow in heavy-ion collisions. Its event-by-event fluctuations are accurately measured in Pb+Pb collisions at the LHC. They originate from the early stages of the collision, and are usually understood in terms of linear response to the initial anisotropy epsilon2, with a small cubic correction. We reveal deviations from this scenario on the basis of extensive event-by-event hydrodynamic simulations. We analyze the hydrodynamic response order by order in the cumulant expansion of epsilon2 and v2 fluctuations. We carry out this expansion in the intrinsic frame where the magnitude and direction of the impact parameter are fixed. We find that the asymmetry of v2 fluctuations is opposite to that of epsilon2 fluctuations. We also find that the response to epsilon2 fluctuations is larger by approximately 10-20% than the response to the average geometry. This effect, which is not explained by the cubic response, increases the splitting between v2{2} and v2{4}.",
+      "tags": [
+        "elliptic flow fluctuations",
+        "hydrodynamic response",
+        "initial eccentricity",
+        "flow cumulants"
+      ],
+      "summary": "Uses extensive event-by-event hydrodynamic simulations and an intrinsic-frame cumulant expansion to test the standard mapping from initial eccentricity fluctuations to elliptic-flow fluctuations. The study finds an opposite fluctuation asymmetry for v2 and epsilon2 and a 10-20% larger response to fluctuations than to the average geometry, an effect not captured by the usual cubic response.",
+      "why_it_matters": "Precision extraction of initial-state structure and QGP response relies on understanding exactly where linear-plus-cubic response breaks down. The reported correction directly affects the v2{2}-v2{4} splitting.",
+      "assessment": "Strong. The question is sharply posed, the response is analyzed order by order, and the effect is quantified with event-by-event hydrodynamics. It is still a model-level result, so robustness across initial-condition and transport choices will determine its eventual phenomenological weight.",
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Heavy-quark thermalization in the quark-gluon plasma via a fractional Langevin equation",
+      "short_authors": "Jai Prakash, Mohammad Yousuf Jamal, Shanshan Cao, Guang-You Qin, Yifeng Sun",
+      "total_author_count": 5,
+      "arxiv_id": "2610.26086",
+      "url": "https://arxiv.org/abs/2610.26086",
+      "category": "Heavy-ion phenomenology",
+      "abstract": "The dynamics of heavy quarks in the quark-gluon plasma is commonly described within a standard Langevin equation framework. In this work, we extend the conventional framework by using a fractional Langevin equation based on the Caputo derivative of order alpha with 1 < alpha <= 2. We solve the fractional Langevin equation and derive the corresponding fractional fluctuation-dissipation theorem for heavy-quark thermalization in the quark-gluon plasma medium. We calculate the time evolution of the mean-squared momentum, mean-squared displacement, momentum distribution, energy loss, longitudinal momentum loss, transverse momentum broadening, and nuclear suppression factor. The mean-squared momentum thermalizes to the same value for all alpha at late times, and the nuclear suppression factor shows a systematic alpha dependence.",
+      "tags": [
+        "heavy-quark transport",
+        "fractional Langevin",
+        "QGP thermalization",
+        "nuclear suppression"
+      ],
+      "summary": "Extends heavy-quark transport to a Caputo fractional Langevin equation with 1 < alpha <= 2 and derives a corresponding fluctuation-dissipation relation. The calculation predicts alpha-dependent momentum evolution, energy loss, broadening, and nuclear suppression while preserving a common late-time thermal limit.",
+      "why_it_matters": "Long-memory or anomalous transport could alter how heavy-flavor observables encode QGP transport, and the derived consistency relation is a useful formal checkpoint.",
+      "assessment": "Interesting but mixed. The formal development is coherent and covers several observables, but alpha is introduced phenomenologically and the abstract presents no calibration to data, realistic evolving medium, or comparison showing that the fractional model is required over conventional alternatives.",
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Measurements of local polarization of Lambda hyperons with event shape engineering in Au+Au collisions at RHIC-STAR",
+      "short_authors": "Taiki Kondo (for the STAR Collaboration)",
+      "total_author_count": 1,
+      "arxiv_id": "2610.25989",
+      "url": "https://arxiv.org/abs/2610.25989",
+      "category": "Heavy-ion experiment",
+      "abstract": "Anisotropic flow is expected to generate local vorticities along the beam direction, which in turn lead to local polarization of produced particles. Since shear-induced and vorticity-induced contributions may have opposite signs, STAR employs event shape engineering to measure local polarization as a function of elliptic flow at fixed multiplicity. In Au+Au collisions at sqrt(sNN)=19.6 GeV, v2 shows a clear positive dependence on q2, while Pz,2 for Lambda and anti-Lambda indicates a weak positive dependence on q2 and v2. This is the first measurement to directly investigate the relation between anisotropic flow and local polarization.",
+      "tags": [
+        "Lambda polarization",
+        "event shape engineering",
+        "STAR",
+        "vorticity"
+      ],
+      "summary": "STAR uses event-shape engineering at fixed centrality to vary elliptic flow and tests the relation between v2 and the longitudinal local-polarization harmonic Pz,2 in 19.6 GeV Au+Au collisions. v2 rises clearly with q2, while Pz,2 shows only a weak positive dependence on q2 and v2.",
+      "why_it_matters": "This is the first direct experimental attempt to separate how anisotropic flow controls competing shear- and vorticity-induced polarization contributions.",
+      "assessment": "Scientifically well targeted, but currently mixed evidence. The polarization trend is weak and the arXiv item is a five-page conference proceeding, so quantitative significance, systematics, and a full collaboration publication are needed before drawing a mechanistic conclusion.",
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Low-Latency Beam-Background Suppression for the BESIII Trigger System Using Machine Learning Trained on Experimental Data",
+      "short_authors": "Hanlin Zhang, Minggang Zhao, Junhao Yin, Boping Chen, Jingzhou Zhao, Wenxuan Gong, Ke Li",
+      "total_author_count": 7,
+      "arxiv_id": "2610.26148",
+      "url": "https://arxiv.org/abs/2610.26148",
+      "category": "AI/ML use in physics",
+      "abstract": "Beam-induced backgrounds contribute to trigger and data-acquisition rates at high-luminosity electron-positron colliders. A data-driven machine-learning method for trigger-level beam-background suppression is developed using experimental BESIII data. Compact neural-network classifiers use 48 binary Level-1 trigger conditions and are evaluated against the established trigger selection at matched hadron-event efficiency. The beam-background false-positive rate is reduced by 20-60% across studied configurations and center-of-mass energies, with stable performance in random-trigger data. Hardware-oriented synthesis indicates suitability for low-latency FPGA implementation.",
+      "tags": [
+        "trigger ML",
+        "experimental data",
+        "FPGA inference",
+        "beam background"
+      ],
+      "summary": "Compact neural networks trained on experimental BESIII data classify hadron events against beam background using 48 binary Level-1 trigger conditions. At matched hadron efficiency, the reported false-positive reduction is 20-60% across configurations and energies; random-trigger tests probe stability, and hardware synthesis indicates low-latency FPGA feasibility.",
+      "why_it_matters": "The transfer path is direct for HEP and nuclear experiments: data-driven background rejection under hard latency and hardware constraints, with evaluation against the existing trigger at matched signal efficiency.",
+      "assessment": "Strong and practical. It uses real data, an operational baseline, condition-dependent testing, and hardware-oriented synthesis rather than an unconstrained offline benchmark. The remaining step is an end-to-end on-detector or realistic firmware deployment test.",
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Neural Bayesian Online Calibration with Deficient Simulators for MADMAX Dark Matter Experiment",
+      "short_authors": "Nabil Salama",
+      "total_author_count": 1,
+      "arxiv_id": "2610.26343",
+      "url": "https://arxiv.org/abs/2610.26343",
+      "category": "AI/ML use in physics",
+      "abstract": "Scientific experiments often rely on deficient simulators and hardware whose commanded settings differ from the states realized in practice. A Bayesian online calibration framework is introduced for experiments with at least one directly measurable simulator output and potentially latent quantities of scientific interest. Pre-calibration data learn state-dependent effective simulator parameters, while a normalizing flow enables amortized posterior inference from measurement histories. During calibration, uncertainties are propagated and hardware commands balance expected improvement with information gain. The framework is applied to MADMAX using measured reflectivity to calibrate a deficient disk-booster simulator and infer the unobservable axion-signal power boost factor. Experimental validation is ongoing.",
+      "tags": [
+        "Bayesian calibration",
+        "normalizing flows",
+        "simulator discrepancy",
+        "experimental control"
+      ],
+      "summary": "Combines state-dependent simulator correction, amortized posterior inference with a normalizing flow, uncertainty propagation, and acquisition that balances expected improvement with information gain. The MADMAX application calibrates a disk-booster simulator using measured reflectivity while inferring the latent axion-signal power boost.",
+      "why_it_matters": "The framework maps naturally to detector and accelerator systems where commanded settings differ from realized states and the simulator omits important hardware effects.",
+      "assessment": "Promising and transferable, but not yet strong empirical evidence: the abstract explicitly says experimental validation is ongoing. Simulation studies can establish internal consistency, not reliability under the real simulator discrepancy the method is meant to manage.",
+      "assessment_label": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Ceci n'est pas un tagger: Can a large language model flavour-tag a jet?",
+      "short_authors": "Andrea Coccaro, Andrea Milici, Lucio Derin",
+      "total_author_count": 3,
+      "arxiv_id": "2610.24954",
+      "url": "https://arxiv.org/abs/2610.24954",
+      "category": "AI/ML caution",
+      "abstract": "A large language model is asked to assign b, c, light, and tau probabilities to jets from a public ATLAS flavor-tagging sample using reconstructed constituents and no task-specific training. The model achieves non-trivial discrimination and produces natural-language rationales correlated with truth flavor, but remains below dedicated ATLAS taggers. The study releases code and frames the exercise as a probe of scientific knowledge embedded in pretrained models rather than a competitive tagger.",
+      "tags": [
+        "LLM inference",
+        "jet flavor tagging",
+        "zero shot",
+        "benchmark caution"
+      ],
+      "summary": "A zero-shot general-purpose LLM assigns flavor probabilities to 10,000 jets from a public simulated ATLAS sample and reaches AUC 0.928 for b versus light and 0.815 for b versus c, below GN2 at 0.971 and 0.913. Its rationales invoke recognizable physics cues, but inference takes hours, outputs are stochastic and coarsely quantized, and charm/tau distinctions are weak.",
+      "assessment": "Worth cautioning about because the framing invites overinterpretation. The result is reproducible and honestly discusses limitations, yet a single proprietary model/harness, possible pretraining familiarity with flavor-tagging concepts, no data-domain test, and enormous latency prevent claims of practical tagging or demonstrated causal reasoning.",
+      "assessment_label": "caution"
+    }
+  ]
+}
