@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-21",
+  "path": "reports/2026-10-21.html",
+  "summary": "The latest arXiv release is method-heavy rather than discovery-heavy. The strongest contributions are a physics-first study of information limits in W-polarization tagging, a sparse jet transformer with careful efficiency benchmarking, and a radiation-fault-recovery method with direct detector/accelerator relevance. Heavy-ion content is thinner: STAR reports a suggestive 2.5σ event-shape correlation for local Λ polarization, a thesis develops differential energy-correlator probes of anisotropic hot QCD matter, and an Ising-to-QCD mapping paper usefully exposes equation-of-state parameter dependence without constraining it.",
+  "keywords": [
+    "local Λ polarization",
+    "event-shape engineering",
+    "jet energy correlators",
+    "QCD critical mapping",
+    "sparse jet transformers",
+    "radiation-tolerant ML",
+    "few-shot polarization tagging",
+    "kinetic closure"
+  ],
+  "arxiv_ids": [
+    "2610.25989",
+    "2610.27182",
+    "2610.27748",
+    "2610.27621",
+    "2610.27106",
+    "2610.27346",
+    "2610.28383"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper_summary": "arXiv:2610.27346 is the day’s strongest ML paper because it establishes a physics information bound, compares against simple baselines, and treats a negative result as scientifically useful.",
+  "caution_count": 0,
+  "window_note": "Screened the 21 October arXiv release plus closely adjacent 19–20 October submissions/revisions that entered the current category listings; this follows arXiv release cadence rather than a strict wall-clock cutoff.",
+  "papers": [
+    {
+      "title": "Measurements of local polarization of Λ hyperons with event shape engineering in Au+Au collisions at RHIC-STAR",
+      "short_authors": "Taiki Kondo (for the STAR Collaboration)",
+      "total_author_count": null,
+      "arxiv_id": "2610.25989",
+      "url": "https://arxiv.org/abs/2610.25989",
+      "category": "Experiment",
+      "abstract": "Anisotropic flow is expected to generate local vorticities along the beam direction, which in turn lead to local polarization of produced particles. Since shear-induced and vorticity-induced contributions may oppose one another, STAR uses event-shape engineering to measure local polarization at fixed multiplicity as elliptic flow changes. In Au+Au collisions at √sNN = 19.6 GeV, v2 rises clearly with q2 while Pz,2 shows a weak positive dependence on q2 and v2.",
+      "tags": [
+        "Λ polarization",
+        "event-shape engineering",
+        "Au+Au",
+        "vorticity"
+      ],
+      "assessment": "mixed",
+      "summary": "STAR makes the first direct event-shape-engineered test of whether local Λ polarization tracks elliptic flow at fixed multiplicity. The reported positive slope is about 2.5σ, so this is evidence of a correlation, not a settled separation of shear- and vorticity-driven mechanisms.",
+      "why_it_matters": "The construction is experimentally well targeted to a long-standing ambiguity in spin hydrodynamics and directly links a polarization observable to a controlled flow selection.",
+      "critical_assessment": "Scientifically useful but not yet strong evidence: it is a five-page proceedings result, the key trend is only about 2.5σ, and the short presentation limits systematic-detail scrutiny. Follow-up with full uncertainties and model discrimination will determine its weight."
+    },
+    {
+      "title": "Jets as differential probes of hot QCD matter",
+      "short_authors": "João M. Silva",
+      "total_author_count": 1,
+      "arxiv_id": "2610.27182",
+      "url": "https://arxiv.org/abs/2610.27182",
+      "category": "Phenomenology",
+      "abstract": "This thesis develops perturbative-QCD tools for extracting hot-medium information from differential jet substructure. It treats direction-dependent momentum broadening, heavy-flavour and azimuthally differential energy correlators, quantile-based energy-loss interpretations, spin correlations between emissions, and medium response in higher-point correlators.",
+      "tags": [
+        "jet quenching",
+        "energy correlators",
+        "anisotropic QGP",
+        "BDMPS-Z"
+      ],
+      "assessment": "strong",
+      "summary": "A substantial thesis synthesis connects anisotropic broadening and spin information to experimentally legible energy-flow observables, then extends the treatment beyond a single medium-induced splitting. Its value is the coherent observable program rather than one isolated headline result.",
+      "why_it_matters": "Energy correlators and anisotropic jet substructure are promising routes to constrain microscopic medium properties while retaining perturbative control and differential information.",
+      "critical_assessment": "Strong and technically broad, though it is a thesis consolidating several studies rather than a single new validation. Experimental robustness, hadronization/background sensitivity, and end-to-end extraction of transport parameters remain the practical tests."
+    },
+    {
+      "title": "Parameter dependence of the mapping of the mean-field Ising model onto QCD in the first-order phase transition regime",
+      "short_authors": "Xue Pan; Yuepeng Li",
+      "total_author_count": 2,
+      "arxiv_id": "2610.27748",
+      "url": "https://arxiv.org/abs/2610.27748",
+      "category": "Theory",
+      "abstract": "The authors map a mean-field Ising equation of state onto the QCD T–μB plane and vary the scale parameters w and ρ for conventional and small-quark-mass mapping schemes. Increasing either parameter narrows metastable and unstable regions, while the pressure and density response depends on the mapping geometry.",
+      "tags": [
+        "QCD critical point",
+        "Ising mapping",
+        "spinodal region",
+        "equation of state"
+      ],
+      "assessment": "mixed",
+      "summary": "The paper cleanly demonstrates how arbitrary mapping scales reshape the coexistence/spinodal geometry and thermodynamic contributions relevant to low-energy heavy-ion simulations.",
+      "why_it_matters": "It quantifies a real source of model dependence in critical-point equations of state, useful when interpreting hydrodynamic calculations near a putative first-order region.",
+      "critical_assessment": "A sensitivity study, not a constraint: it fixes the critical point at μBC = 630 MeV, uses mean-field critical behavior, explores selected mapping angles, and does not propagate the variations through dynamical heavy-ion observables. Useful diagnostic work, but modest scientific reach."
+    },
+    {
+      "title": "A Radiation-Hardened, Fault-Aware Quantized Neural Network That Self-Heals",
+      "short_authors": "Peter Xiangyuan Ma; Joshua S. Bloom",
+      "total_author_count": 2,
+      "arxiv_id": "2610.27621",
+      "url": "https://arxiv.org/abs/2610.27621",
+      "category": "AI/ML use",
+      "abstract": "Projection Healing aligns quantized-network weights and activations with a low-rank subspace during fault-aware training, then reconstructs flagged corrupted coordinates at runtime without persistent model replicas. Across six regression benchmarks it roughly doubles the acceptable scrub interval in the stated error regimes and improves over SECDED when multi-bit upsets dominate.",
+      "tags": [
+        "fault-aware learning",
+        "quantized networks",
+        "radiation tolerance",
+        "edge inference"
+      ],
+      "assessment": "strong",
+      "summary": "A concrete hardware-facing ML method for maintaining quantized inference under radiation-induced bit flips, with explicit comparisons to error-correction baselines and unusually clear engineering caveats.",
+      "why_it_matters": "Directly transferable to trigger, detector-control, accelerator, and radiation-exposed edge inference where model memory can accumulate corruption and redundancy is expensive.",
+      "critical_assessment": "Strong methodology for the stated regime, but not yet a deployment guarantee: the tests are simulated, runtime arithmetic is roughly 2–3× during healing, clean RMSE pays a median 0.3% and mean ~2% tax with a much worse outlier, and benefit is limited when single-bit upsets dominate."
+    },
+    {
+      "title": "This is SParTA: A modular, efficient and scalable transformer architecture for jet-tagging",
+      "short_authors": "Rajneil Baruah; Subhadeep Mondal; Sunando Kumar Patra; Satyajit Roy",
+      "total_author_count": 4,
+      "arxiv_id": "2610.27106",
+      "url": "https://arxiv.org/abs/2610.27106",
+      "category": "AI/ML use",
+      "abstract": "SParTA applies quadratic pairwise attention only to the hardest N jet constituents and aggregates softer constituents with linear cross-attention. A 300k-parameter model matches the quark–gluon AUC of a 2.14M-parameter Particle Transformer and improves IAFormer background rejection at a 30% signal-efficiency working point.",
+      "tags": [
+        "jet tagging",
+        "sparse attention",
+        "particle transformer",
+        "efficiency"
+      ],
+      "assessment": "strong",
+      "summary": "The hard-core/soft-radiation factorization is physically motivated and substantially reduces parameter count while preserving competitive jet-tagging performance.",
+      "why_it_matters": "The architecture is immediately relevant to collider classification and potentially to high-multiplicity heavy-ion jets, where constituent count and inference cost are acute.",
+      "critical_assessment": "Benchmarking is careful, including ten trainings and uncertainty discussion. Still, it is not universally best: PELICAN wins the quoted quark–gluon metrics, several models beat it on top tagging, and SParTA receives 53 global features unavailable to most comparators, so some headline gains are not an input-matched architectural test."
+    },
+    {
+      "title": "Pretraining on boosted boson decays for polarization tagging of hadronic W bosons",
+      "short_authors": "Saptaparna Bhattacharya",
+      "total_author_count": 1,
+      "arxiv_id": "2610.27346",
+      "url": "https://arxiv.org/abs/2610.27346",
+      "category": "AI/ML use",
+      "abstract": "The study asks where boosted-W polarization information resides and derives an acceptance-imposed upper bound from the decay angle. A point-edge transformer pretrained on 10^7 unpolarized jets improves few-label learning, but generic pretraining and a boosted decision tree do similarly; compact distilled students match the teacher, while event-level production kinematics add more information than jet substructure alone.",
+      "tags": [
+        "few-shot pretraining",
+        "W polarization",
+        "knowledge distillation",
+        "information limits"
+      ],
+      "assessment": "strong",
+      "summary": "A strong example of physics-first ML evaluation: it identifies the information ceiling, tests pretraining against simple baselines, and reports the negative result that specialized pretraining is not uniquely advantageous.",
+      "why_it_matters": "The workflow transfers well to HEP and nuclear analyses with scarce labels: establish sufficient observables and acceptance limits before escalating model complexity, then compress the final model.",
+      "critical_assessment": "Convincing and unusually honest. The main limitation is domain scope: several event-level conclusions are at matrix-element level and still need detector/systematic validation in a realistic measurement chain."
+    },
+    {
+      "title": "Discovering Hidden Predictive States in Kinetic Transport",
+      "short_authors": "Pengfei Zhu",
+      "total_author_count": 1,
+      "arxiv_id": "2610.28383",
+      "url": "https://arxiv.org/abs/2610.28383",
+      "category": "AI/ML use",
+      "abstract": "The paper casts kinetic state reduction as predictive sufficiency and learns additional latent variables when identical conventional moments lead to different future evolution. Exact and synthetic Boltzmann systems show that learned subspaces can expose predictive directions missed by low-order moments, with deletion and response tests used as controls.",
+      "tags": [
+        "kinetic transport",
+        "state reduction",
+        "predictive closure",
+        "Boltzmann equation"
+      ],
+      "assessment": "mixed",
+      "summary": "A thoughtful framework for diagnosing failed hydrodynamic or transport closure and identifying which unresolved kinetic combinations must survive coarse-graining.",
+      "why_it_matters": "The transfer path to heavy-ion theory is credible: it could test whether reduced pre-equilibrium, kinetic, or hydrodynamic state descriptions omit variables needed for future observables.",
+      "critical_assessment": "Promising but not demonstrated on relativistic QCD transport. The strongest tests are controlled synthetic systems, an observability baseline also performs strongly, and the inferred dimension depends on preparations, observables, stencil, and accuracy rather than representing a unique physical state count."
+    }
+  ],
+  "cautions": [],
+  "scope_note": "The 140-author Blueprint for an AI-Enabled Particle Theory Community (arXiv:2610.28505) is relevant strategy material but is not ranked here as a scientific result because it presents recommendations rather than validated methodology or physics findings."
+}
