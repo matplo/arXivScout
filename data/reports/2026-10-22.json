@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-22",
+  "path": "reports/2026-10-22.html",
+  "summary": "Light-ion femtoscopy and efficient collider ML provide the strongest contributions. Other relevant work develops a charm-response scaling benchmark and a photon-TMD inversion for ultraperipheral collisions, both with important evidential limitations. A baryon-stopping transport extraction is flagged for overstrong interpretation.",
+  "professional_summary": "The selected papers emphasize nuclear-geometry sensitivity in azimuthal femtoscopy, empirical charm-versus-light anisotropy response, conditional inversion of coherent photon distributions, and resource-efficient Lorentz-aware collider learning.",
+  "keywords": [
+    "light-ion femtoscopy",
+    "nuclear geometry",
+    "heavy-quark response",
+    "photon TMDs",
+    "knowledge distillation",
+    "Lorentz equivariance",
+    "baryon stopping"
+  ],
+  "arxiv_ids": [
+    "2610.29760",
+    "2610.30085",
+    "2610.29400",
+    "2610.29439",
+    "2610.29678",
+    "2610.29499"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2610.29760: azimuthal femtoscopy as a high-sensitivity discriminator of ab initio O-16 and Ne-20 geometry; 2610.29439: systematic distillation of efficient Lorentz-aware jet taggers.",
+  "strongest_paper_summary": "The femtoscopy study offers the clearest new heavy-ion observable, while the jet-distillation study has the strongest validation and immediate computational relevance.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Nuclear Geometry-Driven Femtoscopic Correlations in Light-Ion Collisions",
+      "short_authors": "Dániel Kincses, Bithika Karmakar, Iurii Karpenko, Boris Tomášik",
+      "total_author_count": 4,
+      "arxiv_id": "2610.29760",
+      "url": "https://arxiv.org/abs/2610.29760",
+      "category": "Theory",
+      "abstract": "A hybrid calculation combining ab initio oxygen and neon configurations, TRENTo initial conditions, viscous hydrodynamics, and UrQMD predicts substantially enhanced azimuthal femtoscopic eccentricity ratios for deformed nuclei. The Ne+Ne/O+O freeze-out-eccentricity ratio reaches about 1.5–1.8 in central events and remains stable when pre-equilibrium free streaming is removed.",
+      "tags": [
+        "light-ion femtoscopy",
+        "Ne+Ne/O+O",
+        "ab initio nuclear geometry",
+        "hybrid hydrodynamics"
+      ],
+      "assessment": "strong",
+      "critical_assessment": "Strong. The calculation is high-statistics, uses two independent ab initio configuration sets and a spherical control, and tests one important model variation. Remaining risk is model dependence beyond the tested free-streaming switch, including bulk-parameter calibration and final-state interaction treatment."
+    },
+    {
+      "title": "Heavy-Quark Dynamics from D0-Meson Anisotropy-Response Scaling Violations",
+      "short_authors": "Roy A. Lacey",
+      "total_author_count": 1,
+      "arxiv_id": "2610.30085",
+      "url": "https://arxiv.org/abs/2610.30085",
+      "category": "Experiment",
+      "abstract": "Published D0-meson v2 and v3 measurements in Pb+Pb, p+Pb, and Au+Au are transformed relative to a light-meson response reference. A charm-specific attenuation factor is introduced to restore the common scaling, with reported system- and centrality-dependent values.",
+      "tags": [
+        "D0 anisotropy",
+        "heavy-quark transport",
+        "v2 and v3",
+        "response scaling"
+      ],
+      "assessment": "mixed",
+      "critical_assessment": "Mixed. The cross-system synthesis is interesting, but the paper does not present a conventional global fit, goodness-of-fit measure, or transparent propagated uncertainty on the extracted scaling parameters; some light- and charm-hadron inputs also use nonidentical centrality intervals. Treat the numerical k_c values as an empirical parametrization, not a transport-coefficient determination."
+    },
+    {
+      "title": "Direct Access to Nuclear Photon TMDs with In Situ Probes in Ultraperipheral Heavy-Ion Collisions",
+      "short_authors": "Cong Li",
+      "total_author_count": 1,
+      "arxiv_id": "2610.29400",
+      "url": "https://arxiv.org/abs/2610.29400",
+      "category": "Phenomenology",
+      "abstract": "The paper proposes extracting a nuclear photon occupation number from a ratio of radiative lepton-pair cross sections in ultraperipheral collisions. Under scalar statistical factorization, the occupation factor multiplies a complete tree-level reference, while finite bins and detector migration turn the inversion into a weighted average.",
+      "tags": [
+        "ultraperipheral collisions",
+        "photon TMDs",
+        "radiative lepton pairs",
+        "Bose enhancement"
+      ],
+      "assessment": "mixed",
+      "critical_assessment": "Interesting but not yet demonstrated. The extraction depends on scalar factorization, neglects finite-size Coulomb corrections at the present order, and supplies no realistic rate or detector study. The author states these limitations; experimental usefulness remains an open feasibility question."
+    },
+    {
+      "title": "How Far Can Foundation Models Be Distilled for Efficient Jet Tagging?",
+      "short_authors": "Jay Agarwal, Siddharth Khare, Dhruv Kumar",
+      "total_author_count": 3,
+      "arxiv_id": "2610.29439",
+      "url": "https://arxiv.org/abs/2610.29439",
+      "category": "AI/ML use",
+      "abstract": "Six teachers spanning architectures, symmetries, and pretraining are distilled into five compact students on a top-tagging benchmark. A 20k-parameter L-GATr-slim student exceeds published from-scratch taggers in the authors’ comparison, while a 2k-parameter model matches ParT; code, weights, and hardware-oriented cost measurements are released.",
+      "tags": [
+        "knowledge distillation",
+        "jet tagging",
+        "Lorentz equivariance",
+        "inference efficiency"
+      ],
+      "assessment": "strong",
+      "critical_assessment": "Strong within its benchmark. The controlled teacher–student matrix, three-run uncertainties, inference measurements, and released artifacts are real strengths. External validity is still limited by a single simulated binary top-tagging dataset and one distillation setup; detector/domain-shift robustness is not established."
+    },
+    {
+      "title": "Lorentz-Equivariant Geometric Algebra Transformers for Top-Quark Event Reconstruction",
+      "short_authors": "E. Abasov, L. Dudko, A. Markina, M. Perfilov, P. Volkov, G. Vorotnikov, A. Zaborenko",
+      "total_author_count": 7,
+      "arxiv_id": "2610.29678",
+      "url": "https://arxiv.org/abs/2610.29678",
+      "category": "AI/ML use",
+      "abstract": "Lorentz-equivariant geometric-algebra transformers are evaluated on tW/ttbar discrimination, FCNC classification, and universal event reconstruction. They outperform or match transformer baselines on parts of the program, but a handcrafted high-level MLP remains best for the FCNC task.",
+      "tags": [
+        "Lorentz equivariance",
+        "geometric algebra",
+        "top reconstruction",
+        "multitask learning"
+      ],
+      "assessment": "mixed",
+      "critical_assessment": "Promising but mixed. Breadth and released implementation are positives, and the authors report three-seed variation for the FCNC comparison. Gains are task-dependent, some comparisons use different information content, and the study does not yet establish robustness to detector mismodeling or real data."
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Multi-Energy Analysis of Baryon Stopping: Extracting Non-Equilibrium Dynamics via Stochastic Rapidity Diffusion",
+      "short_authors": "Dhananjaya Thakur",
+      "total_author_count": 1,
+      "arxiv_id": "2610.29499",
+      "url": "https://arxiv.org/abs/2610.29499",
+      "category": "Caution",
+      "abstract": "A blast-wave interpolation of net-proton spectra is combined with an Ornstein–Uhlenbeck-style rapidity diffusion model to infer friction, diffusion, relaxation, and a longitudinal Reynolds number over a wide beam-energy range. The paper reports a roughly 163-fold fall in that Reynolds number.",
+      "tags": [
+        "baryon stopping",
+        "rapidity diffusion",
+        "Fokker–Planck",
+        "high-muB"
+      ],
+      "assessment": "caution",
+      "critical_assessment": "Caution. Several downstream uncertainties are assigned as fixed percentages, the momentum-diffusion input carries an assumed 20% error, and the derived Reynolds number depends on the chosen blast-wave and linear-drift construction. Claims that a diffusion-dominated regime is 'completely reached' and that higher-energy data would only inflate uncertainty are substantially stronger than the demonstrated evidence."
+    }
+  ]
+}
