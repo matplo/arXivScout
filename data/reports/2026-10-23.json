@@ -1,0 +1,211 @@
+{
+  "date": "2026-10-23",
+  "path": "reports/2026-10-23.html",
+  "summary": "The 23 October selection emphasizes low-level TPC foundation models, physics-structured learning for neutrino-nucleus cross sections, nonconformal event-by-event kinetic theory, charm hadronization inside jets, and calibrated simulation-based inference. The strongest heavy-ion AI result is simulation-only; the kinetic-theory and spin-hydrodynamic papers are substantive but not yet precision-calibrated.",
+  "keywords": [
+    "TPC foundation models",
+    "low-pT tracking",
+    "neutrino-nucleus cross sections",
+    "physics-informed ML",
+    "nonconformal kinetic theory",
+    "OO collisions",
+    "charm hadronization",
+    "Lambda_c/D0",
+    "spin hydrodynamics",
+    "sequential SBI",
+    "Stein anomaly detection"
+  ],
+  "arxiv_ids": [
+    "2610.31180",
+    "2610.30338",
+    "2610.31611",
+    "2610.31316",
+    "2610.31408",
+    "2610.30245",
+    "2610.31370",
+    "2610.30198"
+  ],
+  "total_paper_count": 8,
+  "categories": [
+    "Heavy-ion / AI/ML use",
+    "AI/ML use",
+    "Heavy-ion / Theory",
+    "Heavy-ion / Phenomenology",
+    "Caution"
+  ],
+  "strongest_paper": "Track finding and particle identification performance with particle physics foundation models (2610.31180), closely followed methodologically by Machine Learning Neutrino-Nucleus Cross Sections II (2610.30338).",
+  "top_takeaway": "The day's most convincing results use physics structure and demanding task-specific baselines; the main unresolved issue across the leading papers is external validity beyond controlled simulation.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Track finding and particle identification performance with particle physics foundation models",
+      "authors": [
+        "Shuhang Li",
+        "Haiwang Yu",
+        "Gabor Galgoczi"
+      ],
+      "author_display": "Shuhang Li, Haiwang Yu, Gabor Galgoczi, et al. (11 authors)",
+      "total_author_count": 11,
+      "arxiv_id": "2610.31180",
+      "url": "https://arxiv.org/abs/2610.31180",
+      "category": "Heavy-ion / AI/ML use",
+      "abstract": "Modern high energy nuclear and particle physics experiments produce large amounts of sparse data that must be reduced significantly in size before performing physics analysis. Recently, there has been an effort to evaluate Foundation Models as a potential tool for performing data analysis. These models have been shown to learn features in high dimensional datasets based on the multi-modal data they are trained on. To show their effectiveness at performing complex pattern recognition tasks, such as reconstructing charged particles in a magnetic field, we evaluated the performance of a Foundation Model based reconstruction on several downstream tasks with a dataset composed of spacepoints in a Time Projection Chamber. We show that the performance of the Foundation Model based data analysis significantly improves upon that of traditional methods, and furthermore can be adapted to learn additional tasks that are not necessarily related to the initial training objective.",
+      "tags": [
+        "TPC reconstruction",
+        "foundation models",
+        "low-pT tracking",
+        "particle identification"
+      ],
+      "assessment": "strong",
+      "summary": "A frozen pretrained backbone is tested on simulated sPHENIX TPC spacepoints for track finding and particle identification. It substantially improves low-pT and looping-track efficiency over a cellular-automaton seeder while maintaining high purity; a downstream PID adapter is comparable to conventional dE/dx Gaussian-process regression."
+    },
+    {
+      "title": "Machine Learning Neutrino-Nucleus Cross Sections II: More Leptons",
+      "authors": [
+        "Daniel C. Hackett",
+        "Joshua Isaacson",
+        "Shirley Weishi Li"
+      ],
+      "author_display": "Daniel C. Hackett, Joshua Isaacson, Shirley Weishi Li, Karla Tame-Narvaez, Michael L. Wagman",
+      "total_author_count": 5,
+      "arxiv_id": "2610.30338",
+      "url": "https://arxiv.org/abs/2610.30338",
+      "category": "AI/ML use",
+      "abstract": "Neutrino-nucleus cross sections are essential inputs for long-baseline neutrino oscillation experiments, yet remain challenging to model with high precision. Recent work demonstrated that fully black-box data-driven cross-section models cannot accurately generalize between near- and far-detector fluxes, but imposing Standard-Model symmetries via structure-function parameterizations provides a well-posed learning problem in a simplified DUNE-inspired muon-neutrino disappearance analysis. Here, we extend this framework to multiple lepton flavors and both neutrino and antineutrino beam modes, incorporating the electron appearance channel and enabling a simultaneous determination of sin²θ23, Δm²31, and the CP-violating phase δCP. We find that the learned cross section model recovers the injected oscillation parameters without significant bias, with constraints comparable to those obtained using the exact underlying cross section. Flux uncertainties have more significant effects in the multi-channel case, and incorporating flux nuisance parameters into the learning problem is required for accurate results. Our results demonstrate that this data-driven approach can be extended to the multi-channel measurements needed for long-baseline neutrino oscillation analyses.",
+      "tags": [
+        "neutrino-nucleus cross sections",
+        "structure functions",
+        "physics-informed ML",
+        "DUNE"
+      ],
+      "assessment": "strong",
+      "summary": "The authors extend a symmetry-constrained, data-driven cross-section model to electron and muon flavors, neutrino and antineutrino modes, and a simultaneous three-parameter oscillation fit. In controlled DUNE-inspired pseudo-data, the learned model recovers the injected parameters without significant bias once flux nuisances are included."
+    },
+    {
+      "title": "Nonconformal kinetic theory with transverse dynamics and event-by-event simulations using CoMBolt-RTA",
+      "authors": [
+        "Seyed Farid Taghavi"
+      ],
+      "author_display": "Seyed Farid Taghavi",
+      "total_author_count": 1,
+      "arxiv_id": "2610.31611",
+      "url": "https://arxiv.org/abs/2610.31611",
+      "category": "Heavy-ion / Theory",
+      "abstract": "A new version of CoMBolt, called CoMBolt-RTA, is introduced to solve the Boltzmann equation for massive quasiparticles in the relaxation time approximation (RTA). The inclusion of a constant quasiparticle mass allows one to obtain an equation of state (EOS) closer to that of lattice QCD. The nonequilibrium dynamics of a boost-invariant, nonconformal system with transverse spatial extension are studied, with particular emphasis on the effects of quasiparticle mass on the evolution toward equilibrium. Using the hybrid version, which includes TrENTo for the initial state and UrQMD as an afterburner, the model parameters are manually tuned to describe recent anisotropic-flow and charged-multiplicity measurements in OO collisions by the ALICE Collaboration. The resulting predictions for the pT-spectrum and mean pT are also compared with ATLAS measurements. Based on the preferred parameter tuning, the collective response as a function of opacity is investigated. The results suggest that central OO collisions remain in the fluid-like regime, while smaller systems, namely 3He-3He and 4He-4He collisions, could provide a better opportunity to investigate the transition from fluid-like to particle-like collective dynamics.",
+      "tags": [
+        "kinetic theory",
+        "small systems",
+        "OO collisions",
+        "event-by-event"
+      ],
+      "assessment": "mixed",
+      "summary": "CoMBolt is extended from a massless setup to massive quasiparticles in RTA, yielding a more realistic nonconformal equation of state and better mean-pT behavior in an event-by-event TrENTo plus transport plus UrQMD chain. The tuned model places central OO on the fluid-like side and predicts helium systems nearer the fluid-to-particle transition."
+    },
+    {
+      "title": "Charmed baryon-to-meson ratios inside jets as a discriminator of hadronization mechanisms: from color reconnection in p+p to coalescence in Pb+Pb",
+      "authors": [
+        "Zi-Xuan Xu",
+        "Wei Dai",
+        "Ben-Wei Zhang"
+      ],
+      "author_display": "Zi-Xuan Xu, Wei Dai, Ben-Wei Zhang, Enke Wang",
+      "total_author_count": 4,
+      "arxiv_id": "2610.31316",
+      "url": "https://arxiv.org/abs/2610.31316",
+      "category": "Heavy-ion / Phenomenology",
+      "abstract": "Jets separate the products of hard scatterings from the underlying event and thus help to clarify the origin of the enhanced baryon-to-meson ratios observed from small to large collision systems. We investigate the charmed baryon-to-meson ratio Λc+/D0 within jets in p+p and Pb+Pb collisions at sqrt(sNN)=5.02 TeV to discriminate between candidate hadronization mechanisms. In p+p collisions, simulated with PYTHIA8 using color reconnection as a representative beyond-leading-color scenario, the in-jet ratio is enhanced at low-to-intermediate pT relative to the inclusive one. In Pb+Pb collisions, described by the SHELL model with a coalescence plus fragmentation hybrid hadronization, the in-jet ratio is instead suppressed moderately at intermediate pT. The sign of the in-jet modification thus discriminates between the two mechanisms. Both mechanisms shift charmed hadrons toward small parallel jet momentum fraction, with a stronger effect on Λc+, while the radial profile rises with distance from the jet axis.",
+      "tags": [
+        "charm hadronization",
+        "Lambda_c/D0",
+        "jets",
+        "coalescence"
+      ],
+      "assessment": "strong",
+      "summary": "The paper identifies a sign-level discriminator: color reconnection in p+p enhances in-jet Λc/D0 relative to inclusive production, whereas thermal-parton coalescence in Pb+Pb suppresses it because uncorrelated soft partners are removed by the jet requirement. It adds parallel momentum-fraction and radial-profile predictions."
+    },
+    {
+      "title": "Anisotropic spin hydrodynamics in a magnetized medium: entropy-current formulation and minimal linear modes",
+      "authors": [
+        "Yiwei Qiu",
+        "Duan She",
+        "Defu Hou"
+      ],
+      "author_display": "Yiwei Qiu, Duan She, Defu Hou",
+      "total_author_count": 3,
+      "arxiv_id": "2610.31408",
+      "url": "https://arxiv.org/abs/2610.31408",
+      "category": "Heavy-ion / Theory",
+      "abstract": "We formulate anisotropic relativistic spin hydrodynamics in a parity-even magnetized medium using an Israel-Stewart entropy-current construction. Treating the magnetic field at leading order in the gradient expansion reduces the rotational symmetry to SO(2) and separates spin susceptibilities and dissipative transport into longitudinal, transverse, and mixed channels. A restricted quadratic entropy current yields transient equations for the retained dissipative stresses and spin fluxes. We analyze a minimal linear closure around an unpolarized homogeneous equilibrium, retaining dynamical magnetic-flux perturbations but no explicit spin-magnetization coupling; spin and magnetic fluctuations mix through the fluid variables. Infrared coefficient equations and ultraviolet characteristic expansions organize the magnetosonic and Alfven-like spectra together with spectator spin-flux poles. The first-order truncation exhibits unstable boost-sector poles and superlinear large-wave-number branches. For baseline parameters, finite relaxation times yield asymptotically linear propagation branches and finite relaxation poles, with no growing modes found on the sampled grid. The characteristic speeds provide necessary light-cone diagnostics, without establishing general stability or strong hyperbolicity.",
+      "tags": [
+        "spin hydrodynamics",
+        "magnetized medium",
+        "Israel-Stewart theory",
+        "linear stability"
+      ],
+      "assessment": "mixed",
+      "summary": "A formal Israel-Stewart construction resolves spin susceptibilities and transport into longitudinal, transverse, and mixed channels in a magnetized relativistic medium. Linear-mode analysis exposes failures of the first-order truncation and shows stable sampled behavior after adding relaxation times."
+    },
+    {
+      "title": "Sequential SBI for Resonance Searches at the LHC",
+      "authors": [
+        "Henning Bahl",
+        "Ranit Das"
+      ],
+      "author_display": "Henning Bahl, Ranit Das",
+      "total_author_count": 2,
+      "arxiv_id": "2610.30245",
+      "url": "https://arxiv.org/abs/2610.30245",
+      "category": "AI/ML use",
+      "abstract": "Neural simulation-based inference has been shown to extract significantly more information from LHC data than histogram-based analyses. So far, it has mostly been applied to couplings, for which the polynomial structure of the scattering amplitude can be exploited. Masses and widths instead move and deform the signal in phase space, and learning their likelihood requires many event samples covering the continuous theory parameter space. We show how sequential simulation-based inference can address this by iteratively concentrating the simulations where the observed data points. Using a parton-level example with an exact reference likelihood and reconstruction-level analyses of A to ZH to llbb and Y to HH to (tt)(tt), we demonstrate that sequential training produces significantly more accurate and better calibrated likelihoods than single-round training with the same amount of training events.",
+      "tags": [
+        "simulation-based inference",
+        "resonance searches",
+        "active simulation",
+        "calibration"
+      ],
+      "assessment": "strong",
+      "summary": "Sequential neural likelihood training concentrates simulations in the posterior-relevant region for resonance masses and widths. Against an exact parton-level likelihood and two reconstruction-level studies, it improves accuracy and calibration over one-shot training at fixed simulation budget."
+    },
+    {
+      "title": "RIDDLE: Revealing Irregularities through Distributional Discrepancies in Latent-space via Stein-Witness Estimation",
+      "authors": [
+        "Ali Eren Simsek"
+      ],
+      "author_display": "Ali Eren Simsek",
+      "total_author_count": 1,
+      "arxiv_id": "2610.31370",
+      "url": "https://arxiv.org/abs/2610.31370",
+      "category": "AI/ML use",
+      "abstract": "RIDDLE is a new method for resonant anomaly detection that uses a scalar Stein-witness function to identify discrepancies between unlabeled signal-region events and a background distribution inferred from dijet-mass sidebands. The witness is optimized in a latent representation of auxiliary jet observables against a differentiable background reference, without requiring an explicit signal model. The method is evaluated using simulated LHC Olympics dijet events and compared with idealized and supervised benchmarks that share the same statistical construction but have access to additional signal or background information. RIDDLE demonstrates strong signal-background discrimination comparable to the idealized benchmark, while largely preserving the background dijet-mass spectrum under anomaly-score selection. Tests incorporating additional angular information and deliberately mass-correlated features further demonstrate robustness under the studied conditions.",
+      "tags": [
+        "anomaly detection",
+        "Stein witness",
+        "sidebands",
+        "mass decorrelation"
+      ],
+      "assessment": "mixed",
+      "summary": "RIDDLE replaces a binary classifier with a learned scalar Stein witness trained against a sideband-derived background model. On LHC Olympics dijets it approaches an idealized benchmark while largely preserving the background mass shape, including tests with deliberately correlated inputs."
+    },
+    {
+      "title": "UrQMD-Agent: An LLM-Assisted Framework for Microscopic Tracing of Proton Azimuthal Correlations",
+      "authors": [
+        "Fu-Peng Li",
+        "Yige Huang"
+      ],
+      "author_display": "Fu-Peng Li, Yige Huang",
+      "total_author_count": 2,
+      "arxiv_id": "2610.30198",
+      "url": "https://arxiv.org/abs/2610.30198",
+      "category": "Caution",
+      "abstract": "We present an LLM-assisted framework for microscopic transport studies that connects a general-purpose large language model to the UrQMD transport model through a model-specific Skill and a deterministic scientific tool layer. The LLM supports literature-guided scientific planning and interpretation, while numerical calculations, event-history reconstruction, and statistical analyses are performed by deterministic tools. As a demonstration, the framework is applied to proton azimuthal-partition fluctuations in Au+Au collisions at sqrt(sNN)=3.0-39 GeV. In the 0-5% centrality class, the fluctuations are statistically resolved below zero from 3 to 27 GeV and consistent with zero at 39 GeV. An exact pair-kernel decomposition shows that the negative signal is carried mainly by proton pairs containing at least one decay-fed proton. A random-label null test further distinguishes the observed pair contributions from expectations based on pair abundance alone.",
+      "tags": [
+        "LLM agents",
+        "UrQMD",
+        "workflow automation",
+        "azimuthal correlations"
+      ],
+      "assessment": "caution",
+      "summary": "The deterministic analysis finds negative proton azimuthal-partition correlations in UrQMD at 3-27 GeV and traces them mainly to pairs involving decay-fed protons. An LLM plans and interprets the workflow while deterministic tools execute the numerical work."
+    }
+  ]
+}
