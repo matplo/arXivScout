@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-24",
+  "path": "reports/2026-10-24.html",
+  "summary": "No new arXiv announcement appeared during the 24 October review window. The latest Friday batch had already been critically assessed on 23 October, so this report records a null update rather than duplicating papers.",
+  "keywords": [
+    "no new arXiv announcement",
+    "weekend null update",
+    "heavy-ion physics",
+    "AI/ML in physics"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [
+    "No new papers"
+  ],
+  "categories": [
+    "No new papers"
+  ],
+  "strongest_paper": "",
+  "strongest_paper_summary": "No new selection; see the 23 October briefing for the latest substantive assessment.",
+  "top_takeaway": "No scientifically new material entered the window; avoiding duplication preserves the archive as a daily change log.",
+  "caution_count": 0,
+  "papers": [],
+  "cautions": []
+}
