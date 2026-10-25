@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-25",
+  "path": "reports/2026-10-25.html",
+  "summary": "The newest arXiv announcement available on Sunday is the Friday 23 October batch. The strongest contributions combine constrained inference with explicit validation: sequential SBI for resonance searches and symmetry-structured learning of neutrino–nucleus cross sections. Heavy-ion highlights are a nonconformal kinetic framework for light systems and a sign-changing in-jet charm-hadronization discriminator; both are useful but model-limited.",
+  "professional_summary": "Nonconformal transport and heavy-flavor hadronization dominate the heavy-ion selection, while the strongest AI/ML work emphasizes calibration, physics constraints, detector transfer, and reusable trajectory objectives.",
+  "keywords": [
+    "nonconformal kinetic theory",
+    "charm hadronization",
+    "simulation-based inference",
+    "neutrino–nucleus cross sections",
+    "detector foundation models",
+    "trajectory learning"
+  ],
+  "arxiv_ids": [
+    "2610.31611",
+    "2610.31316",
+    "2610.30393",
+    "2610.31180",
+    "2610.30338",
+    "2610.30245",
+    "2610.30894",
+    "2610.31585",
+    "2610.30198",
+    "2610.30558"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Physics AI/ML"
+  ],
+  "strongest_paper": "Sequential SBI for Resonance Searches at the LHC",
+  "strongest_paper_summary": "Sequential SBI combines exact-reference validation, reconstruction-level tests, and likelihood calibration while reducing the simulation burden for mass and width inference.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "Nonconformal kinetic theory with transverse dynamics and event-by-event simulations using CoMBolt-RTA",
+      "short_authors": "Seyed Farid Taghavi",
+      "total_author_count": 1,
+      "arxiv_id": "2610.31611",
+      "url": "https://arxiv.org/abs/2610.31611",
+      "category": "Heavy-ion — Theory",
+      "abstract": "A massive-quasiparticle relaxation-time Boltzmann solver is coupled to TRENTo and UrQMD, manually tuned to recent OO flow and multiplicity data, and used to study the transition from fluid-like to particle-like collective response.",
+      "summary": "CoMBolt-RTA extends a boost-invariant transverse kinetic solver to massive quasiparticles, giving a nonconformal equation of state closer to lattice QCD than the massless version. The hybrid calculation describes several OO observables and predicts that central OO remains fluid-like while He–He systems may better expose the crossover toward particle-like dynamics.",
+      "why_it_matters": "This is a useful bridge between hydrodynamics and microscopic transport precisely where small-system collectivity makes either limiting picture questionable.",
+      "assessment": "Technically substantial and directly timely, but not yet a precision extraction: the quasiparticle mass is constant, the EOS is only approximate, shear and bulk sectors are linked by the RTA ansatz, and parameters are manually tuned rather than globally inferred.",
+      "tags": [
+        "nonconformal kinetic theory",
+        "small systems",
+        "OO collisions",
+        "opacity"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Charmed baryon-to-meson ratios inside jets as a discriminator of hadronization mechanisms: from color reconnection in p+p to coalescence in Pb+Pb",
+      "short_authors": "Zi-Xuan Xu, Wei Dai, Ben-Wei Zhang, Enke Wang",
+      "total_author_count": 4,
+      "arxiv_id": "2610.31316",
+      "url": "https://arxiv.org/abs/2610.31316",
+      "category": "Heavy-ion — Phenomenology",
+      "abstract": "The paper predicts opposite in-jet Λc+/D0 modifications for color reconnection in pp and coalescence in PbPb, supplemented by momentum-fraction and radial-profile observables.",
+      "summary": "The proposed discriminator is the sign of the in-jet Λc+/D0 modification: enhancement from color reconnection in pp versus moderate suppression when PbPb coalescence products lose correlation with the jet. The accompanying longitudinal momentum fraction and radial profiles offer additional handles on non-fragmentation hadronization.",
+      "why_it_matters": "A sign-changing observable is considerably more useful experimentally than another model-dependent normalization shift, and it targets a central ambiguity in heavy-flavor hadronization.",
+      "assessment": "A sharp and testable phenomenology study. The main weakness is reference construction: no matched 5.02 TeV pp measurement exists, and some PbPb/pp ratios compare different hadronization schemes, so the clean discrimination awaits the proper experimental baseline.",
+      "tags": [
+        "charm hadronization",
+        "coalescence",
+        "color reconnection",
+        "jet substructure"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Thermomagnetic enhancement of conserved-charge correlations in a lattice-constrained PNJL model",
+      "short_authors": "Bruno S. Lopes, Arthur E. B. Pasqualotto, Jandir J. Buttenbender Filho, Dyana C. Duarte, Ricardo L. S. Farias",
+      "total_author_count": 5,
+      "arxiv_id": "2610.30393",
+      "url": "https://arxiv.org/abs/2610.30393",
+      "category": "Heavy-ion — Phenomenology",
+      "abstract": "A Gaussian-process-inferred thermomagnetic coupling is fitted to lattice light-quark condensates and used in a three-flavor PNJL model to predict magnetic-field responses of charge correlations and finite-density Taylor coefficients.",
+      "summary": "The model uses lattice information from one chiral observable to constrain a temperature- and magnetic-field-dependent effective coupling. Without fitting charge correlations directly, it improves their magnetic response relative to fixed-coupling PNJL and predicts enhanced baryon–charge correlations.",
+      "why_it_matters": "It proposes experimentally relevant conserved-charge combinations as possible QCD magnetometers and tests whether lattice constraints propagate beyond the fitted observable.",
+      "assessment": "Interesting cross-observable validation, but conclusions remain model contingent. Agreement within an effective PNJL framework is not evidence that heavy-ion measurements can cleanly reconstruct the short-lived magnetic field; dynamical evolution and acceptance effects are outside the present study.",
+      "tags": [
+        "conserved-charge correlations",
+        "magnetic field",
+        "PNJL",
+        "Gaussian process"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Track finding and particle identification performance with particle physics foundation models",
+      "short_authors": "Shuhang Li, Haiwang Yu, Gabor Galgoczi, Yeonju Go, Yi Huang, et al.",
+      "total_author_count": 11,
+      "arxiv_id": "2610.31180",
+      "url": "https://arxiv.org/abs/2610.31180",
+      "category": "Heavy-ion — AI/ML use",
+      "abstract": "FM4NPP, pretrained on sPHENIX TPC spacepoints, is evaluated for track finding and particle identification using a frozen backbone and supervised adapters.",
+      "summary": "The pretrained model markedly improves low-pT track seeding over a cellular-automaton baseline and supports PID despite a pretraining objective centered on spatial pattern recognition. PID gains are modest: pion AUC improves from 0.774 to 0.792, while kaon performance is nearly tied.",
+      "why_it_matters": "Low-pT tracking and reusable detector representations are directly relevant to sPHENIX, EIC, and high-occupancy heavy-ion workflows.",
+      "assessment": "Promising evidence for representation reuse, not yet a general foundation-model result. Tests use one simulated detector subsystem; domain shift to data, cross-detector transfer, latency, and comparisons with stronger task-specific ML baselines remain open.",
+      "tags": [
+        "foundation model",
+        "TPC reconstruction",
+        "track finding",
+        "particle identification"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Machine Learning Neutrino-Nucleus Cross Sections II: More Leptons",
+      "short_authors": "Daniel C. Hackett, Joshua Isaacson, Shirley Weishi Li, Karla Tame-Narvaez, Michael L. Wagman",
+      "total_author_count": 5,
+      "arxiv_id": "2610.30338",
+      "url": "https://arxiv.org/abs/2610.30338",
+      "category": "Physics AI/ML",
+      "abstract": "A symmetry-structured learned cross-section model is extended to multiple lepton flavors and neutrino/antineutrino channels in a DUNE-inspired oscillation analysis.",
+      "summary": "By learning Standard-Model structure functions rather than an unconstrained black box, the method recovers injected oscillation parameters without significant bias and approaches the constraints obtained with the exact cross section. The expanded analysis also exposes flux nuisance parameters as essential.",
+      "why_it_matters": "This is a good example of ML improving a hard nuclear-input problem by making physics structure part of the hypothesis class and propagating the result to end-to-end inference.",
+      "assessment": "Among the strongest papers today: it confronts a known generalization failure, uses physics constraints, and tests parameter bias. It remains a controlled synthetic study; robustness to realistic detector systematics and nuclear-model misspecification is the next decisive test.",
+      "tags": [
+        "neutrino-nucleus cross sections",
+        "symmetry constraints",
+        "oscillation inference",
+        "uncertainty"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Sequential SBI for Resonance Searches at the LHC",
+      "short_authors": "Henning Bahl, Ranit Das",
+      "total_author_count": 2,
+      "arxiv_id": "2610.30245",
+      "url": "https://arxiv.org/abs/2610.30245",
+      "category": "Physics AI/ML",
+      "abstract": "Sequential simulation-based inference concentrates event generation near data-supported mass and width regions and is tested against an exact parton-level likelihood plus two reconstruction-level resonance searches.",
+      "summary": "The sequential procedure reallocates a fixed simulation budget toward the parameter region favored by observations. It yields more accurate and better-calibrated learned likelihoods than single-round training, with independent calibration and evaluation samples and both exact-likelihood and reconstruction-level tests.",
+      "why_it_matters": "Simulation cost is a binding constraint in collider inference; targeted generation can make likelihood-free mass and width scans materially more practical.",
+      "assessment": "Methodologically strong for an arXiv first version: exact-reference validation, realistic reconstruction examples, and explicit likelihood calibration. Remaining risks are coverage under multimodal or badly misspecified posteriors and the distance from full experimental systematics.",
+      "tags": [
+        "simulation-based inference",
+        "resonance searches",
+        "calibration",
+        "active simulation"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "CURTAIN: Towards a Foundation Model for Neutrino Telescopes",
+      "short_authors": "Severin Magel, Felix J. Yu, Carlos A. Argüelles",
+      "total_author_count": 3,
+      "arxiv_id": "2610.30894",
+      "url": "https://arxiv.org/abs/2610.30894",
+      "category": "Physics AI/ML",
+      "abstract": "A temporal-masking self-supervised objective is used to pretrain a neutrino-telescope encoder and is tested for direction and energy reconstruction, including transfer to an unseen detector geometry.",
+      "summary": "CURTAIN improves monotonically with pretraining scale, reduces median angular and energy errors relative to training from scratch, and transfers to a new geometry. It also outperforms two matched-budget self-supervised baselines in the reported simulations.",
+      "why_it_matters": "Detector-to-detector transfer and label efficiency are exactly the properties a physics foundation model must demonstrate to justify its cost.",
+      "assessment": "The evaluation asks the right questions and shows unusually clear gains, but all results use simplified simulation, full fine-tuning, 100k labels, and single training runs. Real-data transfer, few-label behavior, and an ablation isolating temporal masking remain open.",
+      "tags": [
+        "self-supervised learning",
+        "neutrino telescopes",
+        "detector transfer",
+        "scaling"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Action Learning for Scientific Simulations",
+      "short_authors": "Sarah Liaw, Yuanqi Du, Yilun Du",
+      "total_author_count": 3,
+      "arxiv_id": "2610.31585",
+      "url": "https://arxiv.org/abs/2610.31585",
+      "category": "Physics AI/ML",
+      "abstract": "LEAP learns a differentiable stochastic action over complete trajectories by estimating a correction to a tractable reference process, then reuses it for path ranking, optimization, constraints, and sampling.",
+      "summary": "The method is tested on double-well dynamics, a 31-body orbital system, and alanine dipeptide trajectories, with multiple seeds and exact-action checks where available. It captures nonadditive path dependence and reuses one learned action across new objectives and conditions.",
+      "why_it_matters": "A reusable path objective could transfer to transport-event histories, rare-transition sampling, or constrained surrogate dynamics in nuclear and HEP simulations.",
+      "assessment": "Conceptually strong and carefully tested, but HEP transfer is speculative. Performance requires overlap between reference and observed path distributions; state-dependent diffusion and projection-induced memory complicate the formal guarantees.",
+      "tags": [
+        "trajectory learning",
+        "stochastic action",
+        "scientific simulation",
+        "rare paths"
+      ],
+      "assessment_label": "mixed"
+    }
+  ],
+  "cautions": [
+    {
+      "title": "UrQMD-Agent: An LLM-Assisted Framework for Microscopic Tracing of Proton Azimuthal Correlations",
+      "short_authors": "Fu-Peng Li, Yige Huang",
+      "total_author_count": 2,
+      "arxiv_id": "2610.30198",
+      "url": "https://arxiv.org/abs/2610.30198",
+      "category": "Caution",
+      "abstract": "A general-purpose LLM is connected to deterministic UrQMD analysis tools and used to help plan and interpret a study of proton azimuthal-partition fluctuations.",
+      "summary": "The deterministic pair-kernel and event-history analysis may be scientifically useful, especially the localization of negative correlations to decay-fed proton pairs. However, the paper does not isolate what the LLM improves relative to a scripted workflow or an expert using the same tools.",
+      "assessment": "Worth watching as workflow engineering, but the AI claim is currently under-validated. Reproducibility across models/prompts, error rates in planning and interpretation, and blinded comparisons with non-agent baselines are needed before treating this as a scientific-method advance.",
+      "tags": [
+        "LLM agent",
+        "UrQMD",
+        "proton correlations",
+        "tool orchestration"
+      ],
+      "assessment_label": "caution"
+    },
+    {
+      "title": "Multiplicity Distribution in the Color Glass Condensate Formalism",
+      "short_authors": "H. R. Martins-Fontes",
+      "total_author_count": 1,
+      "arxiv_id": "2610.30558",
+      "url": "https://arxiv.org/abs/2610.30558",
+      "category": "Caution",
+      "abstract": "A double negative-binomial description of high-energy pp multiplicities is combined with kT factorization and a GBW gluon distribution, reducing the fit from six to four free parameters.",
+      "summary": "The fits may be serviceable, but a two-component negative-binomial mixture remains flexible and largely phenomenological. Low chi-squared alone does not establish that the shoulder structure has been derived from CGC dynamics.",
+      "assessment": "The manuscript appears incremental and its language is stronger than the demonstrated predictive content. Independent-energy predictions, uncertainty propagation, and comparisons with modern generators or alternative mixtures would be needed to elevate the claim.",
+      "tags": [
+        "multiplicity distributions",
+        "double negative binomial",
+        "CGC",
+        "pp collisions"
+      ],
+      "assessment_label": "caution"
+    }
+  ]
+}
