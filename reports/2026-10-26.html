@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-26</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <p class="eyebrow">Daily arXiv Physics Scout</p>
+  <h1>Heavy-ion and physics AI briefing</h1>
+  <p class="dek">26 October 2026 - Monday announcement; papers submitted 22-23 October</p>
+  <div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  <p><a href="../index.html">Archive index</a></p>
+</header>
+<main>
+<section>
+  <h2>Executive takeaways</h2>
+  <ul>
+    <li><strong>Light-ion geometry is the day's central physics theme:</strong> ALICE reports high-statistics multi-particle flow in OO and Ne-Ne, while a companion theory paper shows that the orientation prescription for Ne-20 changes the inferred eccentricities.</li>
+    <li><strong>Strongest AI/ML paper:</strong> FeynFacet uses agent-developed symbolic programs but earns attention through physical validation, reproducing established NLO results before presenting new transverse-spin-transfer coefficients.</li>
+    <li><strong>Best transferable evaluation lesson:</strong> a seven-model PDE benchmark finds error growth in 140 of 144 full rollouts, showing why local surrogate accuracy is inadequate for physics deployment.</li>
+    <li><strong>Broad QCD opportunity:</strong> the fragmentation energy correlator offers a common spin-sensitive observable across lepton and hadron collision systems, though its nuclear-collision feasibility is not yet demonstrated.</li>
+    <li><strong>No caution-only selection:</strong> the remaining screened papers were either solid enough for the main list or too weakly connected to HEP/nuclear physics to include.</li>
+  </ul>
+</section>
+
+<section><h2>Heavy-ion - Theory</h2>
+<article class="paper" data-search="2610.32386 orientational average nuclear shape imaging densities correlations eccentricity ne-20 jian deng hao-jie xu qun wang theory">
+  <div class="paper-top"><span class="category">Heavy-ion - Theory</span><span class="assessment strong">strong</span></div>
+  <h3><a href="https://arxiv.org/abs/2610.32386">Orientational average in nuclear shape imaging: densities, correlations, and eccentricity in Ne-20</a></h3>
+  <p class="authors">Jian Deng, Hao-jie Xu, Qun Wang</p>
+  <p><strong>Summary.</strong> A deformed harmonic-oscillator calculation compares rigid-rotor and wave-function-rotor orientation prescriptions. At fixed deformation they produce different radial moments, pair correlations, multipoles, and eccentricity variances, although several internal scaling relations remain similar.</p>
+  <p><strong>Why it matters.</strong> This identifies a structural theory uncertainty directly between nuclear wave functions and the light-ion flow observables now measured by ALICE.</p>
+  <p><strong>Critical assessment.</strong> Timely and technically clear, but quantitatively model dependent: it uses a deformed harmonic oscillator and a leading-order ultracentral mapping rather than full event-by-event collision dynamics and hydrodynamics.</p>
+  <details><summary>Abstract</summary><p>The paper computes one- and two-body densities, Pauli correlations, body-axis multipoles, and ultracentral eccentricity variances for Ne-20 under two treatments of nuclear orientation.</p></details>
+  <div class="tags"><span>Ne-20</span><span>orientational averaging</span><span>eccentricity</span><span>nuclear shape imaging</span></div>
+</article></section>
+
+<section><h2>Heavy-ion - Experiment</h2>
+<article class="paper" data-search="2610.32667 anisotropic flow oo ne-ne alice vojtěch macháček experiment cumulants nuclear geometry">
+  <div class="paper-top"><span class="category">Heavy-ion - Experiment</span><span class="assessment strong">strong</span></div>
+  <h3><a href="https://arxiv.org/abs/2610.32667">Anisotropic flow measurements in OO and Ne-Ne collisions with ALICE</a></h3>
+  <p class="authors">Vojtech Machacek for the ALICE Collaboration</p>
+  <p><strong>Summary.</strong> Using about 3 billion OO and 410 million Ne-Ne minimum-bias events at 5.36 TeV, ALICE measures charged-particle v2 through eight-particle cumulants plus v3 and v4. Larger mean v2 and non-Bessel-Gaussian triangular-flow fluctuations in Ne-Ne are consistent with a stronger imprint of deformed Ne-20 geometry.</p>
+  <p><strong>Why it matters.</strong> These are direct, high-statistics constraints on how known nuclear geometry propagates into collective flow in systems small enough to stress hydrodynamic interpretations.</p>
+  <p><strong>Critical assessment.</strong> Important and experimentally careful, with subevent suppression of nonflow and systematic variations. The public paper is only a four-page proceedings contribution; higher-order cumulants remain statistically limited and quantitative nuclear-structure inference awaits a full analysis.</p>
+  <details><summary>Abstract</summary><p>ALICE reports multi-particle cumulant flow measurements, the first reconstructed P(v2), and the first v3{4}/v3{2} measurement in light-ion collision systems.</p></details>
+  <div class="tags"><span>OO collisions</span><span>Ne-Ne collisions</span><span>multi-particle cumulants</span><span>nuclear geometry</span></div>
+</article></section>
+
+<section><h2>Heavy-ion - Phenomenology</h2>
+<article class="paper" data-search="2610.32715 universal probe qcd spin fragmentation energy correlator qing-hong cao xiaohui liu zhite yu c-p yuan feng yuan shu-tao zhang hua xing zhu phenomenology">
+  <div class="paper-top"><span class="category">Heavy-ion - Phenomenology</span><span class="assessment strong">strong</span></div>
+  <h3><a href="https://arxiv.org/abs/2610.32715">A universal probe of QCD spin physics from fragmentation energy correlator</a></h3>
+  <p class="authors">Qing-Hong Cao, Xiaohui Liu, Zhite Yu, C.-P. Yuan, Feng Yuan, Shu-Tao Zhang, Hua Xing Zhu</p>
+  <p><strong>Summary.</strong> The fragmentation energy correlator combines a fragmentation function with an infrared-safe energy correlator and is formulated for lepton-lepton, lepton-hadron, and hadron-hadron collisions. Its transverse-spin-dependent scale variation is proposed as a probe of chiral symmetry breaking.</p>
+  <p><strong>Why it matters.</strong> A common observable across e+e-, EIC, RHIC, and LHC environments could make universality tests of spin-dependent fragmentation substantially cleaner.</p>
+  <p><strong>Critical assessment.</strong> Conceptually strong and broadly useful, but its direct heavy-ion payoff is prospective. Experimental feasibility, backgrounds, detector effects, and medium modifications need dedicated study before universality can be tested in nuclear collisions.</p>
+  <details><summary>Abstract</summary><p>The observable is designed to access three-dimensional QCD hadronization without jet algorithms or simultaneous measurement of a heavy object.</p></details>
+  <div class="tags"><span>fragmentation energy correlator</span><span>transverse spin</span><span>hadronization</span><span>QCD universality</span></div>
+</article></section>
+
+<section><h2>Heavy-ion - AI/ML use</h2><p class="empty-note">No new paper applied AI/ML directly to heavy-ion data or simulation strongly enough for selection. The transferable methods below are relevant to QCD calculations, hydrodynamic surrogates, and simulator allocation.</p></section>
+
+<section><h2>AI/ML use cases in physics</h2>
+<article class="paper" data-search="2610.31745 feynfacet ai agents analytic nlo qcd zhong-bo kang werner vogelsang congyue zhang symbolic calculation transversity">
+  <div class="paper-top"><span class="category">Physics AI/ML</span><span class="assessment strong">strong</span></div>
+  <h3><a href="https://arxiv.org/abs/2610.31745">FeynFacet: AI agents for analytic NLO QCD</a></h3>
+  <p class="authors">Zhong-Bo Kang, Werner Vogelsang, Congyue Zhang</p>
+  <p><strong>Method and result.</strong> Agents develop process-specific programs joining amplitude generation, reverse unitarity, IBP reduction, dimensional shifts, and analytic integration. The system reproduces established unpolarized and polarized hard functions plus TMD matching and soft coefficients, then derives new transverse-spin-transfer results for pp and lepton-proton collisions.</p>
+  <p><strong>HEP/nuclear use case.</strong> The workflow could accelerate auditable fixed-order calculations for RHIC, EIC, and LHC observables whose spin conventions and evanescent terms make manual algebra fragile.</p>
+  <p><strong>Critical assessment.</strong> The day's strongest AI paper. Independent algebra systems, known-result reproduction, gauge invariance, pole cancellation, RG evolution, and released programs provide unusually strong validation. It remains a physicist-supervised workflow, not evidence of autonomous trustworthy theory production.</p>
+  <details><summary>Abstract</summary><p>FeynFacet produces new analytic NLO hard functions for single-inclusive transverse spin transfer after validating the workflow on several known collinear and TMD calculations.</p></details>
+  <div class="tags"><span>AI agents</span><span>NLO QCD</span><span>symbolic calculation</span><span>transversity</span></div>
+</article>
+
+<article class="paper" data-search="2610.31935 beyond local accuracy benchmarking rollout reliability pde foundation models jaewan park seid koric giri krishnan sudhakar pamidighantam surresh marru surrogate validation">
+  <div class="paper-top"><span class="category">Physics AI/ML</span><span class="assessment strong">strong</span></div>
+  <h3><a href="https://arxiv.org/abs/2610.31935">Beyond Local Accuracy: Benchmarking the Rollout Reliability of PDE Foundation Models</a></h3>
+  <p class="authors">Jaewan Park, Seid Koric, Giri Krishnan, Sudhakar Pamidighantam, Surresh Marru</p>
+  <p><strong>Method and result.</strong> Seven learned PDE models are tested on seven 2D time-dependent datasets with paired short- and full-horizon metrics. Although foundation models often retain their relative advantage, full-horizon error exceeds short-horizon error in 140 of 144 paired configurations, with median amplification 2.04.</p>
+  <p><strong>HEP/nuclear use case.</strong> Heavy-ion hydrodynamic emulators and plasma-transport surrogates are autoregressive dynamical systems; the benchmark design transfers directly to their validation before inference or event-generation use.</p>
+  <p><strong>Critical assessment.</strong> Strong evaluation work with explicit limitations. It compares complete recipes rather than isolating pretraining, uses only 2D grids, and does not test experimental noise, 3D dynamics, conservation-law violations, or heavy-ion equations specifically.</p>
+  <details><summary>Abstract</summary><p>The paper argues that learned-simulator benchmarks should report accuracy-horizon profiles, absolute failure incidence, and amplification statistics rather than a single local forecast score.</p></details>
+  <div class="tags"><span>PDE foundation models</span><span>autoregressive rollout</span><span>surrogate validation</span><span>error amplification</span></div>
+</article>
+
+<article class="paper" data-search="2610.32514 amortized thompson sampling information-directed sampling simulator-based design michal kobiela michael gutmann experimental design information gain">
+  <div class="paper-top"><span class="category">Physics AI/ML</span><span class="assessment mixed">mixed</span></div>
+  <h3><a href="https://arxiv.org/abs/2610.32514">Amortized Thompson Sampling and Efficient Information-Directed Sampling for Simulator-Based Design</a></h3>
+  <p class="authors">Michal Kobiela, Michael U. Gutmann</p>
+  <p><strong>Method and result.</strong> A learned amortized approximation makes posterior-dependent Thompson recommendations and expected-information-gain estimates cheap across sequential rounds. Information-directed sampling is demonstrated on two likelihood-intractable synthetic-biology simulators.</p>
+  <p><strong>HEP/nuclear use case.</strong> The machinery could prioritize detector simulations, beam-time configurations, calibration scans, or theory parameter points when each simulator call is expensive and the likelihood is unavailable.</p>
+  <p><strong>Critical assessment.</strong> Methodologically credible, but transfer is not established. Evidence is limited to two biology tasks; robustness to high-dimensional collider observations, severe simulator misspecification, and coverage constraints remains open.</p>
+  <details><summary>Abstract</summary><p>The method amortizes continuous-action Thompson sampling before data collection and estimates information gain about the optimum for multi-round design.</p></details>
+  <div class="tags"><span>experimental design</span><span>Thompson sampling</span><span>implicit simulators</span><span>information gain</span></div>
+</article></section>
+
+<section><h2>Weak or overclaimed papers worth caution</h2><p class="empty-note">None selected today. The screen did not find a paper close enough to scope and prominent enough to merit a specific caution entry.</p></section>
+</main>
+<script src="../assets/filter.js"></script>
+</body>
+</html>
