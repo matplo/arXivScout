@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-27",
+  "path": "reports/2026-10-27.html",
+  "summary": "STAR forward pseudorapidity measurements, ALICE light-ion dihadron correlations, polarization-source-tilt scaling, Levy femtoscopy, a data-driven rapidity-to-pseudorapidity test, and generator-level nuclear-geometry inference form the heavy-ion core. Transferable AI/ML work emphasizes information-aware simulation-based inference, adequately tuned surrogate baselines, and cautious interpretation of QFT language-model benchmarks.",
+  "professional_summary": "Longitudinal production, limiting fragmentation, light-ion jet-medium signatures, femtoscopic source geometry, spin-vorticity coupling, nuclear radial imaging, information-bottleneck SBI, neural-operator benchmark hygiene, and QFT reasoning evaluation.",
+  "keywords": [
+    "longitudinal particle production",
+    "light-ion dihadron correlations",
+    "Lambda polarization and source tilt",
+    "Levy femtoscopy",
+    "Woods-Saxon inference",
+    "simulation-based inference",
+    "neural-operator baselines",
+    "QFT language models"
+  ],
+  "arxiv_ids": [
+    "2610.35310",
+    "2610.33365",
+    "2610.35331",
+    "2610.34612",
+    "2610.35456",
+    "2610.34072",
+    "2610.34703",
+    "2610.33967",
+    "2610.33134"
+  ],
+  "total_paper_count": 9,
+  "represented_categories": [
+    "Heavy-ion - Theory",
+    "Heavy-ion - Experiment",
+    "Heavy-ion - Phenomenology",
+    "Heavy-ion - AI/ML use",
+    "Physics AI/ML"
+  ],
+  "strongest_paper": "Measurement of pseudorapidity distributions from Au+Au collisions with the STAR Event Plane Detector",
+  "strongest_paper_summary": "STAR provides unfolded charged-particle pseudorapidity densities across eight collision energies and multiple centralities, extending precision longitudinal-production coverage over the RHIC Beam Energy Scan.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "A Barnett-Like Effect in Relativistic Heavy-Ion Collisions",
+      "short_authors": "Dai-Neng Liu, Kai-Jia Sun, Jan Steinheimer, Jin-Hui Chen, Yu-Gang Ma, Marcus Bleicher",
+      "total_author_count": 6,
+      "arxiv_id": "2610.35310",
+      "url": "https://arxiv.org/abs/2610.35310",
+      "category": "Heavy-ion - Theory",
+      "abstract": "Transport calculations connect global Lambda polarization to the source tilt angle extracted from two-pion femtoscopy, finding an approximately linear relation across beam energy.",
+      "summary": "UrQMD calculations over sqrt(sNN)=2.24-7.7 GeV link the beam-energy evolution of global Lambda polarization to the tilt of the emitting source. A quadrupolar vorticity pattern largely cancels unless the source is tilted, yielding a near-linear polarization-tilt relation that is broadly consistent with existing HADES, E895, and STAR measurements.",
+      "why_it_matters": "It proposes a joint, experimentally accessible geometry-spin test rather than treating polarization as an isolated observable.",
+      "assessment": "Strong and physically interpretable, with transport and data comparisons. The experimental correlation is not yet a uniform same-energy, same-centrality measurement: one tilt point is interpolated, two high-energy polarization points lie outside the simulated range, and the linear fit neglects tilt uncertainties.",
+      "tags": [
+        "global Lambda polarization",
+        "source tilt",
+        "vorticity",
+        "UrQMD"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Measurement of pseudorapidity distributions from Au+Au collisions with the STAR Event Plane Detector",
+      "short_authors": "STAR Collaboration",
+      "arxiv_id": "2610.33365",
+      "url": "https://arxiv.org/abs/2610.33365",
+      "category": "Heavy-ion - Experiment",
+      "abstract": "STAR measures charged-particle pseudorapidity densities over 2.14<|eta|<5.09 in Au+Au collisions from 7.7 to 200 GeV using detector-response unfolding.",
+      "summary": "The EPD measurement spans eight RHIC energies and multiple centralities. Landau-fit hit yields are unfolded with UrQMD+GEANT3 response matrices; agreement with PHOBOS is recovered where overlap exists, with improved precision and much broader energy coverage.",
+      "why_it_matters": "This is a durable reference dataset for longitudinal particle production, energy deposition, and limiting-fragmentation tests across the Beam Energy Scan.",
+      "assessment": "The day's strongest heavy-ion measurement. The broad energy lever arm and cross-check against PHOBOS are major assets; residual model dependence from response-matrix unfolding and covariance treatment will matter for precision phenomenology.",
+      "tags": [
+        "STAR",
+        "pseudorapidity",
+        "limiting fragmentation",
+        "Beam Energy Scan"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Jet-like dihadron correlations in OO and Ne-Ne collisions at sqrt(sNN)=5.36 TeV with ALICE",
+      "short_authors": "Neelkamal Mallick, Joonsuk Bae (on behalf of the ALICE Collaboration)",
+      "total_author_count": 2,
+      "arxiv_id": "2610.35331",
+      "url": "https://arxiv.org/abs/2610.35331",
+      "category": "Heavy-ion - Experiment",
+      "abstract": "ALICE reports multiplicity-dependent near-side peak widths and the first light-ion per-trigger associated-yield ratios, including away-side IAA in OO collisions.",
+      "summary": "High-pT dihadron correlations in the 2025 light-ion data show a multiplicity-dependent near-side modification and an away-side associated-yield suppression in OO relative to pp. The latter is qualitatively consistent with weaker jet-medium interactions than in central Pb-Pb.",
+      "why_it_matters": "Light ions occupy the crucial gap where collective behavior is established but unambiguous jet quenching remains difficult.",
+      "assessment": "Scientifically important but not yet decisive evidence for parton energy loss. The paper is a seven-page proceedings contribution, and ALICE explicitly leaves event-activity bias and cold-nuclear-matter effects unresolved.",
+      "tags": [
+        "ALICE",
+        "OO collisions",
+        "Ne-Ne collisions",
+        "dihadron correlations",
+        "IAA"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Levy-stable pion emission sources in Au+Au collisions at sqrt(sNN)=200 GeV from the vHLLE+SMASH hybrid model",
+      "short_authors": "Zeinab A. Abdelrazik, Mate Csanad",
+      "total_author_count": 2,
+      "arxiv_id": "2610.34612",
+      "url": "https://arxiv.org/abs/2610.34612",
+      "category": "Heavy-ion - Phenomenology",
+      "abstract": "A vHLLE+SMASH calculation reconstructs three-dimensional pion pair-separation distributions and fits them with Levy-stable source functions.",
+      "summary": "For central Au+Au at 200 GeV, a single Levy form describes simulated pair separations to about 100 fm, with alpha about 1.5-1.6 and slowly increasing with transverse mass. Deviations at larger separation are associated with long-lived resonance decays, while rescattering and short-lived resonances may contribute to the non-Gaussian core.",
+      "why_it_matters": "It helps translate measured Levy femtoscopy parameters into specific hadronic-stage mechanisms in a realistic hybrid calculation.",
+      "assessment": "Useful, focused phenomenology, but currently one system, energy, centrality, model setup, and fit range. The causal attribution among rescattering, resonance feed-down, critical dynamics, and fitting choices is not yet separated quantitatively.",
+      "tags": [
+        "femtoscopy",
+        "Levy sources",
+        "vHLLE",
+        "SMASH",
+        "resonance halo"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Midrapidity dip and limiting fragmentation of charged hadrons from RHIC to LHC energies",
+      "short_authors": "Neeraj Chauhan, Md. Kaosar Ali Mondal, Amal Sarkar",
+      "total_author_count": 3,
+      "arxiv_id": "2610.35456",
+      "url": "https://arxiv.org/abs/2610.35456",
+      "category": "Heavy-ion - Phenomenology",
+      "abstract": "Measured identified-hadron spectra are used to construct the y-to-eta transformation kernel and test whether the charged-hadron pseudorapidity dip requires a dip in rapidity density.",
+      "summary": "Across central Au+Au and Pb+Pb data, the analysis finds that a midrapidity depression in dN/deta need not imply one in dN/dy. Generator closure exposes a possible false dip from forward-region assumptions, while current LHC coverage is insufficient to establish or exclude limiting fragmentation.",
+      "why_it_matters": "It directly challenges a common visual interpretation of longitudinal distributions using a data-driven rather than generator-imposed Jacobian.",
+      "assessment": "Methodologically careful and appropriately conservative. Its conclusions are limited by poorly constrained LHC fragmentation regions and assumed covariance/kernel families, but the null-test framing is a strength.",
+      "tags": [
+        "pseudorapidity",
+        "rapidity Jacobian",
+        "limiting fragmentation",
+        "identified spectra"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Inferring Nuclear Radial Parameters from Initial-State Information in Heavy-Ion Collisions Using Deep Neural Networks",
+      "short_authors": "Yang Liu, Yu Sha, Xiang Fan, Yan-Sheng Tu, Shi-Lei Tao, et al.",
+      "total_author_count": 10,
+      "arxiv_id": "2610.34072",
+      "url": "https://arxiv.org/abs/2610.34072",
+      "category": "Heavy-ion - AI/ML use",
+      "abstract": "A multimodal network combines TRENTo entropy-density images with multiplicity and eccentricities to regress the Woods-Saxon radius and diffuseness of uranium nuclei.",
+      "summary": "On independent, denser parameter-grid tests, grouping 100 simulated events improves R0 regression to R2=0.84 overall, while diffuseness reaches R2=0.53; sensitivity varies strongly with centrality. The scan uses 8.82 million TRENTo events and a separate test grid.",
+      "why_it_matters": "It quantifies where nuclear radial information lives in the initial geometry and supplies a controlled baseline for later inverse modeling.",
+      "assessment": "A competent proof of concept, not an experimental inference. Inputs include unobservable initial entropy maps and eccentricities, with no transport, detector response, model discrepancy, nuisance-parameter variation, or comparison against simpler summary-statistic regressors.",
+      "tags": [
+        "deep learning",
+        "Woods-Saxon parameters",
+        "TRENTo",
+        "nuclear imaging"
+      ],
+      "assessment_label": "mixed"
+    },
+    {
+      "title": "Intrinsic Information Rates of Summaries in Simulation-Based Inference",
+      "short_authors": "Vansh Bansal, Pradip Sharma Poudel, James G. Scott",
+      "total_author_count": 3,
+      "arxiv_id": "2610.34703",
+      "url": "https://arxiv.org/abs/2610.34703",
+      "category": "Physics AI/ML",
+      "abstract": "The paper treats learned summaries in simulation-based inference as lossy channels and derives rate-distortion bounds for posterior preservation.",
+      "summary": "Theory shows that the required mutual-information budget grows as posteriors concentrate and that, under common support, stochastic summaries strictly outperform deterministic ones below the exact-preservation budget. A finite conjugate example and four simulator benchmarks support the rate-matched comparison.",
+      "use_case": "HEP and heavy-ion SBI pipelines often compress high-dimensional events before posterior estimation. Rate-matched evaluation could expose whether an encoder architecture is genuinely better or merely passes more information.",
+      "assessment": "The strongest transferable ML-method paper today: it combines nontrivial theory with controlled and simulator-based validation. Practical gains on large collider events, systematic uncertainties, and calibration-sensitive downstream observables remain to be shown.",
+      "tags": [
+        "simulation-based inference",
+        "information bottleneck",
+        "posterior estimation",
+        "stochastic summaries"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "Performance of Neural Operator Baselines on 'The Well' Dataset",
+      "short_authors": "Yash Pincha, Andy Dimnaku, Andrew Chiang, Adarsh Ganeshram, Valentin Duruisseaux, Anima Anandkumar",
+      "total_author_count": 6,
+      "arxiv_id": "2610.33967",
+      "url": "https://arxiv.org/abs/2610.33967",
+      "category": "Physics AI/ML",
+      "abstract": "A modest hyperparameter search for a Tucker-factorized Fourier neural operator dramatically improves published The Well baselines under the same wall-clock limit.",
+      "summary": "Using only one input timestep, tuning lowers validation RMSE below the published FNO/TFNO baselines on 15 of 17 tasks, sometimes by orders of magnitude. The central result is evaluative: lightly tuned illustrative baselines should not be treated as architectural limits.",
+      "use_case": "Directly relevant to hydrodynamic and transport-surrogate claims in nuclear physics, where weak baselines can manufacture apparent architecture gains.",
+      "assessment": "A valuable corrective with clear evidence, though it is not a comprehensive architecture study and is produced by authors overlapping the TFNO ecosystem. The lesson is about benchmark hygiene, not proof that TFNO is generally superior.",
+      "tags": [
+        "neural operators",
+        "surrogate models",
+        "hyperparameter tuning",
+        "benchmarking"
+      ],
+      "assessment_label": "strong"
+    },
+    {
+      "title": "LLMs Can Tackle High Energy Theoretical Physics, yet Gaps Remain: Part I, Quantum Field Theory",
+      "short_authors": "Tong Liu, Bohan Li, Gongrui Cheng, Zixiong Yu, Yulan He, Volker Tresp",
+      "total_author_count": 6,
+      "arxiv_id": "2610.33134",
+      "url": "https://arxiv.org/abs/2610.33134",
+      "category": "Physics AI/ML",
+      "abstract": "QFT-Bench evaluates 39 language models on 75 graduate-to-research-level closed-form QFT problems using symbolic checks and LLM judges.",
+      "summary": "Several frontier models exceed 95% final-answer accuracy, while error analysis still finds calculation, convention, and instruction-following failures. The paper also measures whether the displayed derivation actually supports the answer and finds nontrivial unfaithfulness.",
+      "use_case": "The benchmark is relevant to assisted analytic work, derivation checking, and training-domain-specific evaluators for HEP theory.",
+      "assessment": "Broad model coverage and some expert validation make this useful, but the headline should not be read as research autonomy. There are only 75 closed-form tasks; correctness-judge agreement with experts is 98% on a 60-response sample, whereas faithfulness agreement is only 73%, and contamination/memorization is not directly ruled out.",
+      "tags": [
+        "QFT-Bench",
+        "large language models",
+        "symbolic verification",
+        "reasoning faithfulness"
+      ],
+      "assessment_label": "mixed"
+    }
+  ]
+}
