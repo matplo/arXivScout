@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-28",
+  "path": "reports/2026-10-28.html",
+  "summary": "Identified-hadron elliptic flow in oxygen-oxygen collisions and antideuteron-net-Lambda fluctuations provide the strongest experimental results. Methodological advances address QCD speed-of-sound extraction, nonflow subtraction, higher-order strongly intensive observables, uncertainty-aware validation of generative models, interpretable neural PDF fits, and representation diagnostics for jet taggers.",
+  "keywords": [
+    "OO collisions",
+    "elliptic flow",
+    "partonic collectivity",
+    "antideuteron fluctuations",
+    "QCD speed of sound",
+    "nonflow subtraction",
+    "strongly intensive observables",
+    "generative-model uncertainty",
+    "neural tangent kernels",
+    "jet tagging"
+  ],
+  "arxiv_ids": [
+    "2610.36237",
+    "2610.36307",
+    "2610.36846",
+    "2610.36922",
+    "2610.37051",
+    "2610.37398",
+    "2610.36034",
+    "2610.37137",
+    "2610.36723"
+  ],
+  "total_paper_count": 9,
+  "categories": [
+    "Heavy-ion - Theory",
+    "Heavy-ion - Experiment",
+    "Heavy-ion - Phenomenology",
+    "Physics AI/ML"
+  ],
+  "strongest_paper": "ALICE identified-hadron v2 in OO (2610.36237) provides the most discriminating evidence of partonic collectivity, using the phi/Lambda contrast to separate baryon-meson structure from a purely mass-driven pattern.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Evidence of partonic collectivity in OO collisions through the measurement of phi, K0S, and Lambda elliptic flow",
+      "authors": [
+        "ALICE Collaboration"
+      ],
+      "author_count": null,
+      "arxiv_id": "2610.36237",
+      "url": "https://arxiv.org/abs/2610.36237",
+      "category": "Heavy-ion - Experiment",
+      "abstract": "ALICE measures identified-hadron v2 in OO, observing low-pT mass ordering and a 10-sigma baryon-meson split at intermediate pT; the phi tracks K0S rather than the mass-similar Lambda.",
+      "tags": [
+        "OO collisions",
+        "elliptic flow",
+        "phi meson",
+        "quark recombination"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Measurement of antideuteron and net-Lambda number fluctuations at the Large Hadron Collider",
+      "authors": [
+        "ALICE Collaboration"
+      ],
+      "author_count": null,
+      "arxiv_id": "2610.36307",
+      "url": "https://arxiv.org/abs/2610.36307",
+      "category": "Heavy-ion - Experiment",
+      "abstract": "The first antideuteron-net-Lambda correlation agrees with statistical hadronization, supporting nucleosynthesis as the origin of the earlier antideuteron-antiproton discrepancy.",
+      "tags": [
+        "antideuteron",
+        "net Lambda",
+        "fluctuations",
+        "nucleosynthesis"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Extracting the QCD speed of sound in the presence of quantum fluctuations",
+      "authors": [
+        "Yu-Shan Mu",
+        "Li Yan",
+        "Xu-Guang Huang"
+      ],
+      "author_count": 3,
+      "arxiv_id": "2610.36846",
+      "url": "https://arxiv.org/abs/2610.36846",
+      "category": "Heavy-ion - Theory",
+      "abstract": "A Gaussianity-based framework corrects quantum-fluctuation bias in speed-of-sound extraction and closes against event-by-event hydrodynamic simulations.",
+      "tags": [
+        "speed of sound",
+        "equation of state",
+        "hydrodynamics",
+        "fluctuations"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Improved nonflow control for multiparticle correlators and system-size-dependent evolution from OO to Pb-Pb collisions at the LHC",
+      "authors": [
+        "Neelkamal Mallick",
+        "Suraj Prasad"
+      ],
+      "author_count": 2,
+      "arxiv_id": "2610.36922",
+      "url": "https://arxiv.org/abs/2610.36922",
+      "category": "Heavy-ion - Phenomenology",
+      "abstract": "A v1-based nonflow scaling method outperforms multiplicity reweighting in toy and PYTHIA-Angantyr closure tests and is applied to AMPT OO predictions.",
+      "tags": [
+        "nonflow",
+        "multiparticle correlations",
+        "symmetric cumulants",
+        "OO"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Higher-order strongly intensive observables for forward-backward multiplicity correlations",
+      "authors": [
+        "Evgeny Andronov"
+      ],
+      "author_count": 1,
+      "arxiv_id": "2610.37051",
+      "url": "https://arxiv.org/abs/2610.37051",
+      "category": "Heavy-ion - Phenomenology",
+      "abstract": "An all-order hierarchy removes source-number fluctuations under independent-identical-source assumptions and is benchmarked analytically and with PYTHIA.",
+      "tags": [
+        "strongly intensive observables",
+        "multiplicity correlations",
+        "cumulants",
+        "longitudinal structure"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "An end-to-end framework for uncertainty-aware validation of generative models",
+      "authors": [
+        "Giada Badaracco",
+        "Sean Benevedes",
+        "Christina Reissel",
+        "Philip Harris",
+        "Gaia Grosso"
+      ],
+      "author_count": 5,
+      "arxiv_id": "2610.37398",
+      "url": "https://arxiv.org/abs/2610.37398",
+      "category": "Physics AI/ML",
+      "abstract": "SIGMA profiles density-estimator uncertainty in a composite-null goodness-of-fit test, avoiding spurious rejection driven by finite training data.",
+      "tags": [
+        "generative models",
+        "uncertainty quantification",
+        "goodness of fit",
+        "background estimation"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "The proton structure one mode at a time: a Neural Tangent Kernel analysis of a DIS fit",
+      "authors": [
+        "Amedeo Chiefa",
+        "Luigi Del Debbio",
+        "Richard Kenway"
+      ],
+      "author_count": 3,
+      "arxiv_id": "2610.36034",
+      "url": "https://arxiv.org/abs/2610.36034",
+      "category": "Physics AI/ML",
+      "abstract": "NTK eigenmodes expose how neural PDF fits incrementally learn signal and then noise, providing an interpretable view of regularization.",
+      "tags": [
+        "neural tangent kernel",
+        "PDF fits",
+        "inverse problems",
+        "regularization"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "What the Primary Lund Plane Omits: A Model-Stitching Diagnosis of a Jet-Tagger Representation Gap",
+      "authors": [
+        "Saurabh Rai",
+        "Sanmay Ganguly"
+      ],
+      "author_count": 2,
+      "arxiv_id": "2610.37137",
+      "url": "https://arxiv.org/abs/2610.37137",
+      "category": "Physics AI/ML",
+      "abstract": "Model stitching identifies a representation deficit hidden by AUC; full-tree Lund information closes 72% of the top-tagging rejection gap.",
+      "tags": [
+        "jet tagging",
+        "model stitching",
+        "Lund plane",
+        "representation diagnostics"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Energy density in color string clusters and its implications for heavy-quark energy loss",
+      "authors": [
+        "Daria Prokhorova",
+        "Shuzhe Shi",
+        "Evgeny Andronov"
+      ],
+      "author_count": 3,
+      "arxiv_id": "2610.36723",
+      "url": "https://arxiv.org/abs/2610.36723",
+      "category": "Heavy-ion - Phenomenology",
+      "abstract": "Two prescriptions for color-string-cluster energy density lead to different effective temperatures, but no heavy-flavor data comparison is presented.",
+      "tags": [
+        "color strings",
+        "heavy-quark energy loss",
+        "model dependence",
+        "effective temperature"
+      ],
+      "assessment": "caution"
+    }
+  ]
+}

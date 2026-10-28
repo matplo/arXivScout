@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Daily arXiv Physics Scout - 2026-10-28</title><link rel="stylesheet" href="../assets/site.css"></head>
+<body>
+<header class="site-header">
+  <p class="eyebrow">Daily arXiv Physics Scout</p>
+  <h1>Heavy-ion and physics AI briefing</h1>
+  <p class="dek">28 October 2026 - Wednesday announcement; submissions primarily from 26-27 October</p>
+  <div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  <p><a href="../index.html">Archive index</a></p>
+</header>
+<main>
+<section><h2>Executive takeaways</h2><ul>
+<li><strong>Leading result:</strong> ALICE's identified-hadron v2 in OO shows mass ordering and a 10-sigma baryon-meson split; the phi following K0S rather than the mass-similar Lambda makes a materially stronger case for partonic collectivity than inclusive flow alone.</li>
+<li><strong>Clean hadronization/nucleosynthesis discriminator:</strong> ALICE's first antideuteron-net-Lambda correlation agrees with statistical hadronization while the earlier antideuteron-antiproton anomaly does not, isolating the latter as a composite-formation effect.</li>
+<li><strong>Promising extraction method, limited evidence:</strong> the speed-of-sound framework corrects quantum fluctuation bias in hydrodynamic simulations, but the current proceedings paper does not yet establish robustness to non-Gaussian fluctuations or model mismatch.</li>
+<li><strong>Small-system flow analyses need explicit stress tests:</strong> the proposed v1-based nonflow scaling passes toy and PYTHIA-Angantyr closure tests and is useful for OO, but AMPT predictions are not experimental validation.</li>
+<li><strong>Best AI/ML contributions:</strong> uncertainty-aware generative-model validation and NTK analysis of PDF fits address statistical failure modes that directly matter in HEP; the Lund-plane paper shows why AUC alone can conceal rare-background deficiencies.</li>
+</ul></section>
+
+<section><h2>Heavy-ion - Theory</h2>
+<article class="paper" data-search="2610.36846 extracting qcd speed of sound quantum fluctuations mu yan huang heavy-ion theory equation of state hydrodynamics gaussian fluctuations thermalization">
+<div class="paper-top"><span class="category">Heavy-ion - Theory</span><span class="assessment mixed">mixed</span></div>
+<h3><a href="https://arxiv.org/abs/2610.36846">Extracting the QCD speed of sound in the presence of quantum fluctuations</a></h3>
+<p class="authors">Yu-Shan Mu, Li Yan, Xu-Guang Huang</p>
+<p><strong>Summary.</strong> The authors propose a statistical correction to the mean-pT versus charged-multiplicity correlation used to infer the QCD speed of sound, exploiting an assumed Gaussian structure of quantum-initiated event fluctuations. Event-by-event hydrodynamic tests recover lattice-QCD expectations across large and small systems and suggest an auxiliary thermalization diagnostic.</p>
+<p><strong>Why it matters.</strong> Bias control is central if this correlation is to become a quantitative equation-of-state observable rather than a qualitative trend.</p>
+<p><strong>Critical assessment.</strong> Conceptually valuable and directly relevant, but this is a short conference proceeding. The abstract-level evidence is simulation closure; sensitivity to non-Gaussian initial fluctuations, centrality definition, detector response, and hydrodynamic model mismatch remains unclear.</p>
+<details><summary>Abstract</summary><p>A Gaussianity-based correction is proposed for quantum-fluctuation bias in speed-of-sound extraction and validated in event-by-event hydrodynamic simulations.</p></details>
+<div class="tags"><span>speed of sound</span><span>equation of state</span><span>hydrodynamics</span><span>fluctuations</span></div>
+</article>
+</section>
+
+<section><h2>Heavy-ion - Experiment</h2>
+<article class="paper" data-search="2610.36237 alice oxygen oxygen phi k0s lambda elliptic flow v2 partonic collectivity recombination mass ordering">
+<div class="paper-top"><span class="category">Heavy-ion - Experiment</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2610.36237">Evidence of partonic collectivity in OO collisions through the measurement of phi, K0S, and Lambda elliptic flow</a></h3>
+<p class="authors">ALICE Collaboration (large collaboration author list)</p>
+<p><strong>Summary.</strong> ALICE reports the first phi-meson v2 measurement in a small ion system at sqrt(sNN)=5.36 TeV. Low-pT mass ordering is followed above 3 GeV/c by a 10-sigma baryon-meson split: Lambda exceeds the mesons, while the mass-similar phi tracks K0S.</p>
+<p><strong>Why it matters.</strong> The phi/Lambda comparison weakens a purely hydrodynamic mass explanation and supports quark recombination from a collectively flowing partonic stage in a system much smaller than Pb-Pb.</p>
+<p><strong>Critical assessment.</strong> The day's strongest result: a targeted species comparison and high-significance pattern provide more discriminating evidence than generic positive v2. The interpretation is still model-dependent; hadronic rescattering and nonflow/systematic treatment in the full paper determine how literally “partonic” should be read.</p>
+<details><summary>Abstract</summary><p>Identified-hadron v2 in OO exhibits mass ordering at low pT and baryon-meson splitting at intermediate pT, with phi behavior favoring recombination over a mass-only account.</p></details>
+<div class="tags"><span>OO collisions</span><span>elliptic flow</span><span>phi meson</span><span>quark recombination</span></div>
+</article>
+
+<article class="paper" data-search="2610.36307 alice antideuteron net lambda fluctuations pb pb statistical hadronization nucleosynthesis cumulants thermal-fist">
+<div class="paper-top"><span class="category">Heavy-ion - Experiment</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2610.36307">Measurement of antideuteron and net-Lambda number fluctuations at the Large Hadron Collider</a></h3>
+<p class="authors">ALICE Collaboration (large collaboration author list)</p>
+<p><strong>Summary.</strong> The first antideuteron-net-Lambda number correlation in Pb-Pb, together with the net-Lambda second cumulant, agrees with Thermal-FIST statistical hadronization. Because Lambda is not an antideuteron constituent, this contrasts cleanly with the previously anomalous antideuteron-antiproton correlation.</p>
+<p><strong>Why it matters.</strong> The observable separates correlations generated at hadronization from those introduced by late composite-state formation, sharpening the statistical-hadronization versus nucleosynthesis question.</p>
+<p><strong>Critical assessment.</strong> Strong experimental logic: the nonconstituent control channel is unusually well chosen. The conclusion depends on common acceptance/efficiency corrections and the adequacy of the specific Thermal-FIST parameterization, which warrant full-paper inspection.</p>
+<details><summary>Abstract</summary><p>Antideuteron-net-Lambda correlations agree with statistical hadronization, supporting nucleosynthesis as the source of the antideuteron-antiproton discrepancy.</p></details>
+<div class="tags"><span>antideuteron</span><span>net Lambda</span><span>fluctuations</span><span>nucleosynthesis</span></div>
+</article>
+</section>
+
+<section><h2>Heavy-ion - Phenomenology</h2>
+<article class="paper" data-search="2610.36922 mallick prasad nonflow multiparticle correlators symmetry plane symmetric cumulants oo pbpb pythia angantyr ampt">
+<div class="paper-top"><span class="category">Heavy-ion - Phenomenology</span><span class="assessment mixed">mixed</span></div>
+<h3><a href="https://arxiv.org/abs/2610.36922">Improved nonflow control for multiparticle correlators and system-size-dependent evolution from OO to Pb-Pb collisions at the LHC</a></h3>
+<p class="authors">Neelkamal Mallick, Suraj Prasad</p>
+<p><strong>Summary.</strong> A v1-estimator-based scaling prescription for nonflow subtraction is tested against a controlled toy model and PYTHIA 8 Angantyr, where collective flow is absent. It outperforms multiplicity reweighting for selected symmetry-plane correlators and symmetric cumulants, then supplies AMPT predictions for OO-to-Pb-Pb comparisons.</p>
+<p><strong>Why it matters.</strong> Small-system multiparticle observables can be dominated by nonflow precisely where geometry-driven collectivity is most interesting.</p>
+<p><strong>Critical assessment.</strong> The closure-test design is sound and practically useful. Confidence should remain moderate until the prescription is stress-tested against generators with different jet/resonance structure and, crucially, embedded flow plus nonflow; the AMPT application is a prediction, not validation.</p>
+<details><summary>Abstract</summary><p>A v1-based nonflow scaling method is validated in no-flow simulations and applied to OO multiparticle-correlation predictions.</p></details>
+<div class="tags"><span>nonflow</span><span>symmetry-plane correlators</span><span>symmetric cumulants</span><span>OO</span></div>
+</article>
+
+<article class="paper" data-search="2610.37051 andronov higher order strongly intensive observables forward backward multiplicity correlations cumulants source fluctuations pythia">
+<div class="paper-top"><span class="category">Heavy-ion - Phenomenology</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2610.37051">Higher-order strongly intensive observables for forward-backward multiplicity correlations</a></h3>
+<p class="authors">Evgeny Andronov</p>
+<p><strong>Summary.</strong> The second-order strongly intensive construction is generalized to all cumulant orders for independent identical sources, with explicit fourth-order expressions and an all-order recursion. Analytical models and PYTHIA at 0.9 and 13 TeV expose sensitivity to acceptance geometry, selection, and connected correlations.</p>
+<p><strong>Why it matters.</strong> Higher-order longitudinal correlations could retain dynamical information while suppressing the nuisance contribution from fluctuations in the number of particle-emitting sources.</p>
+<p><strong>Critical assessment.</strong> Mathematically substantial, with clear normalization limits and nontrivial benchmarks. Its protection is conditional on identical, source-count-independent emission; real nuclear geometry, conservation laws, and centrality selection can violate that premise, so experimental deployment needs dedicated closure studies.</p>
+<details><summary>Abstract</summary><p>An all-order hierarchy of strongly intensive forward-backward observables is derived and benchmarked with analytical models and PYTHIA.</p></details>
+<div class="tags"><span>strongly intensive observables</span><span>multiplicity correlations</span><span>cumulants</span><span>longitudinal structure</span></div>
+</article>
+</section>
+
+<section><h2>Heavy-ion - AI/ML use</h2>
+<p>No new paper in the screened interval made a strong, substantive AI/ML contribution specifically to heavy-ion collisions. Papers using small surrogates for nuclear-data optimization were too indirect for inclusion.</p>
+</section>
+
+<section><h2>AI/ML use cases in physics</h2>
+<article class="paper" data-search="2610.37398 sigma uncertainty aware validation generative models density estimation gaussian mixtures goodness of fit nuisance parameters qcd background hep">
+<div class="paper-top"><span class="category">Physics AI/ML</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2610.37398">An end-to-end framework for uncertainty-aware validation of generative models</a></h3>
+<p class="authors">Giada Badaracco, Sean Benevedes, Christina Reissel, Philip Harris, Gaia Grosso</p>
+<p><strong>Method and result.</strong> SIGMA combines tractable density estimation with uncertainty propagation into a composite-null goodness-of-fit test. On a toy problem and QCD-background benchmark, profiling fit uncertainty extends the usable test-set size by up to an order of magnitude relative to treating the learned model as exact.</p>
+<p><strong>Likely HEP/heavy-ion use.</strong> This targets a central obstacle for learned background models and fast simulators: distinguishing true mismodeling from finite-training-sample estimation error in downstream statistical tests.</p>
+<p><strong>Critical assessment.</strong> Statistically principled and unusually aligned with inference requirements. Transfer beyond Gaussian mixtures is the decisive next step; flexible high-dimensional generators may not admit calibrated, computationally manageable parameter uncertainty.</p>
+<details><summary>Abstract</summary><p>Generative-model fit uncertainty is profiled as nuisance parameters in a goodness-of-fit test, avoiding automatic rejection of finite-sample estimators on large test sets.</p></details>
+<div class="tags"><span>generative models</span><span>uncertainty quantification</span><span>goodness of fit</span><span>background estimation</span></div>
+</article>
+
+<article class="paper" data-search="2610.36034 chiefa del debbio kenway neural tangent kernel dis pdf fit inverse problem regularization shapley modes">
+<div class="paper-top"><span class="category">Physics AI/ML</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2610.36034">The proton structure one mode at a time: a Neural Tangent Kernel analysis of a DIS fit</a></h3>
+<p class="authors">Amedeo Chiefa, Luigi Del Debbio, Richard Kenway</p>
+<p><strong>Method and result.</strong> Exact gradient-flow analysis is extended to multiflavor neural PDF fits. Training behaves as incremental inclusion of NTK eigenmodes: leading modes reconstruct the target, while late subleading modes preferentially absorb noise; the paper also derives Shapley values for linear PDF observables in the same framework.</p>
+<p><strong>Likely HEP/heavy-ion use.</strong> The mode picture provides an interpretable route to early stopping, inconsistent-data stress tests, and regularization diagnostics in PDF/nPDF extraction and other ill-posed inverse problems.</p>
+<p><strong>Critical assessment.</strong> Deep and physics-specific rather than decorative ML, with 70 pages and extensive diagnostics. NTK linearization is most faithful in wide-network, near-initialization regimes, so usefulness for realistic finite-network training must be judged from the detailed experiments.</p>
+<details><summary>Abstract</summary><p>NTK eigenmodes explain regularization and noise learning in multiflavor neural-network fits to deep-inelastic-scattering data.</p></details>
+<div class="tags"><span>neural tangent kernel</span><span>PDF fits</span><span>inverse problems</span><span>regularization</span></div>
+</article>
+
+<article class="paper" data-search="2610.37137 rai ganguly lund plane particle transformer model stitching jet tagging representation gap auc background rejection full declustering tree">
+<div class="paper-top"><span class="category">Physics AI/ML</span><span class="assessment strong">strong</span></div>
+<h3><a href="https://arxiv.org/abs/2610.37137">What the Primary Lund Plane Omits: A Model-Stitching Diagnosis of a Jet-Tagger Representation Gap</a></h3>
+<p class="authors">Saurabh Rai, Sanmay Ganguly</p>
+<p><strong>Method and result.</strong> Linear model stitching separates representation loss from downstream-reader limitations in top tagging. AUC misses a rare-background failure, whereas low-efficiency rejection exposes it; rebuilding on the full Cambridge/Aachen tree closes 72% of the ParT gap even though inference remains dominated by the primary branch.</p>
+<p><strong>Likely HEP/heavy-ion use.</strong> The diagnostic is directly useful for jet taggers, including quenched-jet studies, where rare backgrounds and representation-induced blind spots matter more than aggregate AUC.</p>
+<p><strong>Critical assessment.</strong> Strong experimental design: a known-incomplete positive control, alternative reader, localization of the failure population, and predicted repair all support the causal claim. Transfer to detector-level or heavy-ion backgrounds is plausible but not established.</p>
+<details><summary>Abstract</summary><p>Model stitching localizes a primary-Lund representation deficit that aggregate AUC conceals; full-tree construction substantially repairs top-tagging rejection.</p></details>
+<div class="tags"><span>jet tagging</span><span>model stitching</span><span>Lund plane</span><span>representation diagnostics</span></div>
+</article>
+</section>
+
+<section><h2>Weak or overclaimed papers worth caution</h2>
+<article class="paper" data-search="2610.36723 prokhorova shi andronov color string clusters energy density heavy quark energy loss effective temperature caution">
+<div class="paper-top"><span class="category">Heavy-ion - Phenomenology</span><span class="assessment caution">caution</span></div>
+<h3><a href="https://arxiv.org/abs/2610.36723">Energy density in color string clusters and its implications for heavy-quark energy loss</a></h3>
+<p class="authors">Daria Prokhorova, Shuzhe Shi, Evgeny Andronov</p>
+<p><strong>Why caution is warranted.</strong> The paper contrasts square-root versus linear source-number scaling when converting overlapping color strings into an effective medium temperature, a choice that can feed heavy-quark loss calculations. But the abstract reports no comparison with heavy-flavor observables, no uncertainty analysis, and no demonstration that either prescription is selected by data. At eight pages and framed as a model-choice discussion, it is useful as a sensitivity warning, not yet a quantitative energy-loss result.</p>
+<details><summary>Abstract</summary><p>Two definitions of energy density in overlapping color-string clusters imply different effective temperatures for subsequent heavy-quark energy-loss calculations.</p></details>
+<div class="tags"><span>color strings</span><span>heavy-quark energy loss</span><span>model dependence</span><span>effective temperature</span></div>
+</article>
+</section>
+</main>
+<script src="../assets/filter.js"></script>
+</body></html>
