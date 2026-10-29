@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout - 2026-10-29</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <header class="site-header compact">
+    <p class="eyebrow"><a href="../index.html">Daily arXiv Physics Scout</a></p>
+    <h1>Briefing for 29 October 2026</h1>
+    <p class="dek">Identified-hadron flow and light-nucleus formation at the LHC; fluctuation-aware QCD thermodynamics; spin-3/2 polarization; and uncertainty-aware HEP machine learning.</p>
+    <div class="filter-panel"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+  </header>
+  <main>
+    <section>
+      <h2>Executive takeaways</h2>
+      <ul>
+        <li><strong>Strongest result:</strong> ALICE observes both low-pT mass ordering and a greater-than-10-sigma baryon-meson splitting in identified-hadron v2 in O-O collisions. The phi meson follows the lighter K0S rather than the similarly massive Lambda, directly disfavoring a mass-only account and supporting, though not uniquely proving, partonic recombination.</li>
+        <li>ALICE's antideuteron-net-Lambda measurement cleanly separates hadronization correlations from the additional local baryon-number correlations induced by nucleosynthesis. The closure and systematic treatment make this a useful benchmark for light-nucleus production models.</li>
+        <li>A fluctuation-aware speed-of-sound estimator is conceptually valuable, but the evidence is presently simulation-only and published as proceedings. Gaussian residuals should not yet be treated as a unique experimental signature of thermalization.</li>
+        <li>For HEP ML, the most consequential theme is uncertainty and regularization rather than a new architecture: SIGMA propagates density-estimation uncertainty into goodness-of-fit tests, while the NTK study explains how PDF fits learn signal-dominated modes before noise-dominated ones.</li>
+        <li>No paper was placed in the caution section. The mixed assessments below identify concrete limitations without implying scientific weakness.</li>
+      </ul>
+    </section>
+
+    <section><h2>Heavy-ion collision papers</h2>
+      <h3>Experiment</h3>
+      <article class="paper" data-date="2026-10-29" data-search="2610.36237 ALICE experiment O-O oxygen elliptic flow phi K0S Lambda v2 collectivity recombination hadronization strong">
+        <p class="paper-meta"><span>Strong</span> &middot; Nuclear experiment</p>
+        <h4><a href="https://arxiv.org/abs/2610.36237">Evidence of partonic collectivity in OO collisions through the measurement of phi, K0S, and Lambda elliptic flow</a></h4>
+        <p><strong>Authors:</strong> ALICE Collaboration (large collaboration; the arXiv landing page exposes the collaboration name rather than an individual author count; full list begins on p. 17).</p>
+        <p><strong>Summary:</strong> Using about three billion O-O events at sqrt(sNN)=5.36 TeV, ALICE measures identified-hadron v2. It finds low-pT mass ordering and, above 3 GeV/c, a highly significant baryon-meson splitting in which the phi follows K0S instead of the similarly massive Lambda.</p>
+        <p><strong>Why it matters:</strong> The phi provides an unusually clean lever between mass-driven radial-flow effects and hadron-type dependence. The result extends a central signature of partonic collectivity into the lightest nucleus-nucleus system currently accessible at the LHC.</p>
+        <p><strong>Assessment:</strong> Strong experimental work: enormous statistics, two centrality estimators, explicit nonflow variations, template-method closure tests, and correlated-systematic handling. The evidence robustly rejects a simple mass-only explanation; recombination is a compelling interpretation, but not uniquely established by this measurement alone.</p>
+        <details><summary>Abstract</summary><p>The first measurement of the elliptic-flow coefficient v2 of phi, K0S, and Lambda hadrons in O-O collisions is presented versus transverse momentum in central and semi-central events. Low-pT mass ordering is consistent with collective expansion. Above 3 GeV/c a baryon-meson splitting appears with 10-sigma significance, and the phi tracks K0S rather than the similarly massive Lambda, supporting hadronization through quark recombination from a collectively flowing partonic medium.</p></details>
+      </article>
+
+      <article class="paper" data-date="2026-10-29" data-search="2610.36307 ALICE experiment antideuteron net Lambda fluctuations Pb-Pb coalescence Thermal-FIST nucleosynthesis strong">
+        <p class="paper-meta"><span>Strong</span> &middot; Nuclear experiment</p>
+        <h4><a href="https://arxiv.org/abs/2610.36307">Measurement of antideuteron and net-Lambda number fluctuations at the Large Hadron Collider</a></h4>
+        <p><strong>Authors:</strong> ALICE Collaboration (large collaboration; the arXiv landing page exposes the collaboration name rather than an individual author count; full list begins on p. 15).</p>
+        <p><strong>Summary:</strong> ALICE reports the first antideuteron-net-Lambda number correlation in Pb-Pb collisions and an improved antideuteron-antiproton correlation. Thermal-FIST describes the net-Lambda and antideuteron-net-Lambda observables, while adding Wigner-function coalescence accounts for the extra antideuteron-antiproton correlation.</p>
+        <p><strong>Why it matters:</strong> Comparing a constituent nucleon with a nonconstituent strange baryon gives a sharper experimental separation between statistical hadronization and late nuclear assembly than yields alone.</p>
+        <p><strong>Assessment:</strong> Strong and focused. The full chain is closed on simulation within 1.5 sigma, correlated and uncorrelated systematics are separated, and competing formation ingredients are tested on complementary observables. The interpretation still inherits the modeling assumptions of Thermal-FIST and its coalescence implementation.</p>
+        <details><summary>Abstract</summary><p>The first antideuteron-net-Lambda number correlation in Pb-Pb collisions is presented. Together with the net-Lambda second cumulant it is well described by statistical hadronization, whereas the antideuteron-antiproton correlation requires correlations generated during nucleosynthesis. The comparison supports a picture in which nucleons are produced statistically and deuterons subsequently form through coalescence.</p></details>
+      </article>
+
+      <h3>Theory</h3>
+      <article class="paper" data-date="2026-10-29" data-search="2610.36846 theory QCD speed of sound quantum fluctuations Gaussianity hydrodynamics thermalization equation of state mixed">
+        <p class="paper-meta"><span>Mixed / promising</span> &middot; Theory</p>
+        <h4><a href="https://arxiv.org/abs/2610.36846">Extracting the QCD speed of sound in the presence of quantum fluctuations</a></h4>
+        <p><strong>Authors:</strong> Yu-Shan Mu, Li Yan, Xu-Guang Huang (3 authors).</p>
+        <p><strong>Summary:</strong> The authors propose extracting cs2 from event-by-event mean-pT versus multiplicity correlations by choosing the thermodynamic response that makes the residual fluctuation distribution Gaussian. Hydrodynamic simulations recover lattice-QCD-like values, while a nonthermal transport comparison gives non-Gaussian residuals and unphysical estimates.</p>
+        <p><strong>Why it matters:</strong> It directly targets a known bias in an emerging experimental route to the QCD equation of state and supplies an internal diagnostic of the assumed thermal separation.</p>
+        <p><strong>Assessment:</strong> Conceptually sharp, but this is a short SQM proceedings contribution with validation limited to model studies. Gaussianity is a useful consistency condition, not yet a unique thermalization criterion; robustness to realistic detector effects, centrality selection, non-Gaussian initial fluctuations, and alternative transport models remains to be established.</p>
+        <details><summary>Abstract</summary><p>A statistical framework is introduced to remove quantum-fluctuation bias from the correlation between mean transverse momentum and charged multiplicity. It exploits approximate Gaussianity of the residual quantum fluctuations and is also proposed as a thermalization diagnostic. Event-by-event hydrodynamic tests recover speed-of-sound values consistent with lattice QCD across system sizes.</p></details>
+      </article>
+
+      <article class="paper" data-date="2026-10-29" data-search="2610.37382 theory Rarita-Schwinger Wigner function spin 3/2 Omega polarization pseudo-gauge thermal shear vorticity mixed">
+        <p class="paper-meta"><span>Strong theory, prospective observable</span> &middot; Theory</p>
+        <h4><a href="https://arxiv.org/abs/2610.37382">Covariant Wigner function and spin polarization of the Rarita-Schwinger field</a></h4>
+        <p><strong>Authors:</strong> Matteo Buzzegoli, Aleksandar Gecic, Rajeev Singh (3 authors).</p>
+        <p><strong>Summary:</strong> The paper derives the covariant Wigner-function relation to the spin density matrix and mean polarization for spin-3/2 fields, including thermal vorticity, shear, and spin potential in several pseudo-gauges. It identifies local Omega-minus polarization as a possible discriminator of canonical and Belinfante descriptions.</p>
+        <p><strong>Why it matters:</strong> Spin-3/2 polarization is less developed than the Lambda sector, and a pseudo-gauge-sensitive observable could connect formal spin hydrodynamics to measurable heavy-ion data.</p>
+        <p><strong>Assessment:</strong> Technically substantial and directly relevant, but its experimental payoff is prospective. Quantitative phenomenology, feed-down, acceptance, and realistic hydrodynamic backgrounds are needed before the claimed discriminating power can be judged.</p>
+        <details><summary>Abstract</summary><p>The covariant Wigner function of a spin-3/2 Rarita-Schwinger field is related to its spin density matrix and mean spin vector. Polarization induced by thermal vorticity, thermal shear, and spin potential is derived in the Belinfante, canonical, and GLW pseudo-gauges. Differences in shear-induced Omega-minus polarization may permit experimental discrimination between pseudo-gauges.</p></details>
+      </article>
+
+      <h3>Phenomenology</h3>
+      <article class="paper" data-date="2026-10-29" data-search="2610.36922 phenomenology nonflow symmetry plane correlators symmetric cumulants O-O Pb-Pb AMPT Pythia Angantyr flow mixed">
+        <p class="paper-meta"><span>Mixed / useful method</span> &middot; Phenomenology</p>
+        <h4><a href="https://arxiv.org/abs/2610.36922">Improved nonflow control for multiparticle correlators and system-size-dependent evolution from OO to Pb-Pb collisions at the LHC</a></h4>
+        <p><strong>Authors:</strong> Neelkamal Mallick, Suraj Prasad (2 authors).</p>
+        <p><strong>Summary:</strong> Two low-multiplicity-anchored subtraction schemes for symmetry-plane correlators and normalized symmetric cumulants are tested in a toy model and Pythia 8 Angantyr. A v1-estimator scaling closes better and is then used for AMPT predictions spanning O-O to Pb-Pb.</p>
+        <p><strong>Why it matters:</strong> Nonflow is a leading obstacle in small-system multiparticle correlations, exactly where geometry and collectivity claims are most delicate.</p>
+        <p><strong>Assessment:</strong> The controlled no-flow closure tests are a real strength. The final O-O physics results are nevertheless predictions inside AMPT, and subtraction closure in Pythia/Angantyr does not guarantee unbiased behavior when nonflow and genuine flow coexist in data.</p>
+        <details><summary>Abstract</summary><p>An improved nonflow subtraction using multiplicity reweighting and v1-estimator scaling is validated for selected symmetry-plane correlators and symmetric cumulants in a toy model and Pythia 8 Angantyr. The preferred method is applied to AMPT O-O predictions and compared with Pb-Pb results on a common multiplicity axis.</p></details>
+      </article>
+
+      <h3>AI/ML use</h3>
+      <p>No new heavy-ion-specific AI/ML paper met the inclusion bar in this listing. The transferable HEP-ML work is assessed below.</p>
+    </section>
+
+    <section><h2>AI/ML use cases in physics</h2>
+      <article class="paper" data-date="2026-10-29" data-search="2610.37398 AI ML generative model uncertainty goodness of fit SIGMA Gaussian mixture background estimation collider strong">
+        <p class="paper-meta"><span>Strong</span> &middot; HEP AI/ML</p>
+        <h4><a href="https://arxiv.org/abs/2610.37398">An end-to-end framework for uncertainty-aware validation of generative models</a></h4>
+        <p><strong>Authors:</strong> Giada Badaracco, Sean Benevedes, Christina Reissel, Philip Harris, Gaia Grosso (5 authors).</p>
+        <p><strong>Method and result:</strong> SIGMA fits a Gaussian-mixture density, estimates parameter uncertainty through analytic scores/Fisher information or bootstrap, and profiles that uncertainty in a composite-null goodness-of-fit test. On a QCD-background benchmark it remains calibrated for test samples about an order of magnitude larger than a point-null test and outperforms large normalizing-flow ensembles on calibration.</p>
+        <p><strong>Likely use:</strong> Data-driven background estimation, generative fast-simulation validation, and anomaly-search control regions where finite training statistics must propagate into the final likelihood. Heavy-ion applications include low-dimensional conditional background or detector-response models after physics-motivated compression.</p>
+        <p><strong>Assessment:</strong> Strong statistical framing and unusually honest limitation analysis. Direct use is currently restricted to low-dimensional summaries because GMM parameter counts grow rapidly; extension to neural density estimators requires faithful uncertainty estimates, which is the hard part rather than a solved detail.</p>
+        <details><summary>Abstract</summary><p>SIGMA combines density estimation with uncertainty propagation into a composite-null goodness-of-fit test. By profiling finite-training-sample uncertainty, rejection indicates mismodeling rather than merely a large test set. Controlled and collider-QCD benchmarks show substantially improved calibration, while the tractable GMM implementation is limited to low-dimensional spaces.</p></details>
+      </article>
+
+      <article class="paper" data-date="2026-10-29" data-search="2610.36034 AI ML neural tangent kernel PDF DIS NNPDF regularization Shapley Fisher information strong">
+        <p class="paper-meta"><span>Strong</span> &middot; HEP AI/ML</p>
+        <h4><a href="https://arxiv.org/abs/2610.36034">The proton structure one mode at a time: a Neural Tangent Kernel analysis of a DIS fit</a></h4>
+        <p><strong>Authors:</strong> Amedeo Chiefa, Luigi Del Debbio, Richard Kenway (3 authors).</p>
+        <p><strong>Method and result:</strong> The authors generalize an exact NTK gradient-flow solution to a realistic multiflavor DIS PDF fit and validate it against numerical NNPDF-style training. Leading kernel modes reconstruct the target PDFs, while later subleading modes preferentially learn data noise; the analysis also connects the training geometry to Fisher information and Shapley values.</p>
+        <p><strong>Likely use:</strong> Diagnosing early stopping, parametrization bias, inconsistent datasets, and information flow in global PDF or nuclear-PDF fits. The same modal tools could help audit emulator and inverse-problem training in heavy-ion Bayesian analyses.</p>
+        <p><strong>Assessment:</strong> Deep and valuable because it explains regularization rather than adding a black-box model. Transfer beyond the studied feed-forward architecture and near-NTK regime is plausible but must be demonstrated, especially for finite-width or feature-learning-dominated networks.</p>
+        <details><summary>Abstract</summary><p>A neural-tangent-kernel analysis of a multiflavor DIS PDF fit shows that gradient training incrementally learns kernel modes: a few leading modes reconstruct the target, while subleading late-time modes carry data noise. The work provides an analytic view of implicit regularization, initialization effects, Fisher information, and Shapley-value interpretations in realistic PDF inference.</p></details>
+      </article>
+
+      <article class="paper" data-date="2026-10-29" data-search="2610.36073 AI ML regression high dimensional phase space energy flow polynomials large multiplicity QCD analytic strong">
+        <p class="paper-meta"><span>Strong theory / narrower immediate scope</span> &middot; HEP AI/ML</p>
+        <h4><a href="https://arxiv.org/abs/2610.36073">Regression on high-dimensional phase space</a></h4>
+        <p><strong>Authors:</strong> Andrew J. Larkoski (1 author).</p>
+        <p><strong>Method and result:</strong> A large-multiplicity expansion makes regression in an energy-flow-polynomial basis analytically tractable. The paper proves that EFP covariances on uniform phase space scale as inverse multiplicity squared and combines that expansion with fixed-order QCD in an e+e- example.</p>
+        <p><strong>Likely use:</strong> Understanding conditioning, coefficient scaling, and feature selection for IRC-safe collider regression. The formalism may transfer to high-multiplicity heavy-ion jet or event-shape regressions where symmetry and conservation laws dominate feature covariance.</p>
+        <p><strong>Assessment:</strong> A rigorous conceptual contribution with credible transfer value, but not yet a general recipe for realistic detector-level heavy-ion data. The clean uniform-phase-space and EFP setting is the source of both the analytic power and the present limitation.</p>
+        <details><summary>Abstract</summary><p>A large-multiplicity expansion is developed for regression with energy flow polynomials on Lorentz-invariant phase space. EFP covariances are proven to scale as the inverse square of multiplicity through cancellations from permutation invariance, momentum conservation, and rotations. An e+e- example combines large-multiplicity and fixed-order QCD expansions.</p></details>
+      </article>
+    </section>
+    <section><h2>Weak or overclaimed papers worth caution</h2><p>None selected today. Proceedings-level and model-dependence caveats are attached directly to the relevant papers above.</p></section>
+  </main>
+  <script src="../assets/filter.js"></script>
+</body>
+</html>
