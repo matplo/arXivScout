@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-30",
+  "path": "reports/2026-10-30.html",
+  "summary": "Eight selected papers cover experimentally controllable net-charge fluctuation tests of thermal QCD, electromagnetic directed flow, neutron-skin geometry, ultra-peripheral GDR correlations, an ALICE anti-4Li search, transformer calorimeter reconstruction, ML-surrogate multiloop amplitudes, and particle-native neural operators.",
+  "professional_summary": "The strongest heavy-ion contribution develops an acceptance-aware route from charge balance functions to lattice-QCD susceptibility tests. A validated electromagnetic hydrodynamic framework describes charge-odd directed flow but leaves conductivity extraction model dependent. The strongest ML contributions use a surrogate to enable a direct two-loop ttH calculation and introduce a mathematically controlled particle-native neural operator with broad kinetic-plasma validation.",
+  "keywords": [
+    "net-charge cumulants",
+    "QGP conductivity",
+    "neutron skin",
+    "GDR phase correlations",
+    "anti-4Li femtoscopy",
+    "calorimeter transformers",
+    "surrogate amplitudes",
+    "particle neural operators"
+  ],
+  "arxiv_ids": [
+    "2610.37829",
+    "2610.38363",
+    "2610.38424",
+    "2610.38324",
+    "2610.38549",
+    "2610.37798",
+    "2610.40266",
+    "2610.40528"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "HEP AI/ML",
+    "Transferable physics AI/ML"
+  ],
+  "strongest_paper": "2610.37829",
+  "strongest_paper_summary": "An experimentally grounded route connects charge balance functions and multiplicity densities to net-charge cumulants needed for a lattice-QCD test of thermal equilibrium, with the decisive fourth-order extension still outstanding.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "arxiv_id": "2610.37829",
+      "title": "Testing thermal equilibrium in heavy-ion collisions with electric-charge fluctuations",
+      "short_authors": "Peter Christiansen",
+      "author_count": 1,
+      "url": "https://arxiv.org/abs/2610.37829",
+      "category": "Phenomenology",
+      "abstract": "Recent lattice-QCD electric-charge susceptibilities differ strongly from hadron-resonance-gas expectations, motivating measurements of net-charge cumulants. The paper expresses the second cumulant through the balance function and charged-particle density to make acceptance and efficiency effects experimentally tractable.",
+      "tags": [
+        "net-charge cumulants",
+        "thermal QCD",
+        "charge balance functions"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.38363",
+      "title": "Tracing Electromagnetic Response through Charge Splitting of Directed Flow in the Quark-Gluon Plasma",
+      "short_authors": "Ankit Kumar Panda, Zhu Meng, Long-Gang Pang, Xin-Nian Wang",
+      "author_count": 4,
+      "url": "https://arxiv.org/abs/2610.38363",
+      "category": "Phenomenology",
+      "abstract": "The observed beam-energy change in charge splitting of directed flow is modeled with viscous hydrodynamics coupled to electromagnetic fields and an electromagnetic Cooper-Frye correction. Electric and magnetic distortions compete, with their balance governed by effective conductivity; identified-particle predictions are provided.",
+      "tags": [
+        "directed flow",
+        "QGP conductivity",
+        "electromagnetic fields"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.38424",
+      "title": "Disentangling the neutron skin of 48Ca from nuclear radius effects through 48Ca+48Ca and 48Ti+48Ti flow observables",
+      "short_authors": "Abhisek Saha",
+      "author_count": 1,
+      "url": "https://arxiv.org/abs/2610.38424",
+      "category": "Theory",
+      "abstract": "Transport simulations vary the 48Ca neutron skin and nuclear radius independently, comparing Ca-Ca with Ti-Ti at LHC energy. Flow-mean-pT covariance and its normalized correlation emerge as the most sensitive candidate observables.",
+      "tags": [
+        "neutron skin",
+        "flow fluctuations",
+        "Ca-Ca collisions"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.38324",
+      "title": "Quantum Correlations Between Two Giant Dipole Resonances in Ultra-Peripheral Collisions",
+      "short_authors": "Albandry Alshammri, Ashik Ikbal Sheikh, Declan Keane, Prithwish Tribedy, Gang Wang, Zhangbu Xu, Jie Zhao",
+      "author_count": 7,
+      "url": "https://arxiv.org/abs/2610.38324",
+      "category": "Theory",
+      "abstract": "Three mechanisms for two-neutron azimuthal correlations in mutual GDR excitation are implemented in a Monte Carlo model. An assumed correlated phase yields a pronounced dipole only for small relative emission times, while averaging suppresses it.",
+      "tags": [
+        "ultra-peripheral collisions",
+        "giant dipole resonance",
+        "phase correlations"
+      ],
+      "assessment": "caution"
+    },
+    {
+      "arxiv_id": "2610.38549",
+      "title": "Search for anti-4Li from antiproton + anti-3He femtoscopy in Pb-Pb collisions at 5.36 TeV with ALICE",
+      "short_authors": "Giorgio Alberto Lucia (on behalf of the ALICE Collaboration)",
+      "author_count": null,
+      "url": "https://arxiv.org/abs/2610.38549",
+      "category": "Experiment",
+      "abstract": "A femtoscopic search reconstructs anti-4Li through antiproton and anti-3He pairs in Pb-Pb collisions. The proposed yield comparison with anti-4He is intended to test nucleosynthesis models.",
+      "tags": [
+        "antimatter nuclei",
+        "femtoscopy",
+        "nucleosynthesis"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "arxiv_id": "2610.37798",
+      "title": "End-to-end Particle Reconstruction with Transformers in High-Granularity Calorimeters",
+      "short_authors": "Qiming Bao, Haotian Bi, Benedikt Maier, Alex Tapper, Lauri Laatu",
+      "author_count": 5,
+      "url": "https://arxiv.org/abs/2610.37798",
+      "category": "HEP AI/ML",
+      "abstract": "Transformer models based on learned queries, diffusion, and flow matching reconstruct particles from simulated high-granularity calorimeter hits. They outperform the evaluated clustering baseline on recovery and energy resolution, with query and flow models retaining competitive throughput.",
+      "tags": [
+        "calorimeter reconstruction",
+        "transformers",
+        "flow matching"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.40266",
+      "title": "Two-loop QCD contribution to quark-initiated top-antitop-Higgs production at the LHC",
+      "short_authors": "Xiang Chen, Massimiliano Grazzini, Stefan Kallweit",
+      "author_count": 3,
+      "url": "https://arxiv.org/abs/2610.40266",
+      "category": "HEP AI/ML",
+      "abstract": "Numerical multiloop methods and a learned phase-space surrogate enable a direct two-loop virtual ttH calculation in a leading-colour approximation. The result is consistent with prior approximate treatments and provides a route to practical cross-section integration.",
+      "tags": [
+        "surrogate amplitudes",
+        "two-loop QCD",
+        "ttH"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "arxiv_id": "2610.40528",
+      "title": "NEOPIC: A Neural Operator Framework for Particle-based Kinetic Plasma Simulations",
+      "short_authors": "Sriramkrishnan Muralikrishnan, Chelsea Maria John, Jeffrey Kelling, Michael Bussmann, Robert Speck, Paul Gibbon",
+      "author_count": 6,
+      "url": "https://arxiv.org/abs/2610.40528",
+      "category": "Transferable physics AI/ML",
+      "abstract": "A nonuniform Fourier neural operator maps particle measures directly to fields and can replace the field solve in several particle-based kinetic methods. The work supplies convergence and complexity analysis plus multi-physics numerical validation in two and three dimensions.",
+      "tags": [
+        "neural operators",
+        "particle simulations",
+        "kinetic plasma"
+      ],
+      "assessment": "strong"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2610.38324",
+      "reason": "The phase-lock mechanism is assumed, the largest signal requires idealized emission-time selection, and detector-level/time-inclusive feasibility is not established."
+    },
+    {
+      "arxiv_id": "2610.38549",
+      "reason": "Proceedings abstract reports the method and motivation but no quantitative yield, significance, uncertainty, or limit."
+    }
+  ]
+}
