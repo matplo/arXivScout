@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-31",
+  "path": "reports/2026-10-31.html",
+  "summary": "The latest arXiv batch is led by a lattice-QCD route to quarkonium thermal widths, an electromagnetic-hydrodynamic description of charge-dependent directed flow, an experimentally actionable charge-fluctuation equilibrium test, and an ALICE upper limit on 4 anti-Li production. AI/ML papers address collider distribution shifts and nuclear-mass residual learning, but both retain important validation caveats.",
+  "professional_summary": "Quarkonium in-medium widths, QGP electromagnetic conductivity, electric-charge cumulants, antinuclear femtoscopy, uncertainty-aware collider classification, and nuclear-mass residual learning dominate the selected literature.",
+  "keywords": [
+    "quarkonium thermal widths",
+    "QGP conductivity",
+    "directed flow splitting",
+    "net-charge cumulants",
+    "antinuclear femtoscopy",
+    "energy-based collider ML",
+    "nuclear mass MoE"
+  ],
+  "arxiv_ids": [
+    "2610.40220",
+    "2610.38549",
+    "2610.38363",
+    "2610.37829",
+    "2610.40268",
+    "2610.40022",
+    "2610.38324"
+  ],
+  "total_paper_count": 6,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2610.40220 provides the strongest technical contribution: lattice-QCD constraints on the imaginary heavy-quark potential translated into thermal charmonium and bottomonium widths with explicit systematics.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Complex potential and the thermal width of quarkonium in quark-gluon plasma",
+      "short_authors": "Rasmus Normann Larsen, Peter Petreczky, Jorge Luis Dasilva Golan, Johannes H. Weber",
+      "total_author_count": 4,
+      "arxiv_id": "2610.40220",
+      "url": "https://arxiv.org/abs/2610.40220",
+      "category": "Theory",
+      "abstract": "We study the complex heavy quark anti-quark potential in lattice 2+1 flavor QCD at non-zero temperature. We point out a close relation between the imaginary part of the potential and the thermal quarkonium width. Using this relation, we estimate the thermal width of charmonia and bottomonia at high temperatures, which are not yet accessible with direct lattice QCD calculations of the quarkonium correlation functions and compare these to the results of the T-matrix analysis. For some of the excited quarkonia states, our estimates of the thermal width are smaller than the ones obtained in the T-matrix analysis.",
+      "tags": [
+        "lattice QCD",
+        "quarkonium",
+        "thermal width",
+        "complex potential"
+      ],
+      "assessment": "strong",
+      "summary": "Derives a direct relation between the imaginary part of the lattice-extracted heavy-quark potential and thermal quarkonium widths, then estimates charmonium and bottomonium widths at temperatures where direct lattice spectral calculations remain difficult. Excited-state widths are sometimes below T-matrix estimates.",
+      "critical_assessment": "Strong and technically careful: 2+1-flavor HISQ ensembles, explicit finite-volume studies at two lattice spacings, and bracketing of the long-distance imaginary-potential extrapolation. The widths remain indirect and the volume comparison cannot fully separate thermal- from zero-temperature-reference effects, so these are constrained estimates rather than precision spectral determinations."
+    },
+    {
+      "title": "Search for 4 anti-Li from anti-p + 3 anti-He femtoscopy in Pb-Pb collisions at sqrt(sNN)=5.36 TeV with ALICE",
+      "short_authors": "Giorgio Alberto Lucia on behalf of the ALICE Collaboration",
+      "total_author_count": null,
+      "arxiv_id": "2610.38549",
+      "url": "https://arxiv.org/abs/2610.38549",
+      "category": "Experiment",
+      "abstract": "In these proceedings, the search for 4 anti-Li in Pb-Pb collisions with ALICE is presented. The particle is reconstructed via its two-body decay channel to anti-p plus 3 anti-He, using femtoscopic correlations. A dedicated analysis procedure has been developed to subtract the correlated and uncorrelated combinatorial background. The production yield is compared with that of 4 anti-He, making the measurement a probe of nucleosynthesis models in high-energy hadronic collisions.",
+      "tags": [
+        "ALICE",
+        "antinuclei",
+        "femtoscopy",
+        "coalescence"
+      ],
+      "assessment": "strong",
+      "summary": "Uses 1.21 billion 0-10% central Pb-Pb events and anti-p–3 anti-He femtoscopy. No discovery is claimed: the excess is 2.1 sigma and ALICE sets dN/dy per event below 1.02e-6 at 95% CL.",
+      "critical_assessment": "Scientifically useful despite being a proceedings contribution. Pseudo-experiments and systematic variations are used, but interpretation is limited by the single effective resonance shape and poorly known hyperon–3He strong interactions."
+    },
+    {
+      "title": "Tracing Electromagnetic Response through Charge Splitting of Directed Flow in the Quark-Gluon Plasma",
+      "short_authors": "Ankit Kumar Panda, Zhu Meng, Long-Gang Pang, Xin-Nian Wang",
+      "total_author_count": 4,
+      "arxiv_id": "2610.38363",
+      "url": "https://arxiv.org/abs/2610.38363",
+      "category": "Phenomenology",
+      "abstract": "Experimentally observed charge splitting of directed flow exhibits both a sign reversal at midrapidity and an amplitude change between RHIC and LHC energies. A unified 3+1-dimensional viscous hydrodynamic model with electromagnetic source and particlization corrections describes the beam-energy dependence by varying an effective electrical conductivity. The sign reversal arises from competing electric- and magnetic-field momentum distortions.",
+      "tags": [
+        "directed flow",
+        "electromagnetic fields",
+        "QGP conductivity",
+        "3+1D hydrodynamics"
+      ],
+      "assessment": "strong",
+      "summary": "Adds electromagnetic backreaction and a kinetic electromagnetic correction at particlization to 3+1D viscous hydrodynamics. A beam-energy-dependent effective conductivity reproduces the opposite midrapidity slopes measured by STAR and ALICE and yields identified-hadron predictions.",
+      "critical_assessment": "Strong implementation and useful predictions, including validation against a semi-analytic resistive-MHD benchmark and matched experimental cuts. However, conductivity is fitted separately at the two energies and treated as constant; the result is therefore an effective-model extraction with degeneracies, especially with initialization time and relaxation-time assumptions."
+    },
+    {
+      "title": "Testing thermal equilibrium in heavy-ion collisions with electric-charge fluctuations",
+      "short_authors": "Peter Christiansen",
+      "total_author_count": 1,
+      "arxiv_id": "2610.37829",
+      "url": "https://arxiv.org/abs/2610.37829",
+      "category": "Phenomenology",
+      "abstract": "Continuum-extrapolated lattice-QCD electric-charge susceptibilities differ from hadron-resonance-gas expectations, especially at fourth order. The paper shows how restricted detector acceptance can be controlled for the second-order net-charge cumulant by rewriting it in terms of the charge balance function and charged-particle rapidity density, providing a route from measured D to theory.",
+      "tags": [
+        "net-charge cumulants",
+        "thermal equilibrium",
+        "balance functions",
+        "lattice QCD"
+      ],
+      "assessment": "strong",
+      "summary": "Recasts the second-order net-charge cumulant in experimentally tractable balance-function language, motivated by a new lattice-QCD discriminator between equilibrium QCD and HRG expectations.",
+      "critical_assessment": "Conceptually strong and experimentally grounded, but it is a proposal rather than a completed equilibrium test. The decisive fourth-order construction remains unfinished and will require genuine multiparticle correlations and additional assumptions."
+    },
+    {
+      "title": "Probabilistic Energy-Based Neural Networks for Uncertainty-Aware Collider Data Analyses",
+      "short_authors": "Raymundo Ramos, Ahmed Hammad, Amit Chakraborty, Pyungwon Ko, Stefano Moretti",
+      "total_author_count": 5,
+      "arxiv_id": "2610.40268",
+      "url": "https://arxiv.org/abs/2610.40268",
+      "category": "AI/ML use",
+      "abstract": "A probabilistic energy-based neural network maps collider features into a latent space with class-specific embeddings. Its energy score flags noisy, anomalous, or shifted events while retaining classification performance, tested on synthetic data and Higgs to tau-tau simulated events.",
+      "tags": [
+        "energy-based model",
+        "collider classification",
+        "distribution shift",
+        "systematics"
+      ],
+      "assessment": "mixed",
+      "summary": "Proposes an energy-based classifier whose absolute energy is calibrated as a compatibility score and tests it on HiggsML under simulated shifts. Classification is comparable to a conditional MLP, while the energy score provides a tunable event-selection handle.",
+      "critical_assessment": "Useful and honest rather than a breakthrough. The toy anomaly task is easy, the realistic study uses simulated nuisance shifts, and performance does not exceed the conditional-MLP baseline. Actual collision data and broader generator/detector stress tests are still needed."
+    },
+    {
+      "title": "Learning nuclear mass systematics with hybrid quantum-classical mixtures of experts",
+      "short_authors": "Shijiang Ji, Heyi Yang, Zu-Xing Yang, Xiao-Hua Fan, Zhi-Pan Li, Haozhao Liang",
+      "total_author_count": 6,
+      "arxiv_id": "2610.40022",
+      "url": "https://arxiv.org/abs/2610.40022",
+      "category": "AI/ML use",
+      "abstract": "Sixteen hybrid quantum-classical neural-network experts with nucleus-dependent classical gating learn residual corrections to WS4. On a fixed AME2020 test set, RMSE falls from 456.22 to 179.83 keV and improves shell-gap systematics near Sn and Pb closures.",
+      "tags": [
+        "nuclear masses",
+        "mixture of experts",
+        "hybrid quantum-classical",
+        "shell closures"
+      ],
+      "assessment": "mixed",
+      "summary": "Uses a gated ensemble of hybrid quantum-classical residual models to correct WS4 masses. The fixed 257-nucleus test set reaches 179.83 keV RMSE versus 253.41 keV for a parameter-matched classical MoE.",
+      "critical_assessment": "Promising but not evidence of practical quantum advantage. The split is not designed as an extrapolation test, AME2020 extrapolated estimates are included as targets, and no hardware/noise study is shown. Independent evaluation on newly measured nuclei is essential."
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Quantum Correlations Between Two Giant Dipole Resonances in Ultra-Peripheral Collisions",
+      "short_authors": "Albandry Alshammri, Ashik Ikbal Sheikh, Declan Keane, Prithwish Tribedy, Gang Wang, Zhangbu Xu, Jie Zhao",
+      "total_author_count": 7,
+      "arxiv_id": "2610.38324",
+      "url": "https://arxiv.org/abs/2610.38324",
+      "category": "Caution",
+      "abstract": "A modified neutron-decay Monte Carlo compares electromagnetic recoil, independent polarized GDR decays, and a proposed correlated-phase scenario. Time-selected neutron pairs develop a first-harmonic relative-azimuth modulation in the phase-lock scenario.",
+      "tags": [
+        "ultra-peripheral collisions",
+        "GDR",
+        "phase locking",
+        "entanglement caution"
+      ],
+      "assessment": "caution",
+      "summary": "The proposed dipolar neutron-correlation signature is experimentally interesting, but the correlated phase is inserted phenomenologically rather than derived microscopically.",
+      "critical_assessment": "Worth watching, not yet strong evidence for quantum entanglement. Emission-time selection, detector response, and conventional backgrounds require quantitative treatment, and the authors explicitly acknowledge that observing the modulation would not itself establish entanglement."
+    }
+  ]
+}
