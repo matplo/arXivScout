@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "path": "reports/2026-11-01.html",
+  "summary": "No new arXiv announcement appeared during the weekend interval. The Friday, 30 October batch was already reviewed on 31 October, so this bulletin intentionally contains no repeated selections.",
+  "professional_summary": "Weekend arXiv status: no new heavy-ion collision or physics AI/ML submissions were announced after the latest complete Friday batch.",
+  "keywords": [
+    "weekend arXiv status",
+    "no new announcement",
+    "heavy-ion physics",
+    "AI/ML in physics"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [],
+  "strongest_paper_summary": "No new paper was available for ranking in this interval.",
+  "caution_count": 0,
+  "papers": [],
+  "cautions": []
+}
