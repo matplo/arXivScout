@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-02",
+  "path": "reports/2026-11-02.html",
+  "summary": "The Monday arXiv batch is led by an entropy-stable Density Frame hydrodynamic solver, a timely Ne-Ne nuclear-orientation tagging study, and three strong physics-ML contributions: decay-chain-aware compact networks, full-simulation hit-to-resonance reconstruction, and statistically valid anomaly searches with imperfect backgrounds.",
+  "professional_summary": "Density-Frame viscous hydrodynamics, Ne-Ne geometry tagging, FAIR radial-flow fluctuations, topology-aware collider networks, end-to-end detector reconstruction, robust anomaly searches, and lepton-nucleus DNN reweighting define the selected literature.",
+  "keywords": [
+    "Density Frame hydrodynamics",
+    "Ne-Ne geometry tagging",
+    "FAIR radial-flow fluctuations",
+    "decay-chain networks",
+    "end-to-end reconstruction",
+    "imperfect-background anomaly search",
+    "lepton-nucleus DNN",
+    "scientific ML baselines"
+  ],
+  "arxiv_ids": [
+    "2610.40909",
+    "2610.40724",
+    "2610.41607",
+    "2610.40749",
+    "2610.41889",
+    "2610.40734",
+    "2610.40912",
+    "2610.40700"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2610.40909 is the strongest physics paper: an entropy-stable, public 2+1D Density Frame hydrodynamic implementation benchmarked against exact kinetic theory and integrated into a realistic IP-Glasma/MUSIC chain.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Relativistic viscous hydrodynamics in the Density Frame for heavy-ion collisions",
+      "short_authors": "Jean-François Paquet, Mayank Singh, Derek Teaney",
+      "total_author_count": 3,
+      "arxiv_id": "2610.40909",
+      "url": "https://arxiv.org/abs/2610.40909",
+      "category": "Theory",
+      "abstract": "We present a numerical study of relativistic viscous hydrodynamics in the Density Frame for boost-invariant flows in 2+1 dimensions. The Density Frame is first order in time, requires no auxiliary fields, and has no non-hydrodynamic modes. A discrete dissipative function guarantees entropy production on all resolved length scales. The method is benchmarked against exact RTA kinetic theory with Gubser symmetry and substituted for MUSIC in IP-Glasma Pb-Pb simulations.",
+      "tags": [
+        "Density Frame",
+        "viscous hydrodynamics",
+        "MUSIC",
+        "kinetic theory"
+      ],
+      "assessment": "strong",
+      "summary": "Develops a practical 2+1D Density Frame hydrodynamic solver with no auxiliary relaxation fields, validates it against an exact kinetic-theory benchmark, and plugs it into a MUSIC/IP-Glasma heavy-ion chain. Shear-only final observables are close to MUSIC, while the largest structural difference appears in the bulk sector.",
+      "critical_assessment": "The strongest paper in the batch: conceptually important, numerically detailed, entropy-stable by construction, benchmarked against kinetic theory, and accompanied by public code. The remaining test is decisive: a full calibrated Bayesian analysis, especially with bulk viscosity and small systems, where the different transient structure should matter most."
+    },
+    {
+      "title": "Nuclear-geometry-tagging events in high-energy Ne-Ne collisions",
+      "short_authors": "Joachim Carlo Kristian Bjerg Hansen, Emil Gorm Dahlbæk Nielsen",
+      "total_author_count": 2,
+      "arxiv_id": "2610.40724",
+      "url": "https://arxiv.org/abs/2610.40724",
+      "category": "Phenomenology",
+      "abstract": "The paper tests whether body-body and tip-tip configurations of deformed neon nuclei can be identified in Monte Carlo Glauber simulations using eccentricity and transverse compactness. Nuclear configurations come from NLEFT and ab initio PGCM calculations. At 30% target efficiency, a Fisher discriminant obtains body-body purities of 0.201 (NLEFT) and 0.156 (PGCM), and tip-tip purities of 0.573 and 0.540.",
+      "tags": [
+        "Ne-Ne",
+        "nuclear deformation",
+        "geometry tagging",
+        "Fisher discriminant"
+      ],
+      "assessment": "strong",
+      "summary": "Combines two independent microscopic descriptions of 20Ne with Glauber geometry and a transparent two-variable Fisher selection. The signal is much cleaner for tip-tip than body-body events, and deformation sensitivity persists outside the most central bin.",
+      "critical_assessment": "Strong as an experimentally motivated feasibility study: independent train/validation/test samples, two nuclear-structure inputs, interpretable selection, and honest purity reporting. The limitation is that epsilon2 and compactness are initial-state proxies; detector-level selections and full model dependence of the final-state mapping still need to be established."
+    },
+    {
+      "title": "Characterizing pT-differential Radial-Flow Fluctuations in Au+Au Collisions at FAIR with a Multi-Phase Transport Model",
+      "short_authors": "Sanchari Thakur, Partha Pratim Bhaduri",
+      "total_author_count": 2,
+      "arxiv_id": "2610.41607",
+      "url": "https://arxiv.org/abs/2610.41607",
+      "category": "Phenomenology",
+      "abstract": "The authors predict the pT-differential radial-flow fluctuation observable v0(pT) in Au+Au collisions at sqrt(sNN)=4.9 GeV using AMPT string melting. The signal changes from negative at low pT to positive at higher pT, is stable under several reference-window and pseudorapidity-gap variations, and shows low-pT pion-proton ordering. Constituent-quark scaling is absent.",
+      "tags": [
+        "FAIR",
+        "radial-flow fluctuations",
+        "AMPT",
+        "v0(pT)"
+      ],
+      "assessment": "mixed",
+      "summary": "Provides the first AMPT prediction for v0(pT) at top SIS100 energy and maps its centrality, reference-window, gap, and particle-species dependence. The absence of NCQ scaling argues against interpreting this particular model result as partonic collectivity.",
+      "critical_assessment": "Useful and admirably cautious, but not yet a robust physics conclusion. It is a single-model prediction; the paper itself notes that switching off the hadronic cascade or varying the parton cross section is needed to identify why NCQ scaling fails, and disjoint reference intervals would provide a stronger nonflow test."
+    },
+    {
+      "title": "Combinatorial Residual Network: a decay-chain-aware classifier without explicit jet assignment",
+      "short_authors": "John Alison, Patrick Bryant, Alejandro Gomez Espinosa, Christian Guinto-Brody, Aniket Khanal, Chuyuan Liu, Sindhu Murthy, Guanglei Zhao",
+      "total_author_count": 8,
+      "arxiv_id": "2610.40749",
+      "url": "https://arxiv.org/abs/2610.40749",
+      "category": "AI/ML use",
+      "abstract": "CoReNet encodes an assumed decay hierarchy directly in a small residual architecture, evaluates every jet-assignment hypothesis with shared weights, and trains only on the final classification loss. On fast-simulation HH to bbbb and HH to bbWW benchmarks it beats kinematic baselines and performs comparably to a much larger SPANet without generator-level assignment targets.",
+      "tags": [
+        "decay-chain inductive bias",
+        "jet assignment",
+        "compact networks",
+        "CMS"
+      ],
+      "assessment": "strong",
+      "summary": "A physics-structured network achieves AUC 0.8664 in HH to bbbb with 1,508 parameters and selects the truth-matched pairing in 81% of matched signal events without assignment supervision. In HH to bbWW, adding the background decay chain raises AUC from 0.8859 to 0.9004 with 3,832 parameters.",
+      "critical_assessment": "Strong: five-fold comparisons, substantial kinematic baselines, parameter/training-budget studies, public code and samples, and prior use in CMS analyses. The headline benchmarks still rely on Delphes fast simulation, and the paper defers a dedicated study of density-ratio estimation under real background-systematic conditions."
+    },
+    {
+      "title": "Reconstruct everything everywhere all at once: An end-to-end model for future colliders",
+      "short_authors": "Max Hart, Kwok Yiu Wong, Samuel Van Stroud, Philippa Duckett, Tim Scanlon, Gabriel Facini",
+      "total_author_count": 6,
+      "arxiv_id": "2610.41889",
+      "url": "https://arxiv.org/abs/2610.41889",
+      "category": "AI/ML use",
+      "abstract": "REM is an end-to-end multitask model that reconstructs particles directly from silicon-tracker, calorimeter, and muon-system hits in a full simulation. It performs hit assignment, particle identification, kinematic regression, and resonance reconstruction without externally reconstructed tracks or clusters, improving particle and jet metrics relative to conventional and learned particle-flow baselines.",
+      "tags": [
+        "end-to-end reconstruction",
+        "particle flow",
+        "multimodal sensors",
+        "future colliders"
+      ],
+      "assessment": "strong",
+      "summary": "In full CLD simulation at 240 GeV, REM reaches 91.7% identified-particle efficiency versus 89.0% for FlowFormer and 61.1% for PandoraPFA. It improves fitted core jet-energy resolution to 2.19% and increases semileptonic W/Z separation to 3.03 when using learned resonance masks.",
+      "critical_assessment": "Technically strong and benchmark-rich, but still a controlled full-simulation study. The authors correctly flag missing stress tests for beam backgrounds, defects, misalignment, alternative generators, detector geometries, and truth-defined event selections; these are prerequisites before experimental deployment."
+    },
+    {
+      "title": "Model-Agnostic Search for New Physics in the Presence of Imperfect Background by Smearing the Data",
+      "short_authors": "Soheun Yi, John Alison, Mikael Kuusela",
+      "total_author_count": 3,
+      "arxiv_id": "2610.40734",
+      "url": "https://arxiv.org/abs/2610.40734",
+      "category": "AI/ML use",
+      "abstract": "MASSIB learns a density ratio between observed events and a misspecified background, then uses a smeared density ratio to define a signal region while controlling interpolation bias. Simulated LHC studies with realistic background mismodeling show signal enrichment across resonant and nonresonant signals and conservative null rejection in the settings tested.",
+      "tags": [
+        "anomaly detection",
+        "density ratios",
+        "background mismodeling",
+        "valid hypothesis tests"
+      ],
+      "assessment": "strong",
+      "summary": "The method explicitly attacks the coupled problem of unknown signal structure and imperfect background modeling. Smearing is used to decouple region definition from background interpolation, followed by a bootstrap KS-type test with systematic uncertainty.",
+      "critical_assessment": "A strong statistics contribution because it treats selection-induced bias and test validity as first-class problems, not afterthoughts. Evidence is still simulation-only, the smearing scale lacks a principled selection rule, and broader nuisance structures must be tested before claiming analysis-readiness."
+    },
+    {
+      "title": "Incorporating deep neural networks into lepton-nucleus interaction modeling",
+      "short_authors": "Hemant Prasad, Jan T. Sobczyk, Krzysztof M. Graczyk, Beata E. Kowal, Rwik Dharmapal Banerjee, J. Luis Bonilla",
+      "total_author_count": 6,
+      "arxiv_id": "2610.40912",
+      "url": "https://arxiv.org/abs/2610.40912",
+      "category": "AI/ML use",
+      "abstract": "The paper inserts an inclusive deep-neural-network prediction trained on electron-carbon scattering data into the eWro Monte Carlo generator. Generator theory models decompose the inclusive prediction into exclusive channels and supply final-state kinematics, after which events are reweighted for inclusive and semi-exclusive comparisons.",
+      "tags": [
+        "lepton-nucleus scattering",
+        "DNN reweighting",
+        "event generators",
+        "DUNE"
+      ],
+      "assessment": "mixed",
+      "summary": "A pragmatic hybrid wraps a precise data-trained inclusive cross section around a conventional event generator so that semi-exclusive observables can be produced. It reproduces the quasielastic peak within DNN uncertainty but still undershoots the Delta region.",
+      "critical_assessment": "Interesting but mixed. The authors are commendably explicit that channel interference is neglected, MEC is approximate, forward-angle DNN uncertainties are large, and kinematic coverage is incomplete. It is a useful bridge technology, not yet a consistent amplitude-level nuclear model."
+    },
+    {
+      "title": "Automatic Construction of Strong Simple Baselines",
+      "short_authors": "Caleb N. Ellington, Jiaqi Wang, Sohan Addagudi, Elijah Cole",
+      "total_author_count": 4,
+      "arxiv_id": "2610.40700",
+      "url": "https://arxiv.org/abs/2610.40700",
+      "category": "AI/ML use",
+      "abstract": "Across 36 supervised tasks drawn from high-profile scientific papers, an LLM agent automatically constructs simple baselines that recover a median 95.5% of the gap from a trivial predictor to the published deep-learning score. The baseline matches or exceeds the reported deep model on 12 tasks.",
+      "tags": [
+        "scientific ML evaluation",
+        "baselines",
+        "LLM agents",
+        "reproducibility"
+      ],
+      "assessment": "strong",
+      "summary": "Turns baseline construction into an auditable agent task and quantifies how much purported deep-learning gain survives comparison with simple models. Counting failed attempts as zero leaves the median unchanged and lowers the mean from 85.7% to 79.6%.",
+      "critical_assessment": "Strong as a warning and workflow result, not a universal indictment of scientific deep learning. The sample is only 36 supervised tasks, uses one model, may contain pretraining leakage, compares against reported rather than uniformly rerun deep models, and excludes representation/generative tasks."
+    }
+  ],
+  "cautions": [
+    {
+      "title": "The role of spin polarization in event-by-event fluctuations",
+      "short_authors": "Xiao-Ying He, Li-Juan Zhou, Li-Xin Yang, Qian-Qian Du, De-Xian Wei",
+      "total_author_count": 5,
+      "arxiv_id": "2610.41386",
+      "url": "https://arxiv.org/abs/2610.41386",
+      "category": "Caution",
+      "abstract": "The work modifies a parton distribution with spin polarization induced by thermal vorticity and thermal shear, then studies correlations between initial eccentricity and an asymmetry variable. It reports system-size and energy-dependent splitting and suggests spin polarization as a constraint on event-by-event initial-state fluctuations.",
+      "tags": [
+        "spin polarization",
+        "initial-state fluctuations",
+        "thermal vorticity",
+        "overclaim risk"
+      ],
+      "assessment": "caution",
+      "summary": "The paper reports a model-level spin-polarization dependence in an eccentricity-asymmetry correlation, especially at low temperature.",
+      "critical_assessment": "The physical chain is too incomplete for the advertised constraint claim. The study does not demonstrate survival through realistic space-time evolution, hadronization, detector acceptance, or a directly measurable final-state estimator, and no comparison to existing data or competing initial-state uncertainties is provided. Treat the observed model splitting as exploratory, not as an established constraint strategy."
+    }
+  ]
+}
