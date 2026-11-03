@@ -1,1 +1,147 @@
-sed: -e expression #1, char 2: unexpected `,'
+{
+  "date": "2026-11-03",
+  "path": "reports/2026-11-03.html",
+  "summary": "BES-II hyperon spin observables lead the daily selection, supported by a quantum-rotor correction to nuclear-deformation inference, a synthesis of light-(hyper)nucleus production, a first but precision-limited PbPb charm dead-cone measurement, and two transferable learning methods for nuclear sensitivities and anomaly follow-up.",
+  "professional_summary": "Hyperon global polarization, charm dead-cone jet substructure, quantum nuclear orientation, light-nucleus production mechanisms, gluon-saturation information geometry, active-subspace emulation, and representative anomaly confirmation define the selected literature.",
+  "keywords": [
+    "BES-II hyperon polarization",
+    "charm dead cone",
+    "quantum nuclear rotors",
+    "light-nucleus production",
+    "gluon saturation geometry",
+    "active-subspace learning",
+    "anomaly confirmation"
+  ],
+  "arxiv_ids": [
+    "2611.03044",
+    "2611.03237",
+    "2611.01285",
+    "2611.02507",
+    "2611.02459",
+    "2611.02958",
+    "2611.03628",
+    "2611.03250"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": ["Experiment", "Theory", "Phenomenology", "AI/ML use", "Caution"],
+  "strongest_paper_summary": "arXiv:2611.03044 is the strongest result: STAR BES-II establishes Xi global polarization above 5 sigma in this energy range and finds 4.8 sigma evidence for increasing Lambda polarization with absolute rapidity.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Global polarization of Lambda, Xi, and Omega hyperons in Au+Au collisions from the RHIC Beam Energy Scan-II",
+      "short_authors": "STAR Collaboration",
+      "arxiv_id": "2611.03044",
+      "url": "https://arxiv.org/abs/2611.03044",
+      "category": "Experiment",
+      "abstract": "STAR measures global polarization for strange and multistrange hyperons at seven BES-II energies. The data establish nonzero Lambda rapidity dependence and Xi polarization, constrain particle-antiparticle splitting, and map species and energy dependences relevant to vorticity and magnetic fields.",
+      "tags": ["BES-II", "global polarization", "hyperons", "spin-vorticity"],
+      "assessment": "strong",
+      "summary": "The study reports 4.8-sigma evidence that Lambda polarization rises with absolute rapidity and the first greater-than-5-sigma Xi polarization signal in this energy range, while finding no significant Lambda-antiparticle splitting.",
+      "critical_assessment": "The strongest paper today: very large samples, upgraded acceptance, two Xi extraction methods, and careful correlated systematics. Feed-down is uncorrected, low-energy models undershoot the data, and Omega interpretation remains dependent on its spin-transfer sign."
+    },
+    {
+      "title": "Differential measurement of global polarization of Lambda, Xi, and Omega hyperons in Au+Au collisions at sqrt(sNN)=7.7-27 GeV from RHIC BES-II",
+      "short_authors": "STAR Collaboration",
+      "arxiv_id": "2611.03237",
+      "url": "https://arxiv.org/abs/2611.03237",
+      "category": "Experiment",
+      "abstract": "High-statistics BES-II data are used to measure centrality, transverse-momentum, and rapidity dependences of hyperon polarization. The centrality dependence is clear; other differential trends are small within current uncertainties.",
+      "tags": ["differential polarization", "centrality", "multistrange hyperons", "RHIC"],
+      "assessment": "strong",
+      "summary": "Polarization rises toward peripheral events, with no significant pT dependence for Lambda or Xi and no significant Xi rapidity dependence at present precision.",
+      "critical_assessment": "A high-value companion measurement that sharply constrains spin transport. Null differential trends are sensitivity-limited constraints, and Omega precision remains insufficient for a firm species hierarchy."
+    },
+    {
+      "title": "Probing the charm-quark dead cone effect in heavy ion collisions",
+      "short_authors": "CMS Collaboration",
+      "arxiv_id": "2611.01285",
+      "url": "https://arxiv.org/abs/2611.01285",
+      "category": "Experiment",
+      "abstract": "CMS measures late-kT hard-collinear emission angles for prompt-D0-tagged and inclusive jets in 5.02 TeV PbPb collisions. The flavor hierarchy resembles pp and disfavors large filling of the charm dead cone, but no significant medium-dependent change is resolved.",
+      "tags": ["charm jets", "dead cone", "late-kT grooming", "jet quenching"],
+      "assessment": "mixed",
+      "summary": "D0-tagged jets trend toward larger splitting angles than inclusive jets, while the PbPb-to-pp double ratio is compatible with unity.",
+      "critical_assessment": "Important and technically careful, but the equal-shape hypothesis is not excluded (p=0.16), the double ratio is compatible with unity (p=0.82), and present precision has little power to discriminate Hybrid from LIDO."
+    },
+    {
+      "title": "Impact on Final-State Bulk Observables in Heavy-Ion Collisions from an Extended MC Glauber Model of Quantum Rotors",
+      "short_authors": "Yanru Bao, Weiyao Ke",
+      "total_author_count": 2,
+      "arxiv_id": "2611.02507",
+      "url": "https://arxiv.org/abs/2611.02507",
+      "category": "Theory",
+      "abstract": "An extended MC Glauber framework superposes nuclear orientations before collision sampling and propagates the resulting initial states through hydrodynamics and hadronic transport. Relative to classical rotors, quantum orientation reduces deformation-driven eccentricity and shifts several final-state flow observables.",
+      "tags": ["quantum rotors", "nuclear deformation", "ultra-central flow", "MC Glauber"],
+      "assessment": "strong",
+      "summary": "Restoring rotational invariance suppresses ultra-central flow and moves deformation-sensitive correlations toward spherical-reference values, most strongly for Ne+Ne.",
+      "critical_assessment": "Strong targeted methodology with full final-state evolution. It is not a global fit, omits cluster correlations, and treats O and Au as spherical references, so it establishes a correction that matters rather than revised deformation parameters."
+    },
+    {
+      "title": "Fisher-Rao Geometry of Gluon Saturation Fronts",
+      "short_authors": "Edoardo Spezzano",
+      "total_author_count": 1,
+      "arxiv_id": "2611.02459",
+      "url": "https://arxiv.org/abs/2611.02459",
+      "category": "Theory",
+      "abstract": "The paper defines a transverse Fisher-Rao metric for nonlinear saturation fronts after removing translation along the evolution flow. It derives rapid shape relaxation in Fisher-KPP and finds numerical evidence for corresponding behavior in BK evolution.",
+      "tags": ["gluon saturation", "BK equation", "information geometry", "small x"],
+      "assessment": "mixed",
+      "summary": "Information geometry separates front translation from shape memory and predicts a t^-4 relaxation of transverse distinguishability in the diffusive asymptotics.",
+      "critical_assessment": "Mathematically coherent and numerically checked, but not yet phenomenology: impact-parameter dependence, fitted uncertainties, and observable-level gains for EIC or heavy-ion inference remain to be demonstrated."
+    },
+    {
+      "title": "Light nucleus and hypernucleus production at RHIC and LHC energies: a comparative study of phenomenological models",
+      "short_authors": "J. Aichelin, A. Andronic, F. Bellini, M. Bleicher, K. Blum, E. Bratkovskaya, et al.",
+      "total_author_count": 30,
+      "arxiv_id": "2611.02958",
+      "url": "https://arxiv.org/abs/2611.02958",
+      "category": "Phenomenology",
+      "abstract": "This EMMI task-force report reviews light-nucleus and hypernucleus data together with statistical, coalescence, kinetic, and transport descriptions. It emphasizes source sizes, wave functions, femtoscopy, formation dynamics, and measurements capable of separating mechanisms.",
+      "tags": ["light nuclei", "hypernuclei", "coalescence", "femtoscopy"],
+      "assessment": "strong",
+      "summary": "A broad theory-experiment synthesis maps model assumptions and identifies the differential and femtoscopic observables most likely to discriminate production mechanisms.",
+      "critical_assessment": "Authoritative and high-value as synthesis, but it is not a controlled global comparison and does not settle coalescence versus thermal or transport production."
+    },
+    {
+      "title": "Active-subspace learning reveals dominant parameter directions in nuclear observables",
+      "short_authors": "Tom Plies, Margarida Companys Franzke, Achim Schwenk",
+      "total_author_count": 3,
+      "arxiv_id": "2611.03628",
+      "url": "https://arxiv.org/abs/2611.03628",
+      "category": "AI/ML use",
+      "abstract": "Active-subspace learning extracts low-dimensional combinations of chiral-EFT couplings directly from many-body calculations. These directions quantify global sensitivities and substantially improve Gaussian-process emulation for broad coupling variations.",
+      "tags": ["active subspaces", "chiral EFT", "sensitivity analysis", "emulation"],
+      "assessment": "strong",
+      "summary": "More than 99% of gradient variation for several oxygen observables lies along one parameter direction, and active coordinates reduce the demonstrated calcium emulator error by over two orders of magnitude.",
+      "critical_assessment": "Strong, interpretable, and validated. Broader tests should address out-of-distribution behavior, emulator uncertainty calibration, neighbor-selection tuning, and the excluded unstable samples."
+    },
+    {
+      "title": "Anomaly-ranked confirmation slows new-class learning",
+      "short_authors": "Argyro Sasli, Michael Coughlin",
+      "total_author_count": 2,
+      "arxiv_id": "2611.03250",
+      "url": "https://arxiv.org/abs/2611.03250",
+      "category": "AI/ML use",
+      "abstract": "Across five labeled benchmarks, anomaly detectors surface easy-to-recognize members of an unseen class that can nevertheless teach its full extent less efficiently than broader sampling. The study separates novelty discovery from representative confirmation.",
+      "tags": ["anomaly detection", "active learning", "human in the loop", "Gravity Spy"],
+      "assessment": "strong",
+      "summary": "In three systems, confirming the highest-ranked anomalies yields worse recognition than random within-class confirmation; classifier-driven selection recovers part of the loss.",
+      "critical_assessment": "Strong paired experiments and honest limitations. Withheld known classes, fixed representations, clean labels, and simplified confirmation costs mean a prospective collider study is still required."
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Towards AI-Agent-Accelerated Research in High-Energy Physics: A Case Study in Monte Carlo Analysis",
+      "short_authors": "Tianqi Gao, Ruobing Jiang",
+      "total_author_count": 2,
+      "arxiv_id": "2611.03373",
+      "url": "https://arxiv.org/abs/2611.03373",
+      "category": "Caution",
+      "abstract": "An LLM-assisted workflow reproduces benchmark values from a CEPC Monte Carlo analysis and performs an open-ended diagnosis of a muon-isolation effect under human supervision.",
+      "tags": ["LLM agents", "Monte Carlo workflow", "reproducibility", "benchmarking gap"],
+      "assessment": "caution",
+      "summary": "The workflow reproduces four published detector-level points within about 2% and traces an isolation shift to angular efficiency and nearby hadronic activity.",
+      "critical_assessment": "Useful feasibility evidence, but only one analysis, no formal blinding, no independent replication, and no controlled human-only baseline for time, errors, or intervention burden. It does not yet establish broad research acceleration."
+    }
+  ]
+}
