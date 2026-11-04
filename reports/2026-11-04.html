@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily arXiv Physics Scout — 2026-11-04</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="back-link" href="../index.html">← Archive</a>
+  <p class="eyebrow">Daily arXiv Physics Scout · 2026-11-04</p>
+  <h1>Small-system flow response, neon structure, and data-efficient physics inference</h1>
+  <p class="dek">The strongest result isolates a robust Ne+Ne/O+O elliptic-flow ratio across kinetic and hydrodynamic evolution. The AI/ML batch is led by a symmetry-aware simulation surrogate; the heavy-ion deep-learning submission is useful but scientifically overinterpretable without elementary baselines.</p>
+  <div class="filter-panel" aria-label="Report filter"><div class="filter-field filter-field-search"><label class="search-label" for="archive-search">Search by keyword</label><input id="archive-search" type="search" placeholder="keyword, arXiv number" autocomplete="off"></div></div>
+</header>
+<main class="report">
+<section>
+  <h2>Executive takeaways</h2>
+  <ul class="takeaways">
+    <li><strong>The clearest advance is methodological control of small-system flow.</strong> Ambrus et al. compare hydrodynamics and kinetic theory across opacity and find the Ne+Ne/O+O v2 ratio robust, while the v3 ratio remains sensitive to incomplete equilibration.</li>
+    <li><strong>Multiplicity is not a sufficient cross-system organizer for Lambda/K0S spectra.</strong> Published O+O data favor transverse density, but the strongest p-Pb agreement depends on subnucleonic overlap modeling.</li>
+    <li><strong>Neon fragmentation is now treated at the level needed by the LHC light-ion program.</strong> The AAMCC-MST calculation is validated on legacy data and produces forward-fragment inputs for beam transport and ZDC studies, though structure and clustering effects remain entangled.</li>
+    <li><strong>Hyperon-pair spin correlations are a promising but model-dependent chiral probe.</strong> The short-to-long-range ratio isolates an imposed coherence scale in AMPT; common-mode hadronization backgrounds remain an important unresolved issue.</li>
+    <li><strong>The physics-ML standout is the macrocanonical generator.</strong> It has held-out tests, low-data generative baselines, explicit symmetry assumptions, and an SBI demonstration. Mori-Zwanzig generative closure is interesting but still a Burgers-equation proof of concept.</li>
+    <li><strong>Caution on the RHIC longitudinal-asymmetry network.</strong> It emulates AMPT well, but no simple regression baselines are reported and withheld centrality bins do not establish generator or data transfer.</li>
+  </ul>
+</section>
+
+<section><h2>Heavy-ion collision papers</h2>
+<h3>Theory</h3>
+<article class="paper" data-search="2611.05239 Theory Elliptic and triangular flow responses in O+O and Ne+Ne collisions from hydrodynamics and kinetic theory Victor E. Ambrus, Giuliano Giacalone, Clemens Werthmann, Fabian Zhou O+O and Ne+Ne flow response kinetic theory nuclear geometry strong">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.05239">Elliptic and triangular flow responses in O+O and Ne+Ne collisions from hydrodynamics and kinetic theory</a></h4><span class="label strong">strong</span></div>
+  <p class="meta">Victor E. Ambrus, Giuliano Giacalone, Clemens Werthmann, Fabian Zhou · 4 authors · arXiv:2611.05239</p>
+  <p><strong>Summary.</strong> A controlled hydrodynamics-versus-kinetic-theory comparison shows that the Ne+Ne/O+O v2 ratio is a robust nuclear-geometry observable, while the corresponding v3 ratio is a sharper probe of incomplete hydrodynamization.</p>
+  <p><strong>Why it matters.</strong> It separates nuclear-structure information from uncertain small-system dynamics and identifies v3 ratios as a complementary hydrodynamization diagnostic.</p>
+  
+  <p><strong>Critical assessment.</strong> The strongest paper in the batch. It tests the key inference across dynamical frameworks and a broad opacity range using ab-initio-informed nuclear inputs. The remaining caveat is that conformal RTA is still a simplified kinetic theory, so robustness against more realistic transport and pre-equilibrium dynamics remains to be shown.</p>
+  <details><summary>Abstract (condensed)</summary><p>Hydrodynamic and relaxation-time kinetic-theory calculations are compared across opacities for O+O and Ne+Ne collisions. Ne-to-O elliptic-flow ratios remain stable across the dynamical descriptions, whereas triangular-flow ratios retain appreciable nonequilibrium sensitivity.</p></details>
+  <div class="tags"><span>O+O and Ne+Ne</span><span>flow response</span><span>kinetic theory</span><span>nuclear geometry</span></div>
+</article>
+<h3>Experiment</h3>
+<p class="empty-state">No genuinely new experimental heavy-ion result in the last arXiv batch passed the selection threshold.</p>
+<h3>Phenomenology</h3>
+<article class="paper" data-search="2611.04970 Phenomenology Probing the Spatial Coherence of Chiral-Imbalance Fluctuations with Hyperon Spin Correlations Guangyu Zheng, Zilin Yuan, Mei Huang, Guannan Xie hyperon spin chiral imbalance AMPT correlation length mixed">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.04970">Probing the Spatial Coherence of Chiral-Imbalance Fluctuations with Hyperon Spin Correlations</a></h4><span class="label mixed">mixed</span></div>
+  <p class="meta">Guangyu Zheng, Zilin Yuan, Mei Huang, Guannan Xie · 4 authors · arXiv:2611.04970</p>
+  <p><strong>Summary.</strong> The proposed common-mode hyperon-pair correlation separates fluctuation strength from coherence scale and supplies an experimentally defined short-to-long-range ratio.</p>
+  <p><strong>Why it matters.</strong> It turns the poorly constrained spatial organization of topological fluctuations into a differential, experimentally definable spin observable.</p>
+  
+  <p><strong>Critical assessment.</strong> A clever observable-level proposal with explicit channel combinations and a thermal-vorticity/shear baseline. However, the signal is generated by an imposed mu5 field inside one transport framework, the explored mu5 values are model choices, and common-mode hadronization backgrounds are not cancelled; experimental feasibility and background closure are not yet established.</p>
+  <details><summary>Abstract (condensed)</summary><p>AMPT calculations with imposed axial-chemical-potential domains propose differential hyperon-pair spin correlations as a probe of chiral-imbalance magnitude and spatial coherence. A short-to-long-range ratio varies strongly with the imposed domain scale and only weakly with the explored mu5 magnitude.</p></details>
+  <div class="tags"><span>hyperon spin</span><span>chiral imbalance</span><span>AMPT</span><span>correlation length</span></div>
+</article>
+<article class="paper" data-search="2611.04865 Phenomenology Multiplicity and transverse density as ordering variables of the Lambda/K0S ratio in oxygen-oxygen collisions at the LHC Neeraj, Amal Sarkar O+O collisions Lambda/K0S transverse density radial flow strong">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.04865">Multiplicity and transverse density as ordering variables of the Lambda/K0S ratio in oxygen-oxygen collisions at the LHC</a></h4><span class="label strong">strong</span></div>
+  <p class="meta">Neeraj, Amal Sarkar · 2 authors · arXiv:2611.04865</p>
+  <p><strong>Summary.</strong> The data reject multiplicity as a sufficient cross-system ordering variable for the Lambda/K0S shape and favor transverse density, while predicting similar minimum-bias O+O and Ne+Ne ratios.</p>
+  <p><strong>Why it matters.</strong> It challenges equal-multiplicity system matching and provides a discriminating Ne+Ne prediction for radial-flow interpretations.</p>
+  
+  <p><strong>Critical assessment.</strong> Strong for a compact phenomenology study: it uses published data, propagates covariance alternatives, compares EPOS4 and Angantyr, and makes a near-term Ne+Ne prediction. The decisive p-Pb matching requires subnucleonic Glauber structure, so the hydrodynamic interpretation remains conditional on modeled overlap area.</p>
+  <details><summary>Abstract (condensed)</summary><p>Published CMS O+O, p-Pb, and Pb-Pb data are reweighted to test whether equal multiplicity organizes the Lambda/K0S spectral shape. Equal transverse density improves cross-system agreement, with the result depending on the modeled transverse size of high-multiplicity p-Pb events.</p></details>
+  <div class="tags"><span>O+O collisions</span><span>Lambda/K0S</span><span>transverse density</span><span>radial flow</span></div>
+</article>
+<article class="paper" data-search="2611.04430 Phenomenology Modeling fragmentation of 20Ne nuclei at the LHC Aleksandr Svetlichnyi, Savva Savenkov, Igor Pshenichnov 20Ne fragmentation spectator matter zero-degree calorimetry LHC beam mixed">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.04430">Modeling fragmentation of 20Ne nuclei at the LHC</a></h4><span class="label mixed">mixed</span></div>
+  <p class="meta">Aleksandr Svetlichnyi, Savva Savenkov, Igor Pshenichnov · 3 authors · arXiv:2611.04430</p>
+  <p><strong>Summary.</strong> The paper provides experimentally useful forward-fragment inputs and quantifies sensitivity to Woods-Saxon, spherical, and five-alpha neon configurations.</p>
+  <p><strong>Why it matters.</strong> It supplies forward-fragment distributions needed for secondary-beam transport, machine protection, and ZDC response studies in the new light-ion program.</p>
+  
+  <p><strong>Critical assessment.</strong> Useful and unusually concrete for LHC operations and forward-detector simulation, with validation against existing fragmentation data. The extrapolation to collider energy is model-dependent, and the nuclear-structure discrimination is entangled with the MST clustering prescription; this is a simulation input, not yet a demonstrated structure measurement.</p>
+  <details><summary>Abstract (condensed)</summary><p>An abrasion-ablation Monte Carlo with pre-equilibrium spectator clustering, fragment decay, and Coulomb repulsion is validated against legacy neon-fragmentation data and extrapolated to 20Ne+20Ne at 5.36 TeV. Forward fragment yields and momentum distributions are evaluated for beam transport and ZDC studies.</p></details>
+  <div class="tags"><span>20Ne fragmentation</span><span>spectator matter</span><span>zero-degree calorimetry</span><span>LHC beam</span></div>
+</article>
+<h3>AI/ML use</h3>
+<p>The only new heavy-ion-specific AI/ML paper is reviewed in the caution section because its current validation supports an AMPT emulator, not a stronger physics claim.</p>
+</section>
+
+<section><h2>AI/ML use cases in physics</h2>
+<article class="paper" data-search="2611.05157 AI/ML use Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation Niall Jeffrey, Benjamin D. Wandelt neural surrogates simulation-based inference stationary fields multiscale statistics strong">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.05157">Macrocanonical Generator Networks: Data-Efficient Neural Surrogates for Amortized Physics Simulation</a></h4><span class="label strong">strong</span></div>
+  <p class="meta">Niall Jeffrey, Benjamin D. Wandelt · 2 authors · arXiv:2611.05157</p>
+  <p><strong>Method and result.</strong> A symmetry-aware generator recovers sample-to-sample fluctuations from as little as one stationary field, beats standard generative baselines in the low-data regime, and improves downstream cosmological inference.</p>
+  
+  <p><strong>Likely HEP/NP use case.</strong> Fast ensembles for simulation-based inference or pretraining on approximately stationary energy-density, detector-response, or turbulent transport fields; conditioning and geometry would need domain-specific extensions.</p>
+  <p><strong>Critical assessment.</strong> The strongest physics-ML paper today: accepted at NeurIPS, theoretically motivated, tested against held-out simulations and WGAN, flow-matching, and diffusion baselines, with an SBI demonstration. Transfer to heavy-ion event fields is credible only where approximate stationarity and chosen statistics are defensible; nonstationary geometries, boundaries, centrality conditioning, and collapse guarantees remain open.</p>
+  <details><summary>Abstract (condensed)</summary><p>Macrocanonical generator networks learn stationary physical processes by matching multiscale feature statistics in expectation. Tests on MHD turbulence and cosmological density fields show realistic held-out statistics from very small training sets and large sampling speedups after amortized training.</p></details>
+  <div class="tags"><span>neural surrogates</span><span>simulation-based inference</span><span>stationary fields</span><span>multiscale statistics</span></div>
+</article>
+<article class="paper" data-search="2611.04267 AI/ML use Semiparametric Estimation of Physics Parameters and Parton Distribution Functions Huanbiao Zhu, Jaco ter Hoeve, Mikael Kuusela, Maria Ubiali, Larry Wasserman semiparametric inference parton distributions frequentist coverage efficient influence function strong">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.04267">Semiparametric Estimation of Physics Parameters and Parton Distribution Functions</a></h4><span class="label strong">strong</span></div>
+  <p class="meta">Huanbiao Zhu, Jaco ter Hoeve, Mikael Kuusela, Maria Ubiali, Larry Wasserman · 5 authors · arXiv:2611.04267</p>
+  <p><strong>Method and result.</strong> The method rigorously corrects decoupled physics-parameter estimates for PDF interplay and restores coverage without a computationally costly simultaneous fit.</p>
+  
+  <p><strong>Likely HEP/NP use case.</strong> Joint extraction of transport or EFT parameters with flexible nuisance functions, with coverage-aware corrections that may reduce the need for repeated full global fits.</p>
+  <p><strong>Critical assessment.</strong> Not a neural-network paper, but arguably more consequential for precision HEP than most ML applications in this batch. The statistical construction and coverage tests are strong; evidence is still limited to two preparatory toy scenarios, so scaling to realistic correlated global PDF fits and theory systematics is the real test.</p>
+  <details><summary>Abstract (condensed)</summary><p>A semiparametric one-step estimator uses the efficient influence function to debias physics-parameter estimates for uncertainty in an infinite-dimensional PDF nuisance without rerunning a full joint fit. Toy DIS studies recover nominal frequentist coverage.</p></details>
+  <div class="tags"><span>semiparametric inference</span><span>parton distributions</span><span>frequentist coverage</span><span>efficient influence function</span></div>
+</article>
+<article class="paper" data-search="2611.05211 AI/ML use Physics-informed traditional and generative Mori-Zwanzig-reduced models for multiscale systems Emily Williams, Saad Qadeer, Amanda Howard, Panos Stinis model reduction Mori-Zwanzig generative closure multiscale dynamics mixed">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.05211">Physics-informed traditional and generative Mori-Zwanzig-reduced models for multiscale systems</a></h4><span class="label mixed">mixed</span></div>
+  <p class="meta">Emily Williams, Saad Qadeer, Amanda Howard, Panos Stinis · 4 authors · arXiv:2611.05211</p>
+  <p><strong>Method and result.</strong> Memory-aware closures lower average relative error from 6.6% to 2.9% for the FDT model and 2.4% for the generative closure on the demonstrated Burgers problem.</p>
+  
+  <p><strong>Likely HEP/NP use case.</strong> Coarse-grained evolution and learned stochastic closures for unresolved transport or hydrodynamic modes, provided stability and uncertainty are validated on realistic systems.</p>
+  <p><strong>Critical assessment.</strong> The formal connection between learned bases, memory, and stochastic closure is valuable and relevant to coarse-grained transport. Validation is narrow: one one-dimensional viscous Burgers setup, one principal initial-condition family, increasing long-time error, and costly fine stepping for the explicit memory integral. Heavy-ion transfer is plausible but unproven.</p>
+  <details><summary>Abstract (condensed)</summary><p>Physics-informed learned bases are combined with Mori-Zwanzig memory kernels and a generative subgrid closure. On viscous Burgers dynamics, both closures reduce filtered-state error relative to Markovian evolution.</p></details>
+  <div class="tags"><span>model reduction</span><span>Mori-Zwanzig</span><span>generative closure</span><span>multiscale dynamics</span></div>
+</article>
+</section>
+
+<section><h2>Weak or overclaimed papers worth caution</h2>
+<article class="paper" data-search="2611.04985 Caution Deep Learning for Longitudinal Asymmetry in Heavy-Ion Collisions at RHIC Energies Anup Kumar Sikdar, Sanchari Thakur, Pingal Dasgupta, Rupa Chatterjee AMPT emulator longitudinal asymmetry deep regression baseline gap caution">
+  <div class="paper-head"><h4><a href="https://arxiv.org/abs/2611.04985">Deep Learning for Longitudinal Asymmetry in Heavy-Ion Collisions at RHIC Energies</a></h4><span class="label caution">caution</span></div>
+  <p class="meta">Anup Kumar Sikdar, Sanchari Thakur, Pingal Dasgupta, Rupa Chatterjee · 4 authors · arXiv:2611.04985</p>
+  <p><strong>Summary.</strong> The network reproduces AMPT targets and interpolates across held-out centrality intervals, with SHAP used to inspect feature dependence.</p>
+  
+  
+  <p><strong>Critical assessment.</strong> Potentially useful as an emulator, but the paper does not compare against linear, polynomial, tree-based, or analytic baselines even though several target relations are strongly constrained by kinematics. Held-out centrality intervals are interpolation within the same generator, not transfer to another model or data, and the downstream flow effect is small after event averaging. The scientific claim should remain modest.</p>
+  <details><summary>Abstract (condensed)</summary><p>A fully connected network emulates AMPT event-level longitudinal asymmetry and rapidity-shift quantities across Au+Au and Cu+Cu systems and several RHIC energies, including centrality intervals withheld from training.</p></details>
+  <div class="tags"><span>AMPT emulator</span><span>longitudinal asymmetry</span><span>deep regression</span><span>baseline gap</span></div>
+</article>
+</section>
+<p id="empty-state" class="empty-state" hidden>No papers match that keyword.</p>
+</main>
+<script src="../assets/filter.js"></script>
+</body>
+</html>
