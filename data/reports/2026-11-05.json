@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-05",
+  "path": "reports/2026-11-05.html",
+  "summary": "Spin-dependent open-system transport leads the heavy-ion selection, accompanied by a conceptual Goldstone extension of gluon saturation, a lattice-constrained pure-glue quasiparticle model, and EIC light-nucleus coalescence. Physics AI/ML is led by Lorentz-equivariant spin and CP inference, with shortcut-resistant evaluation and dimensionless equation discovery providing credible methodological transfer.",
+  "professional_summary": "Quarkonium spin transport, colored-Goldstone saturation EFT, pure-glue quasiparticle thermodynamics, light-nucleus coalescence, Lorentz-equivariant CP inference, shortcut-resistant classifier evaluation, and dimensionless closure learning define the selected literature.",
+  "keywords": [
+    "quarkonium spin transport",
+    "gluon saturation EFT",
+    "pure-glue quasiparticles",
+    "light-nucleus coalescence",
+    "Lorentz-equivariant transformers",
+    "shortcut learning controls",
+    "dimensionless equation discovery"
+  ],
+  "arxiv_ids": [
+    "2611.06707",
+    "2611.05498",
+    "2611.06128",
+    "2611.06752",
+    "2611.05463",
+    "2611.06484",
+    "2611.05780",
+    "2611.06503"
+  ],
+  "total_paper_count": 7,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "Caution"
+  ],
+  "strongest_paper_summary": "arXiv:2611.06707 is the strongest heavy-ion contribution for its systematic pNRQCD open-system derivation of spin-dependent quarkonium transport; arXiv:2611.05463 is the strongest AI/ML paper for calibrated, detector-level, symmetry-aware spin and CP observables.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "title": "Heavy quarkonium spin transport in a hot medium",
+      "short_authors": "Nora Brambilla, Shuo Fang, Tom Magorsch, Panayiotis Panayiotou",
+      "total_author_count": 4,
+      "arxiv_id": "2611.06707",
+      "url": "https://arxiv.org/abs/2611.06707",
+      "category": "Theory",
+      "abstract": "An open-quantum-system treatment based on potential nonrelativistic QCD derives a spin-dependent quantum master equation and corresponding semiclassical Boltzmann equations for heavy quarkonium, including dissociation, regeneration, recoil corrections, spin-chromomagnetic interactions, and spin-orbit effects. An exploratory rate-equation estimate finds a very small medium-induced Υ(1S) polarization, while a rescaled charmonium calculation is only qualitatively descriptive.",
+      "tags": [
+        "quarkonium spin",
+        "open quantum systems",
+        "pNRQCD",
+        "QGP transport"
+      ],
+      "assessment": "strong",
+      "summary": "The paper builds a systematic pNRQCD transport framework connecting in-medium quarkonium spin dynamics to dilepton angular distributions. Relative quarkonium-medium motion supplies the leading anisotropy at zero fluid-gradient order, with chromomagnetic and spin-orbit terms entering the first nonzero alignment kernel.",
+      "critical_assessment": "The formal development is the strongest heavy-ion paper today: long, explicit, and clear about scale assumptions. The phenomenology is not yet precision-ready: it uses leading-order correlators, simplified temperature and freeze-out treatments, fixed relative velocity, no realistic production-spectrum weight, and a naive charmonium rescaling. Treat the ~10^-5 bottomonium alignment as an illustrative scale, not a prediction for direct comparison."
+    },
+    {
+      "title": "Goldstone theory of gluon saturation in high energy QCD: From color glass to color superfluid condensate",
+      "short_authors": "V. P. Nair, Raju Venugopalan",
+      "total_author_count": 2,
+      "arxiv_id": "2611.05498",
+      "url": "https://arxiv.org/abs/2611.05498",
+      "category": "Theory",
+      "abstract": "The authors generalize the Color Glass Condensate by treating spontaneous breaking of a global color subgroup and construct a colored-Goldstone effective theory with decay constant f_G = sqrt(N) Q_S. Coupling these modes to collinear gluons depletes the condensate and motivates a longer-time 'color superfluid' description, with low-frequency probes proposed as sensitive to the new dynamics.",
+      "tags": [
+        "gluon saturation",
+        "Color Glass Condensate",
+        "Goldstone EFT",
+        "small x"
+      ],
+      "assessment": "mixed",
+      "summary": "A conceptually ambitious EFT extension of the CGC introduces colored Goldstone modes and a new dynamical timescale associated with condensate depletion into collinear gluons.",
+      "critical_assessment": "The symmetry and EFT construction is serious and potentially important, but the phenomenological status is early. No quantitative observable or comparison to existing small-x data is supplied, and the physical meaning of global-color symmetry breaking and gauge-invariant colored excitations will draw close scrutiny. Worth reading as a theory proposal, not yet as established saturation phenomenology."
+    },
+    {
+      "title": "From lattice QCD thermodynamics to an effective quasiparticle description of gluonic matter at finite temperature",
+      "short_authors": "Cheng-Gang Guo, La-Yuan Peng, Zhen-Yan Lu, Marco Ruggieri, Shu-Peng Wang, Zhi-Jun Ma",
+      "total_author_count": 6,
+      "arxiv_id": "2611.06128",
+      "url": "https://arxiv.org/abs/2611.06128",
+      "category": "Phenomenology",
+      "abstract": "A thermodynamically consistent quasiparticle model for pure SU(3) Yang-Mills matter extracts a temperature-dependent effective gluon mass from lattice entropy density over 0.70 ≤ T/Tc ≤ 5. With one pressure normalization, it reconstructs pressure, energy density, interaction measure, sound speed, and a background term, emphasizing strong nonconformality near Tc.",
+      "tags": [
+        "lattice thermodynamics",
+        "quasiparticle model",
+        "pure Yang-Mills",
+        "equation of state"
+      ],
+      "assessment": "mixed",
+      "summary": "The work maps lattice pure-glue thermodynamics onto an effective quasigluon spectrum and a consistency-restoring background contribution, reproducing several equation-of-state observables once the entropy-derived mass is fixed.",
+      "critical_assessment": "Technically coherent and admirably explicit that the fitted quantity is not a physical gluon pole mass. The scientific gain is nevertheless modest: the mass is inferred from the same lattice thermodynamics later reconstructed, no uncertainty propagation is presented, and pure Yang-Mills thermodynamics is not quantitatively the QCD medium produced in heavy-ion collisions."
+    },
+    {
+      "title": "Light (anti)nuclei production via coalescence in electron-proton collisions: from HERA to EIC",
+      "short_authors": "Niccolò Ciavarelli, Francesco Noferini, Francesca Bellini",
+      "total_author_count": 3,
+      "arxiv_id": "2611.06752",
+      "url": "https://arxiv.org/abs/2611.06752",
+      "category": "Phenomenology",
+      "abstract": "A coalescence afterburner coupled to PYTHIA 8 is tuned and compared with ALICE pp and ZEUS ep measurements, then used to predict deuteron and antideuteron yields in the ePIC acceptance. The calculation finds sizable yields and a matter-antimatter asymmetry toward the proton-going direction.",
+      "tags": [
+        "light nuclei",
+        "coalescence",
+        "EIC",
+        "PYTHIA 8"
+      ],
+      "assessment": "mixed",
+      "summary": "The proceedings contribution transports a wave-function-overlap coalescence model from pp and HERA ep validation to concrete EIC deuteron and antideuteron predictions.",
+      "critical_assessment": "Useful and timely, with cross-system data checks and an experimentally targeted prediction. Confidence should remain moderate: this is a short proceedings paper, the source and deuteron radii are tune parameters, model and generator systematics are not quantified, and the claimed proton-structure sensitivity is prospective rather than demonstrated."
+    },
+    {
+      "title": "Top Spin and CP from Equivariant Transformers",
+      "short_authors": "Henning Bahl, Marco Menen, Antoine Petitjean, Tilman Plehn",
+      "total_author_count": 4,
+      "arxiv_id": "2611.05463",
+      "url": "https://arxiv.org/abs/2611.05463",
+      "category": "AI/ML use",
+      "abstract": "A Lorentz-equivariant transformer is used to identify the down-type quark in hadronic top decays and to construct interpretable CP-sensitive observables. The reported detector-level spin-analyzing power is 0.721, rising to 0.935 for the most confident 20% of events; a pseudoscalar channel enables CP-odd optimal observables in weak-boson-fusion Higgs production and top-pair production.",
+      "tags": [
+        "Lorentz equivariance",
+        "top spin",
+        "CP violation",
+        "optimal observables"
+      ],
+      "assessment": "strong",
+      "summary": "The architecture encodes Lorentz and CP structure instead of treating symmetry as an afterthought, producing a calibrated hadronic-top analyzer and learned scalar/pseudoscalar observables.",
+      "critical_assessment": "The strongest AI/ML paper in this batch. It reports calibrated outputs, meaningful analytic baselines, detector-level simulation for top pairs, and an interpretable connection to likelihood-ratio observables. Remaining gaps are the usual simulation-to-data and systematic-uncertainty tests; the WBF demonstration is only parton level."
+    },
+    {
+      "title": "Object-independent evaluation of small-data astronomical image classifiers: architecture, representation, and acquisition shortcuts",
+      "short_authors": "Eraldo Pereira Marinho",
+      "total_author_count": 1,
+      "arxiv_id": "2611.06484",
+      "url": "https://arxiv.org/abs/2611.06484",
+      "category": "AI/ML use",
+      "abstract": "A 370-object astronomical image dataset is split by physical object and used to compare a custom CNN-Transformer, pretrained ResNet-50, and pretrained ViT-B/16 across field-of-view and masking controls. Architecture differences are not statistically significant after Holm correction, while metadata-only and central-masked controls retain substantial classification power.",
+      "tags": [
+        "shortcut learning",
+        "grouped splitting",
+        "small data",
+        "evaluation controls"
+      ],
+      "assessment": "strong",
+      "summary": "The paper shows that respectable held-out accuracy can still be driven by acquisition settings, catalogue context, or repeated-object leakage rather than the target morphology.",
+      "critical_assessment": "Methodologically strong despite the small domain dataset. It uses grouped splitting, three seeds, multiple controls, multiple-comparison correction, and cluster bootstrap uncertainty. Transfer is about evaluation design, not the astronomy classifier itself; the limited sample size leaves broad intervals and does not isolate architecture from pretraining."
+    },
+    {
+      "title": "Discovering like a scientist: Literature-informed dimensionless learning for physical closure of data-driven equations",
+      "short_authors": "Hao Xu, Tianhao Wu, Dongxiao Zhang",
+      "total_author_count": 3,
+      "arxiv_id": "2611.05780",
+      "url": "https://arxiv.org/abs/2611.05780",
+      "category": "AI/ML use",
+      "abstract": "The π-former learns variable associations and exponents from 1,288 established dimensionless groups under exact dimensional constraints, then optimizes combinations against observations. Across seven physical problems it recovers predictive dimensionless coordinates; an evaporation-driven wetting experiment shows held-out generalization across liquids and initial volumes.",
+      "tags": [
+        "dimensional analysis",
+        "equation discovery",
+        "physical closure",
+        "interpretable ML"
+      ],
+      "assessment": "mixed",
+      "summary": "The method combines a literature-derived prior over dimensionless groups with exact unit constraints and equation discovery to model condition-dependent closure coefficients.",
+      "critical_assessment": "Promising because the inductive bias is physical, outputs are interpretable, and testing extends to held-out experimental conditions. The headline language is broader than the evidence: seven curated problems do not establish general law discovery, corpus leakage and comparison to exhaustive dimensional-analysis searches deserve close inspection, and no HEP/NP transfer is demonstrated."
+    }
+  ],
+  "cautions": [
+    {
+      "title": "A Duality Model in Which Dual QCD Becomes Hydrodynamics",
+      "short_authors": "Noriaki Aibara, So Katagiri, Yoshiki Matsuoka, Kazuya Mitsutani, Akio Sugamoto",
+      "total_author_count": 5,
+      "arxiv_id": "2611.06503",
+      "url": "https://arxiv.org/abs/2611.06503",
+      "category": "Caution",
+      "abstract": "An old duality construction rewrites a QCD-like action using adjoint two-form fields interpreted as a fluid, adds two color-octet scalars and vortex strings, and proposes a strong-coupling expansion. The paper suggests this framework could explain perfect-fluid QGP behavior, gluon saturation, confinement, and supplement perturbative and lattice QCD.",
+      "tags": [
+        "dual QCD",
+        "two-form fields",
+        "hydrodynamics",
+        "speculative"
+      ],
+      "assessment": "caution",
+      "summary": "The scope of the claims greatly exceeds the validation provided.",
+      "critical_assessment": "The paper derives a formal model but supplies no comparison to lattice observables, heavy-ion data, viscosities, saturation evolution, or controlled QCD limits. Several displayed relations and coefficients are explicitly schematic, new octet scalars are introduced without phenomenological constraints, and classical zero viscosity is not an explanation of measured near-perfect fluidity. Treat it as speculative model-building, not evidence for a third quantitative method for QCD."
+    }
+  ]
+}
