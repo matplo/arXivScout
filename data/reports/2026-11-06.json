@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-06",
+  "path": "reports/2026-11-06.html",
+  "summary": "Light-ion flow as a constraint on chiral nuclear forces and ALICE event-shape-engineered flow correlations lead the heavy-ion selection. Small-system collectivity remains statistically unresolved at the lowest multiplicities, while quarkyonic-matter evidence is coherent but indirect. Physics AI/ML is led by better evaluation of conditional generative surrogates and rigorous coverage limits for time-dependent PDE emulators.",
+  "professional_summary": "Chiral-force sensitivity in light ions, nonlinear flow response in Pb-Pb and Xe-Xe, low-multiplicity identified-particle flow, quarkyonic saturation, Lévy femtoscopy extraction, conditional-surrogate scoring, and conformal uncertainty for PDE rollouts define the selected literature.",
+  "keywords": [
+    "chiral nuclear forces",
+    "light-ion collisions",
+    "event shape engineering",
+    "nonlinear flow",
+    "small-system collectivity",
+    "quarkyonic matter",
+    "Lévy femtoscopy",
+    "generative surrogate evaluation",
+    "conformal PDE uncertainty"
+  ],
+  "arxiv_ids": [
+    "2611.08122",
+    "2611.08482",
+    "2611.08279",
+    "2611.08473",
+    "2611.08327",
+    "2611.08069",
+    "2611.07826",
+    "2611.08409"
+  ],
+  "total_paper_count": 8,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper_summary": "arXiv:2611.08122 is the strongest theory/phenomenology bridge because it maps light-ion geometry to chiral-EFT couplings with ab initio emulators; arXiv:2611.08473 is the strongest measurement; arXiv:2611.07826 provides the most immediately actionable HEP ML evaluation result.",
+  "caution_count": 0,
+  "papers": [
+    {
+      "title": "Linking chiral nuclear forces to light-ion collisions: a global sensitivity analysis",
+      "short_authors": "Thomas Duguet, Andreas Ekström, Giuliano Giacalone, Gaute Hagen, Takayuki Miyagi, Alexander Tichai",
+      "total_author_count": 6,
+      "arxiv_id": "2611.08122",
+      "category": "Theory",
+      "assessment": "strong",
+      "tags": [
+        "chiral EFT",
+        "light-ion collisions",
+        "global sensitivity",
+        "nuclear deformation"
+      ],
+      "abstract": "Ultrarelativistic 16O+16O and 20Ne+20Ne collisions are connected quantitatively to the low-energy constants of chiral inter-nucleon interactions. Subspace-projected coupled-cluster emulators show that the quadrupole mean-square eccentricity responds approximately linearly and additively to all 16 NNLO low-energy constants, with 20Ne particularly sensitive to the two-nucleon spin-orbit contact.",
+      "summary": "This is the strongest conceptual bridge in today's batch: flow observables become complementary constraints on nuclear forces rather than only probes of bulk geometry.",
+      "critical_assessment": "Strong and genuinely novel, with ab initio many-body calculations, emulation, and a global sensitivity analysis. The current result is a sensitivity map, not yet an extraction from data: many-body and EFT-truncation uncertainties, hydrodynamic response uncertainty, and the dominant one-body contribution still need to enter a full Bayesian inference.",
+      "url": "https://arxiv.org/abs/2611.08122"
+    },
+    {
+      "title": "Hypersurface covariance in relativistic local equilibrium",
+      "short_authors": "You-yu Li, Shuai Y. F. Liu",
+      "total_author_count": 2,
+      "arxiv_id": "2611.08482",
+      "category": "Theory",
+      "assessment": "mixed",
+      "tags": [
+        "relativistic hydrodynamics",
+        "local equilibrium",
+        "hyperon polarization",
+        "Zubarev formalism"
+      ],
+      "abstract": "Using spin polarization in heavy-ion collisions, the authors argue that hypersurface dependence in the local-equilibrium part of the Zubarev density operator is canceled by a previously omitted nondissipative contribution from the nominally dissipative part. The resulting framework is hypersurface covariant while retaining a physical medium-frame dependence.",
+      "summary": "The work targets a real formal inconsistency behind competing treatments of Lambda-hyperon polarization and supplies a compact covariant resolution.",
+      "critical_assessment": "Conceptually important and technically focused, but the evidence is mainly formal. Its impact will depend on independent checks of the bookkeeping and on whether implementation changes quantitative polarization predictions; no new data comparison is provided.",
+      "url": "https://arxiv.org/abs/2611.08482"
+    },
+    {
+      "title": "Has Quarkyonic Matter Been Seen in Lattice Simulations?",
+      "short_authors": "Kohei Fujikura, Kenji Fukushima, Yoshimasa Hidaka, Etsuko Itou, Larry McLerran",
+      "total_author_count": 5,
+      "arxiv_id": "2611.08279",
+      "category": "Theory",
+      "assessment": "mixed",
+      "tags": [
+        "quarkyonic matter",
+        "finite-density lattice QCD",
+        "equation of state",
+        "dense QCD"
+      ],
+      "abstract": "A 63-page synthesis compares distribution-function expectations for quarkyonic matter with two-color lattice QCD at finite baryon density, QCD at finite isospin density, and astrophysically inferred equations of state. The authors find a coherent pattern compatible with quarkyonic saturation and propose direct momentum-distribution measurements as the decisive next test.",
+      "summary": "The paper is a serious, useful consolidation of lattice-accessible evidence for an intermediate confined but quark-dominated regime.",
+      "critical_assessment": "Worth reading, but the title is stronger than the evidence. The authors themselves state that thermodynamics alone does not establish quark-occupation saturation; only the 1+1-dimensional two-color case offers a relatively direct distribution-level test, while the 3+1-dimensional and astrophysical evidence remains interpretive.",
+      "url": "https://arxiv.org/abs/2611.08279"
+    },
+    {
+      "title": "Correlations and fluctuations of flow with event shape engineering in Pb-Pb and Xe-Xe collisions at the LHC",
+      "short_authors": "ALICE Collaboration",
+      "total_author_count": null,
+      "arxiv_id": "2611.08473",
+      "category": "Experiment",
+      "assessment": "strong",
+      "tags": [
+        "anisotropic flow",
+        "event shape engineering",
+        "nonlinear response",
+        "Pb-Pb and Xe-Xe"
+      ],
+      "abstract": "ALICE measures correlations among v2, v3, and v4 in Pb-Pb and Xe-Xe collisions and separates linear and nonlinear v4 components with event-shape engineering and multiparticle correlators. The nonlinear component tracks initial ellipticity strongly, while the linear component is nearly independent of it; chi4,22 is mostly stable against q2 selection.",
+      "summary": "This is the day's strongest direct heavy-ion measurement, supplying differential constraints on initial geometry, flow fluctuations, and nonlinear hydrodynamic response across two system sizes.",
+      "critical_assessment": "Strong experimental work with complementary extraction methods, rapidity gaps, fine centrality selection, and detailed systematic variations. Interpretation still inherits assumptions used in the linear/nonlinear decomposition and residual nonflow sensitivity, especially in the smaller Xe-Xe sample, but the observable-level result is robust.",
+      "url": "https://arxiv.org/abs/2611.08473"
+    },
+    {
+      "title": "Exploring the limit of partonic collectivity in small collision systems at the LHC",
+      "short_authors": "ALICE Collaboration",
+      "total_author_count": null,
+      "arxiv_id": "2611.08327",
+      "category": "Experiment",
+      "assessment": "mixed",
+      "tags": [
+        "small systems",
+        "identified-particle flow",
+        "quark coalescence",
+        "low multiplicity"
+      ],
+      "abstract": "ALICE extends identified-particle v2 measurements in p-Pb and pp collisions to lower multiplicity. Clear mass ordering and baryon-meson splitting persist for Nch >= 25, while the lowest bin yields only about 2 sigma evidence in p-Pb and less than 1 sigma in pp.",
+      "summary": "The measurement narrows the empirical boundary where heavy-ion-like identified-particle flow patterns become statistically unresolved.",
+      "critical_assessment": "The analysis is valuable and appropriately cautious. It does not locate a collectivity threshold: low-multiplicity p-Pb is marginal and pp is inconclusive, and baryon-meson splitting is evidence consistent with coalescence rather than a unique proof of a partonic phase. Run 3 precision will be decisive.",
+      "url": "https://arxiv.org/abs/2611.08327"
+    },
+    {
+      "title": "Comparison of Methods for Extracting Three-Dimensional Lévy Source Parameters in 200 GeV Au+Au Collisions with EPOS3",
+      "short_authors": "Máté Szilágyi, Máté Csanád, Dániel Kincses",
+      "total_author_count": 3,
+      "arxiv_id": "2611.08069",
+      "category": "Phenomenology",
+      "assessment": "mixed",
+      "tags": [
+        "femtoscopy",
+        "Lévy source",
+        "EPOS3",
+        "FFT"
+      ],
+      "abstract": "Four extraction routes for 3D Lévy source parameters are compared on EPOS3 Au+Au events. Direct numerical integration and FFT agree to RMSE below 10^-14, with FFT reducing hours to seconds, while correlation-function fits yield systematic 7-9% shifts in the Lévy index relative to direct source fits.",
+      "summary": "The main value is methodological: it exposes analysis-definition effects that can masquerade as physical source-shape differences and provides a much faster numerically equivalent implementation.",
+      "critical_assessment": "Useful and transparent, but limited to generator-level EPOS3 and a workshop contribution. The discrepancy is plausibly traced to non-Lévy features and ensemble mixing, yet experimental Coulomb corrections, detector effects, and model dependence are not resolved.",
+      "url": "https://arxiv.org/abs/2611.08069"
+    },
+    {
+      "title": "Estimating Spectrum-Free Information Bounds for Generative Surrogates Beyond Conditional Collapse",
+      "short_authors": "Chaitanya Dumbre, Sourabh Dube",
+      "total_author_count": 2,
+      "arxiv_id": "2611.07826",
+      "category": "AI/ML use",
+      "assessment": "strong",
+      "tags": [
+        "generative surrogates",
+        "proper scoring rules",
+        "conditional collapse",
+        "HEP simulation"
+      ],
+      "abstract": "On a CMS simulation benchmark, a condition-blind sampler can beat trained conditional generators on common one-dimensional marginal divergences. The paper replaces these with CRPS-based skill scores and a k-nearest-neighbor extrapolation estimating how much predictive information the conditioner contains.",
+      "summary": "This directly improves how fast-simulation and reconstruction surrogates should be evaluated in HEP: passing marginal plots is shown to be compatible with ignoring the conditioning event.",
+      "critical_assessment": "Strong because it demonstrates a concrete evaluation failure, proposes a proper-score alternative, and states its limits. The ceiling is estimated rather than proven, all reported scores are one-dimensional, correlations between outputs remain untested, and the numerical conclusions are benchmark-specific.",
+      "url": "https://arxiv.org/abs/2611.07826"
+    },
+    {
+      "title": "Conformal Prediction for Time-Dependent PDEs",
+      "short_authors": "Joshua Stiller, Annika Schneider, Eyke Hüllermeier",
+      "total_author_count": 3,
+      "arxiv_id": "2611.08409",
+      "category": "AI/ML use",
+      "assessment": "strong",
+      "tags": [
+        "conformal prediction",
+        "PDE surrogates",
+        "uncertainty quantification",
+        "distribution shift"
+      ],
+      "abstract": "The paper proves that exact conformal coverage can fail sharply for time-dependent PDE surrogate models: distributions at arbitrarily close times may be mutually singular, and discretized total-variation distance can saturate exponentially with grid resolution. Under restricted settings, weighted conformal prediction restores finite-sample coverage over growing horizons.",
+      "summary": "The transfer value is clear for learned hydrodynamic and transport emulators used in heavy-ion inference, where temporal rollout and finer grids can silently invalidate nominal uncertainty coverage.",
+      "critical_assessment": "A strong theoretical warning with constructive results and NeurIPS acceptance. Transfer to HEP or nuclear physics is methodological rather than demonstrated; the useful guarantees require assumptions and discretization restrictions that must be checked for each simulator and deployment distribution.",
+      "url": "https://arxiv.org/abs/2611.08409"
+    }
+  ],
+  "cautions": []
+}
