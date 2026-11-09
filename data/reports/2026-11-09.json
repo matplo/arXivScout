@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-09",
+  "path": "reports/2026-11-09.html",
+  "summary": "Causal first-order BDNK hydrodynamics, response-correlation and nuclear-vibration explanations of ultra-central flow, TEEC jet broadening, and light-ion collectivity lead the heavy-ion selection. Physics AI/ML is strongest in calorimeter fast simulation, continuous silicon readout, and underconstrained kinematic reconstruction.",
+  "professional_summary": "BDNK relativistic hydrodynamics, ultra-central flow response, collective nuclear vibrations, quasi-hydrodynamic slow modes, O-O and Ne-Ne anisotropic flow, heavy-ion TEECs, latent shower generation, continuous AC-LGAD reconstruction, and ML-assisted ttbar kinematics define the selected literature.",
+  "keywords": [
+    "BDNK hydrodynamics",
+    "ultra-central flow",
+    "nuclear vibrations",
+    "quasi-hydrodynamics",
+    "light-ion collectivity",
+    "TEEC jet broadening",
+    "calorimeter fast simulation",
+    "AC-LGAD readout",
+    "normalizing-flow reconstruction",
+    "jet-tagger interpretability",
+    "baryon susceptibilities"
+  ],
+  "arxiv_ids": [
+    "2611.09582",
+    "2611.09643",
+    "2611.09404",
+    "2611.09246",
+    "2611.08725",
+    "2611.08579",
+    "2611.08606",
+    "2611.08694",
+    "2611.09797",
+    "2611.08656",
+    "2611.09033"
+  ],
+  "total_paper_count": 11,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper_summary": "arXiv:2611.09582 is the strongest contribution because it combines mathematical well-posedness, two independent numerical formulations, convergence tests, and heavy-ion benchmarks. arXiv:2611.08606 is the strongest immediately deployable ML study.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "Mathematical foundations and numerical simulations of BDNK hydrodynamics: from heavy-ion collisions to astrophysics",
+      "short_authors": "Teerthal Patel, Henry V. Hirvonen, Fábio S. Bemfica, Marcelo M. Disconzi, Jorge Noronha, Jean-François Paquet",
+      "total_author_count": 6,
+      "arxiv_id": "2611.09582",
+      "url": "https://arxiv.org/abs/2611.09582",
+      "category": "Theory",
+      "abstract": "Develops two independent flux-conservative algorithms for causal, stable first-order BDNK viscous hydrodynamics in general 3+1-dimensional spacetimes, with proofs of hyperbolicity and well-posedness, convergence tests, and standard-flow benchmarks. Heavy-ion simulations use a lattice-QCD equation of state and fluctuating TRENTo initial conditions; BDNK and minimal Israel-Stewart agree at small shear viscosity but differ at larger viscosity and early initialization.",
+      "summary": "A unusually complete bridge from PDE foundations to heavy-ion-ready numerics. It makes BDNK a practical, testable alternative rather than only a formal proposal.",
+      "critical_assessment": "The strongest paper in the batch: independent formulations, mathematical proofs, convergence tests, and cross-domain benchmarks substantially reduce implementation risk. The phenomenological comparison is still controlled rather than a calibrated description of data, so the size of BDNK-specific effects in full 3+1D event-by-event inference remains open.",
+      "tags": [
+        "BDNK hydrodynamics",
+        "causality and stability",
+        "flux-conservative numerics",
+        "TRENTo"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "On the collective flow puzzle in ultra-central heavy-ion collisions",
+      "short_authors": "Chen-Xi Liang, Li Yan",
+      "total_author_count": 2,
+      "arxiv_id": "2611.09643",
+      "url": "https://arxiv.org/abs/2611.09643",
+      "category": "Theory",
+      "abstract": "Uses the AI-accelerated UCC-DiffHIC event-by-event hydrodynamic model, validated against hybrid simulations, to study the near equality of v2{2} and v3{2} in ultra-central Pb-Pb collisions. An exact response decomposition attributes suppression of v2{2}/v3{2} to unequal residual response correlations, P3/P2 below one, rather than a breakdown of linear response.",
+      "summary": "Offers a compact mechanistic explanation for a long-standing ultra-central-flow tension and turns an empirical ratio into a response-correlation statement.",
+      "critical_assessment": "Strong and directly relevant, especially because the surrogate is checked against hybrid calculations and the decomposition is exact. The resolution is conditional on suitable initial conditions and model fidelity in a fluctuation-sensitive tail; it should be tested across independent initial-state and afterburner implementations before being called universal.",
+      "tags": [
+        "ultra-central flow",
+        "AI-accelerated hydrodynamics",
+        "response decomposition",
+        "Pb-Pb"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Effect of collective nuclear vibrations on initial anisotropies in central Pb+Pb collisions: A comparative study in Glauber and Trento models",
+      "short_authors": "B.G. Zakharov",
+      "total_author_count": 1,
+      "arxiv_id": "2611.09404",
+      "url": "https://arxiv.org/abs/2611.09404",
+      "category": "Theory",
+      "abstract": "Introduces data-driven quadrupole and octupole filters for sampled Pb-208 nucleon configurations, constrained by experimental strength functions. In both Glauber and TRENTo initial-state models the collective modes lower epsilon2{2}/epsilon3{2}, with a larger reduction in TRENTo, to values claimed to accommodate the measured v2-to-v3 hierarchy.",
+      "summary": "A physically motivated competing explanation of the same ultra-central-flow puzzle, emphasizing nuclear collective structure rather than hydrodynamic-response decorrelation.",
+      "critical_assessment": "Worth attention because it uses experimental nuclear-response information and demonstrates model dependence explicitly. It is a short initial-state study: translating eccentricity ratios into flow still requires hydrodynamic response, centrality selection, and joint uncertainty propagation, so 'resolve' is stronger than the present evidence.",
+      "tags": [
+        "nuclear vibrations",
+        "initial anisotropy",
+        "Glauber",
+        "TRENTo"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Quasi-hydrodynamics beyond the conventional paradigm",
+      "short_authors": "Lorenzo Gavassino",
+      "total_author_count": 1,
+      "arxiv_id": "2611.09246",
+      "url": "https://arxiv.org/abs/2611.09246",
+      "category": "Theory",
+      "abstract": "Uses kinetic-theory effective descriptions to show that controlled quasi-hydrodynamics need not retain every slow microscopic mode, require parametric separation from the rest of the spectrum, or originate from weakly broken symmetries. Three counterexample models remain systematically improvable because applicability is governed by spectral properties of the kinetic operator on an appropriate Hilbert space.",
+      "summary": "Broadens the formal conditions under which additional slow degrees of freedom can be incorporated into hydrodynamic modeling, relevant to effective descriptions of QCD matter.",
+      "critical_assessment": "Conceptually strong and sharply argued, with explicit counterexamples rather than analogy. Heavy-ion usefulness is indirect at this stage: the paper does not identify a specific QCD slow sector or demonstrate improved collision phenomenology.",
+      "tags": [
+        "quasi-hydrodynamics",
+        "kinetic theory",
+        "slow modes",
+        "effective theory"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Probing the initial geometry and the onset of collectivity with anisotropic flow in light-ion collisions with ALICE at the LHC",
+      "short_authors": "Alexian Marc Lejeune for the ALICE Collaboration",
+      "total_author_count": null,
+      "arxiv_id": "2611.08725",
+      "url": "https://arxiv.org/abs/2611.08725",
+      "category": "Experiment",
+      "abstract": "Reports recent ALICE two- and multiparticle anisotropic-flow measurements in O-O and Ne-Ne collisions at 5.36 TeV and comparisons with hydrodynamic calculations containing different light-nuclear structures. It also outlines forward-detector prospects for longitudinal flow correlations.",
+      "summary": "A timely experimental snapshot of the new light-ion program and its ability to connect nuclear structure with collective response.",
+      "critical_assessment": "Scientifically important data, but this is a six-page ICHEP proceedings contribution rather than the definitive analysis. Model comparisons are informative, while the compressed format limits systematic detail and makes the longitudinal program prospective.",
+      "tags": [
+        "oxygen-oxygen",
+        "neon-neon",
+        "anisotropic flow",
+        "nuclear structure"
+      ],
+      "assessment": "mixed"
+    },
+    {
+      "title": "Observing Transverse Momentum Broadening from TEECs in Heavy Ion Collisions",
+      "short_authors": "João Barata, Hai Tao Li, Andrey V. Sadofyev, João M. Silva",
+      "total_author_count": 4,
+      "arxiv_id": "2611.08579",
+      "url": "https://arxiv.org/abs/2611.08579",
+      "category": "Phenomenology",
+      "abstract": "Calculates the azimuthal transverse energy-energy correlator in color-singlet dijet events by combining vacuum TMD factorization at NLL-prime accuracy with first-order medium corrections. Classical broadening lowers the back-to-back peak, radiation adds stronger suppression and large-angle enhancement, while the modeled medium response is broad and small at the peak.",
+      "summary": "Proposes a differential energy-flow observable that separates several mechanisms contributing to jet decorrelation more cleanly than a single width.",
+      "critical_assessment": "Technically substantial and experimentally suggestive. The calculation deliberately uses a homogeneous medium and a color-singlet quark-antiquark channel; realistic geometry, flavor mixtures, higher-order medium effects, hadronization, and background subtraction will determine whether the proposed separation survives in data.",
+      "tags": [
+        "TEEC",
+        "jet broadening",
+        "NLL prime resummation",
+        "medium response"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Just CaloCHILL: fast hadronic shower generation in a learned latent space",
+      "short_authors": "Henry Day-Hall, Frank Gaede, Gregor Kasieczka, Katja Krüger, Martina Mozzanica",
+      "total_author_count": 5,
+      "arxiv_id": "2611.08606",
+      "url": "https://arxiv.org/abs/2611.08606",
+      "category": "AI/ML use",
+      "abstract": "Generates high-granularity hadronic showers in three stages: layer-level hit counts and first times, a learned latent summary, then VAE decompression to full space-energy-time point clouds. On positive-pion showers for the ILD calorimeter it improves every reported accuracy metric over its predecessor while running about 600 times faster; code and data are released.",
+      "summary": "The clearest directly useful ML result today: it attacks the dominant detector-simulation bottleneck while preserving timing and irregular point-cloud structure.",
+      "critical_assessment": "Strong engineering and evaluation with many observables, explicit speed comparison, and reproducibility assets. Validation is currently limited to one particle species and one proposed detector; tail fidelity, conditioning across species and energies, and downstream-analysis closure remain the deployment tests.",
+      "tags": [
+        "fast simulation",
+        "flow matching",
+        "point clouds",
+        "calorimeter timing"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "GeoRead: Geometry-Aware Transformer for Continuous AC-LGAD Readout Reconstruction",
+      "short_authors": "Lixing Wang, Leena Diehl, Spencer Ellis, et al.",
+      "total_author_count": 17,
+      "arxiv_id": "2611.08694",
+      "url": "https://arxiv.org/abs/2611.08694",
+      "category": "AI/ML use",
+      "abstract": "Introduces a spatial-temporal transformer that embeds relative pad geometry and produces time-resolved positions with predictive uncertainties from continuous AC-LGAD waveforms. On four-channel TCT data it reaches median position errors of 5.8 micrometers inside the pad-center convex hull and 8.2 micrometers over the full scan, remaining stable under time shifts and synthesized overlapping events.",
+      "summary": "A credible route from isolated-window reconstruction toward continuous, multi-hit 4D tracking readout, with obvious relevance to high-rate collider detectors.",
+      "critical_assessment": "Strong proof of concept on real sensor measurements, with geometry encoding, overlap augmentation, and uncertainty outputs. The overlap tests are synthesized from single-hit data and the demonstrated geometry is still one four-channel device, so cross-sensor generalization and beam-test pileup are not yet established.",
+      "tags": [
+        "AC-LGAD",
+        "continuous readout",
+        "geometry-aware transformer",
+        "uncertainty estimation"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Kinematic Reconstruction of Top-Quark Pairs Using Analytical and Machine-Learning Methods with CMS Open Data",
+      "short_authors": "V. Aushev, M. Spitsyn, R. Yermolenko, O. Zenaiev",
+      "total_author_count": 4,
+      "arxiv_id": "2611.09797",
+      "url": "https://arxiv.org/abs/2611.09797",
+      "category": "AI/ML use",
+      "abstract": "Improves analytic dilepton ttbar reconstruction and compares it with a residual MLP and conditional normalizing flow. Relative to the improved analytic baseline, the ML methods improve mass, transverse-momentum, and rapidity resolution by about 30%, 20%, and 15%; generator-level and generator-to-detector tests indicate a physics-driven correction rather than a detector shortcut.",
+      "summary": "A well-scoped example of ML improving an underconstrained reconstruction problem while retaining a strong analytic baseline and testing transfer.",
+      "critical_assessment": "The comparative design and transfer test are persuasive. The study uses 7 TeV simulation tied to CMS Open Data, so robustness to modern generators, detector conditions, systematic variations, and real-data closure is still required before analysis use.",
+      "tags": [
+        "kinematic reconstruction",
+        "normalizing flows",
+        "CMS Open Data",
+        "domain transfer"
+      ],
+      "assessment": "strong"
+    },
+    {
+      "title": "Higher Order Component Attribution via Learned Surrogates in High Energy Physics",
+      "short_authors": "Lauri Laatu, Aritra Bal, Benedikt Maier, Markus Klute, Michael Spannowsky",
+      "total_author_count": 5,
+      "arxiv_id": "2611.08656",
+      "url": "https://arxiv.org/abs/2611.08656",
+      "category": "AI/ML use",
+      "abstract": "Fits local Kolmogorov-Arnold-network surrogates to transformer jet taggers and compares second- and third-order derivatives with particle-pair and triplet contributions to energy correlators. Particle Transformer shows a moderate pairwise rank correlation near 0.3 and weaker triplet alignment, while surrogate fidelity is high for the studied local perturbations.",
+      "summary": "A useful interpretability probe, but the physical-alignment result is modest and local rather than a demonstration that the tagger has learned a general mechanistic description of jet physics.",
+      "critical_assessment": "The conclusion should be read narrowly: the headline evidence uses selected best-performing networks, a limited set of jet classes, local perturbations, and correlations that are weak at third order. High surrogate R-squared measures imitation of local logit shifts, not truth or causal faithfulness of the physical interpretation.",
+      "tags": [
+        "interpretability",
+        "Particle Transformer",
+        "KAN surrogate",
+        "energy correlators"
+      ],
+      "assessment": "caution"
+    },
+    {
+      "title": "Baryon Number Susceptibilities of Hot and Dense Nuclear Matter in Relativistic Mean-Field Models",
+      "short_authors": "Deepak Kumar, Biswarup Das, Sandeep Chatterjee, Ujjal Kumar Dey",
+      "total_author_count": 4,
+      "arxiv_id": "2611.09033",
+      "url": "https://arxiv.org/abs/2611.09033",
+      "category": "Phenomenology",
+      "abstract": "Derives analytic baryon-number susceptibilities in several nonlinear relativistic mean-field parameterizations and compares cumulant-ratio trends with heavy-ion measurements, reporting qualitative beam-energy agreement and relatively small deviations for FSU-family models.",
+      "summary": "The analytic framework may be useful, but the apparent agreement with experiment risks overinterpreting equilibrium bulk susceptibilities as measured event-by-event cumulants.",
+      "critical_assessment": "A convincing comparison needs a freeze-out map, conservation and acceptance effects, resonance decays, volume fluctuations, nonequilibrium evolution, and correlated uncertainties. Without these layers, statements that RMF skewness and kurtosis 'satisfy' experimental values are suggestive rather than discriminating evidence for the equation of state.",
+      "tags": [
+        "baryon susceptibilities",
+        "RMF",
+        "cumulants",
+        "beam-energy scan"
+      ],
+      "assessment": "caution"
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2611.08656",
+      "title": "Higher Order Component Attribution via Learned Surrogates in High Energy Physics",
+      "reason": "The conclusion should be read narrowly: the headline evidence uses selected best-performing networks, a limited set of jet classes, local perturbations, and correlations that are weak at third order. High surrogate R-squared measures imitation of local logit shifts, not truth or causal faithfulness of the physical interpretation."
+    },
+    {
+      "arxiv_id": "2611.09033",
+      "title": "Baryon Number Susceptibilities of Hot and Dense Nuclear Matter in Relativistic Mean-Field Models",
+      "reason": "A convincing comparison needs a freeze-out map, conservation and acceptance effects, resonance decays, volume fluctuations, nonequilibrium evolution, and correlated uncertainties. Without these layers, statements that RMF skewness and kurtosis 'satisfy' experimental values are suggestive rather than discriminating evidence for the equation of state."
+    }
+  ]
+}
