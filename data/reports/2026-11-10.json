@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-10",
+  "path": "reports/2026-11-10.html",
+  "summary": "The selected papers emphasize cross-system tests of jet energy loss, robust noncritical baselines for high-baryon-density cumulants, late-stage effects in open charm, and experimentally grounded ML for detector reconstruction. The strongest heavy-ion contribution applies a common DREENA setup from O+O to Pb+Pb; the strongest ML contribution validates transformer-based AC-LGAD position reconstruction on SPS test-beam data.",
+  "professional_summary": "System-size jet-quenching tests, cumulant-background control, open-charm hadronic rescattering, multi-strange recombination, AC-LGAD waveform reconstruction, and domain adaptation are the central themes.",
+  "keywords": [
+    "system-size jet quenching",
+    "proton cumulants",
+    "open charm",
+    "quark recombination",
+    "AC-LGAD reconstruction",
+    "domain adaptation"
+  ],
+  "arxiv_ids": [
+    "2611.12404",
+    "2611.12086",
+    "2611.11569",
+    "2611.11347",
+    "2611.10194",
+    "2611.10057",
+    "2611.11474",
+    "2611.10079"
+  ],
+  "total_paper_count": 6,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML in Physics",
+    "Caution"
+  ],
+  "strongest_paper": "arXiv:2611.12404 — common-parameter O-to-Pb high-pT phenomenology with falsifiable harmonic, fluctuation, and flavor predictions.",
+  "strongest_paper_summary": "Common-parameter O-to-Pb high-pT phenomenology supplies the day's most direct heavy-ion tests; real test-beam validation makes the AC-LGAD transformer the strongest ML result.",
+  "caution_count": 2,
+  "papers": [
+    {
+      "title": "From oxygen to lead: testing a common QGP description with high-pT probes",
+      "short_authors": "Bithika Karmakar, Dusan Zigic, Magdalena Djordjevic",
+      "total_author_count": 3,
+      "arxiv_id": "2611.12404",
+      "url": "https://arxiv.org/abs/2611.12404",
+      "category": "Phenomenology",
+      "abstract": "The observation of suppression and finite high-pT elliptic anisotropy in O+O and Ne+Ne raises the question of whether a common QGP description can simultaneously account for both observables across systems from oxygen to lead. The authors couple event-by-event bulk evolution constrained by soft observables to DREENA radiative and collisional energy loss, using the same microscopic parameter set for O+O, Ne+Ne, Xe+Xe, and Pb+Pb. They reproduce the ordering of suppression and predict system-, harmonic-, fluctuation-, and flavor-dependent tests.",
+      "tags": [
+        "system-size scan",
+        "DREENA",
+        "jet quenching",
+        "hard-soft correlations"
+      ],
+      "assessment": "strong",
+      "summary": "Uses one microscopic energy-loss parameter set across O+O, Ne+Ne, Xe+Xe, and Pb+Pb and turns the common-QGP hypothesis into a suite of falsifiable high-pT predictions, including v2/(1-RAA), v3, cumulant ratios, and D/B mesons.",
+      "critical_assessment": "Strong phenomenology with a coherent cross-system design and concrete predictions. The present evidence is still model-conditional: agreement with the ordering of suppression does not uniquely validate DREENA, and several headline observables await measurement."
+    },
+    {
+      "title": "Proton Number Fluctuations in Au+Au and Ag+Ag Collisions at sqrt(sNN)=2.4 GeV: A JAM Model Study",
+      "short_authors": "Yongcong Xu, Zhaohui Wang, Yu Zhang, Xiaofeng Luo",
+      "total_author_count": 4,
+      "arxiv_id": "2611.12086",
+      "url": "https://arxiv.org/abs/2611.12086",
+      "category": "Phenomenology",
+      "abstract": "Proton-number cumulants and factorial cumulants through fourth order are studied in Au+Au and Ag+Ag collisions at 2.4 GeV using JAM in cascade and mean-field modes. The CIGAR procedure closely reproduces a participant-number reference and outperforms multiplicity-based centrality treatment; mean fields, rapidity acceptance, and a simplified light-nucleus removal prescription materially affect cumulant ratios.",
+      "tags": [
+        "proton cumulants",
+        "JAM",
+        "CIGAR",
+        "high baryon density"
+      ],
+      "assessment": "strong",
+      "summary": "Builds a noncritical hadronic-transport baseline for high-baryon-density fluctuation measurements and explicitly tests centrality, acceptance, mean-field, and light-nucleus effects.",
+      "critical_assessment": "Methodologically strong because CIGAR is checked against a participant-number reference and several confounders are separated. The light-nucleus treatment is intentionally schematic and the result remains a JAM-dependent baseline, not a quantitative uncertainty envelope."
+    },
+    {
+      "title": "Hadronic final-state effects on open-charm production at LHC energies",
+      "short_authors": "Taesoo Song, Elena Bratkovskaya, Krzysztof Redlich",
+      "total_author_count": 3,
+      "arxiv_id": "2611.11569",
+      "url": "https://arxiv.org/abs/2611.11569",
+      "category": "Phenomenology",
+      "abstract": "PHSD calculations with and without charm-hadron rescattering are compared with ALICE measurements and statistical-hadronization expectations. Integrated relative D-meson yields are largely insensitive to hadronic interactions, while low- and intermediate-pT spectra and elliptic flow are modified; the model also reproduces the system trend of Ds+/D0.",
+      "tags": [
+        "open charm",
+        "PHSD",
+        "hadronic rescattering",
+        "elliptic flow"
+      ],
+      "assessment": "strong",
+      "summary": "Separates open-charm observables that are robust against the hadronic stage from those that receive material late-stage modifications.",
+      "critical_assessment": "A useful controlled switch-off study tied to ALICE data and an established transport framework. Its reach is limited by the short paper, one transport implementation, and the absence of a broad parameter or model uncertainty analysis."
+    },
+    {
+      "title": "Elliptic flow of phi and Omega via quark recombination mechanism in relativistic heavy-ion collisions",
+      "short_authors": "Zhidong Yang, Lie-Wen Chen",
+      "total_author_count": 2,
+      "arxiv_id": "2611.11347",
+      "url": "https://arxiv.org/abs/2611.11347",
+      "category": "Theory",
+      "abstract": "A quark-recombination model with strange-quark phase space parameterized by a viscous blast wave describes phi and Omega elliptic flow from 7.7 GeV to 5.02 TeV. The analysis finds approximate constituent-quark scaling, but at LHC energies the extracted strange-quark v2 differs appreciably from naively scaled hadron v2.",
+      "tags": [
+        "quark recombination",
+        "phi meson",
+        "Omega baryon",
+        "NCQ scaling"
+      ],
+      "assessment": "mixed",
+      "summary": "Tests recombination and NCQ scaling for multi-strange hadrons over an unusually broad energy range and highlights where interpreting scaled hadron flow as partonic flow fails.",
+      "critical_assessment": "Interesting and potentially useful, but the broad claim of recombination validity rests on a parameterized blast-wave input and a narrow observable set. Agreement with v2 alone does not uniquely establish constituent-quark degrees of freedom."
+    },
+    {
+      "title": "Test beam results for machine-learning-based reconstruction of resistive silicon sensors",
+      "short_authors": "Don C. Wong, Leena Diehl, Spencer Ellis, et al.",
+      "total_author_count": 17,
+      "arxiv_id": "2611.10194",
+      "url": "https://arxiv.org/abs/2611.10194",
+      "category": "AI/ML in Physics",
+      "abstract": "A topology-agnostic transformer reconstructs positions from full AC-LGAD waveforms measured in a 120 GeV pion test beam and is compared with a parameter-free charge-imbalance estimator and fitted matrix inversion. With an in-situ-calibrated 2.5 micrometer telescope pointing resolution, the transformer improves median position error by up to a factor of three over the full active pad; all methods converge in the charge-sharing core.",
+      "tags": [
+        "AC-LGAD",
+        "test beam",
+        "transformer",
+        "4D tracking"
+      ],
+      "assessment": "strong",
+      "summary": "Validates learned waveform reconstruction on a real SPS beam with calibrated telescope resolution and meaningful analytic baselines.",
+      "critical_assessment": "The strongest ML paper in this batch because evaluation uses real beam data, calibrated reference tracking, and analytic baselines. The gain is spatially nonuniform, and generalization beyond one 2x2-pad device and its operating conditions remains untested."
+    },
+    {
+      "title": "Domain Adaptive Graph Neural Networks for Neutrino Experiments",
+      "short_authors": "Hemalata Nayak, Giuseppe Cerati, Aleksandra Ciprijanovic, Tammy Walton",
+      "total_author_count": 4,
+      "arxiv_id": "2611.10057",
+      "url": "https://arxiv.org/abs/2611.10057",
+      "category": "AI/ML in Physics",
+      "abstract": "Adversarial domain adaptation is added to GNN reconstruction trained on the MicroBooNE open dataset. Four unlabeled target domains are synthesized using scale, noise, and position-dependent signal perturbations. Target-domain precision improves by as much as 0.19 and recall by 0.37 without a substantial source-domain penalty.",
+      "tags": [
+        "domain adaptation",
+        "GNN",
+        "LArTPC",
+        "simulation-to-data"
+      ],
+      "assessment": "mixed",
+      "summary": "Targets the simulation-to-data mismatch in LArTPC reconstruction using adversarial domain adaptation and reports substantial recovery under four controlled shifts.",
+      "critical_assessment": "Promising and correctly focused on robustness, but the target domains are engineered perturbations rather than real detector data. Results are workshop-level evidence of stress-test recovery, not yet proof of simulation-to-data closure."
+    }
+  ],
+  "cautions": [
+    {
+      "title": "Machine learning assisted neutrino/antineutrino discrimination in atmospheric neutrino events for CPV sensitivity in a 20-kton liquid scintillator detector",
+      "short_authors": "Dek Hao Liew, Mohammad Nizam, Shu Tian Eu, Siew Yan Hoh",
+      "total_author_count": 4,
+      "arxiv_id": "2611.11474",
+      "url": "https://arxiv.org/abs/2611.11474",
+      "category": "Caution",
+      "abstract": "GENIE events in a JUNO-like geometry are passed through parameterized smearing, and logistic regression, XGBoost, and an MLP use inelasticity, neutron multiplicity, and lepton energy for statistical neutrino/antineutrino separation. XGBoost reaches AUC near 0.83 and improves an approximate peak CP-violation sensitivity, with nuisance parameters marginalized.",
+      "tags": [
+        "atmospheric neutrinos",
+        "XGBoost",
+        "CP violation",
+        "parameterized detector"
+      ],
+      "assessment": "caution",
+      "summary": "The proposed statistical separation is plausible, but the claimed sensitivity gain is obtained with a simplified detector response.",
+      "critical_assessment": "The authors appropriately call the results preliminary. Until neutron response, event reconstruction, backgrounds, and correlated detector/systematic uncertainties are validated in a full simulation, the quoted significance gains should not be treated as an experimental projection."
+    },
+    {
+      "title": "Critical Temperature in Nonextensive Hadron Models: A Pressure-based Approach",
+      "short_authors": "M. A. A. Ahmed, H. Zainuddin",
+      "total_author_count": 2,
+      "arxiv_id": "2611.10079",
+      "url": "https://arxiv.org/abs/2611.10079",
+      "category": "Caution",
+      "abstract": "A pressure equation derived from Tsallis entropy is explored for several bag-model variants. The inferred transition temperatures depend strongly on the nonextensive parameter and model term, with quoted values well below the modern lattice-QCD crossover scale for physical quark masses; multiple mathematical roots can appear at finite volume.",
+      "tags": [
+        "Tsallis statistics",
+        "critical temperature",
+        "bag models",
+        "nonextensive thermodynamics"
+      ],
+      "assessment": "caution",
+      "summary": "The mathematical root structure is clear, but its connection to the QCD crossover in heavy-ion matter is not adequately established.",
+      "critical_assessment": "The paper combines phenomenological nonextensivity and model-dependent bag terms without a convincing calibration to lattice thermodynamics or a controlled uncertainty analysis. Calling the resulting weighted value a critical temperature risks giving model algebra more physical authority than the validation supports."
+    }
+  ]
+}
