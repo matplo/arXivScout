@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-11",
+  "path": "reports/2026-11-11.html",
+  "summary": "The selected papers emphasize fluctuation-sensitive heavy-flavor flow, benchmarked resistive QGP magnetohydrodynamics, small-system quarkonium–underlying-event correlations, scalable hit-level collider reconstruction, and physics-guided generative inversion. M-SHIVA provides the strongest heavy-ion infrastructure result; AlphaHits is the most directly HEP-relevant ML contribution.",
+  "professional_summary": "D-meson higher harmonics, resistive MHD and Joule heating, small-system hard-soft correlations, hit-level transformer reconstruction, and adjoint-guided inverse modeling are the central themes.",
+  "keywords": [
+    "D-meson flow fluctuations",
+    "resistive QGP MHD",
+    "Upsilon underlying event",
+    "hit-level foundation models",
+    "adjoint inverse problems"
+  ],
+  "arxiv_ids": [
+    "2611.13891",
+    "2611.13899",
+    "2611.13643",
+    "2611.13222",
+    "2611.13389"
+  ],
+  "total_paper_count": 5,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "AI/ML in Physics"
+  ],
+  "strongest_paper": "arXiv:2611.13899 — a benchmarked resistive-MHD solver with a quantitative scale separation between Joule heating and expansion cooling.",
+  "strongest_paper_summary": "M-SHIVA is the strongest heavy-ion infrastructure result; AlphaHits is the strongest HEP-native ML result.",
+  "caution_count": 0,
+  "papers": [
+    {
+      "title": "Triangular and fourth-order flow of D mesons in Pb-Pb collisions with event-by-event fluctuations",
+      "short_authors": "Yiyun Tang, Jiamin Liu, Yunpeng Liu, Baoyi Chen",
+      "total_author_count": 4,
+      "arxiv_id": "2611.13891",
+      "url": "https://arxiv.org/abs/2611.13891",
+      "category": "Phenomenology",
+      "abstract": "Charm transport in 5.02 TeV Pb-Pb collisions is coupled to event-by-event iEBE-VISHNU hydrodynamics through a Langevin model and instantaneous coalescence. The fluctuations barely change the azimuthally averaged D-meson RAA, but become increasingly important for higher flow harmonics: v3 is entirely fluctuation generated, and the calculation reproduces the main features of available CMS data while predicting D-meson v4.",
+      "tags": [
+        "D-meson flow",
+        "event-by-event fluctuations",
+        "heavy-flavor transport",
+        "iEBE-VISHNU"
+      ],
+      "assessment": "strong",
+      "summary": "Higher heavy-flavor harmonics emerge as cleaner probes of fluctuating QGP geometry than inclusive suppression.",
+      "critical_assessment": "Strong and directly testable phenomenology, especially because v3 is compared with data and v4 is predicted. The inference remains model conditional: one Langevin implementation, instantaneous coalescence, and no broad transport-parameter uncertainty analysis are shown."
+    },
+    {
+      "title": "M-SHIVA 1.0: A Relativistic Resistive MHD Code for Heavy-Ion Collisions, with Applications to Momentum Anisotropy and Joule Heating in QGP",
+      "short_authors": "Krishanu Sengupta, Victor Roy",
+      "total_author_count": 2,
+      "arxiv_id": "2611.13899",
+      "url": "https://arxiv.org/abs/2611.13899",
+      "category": "Theory",
+      "abstract": "M-SHIVA is a 2+1-dimensional relativistic resistive-MHD solver in Cartesian and boost-invariant Milne coordinates, using IMEX time integration, complementary primitive recovery, and GLM divergence cleaning. It passes standard shock, blast-wave, and rotor benchmarks. In optical-Glauber Au+Au and Pb+Pb applications, Joule heating rises sharply toward lower collision energy but remains negligible relative to longitudinal expansion cooling, with ratios from roughly 10^-14-10^-11 at 2.76 TeV to 10^-7-10^-4 at 62.4 GeV.",
+      "tags": [
+        "resistive MHD",
+        "electromagnetic fields",
+        "Joule heating",
+        "QGP"
+      ],
+      "assessment": "strong",
+      "summary": "A serious numerical foundation for finite-conductivity heavy-ion MHD, with a quantitatively negative result for Joule heating in the tested systems.",
+      "critical_assessment": "The numerical validation and transparent scale comparison make this one of the day's strongest papers. Its physical conclusion is narrower than the title may suggest because the present version is inviscid, 2+1D, boost invariant, and uses smooth optical-Glauber profiles and prescribed spectator fields."
+    },
+    {
+      "title": "Correlations between Upsilon(nS) production and the underlying event in pp collisions with the ATLAS detector",
+      "short_authors": "Baidyanath Sahoo on behalf of the ATLAS Collaboration",
+      "total_author_count": 1,
+      "arxiv_id": "2611.13643",
+      "url": "https://arxiv.org/abs/2611.13643",
+      "category": "Experiment",
+      "abstract": "Using 139 fb^-1 of 13 TeV pp data, ATLAS measures charged-particle activity associated with Upsilon(1S), Upsilon(2S), and Upsilon(3S), differential in quarkonium transverse momentum. At low pT, the associated multiplicity is systematically lower for the excited states than for Upsilon(1S), and the difference decreases with increasing pT.",
+      "tags": [
+        "small systems",
+        "Upsilon",
+        "underlying event",
+        "ATLAS"
+      ],
+      "assessment": "mixed",
+      "summary": "A useful hard-soft correlation measurement for small-system baselines, with a state-dependent multiplicity pattern.",
+      "critical_assessment": "Experimentally grounded and relevant, but this is a short conference proceeding rather than a full analysis paper. The observed correlation does not by itself establish final-state QGP dynamics and can receive production, selection, and underlying-event contributions."
+    },
+    {
+      "title": "AlphaHits: Full-Event Tracking and Reconstruction Towards a Hit-Level Foundation Model",
+      "short_authors": "Sascha Caron, Nadezhda Dobreva, Polina Moskvitina, et al.",
+      "total_author_count": 7,
+      "arxiv_id": "2611.13222",
+      "url": "https://arxiv.org/abs/2611.13222",
+      "category": "AI/ML in Physics",
+      "abstract": "AlphaHits processes detector hits directly, reconstructing complete TrackML events with up to 150,000 hits and charged particles down to about 150 MeV. Its tracking pipeline reports a TrackML score of 0.959; pretrained hit representations are then reused for tracks, jets, flavor, missing momentum, and event classification. Higgs classification reaches AUC 0.944, comparable to a Particle Transformer using reconstructed inputs.",
+      "tags": [
+        "hit-level transformer",
+        "full-event tracking",
+        "multi-task learning",
+        "HL-LHC"
+      ],
+      "assessment": "strong",
+      "summary": "The most HEP-native ML result today: inclusive hit-level tracking and reusable multi-task representations at realistic pileup scale.",
+      "critical_assessment": "Strong architecture work with unusually broad task coverage and detailed ablations. Important caveats are that downstream studies use simulation without pileup, the detector is generic rather than a real experiment, and tracking takes about three seconds per event on an H100; the authors explicitly leave latency optimization for future work."
+    },
+    {
+      "title": "AdjointFlow: Accelerating Scientific Inverse Problems with Physics-Based Transport",
+      "short_authors": "Ethan Hanold, Nicholas M. Boffi, Qin Li, Leonardo Zepeda-Nunez",
+      "total_author_count": 4,
+      "arxiv_id": "2611.13389",
+      "url": "https://arxiv.org/abs/2611.13389",
+      "category": "AI/ML in Physics",
+      "abstract": "AdjointFlow uses a data-dependent adjoint initialization and a regularized stochastic-interpolant velocity to shorten the learned transport from measurements to concentrated posterior targets. Across nonlinear and linear inverse scattering, seismic imaging, and black-hole imaging, it reports up to about 70% lower reconstruction error and one-to-five-order inference speedups relative to selected diffusion and plug-and-play baselines, with systematic ablations.",
+      "tags": [
+        "inverse problems",
+        "stochastic interpolants",
+        "adjoint physics",
+        "generative transport"
+      ],
+      "assessment": "strong",
+      "summary": "Physics is inserted into generative transport through the adjoint rather than applied only as an iterative correction.",
+      "critical_assessment": "Methodologically substantial, with multiple PDE domains, iso-compute comparisons, and ablations. Transfer to collider or heavy-ion inference is not demonstrated, and the approach is most natural when a useful adjoint or efficient linearized inverse is available."
+    }
+  ],
+  "cautions": []
+}
