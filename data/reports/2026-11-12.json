@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-12",
+  "path": "reports/2026-11-12.html",
+  "summary": "No genuinely new high-signal heavy-ion or transferable physics-AI paper was identified. The latest visible arXiv category batch remained the 11 November listing, and all strong survivors had already been assessed in the previous report.",
+  "professional_summary": "No new qualifying selection; the current watchlist remains resistive QGP magnetohydrodynamics, fluctuation-sensitive D-meson flow, and hit-level collider reconstruction from the prior listing.",
+  "keywords": [
+    "no new qualifying papers",
+    "unchanged arXiv listing",
+    "heavy-ion watchlist",
+    "physics AI/ML watchlist"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [],
+  "strongest_paper": null,
+  "strongest_paper_summary": "No new paper selected. M-SHIVA, D-meson higher-harmonic flow, and AlphaHits remain carryover items from 11 November.",
+  "caution_count": 0,
+  "papers": [],
+  "cautions": [],
+  "carryover_arxiv_ids": [
+    "2611.13899",
+    "2611.13891",
+    "2611.13222",
+    "2611.13643"
+  ],
+  "previous_report": "reports/2026-11-11.html"
+}
