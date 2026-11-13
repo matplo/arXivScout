@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-13",
+  "path": "reports/2026-11-13.html",
+  "summary": "A high-significance ALICE observation anchors the day: Λ(1520)/Λ is suppressed by about 59% from peripheral to central Pb-Pb, and the centrality dependence requires hadronic transport in the MUSIC comparison. The strongest methodological advances are an operator-learning emulator for event-by-event hydrodynamics and a broad, realistic ML treatment of MC@NLO negative weights.",
+  "professional_summary": "Late-stage hadronic rescattering, delayed electromagnetic response, baryon-junction transport, neural-operator hydrodynamics, negative-weight reduction, and analysis-level ML benchmarking are the dominant themes.",
+  "keywords": [
+    "Λ(1520) suppression",
+    "hadronic afterburner",
+    "QGP electromagnetic response",
+    "baryon junctions",
+    "Fourier neural operator",
+    "MC@NLO negative weights",
+    "top-tagger transfer"
+  ],
+  "arxiv_ids": [
+    "2611.17010",
+    "2611.16904",
+    "2611.16977",
+    "2611.16511",
+    "2611.15541",
+    "2611.15274",
+    "2611.16394"
+  ],
+  "total_paper_count": 6,
+  "represented_categories": [
+    "Experiment",
+    "Theory",
+    "Phenomenology",
+    "AI/ML use",
+    "AI/ML in physics"
+  ],
+  "strongest_paper": "arXiv:2611.17010 — ALICE observation of Λ(1520) suppression",
+  "strongest_paper_summary": "ALICE establishes within-system Λ(1520)/Λ suppression at 6.8σ and shows that late hadronic transport is essential to reproduce its centrality dependence.",
+  "caution_count": 1,
+  "papers": [
+    {
+      "arxiv_id": "2611.17010",
+      "title": "Observation of the Λ(1520) suppression in Pb-Pb collisions at √sNN = 5.02 TeV",
+      "short_authors": "ALICE Collaboration",
+      "author_count": null,
+      "url": "https://arxiv.org/abs/2611.17010",
+      "category": "Heavy-ion — Experiment",
+      "tags": [
+        "Λ(1520) suppression",
+        "hadronic rescattering",
+        "MUSIC+SMASH",
+        "Pb-Pb"
+      ],
+      "assessment_label": "strong",
+      "summary": "ALICE measures Λ(1520) production in six Pb-Pb centrality classes and observes a 59% suppression of the Λ(1520)/Λ ratio in 0-10% relative to 70-90% collisions, with 6.8σ significance. The spectra and centrality trend require the SMASH hadronic afterburner when compared within the MUSIC framework.",
+      "abstract": "A suppression of the baryonic Λ(1520) resonance yield relative to the Λ ground state by 0.589 ± 0.015 (stat) ± 0.086 (syst) is observed in central relative to peripheral Pb-Pb collisions, with a significance of 6.8σ. Statistical-hadronization calculations overestimate the measured ratio, while MUSIC reproduces the spectra and centrality dependence only when coupled to SMASH.",
+      "why_it_matters": "This is a high-significance, within-system measurement that constrains the late hadronic stage without relying on cross-system comparisons.",
+      "assessment": "Strong. The large Run-2 sample, centrality granularity, systematic treatment, and with/without-afterburner comparison make the interpretation persuasive. It remains a model-mediated probe rather than a direct lifetime measurement, and MUSIC+SMASH misses part of the peripheral mean-pT trend.",
+      "author_note": "The arXiv record exposes the collaboration name; the full author list is in Appendix A."
+    },
+    {
+      "arxiv_id": "2611.16904",
+      "title": "Why magnetic-field effects are difficult to observe in relativistic heavy-ion collisions",
+      "short_authors": "Stanislaw Mrowczynski, Maciej Pylak",
+      "author_count": 2,
+      "url": "https://arxiv.org/abs/2611.16904",
+      "category": "Heavy-ion — Theory",
+      "tags": [
+        "electromagnetic fields",
+        "initial-value response",
+        "induced currents",
+        "QGP"
+      ],
+      "assessment_label": "mixed",
+      "summary": "The authors preserve the initial-value nature of the collision with a one-sided Fourier transform. Induced currents build only after a response delay, compounded by delayed quark production in an initially gluon-dominated plasma, reducing the sustained in-medium field.",
+      "abstract": "A strong magnetic field is generated in heavy-ion collisions, yet predicted effects remain unconfirmed. One-sided Fourier transformation reconciles frequency-wave-vector response with the initial-value problem. Induced QGP currents develop with a delay and are further postponed because the early plasma is predominantly neutral gluons.",
+      "why_it_matters": "It identifies a concrete conceptual weakness in magnetic-field lifetime estimates and a mechanism for persistent null results.",
+      "assessment": "Interesting and focused, but not decisive. The strength depends on time-dependent composition and response assumptions; realistic event-by-event pre-equilibrium and conducting hydrodynamics are needed before the suppression is quantitatively established."
+    },
+    {
+      "arxiv_id": "2611.16977",
+      "title": "Quantitative Junction Transport Modeling of RHIC Charge and Baryon Stopping",
+      "short_authors": "Ashish Pandav, Zhangbu Xu, Bedangadas Mohanty",
+      "author_count": 3,
+      "url": "https://arxiv.org/abs/2611.16977",
+      "category": "Heavy-ion — Phenomenology",
+      "tags": [
+        "baryon junctions",
+        "isobar collisions",
+        "baryon stopping",
+        "O-O predictions"
+      ],
+      "assessment_label": "mixed",
+      "summary": "HIJING with junctions, realistic Ru/Zr geometry, and tuned diquark splitting reproduces several STAR stopping observables. Junctions set the baryon-to-charge magnitude, neutron skins its centrality trend, and the model predicts O-O behavior.",
+      "abstract": "Charge and baryon stopping in Ru+Ru and Zr+Zr are modeled with HIJING plus junction transport. With realistic geometry and tuned diquark splitting, the calculation reproduces STAR net-baryon yield, charge difference, and scaled baryon-to-charge ratio; asymmetric pair production obscures the effect at the LHC.",
+      "why_it_matters": "It turns a qualitative junction discussion into a multi-observable RHIC benchmark and gives a falsifiable light-ion prediction.",
+      "assessment": "Promising but calibration-heavy. The tuned diquark splitting leaves identifiability against alternative mechanisms open, so the prospective O-O prediction is more valuable than the retrospective fit."
+    },
+    {
+      "arxiv_id": "2611.16511",
+      "title": "Recurrent Fourier Neural Operator for Event-by-Event Relativistic Hydrodynamics",
+      "short_authors": "Xiangrun Bao, Lingxiao Wang, Huichao Song",
+      "author_count": 3,
+      "url": "https://arxiv.org/abs/2611.16511",
+      "category": "Heavy-ion — AI/ML use",
+      "tags": [
+        "Fourier neural operator",
+        "hydrodynamics emulator",
+        "super-resolution",
+        "Bayesian inference"
+      ],
+      "assessment_label": "strong",
+      "summary": "A recurrent Fourier neural operator emulates 2+1D VISH2+1 evolution and transfers from 32×32 or 64×64 training grids to 128×128. It tracks temperature structure, ε2-4 and momentum anisotropy, with about 10% relative error beyond the supervised time window.",
+      "abstract": "Networks trained at three resolutions use the same VISH2+1 events; coarse-grid models are evaluated at 128×128 without retraining. Predictions reproduce temperature profiles and anisotropy observables, and errors remain about 10% after continuation from 4.8 to 6.4 fm/c.",
+      "why_it_matters": "Operator learning could reduce event-by-event Bayesian-analysis cost without tying the surrogate to one spatial discretization.",
+      "assessment": "Strong proof of concept with physics-level validation and resolution transfer. Inference use requires tests across initial conditions, transport coefficients and equations of state, plus uncertainty calibration and conservation checks."
+    },
+    {
+      "arxiv_id": "2611.15541",
+      "title": "On the reduction of negative-weight events in MC@NLO with Machine Learning techniques",
+      "short_authors": "L. Beccatini, V. Fossa, S. Frixione, A. Valassi, M. Zaro",
+      "author_count": 5,
+      "url": "https://arxiv.org/abs/2611.15541",
+      "category": "AI/ML in physics — Event generation",
+      "tags": [
+        "MC@NLO",
+        "negative weights",
+        "normalizing flows",
+        "decision trees"
+      ],
+      "assessment_label": "strong",
+      "summary": "Decision trees and normalizing flows redefine MC@NLO S-event short-distance cross sections, reducing negative-weight fractions in most of a diverse set of e+e- and pp processes at modest cost. The study also diagnoses failure cases.",
+      "abstract": "ML methods redefine MC@NLO S-event short-distance cross sections to reduce negative weights. They are tested across varied processes in a fully realistic simulation environment. The work remains a proof of concept because it is not implemented in public software.",
+      "why_it_matters": "Negative weights are a concrete bottleneck for HEP and heavy-ion hard-probe embedding; reducing them improves effective statistics across simulation chains.",
+      "assessment": "Scientifically substantial: broad realistic tests, failure analysis, and restrained claims. Operational impact awaits public implementation and end-to-end checks after showering and selections."
+    },
+    {
+      "arxiv_id": "2611.15274",
+      "title": "Benchmarking Machine-Learning Top Taggers from JetClass to a Full-Simulation Z'→tt Search",
+      "short_authors": "Manisha Kumari, Amal Sarkar",
+      "author_count": 2,
+      "url": "https://arxiv.org/abs/2611.15274",
+      "category": "AI/ML in physics — Collider reconstruction",
+      "tags": [
+        "top tagging",
+        "domain transfer",
+        "full simulation",
+        "inference cost"
+      ],
+      "assessment_label": "mixed",
+      "summary": "Seven common-training taggers are transferred without retraining to a full-Geant4, realistic-pileup Z'→tt study. Similar AUCs differ by up to a factor of three in discovery significance; transformers increase the study's mass reach while a small CNN remains cost-effective.",
+      "abstract": "A BDT, two image networks, ParticleNet and three transformers are trained on JetClass and applied to simulated 2016 CMS Open Data with realistic pileup. Benchmark ordering persists, but discovery sensitivity and inference cost reveal distinctions hidden by AUC.",
+      "why_it_matters": "The lesson transfers directly to HEP and heavy-ion jets: choose models on analysis sensitivity, extrapolation, and cost, not one benchmark metric.",
+      "assessment": "Useful benchmarking with relevant transfer tests. A single topology and detector-era simulation, with no real-data calibration or propagated systematics, makes the quoted 400 GeV reach study-specific."
+    }
+  ],
+  "cautions": [
+    {
+      "arxiv_id": "2611.16394",
+      "title": "Disentangling the Effects of Phase-Specific Transport Properties on Elliptic Flow Centrality Dependence in the AMPT Model",
+      "short_authors": "Yao Zhang, Xipei Zhao",
+      "author_count": 2,
+      "url": "https://arxiv.org/abs/2611.16394",
+      "category": "Heavy-ion — Phenomenology (caution)",
+      "tags": [
+        "AMPT",
+        "elliptic flow",
+        "hadronic cross sections",
+        "model degeneracy"
+      ],
+      "assessment_label": "caution",
+      "abstract": "The paper varies partonic viscosity, transition temperature, and hadronic scattering cross sections in AMPT for charged-hadron v2 in 200 GeV Au+Au. Increasing hadronic cross sections by a factor of four improves the peripheral trend and is interpreted as evidence for a larger effective hadronic cross section and an important hadronic phase in small systems.",
+      "assessment": "Worth cautioning about because the mechanism is inferred after a large ad hoc cross-section rescaling in one model. Agreement with one v2 trend does not identify a physical effective cross section without simultaneous constraints from spectra, harmonics, identified particles, and system-size dependence. The sensitivity exercise is useful; the physical inference is stronger than the evidence."
+    }
+  ]
+}
