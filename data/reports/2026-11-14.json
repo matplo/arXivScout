@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-14",
+  "path": "reports/2026-11-14.html",
+  "summary": "No new arXiv announcement appeared during the Saturday review window. The Friday, 13 November listing was already critically assessed, so this bulletin intentionally avoids repeating the same papers.",
+  "professional_summary": "Weekend arXiv status: no new heavy-ion collision or physics AI/ML submissions were announced after the latest complete Friday batch.",
+  "keywords": [
+    "weekend arXiv status",
+    "no new announcement",
+    "heavy-ion physics",
+    "AI/ML in physics",
+    "Lambda(1520) suppression",
+    "neural-operator hydrodynamics"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [],
+  "strongest_paper_summary": "No new paper was available for ranking in this interval; arXiv:2611.17010 remains the strongest result in the latest complete batch.",
+  "caution_count": 0,
+  "papers": [],
+  "cautions": []
+}
