@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-16",
+  "path": "reports/2026-11-16.html",
+  "summary": "Soft-pion spectra and hybrid-model calibration, critical-point femtoscopy, and statistically validated stochastic-trajectory surrogates dominate the latest announced batch. The selected papers were submitted on 13 November, outside the strict 24-hour window.",
+  "keywords": [
+    "soft pions",
+    "Bayesian calibration",
+    "critical-point femtoscopy",
+    "stochastic trajectory generation"
+  ],
+  "arxiv_ids": [
+    "2611.18290",
+    "2611.17717",
+    "2611.17711"
+  ],
+  "total_paper_count": 3,
+  "represented_categories": [
+    "Phenomenology",
+    "AI/ML in physics"
+  ],
+  "strongest_paper": "2611.18290: soft-pion mismatch in hybrid hydrodynamics",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.18290",
+      "title": "Are hybrid hydrodynamic models missing soft-pion physics?",
+      "short_authors": "Osvaldo Ferreira, Thiago S. Domingues, Fernando G. Gardim, et al.",
+      "author_count": 13,
+      "category": "Heavy-ion phenomenology",
+      "tags": [
+        "soft pions",
+        "Bayesian calibration",
+        "hydrodynamics",
+        "hadronic afterburner"
+      ],
+      "assessment_label": "strong",
+      "summary": "A Bayesian analysis of a hybrid hydrodynamic model finds a low-pT pion excess relative to ALICE data that is not shared by kaons or protons. Two one-parameter enhancement templates are tested; the infrared template improves the calibration and mean-pT agreement.",
+      "abstract": "The authors scan the hybrid-model parameter space, confirm a low-pT pion excess even with a hadronic afterburner, examine centrality scaling and test two candidate enhancement mechanisms.",
+      "why_it_matters": "Soft-pion discrepancies can bias extraction of medium parameters and point toward missing late-stage physics.",
+      "assessment": "A careful model-data study with a broad parameter analysis and an afterburner. The fitted templates do not identify a unique microscopic cause; conclusions remain conditional on the model, priors, and data treatment.",
+      "url": "https://arxiv.org/abs/2611.18290",
+      "abstract_note": "Abstract paraphrase"
+    },
+    {
+      "arxiv_id": "2611.17717",
+      "title": "Searching for signatures of criticality in heavy-ion collisions using two-pion correlation functions",
+      "short_authors": "Alejandro Ayala, Santiago Bernal-Langarica, Máté Csanád, et al.",
+      "author_count": 14,
+      "category": "Heavy-ion phenomenology",
+      "tags": [
+        "critical endpoint",
+        "two-pion femtoscopy",
+        "EPOS",
+        "Lévy fits"
+      ],
+      "assessment_label": "mixed",
+      "summary": "EPOS simulations with a critical-point equation of state examine Lévy-fitted two-pion sources in Bi+Bi collisions at 5.8–11 GeV. The authors find no unambiguous critical signature; resonance contributions may affect the intercept trend.",
+      "abstract": "The study fits simulated pair-distance distributions and momentum correlations to Lévy forms across collision energies using an equation of state containing a critical endpoint.",
+      "why_it_matters": "It tests a proposed experimental critical-point observable and illustrates an important background.",
+      "assessment": "A useful cautionary feasibility study, not evidence for or against a critical point. A matched no-critical-point baseline and varied critical strength are needed to establish sensitivity.",
+      "url": "https://arxiv.org/abs/2611.17717",
+      "abstract_note": "Abstract paraphrase"
+    },
+    {
+      "arxiv_id": "2611.17711",
+      "title": "Learning and Generating Time Trajectories of Multidimensional Stochastic Processes",
+      "short_authors": "Zihan Xu, Changho Kim, Andy J. Nonaka, Yuanran Zhu",
+      "author_count": 4,
+      "category": "AI/ML in physics",
+      "tags": [
+        "stochastic trajectories",
+        "recurrent neural networks",
+        "Langevin dynamics",
+        "statistical validation"
+      ],
+      "assessment_label": "mixed",
+      "summary": "A noise-driven recurrent network learns joint statistics using projected distributions and adaptive loss balancing. It is tested on coupled Duffing dynamics, a Fermi–Pasta–Ulam chain and a lattice kinetic Monte Carlo model, with finite-sample-normalized validation.",
+      "abstract": "The paper extends statistics-informed neural networks to multidimensional processes and studies projected distributions, adaptive training, noise dimension, and statistical validation across three stochastic benchmarks.",
+      "why_it_matters": "A possible surrogate for ensembles of coupled Langevin trajectories in heavy-quark transport or fluctuating hydrodynamics, subject to domain-specific validation.",
+      "assessment": "Methodologically interesting with several benchmarks, but no heavy-ion demonstration. Finite projections can miss joint or rare-event structure; conservation, uncertainty, tails, speed and out-of-distribution robustness require dedicated testing.",
+      "url": "https://arxiv.org/abs/2611.17711",
+      "abstract_note": "Abstract paraphrase"
+    }
+  ]
+}
