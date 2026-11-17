@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-17",
+  "path": "reports/2026-11-17.html",
+  "summary": "Charm transport and hadronization, pion femtoscopy and Coulomb corrections, directed flow in baryon-rich matter, noncritical net-proton cumulants, neural cluster-state calculations, and conditional posterior inference.",
+  "keywords": [
+    "charm transport",
+    "pion femtoscopy",
+    "directed flow",
+    "net-proton cumulants",
+    "neural quantum states",
+    "conditional inference"
+  ],
+  "arxiv_ids": [
+    "2611.21601",
+    "2611.21284",
+    "2611.20400",
+    "2611.20189",
+    "2611.20160",
+    "2611.18773"
+  ],
+  "total_paper_count": 6,
+  "represented_categories": [
+    "Theory",
+    "Experiment",
+    "Phenomenology",
+    "Heavy-ion AI/ML",
+    "AI/ML in physics"
+  ],
+  "strongest_paper": "2611.21601: lattice-constrained charm transport and hadronization",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.21601",
+      "title": "Open Heavy Flavor in Nuclear Collisions: From Lattice QCD to Observables",
+      "short_authors": "Yu Fu, Steffen A. Bass, Tharun Krishna, Ralf Rapp, Weiyao Ke",
+      "category": "Theory",
+      "tags": [
+        "charm transport",
+        "lattice QCD",
+        "hadronization",
+        "elliptic flow"
+      ],
+      "summary": "A lattice-constrained T-matrix transport framework combines Langevin diffusion, radiation, two hadronization schemes and hadronic rescattering. It compares D mesons and charm baryons with RHIC and LHC suppression, flow and yield-ratio data.",
+      "abstract": "A lattice-constrained T-matrix transport framework combines Langevin diffusion, radiation, two hadronization schemes and hadronic rescattering. It compares D mesons and charm baryons with RHIC and LHC suppression, flow and yield-ratio data.",
+      "assessment": "Broad comparisons and component studies make this a particularly useful framework paper. Lattice constraints do not eliminate phenomenological assumptions in radiation, hadronization and late rescattering; agreement is not a unique extraction of diffusion.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.21284",
+      "title": "Third-body-corrected Two-Pion Femtoscopic Correlations in Au+Au Collisions at High Baryon Density",
+      "short_authors": "Youquan Qi (for the STAR Collaboration)",
+      "category": "Experiment",
+      "tags": [
+        "pion femtoscopy",
+        "Coulomb correction",
+        "high baryon density",
+        "STAR"
+      ],
+      "summary": "STAR pion correlations from 3.0 to 7.7 GeV show charge-dependent HBT radii becoming consistent after a third-body Coulomb correction. The authors report a residual relative difference below 5% at 95% confidence.",
+      "abstract": "STAR pion correlations from 3.0 to 7.7 GeV show charge-dependent HBT radii becoming consistent after a third-body Coulomb correction. The authors report a residual relative difference below 5% at 95% confidence.",
+      "assessment": "A valuable control of a potential background to isospin-sensitive femtoscopy. This is a short proceedings contribution; the bound depends on the effective Coulomb correction and its uncertainties, including extrapolated potentials.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.20400",
+      "title": "Observation of Strong Directed Flow for phi Mesons in the High Baryon Density Region at RHIC",
+      "short_authors": "Guangyu Zheng",
+      "category": "Experiment",
+      "tags": [
+        "phi meson",
+        "directed flow",
+        "STAR",
+        "baryon resonances"
+      ],
+      "summary": "STAR fixed-target Au+Au results show phi-meson directed flow comparable in magnitude to proton and Lambda flow and larger than K-short flow at high baryon density. UrQMD comparisons are consistent with baryon-resonance production and baryonic mean-field effects.",
+      "abstract": "STAR fixed-target Au+Au results show phi-meson directed flow comparable in magnitude to proton and Lambda flow and larger than K-short flow at high baryon density. UrQMD comparisons are consistent with baryon-resonance production and baryonic mean-field effects.",
+      "assessment": "A useful species-dependent constraint on strange-hadron dynamics. The proposed production mechanism is model-supported, not uniquely established by the comparison.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.20189",
+      "title": "Study on net-proton number fluctuations in Au+Au collisions at 7.7-27 GeV with the SMASH model",
+      "short_authors": "Fengxi Yan, Ting Liu, Rongrong Ma, Yunshuang Qin, Shule Wu, Shenghui Zhang, Fan Si",
+      "category": "Phenomenology",
+      "tags": [
+        "net-proton cumulants",
+        "SMASH",
+        "critical point",
+        "STAR"
+      ],
+      "summary": "SMASH calculations provide a noncritical baseline for cumulant ratios with STAR-like acceptance and centrality treatment. At 19.6 GeV the central C4/C2 data-model pull is about -2.7, compared with about -4.0 against UrQMD under the authors' uncertainty prescription.",
+      "abstract": "SMASH calculations provide a noncritical baseline for cumulant ratios with STAR-like acceptance and centrality treatment. At 19.6 GeV the central C4/C2 data-model pull is about -2.7, compared with about -4.0 against UrQMD under the authors' uncertainty prescription.",
+      "assessment": "An informative test of reference-model dependence, not a critical-point discovery. SMASH also systematically overshoots peripheral measurements; the diagnostic pull assumes independent uncertainty components.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.20160",
+      "title": "Nuclear Mott transition with neural quantum states",
+      "short_authors": "Zi-Xiao Zhang, Xiao-Lu Qian, Wan-Bing He, Gerd Röpke, Kai-Jia Sun, Yu-Gang Ma",
+      "category": "Heavy-ion AI/ML",
+      "tags": [
+        "neural quantum states",
+        "Mott transition",
+        "alpha clusters",
+        "Pauli blocking"
+      ],
+      "summary": "A self-attention neural quantum state solves an in-medium few-body problem and is benchmarked against exact diagonalization for the deuteron. The authors predict much weaker alpha suppression and large abundance changes compared with approximate calculations.",
+      "abstract": "A self-attention neural quantum state solves an in-medium few-body problem and is benchmarked against exact diagonalization for the deuteron. The authors predict much weaker alpha suppression and large abundance changes compared with approximate calculations.",
+      "assessment": "A substantive use of ML on a difficult microscopic problem relevant to heavy-ion cluster yields. The exact benchmark is for the two-body system, not independent validation of the four-body result; the claimed explanation of collision data remains model-dependent.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.18773",
+      "title": "Amortized conditional inference under changing parameter information in small-angle X-ray scattering",
+      "short_authors": "Maria Bånkestad, Sandra Barman, Erik Kaunisto, Eskil Andreasson, Smita Chakraborty, Shun Yu, Jerk Rönnols, Sepideh Pashami",
+      "category": "AI/ML in physics",
+      "tags": [
+        "flow matching",
+        "conditional inference",
+        "posterior calibration",
+        "scattering"
+      ],
+      "summary": "Masked flow matching estimates conditional posteriors under changing parameter information without retraining. The study checks analytic posteriors, compares architectures in a simulated scattering benchmark and analyzes experimental SAXS ambiguities.",
+      "abstract": "Masked flow matching estimates conditional posteriors under changing parameter information without retraining. The study checks analytic posteriors, compares architectures in a simulated scattering benchmark and analyzes experimental SAXS ambiguities.",
+      "assessment": "Potential transfer: recondition heavy-ion simulation-based inference on changing nuisance constraints. This is a concrete methodological analogy, not a demonstrated HEP application; calibration and simulator mismatch would need dedicated validation.",
+      "assessment_label": "mixed"
+    }
+  ]
+}
