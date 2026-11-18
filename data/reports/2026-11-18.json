@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-18",
+  "path": "reports/2026-11-18.html",
+  "summary": "Open-strangeness thermodynamics across the QCD crossover and human-supervised AI-assisted CMS open-data reanalysis of prompt J/psi production.",
+  "keywords": [
+    "open strangeness",
+    "QCD crossover",
+    "lattice susceptibility",
+    "prompt J/psi",
+    "CMS open data",
+    "coding agents"
+  ],
+  "arxiv_ids": [
+    "2611.22723",
+    "2611.22986"
+  ],
+  "total_paper_count": 2,
+  "represented_categories": [
+    "Theory",
+    "Heavy-ion AI/ML"
+  ],
+  "strongest_paper": "2611.22723: supervised collider-analysis benchmark with published pp and peripheral PbPb reference measurements",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.22723",
+      "title": "AI-Assisted Analysis of CMS Open Data: Prompt J/psi Cross-Section Measurements in pp and Peripheral PbPb Collisions at sqrt(s) = 7 TeV and sqrt(sNN) = 2.76 TeV",
+      "short_authors": "Zhipeng Cui, Ziyu Wang, Gerry Bauer, Kai Yi",
+      "category": "Heavy-ion AI/ML",
+      "tags": [
+        "CMS open data",
+        "prompt J/psi",
+        "PbPb",
+        "coding agents",
+        "human oversight"
+      ],
+      "summary": "A supervised coding agent helps reproduce published CMS prompt J/psi cross sections using data selection, two-dimensional fits, custom detector simulation and uncertainty studies. Reanalysis-to-publication ratios average 1.000 with RMS 0.215 in 39 pp bins and 1.158 with RMS 0.225 in six peripheral PbPb intervals.",
+      "abstract": "The authors investigate human-supervised AI-assisted analysis of CMS Open Data, including event selection, fits, detector simulation and systematic uncertainties. They compare prompt J/psi cross sections in pp and peripheral PbPb collisions with published CMS measurements and document agent failure modes.",
+      "assessment": "A substantive end-to-end benchmark with published references and explicit review checkpoints, directly relevant to collider analysis. The six PbPb intervals are not all independent; comparison uses known results and human input, with incomplete calibrations. No controlled manual-analysis benchmark establishes a speed or accuracy gain, and the retrospective 64-error sample is not an error rate.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.22986",
+      "title": "Strangeness-to-entropy ratio across the QCD crossover",
+      "short_authors": "Artemiy Lysenko, Mark I. Gorenstein, Marek Gazdzicki, Roman Poberezhniuk, Volodymyr Vovchenko",
+      "category": "Theory",
+      "tags": [
+        "strangeness",
+        "QCD crossover",
+        "lattice QCD",
+        "equation of state",
+        "susceptibility"
+      ],
+      "summary": "An interacting hadron-gas-to-QGP equation of state relates absolute open-strangeness density to the lattice-accessible net-strangeness susceptibility. The authors infer a lattice-based strangeness-to-entropy maximum of about 0.063 at 220 MeV; their equation-of-state calculation peaks at about 0.067 at 260 MeV.",
+      "abstract": "At zero conserved-charge chemical potentials, the authors use an equation of state interpolating between an interacting hadron resonance gas and a quark-gluon plasma to study absolute open-strangeness density and entropy. They compare strangeness susceptibility with lattice QCD and estimate the density-to-entropy ratio from lattice susceptibility using a model-motivated fluctuation factor.",
+      "assessment": "A well-motivated bridge between strangeness abundances and lattice thermodynamics, with a useful susceptibility comparison. Absolute strangeness is not directly a partition-function derivative; the near-unity fluctuation factor and inferred peak are model-dependent. Equilibrium at zero chemical potentials does not directly predict final-state yields, which require hadronization, feed-down and acceptance.",
+      "assessment_label": "mixed"
+    }
+  ]
+}
