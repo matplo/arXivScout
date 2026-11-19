@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-19",
+  "path": "reports/2026-11-19.html",
+  "summary": "Dilepton spectra and flow with NLO QGP emission, conserved-charge correlations in isobar collisions, and geometrically informed graph networks for collider colour-flow analysis.",
+  "keywords": [
+    "dileptons",
+    "NLO QGP emission",
+    "isobar conserved charges",
+    "magnetic fields",
+    "colour-flow graph networks"
+  ],
+  "arxiv_ids": [
+    "2611.23506",
+    "2611.24673",
+    "2611.24091"
+  ],
+  "total_paper_count": 3,
+  "represented_categories": [
+    "Phenomenology",
+    "Experiment",
+    "AI/ML in physics"
+  ],
+  "strongest_paper": "2611.23506: multi-source dilepton spectra and flow benchmark against SPS and RHIC data",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.23506",
+      "title": "The production of lepton pairs in heavy-ion collisions at SPS and RHIC energies",
+      "short_authors": "Xiang-Yu Wu, Han Gao, Charles Gale, Sangyong Jeon, Ralf Rapp",
+      "category": "Phenomenology",
+      "tags": [
+        "dileptons",
+        "NLO QGP rates",
+        "elliptic flow",
+        "NA60",
+        "STAR"
+      ],
+      "summary": "Event-by-event iEBE-MUSIC combines NLO QGP and in-medium hadronic emission with nonthermal rho sources for In+In and Ru+Ru. Low-mass and high-transverse-momentum dileptons may discriminate emission rates.",
+      "abstract": "The authors calculate dilepton spectra and elliptic flow at SPS and RHIC energies, combining next-to-leading-order quark-gluon plasma radiation, in-medium hadronic radiation, and freeze-out and primordial rho decays, and compare with NA60 and preliminary STAR data.",
+      "assessment": "A substantive multi-source calculation with comparisons to multiple observables. Low-mass spectra are broadly described, but intermediate-mass yields and some STAR flow lie below data; early-time radiation, viscous corrections and evolution uncertainties require further study. Rate sensitivity is a prediction, not a measurement of NLO effects.",
+      "assessment_label": "strong"
+    },
+    {
+      "arxiv_id": "2611.24673",
+      "title": "Fluctuations and Correlations of Conserved Charges in Isobar Collisions at sqrt(sNN) = 200 GeV with the STAR Detector",
+      "short_authors": "Changfeng Li, Hanwen Feng (for the STAR Collaboration)",
+      "category": "Experiment",
+      "tags": [
+        "STAR",
+        "isobars",
+        "conserved charges",
+        "magnetic fields",
+        "cumulants"
+      ],
+      "summary": "STAR reports second-order conserved-charge proxy correlations in Ru+Ru and Zr+Zr. The systems agree within uncertainties; a peripheral ordering matches lattice-motivated expectations but also appears in UrQMD without magnetic fields.",
+      "abstract": "The authors report second-order cumulants and correlations of baryon number, electric charge and strangeness proxies in isobar collisions, compare baryon-strangeness correlation with lattice QCD and UrQMD, and study centrality dependence motivated by magnetic-field calculations.",
+      "assessment": "The measurements use efficiency and centrality corrections and systematic variations, but finite acceptance and incomplete particle proxies limit direct thermodynamic comparison. Both lattice QCD and UrQMD are consistent with CBS despite differing predictions. The hierarchy alone is not evidence for magnetic fields.",
+      "assessment_label": "strong"
+    },
+    {
+      "arxiv_id": "2611.24091",
+      "title": "Improving Sensitivity to Rare Processes at the LHC with Geodesic-Aware Graph Neural Networks",
+      "short_authors": "Benjamin Fuks, Ahmed Hammad, Adil Jueid, Mihoko Nojiri",
+      "category": "AI/ML in physics",
+      "tags": [
+        "graph neural networks",
+        "colour flow",
+        "rare top decays",
+        "detector simulation",
+        "systematics"
+      ],
+      "summary": "A geodesic-aware GNN maps radiation around a jet pair onto a sphere to identify colour flow; projected top-Higgs FCNC limits improve approximately tenfold relative to the authors' planar GNN. Possible heavy-ion transfer is jet radiation-pattern analysis, subject to large background and domain-shift tests.",
+      "abstract": "The authors construct a spherical representation of colour-flow radiation and compare a geodesic-aware graph network to a planar baseline for simulated top-Higgs flavour-changing neutral-current searches, reporting expected limits under assumed luminosity and systematic uncertainties.",
+      "assessment": "A physically motivated architecture with matched baseline and profile-likelihood nuisance parameters. The result is simulation-only, based on fast detector and leading-order background simulation; shower and hadronisation acceptance uncertainties, especially important for colour flow, are omitted. The large gain is not yet established in data or heavy-ion environments.",
+      "assessment_label": "mixed"
+    }
+  ]
+}
