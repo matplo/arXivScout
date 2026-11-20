@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-20",
+  "path": "reports/2026-11-20.html",
+  "summary": "Charmonium nuclear modification at RHIC beam-energy-scan energies; diffractive charm photoproduction in ultraperipheral pPb; resonance features and steering in data-trained collider generative models.",
+  "keywords": [
+    "J/ψ suppression",
+    "beam energy scan",
+    "diffractive charm",
+    "ultraperipheral pPb",
+    "generative model interpretability"
+  ],
+  "arxiv_ids": [
+    "2611.25487",
+    "2611.25933",
+    "2611.26291"
+  ],
+  "total_paper_count": 3,
+  "represented_categories": [
+    "Experiment",
+    "Phenomenology",
+    "AI/ML in physics"
+  ],
+  "strongest_paper": "2611.25487: STAR J/ψ measurement across four RHIC energies",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.25487",
+      "title": "Measurements of inclusive J/ψ production in Au+Au collisions at √sNN = 14.6, 17.3, 19.6, and 27 GeV with the STAR experiment",
+      "short_authors": "The STAR Collaboration (individual author count not verified)",
+      "category": "Experiment",
+      "tags": [
+        "J/ψ",
+        "beam energy scan",
+        "nuclear modification",
+        "STAR"
+      ],
+      "summary": "STAR measures inclusive midrapidity J/ψ in Au+Au at four energies. RAA is about 0.5 in 0–20% central collisions, with hints of centrality and transverse-momentum dependence; central RAA shows no significant energy variation up to 200 GeV within uncertainties.",
+      "abstract": "STAR measures inclusive J/ψ production at midrapidity in Au+Au collisions at 14.6, 17.3, 19.6 and 27 GeV, using RAA relative to interpolated pp references and comparing trends with transport models containing hot and cold nuclear matter effects.",
+      "assessment": "Strong and directly relevant experimental measurement with systematic variations and an RCP cross-check. The pp baseline is interpolated, total yield systematic uncertainties vary from 6.5% to 20.6%, and correlated global uncertainties matter. The trends are not a unique identification of QGP suppression; transport models show some deviations.",
+      "assessment_label": "strong"
+    },
+    {
+      "arxiv_id": "2611.25933",
+      "title": "Inclusive and diffractive D meson photoproduction in pPb collisions at the LHC using Pythia8 framework",
+      "short_authors": "Victor P. Goncalves, Luana Santana, Wolfgang Schäfer",
+      "category": "Phenomenology",
+      "tags": [
+        "ultraperipheral pPb",
+        "D mesons",
+        "diffraction",
+        "Pythia8",
+        "HERA"
+      ],
+      "summary": "Pythia8 calculations of inclusive and diffractive charm photoproduction are compared with H1 ep measurements and extended to ultraperipheral pPb. The predicted diffractive fraction exceeds 15% in selected low-pT and forward-rapidity regions.",
+      "abstract": "The authors compare predictions using different proton and Pomeron PDFs to H1 inclusive and diffractive D* data, then predict inclusive and diffractive D0 rapidity and transverse-momentum distributions in pPb collisions.",
+      "assessment": "A useful, testable UPC feasibility study with an external HERA comparison. The pPb predictions are model- and PDF-dependent, and a detectable diffractive component or PDF constraint is not established without detector-level background and uncertainty studies. Submitted 19 November 11:19 UTC, slightly outside the strict 24-hour window.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.26291",
+      "title": "Who Moved My Z Boson? Revealing Resonance Features Inside a Neural Network",
+      "short_authors": "Kevin Alberto Urquía Calderón, Midori Kato, Inar Timiryasov, Oleg Ruchayskiy",
+      "category": "AI/ML in physics",
+      "tags": [
+        "interpretability",
+        "flow matching",
+        "resonances",
+        "ATLAS Open Data",
+        "generative models"
+      ],
+      "summary": "The authors probe a flow-matching model trained on ATLAS open data, constructing gradient-based steering directions that alter the Z peak and reveal resonance-related features. Ablation broadens the Z peak while much of the remaining invariant-mass spectrum stays approximately unchanged.",
+      "abstract": "The paper identifies features associated with Z, J/ψ and Υ resonances in an unlabeled collider event generator, and uses a gradient-derived steering direction to shift the generated Z mass between approximately 80 and 105 GeV.",
+      "assessment": "A substantive intervention on real-data-trained models and physically measurable observables, with additional network tests. It is an interpretability proof of concept, not evidence that steered events reproduce a physically consistent alternative theory or calibrated systematic variations; heavy-ion transfer needs high-multiplicity and correlated-observable validation.",
+      "assessment_label": "strong"
+    }
+  ]
+}
