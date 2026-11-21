@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-21",
+  "path": "reports/2026-11-21.html",
+  "summary": "No newer public arXiv announcement was verified on Saturday. The latest available Friday listing repeats papers already covered on 20 November; no paper is counted as a new selection today.",
+  "keywords": [
+    "weekend",
+    "no new announcement",
+    "heavy-ion",
+    "machine learning"
+  ],
+  "arxiv_ids": [],
+  "total_paper_count": 0,
+  "represented_categories": [],
+  "strongest_paper": null,
+  "caution_count": 0,
+  "papers": []
+}
