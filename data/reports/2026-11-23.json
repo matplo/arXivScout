@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-23",
+  "path": "reports/2026-11-23.html",
+  "summary": "Soft–hard Bayesian correlations in jet-quenching inference and two-photon femtoscopy in low-energy Ag+Ag collisions. Weekend catch-up: both papers were submitted 20 November, outside the literal last 24 hours.",
+  "keywords": [
+    "soft–hard Bayesian inference",
+    "jet quenching",
+    "photon femtoscopy",
+    "direct-photon upper limits"
+  ],
+  "arxiv_ids": [
+    "2611.27971",
+    "2611.27880"
+  ],
+  "total_paper_count": 2,
+  "represented_categories": [
+    "Theory",
+    "Experiment"
+  ],
+  "strongest_paper": "2611.27971: medium uncertainty and jet–medium coupling correlations",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.27971",
+      "title": "Soft–hard Bayesian inference in heavy-ion collisions",
+      "short_authors": "L. Du, S. A. Bass, M. Chartier, Y. Chen, Y.-C. Chen, et al. (51 authors; JETSCAPE)",
+      "author_count": 51,
+      "category": "Theory",
+      "tags": [
+        "Bayesian inference",
+        "jet quenching",
+        "medium uncertainty",
+        "Gaussian-process emulator"
+      ],
+      "summary": "In Pb–Pb collisions at 2.76 TeV, a three-parameter sequential inference combines a projected soft-sector posterior with high-pT hadron and inclusive-jet suppression. Medium geometry and jet–medium coupling compensate, shifting the preferred coupling relative to a fixed background.",
+      "abstract": "The authors combine JETSCAPE medium evolution and MATTER+LBT calculations with sequential Bayesian inference to examine medium–coupling correlations and the effect of propagating soft-sector information into high-pT suppression constraints.",
+      "assessment": "Strong diagnostic of a consequential inference assumption, not a complete soft–hard calibration. The hard-only posterior reaches prior boundaries; only three parameters vary, the likelihood uses diagonal experimental variances and no model-discrepancy term, and other parameters are fixed.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.27880",
+      "title": "Study of two-photon femtoscopic correlations in Ag+Ag collisions at √sNN = 2.55 GeV with HADES",
+      "short_authors": "R. Abou Yassine, J. Adamczewski-Musch, C. Asal, et al. (121 authors; HADES Collaboration)",
+      "author_count": 121,
+      "category": "Experiment",
+      "tags": [
+        "HADES",
+        "photon femtoscopy",
+        "Ag+Ag",
+        "direct photons"
+      ],
+      "summary": "HADES measures one-dimensional two-photon correlations in Ag+Ag at 2.55 GeV and estimates upper limits on direct-photon correlation strength of order 10⁻⁴–10⁻³.",
+      "abstract": "Two-photon correlations complement charged-particle femtoscopy and can constrain low-pT direct photons. The study measures photon pairs with the HADES calorimeter, discusses observed correlation structures and estimates upper limits on the direct-photon correlation strength.",
+      "assessment": "An experimentally valuable constraint on a difficult observable, with detector effects and systematic uncertainties addressed. It is an upper limit on correlation strength, not a direct-photon detection or a unique source-size measurement.",
+      "assessment_label": "strong"
+    }
+  ]
+}
