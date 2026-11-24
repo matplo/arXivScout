@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-24",
+  "path": "reports/2026-11-24.html",
+  "summary": "Short-range correlations and mean-field degeneracy in low-energy Au+Au; identified-hadron flow decorrelations as nuclear-shape probes; Lorentz-aware self-supervised jet representations. Latest announcement batch, with submissions approximately 25 to 39 hours before this run.",
+  "keywords": [
+    "short-range correlations",
+    "mean-field calibration",
+    "nuclear deformation",
+    "flow decorrelation",
+    "Lorentz symmetry",
+    "jet tagging"
+  ],
+  "arxiv_ids": [
+    "2611.29946",
+    "2611.30429",
+    "2611.31011"
+  ],
+  "total_paper_count": 3,
+  "represented_categories": [
+    "Theory",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2611.29946: controlled short-range-correlation and mean-field sensitivity",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.29946",
+      "title": "Sampling nucleon short-range correlations in coordinate and momentum space for Au+Au collision simulations",
+      "short_authors": "Yu-Jing Huang, Qian-Ru Lin, Long-Gang Pang",
+      "category": "Theory",
+      "tags": [
+        "short-range correlations",
+        "SMASH",
+        "pion production",
+        "mean fields"
+      ],
+      "summary": "At 2.4 GeV, a correlated nuclear initialization changes charged-pion and kaon yields. Controlled variations indicate that the high-momentum single-nucleon distribution drives the pion change, while a refitted mean field can counteract it.",
+      "abstract": "A correlated initialization combining spatial and momentum structure, proton-neutron pair assignments and high-momentum components is implemented in SMASH. Tests separate contributions to pion production and investigate compensation by the mean field and kaon production.",
+      "assessment": "Strong diagnostic with controlled ingredient tests and data-guided recalibration. The compensation is model- and calibration-dependent, not an isolated measurement of short-range correlations; the initial submission predates the strict 24-hour window.",
+      "assessment_label": "strong"
+    },
+    {
+      "arxiv_id": "2611.30429",
+      "title": "Revealing Nuclear Shape through Identified-Hadron Flow Decorrelations",
+      "short_authors": "Hadi Mehrabpour, Abhisek Saha, Li Yan",
+      "category": "Phenomenology",
+      "tags": [
+        "nuclear deformation",
+        "identified hadrons",
+        "flow decorrelation",
+        "uranium",
+        "neon"
+      ],
+      "summary": "Hydrodynamics plus hadronic transport predicts that crossing points of pion-kaon and pion-proton flow-factorization ratios respond differently to quadrupole deformation and triaxiality in U+U and Ne+Ne.",
+      "abstract": "The authors propose identified-hadron flow decorrelations and their crossing coordinates as complementary probes of nuclear shape, studying deformation and collision-energy dependence using event-by-event hydrodynamics and hadronic transport.",
+      "assessment": "A specific, testable observable with comparisons across species and systems, but it is a model prediction, not a nuclear-shape measurement. Detector acceptance, statistical reach, nonflow, reference selection, and sensitivity to evolution assumptions require validation.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.31011",
+      "title": "Lorentz symmetry in self-supervised representation learning",
+      "short_authors": "Andreas Hermansen, Tobias Golling, Slava Voloshynovskiy",
+      "category": "AI/ML use",
+      "tags": [
+        "jet tagging",
+        "self-supervised learning",
+        "Lorentz symmetry",
+        "transformers"
+      ],
+      "summary": "LeJEPA self-supervised pretraining on 100 million simulated JetClass jets is combined with a Lorentz-equivariant transformer and compared with several representation-learning baselines. The authors report stronger probe and downstream performance.",
+      "abstract": "The study combines symmetry-aware architectures or physics-motivated augmentations with self-supervised jet representation learning, comparing pretrained models against other objectives and training from scratch on jet benchmarks.",
+      "assessment": "Substantive baselines, ablations and downstream tasks make this a credible HEP method study. Heavy-ion jet transfer is speculative: underlying-event contamination, detector response and domain shifts require dedicated validation; the paper was submitted about 25 hours before the run.",
+      "assessment_label": "strong"
+    }
+  ]
+}
