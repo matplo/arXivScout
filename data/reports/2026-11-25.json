@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-25",
+  "path": "reports/2026-11-25.html",
+  "summary": "Matched-multiplicity small-system charged-hadron spectra; finite-density phase-transition effects in thermal dileptons; joint jet and event generation and classification. The latest arXiv announcement batch includes one ML paper submitted outside the strict 24-hour interval.",
+  "keywords": [
+    "matched multiplicity",
+    "small systems",
+    "dileptons",
+    "phase transitions",
+    "joint jet and event models"
+  ],
+  "arxiv_ids": [
+    "2611.32516",
+    "2611.32712",
+    "2611.31403"
+  ],
+  "total_paper_count": 3,
+  "represented_categories": [
+    "Experiment",
+    "Phenomenology",
+    "AI/ML use"
+  ],
+  "strongest_paper": "2611.32516: matched-multiplicity comparison with explicit correlation caveats",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.32516",
+      "title": "Softer charged-hadron spectra in Ne+Ne than in O+O collisions at the same multiplicity at √sNN = 5.36 TeV",
+      "short_authors": "Kishora Nayak",
+      "category": "Experiment",
+      "tags": [
+        "Ne+Ne",
+        "O+O",
+        "matched multiplicity",
+        "charged-hadron spectra"
+      ],
+      "summary": "An independent reanalysis of published ATLAS data finds softer Ne+Ne spectra than O+O at matched multiplicity; the mean-pT ratio is 0.9822 for the 3–4% Ne+Ne class. This is a useful system-size comparison, not a new ATLAS measurement.",
+      "abstract": "Published ATLAS O+O and Ne+Ne spectra are compared at matched multiplicity. A transverse-momentum rescaling describes the spectra in the stated soft range, and the comparison is checked across centrality, pseudorapidity and Xe+Xe/Pb+Pb.",
+      "assessment": "Mixed but worthwhile: closure, interpolation and fit-range checks are useful. The spectral-stretch significance changes from 9.5σ to 3.3σ with the correlation assumption, which the published tables cannot test; the geometrical explanation is interpretive, not established.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.32712",
+      "title": "The impact of phase transitions on dilepton production",
+      "short_authors": "Renan Góes-Hirayama, Hannah Elfner",
+      "category": "Phenomenology",
+      "tags": [
+        "dileptons",
+        "phase transition",
+        "SMASH",
+        "finite baryon density"
+      ],
+      "summary": "SMASH+vHLLE calculations compare first-order and crossover equations of state at energies relevant to CBM and the STAR beam-energy scan. The authors report about 7% more intermediate-mass dielectrons in their more realistic transition scenario, a concrete scale for assessing experimental sensitivity.",
+      "abstract": "A hybrid transport and hydrodynamic calculation estimates intermediate-mass dielectron yields for a toy equation of state and an equation of state incorporating an Ising-based critical endpoint. A first-order transition increases the yield by approximately 7% in the more realistic scenario.",
+      "assessment": "Mixed: a valuable controlled phenomenological estimate, but a conference proceeding and model-dependent prediction, not evidence for a transition. The small difference requires background, acceptance, rate and systematic-uncertainty studies before experimental discriminating power is established.",
+      "assessment_label": "mixed"
+    },
+    {
+      "arxiv_id": "2611.31403",
+      "title": "OmniX: A first jet and event model",
+      "short_authors": "Anna Hallin, Gregor Kasieczka, Henning Rose",
+      "category": "AI/ML use",
+      "tags": [
+        "jet generation",
+        "event generation",
+        "transformer",
+        "classification"
+      ],
+      "summary": "One model jointly trained on jet-level and event-level samples performs generation and classification; the authors report performance matching or exceeding comparable single-domain models on JetClass, top tagging and Collide-2V. Shared representations could support jet tagging and event simulation in HEP, with heavy-ion transfer an untested possibility.",
+      "abstract": "A joint jet and full-event architecture is evaluated for generation and classification on JetClass, Top-tagging and Collide-2V, with comparisons to equivalent jet-only and event-only training. Code is available.",
+      "assessment": "Promising methodological study with multiple datasets and matched model comparisons, not proof of a general-purpose foundation model. Heavy-ion occupancy, underlying event, detector shifts and computational scalability require dedicated evaluation. Submitted 23 November 19:02 UTC, approximately 47 hours before this run, but newly listed on 25 November.",
+      "assessment_label": "mixed"
+    }
+  ]
+}
