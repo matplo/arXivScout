@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-26",
+  "path": "reports/2026-11-26.html",
+  "summary": "Neutral-pion suppression in oxygen collisions, equilibrium baselines for momentum correlations, parton-scale initial-state fluctuations, and generative simulation of TPC backgrounds.",
+  "keywords": [
+    "oxygen collisions",
+    "momentum correlations",
+    "initial-state geometry",
+    "TPC fast simulation"
+  ],
+  "arxiv_ids": [
+    "2611.34503",
+    "2611.34102",
+    "2611.34562",
+    "2611.33662"
+  ],
+  "total_paper_count": 4,
+  "represented_categories": [
+    "Experiment",
+    "Theory",
+    "AI/ML use"
+  ],
+  "strongest_paper_summary": "ALICE oxygen double ratio and production-level TPC background simulation",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.34503",
+      "title": "Nuclear Modification of π⁰ Production in pO and OO Collisions with ALICE",
+      "authors": [
+        "Nicolas Strangmann"
+      ],
+      "category": "Experiment",
+      "tags": [
+        "oxygen collisions",
+        "neutral pions",
+        "energy loss",
+        "cold nuclear matter"
+      ],
+      "abstract": "The proceedings presents neutral-pion nuclear modification measurements in pO and OO collisions and compares the results with cold and hot nuclear matter calculations.",
+      "summary": "The double ratio R_OO/R_pO² is suppressed relative to a cold-matter baseline by 4.9 standard deviations. This is a proceedings account of the earlier ALICE result, not a new independent measurement.",
+      "assessment": "Strong experimental relevance, but the cancellation of cold-matter effects depends on the model and kinematic matching; the measurement does not distinguish energy-loss mechanisms."
+    },
+    {
+      "arxiv_id": "2611.34102",
+      "title": "Accelerating ALICE Background Simulations: A WGAN-GP Approach to Slow-Neutron-Induced TPC Loopers",
+      "authors": [
+        "Marco Giacalone",
+        "Sandro Christian Wenzel",
+        "Mesut Arslandok",
+        "Andreas Morsch"
+      ],
+      "category": "AI/ML use",
+      "tags": [
+        "ALICE",
+        "WGAN",
+        "TPC loopers",
+        "fast simulation"
+      ],
+      "abstract": "A generative model replaces slow-neutron transport with generated electron and positron backgrounds for ALICE simulation, preserving key looper distributions and accelerating transport.",
+      "summary": "Integrated into ALICE O2 production for pp and Pb–Pb, the model reduces the tested transport time from 21.5 s to about 2.0 s per event.",
+      "assessment": "Strong practical use case with production deployment and full-simulation comparisons. The looper rate is normalized separately, momentum tails need improvement, and the speedup is for transport, not end-to-end processing."
+    },
+    {
+      "arxiv_id": "2611.34562",
+      "title": "Equilibrium baseline for transverse-momentum correlations in Au+Au collisions at 3–39 GeV",
+      "authors": [
+        "Oleh Savchuk"
+      ],
+      "category": "Theory",
+      "tags": [
+        "beam energy scan",
+        "momentum correlations",
+        "conservation laws",
+        "hadron resonance gas"
+      ],
+      "abstract": "An equilibrium hadron-resonance-gas calculation includes decays, quantum statistics, collective flow and conservation laws in a baseline for transverse-momentum correlations.",
+      "summary": "The calculation underpredicts STAR correlations by factors of 3–4 in central collisions at 11.5–39 GeV and becomes negative at 3–5.2 GeV, where the data are positive.",
+      "assessment": "Useful explicit baseline and direct data comparison. The discrepancy does not establish a critical point: freeze-out assumptions, acceptance, and nonequilibrium and flow fluctuations matter."
+    },
+    {
+      "arxiv_id": "2611.33662",
+      "title": "Introducing Parton-Level Fluctuations in the TRENTo-Sea Model",
+      "authors": [
+        "Jacob Reinach",
+        "Andreas Kirchner"
+      ],
+      "category": "Theory",
+      "tags": [
+        "initial conditions",
+        "nPDF",
+        "subnucleonic fluctuations",
+        "TRENTo"
+      ],
+      "abstract": "TRENTo-Sea samples parton momentum fractions from nuclear PDFs and models parton-level interactions to study initial geometry and granularity.",
+      "summary": "The model reproduces eccentricity from calibrated models except in central collisions, and finds that low-x parton populations affect local geometry.",
+      "assessment": "Promising initial-state framework rather than direct validation against final-state measurements. The infrared regulator is calibrated to pp cross sections and central-collision disagreement remains."
+    }
+  ]
+}
