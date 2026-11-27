@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-27",
+  "path": "reports/2026-11-27.html",
+  "summary": "Oxygen nuclear modification, generative TPC background simulation, and neural-network parton-density fits. The latest available arXiv announcement is dated 26 November; selected papers were submitted 25 November and fall outside the strict 24-hour window.",
+  "keywords": [
+    "oxygen collisions",
+    "TPC background simulation",
+    "PDF inference",
+    "closure tests"
+  ],
+  "arxiv_ids": [
+    "2611.34503",
+    "2611.34102",
+    "2611.34502"
+  ],
+  "total_paper_count": 3,
+  "represented_categories": [
+    "Experiment",
+    "Heavy-ion AI/ML use",
+    "Physics AI/ML"
+  ],
+  "strongest_paper_summary": "ALICE oxygen double ratio and production-integrated TPC fast simulation",
+  "caution_count": 0,
+  "papers": [
+    {
+      "arxiv_id": "2611.34503",
+      "title": "Nuclear Modification of π⁰ Production in pO and OO Collisions with ALICE",
+      "authors": [
+        "Nicolas Strangmann"
+      ],
+      "category": "Experiment",
+      "tags": [
+        "oxygen collisions",
+        "neutral pions",
+        "energy loss",
+        "cold nuclear matter"
+      ],
+      "abstract": "Neutral-pion production in pO and OO collisions is measured with ALICE and compared with cold- and hot-matter calculations.",
+      "summary": "The OO-to-pO double ratio is suppressed by 4.9 standard deviations relative to an nNNPDF3.0 no-energy-loss baseline. The proceedings recaps an earlier ALICE measurement rather than presenting an independent new result.",
+      "assessment": "Strong experimental relevance; cold-matter cancellation depends on the baseline and different collision kinematics. The models shown do not resolve the energy-loss mechanism."
+    },
+    {
+      "arxiv_id": "2611.34102",
+      "title": "Accelerating ALICE background simulations: A WGAN Approach to slow-neutron induced TPC loopers",
+      "authors": [
+        "Marco Giacalone",
+        "Sandro Christian Wenzel",
+        "Mesut Arslandok",
+        "Andreas Morsch"
+      ],
+      "category": "Heavy-ion AI/ML use",
+      "tags": [
+        "ALICE",
+        "TPC loopers",
+        "WGAN",
+        "fast simulation"
+      ],
+      "abstract": "A Wasserstein generative adversarial network generates electron and positron backgrounds from slow-neutron interactions in the ALICE TPC, replacing expensive transport.",
+      "summary": "The model is integrated into ALICE simulation and the paper reports roughly tenfold acceleration of the relevant transport component, with comparisons to GEANT4.",
+      "assessment": "A practical, directly relevant application with production integration; the looper rate is separately normalized and momentum tails require attention. The timing gain is not an end-to-end speedup."
+    },
+    {
+      "arxiv_id": "2611.34502",
+      "title": "Recent Developments in Colibri: A Neural-Network PDF Model and Improved Bayesian Sampling",
+      "authors": [
+        "Ella Cole",
+        "Valentina Schütze Sánchez"
+      ],
+      "category": "Physics AI/ML",
+      "tags": [
+        "parton distribution functions",
+        "neural networks",
+        "closure tests",
+        "Bayesian sampling"
+      ],
+      "abstract": "Colibri adds an open implementation of the n3fit neural-network PDF model and a BlackJAX nested sampler for comparing inference methods.",
+      "summary": "On 3,089 DIS pseudodata points, n3fit closure tests agree with NNPDF; the sampler comparison uses a 13-parameter polynomial model and yields consistent fit quality.",
+      "assessment": "A useful, quantitatively checked framework for controlled PDF methodology comparisons. The sampler benchmark is not an end-to-end Bayesian fit of the neural network, and direct nuclear-PDF application remains prospective."
+    }
+  ]
+}
